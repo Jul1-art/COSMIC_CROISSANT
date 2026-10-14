@@ -9,6 +9,7 @@ import { startLiveData, getLanguage, onLanguageChange } from './atlas-live.js?v=
 const $ = selector => document.querySelector(selector);
 const query = new URLSearchParams(location.search);
 const body = ['earth', 'mars', 'moon'].includes(query.get('body')) ? query.get('body') : 'earth';
+document.querySelector('#lunar-base-link').hidden = body !== 'moon';
 const names = { earth:'TERRE', mars:'MARS', moon:'LUNE' };
 const english = () => getLanguage() === 'en';
 const ellipsoid = body === 'earth' ? Cesium.Ellipsoid.WGS84 : body === 'mars'
@@ -582,6 +583,7 @@ onLanguageChange(lang => {
   $('.world-nav [data-world="earth"]').textContent = en ? 'Earth' : 'Terre';
   $('.world-nav [data-world="mars"]').textContent = 'Mars';
   $('.world-nav [data-world="moon"]').textContent = en ? 'Moon' : 'Lune';
+  $('#lunar-base-link').textContent = en ? 'Lunar base 3D' : 'Base lunaire 3D';
   $('.eyebrow').firstChild.textContent = en ? 'Explore ' : 'Explorer ';
   if (['Données', 'Data'].includes($('#site-title').textContent)) $('#site-title').textContent = en ? 'Data' : 'Données';
   placeSearch.setLanguage();

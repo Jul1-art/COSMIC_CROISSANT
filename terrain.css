@@ -35,3 +35,5 @@
 .terrain-google3d button{padding:8px 9px;border:1px solid #87cce36b;border-radius:8px;background:#8bd8eb18;color:#dcf5fc;font-size:9px;font-weight:750}
 .terrain-google3d button[aria-pressed="false"]{opacity:.65}
 @media(max-width:760px){.terrain-site-list{margin:7px 0 2px}.terrain-site-list button,.terrain-google3d button{padding:6px;font-size:8px}.terrain-google3d{font-size:8px}}
+
+.terrain-page .world-nav a[hidden]{display:none}

@@ -445,6 +445,13 @@ function updateDetail(id) {
     globe.textContent = getLanguage() === 'en' ? 'Explore in 3D ↗' : 'Explorer en 3D ↗';
     actions.appendChild(globe);
   }
+  if (id === 'moon') {
+    const base = document.createElement('a');
+    base.className = 'detail-action';
+    base.href = './base_lunaire_3d.html';
+    base.textContent = getLanguage() === 'en' ? 'Lunar base ↗' : 'Base lunaire ↗';
+    actions.appendChild(base);
+  }
   const close = document.createElement('button');
   close.type = 'button'; close.className = 'detail-action';
   close.textContent = getLanguage() === 'en' ? 'Move closer' : 'Se rapprocher';
