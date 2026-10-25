@@ -4,7 +4,8 @@ const LABELS = {
   en:{ title:'Data', distance:'Distance from Sun', speed:'Orbital speed', wind:'Solar wind · Earth', calculated:'Position calculated for', measured:'Measured', source:'Source', unavailable:'Unavailable', stale:'Latest available reading', other:'', loading:'Loading…' },
 };
 
-let language = localStorage.getItem('nasa-atlas-language') === 'en' ? 'en' : 'fr';
+let language = 'en';
+try { language = localStorage.getItem('nasa-atlas-language') === 'fr' ? 'fr' : 'en'; } catch {}
 const languageListeners = new Set();
 document.documentElement.lang = language;
 
@@ -12,7 +13,7 @@ export function getLanguage() { return language; }
 export function setLanguage(next) {
   if (next !== 'fr' && next !== 'en') return;
   language = next;
-  localStorage.setItem('nasa-atlas-language', next);
+  try { localStorage.setItem('nasa-atlas-language', next); } catch {}
   document.documentElement.lang = next;
   for (const listener of languageListeners) listener(next);
 }

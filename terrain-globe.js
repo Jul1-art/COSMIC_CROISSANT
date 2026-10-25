@@ -1,4 +1,5 @@
 import * as Cesium from './vendor/cesium/index.js';
+Cesium.Ion.defaultAccessToken = ''; // RELIC uses only a user-supplied token for optional ion assets.
 import { EARTH_SITES, PLANET_SITES } from './nasa-worlds.js';
 import { createMeasuredTerrain } from './earth-terrain.js';
 import { createDetailedEarthImagery, ESRI_IMAGERY_URL } from './earth-imagery.js';
@@ -37,7 +38,7 @@ let placeSearch;
 
 document.body.dataset.world = body;
 $('#imagery-button').hidden = body !== 'earth';
-document.title = `${names[body]} · Exploration libre 3D — Atlas NASA`;
+document.title = `${names[body]} · Exploration libre 3D — RELIC`;
 $('#world-title').textContent = names[body];
 $('#back-link').href = body === 'earth' ? './earth.html' : `./index.html?body=${body}`;
 document.querySelector(`.world-nav [data-world="${body}"]`)?.classList.add('active');
@@ -577,8 +578,8 @@ start();
 startLiveData($('#terrain-live-data'), () => body);
 onLanguageChange(lang => {
   const en = lang === 'en';
-  document.title = `${en ? { earth:'Earth', mars:'Mars', moon:'Moon' }[body] : names[body]} · ${en ? '3D terrain' : 'Exploration libre 3D'} — NASA Atlas`;
-  $('.back-link span:last-child').textContent = 'Atlas';
+  document.title = `${en ? { earth:'Earth', mars:'Mars', moon:'Moon' }[body] : names[body]} · ${en ? '3D terrain' : 'Exploration libre 3D'} — RELIC`;
+  $('.back-link span:last-child').textContent = 'RELIC';
   $('#world-title').textContent = en ? { earth:'Earth', mars:'Mars', moon:'Moon' }[body] : { earth:'Terre', mars:'Mars', moon:'Lune' }[body];
   $('.world-nav [data-world="earth"]').textContent = en ? 'Earth' : 'Terre';
   $('.world-nav [data-world="mars"]').textContent = 'Mars';

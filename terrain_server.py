@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 from functools import lru_cache
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, quote, unquote, urlparse, urlsplit, urlunsplit
 
 import numpy as np
 import requests
@@ -229,10 +229,172 @@ def height_tile(body: str, z: int, x: int, y: int):
 
 
 class Handler(SimpleHTTPRequestHandler):
+    extensions_map = {
+        **SimpleHTTPRequestHandler.extensions_map,
+        ".m4s": "video/iso.segment",
+        ".webmanifest": "application/manifest+json",
+    }
+
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, directory=str(ROOT), **kwargs)
+        kwargs.setdefault("directory", str(ROOT))
+        self._byte_range = None
+        super().__init__(*args, **kwargs)
+
+    @staticmethod
+    def _private_component(component):
+        name = component.lower()
+        return (
+            name.startswith(".")
+            or name in {"cert", "certs", "certificate", "certificates", "private", "secrets", "localconfig", "local-config", "local_config"}
+            or re.search(r"(?:^|[._-])local[._-]?(?:config|settings)(?:[._-]|$)", name) is not None
+            or re.search(r"[._-]local(?:[._-]|$)", name) is not None
+            or name.endswith((".pem", ".key", ".p12", ".pfx", ".crt", ".cer", ".env"))
+            or (name.endswith(".json") and re.search(r"config|settings|credentials?|secrets?|tokens?|api[-_]?keys?|service[-_]?account", name) is not None)
+        )
+
+    def _validated_request_path(self):
+        """Validate before any filesystem normalization can hide traversal."""
+        try:
+            path = unquote(urlsplit(self.path).path, errors="strict")
+        except (ValueError, UnicodeError):
+            return None
+        if not path.startswith("/") or "\\" in path or any(ord(char) < 32 or ord(char) == 127 for char in path):
+            return None
+        # Reject double encoding as well: a second decoder must not reveal a
+        # hidden path or traversal that this check cannot see.
+        if unquote(path) != path:
+            return None
+        if any(self._private_component(part) for part in path.split("/") if part):
+            return None
+        return path
+
+    def log_request(self, code="-", size="-"):
+        # Browser credentials or search parameters must never enter access logs.
+        route = self.path.partition("?")[0]
+        self.log_message('"%s %s %s" %s %s', self.command, route, self.request_version, str(code), str(size))
+
+    def log_error(self, format, *args):
+        # Some API validation messages echo user input. The access log already
+        # records the status, so avoid logging those messages or raw request lines.
+        self.log_message("HTTP request error")
+
+    def do_HEAD(self):
+        if self._validated_request_path() is None:
+            return self.send_error(403, "Private or invalid path")
+        if urlsplit(self.path).path == "/api/cesium-token":
+            return self.send_error(410, "Configure your own browser token in API settings")
+        return super().do_HEAD()
+
+    def list_directory(self, path):
+        self.send_error(403, "Directory listing is disabled")
+        return None
+
+    def send_head(self):
+        """Serve confined static files, with single byte ranges for media."""
+        self._byte_range = None
+        route = self._validated_request_path()
+        if route is None:
+            self.send_error(403, "Private or invalid path")
+            return None
+        root = Path(self.directory).resolve()
+        try:
+            path = (root / route.lstrip("/")).resolve()
+            relative = path.relative_to(root)
+            if any(self._private_component(part) for part in relative.parts):
+                raise ValueError("Private path")
+        except (OSError, ValueError):
+            self.send_error(403, "Private or invalid path")
+            return None
+        if path.is_dir():
+            indexes = [path / name for name in ("index.html", "index.htm")]
+            path = next((index for index in indexes if index.is_file()), None)
+            if path is None:
+                return self.list_directory(str(root / route.lstrip("/")))
+            # Resolve index symlinks too, including links into hidden folders.
+            try:
+                resolved_index = path.resolve()
+                if any(self._private_component(part) for part in resolved_index.relative_to(root).parts):
+                    raise ValueError("Private index")
+                path = resolved_index
+            except (OSError, ValueError):
+                self.send_error(403, "Private or invalid path")
+                return None
+            if not route.endswith("/"):
+                parsed = urlsplit(self.path)
+                location = urlunsplit(("", "", quote(route + "/"), parsed.query, ""))
+                self.send_response(301)
+                self.send_header("Location", location)
+                self.send_header("Content-Length", "0")
+                self.end_headers()
+                return None
+        try:
+            file = path.open("rb")
+        except (OSError, ValueError):
+            self.send_error(404, "File not found")
+            return None
+        try:
+            stat = os.fstat(file.fileno())
+            size = stat.st_size
+            modified = self.date_time_string(stat.st_mtime)
+            etag = f'"{stat.st_mtime_ns:x}-{size:x}"'
+            start, end = 0, size - 1
+            # Range applies to GET only. HEAD returns the full representation's
+            # headers and no body, even when a client supplies a Range header.
+            range_header = self.headers.get("Range") if self.command == "GET" else None
+            if self.headers.get("If-Range") not in (None, etag, modified):
+                range_header = None
+            if range_header:
+                match = re.fullmatch(r"bytes=(\d*)-(\d*)", range_header.strip())
+                valid = match is not None and any(match.groups()) and max(map(len, match.groups())) <= 20 and size > 0
+                if valid:
+                    first, last = match.groups()
+                    if first:
+                        start = int(first)
+                        end = min(int(last), size - 1) if last else size - 1
+                        valid = start < size and end >= start
+                    else:
+                        suffix = int(last)
+                        start = max(0, size - suffix)
+                        valid = suffix > 0
+                if not valid:
+                    file.close()
+                    self.send_response(416)
+                    self.send_header("Content-Range", f"bytes */{size}")
+                    self.send_header("Accept-Ranges", "bytes")
+                    self.send_header("Content-Length", "0")
+                    self.end_headers()
+                    return None
+                self._byte_range = (start, end)
+                file.seek(start)
+            self.send_response(206 if self._byte_range is not None else 200)
+            self.send_header("Content-Type", self.guess_type(str(path)))
+            self.send_header("Content-Length", str(end - start + 1))
+            self.send_header("Last-Modified", modified)
+            self.send_header("ETag", etag)
+            self.send_header("Accept-Ranges", "bytes")
+            if self._byte_range is not None:
+                self.send_header("Content-Range", f"bytes {start}-{end}/{size}")
+            self.end_headers()
+            return file
+        except BaseException:
+            file.close()
+            raise
+
+    def copyfile(self, source, outputfile):
+        if self._byte_range is None:
+            return super().copyfile(source, outputfile)
+        start, end = self._byte_range
+        remaining = end - start + 1
+        while remaining:
+            chunk = source.read(min(64 * 1024, remaining))
+            if not chunk:
+                break
+            outputfile.write(chunk)
+            remaining -= len(chunk)
 
     def do_GET(self):
+        if self._validated_request_path() is None:
+            return self.send_error(403, "Private or invalid path")
         parsed_url = urlparse(self.path)
         route = parsed_url.path
         if route == "/api/places":
@@ -257,14 +419,7 @@ class Handler(SimpleHTTPRequestHandler):
             self.wfile.write(raw)
             return
         if route == "/api/cesium-token":
-            raw = json.dumps({"token": os.environ.get("NASA_ATLAS_CESIUM_ION_TOKEN", "")}).encode("utf-8")
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Content-Length", str(len(raw)))
-            self.send_header("Cache-Control", "no-store")
-            self.end_headers()
-            self.wfile.write(raw)
-            return
+            return self.send_error(410, "Configure your own browser token in API settings")
         if route == "/api/live/atlas":
             with ThreadPoolExecutor(max_workers=2) as executor:
                 wind_task = executor.submit(LIVE.get, "noaa-wind", 120, noaa_swpc.fetch)
@@ -331,4 +486,6 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
+    from tools.restore_film import restore_films
+    restore_films()
     ThreadingHTTPServer(("0.0.0.0", int(os.environ.get("NASA_ATLAS_PORT", "8000"))), Handler).serve_forever()

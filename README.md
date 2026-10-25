@@ -1,80 +1,118 @@
-# Hackathon NASA
+# RELIC
 
-Atlas interactif du système solaire en 3D. La vue d’ensemble présente les huit planètes. Les reliefs et destinations de la Terre, de Mars et de la Lune utilisent des données NASA. Pour que le zoom terrestre reste net près du sol, la couche satellite détaillée utilise Esri et la vue photoréaliste 3D de Google est disponible via le quota gratuit Cesium ion ; les couches NASA restent disponibles.
+**An open-source journey through the Solar System and the traces of space exploration.**
 
-## Démarrer
+RELIC combines an interactive Solar System atlas, detailed views of Earth, the Moon and Mars, and a bilingual documentary introduction. Explore measured terrain, follow the history behind missions, and help improve the project through ideas, issues and pull requests.
+
+The original application code is available under the [Apache License 2.0](LICENSE). Third-party libraries, scientific datasets, imagery, music and archival film retain their own licenses; see [Third-party notices](THIRD_PARTY_NOTICES.md). RELIC is an independent project and does not imply endorsement by the organizations whose data it uses.
+
+## Explore
+
+- Move between the eight planets, the Moon and the Sun, then enter the detailed Earth, lunar or Martian views.
+- Explore Earth with Cesium, satellite imagery and NASA SRTM elevation; optional Google Photorealistic 3D Tiles use your own Cesium ion token.
+- Inspect global Mars MOLA and lunar LOLA terrain, with local HiRISE and LROC datasets around selected destinations.
+- Search supported locations or enter latitude and longitude. Place search and generated terrain tiles use the Python server.
+- Watch the English or French introduction, with sound, captions and playback controls. Historical recordings and illustrative reconstructions are identified in the film sources.
+- Inspect a conceptual lunar outpost. Its systems and architecture are simulations, not flight-qualified equipment or measured lunar topography.
+
+Sizes and orbital distances are adapted for readability. Horizons positions are calculated ephemerides, not spacecraft telemetry. NOAA solar-wind measurements describe conditions near Earth. Terrain and imagery have finite, source-dependent resolution; enlarging them does not create new measured detail.
+
+## Run locally
+
+Use Python 3.10 or newer. Node.js 22 or newer is recommended for the static build and JavaScript checks.
 
 ```sh
-python3 -m pip install numpy Pillow requests scipy
+git clone https://github.com/Jul1-art/RELIC.git
+cd RELIC
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements.txt
 python3 terrain_server.py
 ```
 
-Le serveur Python sert les pages, les tuiles d’altitude, `/api/places` et `/api/live/atlas` sur le port 8000. `python3 -m http.server` ne convient pas : il renvoie 404 pour les tuiles d’altitude et la recherche de lieux. Le port peut être changé avec `NASA_ATLAS_PORT`.
+The clone stores the two MP4 fallbacks as transport-sized binary parts. The Python server and static build verify the parts and automatically reconstruct the original MP4 files before serving or publishing them; no re-encoding or download is needed.
 
-### Publication Cloudflare
+Open **http://localhost:8000/**. On Windows, use the corresponding virtual-environment activation command and `python` if `python3` is unavailable.
 
-Le fichier `wrangler.toml` construit `dist/` et publie les pages et ressources comme **Worker Static Assets** sous le nom `hackathon-nasa` : `npx wrangler deploy`. Dans Cloudflare Workers Builds, relier la branche `main` du dépôt et utiliser `npx wrangler deploy` comme commande de déploiement. Le nom du Worker doit correspondre à celui du fichier Wrangler. Pour un projet Cloudflare Pages classique, utiliser `node tools/build_static.mjs` comme commande de build et `dist` comme répertoire de sortie.
+Run `terrain_server.py` for the complete experience. A generic static HTTP server does not implement the generated elevation, live-data or place-search endpoints. Some upstream terrain products are large and are downloaded on first use, then reused from the server cache. External imagery, geocoding and current data require a network connection.
 
-La version Cloudflare statique affiche l’atlas, les textures, les tuiles NASA externes et la base lunaire 3D. Les routes Python `/api/height`, `/api/live/atlas`, `/api/places` et `/api/imagery/moon/tycho` n’y sont pas exécutées ; le globe revient sur un relief plat et les mesures temps réel ne sont pas disponibles. Pour conserver ces fonctions sur Cloudflare, il faut les porter sur un Worker ou relier un serveur public. Le mode Google 3D demande un jeton Cesium ion dans le navigateur tant que `/api/cesium-token` n’est pas fourni par un service sécurisé. Ne jamais mettre le jeton dans Git.
+To choose a different port, set `NASA_ATLAS_PORT` before starting the server. For example:
 
-Ouvrir `http://localhost:8000/` ou, depuis un appareil connecté au même tailnet, **[https://gx10-d70e.tail4b17ec.ts.net/hackathon-nasa/](https://gx10-d70e.tail4b17ec.ts.net/hackathon-nasa/)**. Cette adresse utilise Tailscale Serve sur HTTPS/443 et préserve le service déjà présent à la racine du domaine.
+```sh
+NASA_ATLAS_PORT=8080 python3 terrain_server.py
+```
 
-Sur ce serveur, `hackathon-nasa.service` est activé comme service utilisateur systemd et redémarre automatiquement. Vérifier son état avec `systemctl --user status hackathon-nasa.service`.
+### Enable current JPL data
 
-## Explorer
+The NASA/JPL, NOAA and public NASA imagery paths used here do **not** require a NASA API key. Automated JPL requests require a real contact in the server's `User-Agent`, according to the [JPL API policy](https://ssd-api.jpl.nasa.gov/doc/index.php).
 
-- Cliquer ou toucher une planète, son nom, ou le Soleil pour s’en approcher. La Terre ouvre un globe Cesium avec relief NASA SRTM, imagerie satellite Esri détaillée, destinations NASA et recherche par coordonnées décimales.
-- Glisser pour tourner autour de la scène ou se déplacer sur un monde. La vitesse du déplacement suit l’altitude : elle devient précise près du sol. Utiliser la molette ou le geste de pincement pour zoomer. Toucher de nouveau l’astre sélectionné pour recadrer sa vue.
-- Le bandeau des astres permet de passer directement d’un monde à l’autre. Sur Terre, le bouton d’imagerie en bas à gauche ouvre les choix **Satellite**, **Blue Marble**, **MODIS / Terra** et **Google 3D**. La vue de relief terrestre permet aussi de passer de Satellite à Blue Marble.
-- La recherche compacte en bas de l’écran s’ouvre pour trouver villes, adresses et lieux avec [Photon/OpenStreetMap](https://github.com/komoot/photon), ainsi que les sites NASA et les coordonnées `latitude, longitude`. Les suggestions se sélectionnent au clic ou avec les flèches et Entrée ; `/` ouvre la recherche au clavier. Elle se referme après le choix d’un lieu ou avec son bouton de fermeture. Sur Mars et la Lune, elle recherche les sites NASA et les coordonnées.
-- **Jezero** ouvre un relief stéréo HiRISE à 1 m par pixel ; **Apollo 11** et le pic central de **Tycho** ouvrent des reliefs LROC NAC à 2 m par pixel. Tycho possède aussi une orthophoto LROC NAC locale à 2 m. Ces données ne couvrent que leurs zones mesurées. La planète sélectionnée cesse de tourner pendant son exploration.
-- Depuis la Lune, **Base lunaire 3D** ouvre un avant-poste conceptuel au pôle sud : modules pressurisés (habitat, serre, laboratoire), coupoles d’observation protégées, sas à deux portes, solaire, stockage, rover, communications et aire d’atterrissage. Choisir un élément pour le cadrer ; **Voir l’intérieur** ouvre une coupe visuelle. Glisser pour tourner, défiler ou pincer pour zoomer. L’orthographe `base_luniare_3d.html` redirige vers `base_lunaire_3d.html`.
-- La vue de relief utilise un angle oblique : glisser pour tourner, clic droit ou deux doigts pour déplacer, double clic pour recentrer, flèches pour avancer et reculer. Les commandes permettent aussi une vue du dessus, un cadrage global et une amplification du relief de ×1 à ×2.
-- Le bouton **Vue globale** recadre le système solaire. Les fiches peuvent être réduites pour laisser plus de place au globe.
-- L’interface démarre en mode nuit. Le bouton soleil/lune dans l’en-tête bascule entre les modes nuit et jour ; le choix est conservé dans le navigateur.
+1. Copy `.env.example` to `.env`.
+2. Set `NASA_ATLAS_CONTACT` to your own public HTTPS contact page or contact address.
+3. Load that file in the server's environment before starting Python. The server does not automatically load `.env`.
 
-### Avant-poste lunaire simulé
+On a POSIX shell:
 
-La page `base_lunaire_3d.html` permet une inspection extérieure et intérieure. Le panneau **Systèmes** pilote un cycle complet du sas : porte intérieure, dépressurisation, porte extérieure, puis retour avec repressurisation. Les deux portes sont interverrouillées. Il permet aussi de déployer les panneaux, d’activer la serre ou l’extraction ISRU, de faire rouler puis revenir le rover et de simuler des pannes. La télémétrie affiche batterie, oxygène, pression, température, eau, CO₂, puissance et pression du sas. Le bouton jour/nuit passe ensuite en mode automatique ; la vitesse ×1/×30/×360 est toujours affichée (×30 au démarrage).
+```sh
+set -a
+. ./.env
+set +a
+python3 terrain_server.py
+```
 
-Le site est **fictif** : son relief procédural n’est pas un DTM NASA ni la topographie d’un lieu réel. La Terre en arrière-plan utilise la texture Blue Marble locale. La gravité lunaire (1,62 m/s²), le soleil bas et les longues ombres polaires s’appuient sur la [fiche NASA de la Lune](https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html) et la [description NASA du pôle sud](https://www.nasa.gov/reference/moonbase-environment/). Les modules pressurisés, la mobilité, la gestion de l’énergie et de la poussière suivent les thèmes de [Moon Base Systems](https://www.nasa.gov/moonbase-systems/) et [Lunar Surface Technology](https://www.nasa.gov/lunar-surface-technology/). Les dimensions des équipements, capacités, consommations, rendements, réserves et trajectoires sont des **hypothèses de simulation**. Ce modèle n’est pas une conception validée pour une mission.
+The contact is a server setting, not an API key, and is not saved by the browser's key panel. With no valid contact configured, the app uses available cached positions with their timestamps or reports that current data is unavailable instead of sending anonymous JPL requests.
 
-Le moteur des systèmes est indépendant de Three.js dans `lunar-physics.js`. Vérifier ses transitions et bilans avec `node --test tests/test_lunar_physics.mjs`.
+## Bring your own API keys
 
-Les distances et les tailles dans la scène sont adaptées à l’exploration visuelle. L’angle des planètes vient des vecteurs calculés par NASA/JPL Horizons ; le rayon des orbites reste comprimé pour la lisibilité. La vitesse et la distance affichées viennent également de Horizons et sont recalculées toutes les 10 minutes. Le vent solaire NOAA est une **mesure près de la Terre**, actualisée toutes les 2 minutes ; l’application ne l’attribue pas aux autres planètes. Il n’existe pas ici de mesure en direct de la vitesse du vent ou de l’impact solaire à la surface de chaque planète. Si une source échoue, l’interface indique la dernière valeur connue et son heure, ou l’indisponibilité.
+Open **Settings / API keys** to see the services used by the app. Paste your own browser token and choose **Save locally**. The panel also lets you forget a saved token. Local settings belong to that browser and origin; they are not committed to this repository or shared with other users.
 
-Les cartes globales de la Terre, Mars et la Lune sont stockées localement dans `assets/` ; Three.js et Cesium sont dans `vendor/`. Les couches Esri, GIBS et Trek nécessitent une connexion. Les tuiles d’altitude mesurées sont produites par le serveur et conservées dans `~/.cache/hackathon-nasa/`. Le globe terrestre et la vue de terrain utilisent le relief SRTM là où il existe, avec amplification verticale ×2 par défaut et ×1 à Manhattan, Paris et Nice pour limiter les bosses dues aux objets détectés par le radar. Les sites Jezero, Apollo 11 et Tycho démarrent à ×1 pour montrer leur forme mesurée. La caméra vise l'altitude du site et un angle oblique pour montrer le volume du terrain. L'imagerie Esri a une résolution variable selon la région ; Blue Marble est une mosaïque composite historique, limitée à environ 500 m par pixel ; MODIS / Terra est une observation datée, limitée à environ 250 m par pixel et parfois partielle ou nuageuse. Les images très détaillées de Jezero, Apollo 11 et Tycho ne couvrent qu'une petite zone ; ailleurs, une mosaïque globale NASA comble les lacunes.
+| Service | Required? | How to configure it |
+| --- | --- | --- |
+| Cesium ion | Optional, for Google Photorealistic 3D Tiles | Create your own account and token at [Cesium ion Tokens](https://ion.cesium.com/tokens), enable access to the relevant imagery asset, then save the token in the app. |
+| NASA/JPL, NOAA and public NASA Trek/GIBS data | No API key for the implemented endpoints | Keep the default sources. Configure the separate server contact above for JPL requests. |
+| Google Cloud API key | Not used by this integration | The optional Google 3D layer is accessed through Cesium ion. No separate Google Cloud key is requested by RELIC. |
 
-Les pistes revêtues documentées utilisent un complément aux altitudes radar SRTM : leurs surfaces suivent les coordonnées, largeurs et altitudes des extrémités du jeu public [OurAirports](https://ourairports.com/data/), avec un raccord progressif au relief SRTM sur 75 m au-delà des bords. Le jeu local contient 9 285 pistes dont les données sont complètes et plausibles ; il ne remplace pas le relief NASA ailleurs. À **Nice**, les deux pistes sont recalées avec les coordonnées et altitudes officielles du [Service de l’Information Aéronautique](https://www.sia.aviation-civile.gouv.fr/documents/download/f/d/15031542/) en priorité. Ainsi, les fluctuations radar de plusieurs mètres ne créent plus des dos d’âne sur ces pistes. Les pistes sans données fiables restent sur SRTM.
+Use a browser-facing, read-only Cesium token restricted to your deployment's allowed origins. It is stored in the browser and sent to the provider when tiles are requested; browser storage is not encrypted secret storage. Do not enter account administration credentials. [Cesium's plans and quotas](https://cesium.com/platform/cesium-ion/pricing/) and [Google 3D integration terms](https://cesium.com/learn/cesiumjs-learn/cesiumjs-photorealistic-3d-tiles/) apply. NASA imagery and the basic atlas remain usable without that optional token, subject to source availability.
 
-Les tuiles Google 3D remplacent entièrement la surface visible lorsqu’elles sont activées ; le relief SRTM et sa correction des pistes restent disponibles en désactivant Google 3D. Le site ne construit plus de bâtiments depuis les contours OpenStreetMap. Sur ce serveur, le jeton fourni est dans `/home/jules/.config/hackathon-nasa.env` et les deux vues terrestres activent Google 3D automatiquement. Pour une autre installation, créer un compte [Cesium ion Community](https://cesium.com/platform/cesium-ion/pricing/), obtenir un [jeton Cesium ion](https://ion.cesium.com/tokens), puis définir `NASA_ATLAS_CESIUM_ION_TOKEN` côté serveur ou le coller dans la boîte ouverte par le bouton **Google 3D**. La saisie manuelle est conservée dans le stockage local du navigateur. Comme le navigateur utilise directement les tuiles, le jeton est visible dans les requêtes réseau ; limiter les URL autorisées dans les réglages Cesium ion pour un site public. L’offre Community a un quota gratuit et des conditions d’éligibilité ; elle ne fournit pas un accès illimité. Le mode NASA/Esri fonctionne sans jeton. Aucun compte Google Cloud facturé n’est requis avec l’accès Cesium ion.
+## Build and deploy
 
-Pour actualiser le jeu de pistes local : `python3 tools/build_runway_assets.py` (source OurAirports, domaine public). Le rendu ne télécharge pas ce CSV pendant l’exploration.
+The Python server serves the application directly, without a frontend compilation step. Use HTTPS and an appropriate reverse proxy for a hosted installation that needs the Python data endpoints.
 
-Les terrains terrestres utilisent **SRTMGL1** (~30 m entre échantillons). Les neuf extraits préconstruits conservent leurs images NASA, dont **Landsat WELD 1999** pour la Terre. Dans la vue libre, Mars utilise **MOLA MEGDR** (jusqu’à 128 pixels par degré, environ 460 m entre échantillons), complété à Jezero par le **DTM HiRISE de 1 m**. La Lune utilise **LOLA** (64 pixels par degré, environ 475 m entre échantillons à l'équateur), complété près d’**Apollo 11** et du pic central de **Tycho** par les **DTM LROC NAC de 2 m**. Les trous des DTM locaux se raccordent progressivement au terrain global. Le zoom au-delà de ces résolutions agrandit les données existantes ; il n'ajoute pas de détails mesurés. Les produits PDS bruts sont téléchargés une seule fois dans `~/.cache/hackathon-nasa/` : environ 381 Mo pour Jezero, 1,51 Go pour le DTM Tycho et 378 Mo pour son orthophoto. Le téléchargement initial peut durer ; ensuite seules de petites tuiles sont servies au navigateur.
+For a static deployment:
 
-Pour régénérer les neuf extraits depuis les sources NASA : `python3 tools/build_terrain_assets.py` (dépendances Python `numpy`, `Pillow`, `requests`). Le script conserve ses téléchargements bruts dans `/tmp/nasa-terrain` et publie les sources et limites de chaque extrait dans `assets/terrain/catalog.json`.
+```sh
+node tools/build_static.mjs
+```
 
-Pour vérifier les contrats des sources réelles et le repli du cache :
+Publish the resulting `dist/` directory. A static host serves the interface, bundled assets and browser-accessible external layers; it does not execute Python. In particular, `/api/height`, `/api/live/atlas`, `/api/places` and `/api/imagery/moon/tycho` are unavailable unless you separately deploy and route a compatible backend. The app falls back to the available imagery, flat terrain and cached or unavailable data as appropriate. The optional Cesium layer still uses the token configured in the browser.
+
+Third-party tile services may restrict redistribution, caching or offline use. Keep their on-screen attributions and review their terms before changing how assets are served.
+
+## Checks
 
 ```sh
 python3 -m unittest discover -s tests -v
+node --experimental-vm-modules --test tests/test_api_config.mjs tests/test_lunar_physics.mjs
+node tools/build_static.mjs
 ```
 
-Les API JPL Horizons et NOAA SWPC ne demandent aucune clé. L’imagerie NASA Trek n’en demande pas non plus. [JPL exige toutefois](https://ssd-api.jpl.nasa.gov/doc/index.php) un `User-Agent` contenant le nom et la version du logiciel ainsi qu’un vrai contact, et limite les clients automatisés à une requête simultanée. Renseigner `NASA_ATLAS_CONTACT` avec une adresse e-mail ou une URL publique de contact **côté serveur seulement** (voir `.env.example`). Sur cette machine, le service systemd lit `/home/jules/.config/hackathon-nasa.env` si le fichier existe, avec la ligne `NASA_ATLAS_CONTACT=...`. Tant que cette variable manque, l’API affiche les dernières positions en cache comme périmées et cesse d’appeler JPL. Les tests JPL sont alors ignorés pour respecter cette condition. Les accès aux API de données passent par le serveur Python ; les couches d’imagerie publiques GIBS et Trek sont chargées directement par Cesium. Il faut conserver ce serveur Python sur l’hébergeur pour bénéficier du relief et des mesures actualisées.
+Live JPL tests may be skipped when no contact is configured. For visual changes, also check portrait and landscape phone layouts, keyboard interaction, the NASA-only rendering path and the optional-token path.
 
-La résolution de rendu s’ajuste automatiquement quand la cadence baisse. Les tuiles NASA déjà affichées sont réutilisées pendant le déplacement pour éviter des téléchargements et des reconstructions inutiles.
+## Contribute
 
-## Cartes utilisées
+Everyone is welcome to propose improvements, suggest missions or datasets, report bugs and submit pull requests. Start with [Contributing](CONTRIBUTING.md). Include reliable references for scientific additions and keep measured data, approximations, historical imagery and fictional simulations clearly distinguished.
 
-- Terre, globe et surface : [NASA Blue Marble](https://science.nasa.gov/earth/earth-observatory/the-blue-marble-true-color-global-imagery-at-1km-resolution/) et [NASA GIBS](https://data.nasa.gov/dataset/gibs-web-map-tile-service-wmts). Observation datée : [MODIS / Terra](https://gis.earthdata.nasa.gov/portal/home/item.html?id=780c03ffe3dc42e8bb03ca3b07bb283e). Zoom détaillé : [Esri World Imagery](https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer), crédit et fournisseurs affichés dans Cesium.
-- Bâtiments et surface terrestre photoréalistes : [Google Photorealistic 3D Tiles via Cesium ion](https://cesium.com/learn/cesiumjs-learn/cesiumjs-photorealistic-3d-tiles/). Les crédits des tuiles sont affichés dans la vue 3D.
-- Mars : [NASA Trek, mosaïque globale Viking](https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars).
-- Lune : [LROC WAC et relief LOLA](https://svs.gsfc.nasa.gov/4720/).
-- Mercure, Vénus, Jupiter, Saturne, Uranus, Neptune, Soleil et anneaux de Saturne : [Solar System Scope / INOVE](https://www.solarsystemscope.com/textures/), sous [licence CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Les textures ont été adaptées en WebP pour réduire leur poids.
-- Jezero : mosaïque [MRO HiRISE 25 cm](https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars) et [DTM stéréo HiRISE 1 m](https://www.uahirise.org/dtm/ESP_045994_1985) ; Apollo 11 : mosaïque [LROC NAC 26 cm](https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=moon).
-- Relief terrestre : [NASA SRTMGL1 v003](https://lpdaac.usgs.gov/products/srtmgl1v003/) ; imagerie des extraits locaux : [NASA GIBS Landsat WELD](https://gibs.earthdata.nasa.gov/).
-- Relief martien : [NASA PDS MOLA MEGDR](https://pds-geosciences.wustl.edu/missions/mgs/megdr.html).
-- Relief lunaire : [NASA SVS LOLA](https://svs.gsfc.nasa.gov/4720/), [NASA PDS LROC NAC DTM Apollo 11](https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/APOLLO11/) et [DTM et orthophoto LROC NAC Tycho](https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_TYCHOPK).
+Do not include personal tokens, service-account files or other credentials in issues, screenshots, example configuration or commits. See [Security](SECURITY.md) for reporting guidance.
 
-Les coordonnées des destinations sont rassemblées dans `nasa-worlds.js` avec leur source. Les six destinations terrestres pointent vers des lieux photographiés ou documentés par NASA ou vers les données aéronautiques officielles de Nice. Les coordonnées d'Apollo 11 proviennent du [NSSDC](https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html). Les autres textures du système solaire restent attribuées séparément à Solar System Scope.
+## License and credits
+
+Original RELIC source code and original interface artwork are licensed under **Apache 2.0**. Preserve [NOTICE](NOTICE) and the notices that accompany bundled dependencies.
+
+The documentary and other third-party media are **not relicensed as Apache 2.0**. They combine NASA and other archives, ESA material, CC-BY media, Pixabay material and the score **“Helios” by Scott Buckley, CC-BY 4.0**. Their source credits, modifications and individual terms remain applicable. Review [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the film's source manifest before redistributing, replacing or repurposing those media. The original source recordings and large intermediate rendering files are not included.
+
+## Guide rapide en français
+
+RELIC est un projet open source ouvert aux idées, signalements et contributions de toutes et tous. Le code original est sous licence Apache 2.0 ; les médias et bibliothèques tiers conservent leurs propres conditions.
+
+Installez Python et les dépendances indiquées plus haut, puis lancez `python3 terrain_server.py` et ouvrez `http://localhost:8000/`. Le mode NASA de base n'exige aucune clé API. Pour les données JPL actualisées, renseignez votre propre contact public côté serveur. Pour Google 3D, ajoutez votre jeton Cesium ion dans **Réglages → Clés API** et enregistrez-le localement. Ne publiez aucune clé dans Git.
+
+Une publication statique reste possible avec `node tools/build_static.mjs`, mais elle n'exécute pas les routes Python de relief, de recherche et de données actualisées.

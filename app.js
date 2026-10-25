@@ -9,7 +9,8 @@ const sceneHost = $('#scene');
 const labelHost = $('#planet-labels');
 const loading = $('#loading');
 const errorScreen = $('#error-screen');
-const sky = new THREE.Color('#060a13');
+const sky = new THREE.Color('#050505');
+let filmActive = window.__relicFilmActive === true || document.documentElement.dataset.relicFilm === 'active';
 const gestureHint = $('#gesture-hint');
 let gestureHintTimer;
 function showGestureHint() {
@@ -66,7 +67,9 @@ try {
 } catch (error) {
   loading.classList.add('done');
   errorScreen.hidden = false;
-  $('#error-message').textContent = 'Le navigateur ne dispose pas d’un rendu WebGL actif. Activez l’accélération graphique puis rechargez la page.';
+  $('#error-message').textContent = getLanguage() === 'en'
+    ? 'This browser could not activate WebGL. Enable graphics acceleration, then reload the page.'
+    : 'Le navigateur ne dispose pas d’un rendu WebGL actif. Activez l’accélération graphique puis rechargez la page.';
   throw error;
 }
 
@@ -419,9 +422,12 @@ function refreshOrbits() {
 function setDetailsCollapsed(collapsed) {
   $('#details').classList.toggle('collapsed', collapsed);
   $('#details-toggle').setAttribute('aria-expanded', String(!collapsed));
-  $('#details-toggle').setAttribute('aria-label', collapsed ? 'Afficher les détails' : 'Réduire les détails');
+  const label = getLanguage() === 'en'
+    ? collapsed ? 'Show details' : 'Collapse details'
+    : collapsed ? 'Afficher les détails' : 'Réduire les détails';
+  $('#details-toggle').setAttribute('aria-label', label);
   $('#info-toggle').setAttribute('aria-expanded', String(!collapsed));
-  $('#info-toggle').setAttribute('aria-label', collapsed ? 'Afficher les détails' : 'Réduire les détails');
+  $('#info-toggle').setAttribute('aria-label', label);
 }
 
 function updateDetail(id) {
@@ -479,9 +485,14 @@ function selectBody(id, recenter = false) {
     ? id === 'overview' ? 'DRAG TO ROTATE <span>·</span> PINCH OR SCROLL TO ZOOM' : 'DRAG TO MOVE <span>·</span> PINCH OR SCROLL TO ZOOM'
     : id === 'overview' ? 'GLISSER POUR TOURNER <span>·</span> PINCER OU DÉFILER POUR ZOOMER' : 'GLISSER POUR SE DÉPLACER <span>·</span> PINCER OU DÉFILER POUR ZOOMER';
   showBaseImageryCredit(id);
-  if (id === 'moon' && !moonTextureLoaded) imageryCredit.textContent = 'CHARGEMENT DE LA CARTE LUNAIRE NASA…';
+  if (id === 'moon' && !moonTextureLoaded) imageryCredit.textContent = getLanguage() === 'en' ? 'Loading NASA lunar imagery…' : 'Chargement de la carte lunaire NASA…';
   document.body.dataset.mode = id === 'overview' ? 'overview' : 'focus';
   document.querySelectorAll('[data-body]').forEach(element => element.classList.toggle('active', element.dataset.body === id));
+  const destination = nav.querySelector(`[data-body="${id}"]`);
+  if (destination) {
+    const left = destination.offsetLeft - nav.clientWidth / 2 + destination.offsetWidth / 2;
+    nav.scrollTo({ left, behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }
   updateDetail(id);
   setDetailsCollapsed(id !== 'overview' && window.innerWidth <= 760);
   moon.visible = id === 'earth' || id === 'moon';
@@ -536,6 +547,7 @@ controls.addEventListener('change', () => {
   if (selected === 'mars' || selected === 'moon') surfaceSettleUntil = performance.now() + 220;
 });
 renderer.domElement.addEventListener('wheel', event => {
+  if (filmActive) return;
   if (selected === 'overview') return;
   event.preventDefault();
   zoomBy(Math.exp(Math.sign(event.deltaY) * Math.min(Math.abs(event.deltaY), 120) / 180), false);
@@ -545,6 +557,7 @@ let pointerStart = null;
 const touchPointers = new Map();
 let pinchDistance = 0;
 renderer.domElement.addEventListener('pointerdown', event => {
+  if (filmActive) return;
   pointerStart = { x:event.clientX, y:event.clientY };
   if (event.pointerType !== 'touch') return;
   touchPointers.set(event.pointerId, { x:event.clientX, y:event.clientY });
@@ -555,6 +568,7 @@ renderer.domElement.addEventListener('pointerdown', event => {
   }
 });
 renderer.domElement.addEventListener('pointermove', event => {
+  if (filmActive) return;
   if ((selected === 'mars' || selected === 'moon') && (event.buttons || touchPointers.size)) surfaceSettleUntil = performance.now() + 190;
   if (event.pointerType !== 'touch' || !touchPointers.has(event.pointerId)) return;
   touchPointers.set(event.pointerId, { x:event.clientX, y:event.clientY });
@@ -571,6 +585,7 @@ function releaseTouch(event) {
 }
 renderer.domElement.addEventListener('pointercancel', releaseTouch);
 renderer.domElement.addEventListener('pointerup', event => {
+  if (filmActive) { pointerStart = null; releaseTouch(event); return; }
   releaseTouch(event);
   if (!pointerStart || Math.hypot(event.clientX - pointerStart.x, event.clientY - pointerStart.y) > 6) { pointerStart = null; return; }
   pointerStart = null;
@@ -581,6 +596,7 @@ renderer.domElement.addEventListener('pointerup', event => {
   if (hit) selectBody(hit.object.userData.id);
 });
 renderer.domElement.addEventListener('pointermove', event => {
+  if (filmActive) return;
   if (event.buttons) return;
   const bounds = renderer.domElement.getBoundingClientRect();
   pointer.set(((event.clientX - bounds.left) / bounds.width) * 2 - 1, -((event.clientY - bounds.top) / bounds.height) * 2 + 1);
@@ -588,6 +604,7 @@ renderer.domElement.addEventListener('pointermove', event => {
   renderer.domElement.style.cursor = raycaster.intersectObjects(pickable, false).some(result => result.object.visible) ? 'pointer' : 'grab';
 });
 renderer.domElement.addEventListener('dblclick', event => {
+  if (filmActive) return;
   if (selected === 'overview') return;
   event.preventDefault();
   hideGestureHint();
@@ -605,7 +622,7 @@ function positionLabels() {
     const y = (-tempPosition.y * .5 + .5) * height;
     let placed = false;
     if (tempPosition.z > -1 && tempPosition.z < 1 && x > 35 && x < width - 35 && y > 80 && y < height - 98) {
-      for (const offset of [-21, 22, -48, 48]) {
+      for (const offset of [42, -21, 68, -48]) {
         const box = { x:x - 43, y:y + offset - 24, w:86, h:25 };
         if (box.y < 83 || box.y + box.h > height - 90) continue;
         if (occupied.some(previous => box.x < previous.x + previous.w + 4 && box.x + box.w + 4 > previous.x && box.y < previous.y + previous.h + 4 && box.y + box.h + 4 > previous.y)) continue;
@@ -642,8 +659,25 @@ livePanel = startLiveData($('#live-data'), () => selected, positions => {
   updatePositions(simulationDays);
 });
 onLanguageChange(lang => {
-  $('#brand-home .identity-copy strong').textContent = 'Atlas';
-  $('#overview-button span').textContent = lang === 'en' ? 'Overview' : 'Vue globale';
+  const english = lang === 'en';
+  $('#brand-home .identity-copy strong').textContent = 'RELIC';
+  $('#brand-home .identity-copy small').textContent = english ? 'Beyond the journey' : 'Au-delà du voyage';
+  $('#brand-home').setAttribute('aria-label', english ? 'RELIC — return to the solar system' : 'RELIC — retour au système solaire');
+  $('#overview-button span').textContent = english ? 'Solar system' : 'Système solaire';
+  $('#scene').setAttribute('aria-label', english ? 'Interactive solar system' : 'Système solaire interactif');
+  $('.destinations').setAttribute('aria-label', english ? 'Choose a world' : 'Choisir un monde');
+  $('.toolbar').setAttribute('aria-label', english ? 'Exploration controls' : 'Commandes de l’exploration');
+  for (const [id, en, fr] of [
+    ['relic-settings','Settings','Paramètres'],
+    ['relic-replay','Watch the film','Revoir le film'],
+    ['relic-credits','Sources and creators','Sources et créateurs'],
+  ]) {
+    const button = $(`#${id}`);
+    button.setAttribute('aria-label', english ? en : fr);
+    button.title = english ? en : fr;
+  }
+  $('#loading > span:last-child').textContent = english ? 'Opening the solar system' : 'Ouverture du système solaire';
+  $('#error-screen > strong').textContent = english ? 'The 3D view could not start.' : 'La vue 3D ne peut pas démarrer.';
   $('#gesture-hint').innerHTML = lang === 'en'
     ? 'DRAG TO MOVE <span>·</span> PINCH OR SCROLL TO ZOOM'
     : 'GLISSEZ POUR VOUS DÉPLACER <span>·</span> PINCEZ OU DÉFILEZ POUR ZOOMER';
@@ -661,6 +695,7 @@ onLanguageChange(lang => {
     ? selected === 'overview' ? 'DRAG TO ROTATE <span>·</span> PINCH OR SCROLL TO ZOOM' : 'DRAG TO MOVE <span>·</span> PINCH OR SCROLL TO ZOOM'
     : selected === 'overview' ? 'GLISSER POUR TOURNER <span>·</span> PINCER OU DÉFILER POUR ZOOMER' : 'GLISSER POUR SE DÉPLACER <span>·</span> PINCER OU DÉFILER POUR ZOOMER';
   if (selected !== 'overview') updateDetail(selected);
+  setDetailsCollapsed($('#details').classList.contains('collapsed'));
 });
 updateDetail('overview');
 refreshOrbits();
@@ -671,8 +706,47 @@ let qualityWindowStart = previousTime;
 let qualityFrameTime = 0;
 let qualityFrameCount = 0;
 let fastWindows = 0;
+let animationFrame = 0;
+let rendererSuspended = false;
+let renderPausedAt = 0;
+function requestSceneFrame() {
+  if (!animationFrame && !rendererSuspended) animationFrame = requestAnimationFrame(animate);
+}
+function syncSceneActivity() {
+  const shouldSuspend = filmActive || document.hidden;
+  controls.enabled = !filmActive;
+  document.body.dataset.filmActive = String(filmActive);
+  for (const element of [sceneHost, labelHost, $('.topbar'), $('main'), $('.toolbar')]) element.inert = filmActive;
+  if (shouldSuspend === rendererSuspended) return;
+  const now = performance.now();
+  rendererSuspended = shouldSuspend;
+  if (shouldSuspend) {
+    renderPausedAt = now;
+    cancelAnimationFrame(animationFrame);
+    animationFrame = 0;
+    pointerStart = null;
+    touchPointers.clear();
+    pinchDistance = 0;
+    hideGestureHint();
+  } else {
+    if (flight) flight.start += now - renderPausedAt;
+    previousTime = now;
+    qualityWindowStart = now;
+    qualityFrameTime = 0;
+    qualityFrameCount = 0;
+    requestSceneFrame();
+  }
+}
+window.addEventListener('relic-film-state', event => {
+  filmActive = event.detail?.active === true;
+  window.__relicFilmActive = filmActive;
+  syncSceneActivity();
+});
+document.addEventListener('visibilitychange', syncSceneActivity);
 function animate(time) {
-  requestAnimationFrame(animate);
+  animationFrame = 0;
+  if (rendererSuspended) return;
+  requestSceneFrame();
   const dt = Math.min((time - previousTime) / 1000, .05); previousTime = time;
   if (document.hidden) {
     qualityWindowStart = time; qualityFrameTime = 0; qualityFrameCount = 0;
@@ -732,4 +806,5 @@ function animate(time) {
   renderer.render(scene, camera);
   if (!loading.classList.contains('done')) loading.classList.add('done');
 }
-requestAnimationFrame(animate);
+syncSceneActivity();
+requestSceneFrame();

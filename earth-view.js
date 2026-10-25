@@ -1,4 +1,5 @@
 import * as Cesium from './vendor/cesium/index.js';
+Cesium.Ion.defaultAccessToken = ''; // RELIC uses only a user-supplied token for optional ion assets.
 import { EARTH_SITES, NASA_IMAGERY } from './nasa-worlds.js';
 import { createMeasuredTerrain } from './earth-terrain.js';
 import { createDetailedEarthImagery, ESRI_IMAGERY_URL } from './earth-imagery.js';
@@ -266,8 +267,8 @@ start();
 startLiveData($('#earth-live-data'), () => 'earth');
 onLanguageChange(lang => {
   const en = lang === 'en';
-  document.title = en ? 'Earth — NASA Atlas' : 'Terre — Atlas NASA';
-  $('.back-link span:last-child').textContent = 'Atlas';
+  document.title = en ? 'Earth — RELIC' : 'Terre — RELIC';
+  $('.back-link span:last-child').textContent = 'RELIC';
   $('.earth-page-title').textContent = en ? 'Earth' : 'Terre';
   $('.world-nav a:first-child').textContent = 'Mars';
   $('.world-nav a:last-child').textContent = en ? 'Moon' : 'Lune';
