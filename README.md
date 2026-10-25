@@ -1,6 +1,8 @@
-# RELIC
+# RELIC — Private edition
 
-**An open-source journey through the Solar System and the traces of space exploration.**
+**A privately configured journey through the Solar System and the traces of space exploration.**
+
+This edition keeps provider configuration in `api-config.js`. Visitors are never asked to enter API keys, and provider tokens are not stored in browser local storage. The [public RELIC repository](https://github.com/Jul1-art/RELIC) keeps its separate bring-your-own-key interface.
 
 RELIC combines an interactive Solar System atlas, detailed views of Earth, the Moon and Mars, and a bilingual documentary introduction. Explore measured terrain, follow the history behind missions, and help improve the project through ideas, issues and pull requests.
 
@@ -9,7 +11,7 @@ The original application code is available under the [Apache License 2.0](LICENS
 ## Explore
 
 - Move between the eight planets, the Moon and the Sun, then enter the detailed Earth, lunar or Martian views.
-- Explore Earth with Cesium, satellite imagery and NASA SRTM elevation; optional Google Photorealistic 3D Tiles use your own Cesium ion token.
+- Explore Earth with Cesium, satellite imagery and NASA SRTM elevation; optional Google Photorealistic 3D Tiles use the author-configured Cesium ion token.
 - Inspect global Mars MOLA and lunar LOLA terrain, with local HiRISE and LROC datasets around selected destinations.
 - Search supported locations or enter latitude and longitude. Place search and generated terrain tiles use the Python server.
 - Watch the English or French introduction, with sound, captions and playback controls. Historical recordings and illustrative reconstructions are identified in the film sources.
@@ -22,8 +24,8 @@ Sizes and orbital distances are adapted for readability. Horizons positions are 
 Use Python 3.10 or newer. Node.js 22 or newer is recommended for the static build and JavaScript checks.
 
 ```sh
-git clone https://github.com/Jul1-art/RELIC.git
-cd RELIC
+git clone https://github.com/Jul1-art/Hackathon_NASA.git
+cd Hackathon_NASA
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -r requirements.txt
@@ -59,19 +61,21 @@ set +a
 python3 terrain_server.py
 ```
 
-The contact is a server setting, not an API key, and is not saved by the browser's key panel. With no valid contact configured, the app uses available cached positions with their timestamps or reports that current data is unavailable instead of sending anonymous JPL requests.
+The contact is a server setting, not an API key, and remains separate from the browser provider configuration. With no valid contact configured, the app uses available cached positions with their timestamps or reports that current data is unavailable instead of sending anonymous JPL requests.
 
-## Bring your own API keys
+## Private provider configuration
 
-Open **Settings / API keys** to see the services used by the app. Paste your own browser token and choose **Save locally**. The panel also lets you forget a saved token. Local settings belong to that browser and origin; they are not committed to this repository or shared with other users.
+The application reads the author-controlled Cesium ion browser token directly from `api-config.js`. There is no API-key form, save/forget control or browser-token storage. The optional Google 3D button uses that configuration directly.
 
-| Service | Required? | How to configure it |
+| Service | Required? | Configuration |
 | --- | --- | --- |
-| Cesium ion | Optional, for Google Photorealistic 3D Tiles | Create your own account and token at [Cesium ion Tokens](https://ion.cesium.com/tokens), enable access to the relevant imagery asset, then save the token in the app. |
+| Cesium ion | Optional, for Google Photorealistic 3D Tiles | The maintainer configures the browser token in the private `api-config.js` module. An empty or unavailable configuration leaves the NASA rendering path usable. |
 | NASA/JPL, NOAA and public NASA Trek/GIBS data | No API key for the implemented endpoints | Keep the default sources. Configure the separate server contact above for JPL requests. |
-| Google Cloud API key | Not used by this integration | The optional Google 3D layer is accessed through Cesium ion. No separate Google Cloud key is requested by RELIC. |
+| Google Cloud API key | Not used by this integration | The optional Google 3D layer is accessed through Cesium ion. |
 
-Use a browser-facing, read-only Cesium token restricted to your deployment's allowed origins. It is stored in the browser and sent to the provider when tiles are requested; browser storage is not encrypted secret storage. Do not enter account administration credentials. [Cesium's plans and quotas](https://cesium.com/platform/cesium-ion/pricing/) and [Google 3D integration terms](https://cesium.com/learn/cesiumjs-learn/cesiumjs-photorealistic-3d-tiles/) apply. NASA imagery and the basic atlas remain usable without that optional token, subject to source availability.
+Use a browser-facing Cesium token limited to the required assets and permitted deployment origins. Browser JavaScript sends it to Cesium when the optional service is requested. [Cesium's plans and quotas](https://cesium.com/platform/cesium-ion/pricing/) and [Google 3D integration terms](https://cesium.com/learn/cesiumjs-learn/cesiumjs-photorealistic-3d-tiles/) apply. NASA imagery and the basic atlas do not require this token, subject to source availability.
+
+Keep this private configuration separate from the public RELIC edition, whose users supply their own keys. Do not copy the private token module into a public export.
 
 ## Build and deploy
 
@@ -83,7 +87,7 @@ For a static deployment:
 node tools/build_static.mjs
 ```
 
-Publish the resulting `dist/` directory. A static host serves the interface, bundled assets and browser-accessible external layers; it does not execute Python. In particular, `/api/height`, `/api/live/atlas`, `/api/places` and `/api/imagery/moon/tycho` are unavailable unless you separately deploy and route a compatible backend. The app falls back to the available imagery, flat terrain and cached or unavailable data as appropriate. The optional Cesium layer still uses the token configured in the browser.
+Publish the resulting `dist/` directory. A static host serves the interface, bundled assets and browser-accessible external layers; it does not execute Python. In particular, `/api/height`, `/api/live/atlas`, `/api/places` and `/api/imagery/moon/tycho` are unavailable unless you separately deploy and route a compatible backend. The app falls back to the available imagery, flat terrain and cached or unavailable data as appropriate. The optional Cesium layer uses the token configured in the private `api-config.js` module.
 
 Third-party tile services may restrict redistribution, caching or offline use. Keep their on-screen attributions and review their terms before changing how assets are served.
 
@@ -95,13 +99,13 @@ node --experimental-vm-modules --test tests/test_api_config.mjs tests/test_lunar
 node tools/build_static.mjs
 ```
 
-Live JPL tests may be skipped when no contact is configured. For visual changes, also check portrait and landscape phone layouts, keyboard interaction, the NASA-only rendering path and the optional-token path.
+Live JPL tests may be skipped when no contact is configured. For visual changes, also check portrait and landscape phone layouts, keyboard interaction, the NASA-only rendering path and the author-configured Google 3D path.
 
 ## Contribute
 
 Everyone is welcome to propose improvements, suggest missions or datasets, report bugs and submit pull requests. Start with [Contributing](CONTRIBUTING.md). Include reliable references for scientific additions and keep measured data, approximations, historical imagery and fictional simulations clearly distinguished.
 
-Do not include personal tokens, service-account files or other credentials in issues, screenshots, example configuration or commits. See [Security](SECURITY.md) for reporting guidance.
+Keep provider tokens out of issues, screenshots, test fixtures and example configuration. Only the author-controlled browser token belongs in this private edition's `api-config.js`; server-only credentials and service-account files must stay outside the application source. See [Security](SECURITY.md) for reporting guidance.
 
 ## License and credits
 
@@ -113,6 +117,6 @@ The documentary and other third-party media are **not relicensed as Apache 2.0**
 
 RELIC est un projet open source ouvert aux idées, signalements et contributions de toutes et tous. Le code original est sous licence Apache 2.0 ; les médias et bibliothèques tiers conservent leurs propres conditions.
 
-Installez Python et les dépendances indiquées plus haut, puis lancez `python3 terrain_server.py` et ouvrez `http://localhost:8000/`. Le mode NASA de base n'exige aucune clé API. Pour les données JPL actualisées, renseignez votre propre contact public côté serveur. Pour Google 3D, ajoutez votre jeton Cesium ion dans **Réglages → Clés API** et enregistrez-le localement. Ne publiez aucune clé dans Git.
+Installez Python et les dépendances indiquées plus haut, puis lancez `python3 terrain_server.py` et ouvrez `http://localhost:8000/`. Le mode NASA de base n'exige aucune clé API. Pour les données JPL actualisées, renseignez votre propre contact public côté serveur. Google 3D utilise directement le jeton Cesium ion configuré par l’auteur dans le module privé `api-config.js` ; aucun formulaire ni stockage local de clé n’est proposé. La version publique RELIC conserve son propre formulaire pour les clés de chaque utilisateur. Ne recopiez pas le module privé dans cette version publique.
 
 Une publication statique reste possible avec `node tools/build_static.mjs`, mais elle n'exécute pas les routes Python de relief, de recherche et de données actualisées.

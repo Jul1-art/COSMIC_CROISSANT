@@ -1,7 +1,7 @@
 /* RELIC's application shell. Film storage is a separate, explicit download. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'integrated-v8-4-20261025-subtitles-1';
+const VERSION = 'integrated-v8-4-20261025-subtitles-1-private-1';
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
 const APP_PREFIX = `relic-atlas-${encodeURIComponent(SCOPE.pathname)}-`;
@@ -13,11 +13,11 @@ const CORE = [
   './', 'index.html', 'earth.html', 'terrain.html', 'base_lunaire_3d.html',
   'styles.css', 'earth.css', 'terrain.css', 'lunar-base.css', 'live.css',
   'premium.css', 'theme.css', 'compact.css', 'relic-shell.css', 'relic-worlds.css',
-  'api-settings.css', 'film-bridge.css',
+  'film-bridge.css',
   'app.js', 'atlas-live.js', 'theme.js', 'surface-detail.js', 'nasa-worlds.js',
   'earth-view.js', 'earth-imagery.js', 'earth-terrain.js', 'terrain-globe.js', 'terrain-view.js',
   'lunar-base.js', 'lunar-architecture.js', 'lunar-environment.js', 'lunar-physics.js',
-  'api-config.js', 'api-settings.js', 'google-3d.js', 'google3d.css',
+  'api-config.js', 'google-3d.js', 'google3d.css',
   'place-search.js', 'place-search.css', 'film-bridge.js', 'world-bridge.js',
   'intro/prologue-v8.js', 'intro/prologue-data-v8.js', 'intro/prologue-v8.css',
   'intro/film-stream-v7.js', 'intro/film-offline.js', 'intro/film-cache.js',

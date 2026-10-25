@@ -1,17 +1,5 @@
-import { getLanguage, onLanguageChange } from './atlas-live.js?v=3';
-import { initializeApiSettings } from './api-settings.js';
-
 const APP_ROOT = new URL('./', import.meta.url);
 export const RETURN_MARKER = 'relic:return-to-atlas';
-
-for (const button of document.querySelectorAll('#relic-settings, [data-api-settings]')) {
-  initializeApiSettings({ button, getLanguage });
-  onLanguageChange(language => {
-    const label = language === 'fr' ? 'Clés API et paramètres' : 'API keys and settings';
-    button.setAttribute('aria-label', label);
-    button.title = label;
-  });
-}
 
 // Moving back from a world is still the same exploration session. A later
 // direct visit or reload opens the film again, as does the replay control.

@@ -3,144 +3,102 @@ import test from 'node:test';
 import vm from 'node:vm';
 import { readFile } from 'node:fs/promises';
 
-const file = new URL('../api-config.js', import.meta.url);
-const source = await readFile(file, 'utf8');
+const configSource = await readFile(new URL('../api-config.js', import.meta.url), 'utf8');
+const googleSource = await readFile(new URL('../google-3d.js', import.meta.url), 'utf8');
 const fixtureToken = 'exampleHeader.examplePayload.exampleSignature';
 
-async function config(initial = {}, overrides = {}) {
-  const values = new Map(Object.entries(initial));
-  const calls = [];
-  const context = vm.createContext({
-    localStorage: {
-      getItem: name => values.get(name) ?? null,
-      setItem: (name, value) => { values.set(name, value); },
-      removeItem: name => values.delete(name),
-      ...overrides,
-    },
-    CustomEvent: class CustomEvent { constructor(type, options) { this.type = type; this.detail = options.detail; } },
-    dispatchEvent: event => calls.push(event),
-  });
-  const module = new vm.SourceTextModule(source, { context });
-  await module.link(() => { throw new Error('API config must have no network or other dependencies.'); });
+async function privateConfig(context, token = '') {
+  const configured = configSource.replace(/^export const CESIUM_ION_TOKEN = .*;$/m,
+    `export const CESIUM_ION_TOKEN = ${JSON.stringify(token)};`);
+  const module = new vm.SourceTextModule(configured, { context });
+  await module.link(() => { throw new Error('Private configuration has no runtime dependencies.'); });
   await module.evaluate();
-  return { api: module.namespace, values, calls };
+  return module;
 }
 
-test('no key is configured until the user supplies one, and invalid inputs never persist', async () => {
-  const { api, values } = await config();
-  assert.equal(api.getCesiumToken(), '');
-  for (const bad of ['', 'password', 'https://ion.cesium.com/tokens', 'header.payload.signature with spaces', 'x'.repeat(9000)]) {
-    assert(api.validateCesiumToken(bad));
-    assert.throws(() => api.setCesiumToken(bad), /Invalid Cesium ion token format/);
+function isolatedContext(extra = {}) {
+  return vm.createContext({
+    localStorage: new Proxy({}, { get() { throw new Error('Private keys must not use browser storage.'); } }),
+    prompt() { throw new Error('The private edition must not ask users for a key.'); },
+    fetch() { throw new Error('Private keys must not be fetched from an endpoint.'); },
+    ...extra,
+  });
+}
+
+test('the private configuration uses only the embedded value without browser storage or prompts', async () => {
+  const module = await privateConfig(isolatedContext(), '  ' + fixtureToken + '  ');
+  assert.equal(module.namespace.PRIVATE_CREDENTIAL_EDITION, true);
+  assert.equal(module.namespace.getCesiumToken(), fixtureToken);
+  assert.equal(module.namespace.setCesiumToken, undefined);
+  assert.equal(module.namespace.clearApiKeys, undefined);
+});
+
+test('an empty or malformed configuration cannot activate the keyed service', async () => {
+  const module = await privateConfig(isolatedContext());
+  assert.equal(module.namespace.getCesiumToken(), '');
+  for (const invalid of ['', 'password', 'https://ion.cesium.com/tokens', 'header.payload.signature with spaces', 'x'.repeat(9000)]) {
+    assert(module.namespace.validateCesiumToken(invalid));
   }
-  assert.equal(values.size, 0);
+  assert.equal(module.namespace.validateCesiumToken(fixtureToken), '');
 });
 
-test('legacy browser tokens migrate locally without being sent through an event or a network dependency', async () => {
-  const legacy = 'nasa-atlas-cesium-ion-token';
-  const { api, values, calls } = await config({ [legacy]: fixtureToken });
-  assert.equal(api.getCesiumToken(), fixtureToken);
-  assert.equal(values.get(api.CESIUM_TOKEN_STORAGE_KEY), fixtureToken);
-  assert.equal(values.has(legacy), false);
-  assert.equal(calls.length, 0);
-  assert.deepEqual(Object.keys(api.setCesiumToken(fixtureToken)).sort(), ['configured', 'persistent']);
-  assert.equal(calls.length, 1);
-  assert.equal(calls[0].detail.cesiumConfigured, true);
-  assert(!JSON.stringify(calls).includes(fixtureToken));
-});
-
-test('clearing removes both current and legacy credentials and notifies active views without the token', async () => {
-  const { api, values, calls } = await config();
-  api.setCesiumToken(fixtureToken);
-  values.set(api.LEGACY_CESIUM_TOKEN_STORAGE_KEY, fixtureToken);
-  const result = api.clearApiKeys();
-  assert.equal(result.persistent, true);
-  assert.equal(api.getCesiumToken(), '');
-  assert.equal(values.size, 0);
-  assert.equal(calls.at(-1).detail.cesiumConfigured, false);
-  assert(!JSON.stringify(calls).includes(fixtureToken));
-});
-
-test('blocked persistent storage is reported honestly while allowing this-tab-only use', async () => {
-  const { api, calls } = await config({}, {
-    setItem() { throw new Error('Storage blocked'); },
-    removeItem() { throw new Error('Storage blocked'); },
-  });
-  assert.equal(api.setCesiumToken(fixtureToken).persistent, false);
-  assert.equal(api.getCesiumToken(), fixtureToken);
-  assert.equal(api.clearApiKeys().persistent, false);
-  assert.equal(api.getCesiumToken(), '');
-  assert.equal(calls.at(-1).detail.cesiumConfigured, false);
-});
-
-async function googleView({ rejectProvider = false } = {}) {
-  const values = new Map();
-  const warnings = [];
-  const listeners = new Map();
-  const requests = [];
-  const context = vm.createContext({
-    localStorage: { getItem: name => values.get(name) ?? null, setItem: (name, value) => values.set(name, value), removeItem: name => values.delete(name) },
-    console: { warn: (...args) => warnings.push(args) },
-    fetch: () => { throw new Error('Credentials must not be fetched from a shared server.'); },
-    CustomEvent: class CustomEvent { constructor(type, options) { this.type = type; this.detail = options.detail; } },
-    dispatchEvent: event => { for (const listener of listeners.get(event.type) ?? []) listener(event); },
-    addEventListener: (type, listener) => { const list = listeners.get(type) ?? []; list.push(listener); listeners.set(type, list); },
-    removeEventListener: (type, listener) => listeners.set(type, (listeners.get(type) ?? []).filter(item => item !== listener)),
-  });
-  const settings = new vm.SyntheticModule(['openApiSettings'], function() {
-    this.setExport('openApiSettings', async () => fixtureToken);
-  }, { context });
+async function googleView({ token = '', rejectProvider = false } = {}) {
+  const requests = [], warnings = [], states = [], removed = [];
+  const context = isolatedContext({ console: { warn: (...args) => warnings.push(args) } });
+  const local = await privateConfig(context, token);
+  const ion = { defaultAccessToken: 'unused-upstream-placeholder' };
   const tiles = { show: true, destroyed: false, destroy() { this.destroyed = true; }, tileFailed: { addEventListener() {} } };
-  const ion = { defaultAccessToken: 'upstream-demo-placeholder' };
   const provider = new vm.SyntheticModule(['Ion', 'IonResource', 'Cesium3DTileset'], function() {
     this.setExport('Ion', ion);
     this.setExport('IonResource', { async fromAssetId(id, options) {
       requests.push({ id, options });
-      if (rejectProvider) throw new Error('Private provider request https://example.invalid/?access_token=' + fixtureToken);
+      if (rejectProvider) throw new Error('Provider URL https://example.invalid/?access_token=' + fixtureToken);
       return {};
     } });
     this.setExport('Cesium3DTileset', { async fromUrl() { return tiles; } });
   }, { context });
-  const local = new vm.SourceTextModule(source, { context });
-  await local.link(() => { throw new Error('Unexpected API config import'); });
-  await local.evaluate();
-  const module = new vm.SourceTextModule(await readFile(new URL('../google-3d.js', import.meta.url), 'utf8'), { context });
-  await module.link(name => name === './api-config.js' ? local : name === './api-settings.js' ? settings : provider);
+  const module = new vm.SourceTextModule(googleSource, { context });
+  await module.link(name => {
+    if (name === './api-config.js') return local;
+    if (name === './vendor/cesium/index.js') return provider;
+    throw new Error('Unexpected import: ' + name);
+  });
   await module.evaluate();
-  const removed = [];
   const viewer = { scene: { globe: { show: true }, primitives: { add: item => item, remove: item => { removed.push(item); item.destroy(); } }, requestRender() {} } };
-  const states = [];
-  const view = module.namespace.createGoogle3D(viewer, state => states.push(state));
-  return { api: local.namespace, view, states, requests, warnings, viewer, removed, tiles, ion };
+  return { view:module.namespace.createGoogle3D(viewer, state => states.push(state)), states, requests, warnings, ion, tiles, viewer, removed };
 }
 
-test('Google 3D makes no shared-token request when unconfigured, and strips provider error payloads', async () => {
-  const { api, view, states, requests, warnings, ion } = await googleView({ rejectProvider: true });
-  assert.equal(ion.defaultAccessToken, '', 'The integration must clear upstream SDK demo credentials.');
+test('missing private configuration keeps the keyless globe usable and never requests a key', async () => {
+  const { view, requests, viewer, ion } = await googleView();
   assert.equal(await view.enable(), false);
   assert.equal(view.status, 'missing');
   assert.equal(requests.length, 0);
-  api.setCesiumToken(fixtureToken);
-  assert.equal(await view.enable(), false);
-  assert.equal(requests.length, 1);
-  assert.equal(requests[0].options.accessToken, fixtureToken, 'Only the user-supplied browser token may activate the keyed provider.');
+  assert.equal(viewer.scene.globe.show, true);
   assert.equal(ion.defaultAccessToken, '');
-  assert.equal(view.status, 'error');
-  assert(!JSON.stringify(states).includes(fixtureToken));
-  assert(!JSON.stringify(warnings).includes(fixtureToken));
-  assert(!JSON.stringify(warnings).includes('example.invalid'));
 });
 
-test('removing local keys stops the existing keyed 3D view and returns to the keyless globe', async () => {
-  const { api, view, viewer, removed, tiles } = await googleView();
-  api.setCesiumToken(fixtureToken);
-  assert.equal(await view.enable(), true);
-  assert.equal(view.active, true);
+test('the configured application token activates Google 3D without prompting or persisting it', async () => {
+  const { view, requests, viewer, tiles, removed } = await googleView({ token: fixtureToken });
+  assert.equal(await view.enable('ignoredCallerValue'), true);
+  assert.equal(requests.length, 1);
+  assert.equal(requests[0].options.accessToken, fixtureToken);
   assert.equal(viewer.scene.globe.show, false);
-  api.clearApiKeys();
-  assert.equal(view.active, false);
-  assert.equal(view.status, 'missing');
+  view.disable();
   assert.equal(viewer.scene.globe.show, true);
-  assert.equal(removed.length, 1);
+  assert.equal(await view.enable(), true);
+  assert.equal(requests.length, 1, 'A disabled tile set is reused.');
+  view.destroy();
   assert.equal(tiles.destroyed, true);
+  assert.equal(removed.length, 1);
+});
+
+test('provider failures never expose the configured token or request URL', async () => {
+  const { view, states, warnings, viewer } = await googleView({ token: fixtureToken, rejectProvider: true });
+  assert.equal(await view.enable(), false);
+  assert.equal(view.status, 'error');
+  assert.equal(viewer.scene.globe.show, true);
+  for (const output of [states, warnings]) {
+    assert(!JSON.stringify(output).includes(fixtureToken));
+    assert(!JSON.stringify(output).includes('example.invalid'));
+  }
 });

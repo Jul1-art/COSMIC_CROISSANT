@@ -668,7 +668,6 @@ onLanguageChange(lang => {
   $('.destinations').setAttribute('aria-label', english ? 'Choose a world' : 'Choisir un monde');
   $('.toolbar').setAttribute('aria-label', english ? 'Exploration controls' : 'Commandes de l’exploration');
   for (const [id, en, fr] of [
-    ['relic-settings','Settings','Paramètres'],
     ['relic-replay','Watch the film','Revoir le film'],
     ['relic-credits','Sources and creators','Sources et créateurs'],
   ]) {

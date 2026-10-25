@@ -3,7 +3,7 @@ Cesium.Ion.defaultAccessToken = ''; // RELIC uses only a user-supplied token for
 import { EARTH_SITES, NASA_IMAGERY } from './nasa-worlds.js';
 import { createMeasuredTerrain } from './earth-terrain.js';
 import { createDetailedEarthImagery, ESRI_IMAGERY_URL } from './earth-imagery.js';
-import { createGoogle3D, askForCesiumToken } from './google-3d.js';
+import { createGoogle3D } from './google-3d.js';
 import { createPlaceSearch } from './place-search.js?v=5';
 import { startLiveData, getLanguage, onLanguageChange } from './atlas-live.js?v=3';
 
@@ -56,9 +56,9 @@ function showGoogleState(state) {
   $('#google3d-status').textContent = state.status === 'ready'
     ? (en ? 'Active' : 'Actif')
     : state.status === 'loading' ? (en ? 'Loading…' : 'Chargement…')
-      : state.status === 'error' ? (en ? 'Access denied · change token' : 'Accès refusé · changer le jeton')
+      : state.status === 'error' ? (en ? 'Google 3D unavailable' : 'Google 3D indisponible')
         : state.status === 'off' ? (en ? 'NASA terrain' : 'Relief NASA')
-          : (en ? 'Cesium token required' : 'Jeton Cesium requis');
+          : (en ? 'Google 3D unavailable' : 'Google 3D indisponible');
   $('.earth-attribution').hidden = state.active;
   document.body.dataset.google3d = String(state.active);
   $('#layer-note').textContent = layerNoteText();
@@ -258,10 +258,7 @@ $('#reset-view').addEventListener('click', () => {
 $('#google3d-toggle').addEventListener('click', async () => {
   if (!google3D) return;
   if (google3D.active) { google3D.disable(); return; }
-  let token;
-  if (!google3D.hasToken() || google3D.status === 'error') token = await askForCesiumToken();
-  if (token === '') return;
-  await google3D.enable(token);
+  await google3D.enable();
 });
 start();
 startLiveData($('#earth-live-data'), () => 'earth');

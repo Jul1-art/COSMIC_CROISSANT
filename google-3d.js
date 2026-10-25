@@ -1,13 +1,11 @@
 import * as Cesium from './vendor/cesium/index.js';
-Cesium.Ion.defaultAccessToken = ''; // RELIC uses only a user-supplied token for optional ion assets.
-import { getCesiumToken, setCesiumToken, validateCesiumToken, API_KEYS_CHANGED_EVENT } from './api-config.js';
-import { openApiSettings } from './api-settings.js';
+Cesium.Ion.defaultAccessToken = ''; // Optional ion assets use this private edition's configured token explicitly.
+import { getCesiumToken, validateCesiumToken } from './api-config.js';
 
 const GOOGLE_ASSET_ID = 2275207;
 
 export function createGoogle3D(viewer, onState = () => {}) {
   let tileset = null;
-  let loadedToken = '';
   let active = false;
   let serial = 0;
   let status = 'off';
@@ -17,12 +15,12 @@ export function createGoogle3D(viewer, onState = () => {}) {
     onState({ status:next, error, active });
   }
 
-  async function enable(token) {
+  async function enable() {
     const request = ++serial;
-    token = (token ?? getCesiumToken()).trim();
+    const token = getCesiumToken();
     if (!token) { emit('missing'); return false; }
-    if (validateCesiumToken(token)) { emit('error', 'Enter a complete Cesium ion browser token in API settings.'); return false; }
-    if (tileset && token === loadedToken) {
+    if (validateCesiumToken(token)) { emit('error', 'Google 3D is unavailable.'); return false; }
+    if (tileset) {
       tileset.show = true;
       viewer.scene.globe.show = false;
       active = true;
@@ -35,7 +33,7 @@ export function createGoogle3D(viewer, onState = () => {}) {
     active = false;
     emit('loading');
     try {
-      // Cesium ion brokers Google's 3D Tiles under the user's own plan and quota.
+      // Cesium ion brokers Google's 3D Tiles under this application's configured account.
       const resource = await Cesium.IonResource.fromAssetId(GOOGLE_ASSET_ID, { accessToken:token });
       const compact = globalThis.matchMedia?.('(pointer: coarse)').matches || (globalThis.navigator?.deviceMemory ?? 8) <= 4;
       const next = await Cesium.Cesium3DTileset.fromUrl(resource, {
@@ -48,8 +46,6 @@ export function createGoogle3D(viewer, onState = () => {}) {
       if (request !== serial) { next.destroy(); return false; }
       if (tileset) viewer.scene.primitives.remove(tileset);
       tileset = viewer.scene.primitives.add(next);
-      loadedToken = token;
-      setCesiumToken(token);
       tileset.tileFailed?.addEventListener(() => {
         // Provider error objects may contain request URLs with access tokens.
         console.warn('A Google 3D tile is unavailable.');
@@ -61,11 +57,11 @@ export function createGoogle3D(viewer, onState = () => {}) {
       return true;
     } catch {
       if (request !== serial) return false;
-      console.warn('Google 3D is unavailable. Check the browser token permissions, allowed URLs and provider quota.');
+      console.warn('Google 3D is unavailable.');
       if (tileset) tileset.show = false;
       viewer.scene.globe.show = true;
       active = false;
-      emit('error', 'Google 3D is unavailable. Check API settings and your provider account.');
+      emit('error', 'Google 3D is unavailable.');
       return false;
     }
   }
@@ -79,25 +75,10 @@ export function createGoogle3D(viewer, onState = () => {}) {
     emit('off');
   }
 
-  function credentialsChanged() {
-    if (!loadedToken || loadedToken === getCesiumToken()) return;
-    serial++;
-    if (tileset) viewer.scene.primitives.remove(tileset);
-    tileset = null; loadedToken = ''; active = false;
-    viewer.scene.globe.show = true;
-    viewer.scene.requestRender();
-    emit(getCesiumToken() ? 'off' : 'missing');
-  }
-  globalThis.addEventListener?.(API_KEYS_CHANGED_EVENT, credentialsChanged);
   function destroy() {
     disable();
-    globalThis.removeEventListener?.(API_KEYS_CHANGED_EVENT, credentialsChanged);
     if (tileset) viewer.scene.primitives.remove(tileset);
-    tileset = null; loadedToken = '';
+    tileset = null;
   }
   return { enable, disable, destroy, get active() { return active; }, get status() { return status; }, hasToken:() => Boolean(getCesiumToken()) };
-}
-
-export function askForCesiumToken() {
-  return openApiSettings({ purpose: 'google3d' });
 }

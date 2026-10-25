@@ -4,7 +4,7 @@ Everyone is welcome to contribute. You can propose a feature, suggest a reliable
 
 ## Start a discussion
 
-Use [GitHub issues](https://github.com/Jul1-art/RELIC/issues) for reproducible bugs and improvement proposals. Describe the result you want, why it helps people explore, and any relevant constraints. For bugs, include the browser, device, steps to reproduce and expected behavior. Remove tokens and personal information from screenshots and logs.
+Use this private repository's [GitHub issues](https://github.com/Jul1-art/Hackathon_NASA/issues) for reproducible bugs and improvement proposals. Describe the result you want, why it helps people explore, and any relevant constraints. For bugs, include the browser, device, steps to reproduce and expected behavior. Remove tokens and personal information from screenshots and logs.
 
 For a substantial change, open an issue before investing in a large implementation so contributors can discuss the approach. Small fixes can go directly to a pull request.
 
@@ -24,7 +24,7 @@ node --experimental-vm-modules --test tests/test_api_config.mjs tests/test_lunar
 node tools/build_static.mjs
 ```
 
-Check both the full Python-server mode and the static fallback when your change affects data loading. For interface work, check narrow portrait and landscape layouts, touch targets, keyboard access and reduced-motion preferences. For key handling, verify missing, saved, cleared and unavailable-provider states without using a real credential in the test fixture.
+Check both the full Python-server mode and the static fallback when your change affects data loading. For interface work, check narrow portrait and landscape layouts, touch targets, keyboard access and reduced-motion preferences. For provider access, verify configured, missing and unavailable-provider states without using a real credential in the test fixture. The private edition must never open an API-key form or persist a provider token in browser storage.
 
 ## Scientific and historical additions
 
@@ -37,7 +37,7 @@ Check both the full Python-server mode and the static fallback when your change 
 
 ## Code, credentials and licensing
 
-Keep credentials out of source, fixtures, commit messages, screenshots and issues. Browser-facing provider tokens belong in the local API-key panel. Server settings belong in an ignored local environment file or your hosting environment. Use the blank `.env.example` for documentation.
+This private edition keeps its author-controlled, browser-facing Cesium token in `api-config.js`. Keep that module separate from the public RELIC edition, which retains its own-key interface. Do not copy a configured private module into a public export. Keep credentials out of fixtures, commit messages, screenshots and issues. Server-only credentials and service-account files do not belong in browser code. Server settings belong in an ignored local environment file or your hosting environment; the blank `.env.example` documents the separate JPL contact.
 
 By submitting an original contribution for inclusion, you agree to license it under Apache 2.0. Identify any third-party material you introduce and supply its source, applicable license and required notices; the project's license does not override those terms.
 
