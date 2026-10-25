@@ -1,5 +1,11 @@
+import { initializeAppSettings } from './app-settings.js';
+import { initializeNavigation } from './navigation.js';
+
 const APP_ROOT = new URL('./', import.meta.url);
 export const RETURN_MARKER = 'relic:return-to-atlas';
+
+initializeAppSettings({ privateEdition:true });
+initializeNavigation();
 
 // Moving back from a world is still the same exploration session. A later
 // direct visit or reload opens the film again, as does the replay control.
@@ -25,6 +31,30 @@ export function registerApplicationWorker() {
   return workerRegistration;
 }
 
+// Only an explicit offline-film download warms the full offline shell. Normal
+// visits keep their network work small and let the current page load first.
+export async function warmOfflineShell({ signal } = {}) {
+  const registration = await registerApplicationWorker();
+  if (!registration) throw new Error('Offline storage is unavailable.');
+  await navigator.serviceWorker.ready;
+  const worker = navigator.serviceWorker.controller || registration.active;
+  if (!worker) throw new Error('Offline storage is not ready.');
+  return new Promise((resolve, reject) => {
+    const channel = new MessageChannel();
+    const finish = (error) => {
+      clearTimeout(timeout); channel.port1.close(); signal?.removeEventListener('abort', aborted);
+      error ? reject(error) : resolve();
+    };
+    const aborted = () => finish(new DOMException('Cancelled', 'AbortError'));
+    const timeout = setTimeout(() => finish(new Error('Offline preparation timed out.')), 45000);
+    channel.port1.onmessage = event => finish(event.data?.ok ? null : new Error('Offline preparation is unavailable.'));
+    if (signal?.aborted) return aborted();
+    signal?.addEventListener('abort', aborted, { once:true });
+    worker.postMessage({ type:'RELIC_CACHE_OFFLINE_SHELL' }, [channel.port2]);
+  });
+}
+
 // Only the small application shell is cached during installation. Saving the
 // complete movie is a separate, explicit action in the film player.
-registerApplicationWorker();
+if (document.readyState === 'complete') registerApplicationWorker();
+else window.addEventListener('load', () => registerApplicationWorker(), { once:true });
