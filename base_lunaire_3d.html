@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#050505">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="icon" href="./assets/relic-icon-v1-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/relic-icon-v1-192.png">
   <meta name="description" content="Avant-poste lunaire 3D interactif : modules détaillés, inspection intérieure et simulation des systèmes de survie.">
   <title>Lunar outpost — RELIC</title>
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('nasa-atlas-theme')==='day'?'day':'night'}catch{document.documentElement.dataset.theme='night'}</script>
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./relic-worlds.css?v=2">
   <link rel="stylesheet" href="./navigation.css">
   <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/controls/OrbitControls.js":"./vendor/OrbitControls.js"}}</script>
+  <link rel="stylesheet" href="./branding.css?v=brand-7">
 </head>
 <body class="relic-lunar">
   <div id="scene" aria-label="Avant-poste lunaire interactif en trois dimensions"></div>
@@ -22,7 +23,7 @@
 
   <header class="topbar">
     <a class="back" href="./terrain.html?body=moon" aria-label="Retour à la Lune"><span class="back-icon" aria-hidden="true"><i class="world-icon" data-world-icon="arrow-left-long" aria-hidden="true"></i></span><span>Moon</span></a>
-    <a class="identity relic-lunar-brand" href="./index.html" aria-label="Return to the RELIC atlas"><svg class="relic-brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M35 75V29h20c11 0 17 6 17 15 0 9-7 15-18 15H35m19 0 20 18"/><path class="relic-mark-orbit" d="M20 63C10 37 32 12 59 16c14 2 24 8 30 19"/><circle cx="89" cy="35" r="2"/></svg><span><strong>RELIC</strong><small>LUNAR OUTPOST · SIMULATION</small></span></a>
+    <a class="identity relic-lunar-brand" href="./index.html" aria-label="Return to the RELIC atlas"><img class="relic-brand-mark relic-official-logo" src="./assets/relic-logo-v1.png" alt="" width="64" height="56"><span><strong>RELIC</strong><small>LUNAR OUTPOST · SIMULATION</small></span></a>
     <div class="relic-lunar-actions"><button class="world-settings-button" data-app-settings type="button" aria-label="Settings" title="Settings"><i class="world-icon" data-world-icon="gear" aria-hidden="true"></i></button><div class="status" role="status"><span class="status-dot"></span><span id="status-label">Systèmes nominaux</span></div></div>
   </header>
 
