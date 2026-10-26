@@ -7,9 +7,11 @@ import { createGoogle3D } from './google-3d.js';
 import { createPlaceSearch } from './place-search.js?v=5';
 import { startLiveData, getLanguage, onLanguageChange } from './atlas-live.js?v=3';
 import { configureWorldPerformance, cameraDuration, flyToLocation } from './world-performance.js';
+import { createViewLoading } from './view-loading.js';
 import { backendFeatureAvailable, markBackendFeatureUnavailable } from './atlas-services.js';
 
 const $ = selector => document.querySelector(selector);
+const viewLoading = createViewLoading({ element:$('#loading'), errorElement:$('#error'), getLanguage });
 const query = new URLSearchParams(location.search);
 const body = ['earth', 'mars', 'moon'].includes(query.get('body')) ? query.get('body') : 'earth';
 document.querySelector('#lunar-base-link').hidden = body !== 'moon';
@@ -31,6 +33,7 @@ let orientationAnimation = null;
 let movementFrame = 0;
 let previousMovementTime = 0;
 let terrainUnavailable = false;
+let baseImageryReady = false;
 let detailedEarthLayer = null;
 let earthImageryMode = 'nasa';
 let focusSerial = 0;
@@ -60,6 +63,12 @@ async function addImagery() {
     new URL(`./assets/${local}`, import.meta.url).href,
     { credit:body === 'earth' ? 'NASA · Blue Marble' : body === 'mars' ? 'NASA · Viking' : 'NASA · LROC WAC' },
   ));
+  baseImageryReady = true;
+  viewer.scene.requestRender();
+}
+
+async function addDetailImagery() {
+  const layers = viewer.imageryLayers;
   if (body === 'earth') {
     const mercator = new Cesium.WebMercatorTilingScheme({ ellipsoid });
     layers.addImageryProvider(provider(
@@ -344,7 +353,7 @@ function showGoogleState(state) {
 }
 
 async function goToSite(site) {
-  viewer.scene.verticalExaggeration = ['manhattan', 'paris', 'nice-airport', 'jezero', 'apollo11', 'tycho'].includes(site.id) ? 1 : 2;
+  viewer.scene.verticalExaggeration = ['jezero', 'apollo11', 'tycho'].includes(site.id) ? 1 : 2;
   $('#height-button span').textContent = `Relief × ${viewer.scene.verticalExaggeration}`;
   $('#site-title').textContent = site.name;
   history.replaceState({}, '', `./terrain.html?body=${body}&site=${encodeURIComponent(site.id)}`);
@@ -450,9 +459,6 @@ function setUpControls() {
     focus(Cesium.Math.toDegrees(point.latitude), Cesium.Math.toDegrees(point.longitude), Math.max(50, (cameraFrame()?.range || radius * .2) * .35), .7);
   }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
   viewer.camera.changed.addEventListener(() => updateHud());
-  viewer.scene.globe.tileLoadProgressEvent.addEventListener(count => {
-    if (count === 0) $('#loading').classList.add('done');
-  });
 }
 
 function initialLocation() {
@@ -478,6 +484,7 @@ async function start() {
       homeButton:false, sceneModePicker:false, navigationHelpButton:false,
       fullscreenButton:false, vrButton:false, selectionIndicator:false,
       infoBox:false, creditContainer:$('#cesium-credits'),
+      showRenderLoopErrors:false,
       msaaSamples:1,
     });
     viewer.clock.shouldAnimate = false;
@@ -490,6 +497,7 @@ async function start() {
     if (viewer.scene.sun) viewer.scene.sun.show = false;
     if (viewer.scene.moon) viewer.scene.moon.show = false;
     viewer.scene.backgroundColor = Cesium.Color.fromCssColorString('#080f1a');
+    viewer.scene.globe.baseColor = Cesium.Color.fromCssColorString(body === 'mars' ? '#80503c' : body === 'moon' ? '#686765' : '#102436');
     viewer.scene.globe.enableLighting = false;
     viewer.scene.globe.depthTestAgainstTerrain = true;
     viewer.scene.screenSpaceCameraController.minimumZoomDistance = 8;
@@ -497,7 +505,14 @@ async function start() {
     viewer.scene.screenSpaceCameraController.inertiaSpin = .75;
     viewer.scene.screenSpaceCameraController.inertiaTranslate = .72;
     viewer.scene.screenSpaceCameraController.inertiaZoom = .72;
-    configureWorldPerformance(viewer, { onSuspend:() => {
+    configureWorldPerformance(viewer, {
+      loading:viewLoading,
+      isReady:() => baseImageryReady && viewer.scene.globe.tilesLoaded,
+      onReady:() => {
+        addDetailImagery().catch(() => { /* The packaged NASA base remains visible. */ });
+        google3D?.enable();
+      },
+      onSuspend:() => {
       focusSerial++;
       pressed.clear();
       cancelAnimationFrame(movementFrame);
@@ -509,17 +524,16 @@ async function start() {
     viewer.scene.canvas.addEventListener('pointerdown', () => { focusSerial++; }, { passive:true });
     viewer.scene.canvas.addEventListener('wheel', () => { focusSerial++; }, { passive:true });
     viewer.scene.postRender.addEventListener(function ready() {
-      $('#loading').classList.add('done');
       updateHud(true);
       viewer.scene.postRender.removeEventListener(ready);
     });
-    addImagery().catch(() => { /* Local and remote layers load independently of controls. */ });
+    addImagery().catch(() => { viewLoading.fail(); });
     if (body === 'earth') {
       $('#terrain-google3d').hidden = false;
       google3D = createGoogle3D(viewer, showGoogleState);
     }
     const startPoint = initialLocation();
-    if (['manhattan', 'paris', 'nice-airport', 'jezero', 'apollo11', 'tycho'].includes(startPoint?.id)) viewer.scene.verticalExaggeration = 1;
+    if (['jezero', 'apollo11', 'tycho'].includes(startPoint?.id)) viewer.scene.verticalExaggeration = 1;
     $('#height-button span').textContent = `Relief × ${viewer.scene.verticalExaggeration}`;
     if (body === 'earth') {
       $('#imagery-button span').textContent = earthImageryMode === 'detail' ? 'SATELLITE' : 'NASA';
@@ -536,13 +550,10 @@ async function start() {
       focus(startPoint.lat, startPoint.lon, range, 0, startPoint.name);
     }
     else resetView(false, 0);
-    google3D?.enable();
     viewer.scene.requestRender();
   } catch (error) {
-    console.error(error);
-    $('#loading').classList.add('done');
-    $('#error').textContent = `Impossible de démarrer le globe 3D : ${error.message || 'réessayez après avoir rechargé la page.'}`;
-    $('#error').hidden = false;
+    console.warn('The planetary graphics view could not start.');
+    viewLoading.fail();
   }
 }
 
@@ -572,6 +583,7 @@ placeSearch = createPlaceSearch({
 start();
 startLiveData($('#terrain-live-data'), () => body);
 onLanguageChange(lang => {
+  viewLoading.refresh();
   const en = lang === 'en';
   document.title = `${en ? { earth:'Earth', mars:'Mars', moon:'Moon' }[body] : names[body]} · ${en ? '3D terrain' : 'Exploration libre 3D'} — RELIC`;
   $('.back-link span:last-child').textContent = 'RELIC';
