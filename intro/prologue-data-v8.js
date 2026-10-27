@@ -89,7 +89,11 @@ export const PROLOGUE_MEDIA=Object.freeze({
     {
       "id": "von-braun",
       "start": 113,
-      "end": 123
+      "end": 123,
+      "label": {
+        "en": "Wernher von Braun",
+        "fr": "Wernher von Braun"
+      }
     },
     {
       "id": "sputnik-wide",
