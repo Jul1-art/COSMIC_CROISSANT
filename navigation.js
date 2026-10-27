@@ -61,7 +61,7 @@ function destination(value) {
     const url = new URL(value, location.href);
     if (url.origin !== location.origin || !/^https?:$/.test(url.protocol)) return null;
     if (url.pathname === location.pathname && url.search === location.search) return null;
-    if (!/\/(?:index|earth|terrain|base_lun(?:aire|iare)_3d)\.html$/.test(url.pathname)
+    if (!/\/(?:index|earth|terrain)\.html$/.test(url.pathname)
       && !url.pathname.endsWith('/')) return null;
     return url;
   } catch { return null; }

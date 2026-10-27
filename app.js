@@ -478,13 +478,6 @@ function updateDetail(id) {
   $('#detail-subtitle').textContent = detail.subtitle;
   $('#detail-orb').style.background = `radial-gradient(circle at 32% 30%,#ffffffab,${detail.color} 45%,#132033)`;
   const actions = $('#detail-actions'); actions.replaceChildren();
-  if (id === 'moon') {
-    const base = document.createElement('a');
-    base.className = 'detail-action';
-    base.href = './base_lunaire_3d.html';
-    base.textContent = getLanguage() === 'en' ? 'Lunar base' : 'Base lunaire';
-    actions.appendChild(base);
-  }
   const close = document.createElement('button');
   close.type = 'button'; close.className = 'detail-action';
   close.textContent = getLanguage() === 'en' ? 'Move closer' : 'Se rapprocher';

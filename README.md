@@ -15,7 +15,6 @@ The original application code is available under the [Apache License 2.0](LICENS
 - Inspect global Mars MOLA and lunar LOLA terrain, with local HiRISE and LROC datasets around selected destinations.
 - Search supported locations or enter latitude and longitude. Place search and generated terrain tiles use the Python server.
 - Watch the English or French introduction, with sound, captions and playback controls. Historical recordings and illustrative reconstructions are identified in the film sources.
-- Inspect a conceptual lunar outpost. Its systems and architecture are simulations, not flight-qualified equipment or measured lunar topography.
 
 Sizes and orbital distances are adapted for readability. Horizons positions are calculated ephemerides, not spacecraft telemetry. NOAA solar-wind measurements describe conditions near Earth. Terrain and imagery have finite, source-dependent resolution; enlarging them does not create new measured detail.
 
