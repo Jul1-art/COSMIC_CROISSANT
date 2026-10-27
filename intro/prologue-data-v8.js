@@ -79,65 +79,37 @@ export const PROLOGUE_MEDIA=Object.freeze({
     {
       "id": "v1",
       "start": 99,
-      "end": 105,
-      "label": {
-        "en": "V1 · 1944",
-        "fr": "V1 · 1944"
-      }
+      "end": 105
     },
     {
       "id": "v2",
       "start": 105,
-      "end": 113,
-      "label": {
-        "en": "V2 · White Sands, 1946",
-        "fr": "V2 · White Sands, 1946"
-      }
+      "end": 113
     },
     {
       "id": "von-braun",
       "start": 113,
-      "end": 123,
-      "label": {
-        "en": "Wernher von Braun · Archive, 1962",
-        "fr": "Wernher von Braun · Archives, 1962"
-      }
+      "end": 123
     },
     {
       "id": "sputnik-wide",
       "start": 123,
-      "end": 127,
-      "label": {
-        "en": "Sputnik 1 · 4 October 1957",
-        "fr": "Spoutnik 1 · 4 octobre 1957"
-      }
+      "end": 127
     },
     {
       "id": "sputnik",
       "start": 127,
-      "end": 135,
-      "label": {
-        "en": "Sputnik 1 · 4 October 1957",
-        "fr": "Spoutnik 1 · 4 octobre 1957"
-      }
+      "end": 135
     },
     {
       "id": "laika",
       "start": 135,
-      "end": 147,
-      "label": {
-        "en": "Laika · 3 November 1957",
-        "fr": "Laïka · 3 novembre 1957"
-      }
+      "end": 147
     },
     {
       "id": "gagarin",
       "start": 147,
-      "end": 153,
-      "label": {
-        "en": "Yuri Gagarin · 12 April 1961",
-        "fr": "Youri Gagarine · 12 avril 1961"
-      }
+      "end": 153
     },
     {
       "id": "gagarin-silent",
@@ -147,119 +119,67 @@ export const PROLOGUE_MEDIA=Object.freeze({
     {
       "id": "moon-goal",
       "start": 161,
-      "end": 169,
-      "label": {
-        "en": "The Moon goal · 25 May 1961",
-        "fr": "Objectif Lune · 25 mai 1961"
-      }
+      "end": 169
     },
     {
       "id": "kennedy",
       "start": 169,
-      "end": 189,
-      "label": {
-        "en": "John F. Kennedy · 12 September 1962",
-        "fr": "John F. Kennedy · 12 septembre 1962"
-      }
+      "end": 189
     },
     {
       "id": "saturn-v",
       "start": 189,
-      "end": 201,
-      "label": {
-        "en": "Apollo 11 · 16 July 1969",
-        "fr": "Apollo 11 · 16 juillet 1969"
-      }
+      "end": 201
     },
     {
       "id": "apollo-engines",
       "start": 201,
-      "end": 207,
-      "label": {
-        "en": "Apollo 11 · 16 July 1969",
-        "fr": "Apollo 11 · 16 juillet 1969"
-      }
+      "end": 207
     },
     {
       "id": "apollo-liftoff",
       "start": 207,
-      "end": 217,
-      "label": {
-        "en": "Apollo 11 · 16 July 1969",
-        "fr": "Apollo 11 · 16 juillet 1969"
-      }
+      "end": 217
     },
     {
       "id": "eagle-orbit",
       "start": 217,
-      "end": 223,
-      "label": {
-        "en": "Eagle / Columbia · 20 July 1969",
-        "fr": "Eagle / Columbia · 20 juillet 1969"
-      }
+      "end": 223
     },
     {
       "id": "eagle-descent",
       "start": 223,
-      "end": 231,
-      "label": {
-        "en": "Eagle landing · 20 July 1969 (UTC)",
-        "fr": "Atterrissage d’Eagle · 20 juillet 1969 (UTC)"
-      }
+      "end": 231
     },
     {
       "id": "moon",
       "start": 231,
-      "end": 245,
-      "label": {
-        "en": "First step · 21 July 1969 (UTC)",
-        "fr": "Premier pas · 21 juillet 1969 (UTC)"
-      }
+      "end": 245
     },
     {
       "id": "eagle-landed",
       "start": 245,
-      "end": 259,
-      "label": {
-        "en": "Apollo 11 surface mission · 1969",
-        "fr": "Apollo 11 sur la Lune · 1969"
-      }
+      "end": 259
     },
     {
       "id": "voyager",
       "start": 259,
-      "end": 275,
-      "label": {
-        "en": "Voyager · 1977",
-        "fr": "Voyager · 1977"
-      }
+      "end": 275
     },
     {
       "id": "shuttle-carrier",
       "start": 275,
-      "end": 283,
-      "label": {
-        "en": "Enterprise · 1977",
-        "fr": "Enterprise · 1977"
-      }
+      "end": 283
     },
     {
       "id": "sts1",
       "start": 283,
-      "end": 299,
-      "label": {
-        "en": "Columbia / STS-1 · 12 April 1981",
-        "fr": "Columbia / STS-1 · 12 avril 1981"
-      }
+      "end": 299
     },
     {
       "id": "challenger",
       "start": 299,
-      "end": 305,
-      "label": {
-        "en": "Challenger · 28 January 1986",
-        "fr": "Challenger · 28 janvier 1986"
-      }
+      "end": 305
     },
     {
       "id": "remembrance",
@@ -269,11 +189,7 @@ export const PROLOGUE_MEDIA=Object.freeze({
     {
       "id": "hubble",
       "start": 313,
-      "end": 327,
-      "label": {
-        "en": "Hubble deployment · 25 April 1990",
-        "fr": "Déploiement de Hubble · 25 avril 1990"
-      }
+      "end": 327
     },
     {
       "id": "iss-capture",
@@ -287,20 +203,12 @@ export const PROLOGUE_MEDIA=Object.freeze({
     {
       "id": "iss-unity",
       "start": 337,
-      "end": 347,
-      "label": {
-        "en": "Unity + Zarya · December 1998",
-        "fr": "Unity + Zarya · décembre 1998"
-      }
+      "end": 347
     },
     {
       "id": "europe",
       "start": 347,
-      "end": 357,
-      "label": {
-        "en": "Columbus / ESA · February 2008",
-        "fr": "Columbus / ESA · février 2008"
-      }
+      "end": 357
     },
     {
       "id": "iss-whole",
@@ -319,110 +227,62 @@ export const PROLOGUE_MEDIA=Object.freeze({
     {
       "id": "shuttle-retirement",
       "start": 375,
-      "end": 391,
-      "label": {
-        "en": "Last Shuttle landing · 21 July 2011",
-        "fr": "Dernier atterrissage d’une navette · 21 juillet 2011"
-      }
+      "end": 391
     },
     {
       "id": "soyuz",
       "start": 391,
-      "end": 399,
-      "label": {
-        "en": "Soyuz / ISS crews · 2011",
-        "fr": "Soyouz / Équipages de l’ISS · 2011"
-      }
+      "end": 399
     },
     {
       "id": "heliopause",
       "start": 399,
-      "end": 413,
-      "label": {
-        "en": "Voyager 1 · 25 August 2012",
-        "fr": "Voyager 1 · 25 août 2012"
-      }
+      "end": 413
     },
     {
       "id": "philae-approach",
       "start": 413,
-      "end": 421,
-      "label": {
-        "en": "Philae / Rosetta · 12 November 2014",
-        "fr": "Philae / Rosetta · 12 novembre 2014"
-      }
+      "end": 421
     },
     {
       "id": "philae-landing",
       "start": 421,
-      "end": 429,
-      "label": {
-        "en": "Philae on comet 67P · 2014",
-        "fr": "Philae sur la comète 67P · 2014"
-      }
+      "end": 429
     },
     {
       "id": "rosetta-impact",
       "start": 429,
-      "end": 437,
-      "label": {
-        "en": "Rosetta · 30 September 2016",
-        "fr": "Rosetta · 30 septembre 2016"
-      }
+      "end": 437
     },
     {
       "id": "mars-approach",
       "start": 437,
-      "end": 445,
-      "label": {
-        "en": "Perseverance · 18 February 2021",
-        "fr": "Perseverance · 18 février 2021"
-      }
+      "end": 445
     },
     {
       "id": "perseverance-up",
       "start": 445,
-      "end": 451,
-      "label": {
-        "en": "Perseverance · 18 February 2021",
-        "fr": "Perseverance · 18 février 2021"
-      }
+      "end": 451
     },
     {
       "id": "perseverance-down",
       "start": 451,
-      "end": 457,
-      "label": {
-        "en": "Perseverance · 18 February 2021",
-        "fr": "Perseverance · 18 février 2021"
-      }
+      "end": 457
     },
     {
       "id": "webb",
       "start": 457,
-      "end": 469,
-      "label": {
-        "en": "James Webb Space Telescope · 25 December 2021",
-        "fr": "Télescope spatial James-Webb · 25 décembre 2021"
-      }
+      "end": 469
     },
     {
       "id": "falcon-launch",
       "start": 469,
-      "end": 481,
-      "label": {
-        "en": "Falcon Heavy / STP-2 · June 2019",
-        "fr": "Falcon Heavy / STP-2 · juin 2019"
-      }
+      "end": 481
     },
     {
       "id": "falcon-dual-return",
       "start": 481,
-      "end": 495,
-      "label": {
-        "en": "Falcon Heavy · June 2019",
-        "fr": "Falcon Heavy · juin 2019"
-      }
+      "end": 495
     },
     {
       "id": "falcon-return",
@@ -431,38 +291,22 @@ export const PROLOGUE_MEDIA=Object.freeze({
       "focus": {
         "mobile": "48% 50%",
         "desktop": "50% 50%"
-      },
-      "label": {
-        "en": "Falcon 9 / Sentinel-6 · November 2020",
-        "fr": "Falcon 9 / Sentinel-6 · novembre 2020"
       }
     },
     {
       "id": "lunar-orbiter",
       "start": 507,
-      "end": 515,
-      "label": {
-        "en": "Lunar Reconnaissance Orbiter · 2018 visualization",
-        "fr": "Lunar Reconnaissance Orbiter · visualisation de 2018"
-      }
+      "end": 515
     },
     {
       "id": "mars",
       "start": 515,
-      "end": 523,
-      "label": {
-        "en": "Curiosity · 2012",
-        "fr": "Curiosity · 2012"
-      }
+      "end": 523
     },
     {
       "id": "hardware",
       "start": 523,
-      "end": 532,
-      "label": {
-        "en": "Curiosity · Exploring since 2012",
-        "fr": "Curiosity · En exploration depuis 2012"
-      }
+      "end": 532
     },
     {
       "id": "mars-pullout",
@@ -687,7 +531,7 @@ export const PROLOGUE_MEDIA=Object.freeze({
       {
         "id": "quiet-v9-11",
         "start": 115.897333,
-        "end": 125.0,
+        "end": 125,
         "kind": "visual",
         "title": {
           "en": "",
@@ -704,7 +548,7 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "a-signal-around-earth-1",
-        "start": 125.0,
+        "start": 125,
         "end": 132.885333,
         "kind": "narration",
         "paragraph": "a-signal-around-earth",
@@ -821,10 +665,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "Let’s go!",
           "fr": "C’est parti !"
         },
-        "speaker": {
-          "en": "Yuri Gagarin · 1961",
-          "fr": "Youri Gagarine · 1961"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -899,10 +739,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "We choose to go to the Moon.",
           "fr": "Nous choisissons d’aller sur la Lune."
         },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -922,10 +758,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "We choose to go to the Moon.",
           "fr": "Nous choisissons d’aller sur la Lune."
-        },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
         },
         "kicker": {
           "en": "",
@@ -947,10 +779,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "We choose to go to the Moon",
           "fr": "Nous choisissons d’aller sur la Lune"
         },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -970,10 +798,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "in this decade and do the other things,",
           "fr": "cette décennie, et de faire ces autres choses,"
-        },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
         },
         "kicker": {
           "en": "",
@@ -995,10 +819,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "not because they are easy,",
           "fr": "non parce qu’elles sont faciles,"
         },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -1018,10 +838,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "but because they are hard.",
           "fr": "mais parce qu’elles sont difficiles."
-        },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
         },
         "kicker": {
           "en": "",
@@ -1115,10 +931,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "6, 5, 4, 3, 2, 1, 0.",
           "fr": "6, 5, 4, 3, 2, 1, 0."
         },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -1138,10 +950,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "All engines running.",
           "fr": "Tous les moteurs fonctionnent."
-        },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
         },
         "kicker": {
           "en": "",
@@ -1163,10 +971,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "Liftoff. We have a liftoff.",
           "fr": "Décollage. Nous avons décollé."
         },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -1187,10 +991,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "32 minutes past the hour.",
           "fr": "32 minutes après l’heure."
         },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -1210,10 +1010,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "Liftoff on Apollo 11.",
           "fr": "Décollage d’Apollo 11."
-        },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
         },
         "kicker": {
           "en": "",
@@ -1307,10 +1103,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "That’s one small step for man,",
           "fr": "C’est un petit pas pour l’homme,"
         },
-        "speaker": {
-          "en": "Neil Armstrong · 1969",
-          "fr": "Neil Armstrong · 1969"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -1330,10 +1122,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "one giant leap for mankind.",
           "fr": "un bond de géant pour l’humanité."
-        },
-        "speaker": {
-          "en": "Neil Armstrong · 1969",
-          "fr": "Neil Armstrong · 1969"
         },
         "kicker": {
           "en": "",
@@ -1624,10 +1412,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "One minute, fifteen seconds.",
           "fr": "Une minute, quinze secondes."
-        },
-        "speaker": {
-          "en": "NASA mission commentary · 1986",
-          "fr": "Commentaire de mission NASA · 1986"
         },
         "kicker": {
           "en": "",
@@ -2189,10 +1973,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "…to conduct the sky crane maneuver.",
           "fr": "…pour effectuer la manœuvre de la grue aérienne."
         },
-        "speaker": {
-          "en": "NASA/JPL mission control · 2021",
-          "fr": "Contrôle de mission NASA/JPL · 2021"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -2231,10 +2011,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "Sky crane maneuver has started.",
           "fr": "La manœuvre de la grue aérienne a commencé."
         },
-        "speaker": {
-          "en": "NASA/JPL mission control · 2021",
-          "fr": "Contrôle de mission NASA/JPL · 2021"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -2272,10 +2048,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "About 20 meters off the surface.",
           "fr": "À environ 20 mètres de la surface."
-        },
-        "speaker": {
-          "en": "NASA/JPL mission control · 2021",
-          "fr": "Contrôle de mission NASA/JPL · 2021"
         },
         "kicker": {
           "en": "",
@@ -2343,7 +2115,7 @@ export const PROLOGUE_MEDIA=Object.freeze({
       {
         "id": "quiet-v9-97",
         "start": 465.108,
-        "end": 470.0,
+        "end": 470,
         "kind": "visual",
         "title": {
           "en": "",
@@ -2360,7 +2132,7 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "returning-launchers-1",
-        "start": 470.0,
+        "start": 470,
         "end": 471.025,
         "kind": "narration",
         "paragraph": "returning-launchers",
@@ -2799,7 +2571,7 @@ export const PROLOGUE_MEDIA=Object.freeze({
       {
         "id": "quiet-v9-11",
         "start": 115.556,
-        "end": 125.0,
+        "end": 125,
         "kind": "visual",
         "title": {
           "en": "",
@@ -2816,7 +2588,7 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "a-signal-around-earth-1",
-        "start": 125.0,
+        "start": 125,
         "end": 132.202667,
         "kind": "narration",
         "paragraph": "a-signal-around-earth",
@@ -2933,10 +2705,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "Let’s go!",
           "fr": "C’est parti !"
         },
-        "speaker": {
-          "en": "Yuri Gagarin · 1961",
-          "fr": "Youri Gagarine · 1961"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -3011,10 +2779,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "We choose to go to the Moon.",
           "fr": "Nous choisissons d’aller sur la Lune."
         },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -3034,10 +2798,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "We choose to go to the Moon.",
           "fr": "Nous choisissons d’aller sur la Lune."
-        },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
         },
         "kicker": {
           "en": "",
@@ -3059,10 +2819,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "We choose to go to the Moon",
           "fr": "Nous choisissons d’aller sur la Lune"
         },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -3082,10 +2838,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "in this decade and do the other things,",
           "fr": "cette décennie, et de faire ces autres choses,"
-        },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
         },
         "kicker": {
           "en": "",
@@ -3107,10 +2859,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "not because they are easy,",
           "fr": "non parce qu’elles sont faciles,"
         },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -3130,10 +2878,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "but because they are hard.",
           "fr": "mais parce qu’elles sont difficiles."
-        },
-        "speaker": {
-          "en": "John F. Kennedy · 1962",
-          "fr": "John F. Kennedy · 1962"
         },
         "kicker": {
           "en": "",
@@ -3227,10 +2971,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "6, 5, 4, 3, 2, 1, 0.",
           "fr": "6, 5, 4, 3, 2, 1, 0."
         },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -3250,10 +2990,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "All engines running.",
           "fr": "Tous les moteurs fonctionnent."
-        },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
         },
         "kicker": {
           "en": "",
@@ -3275,10 +3011,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "Liftoff. We have a liftoff.",
           "fr": "Décollage. Nous avons décollé."
         },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -3299,10 +3031,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "32 minutes past the hour.",
           "fr": "32 minutes après l’heure."
         },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -3322,10 +3050,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "Liftoff on Apollo 11.",
           "fr": "Décollage d’Apollo 11."
-        },
-        "speaker": {
-          "en": "Jack King · Apollo 11",
-          "fr": "Jack King · Apollo 11"
         },
         "kicker": {
           "en": "",
@@ -3419,10 +3143,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "That’s one small step for man,",
           "fr": "C’est un petit pas pour l’homme,"
         },
-        "speaker": {
-          "en": "Neil Armstrong · 1969",
-          "fr": "Neil Armstrong · 1969"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -3442,10 +3162,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "one giant leap for mankind.",
           "fr": "un bond de géant pour l’humanité."
-        },
-        "speaker": {
-          "en": "Neil Armstrong · 1969",
-          "fr": "Neil Armstrong · 1969"
         },
         "kicker": {
           "en": "",
@@ -3736,10 +3452,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "One minute, fifteen seconds.",
           "fr": "Une minute, quinze secondes."
-        },
-        "speaker": {
-          "en": "NASA mission commentary · 1986",
-          "fr": "Commentaire de mission NASA · 1986"
         },
         "kicker": {
           "en": "",
@@ -4301,10 +4013,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "…to conduct the sky crane maneuver.",
           "fr": "…pour effectuer la manœuvre de la grue aérienne."
         },
-        "speaker": {
-          "en": "NASA/JPL mission control · 2021",
-          "fr": "Contrôle de mission NASA/JPL · 2021"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -4343,10 +4051,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
           "en": "Sky crane maneuver has started.",
           "fr": "La manœuvre de la grue aérienne a commencé."
         },
-        "speaker": {
-          "en": "NASA/JPL mission control · 2021",
-          "fr": "Contrôle de mission NASA/JPL · 2021"
-        },
         "kicker": {
           "en": "",
           "fr": ""
@@ -4384,10 +4088,6 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "title": {
           "en": "About 20 meters off the surface.",
           "fr": "À environ 20 mètres de la surface."
-        },
-        "speaker": {
-          "en": "NASA/JPL mission control · 2021",
-          "fr": "Contrôle de mission NASA/JPL · 2021"
         },
         "kicker": {
           "en": "",
@@ -4455,7 +4155,7 @@ export const PROLOGUE_MEDIA=Object.freeze({
       {
         "id": "quiet-v9-97",
         "start": 464.788,
-        "end": 470.0,
+        "end": 470,
         "kind": "visual",
         "title": {
           "en": "",
@@ -4472,7 +4172,7 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "returning-launchers-1",
-        "start": 470.0,
+        "start": 470,
         "end": 470.875,
         "kind": "narration",
         "paragraph": "returning-launchers",
