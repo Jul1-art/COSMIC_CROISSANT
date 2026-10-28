@@ -1,21 +1,21 @@
-/** V9 documentary: localized clause captions and media-clock composition. */
+/** V9.1 documentary: chronological events, bilingual captions and media-clock composition. */
 export const PROLOGUE_MEDIA=Object.freeze({
-  "revision": "9.0-hd50",
+  "revision": "9.1-hd50",
   "duration": 569,
   "preview": false,
   "encoding": "./assets/prologue/encoding-v9-hd50.json",
   "sources": "./assets/prologue/sources-v9.json",
   "poster": "./assets/prologue/poster-v9-hd50.jpg",
   "language": "en",
-  "hls": "./assets/prologue/v9-0-hd50/en.m3u8",
+  "hls": "./assets/prologue/v9-1-hd50/en.m3u8",
   "languages": {
     "en": {
       "language": "en",
-      "hls": "./assets/prologue/v9-0-hd50/en.m3u8"
+      "hls": "./assets/prologue/v9-1-hd50/en.m3u8"
     },
     "fr": {
       "language": "fr",
-      "hls": "./assets/prologue/v9-0-hd50/fr.m3u8"
+      "hls": "./assets/prologue/v9-1-hd50/fr.m3u8"
     }
   },
   "scenes": [
@@ -166,13 +166,13 @@ export const PROLOGUE_MEDIA=Object.freeze({
       "end": 259
     },
     {
-      "id": "voyager",
+      "id": "shuttle-carrier",
       "start": 259,
-      "end": 275
+      "end": 267
     },
     {
-      "id": "shuttle-carrier",
-      "start": 275,
+      "id": "voyager",
+      "start": 267,
       "end": 283
     },
     {
@@ -259,58 +259,65 @@ export const PROLOGUE_MEDIA=Object.freeze({
       "end": 437
     },
     {
-      "id": "mars-approach",
-      "start": 437,
-      "end": 445
-    },
-    {
-      "id": "perseverance-up",
-      "start": 445,
-      "end": 451
-    },
-    {
-      "id": "perseverance-down",
-      "start": 451,
-      "end": 457
-    },
-    {
-      "id": "webb",
-      "start": 457,
-      "end": 469
-    },
-    {
       "id": "falcon-launch",
-      "start": 469,
-      "end": 481
+      "start": 437,
+      "end": 449
     },
     {
       "id": "falcon-dual-return",
-      "start": 481,
-      "end": 495
+      "start": 449,
+      "end": 463
     },
     {
       "id": "falcon-return",
-      "start": 495,
-      "end": 507,
+      "start": 463,
+      "end": 475,
       "focus": {
         "mobile": "48% 50%",
         "desktop": "50% 50%"
       }
     },
     {
+      "id": "mars-approach",
+      "start": 475,
+      "end": 483
+    },
+    {
+      "id": "perseverance-up",
+      "start": 483,
+      "end": 489
+    },
+    {
+      "id": "perseverance-down",
+      "start": 489,
+      "end": 495
+    },
+    {
+      "id": "webb",
+      "start": 495,
+      "end": 507
+    },
+    {
       "id": "lunar-orbiter",
       "start": 507,
-      "end": 515
+      "end": 515,
+      "label": {
+        "en": "Epilogue · The legacy of exploration",
+        "fr": "Épilogue · L’héritage de l’exploration"
+      },
+      "historicalRole": "epilogue"
     },
     {
       "id": "mars",
       "start": 515,
-      "end": 523
+      "end": 523,
+      "historicalRole": "epilogue"
     },
     {
       "id": "hardware",
       "start": 523,
-      "end": 532
+      "end": 532,
+      "historicalRole": "epilogue"
     },
     {
       "id": "mars-pullout",
@@ -1227,9 +1234,9 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "quiet-v9-47",
+        "id": "quiet-v9-47-part-1",
         "start": 253.257333,
-        "end": 259.5,
+        "end": 259,
         "kind": "visual",
         "title": {
           "en": "",
@@ -1245,63 +1252,9 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "two-paths-after-apollo-1",
-        "start": 259.5,
-        "end": 262.465,
-        "kind": "narration",
-        "paragraph": "two-paths-after-apollo",
-        "title": {
-          "en": "After Apollo, exploration followed two paths."
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "two-paths-after-apollo-2",
-        "start": 262.465,
-        "end": 267.99,
-        "kind": "narration",
-        "paragraph": "two-paths-after-apollo",
-        "title": {
-          "en": "In 1977, the Voyager probes launched towards the outer planets,"
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "two-paths-after-apollo-3",
-        "start": 267.99,
-        "end": 271.396,
-        "kind": "narration",
-        "paragraph": "two-paths-after-apollo",
-        "title": {
-          "en": "carrying instruments far beyond the reach of human crews."
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "quiet-v9-51",
-        "start": 271.396,
-        "end": 275.1,
+        "id": "quiet-v9-51-part-1",
+        "start": 259,
+        "end": 259.1,
         "kind": "visual",
         "title": {
           "en": "",
@@ -1318,8 +1271,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "carrier-tests-1",
-        "start": 275.1,
-        "end": 282.857333,
+        "start": 259.1,
+        "end": 266.857333,
         "kind": "narration",
         "paragraph": "carrier-tests",
         "title": {
@@ -1335,8 +1288,116 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "quiet-v9-53",
-        "start": 282.857333,
+        "id": "quiet-v9-53-part-1",
+        "start": 266.857333,
+        "end": 267,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-47-part-2",
+        "start": 267,
+        "end": 267.5,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "two-paths-after-apollo-1",
+        "start": 267.5,
+        "end": 270.465,
+        "kind": "narration",
+        "paragraph": "two-paths-after-apollo",
+        "title": {
+          "en": "After Apollo, exploration followed two paths."
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "two-paths-after-apollo-2",
+        "start": 270.465,
+        "end": 275.99,
+        "kind": "narration",
+        "paragraph": "two-paths-after-apollo",
+        "title": {
+          "en": "In 1977, the Voyager probes launched towards the outer planets,"
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "two-paths-after-apollo-3",
+        "start": 275.99,
+        "end": 279.396,
+        "kind": "narration",
+        "paragraph": "two-paths-after-apollo",
+        "title": {
+          "en": "carrying instruments far beyond the reach of human crews."
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-51-part-2",
+        "start": 279.396,
+        "end": 283,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-53-part-2",
+        "start": 283,
         "end": 283.5,
         "kind": "visual",
         "title": {
@@ -1931,9 +1992,117 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "quiet-v9-86",
+        "id": "quiet-v9-86-part-1",
         "start": 435.406667,
-        "end": 437.5,
+        "end": 437,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-97-part-1",
+        "start": 437,
+        "end": 438,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "returning-launchers-1",
+        "start": 438,
+        "end": 439.025,
+        "kind": "narration",
+        "paragraph": "returning-launchers",
+        "title": {
+          "en": "Closer to Earth,"
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "returning-launchers-2",
+        "start": 439.025,
+        "end": 442.715,
+        "kind": "narration",
+        "paragraph": "returning-launchers",
+        "title": {
+          "en": "SpaceX, founded by Elon Musk in 2002,"
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "returning-launchers-3",
+        "start": 442.715,
+        "end": 445.693333,
+        "kind": "narration",
+        "paragraph": "returning-launchers",
+        "title": {
+          "en": "developed boosters that could land and fly again."
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-101-part-1",
+        "start": 445.693333,
+        "end": 475,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-86-part-2",
+        "start": 475,
+        "end": 475.5,
         "kind": "visual",
         "title": {
           "en": "",
@@ -1950,8 +2119,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "a-question-on-mars-1",
-        "start": 437.5,
-        "end": 443.166667,
+        "start": 475.5,
+        "end": 481.166667,
         "kind": "narration",
         "paragraph": "a-question-on-mars",
         "title": {
@@ -1968,8 +2137,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "quiet-v9-88",
-        "start": 443.166667,
-        "end": 445,
+        "start": 481.166667,
+        "end": 483,
         "kind": "visual",
         "title": {
           "en": "",
@@ -1988,8 +2157,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "id": "archive-perseverance-2021-edl-1",
         "archiveId": "perseverance-2021-edl",
         "archiveClause": 0,
-        "start": 445,
-        "end": 447.15,
+        "start": 483,
+        "end": 485.15,
         "kind": "quote",
         "title": {
           "en": "…to conduct the sky crane maneuver.",
@@ -2006,8 +2175,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "quiet-v9-90",
-        "start": 447.15,
-        "end": 449.25,
+        "start": 485.15,
+        "end": 487.25,
         "kind": "visual",
         "title": {
           "en": "",
@@ -2026,8 +2195,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "id": "archive-perseverance-2021-edl-2",
         "archiveId": "perseverance-2021-edl",
         "archiveClause": 1,
-        "start": 449.25,
-        "end": 451.3,
+        "start": 487.25,
+        "end": 489.3,
         "kind": "quote",
         "title": {
           "en": "Sky crane maneuver has started.",
@@ -2044,8 +2213,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "quiet-v9-92",
-        "start": 451.3,
-        "end": 453.15,
+        "start": 489.3,
+        "end": 491.15,
         "kind": "visual",
         "title": {
           "en": "",
@@ -2064,8 +2233,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "id": "archive-perseverance-2021-edl-3",
         "archiveId": "perseverance-2021-edl",
         "archiveClause": 2,
-        "start": 453.15,
-        "end": 455.2,
+        "start": 491.15,
+        "end": 493.2,
         "kind": "quote",
         "title": {
           "en": "About 20 meters off the surface.",
@@ -2082,8 +2251,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "quiet-v9-94",
-        "start": 455.2,
-        "end": 457.5,
+        "start": 493.2,
+        "end": 495.5,
         "kind": "visual",
         "title": {
           "en": "",
@@ -2100,8 +2269,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "looking-back-through-time-1",
-        "start": 457.5,
-        "end": 461.435,
+        "start": 495.5,
+        "end": 499.435,
         "kind": "narration",
         "paragraph": "looking-back-through-time",
         "title": {
@@ -2118,8 +2287,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "looking-back-through-time-2",
-        "start": 461.435,
-        "end": 465.108,
+        "start": 499.435,
+        "end": 503.108,
         "kind": "narration",
         "paragraph": "looking-back-through-time",
         "title": {
@@ -2135,9 +2304,9 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "quiet-v9-97",
-        "start": 465.108,
-        "end": 470,
+        "id": "quiet-v9-97-part-2",
+        "start": 503.108,
+        "end": 507,
         "kind": "visual",
         "title": {
           "en": "",
@@ -2153,62 +2322,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "returning-launchers-1",
-        "start": 470,
-        "end": 471.025,
-        "kind": "narration",
-        "paragraph": "returning-launchers",
-        "title": {
-          "en": "Closer to Earth,"
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "returning-launchers-2",
-        "start": 471.025,
-        "end": 474.715,
-        "kind": "narration",
-        "paragraph": "returning-launchers",
-        "title": {
-          "en": "SpaceX, founded by Elon Musk in 2002,"
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "returning-launchers-3",
-        "start": 474.715,
-        "end": 477.693333,
-        "kind": "narration",
-        "paragraph": "returning-launchers",
-        "title": {
-          "en": "developed boosters that could land and fly again."
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "quiet-v9-101",
-        "start": 477.693333,
+        "id": "quiet-v9-101-part-2",
+        "start": 507,
         "end": 507.5,
         "kind": "visual",
         "title": {
@@ -3285,9 +3400,9 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "quiet-v9-47",
+        "id": "quiet-v9-47-part-1",
         "start": 254.217333,
-        "end": 259.5,
+        "end": 259,
         "kind": "visual",
         "title": {
           "en": "",
@@ -3303,63 +3418,9 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "two-paths-after-apollo-1",
-        "start": 259.5,
-        "end": 262.805,
-        "kind": "narration",
-        "paragraph": "two-paths-after-apollo",
-        "title": {
-          "fr": "Après Apollo, l’exploration a suivi deux chemins."
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "two-paths-after-apollo-2",
-        "start": 262.805,
-        "end": 267.875,
-        "kind": "narration",
-        "paragraph": "two-paths-after-apollo",
-        "title": {
-          "fr": "En 1977, les sondes Voyager sont parties vers les planètes lointaines,"
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "two-paths-after-apollo-3",
-        "start": 267.875,
-        "end": 271.204,
-        "kind": "narration",
-        "paragraph": "two-paths-after-apollo",
-        "title": {
-          "fr": "emportant des instruments hors de portée des équipages humains."
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "quiet-v9-51",
-        "start": 271.204,
-        "end": 275.1,
+        "id": "quiet-v9-51-part-1",
+        "start": 259,
+        "end": 259.1,
         "kind": "visual",
         "title": {
           "en": "",
@@ -3376,8 +3437,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "carrier-tests-1",
-        "start": 275.1,
-        "end": 282.494667,
+        "start": 259.1,
+        "end": 266.494667,
         "kind": "narration",
         "paragraph": "carrier-tests",
         "title": {
@@ -3393,8 +3454,116 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "quiet-v9-53",
-        "start": 282.494667,
+        "id": "quiet-v9-53-part-1",
+        "start": 266.494667,
+        "end": 267,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-47-part-2",
+        "start": 267,
+        "end": 267.5,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "two-paths-after-apollo-1",
+        "start": 267.5,
+        "end": 270.805,
+        "kind": "narration",
+        "paragraph": "two-paths-after-apollo",
+        "title": {
+          "fr": "Après Apollo, l’exploration a suivi deux chemins."
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "two-paths-after-apollo-2",
+        "start": 270.805,
+        "end": 275.875,
+        "kind": "narration",
+        "paragraph": "two-paths-after-apollo",
+        "title": {
+          "fr": "En 1977, les sondes Voyager sont parties vers les planètes lointaines,"
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "two-paths-after-apollo-3",
+        "start": 275.875,
+        "end": 279.204,
+        "kind": "narration",
+        "paragraph": "two-paths-after-apollo",
+        "title": {
+          "fr": "emportant des instruments hors de portée des équipages humains."
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-51-part-2",
+        "start": 279.204,
+        "end": 283,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-53-part-2",
+        "start": 283,
         "end": 283.5,
         "kind": "visual",
         "title": {
@@ -3989,9 +4158,117 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "quiet-v9-86",
+        "id": "quiet-v9-86-part-1",
         "start": 435.854667,
-        "end": 437.5,
+        "end": 437,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-97-part-1",
+        "start": 437,
+        "end": 438,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "returning-launchers-1",
+        "start": 438,
+        "end": 438.875,
+        "kind": "narration",
+        "paragraph": "returning-launchers",
+        "title": {
+          "fr": "Plus près de nous,"
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "returning-launchers-2",
+        "start": 438.875,
+        "end": 442.52,
+        "kind": "narration",
+        "paragraph": "returning-launchers",
+        "title": {
+          "fr": "SpaceX, fondée par Elon Musk en 2002,"
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "returning-launchers-3",
+        "start": 442.52,
+        "end": 446.184,
+        "kind": "narration",
+        "paragraph": "returning-launchers",
+        "title": {
+          "fr": "développait des boosters capables de se poser et de revoler."
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-101-part-1",
+        "start": 446.184,
+        "end": 475,
+        "kind": "visual",
+        "title": {
+          "en": "",
+          "fr": ""
+        },
+        "kicker": {
+          "en": "",
+          "fr": ""
+        },
+        "sourceLabel": {
+          "en": "",
+          "fr": ""
+        }
+      },
+      {
+        "id": "quiet-v9-86-part-2",
+        "start": 475,
+        "end": 475.5,
         "kind": "visual",
         "title": {
           "en": "",
@@ -4008,8 +4285,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "a-question-on-mars-1",
-        "start": 437.5,
-        "end": 442.206667,
+        "start": 475.5,
+        "end": 480.206667,
         "kind": "narration",
         "paragraph": "a-question-on-mars",
         "title": {
@@ -4026,8 +4303,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "quiet-v9-88",
-        "start": 442.206667,
-        "end": 445,
+        "start": 480.206667,
+        "end": 483,
         "kind": "visual",
         "title": {
           "en": "",
@@ -4046,8 +4323,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "id": "archive-perseverance-2021-edl-1",
         "archiveId": "perseverance-2021-edl",
         "archiveClause": 0,
-        "start": 445,
-        "end": 447.15,
+        "start": 483,
+        "end": 485.15,
         "kind": "quote",
         "title": {
           "en": "…to conduct the sky crane maneuver.",
@@ -4064,8 +4341,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "quiet-v9-90",
-        "start": 447.15,
-        "end": 449.25,
+        "start": 485.15,
+        "end": 487.25,
         "kind": "visual",
         "title": {
           "en": "",
@@ -4084,8 +4361,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "id": "archive-perseverance-2021-edl-2",
         "archiveId": "perseverance-2021-edl",
         "archiveClause": 1,
-        "start": 449.25,
-        "end": 451.3,
+        "start": 487.25,
+        "end": 489.3,
         "kind": "quote",
         "title": {
           "en": "Sky crane maneuver has started.",
@@ -4102,8 +4379,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "quiet-v9-92",
-        "start": 451.3,
-        "end": 453.15,
+        "start": 489.3,
+        "end": 491.15,
         "kind": "visual",
         "title": {
           "en": "",
@@ -4122,8 +4399,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
         "id": "archive-perseverance-2021-edl-3",
         "archiveId": "perseverance-2021-edl",
         "archiveClause": 2,
-        "start": 453.15,
-        "end": 455.2,
+        "start": 491.15,
+        "end": 493.2,
         "kind": "quote",
         "title": {
           "en": "About 20 meters off the surface.",
@@ -4140,8 +4417,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "quiet-v9-94",
-        "start": 455.2,
-        "end": 457.5,
+        "start": 493.2,
+        "end": 495.5,
         "kind": "visual",
         "title": {
           "en": "",
@@ -4158,8 +4435,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "looking-back-through-time-1",
-        "start": 457.5,
-        "end": 461.74,
+        "start": 495.5,
+        "end": 499.74,
         "kind": "narration",
         "paragraph": "looking-back-through-time",
         "title": {
@@ -4176,8 +4453,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
       },
       {
         "id": "looking-back-through-time-2",
-        "start": 461.74,
-        "end": 464.788,
+        "start": 499.74,
+        "end": 502.788,
         "kind": "narration",
         "paragraph": "looking-back-through-time",
         "title": {
@@ -4193,9 +4470,9 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "quiet-v9-97",
-        "start": 464.788,
-        "end": 470,
+        "id": "quiet-v9-97-part-2",
+        "start": 502.788,
+        "end": 507,
         "kind": "visual",
         "title": {
           "en": "",
@@ -4211,62 +4488,8 @@ export const PROLOGUE_MEDIA=Object.freeze({
         }
       },
       {
-        "id": "returning-launchers-1",
-        "start": 470,
-        "end": 470.875,
-        "kind": "narration",
-        "paragraph": "returning-launchers",
-        "title": {
-          "fr": "Plus près de nous,"
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "returning-launchers-2",
-        "start": 470.875,
-        "end": 474.52,
-        "kind": "narration",
-        "paragraph": "returning-launchers",
-        "title": {
-          "fr": "SpaceX, fondée par Elon Musk en 2002,"
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "returning-launchers-3",
-        "start": 474.52,
-        "end": 478.184,
-        "kind": "narration",
-        "paragraph": "returning-launchers",
-        "title": {
-          "fr": "développait des boosters capables de se poser et de revoler."
-        },
-        "kicker": {
-          "en": "",
-          "fr": ""
-        },
-        "sourceLabel": {
-          "en": "",
-          "fr": ""
-        }
-      },
-      {
-        "id": "quiet-v9-101",
-        "start": 478.184,
+        "id": "quiet-v9-101-part-2",
+        "start": 507,
         "end": 507.5,
         "kind": "visual",
         "title": {
@@ -4447,10 +4670,11 @@ export const PROLOGUE_MEDIA=Object.freeze({
     ]
   },
   "offline": {
-    "id": "relic-documentary-v9-0-hd50-f3644fc3b561ed7ddecc"
+    "id": "relic-documentary-v9-1-hd50-891ade47dfb62da43bc1"
   },
   "width": 1920,
   "height": 1080,
   "fps": 50
-});
+}
+);
 export const PROLOGUE=Object.freeze(PROLOGUE_MEDIA.captions.en);
