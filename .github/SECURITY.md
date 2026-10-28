@@ -14,7 +14,7 @@ Ordinary interface bugs and feature requests can use public issues.
 - A browser-facing token is visible in the served JavaScript. Limit it to the required provider assets and permitted deployment origins; do not use account-administration or server-only credentials.
 - Keep the configured private module out of public exports. The public RELIC repository retains a separate interface for each user's own key.
 - Rotate or revoke the provider token at its provider when access changes or a token is disclosed. A source edit does not revoke the previous token or erase existing Git history.
-- Keep environment files, service-account credentials, certificates, caches and logs out of Git. The blank `.env.example` documents only the server's separate JPL contact setting.
+- Keep environment files, service-account credentials, certificates, caches and logs out of Git. The blank `config/.env.example` documents only the server's separate JPL contact setting.
 - Do not add public endpoints that return server-only credentials, and do not cache credential-bearing API responses in the application service worker.
 
 ## Hosted installations

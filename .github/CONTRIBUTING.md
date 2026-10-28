@@ -11,7 +11,7 @@ For a substantial change, open an issue before investing in a large implementati
 ## Submit a change
 
 1. Fork the repository and create a branch for one focused change.
-2. Follow the local setup in [README.md](README.md).
+2. Follow the local setup in [README.md](../README.md).
 3. Make the change, retaining third-party notices and source credits.
 4. Run the relevant checks and describe the results in your pull request.
 5. Explain the concrete problem and resulting behavior. Add phone and desktop screenshots when they help reviewers assess a visual change.
@@ -37,7 +37,7 @@ Check both the full Python-server mode and the static fallback when your change 
 
 ## Code, credentials and licensing
 
-This private edition keeps its author-controlled, browser-facing Cesium token in `src/core/api-config.js`. Keep that module separate from the public RELIC edition, which retains its own-key interface. Do not copy a configured private module into a public export. Keep credentials out of fixtures, commit messages, screenshots and issues. Server-only credentials and service-account files do not belong in browser code. Server settings belong in an ignored local environment file or your hosting environment; the blank `.env.example` documents the separate JPL contact.
+This private edition keeps its author-controlled, browser-facing Cesium token in `src/core/api-config.js`. Keep that module separate from the public RELIC edition, which retains its own-key interface. Do not copy a configured private module into a public export. Keep credentials out of fixtures, commit messages, screenshots and issues. Server-only credentials and service-account files do not belong in browser code. Server settings belong in an ignored local environment file or your hosting environment; the blank `config/.env.example` documents the separate JPL contact.
 
 By submitting an original contribution for inclusion, you agree to license it under Apache 2.0. Identify any third-party material you introduce and supply its source, applicable license and required notices; the project's license does not override those terms.
 
