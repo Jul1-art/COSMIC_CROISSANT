@@ -37,8 +37,10 @@ Check both the full Python-server mode and the static fallback when your change 
 
 ## Code, credentials and licensing
 
-This private edition keeps its author-controlled, browser-facing Cesium token in `api-config.js`. Keep that module separate from the public RELIC edition, which retains its own-key interface. Do not copy a configured private module into a public export. Keep credentials out of fixtures, commit messages, screenshots and issues. Server-only credentials and service-account files do not belong in browser code. Server settings belong in an ignored local environment file or your hosting environment; the blank `.env.example` documents the separate JPL contact.
+This private edition keeps its author-controlled, browser-facing Cesium token in `src/core/api-config.js`. Keep that module separate from the public RELIC edition, which retains its own-key interface. Do not copy a configured private module into a public export. Keep credentials out of fixtures, commit messages, screenshots and issues. Server-only credentials and service-account files do not belong in browser code. Server settings belong in an ignored local environment file or your hosting environment; the blank `.env.example` documents the separate JPL contact.
 
 By submitting an original contribution for inclusion, you agree to license it under Apache 2.0. Identify any third-party material you introduce and supply its source, applicable license and required notices; the project's license does not override those terms.
 
 Be specific, patient and respectful in reviews. Explain the behavior or evidence behind a suggestion, and help others reproduce your findings.
+
+The default Python suite uses local fixtures. Set `NASA_ATLAS_LIVE_TESTS=1` to enable upstream NASA/NOAA integration checks; JPL also requires `NASA_ATLAS_CONTACT`. Symbolic-link checks report a skip when the operating system cannot create their fixtures.

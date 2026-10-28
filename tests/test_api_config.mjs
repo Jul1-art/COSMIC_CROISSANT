@@ -3,8 +3,8 @@ import test from 'node:test';
 import vm from 'node:vm';
 import { readFile } from 'node:fs/promises';
 
-const configSource = await readFile(new URL('../api-config.js', import.meta.url), 'utf8');
-const googleSource = await readFile(new URL('../google-3d.js', import.meta.url), 'utf8');
+const configSource = await readFile(new URL('../src/core/api-config.js', import.meta.url), 'utf8');
+const googleSource = await readFile(new URL('../src/core/google-3d.js', import.meta.url), 'utf8');
 const fixtureToken = 'exampleHeader.examplePayload.exampleSignature';
 
 async function privateConfig(context, token = '') {
@@ -60,7 +60,7 @@ async function googleView({ token = '', rejectProvider = false } = {}) {
   const module = new vm.SourceTextModule(googleSource, { context });
   await module.link(name => {
     if (name === './api-config.js') return local;
-    if (name === './vendor/cesium/index.js') return provider;
+    if (name === '../../vendor/cesium/index.js') return provider;
     throw new Error('Unexpected import: ' + name);
   });
   await module.evaluate();

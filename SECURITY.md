@@ -10,7 +10,7 @@ Ordinary interface bugs and feature requests can use public issues.
 
 ## Private provider configuration
 
-- The private edition reads its author-controlled Cesium ion browser token from `api-config.js`. It has no API-key form and does not persist provider tokens in browser local storage.
+- The private edition reads its author-controlled Cesium ion browser token from `src/core/api-config.js`. It has no API-key form and does not persist provider tokens in browser local storage.
 - A browser-facing token is visible in the served JavaScript. Limit it to the required provider assets and permitted deployment origins; do not use account-administration or server-only credentials.
 - Keep the configured private module out of public exports. The public RELIC repository retains a separate interface for each user's own key.
 - Rotate or revoke the provider token at its provider when access changes or a token is disclosed. A source edit does not revoke the previous token or erase existing Git history.

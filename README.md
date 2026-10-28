@@ -2,7 +2,7 @@
 
 **A privately configured journey through the Solar System and the traces of space exploration.**
 
-This edition keeps provider configuration in `api-config.js`. Visitors are never asked to enter API keys, and provider tokens are not stored in browser local storage. The [public RELIC repository](https://github.com/Jul1-art/RELIC) keeps its separate bring-your-own-key interface.
+This edition keeps provider configuration in `src/core/api-config.js`. Visitors are never asked to enter API keys, and provider tokens are not stored in browser local storage. The [public RELIC repository](https://github.com/Jul1-art/RELIC) keeps its separate bring-your-own-key interface.
 
 RELIC combines an interactive Solar System atlas, detailed views of Earth, the Moon and Mars, and a bilingual documentary introduction. Explore measured terrain, follow the history behind missions, and help improve the project through ideas, issues and pull requests.
 
@@ -28,19 +28,19 @@ cd Hackathon_NASA
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -r requirements.txt
-python3 terrain_server.py
+python3 -m server
 ```
 
 The current 9-minute 29-second film is delivered as local HLS segments at 1920 × 1080 and 50 frames per second, with English and French audio. Playback uses browser-native HLS or the bundled HLS player. The offline action saves and verifies the complete bilingual segmented edition. Older MP4 transport parts remain in source history but are not the active HD edition.
 
 Open **http://localhost:8000/**. On Windows, use the corresponding virtual-environment activation command and `python` if `python3` is unavailable.
 
-Run `terrain_server.py` for the complete experience. A generic static HTTP server does not implement the generated elevation, live-data or place-search endpoints. Some upstream terrain products are large and are downloaded on first use, then reused from the server cache. External imagery, geocoding and current data require a network connection.
+Run `python -m server` for the complete experience. A generic static HTTP server does not implement the generated elevation, live-data or place-search endpoints. Some upstream terrain products are large and are downloaded on first use, then reused from the server cache. External imagery, geocoding and current data require a network connection.
 
 To choose a different port, set `NASA_ATLAS_PORT` before starting the server. For example:
 
 ```sh
-NASA_ATLAS_PORT=8080 python3 terrain_server.py
+NASA_ATLAS_PORT=8080 python3 -m server
 ```
 
 ### Enable current JPL data
@@ -57,18 +57,18 @@ On a POSIX shell:
 set -a
 . ./.env
 set +a
-python3 terrain_server.py
+python3 -m server
 ```
 
 The contact is a server setting, not an API key, and remains separate from the browser provider configuration. With no valid contact configured, the app uses available cached positions with their timestamps or reports that current data is unavailable instead of sending anonymous JPL requests.
 
 ## Private provider configuration
 
-The application reads the author-controlled Cesium ion browser token directly from `api-config.js`. There is no API-key form, save/forget control or browser-token storage. The optional Google 3D button uses that configuration directly.
+The application reads the author-controlled Cesium ion browser token directly from `src/core/api-config.js`. There is no API-key form, save/forget control or browser-token storage. The optional Google 3D button uses that configuration directly.
 
 | Service | Required? | Configuration |
 | --- | --- | --- |
-| Cesium ion | Optional, for Google Photorealistic 3D Tiles | The maintainer configures the browser token in the private `api-config.js` module. An empty or unavailable configuration leaves the NASA rendering path usable. |
+| Cesium ion | Optional, for Google Photorealistic 3D Tiles | The maintainer configures the browser token in the private `src/core/api-config.js` module. An empty or unavailable configuration leaves the NASA rendering path usable. |
 | NASA/JPL, NOAA and public NASA Trek/GIBS data | No API key for the implemented endpoints | Keep the default sources. Configure the separate server contact above for JPL requests. |
 | Google Cloud API key | Not used by this integration | The optional Google 3D layer is accessed through Cesium ion. |
 
@@ -86,7 +86,7 @@ For a static deployment:
 node tools/build_static.mjs
 ```
 
-Publish the resulting `dist/` directory. A static host serves the interface, bundled assets and browser-accessible external layers; it does not execute Python. In particular, `/api/height`, `/api/live/atlas`, `/api/places` and `/api/imagery/moon/tycho` are unavailable unless you separately deploy and route a compatible backend. The browser uses available imagery, an unmeasured ellipsoid, labelled orbital-model estimates, timestamped public NOAA readings and browser geocoding when the Python endpoints are absent. The optional Cesium layer uses the token configured in the private `api-config.js` module.
+Publish the resulting `dist/` directory. A static host serves the interface, bundled assets and browser-accessible external layers; it does not execute Python. In particular, `/api/height`, `/api/live/atlas`, `/api/places` and `/api/imagery/moon/tycho` are unavailable unless you separately deploy and route a compatible backend. The browser uses available imagery, an unmeasured ellipsoid, labelled orbital-model estimates, timestamped public NOAA readings and browser geocoding when the Python endpoints are absent. The optional Cesium layer uses the token configured in the private `src/core/api-config.js` module.
 
 Third-party tile services may restrict redistribution, caching or offline use. Keep their on-screen attributions and review their terms before changing how assets are served.
 
@@ -104,7 +104,7 @@ Live JPL tests may be skipped when no contact is configured. For visual changes,
 
 Everyone is welcome to propose improvements, suggest missions or datasets, report bugs and submit pull requests. Start with [Contributing](CONTRIBUTING.md). Include reliable references for scientific additions and keep measured data, approximations, historical imagery and fictional simulations clearly distinguished.
 
-Keep provider tokens out of issues, screenshots, test fixtures and example configuration. Only the author-controlled browser token belongs in this private edition's `api-config.js`; server-only credentials and service-account files must stay outside the application source. See [Security](SECURITY.md) for reporting guidance.
+Keep provider tokens out of issues, screenshots, test fixtures and example configuration. Only the author-controlled browser token belongs in this private edition's `src/core/api-config.js`; server-only credentials and service-account files must stay outside the application source. See [Security](SECURITY.md) for reporting guidance.
 
 ## License and credits
 
@@ -116,7 +116,7 @@ The documentary and other third-party media are **not relicensed as Apache 2.0**
 
 RELIC est un projet open source ouvert aux idées, signalements et contributions de toutes et tous. Le code original est sous licence Apache 2.0 ; les médias et bibliothèques tiers conservent leurs propres conditions.
 
-Installez Python et les dépendances indiquées plus haut, puis lancez `python3 terrain_server.py` et ouvrez `http://localhost:8000/`. Le mode NASA de base n'exige aucune clé API. Pour les données JPL actualisées, renseignez votre propre contact public côté serveur. Google 3D utilise directement le jeton Cesium ion configuré par l’auteur dans le module privé `api-config.js` ; aucun formulaire ni stockage local de clé n’est proposé. La version publique RELIC conserve son propre formulaire pour les clés de chaque utilisateur. Ne recopiez pas le module privé dans cette version publique.
+Installez Python et les dépendances indiquées plus haut, puis lancez `python3 -m server` et ouvrez `http://localhost:8000/`. Le mode NASA de base n'exige aucune clé API. Pour les données JPL actualisées, renseignez votre propre contact public côté serveur. Google 3D utilise directement le jeton Cesium ion configuré par l’auteur dans le module privé `src/core/api-config.js` ; aucun formulaire ni stockage local de clé n’est proposé. La version publique RELIC conserve son propre formulaire pour les clés de chaque utilisateur. Ne recopiez pas le module privé dans cette version publique.
 
 Une publication statique reste possible avec `node tools/build_static.mjs`, mais elle n'exécute pas les routes Python de relief, de recherche et de données actualisées.
 
@@ -154,3 +154,7 @@ Earth, Moon and Mars share a responsive command bar, location search and compact
 GitHub Pages serves static files and cannot run the Python API. The browser detects that mode, avoids missing `/api` requests and falls back to clearly labelled NASA/JPL model positions, timestamped NOAA solar-wind observations, public geocoding, local destinations and coordinates. Model values are estimates, not telemetry; expired measurements are omitted. Without a terrain backend, the globe is an unmeasured ellipsoid with imagery. Optional Google 3D remains a separate provider layer.
 
 Build with `node tools/build_static.mjs` and publish only `dist/`; the build includes the current HD HLS edition and omits retired film assets. A custom GitHub Pages workflow must use **Settings → Pages → Source: GitHub Actions**. Branch/Jekyll publication serves the source tree without that build. GitHub Pages can still impose host-level IP or bandwidth limits; the application reduces request bursts, reuses cached modules and honours `Retry-After`, but cannot disable the hosting service’s protection.
+
+## Project structure
+
+See [the architecture guide](docs/ARCHITECTURE.md) for the source folders, entry points, server and deployment layout.

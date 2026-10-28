@@ -1,4 +1,4 @@
-import * as Cesium from './vendor/cesium/index.js';
+import * as Cesium from '../../vendor/cesium/index.js';
 Cesium.Ion.defaultAccessToken = ''; // Optional ion assets use this private edition's configured token explicitly.
 import { getCesiumToken, validateCesiumToken } from './api-config.js';
 
