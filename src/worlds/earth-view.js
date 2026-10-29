@@ -8,7 +8,7 @@ import { createPlaceSearch } from '../search/place-search.js?v=5';
 import { startLiveData, getLanguage, onLanguageChange } from '../atlas/atlas-live.js?v=3';
 import { configureWorldPerformance, cameraDuration, flyToLocation, createOverviewFraming } from './world-performance.js';
 import { createViewLoading } from '../ui/view-loading.js';
-import { initializeProviderCredits } from '../ui/provider-credits.js';
+import { initializeProviderCredits } from '../ui/provider-credits.js?v=14';
 
 const $ = selector => document.querySelector(selector);
 const viewLoading = createViewLoading({ element:$('#earth-loading'), errorElement:$('#earth-error'), getLanguage });

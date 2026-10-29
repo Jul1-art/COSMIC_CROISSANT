@@ -1,7 +1,7 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'solar-lighting-67p-20261029-private';
+const VERSION = 'solar-simulation-20261029-private';
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
 const APP_PREFIX = `relic-atlas-${encodeURIComponent(SCOPE.pathname)}-`;
@@ -28,6 +28,7 @@ const CORE = [
 // This also covers a first visit whose early imports preceded worker control.
 const OFFLINE_CORE = [
   ...CORE,
+  'src/atlas/simulation-clock.js','src/atlas/simulation-controls.js','src/atlas/simulation-controls.css','src/atlas/globe-navigation.js','src/atlas/surface-imagery.js','src/atlas/surface-tile-cache.js',
   'src/atlas/comet-67p.js','src/atlas/comet-ephemeris.js','src/atlas/comet-inspector.js','src/atlas/comet-67p.css',
   'assets/comets/67p/ephemeris.json','assets/comets/67p/provenance.json','assets/comets/67p/shape-shap5-24k.obj','assets/comets/67p/philae-observed.jpg','assets/comets/67p/rosetta-observed.jpg',
   'src/atlas/moon-visibility.js','src/atlas/orbital-navigation.js','src/atlas/orbit-directions.js','src/atlas/solar-illumination.js','src/atlas/body-orientation-data.js',

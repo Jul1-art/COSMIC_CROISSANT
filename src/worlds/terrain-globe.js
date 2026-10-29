@@ -9,7 +9,7 @@ import { createPlaceSearch } from '../search/place-search.js?v=5';
 import { startLiveData, getLanguage, onLanguageChange } from '../atlas/atlas-live.js?v=3';
 import { configureWorldPerformance, cameraDuration, flyToLocation, createOverviewFraming, TOP_DOWN_PITCH } from './world-performance.js';
 import { createViewLoading } from '../ui/view-loading.js';
-import { initializeProviderCredits } from '../ui/provider-credits.js';
+import { initializeProviderCredits } from '../ui/provider-credits.js?v=14';
 import { backendFeatureAvailable, markBackendFeatureUnavailable } from '../core/atlas-services.js';
 
 const $ = selector => document.querySelector(selector);
@@ -452,7 +452,7 @@ function initialLocation() {
   const lat = Number(query.get('lat'));
   const lon = Number(query.get('lon'));
   if (query.has('lat') && query.has('lon') && Number.isFinite(lat) && Number.isFinite(lon)
-    && lat >= -90 && lat <= 90 && lon >= -180 && lon <= 180) return { lat, lon };
+    && lat>=-90&&lat<=90&&lon>=-180&&lon<=180){const range=Number(query.get('range'));return {lat,lon,...(Number.isFinite(range)&&range>=100&&range<=55000000?{range}:{})};}
   const site = query.get('site');
   const item = (body === 'earth' ? EARTH_SITES : PLANET_SITES[body]).find(candidate => candidate.id === site);
   return item || null;
