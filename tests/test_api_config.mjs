@@ -4,6 +4,7 @@ import vm from 'node:vm';
 import { readFile } from 'node:fs/promises';
 
 const configSource = await readFile(new URL('../src/core/api-config.js', import.meta.url), 'utf8');
+const earthSource = await readFile(new URL('../src/worlds/ion-earth.js', import.meta.url), 'utf8');
 const googleSource = await readFile(new URL('../src/core/google-3d.js', import.meta.url), 'utf8');
 const fixtureToken = 'exampleHeader.examplePayload.exampleSignature';
 
@@ -44,10 +45,11 @@ test('an empty or malformed configuration cannot activate the keyed service', as
 
 async function googleView({ token = '', rejectProvider = false } = {}) {
   const requests = [], warnings = [], states = [], removed = [];
-  const context = isolatedContext({ console: { warn: (...args) => warnings.push(args) } });
+  const context = isolatedContext({ console: { warn: (...args) => warnings.push(args) }, setTimeout, clearTimeout });
   const local = await privateConfig(context, token);
   const ion = { defaultAccessToken: 'unused-upstream-placeholder' };
-  const tiles = { show: true, destroyed: false, destroy() { this.destroyed = true; }, tileFailed: { addEventListener() {} } };
+  const tileEvent = () => { const callbacks=new Set();return {addEventListener(callback){callbacks.add(callback);return()=>callbacks.delete(callback);},raise(){for(const callback of [...callbacks])callback();}}; };
+  const tiles = { show: true, destroyed: false, destroy() { this.destroyed = true; }, tileFailed:tileEvent(), tileVisible:tileEvent(), initialTilesLoaded:tileEvent(), loadProgress:tileEvent() };
   const provider = new vm.SyntheticModule(['Ion', 'IonResource', 'Cesium3DTileset'], function() {
     this.setExport('Ion', ion);
     this.setExport('IonResource', { async fromAssetId(id, options) {
@@ -57,9 +59,12 @@ async function googleView({ token = '', rejectProvider = false } = {}) {
     } });
     this.setExport('Cesium3DTileset', { async fromUrl() { return tiles; } });
   }, { context });
+  const earth = new vm.SourceTextModule(earthSource, {context});
+  await earth.link(() => { throw new Error('Earth tiles helper has no runtime dependencies.'); });
   const module = new vm.SourceTextModule(googleSource, { context });
   await module.link(name => {
     if (name === './api-config.js') return local;
+    if (name === '../worlds/ion-earth.js') return earth;
     if (name === '../../vendor/cesium/index.js') return provider;
     throw new Error('Unexpected import: ' + name);
   });
@@ -77,11 +82,15 @@ test('missing private configuration keeps the keyless globe usable and never req
   assert.equal(ion.defaultAccessToken, '');
 });
 
-test('the configured application token activates Google 3D without prompting or persisting it', async () => {
+test('the configured application token activates Google 3D without prompting or persisting it', async t => {
   const { view, requests, viewer, tiles, removed } = await googleView({ token: fixtureToken });
+  t.after(()=>view.destroy());
   assert.equal(await view.enable('ignoredCallerValue'), true);
   assert.equal(requests.length, 1);
   assert.equal(requests[0].options.accessToken, fixtureToken);
+  assert.equal(viewer.scene.globe.show, true,'The fallback remains visible until actual content is ready.');
+  tiles.tileVisible.raise();tiles.initialTilesLoaded.raise();
+  assert.equal(view.active,true);
   assert.equal(viewer.scene.globe.show, false);
   view.disable();
   assert.equal(viewer.scene.globe.show, true);
