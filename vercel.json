@@ -5,7 +5,7 @@
       "root": "server",
       "runtime": "python",
       "buildCommand": "pip install -r requirements.txt",
-      "entrypoint": "python -m server",
+      "entrypoint": "python __main__.py",
       "bindings": [
         {
           "type": "service",
