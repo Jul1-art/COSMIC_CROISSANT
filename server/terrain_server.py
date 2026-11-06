@@ -497,9 +497,33 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 def main():
-    from tools.restore_film import restore_films
-    if not (ROOT / "intro/assets/prologue/encoding-v9-hd50.json").is_file():
-        restore_films(ROOT)
+    import os
+    import json
+    
+    film_url = os.environ.get("FILM_SERVICE_URL")
+    
+    if film_url and not (ROOT / "intro/assets/prologue/encoding-v9-hd50.json").is_file():
+        try:
+            import urllib.request
+            data = json.dumps({"root": str(ROOT)}).encode("utf-8")
+            req = urllib.request.Request(
+                f"{film_url}/restore",
+                data=data,
+                headers={"Content-Type": "application/json"},
+                method="POST"
+            )
+            with urllib.request.urlopen(req, timeout=30) as response:
+                result = json.loads(response.read())
+        except Exception:
+            pass
+    else:
+        try:
+            from tools.restore_film import restore_films
+            if not (ROOT / "intro/assets/prologue/encoding-v9-hd50.json").is_file():
+                restore_films(ROOT)
+        except ImportError:
+            pass
+    
     ThreadingHTTPServer(("0.0.0.0", int(os.environ.get("NASA_ATLAS_PORT", "8000"))), Handler).serve_forever()
 
 
