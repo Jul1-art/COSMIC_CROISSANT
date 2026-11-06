@@ -5,6 +5,7 @@
       "root": "server",
       "runtime": "python",
       "buildCommand": "pip install -r requirements.txt",
+      "entrypoint": "python -m server",
       "bindings": [
         {
           "type": "service",
@@ -17,7 +18,8 @@
     "film": {
       "root": "tools/film",
       "runtime": "python",
-      "buildCommand": "pip install -r requirements.txt"
+      "buildCommand": "pip install -r requirements.txt",
+      "entrypoint": "python -m ."
     }
   },
   "rewrites": [
