@@ -19,7 +19,7 @@
       "root": "tools/film",
       "runtime": "python",
       "buildCommand": "pip install -r requirements.txt",
-      "entrypoint": "python -m ."
+      "entrypoint": "python __main__.py"
     }
   },
   "rewrites": [
