@@ -12,9 +12,11 @@ const FACINGS = {
   back_right: ['side', false],
 };
 
+const SPRITE_RELEASE = 1;
+
 const FRAMES = {
-  front: new URL('../assets/spacey/spacey-front.png', import.meta.url).href,
-  side: new URL('../assets/spacey/spacey-side.png', import.meta.url).href,
+  front: new URL(`../assets/spacey/spacey-front.png?v=${SPRITE_RELEASE}`, import.meta.url).href,
+  side: new URL(`../assets/spacey/spacey-side.png?v=${SPRITE_RELEASE}`, import.meta.url).href,
 };
 
 // One pixel-art astronaut. The front and three-quarter art share the same
