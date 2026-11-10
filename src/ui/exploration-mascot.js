@@ -76,8 +76,8 @@ export function createExplorationMascot({loading,getLanguage,onLanguageChange}) 
     mascot:button,
     setPose:(direction,state)=>sprite.setPose(direction,state),
     moveTo,
-    onActiveChange(active){
-      if(active){
+    onActiveChange(active,tourRunning=active){
+      if(tourRunning){
         if(activePointerId!==null){
           try{button.releasePointerCapture(activePointerId);}catch{}
           activePointerId=null;
@@ -86,7 +86,7 @@ export function createExplorationMascot({loading,getLanguage,onLanguageChange}) 
         button.classList.remove('mascot-dragging');
       }
       const before=button.getBoundingClientRect();
-      guiding=active;
+      guiding=tourRunning;
       button.classList.toggle('spacey-guiding',active);
       if(active){
         const after=button.getBoundingClientRect();

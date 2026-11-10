@@ -243,7 +243,7 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
     if(disposed||suspended||active||invited||readSaved())return;
     invited=true;layer.hidden=false;layer.dataset.step='invite';targets=[];
     startShadeTracking();
-    document.body.classList.add('spacey-guiding');onActiveChange(true);
+    document.body.classList.add('spacey-guiding');onActiveChange(true,false);
     text.textContent='Take a quick tour of RELIC, then explore at your own pace.';
     progress.textContent='';chips.replaceChildren();next.disabled=true;next.textContent='Start tour';bubble.setAttribute('aria-busy','true');
     layer.querySelector('.spacey-tour-skip').textContent='Skip';
