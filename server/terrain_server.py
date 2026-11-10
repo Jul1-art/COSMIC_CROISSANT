@@ -6,11 +6,13 @@ reaches the browser as small 65×65 float32 tiles.
 
 from __future__ import annotations
 
+import contextlib
 import io
 import json
 import math
 import os
 import re
+import socket
 import threading
 import zipfile
 from concurrent.futures import ThreadPoolExecutor
@@ -524,7 +526,24 @@ def main():
         except ImportError:
             pass
     
-    ThreadingHTTPServer(("0.0.0.0", int(os.environ.get("NASA_ATLAS_PORT", "8000"))), Handler).serve_forever()
+    port = int(os.environ.get("NASA_ATLAS_PORT", "8000"))
+    server = None
+    if getattr(socket, "has_ipv6", False):
+        try:
+            class DualStackServer(ThreadingHTTPServer):
+                address_family = socket.AF_INET6
+
+                def server_bind(self):
+                    with contextlib.suppress(Exception):
+                        self.socket.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
+                    super().server_bind()
+
+            server = DualStackServer(("::", port), Handler)
+        except Exception:
+            server = None
+    if server is None:
+        server = ThreadingHTTPServer(("0.0.0.0", port), Handler)
+    server.serve_forever()
 
 
 if __name__ == "__main__":
