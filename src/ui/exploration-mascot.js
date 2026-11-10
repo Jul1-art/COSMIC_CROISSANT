@@ -113,7 +113,7 @@ export function createExplorationMascot({loading,getLanguage,onLanguageChange}) 
 
   return {
     explore(body){
-      if(!guiding&&!button.hidden)sprite.setPose(body==='overview'?'back_right':'front_right','idle');
+      if(!guiding&&!button.hidden)sprite.setPose('front_right','idle');
     },
     setSuspended(value){
       if(suspended===value)return;
