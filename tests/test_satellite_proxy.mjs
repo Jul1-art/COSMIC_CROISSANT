@@ -33,3 +33,17 @@ test('unsupported groups, cross-site requests, arbitrary URLs and writes are rej
 test('HTML upstream errors are not cached as orbital data',async()=>{
  const proxy=createCelestrakProxy({fetchImpl:async()=>new Response('<html>temporary error</html>')});assert.equal((await proxy(new Request('https://relic.test/api/celestrak/active'))).status,503);
 });
+
+test('the relay follows CelesTrak redirects instead of treating them as an outage',async()=>{
+ const {createServer}=await import('node:http');
+ const server=createServer((req,res)=>{
+   if(req.url==='/start'){res.writeHead(302,{Location:'/elements'});res.end();}
+   else{res.writeHead(200,{'Content-Type':'text/plain'});res.end(tle);}
+ });
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+ try{
+   const proxy=createCelestrakProxy({fetchImpl:(url,options)=>fetch(`http://127.0.0.1:${server.address().port}/start`,options)});
+   const response=await proxy(new Request('https://relic.test/api/celestrak/stations'));
+   assert.equal(response.status,200);assert.equal(await response.text(),tle);
+ }finally{await new Promise(resolve=>server.close(resolve));}
+});
