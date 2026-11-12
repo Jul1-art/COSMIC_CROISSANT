@@ -1,3 +1,4 @@
+import {createEarthSatellites} from '../satellites/cesium-layer.js';
 import * as Cesium from '../../vendor/cesium/index.js';
 Cesium.Ion.defaultAccessToken = ''; // RELIC uses only a user-supplied token for optional ion assets.
 import { EARTH_SITES, NASA_IMAGERY } from '../atlas/nasa-worlds.js';
@@ -16,6 +17,7 @@ const $ = selector => document.querySelector(selector);
 const viewLoading = createViewLoading({ element:$('#earth-loading'), errorElement:$('#earth-error'), getLanguage });
 const input = $('#place-input');
 
+let satellites;
 let viewer;
 let inspection;
 let disposeSceneTheme = () => {};
@@ -136,6 +138,9 @@ async function start() {
       showRenderLoopErrors:false,
       msaaSamples:window.innerWidth <= 760 ? 1 : 2,
     });
+    satellites=createEarthSatellites({Cesium,viewer,getLanguage,onLanguageChange,onInteraction:()=>{siteFocusSerial++;overviewFraming?.stop();}});
+    const satellitePicker=new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+    satellitePicker.setInputAction(event=>satellites?.handleClick(event.position),Cesium.ScreenSpaceEventType.LEFT_CLICK);
     initializeProviderCredits({elements:[$('.earth-attribution'), $('#cesium-credits')]});
     configureWorldPerformance(viewer, {
       loading:viewLoading,
@@ -227,7 +232,7 @@ $('#google3d-toggle').addEventListener('click', async () => {
   await google3D.enable();
 });
 start();
-window.addEventListener('pagehide', event => { if (!event.persisted) { disposeSceneTheme(); inspection?.destroy(); } });
+window.addEventListener('pagehide', event => { if (!event.persisted) { disposeSceneTheme(); satellites?.dispose(); inspection?.destroy(); } });
 startLiveData($('#earth-live-data'), () => 'earth');
 onLanguageChange(lang => {
   viewLoading.refresh();
@@ -254,3 +259,4 @@ onLanguageChange(lang => {
     input.value = shown.name;
   }
 });
+

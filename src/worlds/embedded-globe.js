@@ -1,3 +1,4 @@
+import {createEarthSatellites} from '../satellites/cesium-layer.js';
 import * as Cesium from '../../vendor/cesium/index.js';
 import {getCesiumToken,validateCesiumToken} from '../core/api-config.js';
 import {SURFACE_SOURCES} from '../atlas/surface-imagery.js';
@@ -26,7 +27,7 @@ let viewer,tileset,buildings,celestial,effects,disposed=false,ready=false,paused
 let lastState=0,lastFrame=null,globalGrid=null,geography={lat:18,lon:0},lastHeading=0;
 let cameraMotion,lastCameraAction=null,arrivalPlayed=false;
 let defaultFov=Math.PI/3;
-let earth3D=null,earthTerrainReady=false,earthBuildingsRequested=false;
+let earth3D=null,earthTerrainReady=false,earthBuildingsRequested=false,satellites=null;
 const adaptiveImagery=[];
 const post=(type,payload={})=>{if(parent!==window)parent.postMessage({channel:CHANNEL,type,...payload},location.origin);};
 const finite=value=>typeof value==='number'&&Number.isFinite(value);
@@ -285,7 +286,7 @@ async function addEarthBuildings(token){
     buildings=viewer.scene.primitives.add(value);sourceLabel='Cesium ion · World Terrain + OSM Buildings · photorealistic tiles unavailable';updateCredits();state(true);requestRender();
   }catch{/* Keep measured world terrain if the optional OSM asset is unavailable. */}
 }
-function suspend(value){paused=Boolean(value);if(disposed||!viewer||viewer.isDestroyed())return;if(paused||document.hidden)cameraMotion?.cancel();viewer.useDefaultRenderLoop=(!paused||!ready)&&!document.hidden;effects?.pause(paused||document.hidden);if(!paused||!ready){viewer.resize();requestRender();}}
+function suspend(value){paused=Boolean(value);satellites?.pause(paused);if(disposed||!viewer||viewer.isDestroyed())return;if(paused||document.hidden)cameraMotion?.cancel();viewer.useDefaultRenderLoop=(!paused||!ready)&&!document.hidden;effects?.pause(paused||document.hidden);if(!paused||!ready){viewer.resize();requestRender();}}
 function applyViewTheme(value){
   const theme=value==='day'?'day':'night',palette=scenePalette(theme);
   document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=palette.light?'light':'dark';
@@ -294,9 +295,11 @@ function applyViewTheme(value){
 function receive(event){
   if(event.origin!==location.origin||event.source!==parent||event.data?.channel!==CHANNEL||disposed||!viewer)return;
   const {action,value}=event.data;
+  if(!['theme','visualSettings','context','pause'].includes(action))satellites?.stopFollowing();
   if(action==='theme'){
     const {motion}=event.data;
     if(motion==='reduced'||motion==='full')document.documentElement.dataset.motion=motion;
+    if(['fr','en'].includes(event.data.language)){document.documentElement.lang=event.data.language;window.dispatchEvent(new Event('relic-satellite-language'));}
     applyViewTheme(value);
   }
   else if(action==='visualSettings'){effects?.setSettings(value);document.documentElement.dataset.visualPreset=effects?.settings.style||'normal';celestial?.setLabelsVisible?.(effects?.settings.labels!==false);state(true);}
@@ -317,7 +320,7 @@ function receive(event){
   else if(action==='northUp')northUp();
   else if(action==='reveal')reveal();
 }
-function dispose(){if(disposed)return;disposed=true;cameraMotion?.cancel();creditObserver.disconnect();window.removeEventListener('message',receive);earth3D?.destroy();effects?.destroy();celestial?.dispose();if(viewer&&!viewer.isDestroyed())viewer.destroy();}
+function dispose(){if(disposed)return;disposed=true;cameraMotion?.cancel();satellites?.dispose();creditObserver.disconnect();window.removeEventListener('message',receive);earth3D?.destroy();effects?.destroy();celestial?.dispose();if(viewer&&!viewer.isDestroyed())viewer.destroy();}
 async function start(){
   try{
     viewer=new Cesium.Viewer('globe',{ellipsoid,globe:new Cesium.Globe(ellipsoid),mapProjection:new Cesium.GeographicProjection(ellipsoid),
@@ -332,6 +335,7 @@ async function start(){
     document.documentElement.dataset.visualPreset=effects.settings.style;
     celestial=createCelestialScene({Cesium,viewer,onSelect:id=>post('select',{id})});
     applyViewTheme(document.documentElement.dataset.theme);
+    if(body==='earth')satellites=createEarthSatellites({Cesium,viewer,getLanguage:()=>document.documentElement.lang,onLanguageChange:callback=>{window.addEventListener('relic-satellite-language',callback);return()=>window.removeEventListener('relic-satellite-language',callback);},onInteraction:()=>{cameraMotion.cancel();post('interaction');}});
     scene.globe.baseColor=Cesium.Color.fromCssColorString(body==='earth'?'#183444':body==='moon'?'#777573':'#82533e');
     scene.globe.maximumScreenSpaceError=compact?2.5:1.5;scene.globe.tileCacheSize=compact?72:160;scene.globe.depthTestAgainstTerrain=true;
     if(scene.skyAtmosphere)scene.skyAtmosphere.show=false;if(scene.sun)scene.sun.show=false;if(scene.moon)scene.moon.show=false;
@@ -384,7 +388,7 @@ async function start(){
       event.preventDefault();post('interaction');
     });
     const handler=new Cesium.ScreenSpaceEventHandler(scene.canvas);
-    handler.setInputAction(event=>{if(celestial?.handleClick(event.position,{pixels:compact?22:13}))interaction();},Cesium.ScreenSpaceEventType.LEFT_CLICK);
+    handler.setInputAction(event=>{if(satellites?.handleClick(event.position)){interaction();return;}if(celestial?.handleClick(event.position,{pixels:compact?22:13}))interaction();},Cesium.ScreenSpaceEventType.LEFT_CLICK);
     handler.setInputAction(event=>{const hit=pickTarget(event.position);if(!hit)return;const cart=ellipsoid.cartesianToCartographic(hit),frame=cameraFrame();goTo(cart.latitude/DEG,cart.longitude/DEG,Math.max(50,(frame?.range||radius*.1)*.3),frame?.heading/DEG||0,frame?90+frame.pitch/DEG:0);interaction();},Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
     scene.renderError.addEventListener(()=>{post('error');dispose();});
     scene.postRender.addEventListener(()=>state());
@@ -402,3 +406,4 @@ async function start(){
   }catch{post('error');document.querySelector('#failure').hidden=false;document.querySelector('#failure').textContent='The detailed planetary renderer is unavailable.';dispose();}
 }
 start();
+
