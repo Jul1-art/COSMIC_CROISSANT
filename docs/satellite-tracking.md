@@ -13,7 +13,7 @@ The ISS is red with a persistent label and orbit. Starlink and the rest of the
 fleet are enabled by default; their positions are updated in bounded slices.
 
 This is a catalogue of public elements, not a complete inventory of every
-object in space. It includes the full `active` feed used by GEV Space Missions
+object in space. It includes the full `starlink` dense feed and `active` feed used by GEV Space Missions
 and GEV's `stations`, `visual`, `gps-ops`, `glo-ops`, `galileo`, `geo`, `resource`,
 `weather`, `planet`, `sar`, and `science` groups, deduplicated by NORAD number.
 Class assignment uses GEV's name/group classifier; no UCS or SATCAT ownership
@@ -54,3 +54,21 @@ hidden or suspended.
 
 Original code, adaptation notes, checksums and the MIT notices are retained in
 `vendor/gods-eye-view/satellites/PROVENANCE.json` and `vendor/satellite/`.
+
+## Whole-constellation Starlink view
+
+The dedicated `starlink` feed is loaded immediately after stations. Its full
+catalogue is published and rendered before unrelated groups finish loading;
+the `active` feed complements it rather than limiting Starlink membership.
+Every valid Starlink record produces a point, with no representative subset.
+The dense markers are cyan and four screen pixels wide so that the shell
+remains readable against space and Earth imagery. Their positions retain the
+SGP4-derived altitude: the visible shell is not a decorative circle.
+
+**Starlink view** stops individual follow, shows the Starlink and stations
+classes, and fits the globe plus the largest Starlink orbital apogee into both
+screen dimensions. It collapses the catalogue panel to reveal the complete
+globe, and works in portrait and landscape. The Earth overview
+also leaves room for the low Earth orbit shell. The layer compares complete
+catalogue snapshot identities, so newly arriving records are added even when
+the existing ISS record remains the same object.

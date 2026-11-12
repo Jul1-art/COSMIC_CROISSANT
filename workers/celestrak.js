@@ -4,7 +4,7 @@
  */
 import {celestrakTleUrl} from '../vendor/gods-eye-view/satellites/spaceProviderRequests.js';
 import {parseTleText} from '../vendor/gods-eye-view/satellites/tle.js';
-const GROUPS=new Set(['stations','active','visual','gps-ops','glo-ops','galileo','geo','resource','weather','planet','sar','science']);
+const GROUPS=new Set(['stations','starlink','active','visual','gps-ops','glo-ops','galileo','geo','resource','weather','planet','sar','science']);
 const TTL=21600000,MAX_AGE=14*86400000,MAX_BYTES=16*1024*1024;
 export function createCelestrakProxy({fetchImpl=globalThis.fetch,cache,now=()=>Date.now()}={}){
   const inflight=new Map();let cooldownUntil=0,lastFailure='';

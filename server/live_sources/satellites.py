@@ -11,7 +11,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 import requests
 
-GROUPS = frozenset(('stations', 'active', 'visual', 'gps-ops', 'glo-ops', 'galileo',
+GROUPS = frozenset(('stations', 'starlink', 'active', 'visual', 'gps-ops', 'glo-ops', 'galileo',
                     'geo', 'resource', 'weather', 'planet', 'sar', 'science'))
 TTL = 6 * 3600
 MAX_AGE = 14 * 86400

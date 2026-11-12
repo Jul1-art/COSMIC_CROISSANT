@@ -6,14 +6,16 @@ import {createSatelliteCatalog,REFRESH_MS} from './catalog.js';
 import {ISS_NORAD,COVERAGE_MS,propagatePosition,computeOrbitPath,orbitRotation} from './orbits.js';
 import {SATELLITE_CLASS_IDS,SATELLITE_CLASS_DISPLAY} from '../../vendor/gods-eye-view/satellites/classes.js';
 import {createSatellitePanel} from './panel.js';
+import {STARLINK_COLOR,STARLINK_POINT_SIZE,constellationRadius,constellationViewDistance} from './constellation-view.js';
 export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLanguage,onLanguageChange,onInteraction=()=>{},now=()=>Date.now()}){
  const scene=viewer.scene,points=scene.primitives.add(new C.PointPrimitiveCollection()),labels=scene.primitives.add(new C.LabelCollection());
  const byId=new Map(),rings=new Map(),samples=new Map(),classes=Object.fromEntries(SATELLITE_CLASS_IDS.map(id=>[id,true]));
  const colors=Object.fromEntries(SATELLITE_CLASS_IDS.map(id=>[id,C.Color.fromCssColorString(SATELLITE_CLASS_DISPLAY[id].color)]));
+ colors.starlink=C.Color.fromCssColorString(STARLINK_COLOR);
  const issColor=C.Color.fromCssColorString('#ff4444');
  const credit=new C.Credit('Satellite orbits · <a href="https://celestrak.org/" target="_blank" rel="noopener noreferrer">CelesTrak</a> · SGP4 / satellite.js · <a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank" rel="noopener noreferrer">God’s Eye View / Bilawal Sidhu · MIT</a>',false);
  viewer.creditDisplay?.addStaticCredit(credit);
- let disposed=false,paused=false,shown=true,selected=null,following=null,ownedEntity=null,rows=[],cursor=0,revision=0,buildTimer=0,lastPanelAt=0,lastRingAt=0,lastRefreshAttempt=now();
+ let disposed=false,paused=false,shown=true,selected=null,following=null,ownedEntity=null,rows=[],cursor=0,revision=0,buildTimer=0,lastPanelAt=0,lastRingAt=0,lastRefreshAttempt=now(),catalogSnapshot=null;
  const request=()=>{if(!disposed&&!viewer.isDestroyed())scene.requestRender();};
  const visible=row=>shown&&classes[row.satelliteClass]&&Math.abs(now()-row.epoch)<=COVERAGE_MS;
  function sample(row,date){
@@ -28,15 +30,15 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
    return pos;
  }
  const panel=createSatellitePanel({host,getLanguage,onLanguageChange,
-   onSelect:(id,follow)=>select(id,follow),onFollow:value=>value?startFollowing():stopFollowing(),
+   onStarlink:showStarlinkConstellation,onSelect:(id,follow)=>select(id,follow),onFollow:value=>value?startFollowing():stopFollowing(),
    onVisibility:value=>{shown=value;if(!value)stopFollowing();syncVisibility();},
    onClassChange:(id,value)=>{classes[id]=value;if(!value&&selected?.satelliteClass===id)stopFollowing();syncVisibility();},
    onRefresh:()=>{lastRefreshAttempt=now();void catalog.refresh();}});
  const catalog=createSatelliteCatalog({now,onChange:value=>{
    if(disposed)return;panel.update(value);
    // Status-only updates keep the point collection and orbit geometry alive.
-   if(rows.length&&rows[0]===value.records.values().next().value)return;
-   rebuild(value.records);
+   if(catalogSnapshot===value.records)return;
+   catalogSnapshot=value.records;rebuild(value.records);
  }});
  function rebuild(records){
    const token=++revision;clearTimeout(buildTimer);
@@ -44,17 +46,17 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
    for(const [id,point]of byId)if(!records.has(id)){points.remove(point);byId.delete(id);samples.delete(id);hideRing(id);}
    for(const id of rings.keys())hideRing(id);
    if(selected){selected=records.get(selected.id)||null;panel.select(selected);if(!selected)stopFollowing();}
-   let offset=0;
+   let offset=0,lastBuildRender=0;
    function chunk(){
      if(disposed||token!==revision)return;
      const end=Math.min(rows.length,offset+200),date=new Date(now());
      for(;offset<end;offset++){
        const row=rows[offset];let point=byId.get(row.id);
-       if(!point){point=points.add({id:`relic-satellite:${row.id}`,show:false,position:C.Cartesian3.ZERO,pixelSize:row.id===ISS_NORAD?12:row.satelliteClass==='stations'?8:row.satelliteClass==='starlink'?3:5,
-         color:row.id===ISS_NORAD?issColor:colors[row.satelliteClass],outlineColor:C.Color.WHITE.withAlpha(.3),outlineWidth:row.id===ISS_NORAD?2:0,disableDepthTestDistance:0});byId.set(row.id,point);}
+       if(!point){point=points.add({id:`relic-satellite:${row.id}`,show:false,position:C.Cartesian3.ZERO,pixelSize:row.id===ISS_NORAD?12:row.satelliteClass==='stations'?8:row.satelliteClass==='starlink'?STARLINK_POINT_SIZE:5,
+         color:row.id===ISS_NORAD?issColor:colors[row.satelliteClass],outlineColor:row.satelliteClass==='starlink'?C.Color.fromCssColorString(STARLINK_COLOR).withAlpha(.3):C.Color.WHITE.withAlpha(.3),outlineWidth:row.id===ISS_NORAD?2:row.satelliteClass==='starlink'?.5:0,disableDepthTestDistance:0});byId.set(row.id,point);}
        point.color=row.id===ISS_NORAD?issColor:colors[row.satelliteClass];updatePoint(row,date);
      }
-     syncLabels();request();
+     if(now()-lastBuildRender>=80||offset===rows.length){syncLabels();request();lastBuildRender=now();}
      if(offset<rows.length)buildTimer=setTimeout(chunk,0);
      else{showRing(records.get(ISS_NORAD));if(selected)showRing(selected);}
    }
@@ -99,6 +101,32 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
    selected=row;shown=true;classes[row.satelliteClass]=true;panel.setVisibility(true);panel.setClasses(classes);updatePoint(row,new Date(now()));syncVisibility();panel.select(row);showRing(row);
    if(follow)startFollowing();request();return true;
  }
+ function showStarlinkConstellation(){
+   if(disposed||!rows.some(row=>row.satelliteClass==='starlink'))return false;
+   stopFollowing();onInteraction();viewer.camera.cancelFlight();
+   if(selected?.id!==ISS_NORAD)hideRing(selected?.id);
+   selected=null;panel.select(null);shown=true;
+   for(const id of SATELLITE_CLASS_IDS)classes[id]=id==='starlink'||id==='stations';
+   panel.setVisibility(true);panel.setClasses(classes);syncVisibility();
+   const camera=viewer.camera,frustum=camera.frustum;
+   const aspect=frustum.aspectRatio||scene.canvas.clientWidth/Math.max(1,scene.canvas.clientHeight);
+   const distance=constellationViewDistance(constellationRadius(catalog.records),frustum.fovy||Math.PI/3,aspect);
+   if(!distance)return false;
+   const radial=C.Cartesian3.clone(camera.positionWC);
+   if(C.Cartesian3.magnitudeSquared(radial)<1)radial.x=1;
+   C.Cartesian3.normalize(radial,radial);
+   const direction=C.Cartesian3.negate(radial,new C.Cartesian3());
+   let up=C.Cartesian3.clone(camera.upWC);
+   C.Cartesian3.subtract(up,C.Cartesian3.multiplyByScalar(direction,C.Cartesian3.dot(up,direction),new C.Cartesian3()),up);
+   if(C.Cartesian3.magnitudeSquared(up)<1e-12){
+     up=C.Cartesian3.clone(Math.abs(direction.z)<.9?C.Cartesian3.UNIT_Z:C.Cartesian3.UNIT_Y);
+     C.Cartesian3.subtract(up,C.Cartesian3.multiplyByScalar(direction,C.Cartesian3.dot(up,direction),new C.Cartesian3()),up);
+   }
+   C.Cartesian3.normalize(up,up);camera.lookAtTransform(C.Matrix4.IDENTITY);
+   const reduced=document.documentElement?.dataset.motion==='reduced'||globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+   camera.flyTo({destination:C.Cartesian3.multiplyByScalar(radial,distance,new C.Cartesian3()),orientation:{direction,up},duration:reduced?0:.85,complete:request});
+   panel.collapse?.();request();return true;
+ }
  function tick(){
    if(disposed||paused||document.hidden||viewer.useDefaultRenderLoop===false)return;
    const time=now(),date=new Date(time);
@@ -136,7 +164,7 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
  for(const type of ['pointerdown','wheel'])scene.canvas.addEventListener(type,interrupt,{passive:true});
  const visibility=()=>{if(!document.hidden)request();};document.addEventListener('visibilitychange',visibility);
  void catalog.refresh();
- return {select,stopFollowing,
+ return {select,stopFollowing,showStarlinkConstellation,
    handleClick(position){
      const id=scene.pick(position)?.id;
      return typeof id==='string'&&id.startsWith('relic-satellite:')?select(Number(id.slice('relic-satellite:'.length)),true):false;

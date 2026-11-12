@@ -35,6 +35,9 @@ class FeedTests(unittest.TestCase):
         self.assertEqual(self.feeds.read('active')['state'], 'HIT')
         self.assertEqual(len(self.calls), 1)
         self.assertEqual(self.calls[0][0], 'https://celestrak.org/NORAD/elements/gp.php?GROUP=active&FORMAT=tle')
+    def test_full_starlink_feed_is_allowed(self):
+        self.assertEqual(self.feeds.read('starlink')['state'], 'MISS')
+        self.assertIn('GROUP=starlink', self.calls[0][0])
     def test_stale_and_host_cooldown(self):
         self.feeds.read('stations')
         self.time += TTL + 1

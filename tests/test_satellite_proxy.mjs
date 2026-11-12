@@ -47,3 +47,8 @@ test('the relay follows CelesTrak redirects instead of treating them as an outag
    assert.equal(response.status,200);assert.equal(await response.text(),tle);
  }finally{await new Promise(resolve=>server.close(resolve));}
 });
+
+test('the dedicated full Starlink feed is served by the same cached relay',async()=>{
+ const f=fixture(),response=await f.proxy(f.request('starlink'));
+ assert.equal(response.status,200);assert.equal(await response.text(),tle);assert.equal(f.calls,1);
+});

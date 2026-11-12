@@ -37,3 +37,11 @@
 [data-theme=day] .relic-satellites{background:#fffffff5;color:#182331;color-scheme:light}
 @media(max-width:700px){.relic-satellites{top:calc(66px + env(safe-area-inset-top,0px));left:max(8px,env(safe-area-inset-left,0px));width:min(286px,calc(100vw - 16px))}.satellite-body{max-height:55dvh}}
 @media(max-height:500px){.relic-satellites{top:max(8px,env(safe-area-inset-top,0px))}.satellite-body{max-height:65dvh}}
+
+/* The dense shell gets a visible cyan identity at Earth scale. */
+.satellite-starlink-count{color:#80dfff;font:10px ui-monospace,monospace;white-space:nowrap}
+.satellite-starlink-count[hidden]{display:none}
+.relic-satellites .satellite-starlink{display:block;width:100%;margin-bottom:8px;border-color:#80dfff80;color:#b2efff;background:#4fd8ff12;font-weight:650}
+.relic-satellites .satellite-starlink:hover{background:#4fd8ff25}
+[data-theme=day] .satellite-starlink-count{color:#00648a}
+[data-theme=day] .relic-satellites .satellite-starlink{color:#005e83}

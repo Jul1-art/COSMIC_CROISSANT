@@ -6,7 +6,7 @@ import {COVERAGE_MS} from './orbits.js';
 export const REFRESH_MS=6*3600000;
 // Same CelesTrak groups as GEV plus its Space Missions full active feed.
 // This is a public catalogue, not a claim to include unreported objects.
-export const GROUPS=['stations','active','visual','gps-ops','glo-ops','galileo','geo','resource','weather','planet','sar','science'];
+export const GROUPS=['stations','starlink','active','visual','gps-ops','glo-ops','galileo','geo','resource','weather','planet','sar','science'];
 const STORE='relic-satellite-tle-v1';
 export function parseCatalog(text,group,now=Date.now()){
   const result=[];
@@ -21,7 +21,7 @@ export function parseCatalog(text,group,now=Date.now()){
   return result;
 }
 /** Lower-priority active/visual duplicates never replace stations or precise
- * constellation tags. A refreshed snapshot is assembled before publication. */
+ * constellation tags. Each publication owns a new catalogue Map. */
 export function mergeCatalogGroups(groups){
   const records=new Map();
   for(const group of [...groups].sort((a,b)=>(a.group==='active')-(b.group==='active'))){
@@ -54,7 +54,7 @@ export function createSatelliteCatalog({fetchImpl=globalThis.fetch,now=()=>Date.
   function publish(){if(!disposed)onChange({records,status,failedGroups,lastRefresh});}
   async function refresh(){
     if(disposed||pending)return pending;
-    controller=new AbortController();const signal=controller.signal;
+    controller=new AbortController();const signal=controller.signal,initialLoad=records.size===0;
     status=records.size?'refreshing':'loading';publish();
     pending=(async()=>{
       const groups=[];failedGroups=[];let stale=false;
@@ -72,8 +72,9 @@ export function createSatelliteCatalog({fetchImpl=globalThis.fetch,now=()=>Date.
           }
           if(!parsed.length)throw Error('No elements within propagation coverage');
           groups.push({group,records:parsed});stale ||= result.stale;
-          // Publish ISS immediately while the complete public fleet loads.
-          if(group==='stations'&&!records.size){records=new Map(parsed.map(row=>[row.id,row]));publish();}
+          // Show the ISS and the complete dense shell as soon as their own
+          // feeds arrive; unrelated groups must not delay the Starlink view.
+          if(initialLoad&&['stations','starlink','active'].includes(group)){records=mergeCatalogGroups(groups);publish();}
         }catch(error){
           if(signal.aborted)return;
           failedGroups.push(group);

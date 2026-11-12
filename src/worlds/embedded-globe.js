@@ -102,7 +102,8 @@ function wholeGlobeRange(){
   const aspect=viewer.camera.frustum.aspectRatio||1;
   const otherFov=2*Math.atan(Math.tan(defaultFov/2)*Math.min(aspect,1/aspect));
   const halfFov=Math.max(.08,Math.min(defaultFov,otherFov)/2);
-  return radius*1.12/Math.sin(halfFov)-radius;
+  const frameRadius=body==='earth'?(radius+1200000)*1.12:radius*1.12;
+  return frameRadius/Math.sin(halfFov)-radius;
 }
 function resetView(animate=false){
   const range=wholeGlobeRange();

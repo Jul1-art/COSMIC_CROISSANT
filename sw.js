@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'inspection-20261112-v57-satellites';
-const INTERFACE_RELEASE = 'inspection-20261112-v57';
+const VERSION = 'inspection-20261112-v58-starlink-shell';
+const INTERFACE_RELEASE = 'inspection-20261112-v58';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -79,7 +79,7 @@ const OFFLINE_CORE = [
   'intro/assets/vendor/hls.full.mjs', 'intro/assets/vendor/fontawesome-solid.js',
   'intro/assets/prologue/poster-v9-hd50.jpg',
   'intro/assets/prologue/sources-v9.json', 'intro/assets/prologue/encoding-v9-hd50.json',
-  'src/satellites/orbits.js', 'src/satellites/catalog.js', 'src/satellites/panel.js', 'src/satellites/cesium-layer.js', 'src/satellites/satellites.css',
+  'src/satellites/constellation-view.js', 'src/satellites/orbits.js', 'src/satellites/catalog.js', 'src/satellites/panel.js', 'src/satellites/cesium-layer.js', 'src/satellites/satellites.css',
   'vendor/satellite/satellite.es.js', 'vendor/gods-eye-view/satellites/tle.js', 'vendor/gods-eye-view/satellites/classes.js',
   'vendor/three.module.js', 'vendor/OrbitControls.js',
 ].map(path => /^https?:/.test(path) ? path : local(path));
