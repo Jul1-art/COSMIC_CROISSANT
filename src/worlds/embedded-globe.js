@@ -344,22 +344,36 @@ async function start(){
     viewer.resolutionScale=Math.min(devicePixelRatio||1,compact?1.35:1.8);viewer.targetFrameRate=compact?45:60;
     viewer.camera.percentageChanged=.002;
     const interaction=()=>{cameraMotion.cancel();viewer.camera.cancelFlight();post('interaction');};
-    const touchPoints=new Map();let touchLook=null;
+    const touchPoints=new Map();let touchLook=null,touchDirty=false;
     const touchMetrics=()=>{const points=[...touchPoints.values()].slice(0,2);return points.length===2?{x:(points[0].x+points[1].x)/2,y:(points[0].y+points[1].y)/2,spread:Math.hypot(points[0].x-points[1].x,points[0].y-points[1].y)}:null;};
     scene.canvas.addEventListener('pointerdown',event=>{
       if(event.pointerType!=='touch')return;
+      flushTouch();
       touchPoints.set(event.pointerId,{x:event.clientX,y:event.clientY});
+      try{scene.canvas.setPointerCapture(event.pointerId);}catch{}
       if(touchPoints.size===2){touchLook={...touchMetrics(),enabled:controller.enableInputs};controller.enableInputs=false;interaction();}
     },{capture:true,passive:true});
     scene.canvas.addEventListener('pointermove',event=>{
       if(!touchPoints.has(event.pointerId))return;touchPoints.set(event.pointerId,{x:event.clientX,y:event.clientY});
+      if(touchLook){touchDirty=true;event.preventDefault();scene.requestRender();}
+    },{capture:true,passive:false});
+    function flushTouch(){
+      if(!touchDirty)return;touchDirty=false;
       const next=touchMetrics();if(!touchLook||!next)return;
       lookAround(-(next.x-touchLook.x)/Math.max(1,viewer.canvas.clientWidth)*180,(next.y-touchLook.y)/Math.max(1,viewer.canvas.clientHeight)*180);
       if(next.spread>8&&touchLook.spread>8)zoom(touchLook.spread/next.spread);
-      touchLook={...next,enabled:touchLook.enabled};event.preventDefault();
-    },{capture:true,passive:false});
-    const endTouch=event=>{touchPoints.delete(event.pointerId);if(touchLook&&touchPoints.size<2){controller.enableInputs=touchLook.enabled;touchLook=null;}};
-    scene.canvas.addEventListener('pointerup',endTouch,{capture:true});scene.canvas.addEventListener('pointercancel',endTouch,{capture:true});
+      touchLook={...next,enabled:touchLook.enabled};
+    }
+    // Cesium also receives the native touch stream: keep its pinch controller
+    // disabled until both samples have been applied together before rendering.
+    scene.preUpdate.addEventListener(flushTouch);
+    const endTouch=event=>{
+      if(!touchPoints.has(event.pointerId))return;
+      flushTouch();touchPoints.delete(event.pointerId);
+      try{scene.canvas.releasePointerCapture(event.pointerId);}catch{}
+      if(touchLook&&touchPoints.size<2){controller.enableInputs=touchLook.enabled;touchLook=null;}
+    };
+    for(const type of ['pointerup','pointercancel','lostpointercapture'])scene.canvas.addEventListener(type,endTouch,{capture:true});
     scene.canvas.addEventListener('pointerdown',interaction,{passive:true});
     scene.canvas.addEventListener('wheel',event=>{if(paused||!ready)return;event.preventDefault();interaction();zoom(wheelZoomFactor(event.deltaY,event.deltaMode,scene.canvas.clientHeight));},{passive:false});
     scene.canvas.tabIndex=0;
