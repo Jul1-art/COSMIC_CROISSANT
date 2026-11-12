@@ -297,7 +297,10 @@ export function createGlobeNavigation({THREE,camera,controls,domElement,getFocus
     const current=centroid(),currentNdc=toNdc(current).clone();
     if(pointers.size>1||dragMode==='look'){
       const height=Math.max(1,domElement.getBoundingClientRect().height),dx=current.x-previousCentroid.x,dy=current.y-previousCentroid.y;
-      if(Math.abs(dx)>.01||Math.abs(dy)>.01)lookAround(dx/height*180,-dy/height*180);
+      // Touch dragging moves the scene with the fingers; mouse free-look
+      // continues to turn the observer toward the pointer.
+      const direction=pointers.size>1?-1:1;
+      if(Math.abs(dx)>.01||Math.abs(dy)>.01)lookAround(direction*dx/height*180,-direction*dy/height*180);
       if(pointers.size>1){
         const twist=angle(),delta=Math.atan2(Math.sin(twist-previousAngle),Math.cos(twist-previousAngle));
         if(Math.abs(delta)>.0001)lookAround(0,0,-delta/radians);previousAngle=twist;
