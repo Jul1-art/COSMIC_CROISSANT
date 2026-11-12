@@ -71,4 +71,3 @@ export function keyholeLabelAlphaFromGeometry(labelX, labelY, geometry) {
   const progress = clamp((distance - geometry.radius) / feather, 0, 1);
   return 1 - (1 - keyholeOutsideOpacity) * progress;
 }
-
