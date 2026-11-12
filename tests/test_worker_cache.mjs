@@ -157,3 +157,13 @@ test('the install manifest stays mutable inside the assets folder', async () => 
   assert.equal(w.requests.length, 1);
   assert.equal(w.networkPolicies[0], 'no-cache');
 });
+
+test('a temporarily missing navigation file leaves the working update and its caches intact',async()=>{
+ const client=applicationClient({release:'older-interface'}),w=await worker({windows:[client]});
+ w.stores.set('relic-atlas-%2FRELIC%2F-old-shell',new Map([['old',new Response('working')]]));
+ w.setServe(async request=>request.url.endsWith('/pages/earth.html')?new Response(null,{status:404}):new Response(request.url.endsWith('.html')?'<title>RELIC</title>':'asset',{headers:{'Content-Type':request.url.endsWith('.html')?'text/html':'application/javascript'}}));
+ await assert.doesNotReject(()=>w.dispatch('install'));
+ await w.dispatch('activate');
+ assert.equal(client.navigations.length,0);assert.equal(client.posts.length,0);
+ assert.ok(w.stores.has('relic-atlas-%2FRELIC%2F-old-shell'));
+});

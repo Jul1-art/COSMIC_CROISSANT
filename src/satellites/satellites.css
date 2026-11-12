@@ -45,3 +45,15 @@
 .relic-satellites .satellite-starlink:hover{background:#4fd8ff25}
 [data-theme=day] .satellite-starlink-count{color:#00648a}
 [data-theme=day] .relic-satellites .satellite-starlink{color:#005e83}
+
+.relic-satellite-detection{position:absolute;inset:0;z-index:5;width:100%;height:100%;pointer-events:none}
+.relic-satellite-detection[hidden]{display:none}
+/* Keep the satellite launcher clear of the mobile Display / World data row. */
+@media(max-width:700px){
+ .relic-satellites{top:calc(116px + env(safe-area-inset-top,0px))}
+ .relic-satellites:not([open]){width:52px;max-width:52px}
+ .relic-satellites:not([open]) summary{flex-direction:column;justify-content:center;gap:2px;min-height:52px;padding:6px 4px}
+ .relic-satellites:not([open]) .satellite-title{font-size:7px;letter-spacing:0}
+ .relic-satellites:not([open]) .satellite-count{font-size:10px}
+ .relic-satellites:not([open]) .satellite-starlink-count{display:none}
+}

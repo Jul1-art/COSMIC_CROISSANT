@@ -304,7 +304,7 @@ function receive(event){
     if(['fr','en'].includes(event.data.language)){document.documentElement.lang=event.data.language;window.dispatchEvent(new Event('relic-satellite-language'));}
     applyViewTheme(value);
   }
-  else if(action==='visualSettings'){effects?.setSettings(value);document.documentElement.dataset.visualPreset=effects?.settings.style||'normal';celestial?.setLabelsVisible?.(effects?.settings.labels!==false);state(true);}
+  else if(action==='visualSettings'){effects?.setSettings(value);satellites?.setDetection(value?.detection!==false);document.documentElement.dataset.visualPreset=effects?.settings.style||'normal';celestial?.setLabelsVisible?.(effects?.settings.labels!==false);state(true);}
   else if(action==='focus')setFocus(event.data.focus);
   else if(action==='context'){focus.context=event.data.context||[];celestial?.setBodies(focus.context);state(true);}
   else if(action==='lookAt'&&typeof value==='string'){cameraMotion?.cancel();celestial?.lookAt(value);state(true);}
@@ -404,4 +404,3 @@ async function start(){
   }catch{post('error');document.querySelector('#failure').hidden=false;document.querySelector('#failure').textContent='The detailed planetary renderer is unavailable.';dispose();}
 }
 start();
-

@@ -55,6 +55,7 @@ class Vector{
  constructor(x=0,y=0,z=0){Object.assign(this,{x,y,z});}
  static ZERO=new Vector();static UNIT_Z=new Vector(0,0,1);static UNIT_Y=new Vector(0,1,0);
  static clone(v){return new Vector(v.x,v.y,v.z);}static dot(a,b){return a.x*b.x+a.y*b.y+a.z*b.z;}
+ static fromElements(x,y,z,out){return Object.assign(out,{x,y,z});}
  static magnitudeSquared(v){return this.dot(v,v);}static normalize(v,out){const n=Math.sqrt(this.magnitudeSquared(v));return Object.assign(out,{x:v.x/n,y:v.y/n,z:v.z/n});}
  static multiplyByScalar(v,n,out){return Object.assign(out,{x:v.x*n,y:v.y*n,z:v.z*n});}
  static subtract(a,b,out){return Object.assign(out,{x:a.x-b.x,y:a.y-b.y,z:a.z-b.z});}
@@ -70,6 +71,7 @@ async function layerFixture(){
  const viewer={scene:{primitives:primitiveCollection,canvas,requestRender(){},preRender:{addEventListener:callback=>{preRender=callback;return()=>preRender=null;}}},isDestroyed:()=>false,entities:{remove(){}},camera:{positionWC:new Vector(18000000,0,0),upWC:Vector.UNIT_Z,frustum:{fovy:Math.PI/3,aspectRatio:390/844},cancelFlight(){},lookAtTransform(){},flyTo:options=>flyTo=options}};
  const panel={update(){},select(){},setVisibility(){},setClasses(){},setFollowing(){},position(){},dispose(){}};
  const exported={
+  './detection.js':{createSatelliteDetection:()=>({setEnabled(){},dispose(){}})},
   './catalog.js':{REFRESH_MS:21600000,createSatelliteCatalog:options=>{onCatalog=options.onChange;return {get records(){return currentRecords;},refresh:async()=>{},dispose(){}};}},
   './orbits.js':{ISS_NORAD:25544,COVERAGE_MS:14*86400000,propagatePosition:satrec=>satrec.position,computeOrbitPath:()=>({points:[]}),orbitRotation:()=>0},
   '../../vendor/gods-eye-view/satellites/classes.js':{SATELLITE_CLASS_IDS,SATELLITE_CLASS_DISPLAY},

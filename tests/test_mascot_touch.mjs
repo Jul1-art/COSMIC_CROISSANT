@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 
 const source=(await readFile(new URL('../src/ui/exploration-mascot.js',import.meta.url),'utf8'))
-  .replace(/^import .*;\n/gm,'').replace('export function','function')
+  .replace(/^import .*;\r?\n/gm,'').replace('export function','function')
   .replace('import.meta.url',"'https://relic.test/src/ui/exploration-mascot.js'");
 
 class Element {
