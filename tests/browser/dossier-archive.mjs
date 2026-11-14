@@ -12,7 +12,7 @@ try{
    await page.setViewportSize(viewport);await page.goto(new URL('/pages/'+mission,base).href);await page.waitForTimeout(900);
    assert.equal(await page.locator('html').getAttribute('lang'),'en');assert.equal(await page.evaluate(()=>scrollY),0,'The archive must open on its hero, not jump past it');
    assert.ok(await page.locator('.dossier-hero').isVisible());if(process.env.SCREENSHOT_DIR)await page.screenshot({path:`${process.env.SCREENSHOT_DIR}/${mission.startsWith('sputnik')?'sputnik':'apollo'}-archive-${viewport.width}.png`});await page.locator('.dossier-hero-photo button').click();await page.locator('.dossier-lightbox').waitFor();await page.keyboard.press('Escape');assert.equal(await page.locator('.dossier-lightbox').isVisible(),false);
-   
+
    for(const id of ['identite','inventaire','chronologie','science','sources']){
     await page.locator('[role=tab][data-tab='+id+']').click();await page.waitForTimeout(350);assert.equal(await page.locator('[role=tabpanel]:visible').count(),1);
     await page.locator('[role=tabpanel]:visible img').evaluateAll(images=>{for(const image of images)image.loading='eager';return Promise.all(images.map(image=>image.decode()));});
