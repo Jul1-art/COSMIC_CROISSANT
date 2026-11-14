@@ -5,12 +5,12 @@ import * as THREE from '../vendor/three.module.js';
 import {createAtlasMission} from '../src/missions/atlas-mission.js';
 import {START,END,EVENTS,eventTime} from '../src/missions/apollo11-data.js';
 const data=JSON.parse(await readFile(new URL('../assets/missions/apollo-11/trajectory.json',import.meta.url),'utf8'));
-function fixture({aspect=1.5,loadData=async()=>data}={}){
+function fixture({aspect=1.5,loadData=async()=>data,loadSurface}={}){
  const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(45,aspect,.000001,1e6),controls={target:new THREE.Vector3()},earth=new THREE.Vector3(500,4,300);
  const parent=new THREE.Group();parent.position.copy(earth);scene.add(parent);
  const mesh=new THREE.Mesh(new THREE.SphereGeometry(1),new THREE.MeshBasicMaterial());mesh.scale.setScalar(.518);parent.add(mesh);
  const calls=[];globalThis.matchMedia=()=>({matches:false});
- const mission=createAtlasMission({THREE,scene,camera,controls,getEarth:()=>earth,getMoonMesh:()=>mesh,getRadius:id=>id==='earth'?1.9:.518,loadData,
+ const mission=createAtlasMission({THREE,scene,camera,controls,getEarth:()=>earth,getMoonMesh:()=>mesh,getRadius:id=>id==='earth'?1.9:.518,loadData,loadSurface,
  frame:(target,position)=>{controls.target.copy(target);camera.position.copy(position);calls.push(['frame']);},onStart:()=>calls.push(['start']),onStop:restore=>calls.push(['stop',restore]),onTime:(time,playing)=>calls.push(['time',time,playing]),onStatus:(status,message)=>calls.push(['status',status,message])});
  return {scene,camera,controls,earth,mesh,calls,mission,group:scene.getObjectByName('Apollo 11 · native atlas')};
 }
@@ -41,12 +41,19 @@ test('closing during data loading prevents late scene takeover, and a failure re
  assert.equal(f.mission.active,false);assert.equal(f.calls.some(row=>row[0]==='start'),false);f.mission.dispose();
  let tries=0;const g=fixture({loadData:async()=>{if(++tries===1)throw new Error('Unavailable');return data;}});await g.mission.start();assert.equal(g.mission.active,false);assert.equal(g.calls.at(-1)[1],'error');await g.mission.start();assert.equal(g.mission.active,true);g.mission.dispose();
 });
-test('surface rewind rotates the camera with the Moon and camera collision guard rejects entering a body',async()=>{
+test('surface presets do not lock the camera, and collision guard rejects entering a body',async()=>{
  const {mission,camera,controls,mesh,earth}=fixture();await mission.start();mission.setMode('site');
  const moon=()=>mesh.getWorldPosition(new THREE.Vector3());const original=camera.position.clone();
- for(const t of [START,END,eventTime('landing')]){mission.setTime(t);assert.ok(camera.position.distanceTo(moon())>.518,'surface view stays above Moon when changing date');}
- assert.ok(camera.position.distanceTo(original)<1e-7,'returning to the same date restores the same surface orientation');
- camera.position.copy(moon());mission.enforceCamera();assert.ok(camera.position.distanceTo(moon())>=.518*1.0019);
- camera.position.copy(earth);mission.enforceCamera();assert.ok(camera.position.distanceTo(earth)>=1.9*1.0019);assert.ok(camera.quaternion.toArray().every(Number.isFinite));
+ const target=controls.target.clone(),up=camera.up.clone();
+ for(const t of [START,END,eventTime('landing')]){mission.setTime(t);assert.deepEqual(camera.position,original,'historical time cannot drag the camera');assert.deepEqual(controls.target,target);assert.deepEqual(camera.up,up);}
+ assert.ok(camera.position.distanceTo(original)<1e-7,'the free camera stays where the user placed it');
+ camera.position.copy(moon());mission.enforceCamera();assert.ok(camera.position.distanceTo(moon())>.518);
+ camera.position.copy(earth);mission.enforceCamera();assert.ok(camera.position.distanceTo(earth)>1.9);assert.ok(camera.quaternion.toArray().every(Number.isFinite));
  assert.ok(controls.target.toArray().every(Number.isFinite));mission.dispose();
+});
+test('a late local terrain load cannot take the camera back after the user starts navigating',async()=>{
+ let resolve;const f=fixture({loadSurface:()=>new Promise(r=>{resolve=r;})});await f.mission.start();f.mission.setMode('site');f.mission.releaseCamera();
+ f.camera.position.add(new THREE.Vector3(2,3,4));f.controls.target.add(new THREE.Vector3(4,5,6));const pose=f.camera.position.clone(),target=f.controls.target.clone();
+ resolve({root:new THREE.Group(),setActive(){},updateShadows(){},dispose(){},protectCamera(){return false;}});
+ await new Promise(r=>setTimeout(r,950));assert.deepEqual(f.camera.position,pose);assert.deepEqual(f.controls.target,target);f.mission.dispose();
 });

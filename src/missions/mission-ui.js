@@ -6,7 +6,7 @@ import {appURL} from '../core/paths.js';
 export {PIN_SVG};
 const icon=name=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">${({chevron:'<path d="m7 10 5 5 5-5"/>',play:'<path d="m9 5 11 7-11 7Z"/>',read:'<path d="M6 3h9l4 4v14H6Z M10 11h5m-5 4h5"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',pause:'<path d="M8 5v14M16 5v14"/>'})[name]||''}</svg>`;
 const button=(label,action,attributes='')=>`<button type="button" data-mission-action="${action}" ${attributes}>${label}</button>`;
-let installed=false,popup,actions,panel,explorer,film,filmHost,restoreFocus,anchor;
+let installed=false,popup,actions,panel,freeBadge,annotations,explorer,film,filmHost,restoreFocus,anchor;
 const pauseAtlas=active=>window.dispatchEvent(new CustomEvent('relic-navigation-state',{detail:{active}}));
 function positionPopup(){
  if(!popup||popup.hidden)return;
@@ -31,8 +31,11 @@ function updateTime(time,playing,meta){
 function startMission(){
  if(explorer)return;
  panel=document.createElement('section');panel.className='atlas-mission-controls';panel.setAttribute('aria-label','Reconstitution Apollo 11');
- panel.innerHTML=`<div class="atlas-mission-heading"><div><span>APOLLO 11</span><h2 id="mission-event-title">Décollage</h2></div>${button(icon('close'),'exit','aria-label="Quitter la reconstitution"')}</div><p id="mission-event-text"></p><div class="atlas-mission-key" id="mission-vehicle-key">● Saturn V · Apollo 11</div><div class="atlas-mission-views">${button('Terre–Lune','journey','aria-pressed="true"')}${button('Orbite lunaire','orbit','aria-pressed="false"')}${button('Site d’alunissage','site','aria-pressed="false"')}${button('Recentrer','reset')}</div><div class="atlas-mission-transport">${button(icon('play'),'play','aria-label="Lire la mission" aria-pressed="false"')}<label class="mission-sr-only" for="mission-time-slider">Date de la mission</label><input id="mission-time-slider" type="range" min="${START}" max="${END}" step="1000" value="${START}"><label class="mission-sr-only" for="mission-speed">Vitesse de lecture</label><select id="mission-speed"><option value="600">10 min / s</option><option value="3600" selected>1 h / s</option><option value="21600">6 h / s</option><option value="86400">1 j / s</option></select></div><div class="atlas-mission-meta"><output id="mission-clock"></output><label class="mission-sr-only" for="mission-chapter">Étape de la mission</label><select id="mission-chapter">${EVENTS.map(row=>`<option value="${row.id}">${row.title}</option>`).join('')}</select></div><small id="mission-status" role="status">Reconstruction physique · jalons NASA et éphémérides JPL</small><button type="button" data-mission-action="retry" hidden>Réessayer</button>`;
- document.body.append(panel);panel.addEventListener('click',handleAction);document.body.classList.add('mission-exploring');
+ panel.innerHTML=`<div class="atlas-mission-heading"><div><span>APOLLO 11</span><h2 id="mission-event-title">Décollage</h2></div>${button(icon('close'),'exit','aria-label="Quitter la reconstitution"')}</div><p id="mission-event-text"></p><div class="atlas-mission-key" id="mission-vehicle-key">● Saturn V · Apollo 11</div><div class="atlas-mission-views">${button('Terre–Lune','journey','aria-pressed="true"')}${button('Orbite lunaire','orbit','aria-pressed="false"')}${button('Site d’alunissage','site','aria-pressed="false"')}${button('Recentrer','reset')}</div><div class="atlas-mission-transport">${button(icon('play'),'play','aria-label="Lire la mission" aria-pressed="false"')}<label class="mission-sr-only" for="mission-time-slider">Date de la mission</label><input id="mission-time-slider" type="range" min="${START}" max="${END}" step="1000" value="${START}"><label class="mission-sr-only" for="mission-speed">Vitesse de lecture</label><select id="mission-speed"><option value="1">Temps réel</option><option value="10">10 s / s</option><option value="60">1 min / s</option><option value="600">10 min / s</option><option value="3600" selected>1 h / s</option><option value="21600">6 h / s</option><option value="86400">1 j / s</option></select></div><div class="atlas-mission-meta"><output id="mission-clock"></output><label class="mission-sr-only" for="mission-chapter">Étape de la mission</label><select id="mission-chapter">${EVENTS.map(row=>`<option value="${row.id}">${row.title}</option>`).join('')}</select></div><small id="mission-status" role="status">Reconstruction physique · jalons NASA et éphémérides JPL</small><button type="button" data-mission-action="retry" hidden>Réessayer</button>`;
+ freeBadge=document.createElement('div');freeBadge.className='mission-free-badge';freeBadge.innerHTML='<span>APOLLO 11</span><span>CAMÉRA LIBRE</span><small>Glisser pour tourner · Clic droit pour déplacer · Molette pour avancer</small>';
+ annotations=document.createElement('div');annotations.className='mission-annotations';annotations.setAttribute('aria-hidden','true');
+ for(const id of ['earth','moon','columbia','eagle']){const label=document.createElement('span');label.className='mission-point-label';label.dataset.point=id;label.hidden=true;annotations.append(label);}
+ document.body.append(panel,freeBadge,annotations);panel.addEventListener('click',handleAction);document.body.classList.add('mission-exploring');
  window.dispatchEvent(new CustomEvent('relic-mission-start',{detail:{connect:controller=>{explorer=controller;updateTime(controller.time,controller.playing);}}}));
  if(!explorer){panel.remove();panel=null;document.body.classList.remove('mission-exploring');return;}
  panel.querySelector('#mission-time-slider').addEventListener('input',event=>{const time=Number(event.target.value);explorer.setPlaying(false);explorer.setTime(time);});
@@ -40,7 +43,7 @@ function startMission(){
  panel.querySelector('#mission-chapter').addEventListener('change',event=>{const time=eventTime(event.target.value);explorer.setPlaying(false);explorer.setTime(time);});
  positionPopup();revealMissionElement(panel,{duration:320,distance:8});
 }
-function endMission(){explorer=null;panel?.remove();panel=null;document.body.classList.remove('mission-exploring');closePopup();}
+function endMission(){explorer=null;panel?.remove();panel=null;freeBadge?.remove();freeBadge=null;annotations?.remove();annotations=null;document.body.classList.remove('mission-exploring');closePopup();}
 function openVideo(){
  if(filmHost)return;closePopup();explorer?.setPlaying(false);pauseAtlas(true);
  const host=document.createElement('section');host.className='intro mission-shared-film hidden';filmHost=host;document.body.append(host);
@@ -75,6 +78,7 @@ export function installMissionUI(){
  window.addEventListener('relic-mission-open',event=>openMission(event.detail?.id,'summary',event.detail?.anchor));
  window.addEventListener('relic-mission-anchor',event=>{if(!popup.hidden&&!explorer&&event.detail?.id==='apollo-11'){anchor=event.detail.anchor;positionPopup();}});
  window.addEventListener('relic-mission-time',event=>updateTime(event.detail.time,event.detail.playing,event.detail.meta));
+ window.addEventListener('relic-mission-annotations',event=>{if(!annotations)return;annotations.querySelectorAll('[data-point]').forEach(node=>{const label=event.detail.find(row=>row.id===node.dataset.point);node.hidden=!label?.visible;if(label?.visible){if(node.textContent!==label.text)node.textContent=label.text;node.style.left=label.x.toFixed(1)+'px';node.style.top=label.y.toFixed(1)+'px';}});});
  window.addEventListener('relic-mission-status',event=>{
   if(!panel)return;const {status,message}=event.detail,disabled=['loading','error'].includes(status);
   panel.setAttribute('aria-busy',String(status==='loading'));

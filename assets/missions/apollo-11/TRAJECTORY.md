@@ -56,3 +56,18 @@ Sources:
 - https://www.nasa.gov/wp-content/uploads/static/apollo50th/pdf/A11_MissionReport.pdf
 - https://ssd.jpl.nasa.gov/horizons/
 - https://naif.jpl.nasa.gov/pub/naif/generic_kernels/
+
+The current mission viewer has a free camera: no selected body, automatic body
+follow, or time-scrub camera tracking. Framing buttons move the camera only when
+requested. A pending surface download never overrides subsequent manual input.
+Close-up coordinates are rebased once to avoid floating-point artefacts in
+metre-scale model details and shadows; this changes the render reference frame,
+not the historical data or the visual camera position.
+
+The close-up uses the existing LRO NAC elevation grid and image, with geographic
+bounds converted using the Moon's radius. The patch spans about 1.36 km, despite
+the older terrain catalogue's Earth-derived `widthKm: 5` label. Eagle and this
+measured patch use the same local metre scale. A curved, blended collar joins the
+patch to the globe outside the measured footprint; those surrounding heights
+are a visual transition, not additional LRO measurements. The directional light
+is for legibility and does not claim to reproduce historical solar illumination.
