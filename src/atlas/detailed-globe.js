@@ -71,7 +71,7 @@ export function createDetailedGlobe({host,onState=()=>{},onInteraction=()=>{},on
     if(data.type==='ready'){clearTimeout(timer);ready=true;state={...state,...data.state};return;}
     if(data.type==='state'){state={...state,...data.state};emit();return;}
     if(data.type==='interaction'){arrival=false;onInteraction();return;}
-    if(['mission','mission-anchor'].includes(data.type)&&data.id==='apollo-11'&&current?.id==='moon'){const bounds=frame.getBoundingClientRect?.();const anchor=Number.isFinite(data.anchor?.x)&&Number.isFinite(data.anchor?.y)?{x:data.anchor.x+(bounds?.left||0),y:data.anchor.y+(bounds?.top||0)}:undefined;window.dispatchEvent(new CustomEvent(data.type==='mission'?'relic-mission-open':'relic-mission-anchor',{detail:{id:data.id,anchor}}));return;}
+    if(['mission','mission-anchor'].includes(data.type)&&((data.id==='apollo-11'&&current?.id==='moon')||(data.id==='sputnik-1'&&current?.id==='earth'))){const bounds=frame.getBoundingClientRect?.();const anchor=Number.isFinite(data.anchor?.x)&&Number.isFinite(data.anchor?.y)?{x:data.anchor.x+(bounds?.left||0),y:data.anchor.y+(bounds?.top||0)}:undefined;window.dispatchEvent(new CustomEvent(data.type==='mission'?'relic-mission-open':'relic-mission-anchor',{detail:{id:data.id,anchor}}));return;}
     if(data.type==='select'&&typeof data.id==='string'){onSelect(data.id);return;}
     if(data.type==='error'){teardown();emit({error:'unavailable'});}
   }

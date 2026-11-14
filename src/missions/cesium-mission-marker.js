@@ -1,17 +1,18 @@
+import {SPUTNIK} from './sputnik.js';
 import {APOLLO_11} from './apollo11-data.js';
 import {PIN_SVG} from './mission-icons.js';
 /** A keyboard-accessible pin projected from lunar coordinates. Native DOM input
  * remains reliable when a device cannot GPU-pick terrain-clamped billboards. */
 export function createCesiumMissionMarker({Cesium,viewer,body,onOpen,onAnchor=()=>{},getSurfaceHeight=()=>0,document:doc=globalThis.document}){
- if(body!=='moon')return null;
+ if(!['moon','earth'].includes(body))return null;const mission=body==='earth'?SPUTNIK:APOLLO_11;
  if(!doc.querySelector('link[data-mission-marker-style]')){const link=doc.createElement('link');link.rel='stylesheet';link.href=new URL('./missions.css',import.meta.url).href;link.dataset.missionMarkerStyle='';doc.head.append(link);}
- const marker=doc.createElement('button');marker.type='button';marker.className='mission-marker';marker.hidden=true;marker.innerHTML=PIN_SVG+'<span>Apollo 11</span>';marker.setAttribute('aria-label','Apollo 11 · Base de la Tranquillité · ouvrir la mission');doc.body.append(marker);
- const {latitude:lat,longitude:lon}=APOLLO_11.site;
- const open=()=>{const rect=marker.getBoundingClientRect?.();onOpen(APOLLO_11.id,rect?{x:rect.left+rect.width/2,y:rect.bottom}:undefined);};marker.addEventListener('click',open);
+ const marker=doc.createElement('button');marker.type='button';marker.className='mission-marker';marker.hidden=true;marker.innerHTML=PIN_SVG+`<span>${mission.name}</span>`;marker.setAttribute('aria-label',mission.name+' · repère historique · ouvrir la mission');doc.body.append(marker);
+ const {latitude:lat,longitude:lon}=mission.site;
+ const open=()=>{const rect=marker.getBoundingClientRect?.();onOpen(mission.id,rect?{x:rect.left+rect.width/2,y:rect.bottom}:undefined);};marker.addEventListener('click',open);
  let lastAnchor=-Infinity;const toward=new Cesium.Cartesian3(),pixel=new Cesium.Cartesian2();
  function update(){
    if(viewer.isDestroyed()){marker.hidden=true;return;}
-   const height=getSurfaceHeight(lat,lon),point=Cesium.Cartesian3.fromDegrees(lon,lat,Number.isFinite(height)?height:0,Cesium.Ellipsoid.MOON);
+   const height=getSurfaceHeight(lat,lon),point=Cesium.Cartesian3.fromDegrees(lon,lat,Number.isFinite(height)?height:0,(body==='moon'?Cesium.Ellipsoid.MOON:Cesium.Ellipsoid.WGS84));
    Cesium.Cartesian3.subtract(viewer.camera.positionWC,point,toward);
    const screen=viewer.scene.cartesianToCanvasCoordinates(point,pixel);
    const bounds=viewer.canvas.getBoundingClientRect();

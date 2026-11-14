@@ -56,9 +56,11 @@ test('the projected lunar pin is unique, accessible, horizon-occluded and remova
   const document={querySelector:()=>true,body:{append:node=>added.push(node)},createElement:()=>({dataset:{},style:{},setAttribute(name,value){this[name]=value;},addEventListener:(type,fn)=>listeners.set(type,fn),removeEventListener:type=>listeners.delete(type),remove(){removed=true;}})};
   const point=C.Cartesian3.fromDegrees(APOLLO_11.site.longitude,APOLLO_11.site.latitude,-1900,C.Ellipsoid.MOON);
   const viewer={isDestroyed:()=>false,canvas:{getBoundingClientRect:()=>({left:10,top:20,width:800,height:600})},camera:{positionWC:C.Cartesian3.multiplyByScalar(point,1.01,new C.Cartesian3()),directionWC:C.Cartesian3.negate(C.Cartesian3.normalize(point,new C.Cartesian3()),new C.Cartesian3())},scene:{postRender:{addEventListener:()=>()=>{stopped=true;}},cartesianToCanvasCoordinates(position){lastPosition=position;return {x:400,y:300};}}};
-  assert.equal(createCesiumMissionMarker({Cesium:C,viewer,body:'earth',document}),null);assert.equal(added.length,0);
+  assert.equal(createCesiumMissionMarker({Cesium:C,viewer,body:'mars',document}),null);assert.equal(added.length,0);
   const marker=createCesiumMissionMarker({Cesium:C,viewer,body:'moon',document,getSurfaceHeight:()=>-1900,onOpen:id=>opened.push(id)});assert.equal(added.length,1);
   assert.ok(C.Cartesian3.distance(lastPosition,point)<1e-6);assert.equal(added[0].hidden,false);assert.equal(added[0].type,'button');assert.equal(added[0].style.left,'410px');assert.match(added[0]['aria-label'],/Apollo 11/);
   listeners.get('click')();assert.deepEqual(opened,['apollo-11']);viewer.camera.positionWC=C.Cartesian3.negate(point,new C.Cartesian3());marker.update();assert.equal(added[0].hidden,true);
   marker.dispose();assert.ok(removed&&stopped);assert.equal(listeners.size,0);
+  const earthPoint=C.Cartesian3.fromDegrees(63.3422,45.9203,0,C.Ellipsoid.WGS84);viewer.camera.positionWC=C.Cartesian3.multiplyByScalar(earthPoint,1.1,new C.Cartesian3());viewer.camera.directionWC=C.Cartesian3.negate(C.Cartesian3.normalize(earthPoint,new C.Cartesian3()),new C.Cartesian3());
+  const sp=createCesiumMissionMarker({Cesium:C,viewer,body:'earth',document,onOpen:id=>opened.push(id)});assert.ok(C.Cartesian3.distance(lastPosition,earthPoint)<1e-6);assert.match(added[1]['aria-label'],/Spoutnik 1/);listeners.get('click')();assert.equal(opened.at(-1),'sputnik-1');sp.dispose();
 });

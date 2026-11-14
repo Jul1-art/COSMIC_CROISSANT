@@ -1,0 +1,6 @@
+import {appURL} from '../core/paths.js';
+export const SPUTNIK={id:'sputnik-1',name:'Spoutnik 1',site:{latitude:45.9203,longitude:63.3422},body:'earth'};
+export function openSputnik(anchor){
+ let card=document.querySelector('#sputnik-card');if(!card){card=document.createElement('section');card.id='sputnik-card';card.className='mission-popup';card.setAttribute('role','dialog');card.setAttribute('aria-label','Spoutnik 1');card.innerHTML=`<header><h2>Spoutnik 1</h2><span>URSS</span><button type="button" aria-label="Fermer Spoutnik 1">×</button></header><dl><div><dt>Lancement</dt><dd>4 octobre 1957</dd></div><div><dt>Masse</dt><dd>83,6 kg</dd></div><div><dt>Statut</dt><dd>Détruit le 4 janvier 1958</dd></div></dl><p style="font-size:10px">Repère historique de lancement à Baïkonour. Aucun matériel de cette mission ne reste en orbite.</p><details><summary class="mission-menu-toggle">Explorer la mission</summary><p><a href="${appURL('pages/sputnik.html').href}">Les détails de la mission ↗</a></p><a href="${appURL('assets/missions/sputnik-1/fiche-mission.pdf').href}" target="_blank" rel="noopener">Lire la fiche PDF ↗</a></details>`;card.querySelector('button').onclick=()=>{card.hidden=true;};document.body.append(card);}
+ card.hidden=false;card.style.left=Math.max(12,Math.min(innerWidth-250,(anchor?.x??innerWidth-140)-119))+'px';card.style.top='84px';
+}

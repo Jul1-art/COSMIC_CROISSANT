@@ -392,7 +392,7 @@ async function start(){
       else if(event.key==='+'||event.key==='=')zoom(.8);else if(event.key==='-')zoom(1.25);else if(['n','Home'].includes(event.key))orient(0,0,0);else if(event.key.toLowerCase()==='q')orient(0,-5);else if(event.key.toLowerCase()==='e')orient(0,5);else if(event.key.toLowerCase()==='r')resetView(true);else return;
       event.preventDefault();post('interaction');
     });
-    missionMarker=createCesiumMissionMarker({Cesium,viewer,body,getSurfaceHeight:groundHeight,onOpen:(id,anchor)=>{interaction();post('mission',{id,anchor});},onAnchor:anchor=>post('mission-anchor',{id:'apollo-11',anchor})});
+    missionMarker=createCesiumMissionMarker({Cesium,viewer,body,getSurfaceHeight:groundHeight,onOpen:(id,anchor)=>{interaction();post('mission',{id,anchor});},onAnchor:anchor=>post('mission-anchor',{id:body==='earth'?'sputnik-1':'apollo-11',anchor})});
     const handler=new Cesium.ScreenSpaceEventHandler(scene.canvas);
     handler.setInputAction(event=>{if(satellites?.handleClick(event.position)){interaction();return;}if(celestial?.handleClick(event.position,{pixels:compact?22:13}))interaction();},Cesium.ScreenSpaceEventType.LEFT_CLICK);
     handler.setInputAction(event=>{const hit=pickTarget(event.position);if(!hit)return;const cart=ellipsoid.cartesianToCartographic(hit),frame=cameraFrame();goTo(cart.latitude/DEG,cart.longitude/DEG,Math.max(50,(frame?.range||radius*.1)*.3),frame?.heading/DEG||0,frame?90+frame.pitch/DEG:0);interaction();},Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);

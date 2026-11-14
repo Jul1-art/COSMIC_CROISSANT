@@ -1,3 +1,4 @@
+import {openSputnik} from './sputnik.js';
 import {APOLLO_11,MISSIONS,EVENTS,START,END,eventTime,missionState,formatUTC} from './apollo11-data.js';
 import {PIN_SVG} from './mission-icons.js';
 import {revealMissionElement,reducedMissionMotion} from './mission-motion.js';
@@ -95,6 +96,7 @@ export function installMissionUI(){
  const query=new URL(location.href).searchParams;if(query.get('mission')==='apollo-11')queueMicrotask(()=>openMission('apollo-11',query.get('missionView')));
 }
 export function openMission(id,view='summary',nextAnchor){
+ if(id==='sputnik-1'){installMissionUI();openSputnik(nextAnchor);return;}
  if(!MISSIONS.has(id))return;installMissionUI();
  if(view==='article'){location.assign(appURL('pages/mission.html?mission=apollo-11').href);return;}
  if(view==='video'){openVideo();return;}if(view==='explore'){startMission();return;}showPopup(nextAnchor);
