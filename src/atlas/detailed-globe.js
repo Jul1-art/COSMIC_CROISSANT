@@ -71,6 +71,7 @@ export function createDetailedGlobe({host,onState=()=>{},onInteraction=()=>{},on
     if(data.type==='ready'){clearTimeout(timer);ready=true;state={...state,...data.state};return;}
     if(data.type==='state'){state={...state,...data.state};emit();return;}
     if(data.type==='interaction'){arrival=false;onInteraction();return;}
+    if(data.type==='mission'&&data.id==='apollo-11'&&current?.id==='moon'){window.dispatchEvent(new CustomEvent('relic-mission-open',{detail:{id:data.id}}));return;}
     if(data.type==='select'&&typeof data.id==='string'){onSelect(data.id);return;}
     if(data.type==='error'){teardown();emit({error:'unavailable'});}
   }

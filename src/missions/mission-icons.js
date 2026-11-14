@@ -1,0 +1,1 @@
+export const PIN_SVG='<svg class="fas fa-map-marker-alt" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M192 0C86 0 0 86 0 192c0 144 192 320 192 320s192-176 192-320C384 86 298 0 192 0Z"/><circle cx="192" cy="184" r="66" fill="#10151a"/><circle cx="192" cy="184" r="30" fill="currentColor"/></svg>';

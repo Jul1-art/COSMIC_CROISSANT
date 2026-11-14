@@ -1,3 +1,4 @@
+import {createCesiumMissionMarker} from '../missions/cesium-mission-marker.js';
 import {installAdaptiveWorldQuality} from './world-performance.js';
 import {createEarthSatellites} from '../satellites/cesium-layer.js';
 import * as Cesium from '../../vendor/cesium/index.js';
@@ -30,6 +31,7 @@ let adaptiveQuality;
 let cameraMotion,lastCameraAction=null,arrivalPlayed=false;
 let defaultFov=Math.PI/3,disposeCameraControls;
 const maximumFrameRange=()=>globeZoomOutLimit(radius,viewer?.camera.frustum.fovy||Math.PI/3)+radius*2;
+let missionMarker=null;
 let earth3D=null,earthTerrainReady=false,earthBuildingsRequested=false,satellites=null;
 const adaptiveImagery=[];
 const post=(type,payload={})=>{if(parent!==window)parent.postMessage({channel:CHANNEL,type,...payload},location.origin);};
@@ -326,7 +328,7 @@ function receive(event){
   else if(action==='northUp')northUp();
   else if(action==='reveal')reveal();
 }
-function dispose(){if(disposed)return;disposed=true;adaptiveQuality?.dispose();cameraMotion?.cancel();disposeCameraControls?.();satellites?.dispose();creditObserver.disconnect();window.removeEventListener('message',receive);earth3D?.destroy();effects?.destroy();celestial?.dispose();if(viewer&&!viewer.isDestroyed())viewer.destroy();}
+function dispose(){if(disposed)return;disposed=true;missionMarker?.dispose();adaptiveQuality?.dispose();cameraMotion?.cancel();disposeCameraControls?.();satellites?.dispose();creditObserver.disconnect();window.removeEventListener('message',receive);earth3D?.destroy();effects?.destroy();celestial?.dispose();if(viewer&&!viewer.isDestroyed())viewer.destroy();}
 async function start(){
   try{
     viewer=new Cesium.Viewer('globe',{ellipsoid,globe:new Cesium.Globe(ellipsoid),mapProjection:new Cesium.GeographicProjection(ellipsoid),
@@ -390,6 +392,7 @@ async function start(){
       else if(event.key==='+'||event.key==='=')zoom(.8);else if(event.key==='-')zoom(1.25);else if(['n','Home'].includes(event.key))orient(0,0,0);else if(event.key.toLowerCase()==='q')orient(0,-5);else if(event.key.toLowerCase()==='e')orient(0,5);else if(event.key.toLowerCase()==='r')resetView(true);else return;
       event.preventDefault();post('interaction');
     });
+    missionMarker=createCesiumMissionMarker({Cesium,viewer,body,getSurfaceHeight:groundHeight,onOpen:id=>post('mission',{id})});
     const handler=new Cesium.ScreenSpaceEventHandler(scene.canvas);
     handler.setInputAction(event=>{if(satellites?.handleClick(event.position)){interaction();return;}if(celestial?.handleClick(event.position,{pixels:compact?22:13}))interaction();},Cesium.ScreenSpaceEventType.LEFT_CLICK);
     handler.setInputAction(event=>{const hit=pickTarget(event.position);if(!hit)return;const cart=ellipsoid.cartesianToCartographic(hit),frame=cameraFrame();goTo(cart.latitude/DEG,cart.longitude/DEG,Math.max(50,(frame?.range||radius*.1)*.3),frame?.heading/DEG||0,frame?90+frame.pitch/DEG:0);interaction();},Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
