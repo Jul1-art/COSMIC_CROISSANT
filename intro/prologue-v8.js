@@ -53,6 +53,7 @@ const clock = seconds => {
 // editions mark its black picture as `visual`; scene identity remains reliable
 // across narration languages, media durations, pauses and the exact last frame.
 function filmEndingAnchor(media, cues, position, ended) {
+  if(media.endCard===false)return null;
   const scene = media.scenes?.find(item => item.id === 'relic' && Number.isFinite(Number(item.start)));
   const cue = cues.find(item => item.kind === 'end' && Number.isFinite(Number(item.start)));
   const start = Number(scene?.start ?? cue?.start ?? (ended ? position : Infinity));
@@ -76,6 +77,8 @@ export function suppressFilmOutroChrome(media, cues, position, ended = false) {
 export function createPrologue({
   element,
   timeline = [],
+  idPrefix = '',
+  labels = {},
   media = {},
   getLanguage = () => 'en',
   reducedMotion = () => false,
@@ -171,7 +174,7 @@ export function createPrologue({
     narrationLanguage = getLanguage() === 'fr' ? 'fr' : 'en';
     const controller = new view.AbortController();
     const signal = controller.signal;
-    const copy = () => COPY[language()];
+    const copy = () => ({...COPY[language()],...labels});
     // A replay selects the current language's complete source when supplied.
     // media.narration remains metadata for the separately owned audio adapter.
     let filmMedia = { ...media, ...(media.languages?.[language()] ?? {}) };
@@ -187,38 +190,38 @@ export function createPrologue({
     element.tabIndex = -1;
     element.classList.remove('prologue-chrome-hidden', 'prologue-caption-off');
     // Only static interface markup uses HTML. Every supplied cue uses textContent.
-    element.innerHTML = `<canvas class="prologue-backdrop" width="0" height="0" aria-hidden="true"></canvas><video id="intro-video" class="prologue-film" playsinline preload="auto" aria-hidden="true" tabindex="-1"></video><canvas class="prologue-language-frame" width="0" height="0" aria-hidden="true" hidden></canvas>
+    element.innerHTML = `<canvas class="prologue-backdrop" width="0" height="0" aria-hidden="true"></canvas><video id="${idPrefix}intro-video" class="prologue-film" playsinline preload="auto" aria-hidden="true" tabindex="-1"></video><canvas class="prologue-language-frame" width="0" height="0" aria-hidden="true" hidden></canvas>
       <div class="prologue-shade" aria-hidden="true"></div>
       <header class="prologue-header"><span class="prologue-brand" aria-hidden="true"><img src="${BRAND_ASSET}" alt="" width="32" height="28">RELIC</span><span class="prologue-preview" hidden></span></header>
       <button class="prologue-reveal prologue-visually-hidden" type="button" hidden></button>
-      <div class="prologue-caption"><img class="prologue-endmark" src="${BRAND_ASSET}" alt="" width="128" height="112" aria-hidden="true"><h1 id="intro-line"></h1><span class="prologue-visually-hidden" id="intro-transcript" aria-live="polite" aria-atomic="true"></span></div>
-      <div class="prologue-gate" hidden><p id="intro-status" role="status"></p><div class="prologue-gate-actions"><button class="prologue-play-film" type="button">${icon('play')}</button><button class="prologue-enter" type="button"><span></span></button></div></div>
+      <div class="prologue-caption"><img class="prologue-endmark" src="${BRAND_ASSET}" alt="" width="128" height="112" aria-hidden="true"><h1 id="${idPrefix}intro-line"></h1><span class="prologue-visually-hidden" id="${idPrefix}intro-transcript" aria-live="polite" aria-atomic="true"></span></div>
+      <div class="prologue-gate" hidden><p id="${idPrefix}intro-status" role="status"></p><div class="prologue-gate-actions"><button class="prologue-play-film" type="button">${icon('play')}</button><button class="prologue-enter" type="button"><span></span></button></div></div>
       <p class="prologue-loading" role="status" hidden></p>
       <p class="prologue-feedback" role="status" aria-live="polite" hidden></p>
       <footer class="prologue-controls">
         <label class="prologue-scrubber"><span class="prologue-visually-hidden"></span><input type="range" min="0" max="1" step="0.01" value="0" disabled></label>
         <div class="prologue-transport">
           <div class="prologue-main-controls"><button class="prologue-pause" type="button"></button><div class="prologue-volume-group"><button class="prologue-audio" type="button" aria-pressed="false"></button><label class="prologue-inline-volume"><span class="prologue-visually-hidden"></span><input class="prologue-volume-input" data-player-volume type="range" min="0" max="100" step="1" value="100"><output class="prologue-volume-value">100%</output></label></div><time class="prologue-time"></time></div>
-          <div class="prologue-extra-controls"><button class="prologue-language" type="button"><span></span></button><button class="prologue-captions" type="button" aria-pressed="true">${icon('captions')}</button><button class="prologue-settings" type="button" aria-controls="prologue-player-menu" aria-expanded="false">${worldIcon('gear')}</button><button class="prologue-fullscreen" type="button">${icon('fullscreen')}</button></div>
+          <div class="prologue-extra-controls"><button class="prologue-language" type="button"><span></span></button><button class="prologue-captions" type="button" aria-pressed="true">${icon('captions')}</button><button class="prologue-settings" type="button" aria-controls="${idPrefix}prologue-player-menu" aria-expanded="false">${worldIcon('gear')}</button><button class="prologue-fullscreen" type="button">${icon('fullscreen')}</button></div>
         </div>
-        <section class="prologue-player-menu" id="prologue-player-menu" role="dialog" aria-modal="false" aria-labelledby="prologue-player-menu-title" hidden>
-          <header><h2 id="prologue-player-menu-title"></h2><button class="prologue-menu-close" type="button">${icon('close')}</button></header>
+        <section class="prologue-player-menu" id="${idPrefix}prologue-player-menu" role="dialog" aria-modal="false" aria-labelledby="${idPrefix}prologue-player-menu-title" hidden>
+          <header><h2 id="${idPrefix}prologue-player-menu-title"></h2><button class="prologue-menu-close" type="button">${icon('close')}</button></header>
           <div class="prologue-menu-volume-row"><label><span data-player-copy="volume"></span><input class="prologue-menu-volume" data-player-volume type="range" min="0" max="100" step="1" value="100"></label><label class="prologue-volume-number-wrap"><input class="prologue-volume-number" type="number" min="0" max="100" step="1" value="100" inputmode="numeric"><span aria-hidden="true">%</span></label></div>
           <fieldset class="prologue-speed"><legend data-player-copy="speed"></legend><div>${[.25,.5,.75,1,1.25,1.5,1.75,2].map(rate=>`<button type="button" data-player-rate="${rate}" aria-pressed="${rate===1}">${rate}×</button>`).join('')}</div></fieldset>
           <div class="prologue-menu-actions"><button class="prologue-download" type="button" hidden>${icon('download')}<span></span></button><button class="prologue-shortcut-toggle" type="button" aria-expanded="false"><span aria-hidden="true">?</span><span data-player-copy="help"></span></button></div>
           <div class="prologue-shortcuts" hidden></div>
         </section>
       </footer>`;
-    const video = element.querySelector('#intro-video');
+    const video = element.querySelector('#'+idPrefix+'intro-video');
     const languageFrame = element.querySelector('.prologue-language-frame');
     const backdrop = element.querySelector('.prologue-backdrop');
     const backdropContext = backdrop.getContext('2d', { alpha: false });
     const fittedScreen = view.matchMedia('(orientation: portrait), (max-height: 500px) and (pointer: coarse)');
     const caption = element.querySelector('.prologue-caption');
-    const title = element.querySelector('#intro-line');
+    const title = element.querySelector('#'+idPrefix+'intro-line');
     const gate = element.querySelector('.prologue-gate');
     const gateActions = element.querySelector('.prologue-gate-actions');
-    const status = element.querySelector('#intro-status');
+    const status = element.querySelector('#'+idPrefix+'intro-status');
     const play = element.querySelector('.prologue-play-film');
     const enter = element.querySelector('.prologue-enter');
     const controls = element.querySelector('.prologue-controls');
@@ -232,7 +235,7 @@ export function createPrologue({
     const languageButton = element.querySelector('.prologue-language');
     const captions = element.querySelector('.prologue-captions');
     const fullscreen = element.querySelector('.prologue-fullscreen');
-    const transcript = element.querySelector('#intro-transcript');
+    const transcript = element.querySelector('#'+idPrefix+'intro-transcript');
     const download = element.querySelector('.prologue-download');
     const volumeInputs = [...element.querySelectorAll('[data-player-volume]')];
     const volumeNumber = element.querySelector('.prologue-volume-number');
