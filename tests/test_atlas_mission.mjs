@@ -57,3 +57,16 @@ test('a late local terrain load cannot take the camera back after the user start
  resolve({root:new THREE.Group(),setActive(){},updateShadows(){},dispose(){},protectCamera(){return false;}});
  await new Promise(r=>setTimeout(r,950));assert.deepEqual(f.camera.position,pose);assert.deepEqual(f.controls.target,target);f.mission.dispose();
 });
+
+test('lunar orbit playback and rewinds retain user zoom and pan in the moving Moon frame',async()=>{
+ const {mission,camera,controls,mesh}=fixture();await mission.start();mission.setMode('orbit');
+ camera.position.add(new THREE.Vector3(.3,-.2,.1));controls.target.add(new THREE.Vector3(-.2,.1,.3));
+ const moon=()=>mesh.getWorldPosition(new THREE.Vector3());
+ const relative=camera.position.clone().sub(moon()),pan=controls.target.clone().sub(moon()),up=camera.up.clone();
+ for(const t of [eventTime('landing'),eventTime('ascent'),eventTime('landing')]){
+  mission.setTime(t);assert.ok(camera.position.clone().sub(moon()).distanceTo(relative)<1e-8);assert.ok(controls.target.clone().sub(moon()).distanceTo(pan)<1e-8);assert.deepEqual(camera.up,up);
+ }
+ mission.setSpeed(86400);mission.setPlaying(true);for(let i=0;i<20;i++)mission.update(.1,i*100);
+ assert.ok(camera.position.clone().sub(moon()).distanceTo(relative)<1e-8,'Playback must not make the Moon recede');assert.ok(controls.target.clone().sub(moon()).distanceTo(pan)<1e-8);
+ mission.setMode('journey');const fixed=camera.position.clone();mission.setTime(START);assert.deepEqual(camera.position,fixed,'The Earth–Moon overview retains its free inertial camera');mission.dispose();
+});

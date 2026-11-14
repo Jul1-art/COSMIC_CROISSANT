@@ -7,10 +7,12 @@ import {appURL} from '../core/paths.js';
 export {PIN_SVG};
 const icon=name=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">${({chevron:'<path d="m7 10 5 5 5-5"/>',play:'<path d="m9 5 11 7-11 7Z"/>',read:'<path d="M6 3h9l4 4v14H6Z M10 11h5m-5 4h5"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',pause:'<path d="M8 5v14M16 5v14"/>'})[name]||''}</svg>`;
 const button=(label,action,attributes='')=>`<button type="button" data-mission-action="${action}" ${attributes}>${label}</button>`;
-let installed=false,popup,actions,panel,freeBadge,annotations,explorer,film,filmHost,restoreFocus,anchor;
+let installed=false,popup,actions,panel,freeBadge,annotations,explorer,film,filmHost,restoreFocus,anchor,launchpadStack;
 const pauseAtlas=active=>window.dispatchEvent(new CustomEvent('relic-navigation-state',{detail:{active}}));
 function positionPopup(){
- if(!popup||popup.hidden)return;
+ if(!popup)return;
+ if(launchpadStack&&!launchpadStack.hidden){const top=innerHeight<420?12:84;launchpadStack.style.left=`${Math.max(12,innerWidth-launchpadStack.offsetWidth-(innerWidth<=650?12:24))}px`;launchpadStack.style.top=`${top}px`;launchpadStack.style.maxHeight=`${Math.max(100,innerHeight-top-(innerWidth<=650?100:42))}px`;return;}
+ if(popup.hidden)return;
  const width=popup.offsetWidth,height=popup.offsetHeight+(actions.hidden?0:actions.offsetHeight+8);
  const left=explorer?innerWidth-width-24:(anchor?.x??innerWidth/2)-width/2;
  const top=explorer?84:(anchor?.y??innerHeight/2)-height-48;
@@ -22,6 +24,7 @@ function closePopup({focus=false}={}){if(!popup)return;popup.hidden=actions.hidd
 function showPopup(nextAnchor){anchor=nextAnchor||anchor;restoreFocus=document.activeElement;popup.hidden=false;const expanded=Boolean(explorer);popup.querySelector('[data-mission-action="menu"]').setAttribute('aria-expanded',String(expanded));actions.hidden=!expanded;positionPopup();requestAnimationFrame(positionPopup);revealMissionElement(popup,{duration:220,distance:5});popup.querySelector('[data-mission-action="menu"]').focus({preventScroll:true});}
 function updateTime(time,playing,meta){
  if(!panel)return;const state=missionState(time);
+ if(freeBadge&&meta?.mode)freeBadge.querySelector(':scope>span').textContent=meta.mode==='orbit'?'CAMÉRA LIBRE · LUNE':'CAMÉRA LIBRE';
  if(meta?.method)panel.querySelector('#mission-status').textContent=meta.method;
  if(meta?.vehicle){const key=panel.querySelector('#mission-vehicle-key');key.textContent=meta.vehicle;key.disabled=!meta.vehicle.includes('Saturn V');}
  panel.querySelector('#mission-time-slider').value=state.time;panel.querySelector('#mission-clock').textContent=formatUTC(state.time);
@@ -81,8 +84,8 @@ export function installMissionUI(){
  document.body.append(popup,actions);popup.addEventListener('click',handleAction);actions.addEventListener('click',handleAction);
  const launchpad=document.createElement('section');launchpad.id='mission-launchpad';launchpad.className='mission-popup mission-launchpad';launchpad.hidden=true;launchpad.setAttribute('aria-label','Pas de tir Apollo 11');
  launchpad.innerHTML=`<header><h2>LC-39A</h2><span>KENNEDY SPACE CENTER</span></header><p>Pas de tir d’Apollo 11 · 16 juillet 1969</p><p class="launchpad-source" role="status" aria-live="polite"></p><small>Imagerie 3D actuelle du site. Les installations de 1969 et Saturn V ne sont pas reconstituées par ces tuiles.</small><button type="button" class="mission-menu-toggle" data-launchpad="close">← Retour à la mission</button><button type="button" class="mission-menu-toggle" data-launchpad="retry" hidden>Réessayer les tuiles 3D</button>`;
- document.body.append(launchpad);launchpad.addEventListener('click',event=>{const action=event.target.closest('[data-launchpad]')?.dataset.launchpad;if(action)window.dispatchEvent(new CustomEvent('relic-launchpad-command',{detail:{action}}));});
- window.addEventListener('relic-launchpad-state',event=>{const {active,status}=event.detail;launchpad.hidden=!active;launchpad.querySelector('.launchpad-source').textContent=status==='ready'?'Google Photorealistic 3D Tiles · Cesium ion':status==='streaming'?'Google 3D · Cesium ion · détails en chargement':status==='error'?'Les tuiles 3D sont indisponibles pour cette vue.':'Chargement des tuiles 3D Cesium ion…';launchpad.querySelector('[data-launchpad="retry"]').hidden=status!=='error';});
+ launchpadStack=document.createElement('div');launchpadStack.className='mission-card-stack';launchpadStack.hidden=true;document.body.append(launchpadStack,launchpad);launchpad.addEventListener('click',event=>{const action=event.target.closest('[data-launchpad]')?.dataset.launchpad;if(action)window.dispatchEvent(new CustomEvent('relic-launchpad-command',{detail:{action}}));});
+ window.addEventListener('relic-launchpad-state',event=>{const {active,status}=event.detail;if(active&&launchpadStack.hidden){if(popup.hidden)showPopup();launchpadStack.append(popup,actions,launchpad);launchpadStack.hidden=false;}else if(!active&&!launchpadStack.hidden){document.body.append(popup,actions,launchpad);launchpadStack.hidden=true;}launchpad.hidden=!active;positionPopup();launchpad.querySelector('.launchpad-source').textContent=status==='ready'?'Google Photorealistic 3D Tiles · Cesium ion':status==='streaming'?'Google 3D · Cesium ion · détails en chargement':status==='error'?'Les tuiles 3D sont indisponibles pour cette vue.':'Chargement des tuiles 3D Cesium ion…';launchpad.querySelector('[data-launchpad="retry"]').hidden=status!=='error';});
  window.addEventListener('relic-mission-video',event=>{if(event.detail?.id==='sputnik-1')openVideo('sputnik-1');});
  window.addEventListener('relic-mission-open',event=>openMission(event.detail?.id,'summary',event.detail?.anchor));
  window.addEventListener('relic-mission-anchor',event=>{if(!popup.hidden&&!explorer&&event.detail?.id==='apollo-11'){anchor=event.detail.anchor;positionPopup();}});

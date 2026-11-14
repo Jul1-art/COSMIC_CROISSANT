@@ -3,7 +3,7 @@ import {loadFlightData,validateFlightData,flightState,sampleState,findInterval,i
 
 /** Mission geometry belongs to the existing atlas renderer. No renderer,
  * artificial transfer curve or replacement Earth/Moon is created here. */
-export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoonMesh,getEarthMesh,getRadius,frame,onStart,onStop,onTime,onStatus=()=>{},onRebase=()=>{},createLine,loadSurface,onSurfaceActive=()=>{},onMaterialsChanged=()=>{},loadModel,loadData=loadFlightData}){
+export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoonMesh,getEarthMesh,getRadius,frame,onStart,onStop,onTime,onStatus=()=>{},onRebase=()=>{},onCameraTranslation=()=>{},createLine,loadSurface,onSurfaceActive=()=>{},onMaterialsChanged=()=>{},loadModel,loadData=loadFlightData}){
  const group=new THREE.Group();group.name='Apollo 11 · native atlas';group.visible=false;scene.add(group);
  const fill=new THREE.HemisphereLight(0xffffff,0x555555,.85);group.add(fill);
  const V=(array=[0,0,0])=>new THREE.Vector3(...array);
@@ -16,6 +16,7 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
  const columbia=point('Columbia · point',0xffffff),eagle=point('Eagle · point',0xc7c7c7);
  const qScene=new THREE.Quaternion().setFromAxisAngle(V([1,0,0]),-Math.PI/2-ECLIPTIC_OBLIQUITY),qMesh=new THREE.Quaternion().setFromAxisAngle(V([1,0,0]),Math.PI/2);
  let active=false,starting=false,disposed=false,generation=0,data=null,pending=null,model=null,modelRequest=null,modelFailed=false,surface=null,surfaceRequest=null,surfaceActive=false,surfaceTimer=null,navigationRevision=0,surfaceRevision=0,surfaceFrameAt=0;
+ let orbitalFrame=null;
  let time=START,playing=false,speed=3600,mode='journey',lastReport=-Infinity,lastOrbit=-Infinity,routeRows=[],eagleRows=[];
  const earth=V(),moon=V(),site=V(),normal=V(),moonQuaternion=new THREE.Quaternion(),savedUp=camera.up.clone();
  const lat=APOLLO_11.site.latitude*Math.PI/180,lon=APOLLO_11.site.longitude*Math.PI/180,siteLocal=V([Math.cos(lat)*Math.cos(lon),Math.sin(lat),-Math.cos(lat)*Math.sin(lon)]);
@@ -88,6 +89,13 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
  }
  function render(force=false){
   if(!active||!data)return;const state=flightState(data,time);synchronizeBodies(state);
+  // Lunar inspection uses a translating reference frame. Preserve the user's
+  // zoom, pan and rotation while the historical Moon moves around Earth.
+  if(mode==='orbit'){
+   const center=moon.clone().add(earth);
+   if(orbitalFrame){const shift=center.clone().sub(orbitalFrame);if(shift.lengthSq()>0){camera.position.add(shift);controls.target.add(shift);onCameraTranslation(shift);}}
+   orbitalFrame=center;
+  }else orbitalFrame=null;
   columbia.position.copy(project(state.columbia.position,state.seconds));columbia.visible=true;
   eagle.visible=Boolean(state.eagle);if(state.eagle)eagle.position.copy(project(state.eagle.position,state.seconds));
   route.visible=trail.visible=moonTrack.visible=mode==='journey';revealPath(trail,Math.min(routeRows.length,findInterval(routeRows,state.seconds)+1));
@@ -141,7 +149,7 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
    try{
     if(!data){pending??=loadData({signal:abort.signal});data=await pending;if(!validateFlightData(data))throw new Error('Les données de trajectoire ne sont pas valides.');}
     if(token!==generation||disposed)return;
-    starting=false;active=true;time=START;mode='journey';playing=!matchMedia('(prefers-reduced-motion: reduce)').matches;group.visible=true;
+    starting=false;active=true;orbitalFrame=null;time=START;mode='journey';playing=!matchMedia('(prefers-reduced-motion: reduce)').matches;group.visible=true;
     savedUp.copy(camera.up);onStart();buildRoute();reset();onStatus('ready');report();
    }catch(error){if(token!==generation||disposed)return;starting=false;pending=null;data=null;onStatus('error',error.message||'La reconstitution ne peut pas démarrer.');}
   },

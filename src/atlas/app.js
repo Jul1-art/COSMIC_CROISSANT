@@ -1180,6 +1180,7 @@ createComet67P({THREE,scene,auToWorld,onSelect:id=>selectBody(id),getLanguage,ca
   if(COMET_IDS.includes(requestedBody))restoreInspection(requestedBody);
 }).catch(error=>{document.body.dataset.cometCatalogue='failed';console.error('67P data unavailable',error);});
 atlasMission=createAtlasMission({THREE,scene,camera,controls,createLine:createFlightLine,onMaterialsChanged:()=>missionDepth.install(scene),loadSurface:options=>import('../missions/apollo-surface.js').then(module=>module.loadApolloSurface(options)),
+ onCameraTranslation(shift){if(flight)for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].add(shift);},
  onRebase(shift){
   missionOrigin.add(shift);planetGroups.get('earth').position.sub(shift);camera.position.sub(shift);controls.target.sub(shift);
   if(flight)for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].sub(shift);
