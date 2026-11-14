@@ -5,6 +5,7 @@ export const APOLLO_11 = {
   crew:[['Neil Armstrong','Commandant'],['Buzz Aldrin','Pilote du module lunaire'],['Michael Collins','Pilote du module de commande']],
   summary:'Le premier alunissage habité. Huit jours de voyage, deux hommes sur la Lune et un patrimoine technique toujours présent à la surface.',
   sources:[
+    ['NASA · Modèle 3D du module lunaire (Michael D. Carbajal)','https://science.nasa.gov/3d-resources/apollo-lunar-module/'],
     ['NASA · Mission Apollo 11','https://www.nasa.gov/mission/apollo-11/'],
     ['NASA · Chronologie officielle SP-4029','https://www.nasa.gov/wp-content/uploads/static/history/SP-4029/Apollo_11i_Timeline.htm'],
     ['NASA · Rapport de mission MSC-00171','https://www.nasa.gov/wp-content/uploads/static/apollo50th/pdf/A11_MissionReport.pdf'],

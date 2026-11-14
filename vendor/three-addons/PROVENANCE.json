@@ -1,0 +1,7 @@
+{
+  "upstream": "https://github.com/mrdoob/three.js",
+  "revision": "r164",
+  "purpose": "Local glTF / Draco decoding and environment lighting for the NASA Apollo lunar module; same Three.js revision as vendor/three.module.js.",
+  "license": "MIT (LICENSE). Bundled Google Draco decoder: Apache-2.0 (libs/draco/LICENSE).",
+  "modified": false
+}

@@ -69,3 +69,25 @@ silent press-room footage after HQ-194. These are omitted; the documentary's
 end credits are retained. The movie is original English archive material, not
 a newly generated video or invented historical speech. It is now served from
 this project, without depending on the previously failing SVS MP4 server.
+
+## Visual system and motion
+
+The interface uses the project's local Inter and JetBrains Mono fonts, a dark
+olive surface palette, restrained sage controls and shared typography between
+map card, film player, immersive controls and the editorial dossier. Popovers,
+menus, chapter headings, reading tabs and scroll reveals use native browser
+animations and respect reduced-motion preferences.
+
+The landing-site scene now loads NASA / Michael D. Carbajal's published GLB
+lunar module, locally decoded with the pinned Three.js r164 Draco loader.
+Meshes are batched by material and visually separated into ascent/descent groups.
+The source is a general Apollo lunar module model, not an Eagle survey. See
+`assets/missions/apollo-11/models/provenance.json` for source, hash and adaptations.
+Environment reflections, a directional key light and cached soft shadows provide
+the new material rendering. Local grain and scattered small pebbles are decorative;
+the underlying elevation still comes from the existing LROC height raster.
+
+`mission-camera.js` owns interruptible camera easing for arrival, reset and
+individual equipment. Direct pointer control cancels the current camera flight.
+Closing the scene releases model geometry, textures, decoder workers and lighting
+resources. The old geometric module remains available as a loading-error fallback.

@@ -1,0 +1,9 @@
+{
+  "title": "Apollo Lunar Module",
+  "credit": "NASA / Michael D. Carbajal",
+  "source": "https://science.nasa.gov/3d-resources/apollo-lunar-module/",
+  "download": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/master/3D%20Models/Apollo%20Lunar%20Module/Apollo%20Lunar%20Module.glb",
+  "sha256": "379101dfcee399267addf771709107c35e826b0b9e5233272f123e4c8a585c4e",
+  "adaptations": "Normalized to a 6.8 m visual height and centered; materials tuned for the scene lighting, meshes batched by material, ascent/descent split inferred visually for educational animation. This is a general lunar module model, not a surveyed reconstruction of Eagle.",
+  "terrain": "NASA LROC DEM retained. Local procedural grain and scattered small rocks are decorative scene dressing, not surveyed objects."
+}
