@@ -1,0 +1,32 @@
+[
+  {
+    "file": "satellite.jpg",
+    "nasaId": "S76-22361",
+    "source": "https://images.nasa.gov/details/S76-22361",
+    "download": "http://images-assets.nasa.gov/image/S76-22361/S76-22361~medium.jpg",
+    "credit": "NASA",
+    "caption": "Maquette grandeur nature de Spoutnik 1 au Salon du Bourget, juin 1975. Ce modèle d’exposition n’est pas le satellite de vol.",
+    "width": 792,
+    "height": 1200
+  },
+  {
+    "file": "baikonur.jpg",
+    "nasaId": "PIA16292",
+    "source": "https://images.nasa.gov/details/PIA16292",
+    "download": "http://images-assets.nasa.gov/image/PIA16292/PIA16292~orig.jpg",
+    "credit": "NASA / JPL-Caltech / METI",
+    "caption": "Baïkonour observé par le satellite Terra. Vue contemporaine du territoire du cosmodrome, et non photographie du lancement de 1957.",
+    "width": 988,
+    "height": 1146
+  },
+  {
+    "file": "early-rockets.jpg",
+    "nasaId": "9248168",
+    "source": "https://images.nasa.gov/details/9248168",
+    "download": "http://images-assets.nasa.gov/image/9248168/9248168~medium.jpg",
+    "credit": "NASA",
+    "caption": "Les débuts de la course à l’espace : archives des premiers lanceurs américains, présentées par la NASA dans le contexte du lancement de Spoutnik.",
+    "width": 1280,
+    "height": 815
+  }
+]

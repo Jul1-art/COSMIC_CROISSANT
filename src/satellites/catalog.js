@@ -29,9 +29,10 @@ export function mergeCatalogGroups(groups){
   }
   return records;
 }
-export function createSatelliteCatalog({fetchImpl=globalThis.fetch,now=()=>Date.now(),onChange=()=>{},cacheStorage=globalThis.caches}={}){
+export function createSatelliteCatalog({fetchImpl=globalThis.fetch,now=()=>Date.now(),onChange=()=>{},cacheStorage=globalThis.caches,groups=GROUPS,noradIds=null}={}){
+  const requestedGroups=[...new Set(groups)],allowedIds=noradIds?new Set(noradIds):null;
   let disposed=false,pending=null,lastRefresh=0,status='loading',failedGroups=[],records=new Map(),controller=null,nextRetryAt=0;
-  const snapshots=new Map(),sources=new Map(GROUPS.map(id=>[id,{id,status:'pending',received:0,accepted:0}]));
+  const snapshots=new Map(),sources=new Map(requestedGroups.map(id=>[id,{id,status:'pending',received:0,accepted:0}]));
   async function read(group,signal){
     const url=new URL(`api/celestrak/${group}`,APP_ROOT).href;
     let cache,cached;
@@ -66,12 +67,12 @@ export function createSatelliteCatalog({fetchImpl=globalThis.fetch,now=()=>Date.
     pending=(async()=>{
       let successes=0;failedGroups=[];let stale=false;
       // A single request at a time avoids parallel provider-throttle bursts.
-      for(const group of GROUPS){
+      for(const group of requestedGroups){
         if(disposed)return;
         sources.set(group,{...sources.get(group),status:'loading'});publish();
         try{
           const result=await read(group,signal);if(disposed)return;
-          const entries=parseTleText(result.text),parsed=[];
+          const entries=parseTleText(result.text).filter(entry=>!allowedIds||allowedIds.has(Number(entry.line2.slice(2,7)))),parsed=[];
           for(let i=0;i<entries.length;i+=150){
             if(disposed||signal.aborted)return;
             const text=entries.slice(i,i+150).map(row=>[row.name,row.line1,row.line2].join('\n')).join('\n');
@@ -91,7 +92,7 @@ export function createSatelliteCatalog({fetchImpl=globalThis.fetch,now=()=>Date.
           nextRetryAt=Math.max(nextRetryAt,Number(error.retryAt)||now()+60000);
           // A per-host throttle applies to every group. Stop, do not hammer it.
           if(error.throttled||error.message.includes('(429)')||error.message.includes('(403)')){
-            for(const deferred of GROUPS.slice(GROUPS.indexOf(group)+1)){failedGroups.push(deferred);sources.set(deferred,{...sources.get(deferred),status:usableSnapshot(deferred)?'retained':'deferred'});}
+            for(const deferred of requestedGroups.slice(requestedGroups.indexOf(group)+1)){failedGroups.push(deferred);sources.set(deferred,{...sources.get(deferred),status:usableSnapshot(deferred)?'retained':'deferred'});}
             break;
           }
         }

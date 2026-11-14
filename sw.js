@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261114-v82-sputnik';
-const INTERFACE_RELEASE = 'missions-20261114-v82';
+const VERSION = 'missions-20261114-v83-sputnik-dossier';
+const INTERFACE_RELEASE = 'missions-20261114-v83';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -31,7 +31,7 @@ const CORE = [
 // This also covers a first visit whose early imports preceded worker control.
 const OFFLINE_CORE = [
   'assets/terrain/catalog.json','assets/terrain/moon-apollo11.bin','assets/terrain/moon-apollo11.webp','assets/earth-blue-marble-4k.webp',
-  'pages/sputnik.html','src/missions/sputnik.js','src/missions/sputnik-dossier.js','assets/missions/sputnik-1/fiche-mission.pdf','pages/mission.html','src/missions/mission-dossier.js','src/missions/mission-dossier-content.js','src/missions/mission-dossier.css','src/missions/mission-film.js',
+  'src/missions/sputnik-dossier.css','assets/missions/sputnik-1/satellite.jpg','assets/missions/sputnik-1/baikonur.jpg','assets/missions/sputnik-1/early-rockets.jpg','assets/missions/sputnik-1/photos.json','pages/sputnik.html','src/missions/sputnik.js','src/missions/sputnik-dossier.js','assets/missions/sputnik-1/fiche-mission.pdf','pages/mission.html','src/missions/mission-dossier.js','src/missions/mission-dossier-content.js','src/missions/mission-dossier.css','src/missions/mission-film.js',
   'assets/missions/apollo-11/crew.jpg','assets/missions/apollo-11/launch.jpg','assets/missions/apollo-11/aldrin.jpg','assets/missions/apollo-11/seismometer.jpg','assets/missions/apollo-11/recovery.jpg','assets/missions/apollo-11/fiche-mission.pdf',
   'assets/missions/apollo-11/trajectory.json','assets/missions/apollo-11/trajectory-anchors.json','src/missions/mission-depth.js','src/missions/flight-lines.js','src/missions/apollo-surface.js','src/missions/apollo-surface-math.js','vendor/three-addons/lines/Line2.js','vendor/three-addons/lines/LineSegments2.js','vendor/three-addons/lines/LineGeometry.js','vendor/three-addons/lines/LineSegmentsGeometry.js','vendor/three-addons/lines/LineMaterial.js','src/missions/apollo-flight.js','src/missions/atlas-mission.js','src/missions/mission-motion.js','src/missions/mission-camera.js','src/missions/nasa-lunar-module.js',
   'assets/missions/apollo-11/models/lunar-module.glb',

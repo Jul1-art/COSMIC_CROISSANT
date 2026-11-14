@@ -8,7 +8,7 @@ import {ISS_NORAD,COVERAGE_MS,propagatePosition,computeOrbitPath,orbitRotation} 
 import {SATELLITE_CLASS_IDS,SATELLITE_CLASS_DISPLAY} from '../../vendor/gods-eye-view/satellites/classes.js';
 import {createSatellitePanel} from './panel.js?v=63';
 import {STARLINK_COLOR,STARLINK_POINT_SIZE,constellationRadius,constellationViewDistance} from './constellation-view.js';
-export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLanguage,onLanguageChange,onInteraction=()=>{},now=()=>Date.now()}){
+export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLanguage,onLanguageChange,onInteraction=()=>{},issOnly=false,now=()=>Date.now()}){
  const scene=viewer.scene,points=scene.primitives.add(new C.PointPrimitiveCollection()),labels=scene.primitives.add(new C.LabelCollection());
  const brackets=createSatelliteBrackets({Cesium:C,viewer});
  const byId=new Map(),rings=new Map(),samples=new Map(),classes=Object.fromEntries(SATELLITE_CLASS_IDS.map(id=>[id,true]));
@@ -23,7 +23,7 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
   workerBusy=true;lastWorkerAt=now();worker.postMessage({type:'sample',revision,at:lastWorkerAt});
  }
  function stopWorker(){worker?.terminate();worker=null;workerBusy=false;workerBuffer=null;request();}
- try{if(typeof Worker==='function'){
+ try{if(!issOnly&&typeof Worker==='function'){
   worker=new Worker(new URL('./propagation-worker.js',import.meta.url),{type:'module'});
   worker.onmessage=({data})=>{if(disposed||data.revision!==revision)return;workerBusy=false;workerBuffer=data.data;workerCursor=0;request();};
   worker.onerror=()=>{stopWorker();};
@@ -65,13 +65,13 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
    brackets.update(row.id,point.position,point.show);
    return pos;
  }
- const panel=createSatellitePanel({host,getLanguage,onLanguageChange,
+ const panel=createSatellitePanel({host,getLanguage,onLanguageChange,issOnly,
    onResetFilters:()=>{shown=true;for(const id of SATELLITE_CLASS_IDS)classes[id]=true;panel.setVisibility(true);panel.setClasses(classes);syncVisibility();},
    onStarlink:showStarlinkConstellation,onSelect:(id,follow)=>select(id,follow),onFollow:value=>value?startFollowing():stopFollowing(),
    onVisibility:value=>{shown=value;if(!value)stopFollowing();syncVisibility();},
    onClassChange:(id,value)=>{classes[id]=value;if(!value&&selected?.satelliteClass===id)stopFollowing();syncVisibility();},
    onRefresh:()=>{lastRefreshAttempt=now();void catalog.refresh();}});
- const catalog=createSatelliteCatalog({now,onChange:value=>{
+ const catalog=createSatelliteCatalog({now,...(issOnly?{groups:['stations'],noradIds:[ISS_NORAD]}:{}),onChange:value=>{
    if(disposed)return;panel.update(value);
    // Status-only updates keep the point collection and orbit geometry alive.
    if(catalogSnapshot===value.records)return;

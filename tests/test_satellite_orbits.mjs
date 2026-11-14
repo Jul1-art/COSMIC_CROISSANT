@@ -66,3 +66,11 @@ test('a failed complete feed never replaces valid full coverage with only the St
  time+=15*86400000;await catalog.refresh();assert.equal(catalog.records.size,0,'expired elements are not retained as current positions');
  catalog.dispose();
 });
+
+test('ISS inspection fetches only stations and excludes every other NORAD before parsing',async()=>{
+ const calls=[],other=tle.replace('ISS (ZARYA)','OTHER STATION').replaceAll('25544','45544');
+ const catalog=createSatelliteCatalog({groups:['stations'],noradIds:[25544],now,cacheStorage:null,
+  fetchImpl:async url=>{calls.push(new URL(url).pathname);return new Response(`${tle}\n${other}`);}});
+ try{await catalog.refresh();assert.equal(catalog.status,'ready');assert.deepEqual([...catalog.records.keys()],[25544]);assert.equal(calls.length,1);assert.ok(calls[0].endsWith('/api/celestrak/stations'));}
+ finally{catalog.dispose();}
+});

@@ -343,7 +343,7 @@ async function start(){
     document.documentElement.dataset.visualPreset=effects.settings.style;
     celestial=createCelestialScene({Cesium,viewer,onSelect:id=>post('select',{id})});
     applyViewTheme(document.documentElement.dataset.theme);
-    if(body==='earth')satellites=createEarthSatellites({Cesium,viewer,getLanguage:()=>document.documentElement.lang,onLanguageChange:callback=>{window.addEventListener('relic-satellite-language',callback);return()=>window.removeEventListener('relic-satellite-language',callback);},onInteraction:()=>{cameraMotion.cancel();post('interaction');}});
+    if(body==='earth')satellites=createEarthSatellites({Cesium,viewer,issOnly:true,getLanguage:()=>document.documentElement.lang,onLanguageChange:callback=>{window.addEventListener('relic-satellite-language',callback);return()=>window.removeEventListener('relic-satellite-language',callback);},onInteraction:()=>{cameraMotion.cancel();post('interaction');}});
     scene.globe.baseColor=Cesium.Color.fromCssColorString(body==='earth'?'#183444':body==='moon'?'#777573':'#82533e');
     scene.globe.maximumScreenSpaceError=compact?2.5:1.5;scene.globe.tileCacheSize=compact?72:160;scene.globe.depthTestAgainstTerrain=true;
     if(scene.skyAtmosphere)scene.skyAtmosphere.show=false;if(scene.sun)scene.sun.show=false;if(scene.moon)scene.moon.show=false;

@@ -8,7 +8,7 @@ Object.assign(COPY.en,{catalogue:'Catalogue',enabled:'Enabled',filters:'Categori
 Object.assign(COPY.fr,{catalogue:'Catalogue',enabled:'Activés',filters:'Catégories',allClasses:'Tout activer',sources:'Sources des données',loaded:'Chargés',pending:'En attente',loadingSource:'Chargement',readySource:'Disponible',staleSource:'En cache',retained:'Données précédentes conservées',unavailableSource:'Indisponible',deferred:'Nouvel essai prévu',filtered:'exclus',all:'Afficher les satellites',hide:'Masquer les satellites'});
 const FEED_NAMES={stations:['Stations','Stations'],starlink:['Starlink','Starlink'],active:['Full active catalogue','Catalogue actif complet'],visual:['Bright objects','Objets brillants'],'gps-ops':['GPS','GPS'],'glo-ops':['GLONASS','GLONASS'],galileo:['Galileo','Galileo'],geo:['Geostationary','Géostationnaires'],resource:['Earth observation','Observation de la Terre'],weather:['Weather','Météo'],planet:['Planet','Planet'],sar:['Radar imaging','Imagerie radar'],science:['Science','Science']};
 const element=(tag,className,text)=>{const node=document.createElement(tag);node.className=className;if(text)node.textContent=text;return node;};
-export function createSatellitePanel({host=document.body,getLanguage=()=>document.documentElement.lang,onLanguageChange,onSelect,onFollow,onVisibility,onClassChange,onRefresh,onStarlink,onResetFilters=()=>{}}){
+export function createSatellitePanel({host=document.body,getLanguage=()=>document.documentElement.lang,onLanguageChange,onSelect,onFollow,onVisibility,onClassChange,onRefresh,onStarlink,onResetFilters=()=>{},issOnly=false}){
  const fr=()=>getLanguage()==='fr',copy=()=>COPY[fr()?'fr':'en'];
  const ensureStyles=doc=>{const href=new URL('./satellites.css?v=63',import.meta.url).href;let link=doc.querySelector('link[data-satellite-style]');if(link){if(link.href!==href)link.href=href;return;}link=doc.createElement('link');link.rel='stylesheet';link.dataset.satelliteStyle='';link.href=href;doc.head.append(link);};
  ensureStyles(document);
@@ -57,6 +57,7 @@ export function createSatellitePanel({host=document.body,getLanguage=()=>documen
    sourceRows.replaceChildren();const statuses={pending:t.pending,loading:t.loadingSource,ready:t.readySource,stale:t.staleSource,retained:t.retained,unavailable:t.unavailableSource,deferred:t.deferred};
    for(const source of sources){const row=element('div','satellite-feed'),label=element('span','satellite-feed-name',FEED_NAMES[source.id]?.[fr()?1:0]||source.id),value=element('span','satellite-feed-status',statuses[source.status]||source.status);row.dataset.state=source.status;row.append(label,value);if(source.received){const amount=element('small','satellite-feed-count',`${source.accepted.toLocaleString()} / ${source.received.toLocaleString()}`);row.append(amount);}sourceRows.append(row);}
    updateFilterState();renderResults();renderCard();
+   if(issOnly){starlink.hidden=true;filterSection.hidden=true;resetFilters.hidden=true;search.hidden=true;foot.textContent=fr()?"ISS uniquement · position calculée à partir des éléments CelesTrak récents.":"ISS only · position calculated from recent CelesTrak elements.";}
  }
  function renderCard(){
    card.hidden=!selected;metrics.replaceChildren();if(!selected)return;
