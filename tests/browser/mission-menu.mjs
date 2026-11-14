@@ -17,7 +17,7 @@ try{
  await card.waitFor({timeout:60000});
  await page.locator('.pd-viewport').dispatchEvent('pointerdown');assert.ok(await card.isVisible(),'outside pointer input must not dismiss the summary');
  await toggle.click();await page.waitForFunction(()=>document.querySelector('.atlas-mission-controls')?.getAttribute('aria-busy')==='false',{timeout:60000});
- async function assertPinned(){assert.ok(await card.isVisible(),'mission card remains visible');assert.ok(await actions.isVisible(),'video and dossier stay accessible');assert.equal(await toggle.getAttribute('aria-expanded'),'true');}
+ async function assertPinned(){assert.ok(await card.isVisible(),'mission card remains visible');assert.ok(await actions.isVisible(),'video and dossier stay accessible');assert.equal(await toggle.getAttribute('aria-expanded'),'true');const bounds=await card.boundingBox(),size=page.viewportSize();assert.ok(bounds.x+ bounds.width>=size.width-25,'Apollo summary stays on the right');const menu=page.getByRole('button',{name:'Ouvrir la carte et le menu Apollo 11'});assert.ok((await menu.textContent()).includes('Menu'));}
  await assertPinned();
  await page.mouse.move(750,330);await page.mouse.down({button:'right'});await page.mouse.move(830,370,{steps:8});await page.mouse.up({button:'right'});await page.mouse.wheel(0,-120);await page.mouse.click(750,330);await assertPinned();
  await page.locator('#mission-time-slider').evaluate(input=>{input.value=Date.parse('1969-07-20T20:17:43Z');input.dispatchEvent(new Event('input',{bubbles:true}));});

@@ -21,7 +21,7 @@ try{
   assert.ok(boxes.pad.top>=boxes.actions.bottom+7,'LC-39A follows video and dossier');assert.ok(Math.abs(boxes.card.left-boxes.pad.left)<1,'Both cards share their column');assert.ok(boxes.stack.top>=0&&boxes.stack.bottom<=viewport.height,'The column scrolls within the viewport');
  }
  await page.setViewportSize({width:1280,height:900});await page.locator('#mission-launchpad [data-launchpad=close]').click();await page.locator('#mission-launchpad').waitFor({state:'hidden'});
- assert.equal(await page.locator('#mission-popup').evaluate(n=>n.parentElement.tagName),'BODY');assert.ok(await page.locator('#mission-actions').isVisible());
+ assert.equal(await page.locator('#mission-popup').evaluate(n=>n.parentElement.className),'mission-card-stack');assert.ok(await page.locator('#mission-actions').isVisible());
  await page.locator('[data-mission-action=orbit]').click();await page.waitForTimeout(1600);
  const relative=(state,key='position')=>state[key].map((v,i)=>v-state.moon[i]),distance=(a,b)=>Math.hypot(...a.map((v,i)=>v-b[i]));
  const orbitBefore=await page.evaluate(()=>window.__missionCamera());await page.selectOption('#mission-speed','86400');await page.locator('[data-mission-action=play]').click();await page.waitForTimeout(1200);await page.locator('[data-mission-action=play]').click();await page.waitForTimeout(200);
