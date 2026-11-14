@@ -1,0 +1,33 @@
+{
+  "title": "Apollo 11, de la promesse au retour",
+  "assembly": "Two NASA archive films concatenated chronologically, original audio retained. No invented speech or narration.",
+  "encoding": "640x360 H.264, AAC stereo, 6-second HLS segments. Original aspect ratio is retained from the NASA 640x360 derivatives.",
+  "sources": [
+    {
+      "title": "President Kennedy Challenges NASA to Go to the Moon",
+      "nasa_id": "President Kennedy Challenges NASA to Go to the Moon",
+      "source": "https://images.nasa.gov/details/President%20Kennedy%20Challenges%20NASA%20to%20Go%20to%20the%20Moon",
+      "range_seconds": [
+        0,
+        125.736
+      ],
+      "context": "NASA archive of John F. Kennedy addressing Congress, 25 May 1961. The NASA source clip is retained in full.",
+      "download": "https://images-assets.nasa.gov/video/President Kennedy Challenges NASA to Go to the Moon/President Kennedy Challenges NASA to Go to the Moon~small.mp4",
+      "source_sha256": "da565f4be8db8491650b0569911187249e21a20e8a92a5c0d66b3de9ec024a87"
+    },
+    {
+      "title": "HQ-194, Eagle Has Landed: The Flight of Apollo 11",
+      "nasa_id": "KSC-19690716-MH-NAS01-0001-The_Flight_of_Apollo_11_The_Eagle_Has_Landed_HS_from_Film_JSC-DVC_1928",
+      "source": "https://images.nasa.gov/details/KSC-19690716-MH-NAS01-0001-The_Flight_of_Apollo_11_The_Eagle_Has_Landed_HS_from_Film_JSC-DVC_1928",
+      "range_seconds": [
+        85,
+        1826
+      ],
+      "context": "Complete NASA HQ-194 documentary through its end credits, covering launch, Moon operations, return, recovery and quarantine. The source derivative also contains a colour-bar leader and unrelated silent press-room footage; these are omitted.",
+      "download": "https://images-assets.nasa.gov/video/KSC-19690716-MH-NAS01-0001-The_Flight_of_Apollo_11_The_Eagle_Has_Landed_HS_from_Film_JSC-DVC_1928/KSC-19690716-MH-NAS01-0001-The_Flight_of_Apollo_11_The_Eagle_Has_Landed_HS_from_Film_JSC-DVC_1928~small.mp4",
+      "source_sha256": "9707b73357fa2f7a6b250afe94015d60f30299bf9cda1ac3c4485c36052e3b58"
+    }
+  ],
+  "credits": "NASA / Kennedy Space Center / Johnson Space Center. Original HQ-194 end credits are retained.",
+  "editorial_basis": "User request: JFK speech through Apollo 11's return to Earth; this is an archive programme, with NASA's original technical reconstructions."
+}

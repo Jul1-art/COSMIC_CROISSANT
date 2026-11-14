@@ -27,9 +27,26 @@ test('all inventory objects have a valid appearance stage and unknown locations 
   for(const id of ['ascent','service','sivb','sla'])assert.equal(HARDWARE.find(row=>row.id===id).position,undefined);
   assert.equal(HARDWARE.find(row=>row.id==='ascent').status,'Devenir non confirmé');
 });
-test('the embedded reconstruction and its attribution point to NASA HTTPS resources',()=>{
+test('the complete mission film has NASA provenance and covers JFK through recovery',async()=>{
+  const {readFile,stat}=await import('node:fs/promises');
   for(const [,url] of APOLLO_11.sources)assert.ok(new URL(url).hostname.endsWith('nasa.gov'));
-  const video=APOLLO_11.videos[0];assert.equal(new URL(video.src).protocol,'https:');assert.equal(new URL(video.src).hostname,'svs.gsfc.nasa.gov');assert.equal(video.source,'https://svs.gsfc.nasa.gov/4185/');
+  assert.equal(new URL(APOLLO_11.film.source).hostname,'images.nasa.gov');
+  assert.deepEqual(APOLLO_11.film.coverage,['JFK','Préparatifs','Décollage','Voyage Terre–Lune','Alunissage','Sortie lunaire','Retour sur Terre','Récupération']);
+  const base=new URL('../assets/missions/apollo-11/film/',import.meta.url),manifest=await readFile(new URL('mission.m3u8',base),'utf8');
+  assert.match(manifest,/#EXT-X-PLAYLIST-TYPE:VOD/);assert.match(manifest,/#EXT-X-ENDLIST/);
+  const duration=[...manifest.matchAll(/#EXTINF:([\d.]+)/g)].reduce((total,match)=>total+Number(match[1]),0);assert.ok(Math.abs(duration-APOLLO_11.film.duration)<.1);assert.ok(duration>1800);
+  const segments=manifest.split('\n').filter(line=>line&&!line.startsWith('#'));assert.ok(segments.length>200);
+  const sizes=await Promise.all(segments.map(name=>stat(new URL(name,base)).then(row=>row.size)));assert.ok(sizes.every(size=>size>0&&size<25*1024*1024));
+  const provenance=JSON.parse(await readFile(new URL('provenance.json',base),'utf8'));assert.equal(provenance.sources.length,2);assert.equal(provenance.sources[0].range_seconds[0],0);
+});
+
+test('the dossier keeps the five requested tabs and documented local NASA photographs',async()=>{
+  const {DOSSIER_TABS,renderDossierTab}=await import('../src/missions/mission-dossier-content.js');const {readFile,stat}=await import('node:fs/promises');
+  assert.deepEqual(DOSSIER_TABS.map(row=>row[1]),['Identité de la mission','Inventaire du hardware perdu','Chronologie','Science et héritage','Sources et pour aller plus loin']);
+  assert.equal((renderDossierTab('inventaire').match(/class="dossier-hardware"/g)||[]).length,14);
+  assert.match(renderDossierTab('sources'),/fiche-mission.pdf/);
+  const photos=JSON.parse(await readFile(new URL('../assets/missions/apollo-11/photos.json',import.meta.url),'utf8'));assert.equal(Object.keys(photos).length,5);
+  for(const [key,row] of Object.entries(photos)){assert.equal(new URL(row.source).hostname,'images.nasa.gov');assert.ok((await stat(new URL(`../assets/missions/apollo-11/${key}.jpg`,import.meta.url))).size>1000);}
 });
 
 test('the projected lunar pin is unique, accessible, horizon-occluded and removable',async()=>{

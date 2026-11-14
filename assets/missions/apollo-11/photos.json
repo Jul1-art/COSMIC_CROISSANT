@@ -1,0 +1,37 @@
+{
+  "crew": {
+    "id": "S69-31739",
+    "title": "APOLLO XI CREW - PORTRAIT",
+    "description": "S69-31739 (May 1969) --- The National Aeronautics and Space Administration (NASA) has named these three astronauts as the prime crew of the Apollo 11 lunar landing mission.  Left to right, are Neil A. Armstrong, commander; Michael Collins, command module pilot; and Edwin E. Aldrin Jr., lunar module pilot.",
+    "download": "https://images-assets.nasa.gov/image/S69-31739/S69-31739~medium.jpg",
+    "source": "https://images.nasa.gov/details/S69-31739"
+  },
+  "launch": {
+    "id": "S69-39959",
+    "title": "Liftoff of the Apollo 11 lunar landing mission",
+    "description": "S69-39959 (16 July 1969) --- The huge, 363-feet tall Apollo 11 (Spacecraft 107/Lunar Module 5/ Saturn 506) space vehicle is launched from Pad A, Launch Complex 39, Kennedy Space Center (KSC), at 9:32 a.m. (EDT), July 16, 1969.  Aboard the Apollo 11 spacecraft were astronauts Neil A. Armstrong, commander; Michael Collins, command module pilot; and Edwin E. Aldrin Jr., lunar module pilot. Apollo 11 is the United States' first lunar landing mission. This view of the liftoff was taken by a camera mounted on the mobile launch tower. While astronauts Armstrong and Aldrin descend in the Lunar Module (LM) \"Eagle\" to explore the Sea of Tranquility region of the moon, astronaut Collins will remain with the Command and Service Modules (CSM) \"Columbia\" in lunar orbit. Photo credit: NASA",
+    "download": "https://images-assets.nasa.gov/image/S69-39959/S69-39959~medium.jpg",
+    "source": "https://images.nasa.gov/details/S69-39959"
+  },
+  "aldrin": {
+    "id": "as11-40-5903",
+    "title": "Astronaut Edwin Aldrin walks on lunar surface near leg of Lunar Module",
+    "description": "AS11-40-5903 (20 July 1969) --- Astronaut Edwin E. Aldrin Jr., lunar module pilot, walks on the surface of the moon near the leg of the Lunar Module (LM) \"Eagle\" during the Apollo 11 extravehicular activity (EVA). Astronaut Neil A. Armstrong, commander, took this photograph with a 70mm lunar surface camera. While astronauts Armstrong and Aldrin descended in the Lunar Module (LM) \"Eagle\" to explore the Sea of Tranquility region of the moon, astronaut Michael Collins, command module pilot, remained with the Command and Service Modules (CSM) \"Columbia\" in lunar orbit.",
+    "download": "https://images-assets.nasa.gov/image/as11-40-5903/as11-40-5903~medium.jpg",
+    "source": "https://images.nasa.gov/details/as11-40-5903"
+  },
+  "seismometer": {
+    "id": "as11-40-5948",
+    "title": "Astronaut Edwin Aldrin after deployment of EASEP on surface of moon",
+    "description": "AS11-40-5948 (20 July 1969) --- Astronaut Edwin E. Aldrin Jr., lunar module pilot, is photographed during the Apollo 11 extravehicular activity (EVA) on the moon. He has just deployed the Early Apollo Scientific Experiments Package (EASEP). This is a good view of the deployed equipment. In the foreground is the Passive Seismic Experiment Package (PSEP); beyond it is the Laser Ranging Retro-Reflector (LR-3); in the center background is the United States flag; in the left background is the black and white lunar surface television camera; in the far right background is the Lunar Module (LM). Astronaut Neil A. Armstrong, commander, took this picture with a 70mm lunar surface camera. While astronauts Armstrong and Aldrin descended in the Lunar Module (LM) \"Eagle\" to explore the Sea of Tranquility region of the moon, astronaut Michael Collins, command module pilot, remained with the Command and Service Modules (CSM) \"Columbia\" in lunar orbit.",
+    "download": "https://images-assets.nasa.gov/image/as11-40-5948/as11-40-5948~medium.jpg",
+    "source": "https://images.nasa.gov/details/as11-40-5948"
+  },
+  "recovery": {
+    "id": "S69-40758",
+    "title": "Apollo XI Command Module (CM) - Mobile Quarantine Facility (MQF) - U.S.S. Hornet",
+    "description": "S69-40758 (24 July 1969) --- The Apollo 11 spacecraft Command Module (CM) and the Mobile Quarantine Facility (MQF) are photographed aboard the USS Hornet, prime recovery ship for the historic first lunar landing mission.  The three crewmen are already in the MQF. Apollo 11 with astronauts Neil A. Armstrong, Michael Collins and Edwin E. Aldrin Jr. aboard splashed down at 11:49 a.m. (CDT), July 24, 1969, about 812 nautical miles southwest of Hawaii and only 12 nautical miles from the USS Hornet. While astronauts Armstrong, commander, and Aldrin, lunar module pilot, descended in the Lunar Module (LM) \"Eagle\" to explore the Sea of Tranquility region of the moon, astronaut Collins, command module pilot, remained with the Command and Service Modules (CSM) \"Columbia\" in lunar orbit.",
+    "download": "https://images-assets.nasa.gov/image/S69-40758/S69-40758~medium.jpg",
+    "source": "https://images.nasa.gov/details/S69-40758"
+  }
+}

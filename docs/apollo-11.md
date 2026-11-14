@@ -1,68 +1,71 @@
-# Apollo 11 pilot mission
+# Apollo 11: map, in-app replay and mission dossier
 
-The existing atlas now exposes one mission pin at Tranquility Base (0.67409° N,
-23.47298° E). Click the pin on the Moon, or use the Apollo 11 entry, then choose
-Immersion 3D, Vidéos NASA, or Dossier. Localiser flies the existing Moon inspector
-to the landing site. Only Apollo 11 is included in this pilot.
+One map pin is anchored at Tranquility Base (0.67409° N, 23.47298° E). Its
+multicolour teardrop silhouette is shared by the Three.js and Cesium views.
+The lunar terrain height is used in the detailed globe; the fallback sphere
+uses the actual mesh radius, body orientation and a radial horizon test.
 
-Run locally from the repository root with `python -m server` (the existing API
-server) or `python -m http.server 4173` for the static interface; the latter uses
-the atlas's existing API fallbacks. A direct entry is:
-`/?view=inspection&body=moon&mission=apollo-11`.
-Add `&missionView=explore`, `video`, or `article` to select a mission view.
+## Visitor flow
 
-## Implementation
+1. Click the lunar pin: a compact, non-modal information card opens near it.
+   The map stays interactive. There is no mission landing-page dialog.
+2. Expand **Explorer la mission**: the mission immediately becomes a full-viewport
+   3D view inside the running app. The URL and document do not change. The menu
+   exposes **Vision 3D dans l’app**, **Voir la vidéo**, and **Les détails de la mission**.
+3. The in-app scene starts at the landing site. Switch between the site and the
+   Earth–Moon journey, seek or play the UTC timeline, and approach equipment.
+   **Retour à la Lune** releases the mission renderer and restores the map.
+4. **Voir la vidéo** opens a continuous local NASA archive programme: JFK's
+   1961 address, followed by the complete HQ-194 documentary, including launch,
+   lunar operations, return, recovery and quarantine. Its original sound is
+   retained. The native player has a full timeline and two chapter shortcuts.
+5. **Les détails de la mission** opens `pages/mission.html?mission=apollo-11`.
+   This is the only separate reading page. It has exactly five accessible tabs:
+   Identité de la mission; Inventaire du hardware perdu; Chronologie; Science et
+   héritage; Sources et pour aller plus loin. Five locally hosted NASA photos
+   are captioned and linked to their source records. The original reference PDF
+   is linked in Sources. Arrow keys, Home and End navigate the tab list.
 
-- `src/missions/apollo11-data.js`: UTC chronology, inventory, sources and media.
-- `mission-markers.js`: oriented Three.js Moon pin with back-face occlusion.
-- `cesium-mission-marker.js`: single accessible Moon pin projected at the terrain height; its click is sent
-  through the existing same-origin, current-frame message validation. A native DOM button
-  handles pointer and keyboard input independently of GPU billboard picking.
-- `mission-ui.js` and `missions.css`: summary, full-page dossier, NASA video
-  selection and accessible modal navigation. Escape closes and restores focus.
-- `mission-scene.js` and `mission-models.js`: lazy Three.js exploration with one
-  renderer, separate journey/site scenes, orbit controls, timeline and equipment
-  selection. Closing or changing views aborts terrain requests and releases GPU
-  resources. The atlas is paused while the mission is open; hidden tabs pause
-  scene rendering and do not accumulate playback time.
+## Files and local checks
 
-The site reuses the repository's Apollo 11 LROC elevation raster, catalogue and
-imagery. The 257×257 mesh spans 5 km (approximately 19.5 m between mesh vertices).
-Small decorative bump detail is generated locally. Missing elevation uses an
-explicitly labelled flat-ground fallback; unsupported WebGL leaves the dossier
-and videos available. NASA video playback requires an external connection; a
-source link remains available if the media host cannot be reached.
+- `src/missions/apollo11-data.js`: inventory, UTC events and film metadata.
+- `mission-icons.js`, `mission-markers.js`, `cesium-mission-marker.js`: pin and
+  projection. The iframe sends its screen anchor through the existing
+  same-origin, current-frame validation in `detailed-globe.js`.
+- `mission-ui.js`, `missions.css`: card, dropdown and full-viewport in-app scene.
+- `mission-scene.js`, `mission-models.js`: lazy Three.js scene and equipment.
+- `mission-film.js`: bounded HLS player using the existing local hls.js library.
+- `mission-dossier*.js`, `mission-dossier.css`, `pages/mission.html`: reading page.
+- `assets/missions/apollo-11/photos.json`: NASA image records and descriptions.
+- `assets/missions/apollo-11/film/provenance.json`: film sources and retained cuts.
 
-## Historical and visual scope
+Run `python -m server` for the existing app/API server, or
+`python -m http.server 4173` for static validation. A direct Moon entry is
+`/?view=inspection&body=moon&lat=0.67409&lon=23.47298&range=3000000&tilt=0`.
 
-Event dates are historical UTC. Journey curves are educational interpolations,
-with compressed distances, enlarged vehicles, and a fixed Moon. They are not
-1969 ephemerides, descent telemetry or a present-day debris propagation model.
-Hardware is modelled geometrically and placed illustratively near the lander,
-not at surveyed equipment coordinates. Deployment is grouped by event rather
-than minute-by-minute EVA activity. Upper-stage motion and the falling flag
-are illustrative; reversing time restores their earlier states.
+Validate with `node --experimental-vm-modules --test tests/*.mjs` and
+`node tools/build_static.mjs`. The film is packaged as 312 HLS segments, each
+below the 25 MiB hosting limit. It is not warmed into the offline cache.
 
-The supplied PDF is treated as reference content. NASA sources correct the SM
-separation to July 24, distinguish the surface TV camera from descent footage,
-and date the seismic experiment's last response to August 25. The unverified
-5.2-tonne surface total and claim of a recovered 2019 lunar waste bag are not
-presented as established facts. The ascent stage's final location is unknown.
-Component masses are estimates and must not be summed as independent items.
+## Source handling and visual limits
 
-The first NASA video is the SVS 4185 LRO landing-site flyover, credited to NASA /
-Ernie Wright. The second is the official NASA Video landing-profile reconstruction.
-The UI links to the original media and mission references.
+The supplied PDF is reference content. NASA sources correct the SM separation
+to July 24, distinguish surface TV footage from descent footage, and date the
+PSEP's last response to August 25. The unsupported 5.2-tonne surface total and
+claim of a recovered lunar waste bag are not presented as established facts.
+The ascent stage's final location is unknown. Component masses are estimates
+and must not be summed as independently weighed inventory items.
 
-## Validation
+The site reuses the project's NASA LROC imagery and 257² height raster across
+5 km (approximately 19.5 m between mesh vertices). The close-up grain is a
+local decorative bump map. Equipment models and their local placement are
+illustrative. Historical dates are exact to the published event precision;
+travel curves, vehicle sizes and trajectories are pedagogical, not navigation
+telemetry or a 1969 ephemeris. The 3D scene stops rendering behind the film and
+in hidden tabs; closing it aborts terrain requests and releases GPU resources.
 
-`node --experimental-vm-modules --test tests/*.mjs`
-
-`node tools/build_static.mjs`
-
-Browser checks cover the summary, both scenes, seeking backwards and forwards,
-play/pause, equipment focus, video selection, the full-page dossier, Escape and
-focus restoration, closing during lazy scene creation, and 390 px mobile layout.
-The integrated atlas/Moon iframe handoff is checked separately. Media host
-availability is external to these checks; the SVS MP4 returned HTTP 503 from the
-validation environment on 14 November 2026.
+The NASA film derivative contained colour-bar/transport leaders and unrelated
+silent press-room footage after HQ-194. These are omitted; the documentary's
+end credits are retained. The movie is original English archive material, not
+a newly generated video or invented historical speech. It is now served from
+this project, without depending on the previously failing SVS MP4 server.

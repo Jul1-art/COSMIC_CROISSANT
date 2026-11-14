@@ -13,10 +13,15 @@ export const APOLLO_11 = {
     ['NASA SVS · Reconstitution du site par LRO','https://svs.gsfc.nasa.gov/4185/'],
     ['NASA · Protection du patrimoine lunaire','https://www.nasa.gov/history/for-all-humanity/'],
   ],
-  videos:[
-    {title:'Survol du site d’alunissage',description:'Reconstitution NASA à partir des photographies et du relief mesurés par LRO. Sans narration.',credit:'NASA Scientific Visualization Studio · Ernie Wright · 2014',src:'https://svs.gsfc.nasa.gov/vis/a000000/a004100/a004185/apollo11_flyover_720p30.mp4',source:'https://svs.gsfc.nasa.gov/4185/'},
-    {title:'La descente d’Eagle',description:'Profil d’approche et d’alunissage reconstitué à partir des données LRO. Vidéo de la chaîne officielle NASA.',credit:'NASA Video · Apollo 11 Landing Profile',youtube:'In5xf5DHiM4',source:'https://www.youtube.com/watch?v=In5xf5DHiM4'},
-  ],
+  film:{
+    path:'assets/missions/apollo-11/film/mission.m3u8',
+    source:'https://images.nasa.gov/details/KSC-19690716-MH-NAS01-0001-The_Flight_of_Apollo_11_The_Eagle_Has_Landed_HS_from_Film_JSC-DVC_1928',
+    jfkSource:'https://images.nasa.gov/details/President%20Kennedy%20Challenges%20NASA%20to%20Go%20to%20the%20Moon',
+    jfkDuration:125.736,
+    duration:1866.736,
+    coverage:['JFK','Préparatifs','Décollage','Voyage Terre–Lune','Alunissage','Sortie lunaire','Retour sur Terre','Récupération'],
+  },
+
 };
 export const EVENTS = [
   ['launch','1969-07-16T13:32:00Z','Décollage','Saturn V décolle du Kennedy Space Center. L’équipage rejoint une orbite de stationnement terrestre.'],

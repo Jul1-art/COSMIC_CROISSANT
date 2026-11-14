@@ -1187,7 +1187,7 @@ let fastWindows = 0;
 let animationFrame = 0;
 let renderPausedAt = 0;
 let pageInactive = false;
-let navigationActive = Boolean(document.querySelector('.mission-dialog[open]'));
+let navigationActive = Boolean(document.querySelector('.mission-immersion,.mission-film-dialog[open]'));
 let graphicsInterrupted = false;
 function requestSceneFrame() {
   if (!animationFrame && !rendererSuspended) animationFrame = requestAnimationFrame(animate);
