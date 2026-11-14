@@ -1,3 +1,4 @@
+import {createMissionMarkers} from '../missions/mission-markers.js';
 import {createRenderedFrameMeter} from '../worlds/world-performance.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -1157,6 +1158,10 @@ createComet67P({THREE,scene,auToWorld,onSelect:id=>selectBody(id),getLanguage,ca
   document.body.dataset.cometCatalogue='ready';
   if(COMET_IDS.includes(requestedBody))restoreInspection(requestedBody);
 }).catch(error=>{document.body.dataset.cometCatalogue='failed';console.error('67P data unavailable',error);});
+const missionMarkers=createMissionMarkers({THREE,camera,getMoon:()=>naturalSystems?.getMesh('moon')||moon,getSelected:()=>selected,isDetailed:()=>detailedGlobe.active,onLocate:site=>{
+  selectBody('moon');focusDetailedView('moon',{lat:site.latitude,lon:site.longitude,range:1200,tilt:35});
+}});
+camera.userData.missionViewport=()=>renderer.domElement.getBoundingClientRect();
 let previousTime = performance.now();
 createNaturalSystems({THREE,scene,planetGroups,planets,getLanguage,getSelected:()=>selected,onSelect:id=>selectBody(id),labelHost,camera,getRelativePosition:(row,date)=>{
   if(row.id!=='moon')return null;
@@ -1182,7 +1187,7 @@ let fastWindows = 0;
 let animationFrame = 0;
 let renderPausedAt = 0;
 let pageInactive = false;
-let navigationActive = false;
+let navigationActive = Boolean(document.querySelector('.mission-dialog[open]'));
 let graphicsInterrupted = false;
 function requestSceneFrame() {
   if (!animationFrame && !rendererSuspended) animationFrame = requestAnimationFrame(animate);
@@ -1235,7 +1240,7 @@ window.addEventListener('relic-navigation-state', event => { navigationActive = 
 window.addEventListener('pagehide', event => {
   pageInactive = true;
   syncSceneActivity();
-  if(!event.persisted){mascot.dispose();stopSceneTheme();projectionObserver.disconnect();naturalSystems?.dispose();comet?.dispose();cometOrbitDirections?.dispose();orbitDirections.dispose();simulationControls.dispose();solarNavigation.dispose();globeNavigation.dispose();inspectionControls.dispose();inspectionEffects.destroy();detailedGlobe.dispose();planetaryEphemeris.dispose();scaleReadout.dispose();surfaceDetail.dispose();solarIllumination.dispose();belts.dispose();viewLoading.dispose();controls.dispose();renderer.dispose();}
+  if(!event.persisted){missionMarkers.dispose();mascot.dispose();stopSceneTheme();projectionObserver.disconnect();naturalSystems?.dispose();comet?.dispose();cometOrbitDirections?.dispose();orbitDirections.dispose();simulationControls.dispose();solarNavigation.dispose();globeNavigation.dispose();inspectionControls.dispose();inspectionEffects.destroy();detailedGlobe.dispose();planetaryEphemeris.dispose();scaleReadout.dispose();surfaceDetail.dispose();solarIllumination.dispose();belts.dispose();viewLoading.dispose();controls.dispose();renderer.dispose();}
 });
 window.addEventListener('pageshow', () => { pageInactive = false; navigationActive = false; syncSceneActivity(); });
 const renderedFPS=createRenderedFrameMeter({windowMs:500,report:fps=>{if(!detailedGlobe.active)window.dispatchEvent(new CustomEvent('relic-render-fps',{detail:{source:'solar',fps}}));}});
@@ -1254,6 +1259,7 @@ function animate(time) {
   // Cesium owns the visible inspection frame. Do not recompute hundreds of
   // hidden moons, labels and Three.js scene transforms behind it every frame.
   if(detailedGlobe.active){
+    missionMarkers.hide();
     if(time-lastClockRefresh>500){simulationControls.refresh();updateScaleNote();livePanel?.render();lastClockRefresh=time;}
     viewLoading.ready();return;
   }
@@ -1354,6 +1360,7 @@ function animate(time) {
   const surfaceMesh=naturalSystems?.getMesh?.(selected)||(selected==='moon'?moon:planetMeshes.get(selected));
   if (!detailedGlobe.active && !flight && time >= surfaceSettleUntil) surfaceDetail.update(time, selected, surfaceMesh, bodyData(selected)?.size);
   positionLabels();
+  missionMarkers.update();
   previousNavigationCamera.copy(camera.position);
   if(!detailedGlobe.active){
     if(isWorldInspection()||inspectionSettings.style!=='normal')inspectionEffects.render(time);else renderer.render(scene,camera);

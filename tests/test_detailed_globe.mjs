@@ -106,3 +106,11 @@ test('FPS accepts real zero only from the current visible same-origin renderer',
  f.receive(frame,'ready',{});f.globe.reveal();send(60,'https://other.invalid');send(60,'https://example.invalid',{});send(NaN);send(-1);assert.equal(f.fpsEvents.length,0);
  send(0);assert.equal(f.fpsEvents[0].detail.fps,0);assert.equal(f.fpsEvents[0].detail.body,'earth');f.globe.dispose();
 });
+
+test('mission popups accept only Apollo 11 from the current Moon iframe',async()=>{
+  const f=await fixture();
+  const send=(frame,id='apollo-11',origin='https://example.invalid')=>f.listeners.get('message')({origin,source:frame.contentWindow,data:{channel:'relic-detailed-globe-v15',type:'mission',id}});
+  f.globe.setFocus({id:'earth'});const earth=f.frames[0];send(earth);assert.equal(f.fpsEvents.length,0);
+  f.globe.setFocus({id:'moon'});const moon=f.frames[1];send(earth);send(moon,'apollo-11','https://untrusted.invalid');send(moon,'unknown');assert.equal(f.fpsEvents.length,0);
+  send(moon);assert.equal(f.fpsEvents.length,1);assert.equal(f.fpsEvents[0].type,'relic-mission-open');assert.equal(f.fpsEvents[0].detail.id,'apollo-11');f.globe.dispose();
+});

@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'inspection-20261114-v73-starlink-shell';
-const INTERFACE_RELEASE = 'inspection-20261114-v73';
+const VERSION = 'missions-20261114-v74-apollo11';
+const INTERFACE_RELEASE = 'missions-20261114-v74';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -30,6 +30,8 @@ const CORE = [
 // Requested only when the visitor explicitly saves the film for offline use.
 // This also covers a first visit whose early imports preceded worker control.
 const OFFLINE_CORE = [
+  'assets/terrain/catalog.json','assets/terrain/moon-apollo11.bin','assets/terrain/moon-apollo11.webp','assets/earth-blue-marble-4k.webp',
+  'src/missions/mission-icons.js','src/missions/apollo11-data.js','src/missions/mission-ui.js','src/missions/mission-scene.js','src/missions/mission-models.js','src/missions/mission-markers.js','src/missions/cesium-mission-marker.js','src/missions/missions.css',
   'src/satellites/propagation-worker.js','vendor/gods-eye-view/detection/detectionPolicy.js','vendor/gods-eye-view/detection/labelArbiter.js','vendor/gods-eye-view/detection/keyhole.js',
   'src/satellites/detection.js','vendor/gods-eye-view/detection/detectionDraw.js','vendor/gods-eye-view/detection/i18n.js',
   ...CORE,
