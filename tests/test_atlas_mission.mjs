@@ -1,39 +1,52 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
 import * as THREE from '../vendor/three.module.js';
 import {createAtlasMission} from '../src/missions/atlas-mission.js';
-import {START,END,EVENTS,eventTime,APOLLO_11} from '../src/missions/apollo11-data.js';
-
-function fixture(aspect=1.5){
- const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(45,aspect,.01,1e6),controls={target:new THREE.Vector3()};
- const earth=new THREE.Vector3(500,4,300),moon=new THREE.Vector3(610,8,310);
- const mesh=new THREE.Mesh(new THREE.SphereGeometry(.5),new THREE.MeshBasicMaterial());mesh.position.copy(moon);scene.add(mesh);
+import {START,END,EVENTS,eventTime} from '../src/missions/apollo11-data.js';
+const data=JSON.parse(await readFile(new URL('../assets/missions/apollo-11/trajectory.json',import.meta.url),'utf8'));
+function fixture({aspect=1.5,loadData=async()=>data}={}){
+ const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(45,aspect,.000001,1e6),controls={target:new THREE.Vector3()},earth=new THREE.Vector3(500,4,300);
+ const parent=new THREE.Group();parent.position.copy(earth);scene.add(parent);
+ const mesh=new THREE.Mesh(new THREE.SphereGeometry(1),new THREE.MeshBasicMaterial());mesh.scale.setScalar(.518);parent.add(mesh);
  const calls=[];globalThis.matchMedia=()=>({matches:false});
- const mission=createAtlasMission({THREE,scene,camera,controls,getEarth:()=>earth,getMoon:()=>moon,getMoonMesh:()=>mesh,getRadius:id=>id==='earth'?1.9:.5,
-  frame:(target,position)=>{controls.target.copy(target);camera.position.copy(position);calls.push(['frame']);},onStart:()=>calls.push(['start']),onStop:restore=>calls.push(['stop',restore]),onTime:(time,playing)=>calls.push(['time',time,playing])});
- return {scene,camera,controls,earth,moon,mesh,calls,mission,group:scene.getObjectByName('Apollo 11 · native atlas')};
+ const mission=createAtlasMission({THREE,scene,camera,controls,getEarth:()=>earth,getMoonMesh:()=>mesh,getRadius:id=>id==='earth'?1.9:.518,loadData,
+ frame:(target,position)=>{controls.target.copy(target);camera.position.copy(position);calls.push(['frame']);},onStart:()=>calls.push(['start']),onStop:restore=>calls.push(['stop',restore]),onTime:(time,playing)=>calls.push(['time',time,playing]),onStatus:(status,message)=>calls.push(['status',status,message])});
+ return {scene,camera,controls,earth,mesh,calls,mission,group:scene.getObjectByName('Apollo 11 · native atlas')};
 }
-test('mission overlays the existing atlas, scrubs every historical event and keeps finite world positions',()=>{
- const {mission,scene,group,calls}=fixture();const originalCount=scene.children.length;
- mission.start();assert.equal(scene.children.length,originalCount);assert.equal(group.visible,true);assert.equal(mission.time,START);
- const route=group.children.find(node=>node.isLine);const routeAttribute=route.geometry.getAttribute('position');
- for(const row of EVENTS){mission.setTime(row.time);const craft=group.getObjectByName('Columbia / Eagle');assert.ok(craft.position.toArray().every(Number.isFinite));}
- assert.equal(route.geometry.getAttribute('position'),routeAttribute,'scrubbing reuses GPU attributes');
- mission.setTime(END+1e6);assert.equal(mission.time,END);assert.equal(mission.playing,false);
+test('one native scene uses points for vehicles and retains GPU route buffers while scrubbing',async()=>{
+ const {mission,scene,group,calls}=fixture();const count=scene.children.length;await mission.start();assert.equal(scene.children.length,count);assert.equal(mission.active,true);
+ const route=group.getObjectByName('Trajet géocentrique calculé'),attribute=route.geometry.getAttribute('position');
+ for(const row of EVENTS){mission.setTime(row.time);assert.ok(group.getObjectByName('Columbia · point').position.toArray().every(Number.isFinite));}
+ assert.equal(route.geometry.getAttribute('position'),attribute);assert.equal(group.getObjectByName('Columbia · point').isPoints,true);
+ assert.equal(group.getObjectByName('Eagle · point').isPoints,true);assert.equal(group.getObjectByProperty('isMesh',true),undefined);
  mission.stop();assert.equal(group.visible,false);assert.deepEqual(calls.at(-1),['stop',true]);mission.dispose();assert.equal(scene.children.includes(group),false);
 });
-test('landing position uses the actual atlas Moon transform and both views frame in portrait',()=>{
- const {mission,group,mesh,camera,controls}=fixture(.46);mesh.scale.setScalar(6);mission.start();
- const journeyRange=camera.position.distanceTo(controls.target);
- mission.setMode('site');assert.equal(mesh.scale.x,1,'close view cancels distance-based Moon enlargement before framing');assert.equal(mission.time,eventTime('landing'));assert.equal(mission.playing,false);
- const lat=APOLLO_11.site.latitude*Math.PI/180,lon=APOLLO_11.site.longitude*Math.PI/180;
- const expected=new THREE.Vector3(Math.cos(lat)*Math.cos(lon),Math.sin(lat),-Math.cos(lat)*Math.sin(lon)).multiplyScalar(.5);mesh.localToWorld(expected);
- group.updateMatrixWorld(true);const actual=group.getObjectByName('Columbia / Eagle').getWorldPosition(new THREE.Vector3());assert.ok(actual.distanceTo(expected)<1e-9);
- assert.ok(camera.position.distanceTo(controls.target)<journeyRange);mission.dispose();
+test('site and lunar views frame in portrait, stay outside the Moon and preserve catalogue body size',async()=>{
+ const {mission,group,mesh,camera,controls}=fixture({aspect:.46});await mission.start();const range=camera.position.distanceTo(controls.target);
+ mission.setMode('site');assert.equal(mission.time,eventTime('landing'));assert.equal(mission.playing,false);assert.equal(mesh.scale.x,.518);
+ assert.ok(camera.position.distanceTo(controls.target)<range);const worldMoon=mesh.getWorldPosition(new THREE.Vector3());
+ assert.ok(camera.position.distanceTo(worldMoon)>.518);
+ group.updateMatrixWorld(true);const landing=group.getObjectByName('Eagle · point').getWorldPosition(new THREE.Vector3());assert.ok(Math.abs(landing.distanceTo(worldMoon)-.518)<.00001);
+ mission.setMode('orbit');assert.equal(mission.mode,'orbit');mission.dispose();
 });
-test('playback advances mission time without mutating atlas bodies and stops at recovery',()=>{
- const {mission,earth,moon}=fixture();const before=[earth.clone(),moon.clone()];mission.start();mission.setSpeed(86400);mission.update(1,1000);
- assert.equal(mission.time,START+86400000);assert.deepEqual([earth,moon],before);
- mission.setTime(END-1000);mission.setPlaying(true);mission.update(1,2000);assert.equal(mission.time,END);assert.equal(mission.playing,false);
- mission.stop(false);assert.equal(mission.active,false);mission.dispose();
+test('playback has one bounded tick, historical Moon motion, and a deterministic rewind',async()=>{
+ const {mission,earth,mesh}=fixture();const before=earth.clone();await mission.start();mission.setSpeed(86400);mission.update(.1,1000);assert.equal(mission.time,START+8640000);
+ const position=mesh.position.clone();mission.setTime(eventTime('landing'));assert.ok(mesh.position.distanceTo(position)>1);assert.deepEqual(earth,before);
+ const original=mesh.position.clone();mission.setTime(START);mission.setTime(eventTime('landing'));assert.ok(mesh.position.distanceTo(original)<1e-9);
+ mission.setTime(END-1000);mission.setPlaying(true);mission.update(.1,2000);assert.equal(mission.time,END);assert.equal(mission.playing,false);mission.dispose();
+});
+test('closing during data loading prevents late scene takeover, and a failure remains retryable',async()=>{
+ let resolve;const f=fixture({loadData:()=>new Promise(r=>{resolve=r;})});const pending=f.mission.start();assert.equal(f.mission.starting,true);f.mission.stop(false);resolve(data);await pending;
+ assert.equal(f.mission.active,false);assert.equal(f.calls.some(row=>row[0]==='start'),false);f.mission.dispose();
+ let tries=0;const g=fixture({loadData:async()=>{if(++tries===1)throw new Error('Unavailable');return data;}});await g.mission.start();assert.equal(g.mission.active,false);assert.equal(g.calls.at(-1)[1],'error');await g.mission.start();assert.equal(g.mission.active,true);g.mission.dispose();
+});
+test('surface rewind rotates the camera with the Moon and camera collision guard rejects entering a body',async()=>{
+ const {mission,camera,controls,mesh,earth}=fixture();await mission.start();mission.setMode('site');
+ const moon=()=>mesh.getWorldPosition(new THREE.Vector3());const original=camera.position.clone();
+ for(const t of [START,END,eventTime('landing')]){mission.setTime(t);assert.ok(camera.position.distanceTo(moon())>.518,'surface view stays above Moon when changing date');}
+ assert.ok(camera.position.distanceTo(original)<1e-7,'returning to the same date restores the same surface orientation');
+ camera.position.copy(moon());mission.enforceCamera();assert.ok(camera.position.distanceTo(moon())>=.518*1.0019);
+ camera.position.copy(earth);mission.enforceCamera();assert.ok(camera.position.distanceTo(earth)>=1.9*1.0019);assert.ok(camera.quaternion.toArray().every(Number.isFinite));
+ assert.ok(controls.target.toArray().every(Number.isFinite));mission.dispose();
 });

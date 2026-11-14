@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261114-v78-native';
-const INTERFACE_RELEASE = 'missions-20261114-v78';
+const VERSION = 'missions-20261114-v79-physics';
+const INTERFACE_RELEASE = 'missions-20261114-v79';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -33,7 +33,7 @@ const OFFLINE_CORE = [
   'assets/terrain/catalog.json','assets/terrain/moon-apollo11.bin','assets/terrain/moon-apollo11.webp','assets/earth-blue-marble-4k.webp',
   'pages/mission.html','src/missions/mission-dossier.js','src/missions/mission-dossier-content.js','src/missions/mission-dossier.css','src/missions/mission-film.js',
   'assets/missions/apollo-11/crew.jpg','assets/missions/apollo-11/launch.jpg','assets/missions/apollo-11/aldrin.jpg','assets/missions/apollo-11/seismometer.jpg','assets/missions/apollo-11/recovery.jpg','assets/missions/apollo-11/fiche-mission.pdf',
-  'src/missions/atlas-mission.js','src/missions/mission-motion.js','src/missions/mission-camera.js','src/missions/nasa-lunar-module.js',
+  'assets/missions/apollo-11/trajectory.json','assets/missions/apollo-11/trajectory-anchors.json','src/missions/apollo-flight.js','src/missions/atlas-mission.js','src/missions/mission-motion.js','src/missions/mission-camera.js','src/missions/nasa-lunar-module.js',
   'assets/missions/apollo-11/models/lunar-module.glb',
   'vendor/three-addons/loaders/GLTFLoader.js','vendor/three-addons/loaders/DRACOLoader.js','vendor/three-addons/utils/BufferGeometryUtils.js','vendor/three-addons/environments/RoomEnvironment.js','vendor/three-addons/libs/draco/draco_wasm_wrapper.js','vendor/three-addons/libs/draco/draco_decoder.wasm',
   'src/missions/mission-icons.js','src/missions/apollo11-data.js','src/missions/mission-ui.js','src/missions/mission-scene.js','src/missions/mission-models.js','src/missions/mission-markers.js','src/missions/cesium-mission-marker.js','src/missions/missions.css',

@@ -28,7 +28,7 @@
 .atlas-mission-controls button{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--chrome-line,#ffffff24);background:transparent;border-radius:6px;padding:7px 10px;transition:background .2s}
 .atlas-mission-controls button:hover{background:var(--chrome-hover,#ffffff12)}.atlas-mission-heading button{border:0;padding:6px}
 .atlas-mission-controls>p{font-size:11px;line-height:1.6;color:var(--chrome-muted,#b6b6b6);margin:8px 0 13px;min-height:35px}
-.atlas-mission-views{display:flex;gap:6px}.atlas-mission-views button{font-size:10px;padding:6px 9px}.atlas-mission-views button[aria-pressed=true]{background:var(--chrome-active,#fff);color:var(--chrome-active-ink,#000);border-color:transparent}
+.atlas-mission-views{display:flex;flex-wrap:wrap;gap:6px}.atlas-mission-views button{font-size:10px;padding:6px 9px}.atlas-mission-views button[aria-pressed=true]{background:var(--chrome-active,#fff);color:var(--chrome-active-ink,#000);border-color:transparent}
 .atlas-mission-views button:last-child{margin-left:auto;border-color:transparent;color:var(--chrome-muted,#b6b6b6)}
 .atlas-mission-transport{display:flex;align-items:center;gap:12px;margin-top:15px}.atlas-mission-transport button{width:32px;height:32px;padding:7px;flex-shrink:0}
 .atlas-mission-transport input{flex:1;min-width:0;accent-color:var(--chrome-ink,#fff);cursor:pointer;height:20px}
@@ -43,3 +43,5 @@ body.mission-exploring #gesture-hint,body.mission-exploring #details,body.missio
 .mission-shared-film .prologue-header{padding-right:85px}
 @media(max-width:650px){.atlas-mission-controls{bottom:76px;padding:13px 15px 11px}.atlas-mission-heading h2{font-size:16px}.atlas-mission-controls>p{font-size:10px;margin:6px 0 9px;min-height:32px}.atlas-mission-meta{gap:6px}.atlas-mission-meta output{font-size:8px}.atlas-mission-meta select{font-size:9px}.atlas-mission-controls>small{font-size:7px}.mission-shared-film .mission-film-close{top:18px;right:16px}}
 @media(prefers-reduced-motion:reduce){.mission-marker svg,.mission-menu-toggle svg,.mission-actions a,.mission-actions button,.atlas-mission-controls button{transition:none}}
+
+.atlas-mission-key{font-size:9px;color:var(--chrome-muted,#b6b6b6);margin:0 0 10px}.atlas-mission-controls :disabled{opacity:.4;cursor:wait}.atlas-mission-controls[aria-busy=true] #mission-status{opacity:.8}.atlas-mission-controls [hidden]{display:none!important}
