@@ -46,7 +46,7 @@ body.mission-exploring #gesture-hint,body.mission-exploring #details,body.missio
 
 .atlas-mission-key{font-size:9px;color:var(--chrome-muted,#b6b6b6);margin:0 0 10px}.atlas-mission-controls :disabled{opacity:.4;cursor:wait}.atlas-mission-controls[aria-busy=true] #mission-status{opacity:.8}.atlas-mission-controls [hidden]{display:none!important}
 
-.mission-free-badge{position:fixed;z-index:80;top:28px;left:50%;transform:translateX(-50%);display:flex;flex-wrap:wrap;justify-content:center;gap:9px 16px;max-width:calc(100vw - 150px);font:10px RelicInter,system-ui,sans-serif;letter-spacing:1.5px;color:var(--chrome-ink,#fff);pointer-events:none;text-align:center}.mission-free-badge>span+span{color:var(--chrome-muted,#b6b6b6);letter-spacing:1px}.mission-free-badge small{flex-basis:100%;font-size:9px;letter-spacing:0;color:var(--chrome-muted,#b6b6b6)}
+.mission-free-badge{position:fixed;z-index:80;top:28px;left:50%;transform:translateX(-50%);display:flex;flex-wrap:wrap;justify-content:center;gap:9px 16px;max-width:calc(100vw - 150px);font:10px RelicInter,system-ui,sans-serif;letter-spacing:1.5px;color:var(--chrome-ink,#fff);pointer-events:none;text-align:center}.mission-free-badge>span{color:var(--chrome-muted,#b6b6b6);letter-spacing:1px}.mission-free-badge small{flex-basis:100%;font-size:9px;letter-spacing:0;color:var(--chrome-muted,#b6b6b6)}
 body.mission-exploring .solar-view-controls,body.mission-exploring .inspection-world-name,body.mission-exploring .inspection-top-actions,body.mission-exploring .pd-command{visibility:hidden;pointer-events:none}
 @media(max-width:650px){.mission-free-badge{top:18px;max-width:calc(100vw - 100px);font-size:8px;gap:6px 12px}.mission-free-badge small{font-size:8px}.mission-free-badge small{display:none}}
 
@@ -60,3 +60,5 @@ body.mission-exploring .solar-view-controls,body.mission-exploring .inspection-w
 body.mission-exploring .natural-label-layer{visibility:hidden}
 
 body.mission-exploring .relic-exploration-mascot{visibility:hidden;pointer-events:none}
+
+.mission-free-badge button{pointer-events:auto;display:inline-flex;align-items:center;gap:6px;margin:0;padding:0;border:0;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;cursor:pointer}.mission-free-badge button:hover{color:var(--chrome-muted,#b6b6b6)}.mission-free-badge button:focus-visible{outline:2px solid var(--chrome-focus,#fff);outline-offset:4px;border-radius:2px}

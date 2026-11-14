@@ -14,11 +14,11 @@ function positionPopup(){
  const left=explorer?innerWidth-width-24:(anchor?.x??innerWidth/2)-width/2;
  const top=explorer?84:(anchor?.y??innerHeight/2)-height-48;
  popup.style.left=`${Math.max(12,Math.min(innerWidth-width-12,left))}px`;
- popup.style.top=`${Math.max(72,Math.min(innerHeight-height-16,top))}px`;
+ popup.style.top=`${Math.max(innerHeight<420?12:72,Math.min(innerHeight-height-16,top))}px`;
  actions.style.left=popup.style.left;actions.style.top=`${parseFloat(popup.style.top)+popup.offsetHeight+8}px`;
 }
-function closePopup({focus=false}={}){if(!popup)return;popup.hidden=actions.hidden=true;popup.querySelector('[data-mission-action="menu"]').setAttribute('aria-expanded','false');if(focus&&restoreFocus?.isConnected)restoreFocus.focus({preventScroll:true});}
-function showPopup(nextAnchor){anchor=nextAnchor||anchor;restoreFocus=document.activeElement;popup.hidden=false;positionPopup();requestAnimationFrame(positionPopup);revealMissionElement(popup,{duration:220,distance:5});popup.querySelector('[data-mission-action="menu"]').focus({preventScroll:true});}
+function closePopup({focus=false}={}){if(!popup)return;popup.hidden=actions.hidden=true;popup.querySelector('[data-mission-action="menu"]').setAttribute('aria-expanded','false');if(focus){const target=freeBadge?.querySelector('[data-mission-action="summary"]')||restoreFocus;if(target?.isConnected)target.focus({preventScroll:true});}}
+function showPopup(nextAnchor){anchor=nextAnchor||anchor;restoreFocus=document.activeElement;popup.hidden=false;const expanded=Boolean(explorer);popup.querySelector('[data-mission-action="menu"]').setAttribute('aria-expanded',String(expanded));actions.hidden=!expanded;positionPopup();requestAnimationFrame(positionPopup);revealMissionElement(popup,{duration:220,distance:5});popup.querySelector('[data-mission-action="menu"]').focus({preventScroll:true});}
 function updateTime(time,playing,meta){
  if(!panel)return;const state=missionState(time);
  if(meta?.method)panel.querySelector('#mission-status').textContent=meta.method;
@@ -32,25 +32,25 @@ function startMission(){
  if(explorer)return;
  panel=document.createElement('section');panel.className='atlas-mission-controls';panel.setAttribute('aria-label','Reconstitution Apollo 11');
  panel.innerHTML=`<div class="atlas-mission-heading"><div><span>APOLLO 11</span><h2 id="mission-event-title">Décollage</h2></div>${button(icon('close'),'exit','aria-label="Quitter la reconstitution"')}</div><p id="mission-event-text"></p><div class="atlas-mission-key" id="mission-vehicle-key">● Saturn V · Apollo 11</div><div class="atlas-mission-views">${button('Terre–Lune','journey','aria-pressed="true"')}${button('Orbite lunaire','orbit','aria-pressed="false"')}${button('Site d’alunissage','site','aria-pressed="false"')}${button('Recentrer','reset')}</div><div class="atlas-mission-transport">${button(icon('play'),'play','aria-label="Lire la mission" aria-pressed="false"')}<label class="mission-sr-only" for="mission-time-slider">Date de la mission</label><input id="mission-time-slider" type="range" min="${START}" max="${END}" step="1000" value="${START}"><label class="mission-sr-only" for="mission-speed">Vitesse de lecture</label><select id="mission-speed"><option value="1">Temps réel</option><option value="10">10 s / s</option><option value="60">1 min / s</option><option value="600">10 min / s</option><option value="3600" selected>1 h / s</option><option value="21600">6 h / s</option><option value="86400">1 j / s</option></select></div><div class="atlas-mission-meta"><output id="mission-clock"></output><label class="mission-sr-only" for="mission-chapter">Étape de la mission</label><select id="mission-chapter">${EVENTS.map(row=>`<option value="${row.id}">${row.title}</option>`).join('')}</select></div><small id="mission-status" role="status">Reconstruction physique · jalons NASA et éphémérides JPL</small><button type="button" data-mission-action="retry" hidden>Réessayer</button>`;
- freeBadge=document.createElement('div');freeBadge.className='mission-free-badge';freeBadge.innerHTML='<span>APOLLO 11</span><span>CAMÉRA LIBRE</span><small>Glisser pour tourner · Clic droit pour déplacer · Molette pour avancer</small>';
+ freeBadge=document.createElement('div');freeBadge.className='mission-free-badge';freeBadge.innerHTML='<button type="button" data-mission-action="summary" aria-controls="mission-popup" aria-label="Ouvrir la carte et le menu Apollo 11">APOLLO 11 <span aria-hidden="true">⌄</span></button><span>CAMÉRA LIBRE</span><small>Glisser pour tourner · Clic droit pour déplacer · Molette pour avancer</small>';
  annotations=document.createElement('div');annotations.className='mission-annotations';annotations.setAttribute('aria-hidden','true');
  for(const id of ['earth','moon','columbia','eagle']){const label=document.createElement('span');label.className='mission-point-label';label.dataset.point=id;label.hidden=true;annotations.append(label);}
- document.body.append(panel,freeBadge,annotations);panel.addEventListener('click',handleAction);document.body.classList.add('mission-exploring');
+ document.body.append(panel,freeBadge,annotations);panel.addEventListener('click',handleAction);freeBadge.addEventListener('click',handleAction);document.body.classList.add('mission-exploring');
  window.dispatchEvent(new CustomEvent('relic-mission-start',{detail:{connect:controller=>{explorer=controller;updateTime(controller.time,controller.playing);}}}));
  if(!explorer){panel.remove();panel=null;document.body.classList.remove('mission-exploring');return;}
  panel.querySelector('#mission-time-slider').addEventListener('input',event=>{const time=Number(event.target.value);explorer.setPlaying(false);explorer.setTime(time);});
  panel.querySelector('#mission-speed').addEventListener('change',event=>explorer.setSpeed(Number(event.target.value)));
  panel.querySelector('#mission-chapter').addEventListener('change',event=>{const time=eventTime(event.target.value);explorer.setPlaying(false);explorer.setTime(time);});
- positionPopup();revealMissionElement(panel,{duration:320,distance:8});
+ if(popup.hidden)showPopup();positionPopup();revealMissionElement(panel,{duration:320,distance:8});
 }
 function endMission(){explorer=null;panel?.remove();panel=null;freeBadge?.remove();freeBadge=null;annotations?.remove();annotations=null;document.body.classList.remove('mission-exploring');closePopup();}
 function openVideo(){
- if(filmHost)return;closePopup();explorer?.setPlaying(false);pauseAtlas(true);
+ if(filmHost)return;const returnFocus=document.activeElement;explorer?.setPlaying(false);pauseAtlas(true);
  const host=document.createElement('section');host.className='intro mission-shared-film hidden';filmHost=host;document.body.append(host);
  film=createPrologue({element:host,idPrefix:'apollo-',getLanguage:()=> 'fr',reducedMotion:reducedMissionMotion,
   media:{hls:appURL(APOLLO_11.film.path).href,duration:APOLLO_11.film.duration,poster:appURL('assets/missions/apollo-11/launch.jpg').href,endCard:false},
   labels:{introduction:'Apollo 11 · Le film NASA',enter:'Retour à la mission',ready:'Apollo 11 · Archives NASA · 31 min',unavailable:'Le film NASA n’a pas pu être chargé.'},
-  onClose(){const instance=film;film=null;filmHost=null;pauseAtlas(false);setTimeout(()=>{instance?.dispose();host.remove();},650);if(restoreFocus?.isConnected)restoreFocus.focus({preventScroll:true});}
+  onClose(){const instance=film;film=null;filmHost=null;pauseAtlas(false);setTimeout(()=>{instance?.dispose();host.remove();},650);positionPopup();if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});}
  });
  film.start();host.querySelector('.prologue-language').hidden=true;
  const close=document.createElement('button');close.type='button';close.className='mission-film-close';close.innerHTML=icon('close');close.setAttribute('aria-label','Fermer le film et revenir à la mission');close.addEventListener('click',()=>film?.finish());host.append(close);
@@ -58,6 +58,7 @@ function openVideo(){
 }
 function handleAction(event){
  const target=event.target.closest('[data-mission-action]');if(!target)return;event.preventDefault();const action=target.dataset.missionAction;
+ if(action==='summary'){showPopup();return;}
  if(action==='close-popup'){closePopup({focus:true});return;}
  if(action==='menu'){const expanded=target.getAttribute('aria-expanded')!=='true';target.setAttribute('aria-expanded',String(expanded));actions.hidden=!expanded;if(expanded){startMission();revealMissionElement(actions,{duration:240,distance:5});}positionPopup();return;}
  if(action==='retry'){void explorer?.start();return;}
@@ -70,7 +71,7 @@ function handleAction(event){
 export function installMissionUI(){
  if(installed)return;installed=true;
  const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('./missions.css',import.meta.url).href;document.head.append(sheet);
- popup=document.createElement('section');popup.className='mission-popup';popup.hidden=true;popup.setAttribute('role','dialog');popup.setAttribute('aria-modal','false');popup.setAttribute('aria-labelledby','mission-popup-title');
+ popup=document.createElement('section');popup.className='mission-popup';popup.id='mission-popup';popup.hidden=true;popup.setAttribute('role','dialog');popup.setAttribute('aria-modal','false');popup.setAttribute('aria-labelledby','mission-popup-title');
  popup.innerHTML=`<header><h2 id="mission-popup-title">Apollo 11</h2><span>NASA</span>${button(icon('close'),'close-popup','aria-label="Fermer la carte de mission"')}</header><dl><div><dt>Alunissage</dt><dd>20 juillet 1969</dd></div><div><dt>Site</dt><dd>Mer de la Tranquillité</dd></div></dl>${button(`<span>Explorer la mission</span>${icon('chevron')}`,'menu','class="mission-menu-toggle" aria-expanded="false" aria-controls="mission-actions"')}`;
  actions=document.createElement('nav');actions.id='mission-actions';actions.className='mission-actions';actions.hidden=true;actions.setAttribute('aria-label','Apollo 11 · vidéo et dossier');
  actions.innerHTML=`${button(`${icon('play')}<span>Voir la vidéo</span>`,'video')}<a href="${appURL('pages/mission.html?mission=apollo-11').href}">${icon('read')}<span>Les détails de la mission</span></a>`;
@@ -86,9 +87,10 @@ export function installMissionUI(){
   panel.querySelector('[data-mission-action="retry"]').hidden=status!=='error';
   if(message)panel.querySelector('#mission-status').textContent=message;
  });
- window.addEventListener('relic-mission-ended',endMission);window.addEventListener('resize',positionPopup);
- document.addEventListener('pointerdown',event=>{if(!popup.hidden&&!popup.contains(event.target)&&!actions.contains(event.target)&&!event.target.closest('.mission-marker'))closePopup();});
- document.addEventListener('keydown',event=>{if(event.key!=='Escape'||filmHost)return;if(!popup.hidden){closePopup({focus:true});event.preventDefault();}else if(explorer){if(explorer.active||explorer.starting)explorer.stop();else endMission();event.preventDefault();}});
+ window.addEventListener('relic-mission-ended',endMission);window.addEventListener('resize',()=>{positionPopup();requestAnimationFrame(positionPopup);});
+ // Keep the mission card pinned while the user operates the scene or timeline.
+ // Closing it is an explicit action (close button, Escape, or leaving the mission).
+ document.addEventListener('keydown',event=>{if(event.key!=='Escape'||filmHost||event.defaultPrevented||event.target.closest?.('input,select,textarea,[contenteditable=true],[role=listbox]'))return;if(!popup.hidden){closePopup({focus:true});event.preventDefault();}else if(explorer){if(explorer.active||explorer.starting)explorer.stop();else endMission();event.preventDefault();}});
  window.addEventListener('pagehide',event=>{film?.dispose();if(!event.persisted)explorer?.stop(false);});
  const query=new URL(location.href).searchParams;if(query.get('mission')==='apollo-11')queueMicrotask(()=>openMission('apollo-11',query.get('missionView')));
 }
