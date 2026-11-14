@@ -74,3 +74,13 @@ test('ISS inspection fetches only stations and excludes every other NORAD before
  try{await catalog.refresh();assert.equal(catalog.status,'ready');assert.deepEqual([...catalog.records.keys()],[25544]);assert.equal(calls.length,1);assert.ok(calls[0].endsWith('/api/celestrak/stations'));}
  finally{catalog.dispose();}
 });
+
+test('ISS-only catalogue expands to all groups only after the explicit loadAll action',async()=>{
+ const calls=[],other=tle.replace('ISS (ZARYA)','STARLINK TEST').replaceAll('25544','45544');
+ const catalog=createSatelliteCatalog({groups:['stations'],noradIds:[25544],now,cacheStorage:null,
+  fetchImpl:async url=>{calls.push(new URL(url).pathname);return new Response(`${tle}\n${other}`);}});
+ try{
+  await catalog.refresh();assert.equal(calls.length,1);assert.deepEqual([...catalog.records.keys()],[25544]);
+  await catalog.loadAll();assert.equal(calls.length,1+GROUPS.length);assert.equal(catalog.records.size,2);assert.ok(catalog.records.has(25544));assert.ok(catalog.records.has(45544));
+ }finally{catalog.dispose();}
+});

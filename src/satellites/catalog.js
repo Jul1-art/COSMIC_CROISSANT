@@ -30,7 +30,7 @@ export function mergeCatalogGroups(groups){
   return records;
 }
 export function createSatelliteCatalog({fetchImpl=globalThis.fetch,now=()=>Date.now(),onChange=()=>{},cacheStorage=globalThis.caches,groups=GROUPS,noradIds=null}={}){
-  const requestedGroups=[...new Set(groups)],allowedIds=noradIds?new Set(noradIds):null;
+  const requestedGroups=[...new Set(groups)];let allowedIds=noradIds?new Set(noradIds):null;
   let disposed=false,pending=null,lastRefresh=0,status='loading',failedGroups=[],records=new Map(),controller=null,nextRetryAt=0;
   const snapshots=new Map(),sources=new Map(requestedGroups.map(id=>[id,{id,status:'pending',received:0,accepted:0}]));
   async function read(group,signal){
@@ -106,6 +106,15 @@ export function createSatelliteCatalog({fetchImpl=globalThis.fetch,now=()=>Date.
     })().finally(()=>{pending=null;});
     return pending;
   }
-  return {refresh,get records(){return records;},get status(){return status;},get lastRefresh(){return lastRefresh;},get nextRetryAt(){return nextRetryAt;},
+  async function loadAll(){
+    if(disposed)return;
+    // Finish the small ISS request before expanding; never overlap feeds.
+    if(pending)await pending;
+    if(disposed)return;
+    allowedIds=null;
+    for(const id of GROUPS)if(!requestedGroups.includes(id)){requestedGroups.push(id);sources.set(id,{id,status:'pending',received:0,accepted:0});}
+    return refresh();
+  }
+  return {refresh,loadAll,get records(){return records;},get status(){return status;},get lastRefresh(){return lastRefresh;},get nextRetryAt(){return nextRetryAt;},
     dispose(){disposed=true;controller?.abort();}};
 }

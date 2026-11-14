@@ -12,14 +12,14 @@ export function createDetailedGlobe({host,onState=()=>{},onInteraction=()=>{},on
   }
   let visualSettings=null;
   let frame=null,current=null,ready=false,active=false,timer=0,state={},disposed=false,loading=false;
-  let blend=null,arrival=false;
+  let blend=null,arrival=false,sputnikActive=false;
   const origin=location.origin;
   const theme=()=>document.documentElement?.dataset.theme==='day'?'day':'night';
   const send=(action,payload={})=>frame?.contentWindow?.postMessage({channel:CHANNEL,action,...payload},origin);
   const updateTheme=()=>send('theme',{value:theme(),motion:document.documentElement.dataset.motion,language:document.documentElement.lang});
   function teardown(){
     clearTimeout(timer);blend?.cancel();blend=null;
-    if(frame){send('dispose');frame.remove();}
+    if(frame){send('dispose');frame.remove();if(sputnikActive)window.dispatchEvent(new CustomEvent('relic-sputnik-ended',{detail:{}}));sputnikActive=false;}
     frame=null;ready=false;active=false;loading=false;state={};
   }
   function emit(extra={}){onState({id:current?.id||null,active,loading,transitioning:Boolean(blend),...state,...extra});}
@@ -66,6 +66,7 @@ export function createDetailedGlobe({host,onState=()=>{},onInteraction=()=>{},on
   function receive(event){
     if(disposed||event.origin!==origin||event.source!==frame?.contentWindow||event.data?.channel!==CHANNEL)return;
     const data=event.data;
+    if(data.type==='sputnik-state'&&current?.id==='earth'){sputnikActive=Boolean(data.state?.active);window.dispatchEvent(new CustomEvent('relic-sputnik-state',{detail:data.state}));return;}
     if(data.type==='fps'){if(active&&Number.isFinite(data.fps)&&data.fps>=0)window.dispatchEvent(new CustomEvent('relic-render-fps',{detail:{source:'inspection',body:current?.id,fps:data.fps}}));return;}
     if(data.type==='boot'){updateTheme();send('focus',{focus:current});if(visualSettings)send('visualSettings',{value:visualSettings});return;}
     if(data.type==='ready'){clearTimeout(timer);ready=true;state={...state,...data.state};return;}
@@ -75,6 +76,8 @@ export function createDetailedGlobe({host,onState=()=>{},onInteraction=()=>{},on
     if(data.type==='select'&&typeof data.id==='string'){onSelect(data.id);return;}
     if(data.type==='error'){teardown();emit({error:'unavailable'});}
   }
+  const sputnikCommand=event=>{if(current?.id==='earth'&&ready)send('sputnik',{command:event.detail?.action,value:event.detail?.value});};
+  window.addEventListener('relic-sputnik-command',sputnikCommand);
   window.addEventListener('message',receive);
   window.addEventListener('relic-preferences-change',updateTheme);
   const languageObserver=new MutationObserver(updateTheme);languageObserver.observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
@@ -87,6 +90,6 @@ export function createDetailedGlobe({host,onState=()=>{},onInteraction=()=>{},on
     toggleViewTilt:()=>command('toggleViewTilt'),northUp:()=>command('northUp'),
     turn:degrees=>command('turn',degrees),move:direction=>command('move',direction),topDown:()=>command('topDown'),resetView:()=>command('resetView'),
     pause(value=true){if(value)arrival=false;send('pause',{value:Boolean(value)});},
-    dispose(){hide();disposed=true;languageObserver.disconnect();window.removeEventListener('message',receive);window.removeEventListener('relic-preferences-change',updateTheme);}
+    dispose(){hide();disposed=true;languageObserver.disconnect();window.removeEventListener('message',receive);window.removeEventListener('relic-sputnik-command',sputnikCommand);window.removeEventListener('relic-preferences-change',updateTheme);}
   };
 }

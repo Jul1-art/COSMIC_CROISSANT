@@ -23,11 +23,12 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
   workerBusy=true;lastWorkerAt=now();worker.postMessage({type:'sample',revision,at:lastWorkerAt});
  }
  function stopWorker(){worker?.terminate();worker=null;workerBusy=false;workerBuffer=null;request();}
- try{if(!issOnly&&typeof Worker==='function'){
+ function startWorker(){try{if(!worker&&typeof Worker==='function'){
   worker=new Worker(new URL('./propagation-worker.js',import.meta.url),{type:'module'});
   worker.onmessage=({data})=>{if(disposed||data.revision!==revision)return;workerBusy=false;workerBuffer=data.data;workerCursor=0;request();};
   worker.onerror=()=>{stopWorker();};
- }}catch{worker=null;}
+ }}catch{worker=null;}}
+ if(!issOnly)startWorker();
  function applySample(row,pos){
   const point=byId.get(row.id);if(!point)return;
   samples.set(row.id,pos);const wasShown=point.show;point.show=visible(row);
@@ -49,9 +50,9 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
  const issColor=C.Color.fromCssColorString('#ff4444');
  const credit=new C.Credit('Satellite orbits · <a href="https://celestrak.org/" target="_blank" rel="noopener noreferrer">CelesTrak</a> · SGP4 / satellite.js · <a href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank" rel="noopener noreferrer">God’s Eye View / Bilawal Sidhu · MIT</a>',false);
  viewer.creditDisplay?.addStaticCredit(credit);
- let disposed=false,paused=false,shown=true,selected=null,following=null,ownedEntity=null,rows=[],cursor=0,revision=0,buildTimer=0,lastPanelAt=0,lastRingAt=0,lastRefreshAttempt=now(),catalogSnapshot=null,enabledCount=0;
+ let disposed=false,paused=false,shown=true,missionHidden=false,selected=null,following=null,ownedEntity=null,rows=[],cursor=0,revision=0,buildTimer=0,lastPanelAt=0,lastRingAt=0,lastRefreshAttempt=now(),catalogSnapshot=null,enabledCount=0;
  const request=()=>{if(!disposed&&!viewer.isDestroyed())scene.requestRender();};
- const visible=row=>shown&&classes[row.satelliteClass]&&Math.abs(now()-row.epoch)<=COVERAGE_MS;
+ const visible=row=>!missionHidden&&shown&&classes[row.satelliteClass]&&Math.abs(now()-row.epoch)<=COVERAGE_MS;
  function sample(row,date){
    if(!row||Math.abs(date.getTime()-row.epoch)>COVERAGE_MS)return null;
    const position=propagatePosition(row.satrec,date);if(position)samples.set(row.id,{...position,at:date.getTime()});
@@ -65,7 +66,13 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
    brackets.update(row.id,point.position,point.show);
    return pos;
  }
- const panel=createSatellitePanel({host,getLanguage,onLanguageChange,issOnly,
+ async function loadAll(){
+   if(disposed||!issOnly)return;
+   issOnly=false;panel.setCatalogMode?.(false);startWorker();
+   if(worker)worker.postMessage({type:'catalog',revision,rows:rows.map(({satrec,epoch})=>({satrec,epoch}))});
+   lastRefreshAttempt=now();await catalog.loadAll();
+ }
+ const panel=createSatellitePanel({host,getLanguage,onLanguageChange,issOnly,onLoadAll:loadAll,
    onResetFilters:()=>{shown=true;for(const id of SATELLITE_CLASS_IDS)classes[id]=true;panel.setVisibility(true);panel.setClasses(classes);syncVisibility();},
    onStarlink:showStarlinkConstellation,onSelect:(id,follow)=>select(id,follow),onFollow:value=>value?startFollowing():stopFollowing(),
    onVisibility:value=>{shown=value;if(!value)stopFollowing();syncVisibility();},
@@ -208,6 +215,7 @@ export function createEarthSatellites({Cesium:C,viewer,host=document.body,getLan
  const visibility=()=>{if(!document.hidden)request();};document.addEventListener('visibilitychange',visibility);
  void catalog.refresh();
  return {select,stopFollowing,showStarlinkConstellation,
+   setMissionHidden(value){missionHidden=Boolean(value);syncVisibility();},
    setDetectionSettings(value){detection.setSettings(value);request();},
    setDetection(value){detectionShown=Boolean(value);detection.setEnabled(value);brackets.setEnabled(value&&!paused);syncLabels();request();},
    handleClick(position){

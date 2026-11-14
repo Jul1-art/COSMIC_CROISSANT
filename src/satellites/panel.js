@@ -8,7 +8,7 @@ Object.assign(COPY.en,{catalogue:'Catalogue',enabled:'Enabled',filters:'Categori
 Object.assign(COPY.fr,{catalogue:'Catalogue',enabled:'Activés',filters:'Catégories',allClasses:'Tout activer',sources:'Sources des données',loaded:'Chargés',pending:'En attente',loadingSource:'Chargement',readySource:'Disponible',staleSource:'En cache',retained:'Données précédentes conservées',unavailableSource:'Indisponible',deferred:'Nouvel essai prévu',filtered:'exclus',all:'Afficher les satellites',hide:'Masquer les satellites'});
 const FEED_NAMES={stations:['Stations','Stations'],starlink:['Starlink','Starlink'],active:['Full active catalogue','Catalogue actif complet'],visual:['Bright objects','Objets brillants'],'gps-ops':['GPS','GPS'],'glo-ops':['GLONASS','GLONASS'],galileo:['Galileo','Galileo'],geo:['Geostationary','Géostationnaires'],resource:['Earth observation','Observation de la Terre'],weather:['Weather','Météo'],planet:['Planet','Planet'],sar:['Radar imaging','Imagerie radar'],science:['Science','Science']};
 const element=(tag,className,text)=>{const node=document.createElement(tag);node.className=className;if(text)node.textContent=text;return node;};
-export function createSatellitePanel({host=document.body,getLanguage=()=>document.documentElement.lang,onLanguageChange,onSelect,onFollow,onVisibility,onClassChange,onRefresh,onStarlink,onResetFilters=()=>{},issOnly=false}){
+export function createSatellitePanel({host=document.body,getLanguage=()=>document.documentElement.lang,onLanguageChange,onSelect,onFollow,onVisibility,onClassChange,onRefresh,onStarlink,onResetFilters=()=>{},issOnly=false,onLoadAll=()=>{}}){
  const fr=()=>getLanguage()==='fr',copy=()=>COPY[fr()?'fr':'en'];
  const ensureStyles=doc=>{const href=new URL('./satellites.css?v=63',import.meta.url).href;let link=doc.querySelector('link[data-satellite-style]');if(link){if(link.href!==href)link.href=href;return;}link=doc.createElement('link');link.rel='stylesheet';link.dataset.satelliteStyle='';link.href=href;doc.head.append(link);};
  ensureStyles(document);
@@ -29,11 +29,12 @@ export function createSatellitePanel({host=document.body,getLanguage=()=>documen
  filterSection.append(filterTitle,filters);
  const search=element('input','satellite-search');search.type='search';search.maxLength=100;
  const results=element('div','satellite-results'),card=element('section','satellite-card'),name=element('h3','satellite-name'),metrics=element('dl','satellite-metrics'),follow=element('button','satellite-follow');follow.type='button';card.append(name,metrics,follow);card.hidden=true;follow.addEventListener('click',()=>onFollow(!following));
+ const loadAll=element('button','satellite-load-all');loadAll.type='button';loadAll.addEventListener('click',onLoadAll);
  const refresh=element('button','satellite-refresh');refresh.type='button';refresh.addEventListener('click',onRefresh);
  const sourceSection=element('details','satellite-source-section'),sourceTitle=element('summary','satellite-source-title'),sourceRows=element('div','satellite-feed-list');sourceSection.append(sourceTitle,sourceRows);
  const foot=element('p','satellite-foot'),credits=element('p','satellite-source');
  for(const [label,url]of [['CelesTrak','https://celestrak.org/'],['God’s Eye View · Bilawal Sidhu','https://github.com/bilawalsidhu/gods-eye-view']]){const a=element('a','',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';credits.append(a);}
- sourceSection.append(foot,credits);body.append(stats,starlinkBadge,status,toolbar,visibility,resetFilters,search,results,card,filterSection,sourceSection,refresh);root.append(body);host.append(root);
+ sourceSection.append(foot,credits);body.append(loadAll,stats,starlinkBadge,status,toolbar,visibility,resetFilters,search,results,card,filterSection,sourceSection,refresh);root.append(body);host.append(root);
  let records=new Map(),state='loading',selected=null,following=false,shown=true,position=null,enabledCount=0,sources=[],inline=false;
  // Same-origin portal: move the live controls without serializing thousands of
  // SGP4 records or recreating their listeners across the renderer boundary.
@@ -57,7 +58,8 @@ export function createSatellitePanel({host=document.body,getLanguage=()=>documen
    sourceRows.replaceChildren();const statuses={pending:t.pending,loading:t.loadingSource,ready:t.readySource,stale:t.staleSource,retained:t.retained,unavailable:t.unavailableSource,deferred:t.deferred};
    for(const source of sources){const row=element('div','satellite-feed'),label=element('span','satellite-feed-name',FEED_NAMES[source.id]?.[fr()?1:0]||source.id),value=element('span','satellite-feed-status',statuses[source.status]||source.status);row.dataset.state=source.status;row.append(label,value);if(source.received){const amount=element('small','satellite-feed-count',`${source.accepted.toLocaleString()} / ${source.received.toLocaleString()}`);row.append(amount);}sourceRows.append(row);}
    updateFilterState();renderResults();renderCard();
-   if(issOnly){starlink.hidden=true;filterSection.hidden=true;resetFilters.hidden=true;search.hidden=true;foot.textContent=fr()?"ISS uniquement · position calculée à partir des éléments CelesTrak récents.":"ISS only · position calculated from recent CelesTrak elements.";}
+   loadAll.hidden=!issOnly;loadAll.textContent=fr()?'Charger les autres satellites':'Load other satellites';starlink.hidden=issOnly;filterSection.hidden=issOnly;search.hidden=issOnly;
+   if(issOnly){resetFilters.hidden=true;foot.textContent=fr()?"ISS uniquement · position calculée à partir des éléments CelesTrak récents.":"ISS only · position calculated from recent CelesTrak elements.";}
  }
  function renderCard(){
    card.hidden=!selected;metrics.replaceChildren();if(!selected)return;
@@ -67,5 +69,5 @@ export function createSatellitePanel({host=document.body,getLanguage=()=>documen
    metric(t.period,`${(2*Math.PI/row.satrec.no).toFixed(1)} min`);metric(t.epoch,new Date(row.epoch).toISOString().replace('T',' ').slice(0,19)+' UTC');follow.textContent=following?t.stop:t.follow;follow.setAttribute('aria-pressed',String(following));
  }
  search.addEventListener('input',renderResults);const unsubscribe=onLanguageChange?.(render);render();
- return {collapse(){},setPopulation(value){enabledCount=value;population();},setVisibility(value){shown=value;render();},setClasses(values){for(const [id,item]of inputs)item.input.checked=values[id]===true;updateFilterState();},update(value){records=value.records;state=value.status;sources=value.sources||[];render();},select(row){selected=row;position=null;renderCard();},position(value,isFollowing){position=value;following=isFollowing;if(inline)renderCard();},setFollowing(value){following=value;renderCard();},dispose(){unsubscribe?.();owner.defaultView?.removeEventListener('relic-inspection-mounted',mount);root.remove();}};
+ return {setCatalogMode(value){issOnly=Boolean(value);render();},collapse(){},setPopulation(value){enabledCount=value;population();},setVisibility(value){shown=value;render();},setClasses(values){for(const [id,item]of inputs)item.input.checked=values[id]===true;updateFilterState();},update(value){records=value.records;state=value.status;sources=value.sources||[];render();},select(row){selected=row;position=null;renderCard();},position(value,isFollowing){position=value;following=isFollowing;if(inline)renderCard();},setFollowing(value){following=value;renderCard();},dispose(){unsubscribe?.();owner.defaultView?.removeEventListener('relic-inspection-mounted',mount);root.remove();}};
 }

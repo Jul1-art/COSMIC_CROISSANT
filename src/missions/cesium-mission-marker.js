@@ -9,9 +9,9 @@ export function createCesiumMissionMarker({Cesium,viewer,body,onOpen,onAnchor=()
  const marker=doc.createElement('button');marker.type='button';marker.className='mission-marker';marker.hidden=true;marker.innerHTML=PIN_SVG+`<span>${mission.name}</span>`;marker.setAttribute('aria-label',mission.name+' · repère historique · ouvrir la mission');doc.body.append(marker);
  const {latitude:lat,longitude:lon}=mission.site;
  const open=()=>{const rect=marker.getBoundingClientRect?.();onOpen(mission.id,rect?{x:rect.left+rect.width/2,y:rect.bottom}:undefined);};marker.addEventListener('click',open);
- let lastAnchor=-Infinity;const toward=new Cesium.Cartesian3(),pixel=new Cesium.Cartesian2();
+ let enabled=true,lastAnchor=-Infinity;const toward=new Cesium.Cartesian3(),pixel=new Cesium.Cartesian2();
  function update(){
-   if(viewer.isDestroyed()){marker.hidden=true;return;}
+   if(!enabled||viewer.isDestroyed()){marker.hidden=true;return;}
    const height=getSurfaceHeight(lat,lon),point=Cesium.Cartesian3.fromDegrees(lon,lat,Number.isFinite(height)?height:0,(body==='moon'?Cesium.Ellipsoid.MOON:Cesium.Ellipsoid.WGS84));
    Cesium.Cartesian3.subtract(viewer.camera.positionWC,point,toward);
    const screen=viewer.scene.cartesianToCanvasCoordinates(point,pixel);
@@ -21,5 +21,5 @@ export function createCesiumMissionMarker({Cesium,viewer,body,onOpen,onAnchor=()
    if(!marker.hidden){marker.style.left=`${bounds.left+screen.x}px`;marker.style.top=`${bounds.top+screen.y}px`;if(performance.now()-lastAnchor>100){lastAnchor=performance.now();onAnchor({x:bounds.left+screen.x,y:bounds.top+screen.y});}}
  }
  const stop=viewer.scene.postRender.addEventListener(update);update();
- return {update,dispose(){stop();marker.removeEventListener('click',open);marker.remove();}};
+ return {update,setVisible(value){enabled=Boolean(value);update();},dispose(){stop();marker.removeEventListener('click',open);marker.remove();}};
 }

@@ -44,3 +44,5 @@
 [data-theme=day] .satellite-workspace .satellite-class-name{color:color-mix(in srgb,var(--satellite-color),#000 45%)}
 [data-theme=day] .satellite-workspace .satellite-status:is([data-state=partial],[data-state=stale],[data-state=unavailable]){color:#8b5518}
 .satellite-workspace .satellite-reset-filters[hidden]{display:none}
+
+.satellite-load-all{display:block;width:100%;padding:10px 12px;margin-bottom:12px;border:1px solid var(--inspection-line,#ffffff30);border-radius:7px;background:var(--inspection-input,#ffffff08);color:inherit;font:inherit;text-align:left;cursor:pointer}.satellite-load-all:hover{background:var(--inspection-hover,#ffffff15)}

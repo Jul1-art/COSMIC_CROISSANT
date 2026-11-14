@@ -114,3 +114,16 @@ test('mission popups accept only Apollo 11 from the current Moon iframe',async()
   f.globe.setFocus({id:'moon'});const moon=f.frames[1];send(earth);send(moon,'apollo-11','https://untrusted.invalid');send(moon,'unknown');assert.equal(f.fpsEvents.length,0);
   send(moon);assert.equal(f.fpsEvents.length,1);assert.equal(f.fpsEvents[0].type,'relic-mission-open');assert.equal(f.fpsEvents[0].detail.id,'apollo-11');f.globe.dispose();
 });
+
+test('Sputnik commands and state belong only to the current ready Earth frame',async()=>{
+ const f=await fixture();f.globe.setFocus({id:'earth'});const earth=f.frames[0];
+ const send=f.listeners.get('relic-sputnik-command');
+ const count=f.messages.length;send({detail:{action:'start'}});assert.equal(f.messages.length,count,'Do not send mission commands before the renderer is ready');
+ f.receive(earth,'ready',{});send({detail:{action:'start'}});assert.equal(f.messages.at(-1).message.action,'sputnik');assert.equal(f.messages.at(-1).message.command,'start');
+ f.receive(earth,'sputnik-state',{active:true,seconds:30});
+ // fixture.receive nests supplied values in state, like a real renderer.
+ assert.equal(f.fpsEvents.at(-1).type,'relic-sputnik-state');assert.equal(f.fpsEvents.at(-1).detail.seconds,30);
+ f.globe.setFocus({id:'moon'});assert.equal(f.fpsEvents.at(-1).type,'relic-sputnik-ended');
+ const after=f.messages.length;send({detail:{action:'start'}});assert.equal(f.messages.length,after);
+ f.globe.dispose();assert.equal(f.listeners.size,0);
+});

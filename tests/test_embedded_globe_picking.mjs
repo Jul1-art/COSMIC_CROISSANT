@@ -42,6 +42,7 @@ async function fixture(body){
     './globe-camera-controls.js':cameraControls,
     '../ui/scene-theme.js':sceneTheme,
     './ion-earth.js':ionEarth,
+    '../missions/sputnik-orbit.js':{createSputnikOrbit:()=>({})},
     './inspection-effects.js':inspectionEffects,
     './inspection-camera-motion.js':inspectionCameraMotion,
     './world-performance.js':{installAdaptiveWorldQuality(){}},

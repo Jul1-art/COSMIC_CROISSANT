@@ -1,3 +1,4 @@
+import {createSputnikOrbit} from '../missions/sputnik-orbit.js';
 import {createCesiumMissionMarker} from '../missions/cesium-mission-marker.js';
 import {installAdaptiveWorldQuality} from './world-performance.js';
 import {createEarthSatellites} from '../satellites/cesium-layer.js';
@@ -32,7 +33,7 @@ let cameraMotion,lastCameraAction=null,arrivalPlayed=false;
 let defaultFov=Math.PI/3,disposeCameraControls;
 const maximumFrameRange=()=>globeZoomOutLimit(radius,viewer?.camera.frustum.fovy||Math.PI/3)+radius*2;
 let missionMarker=null;
-let earth3D=null,earthTerrainReady=false,earthBuildingsRequested=false,satellites=null;
+let earth3D=null,earthTerrainReady=false,earthBuildingsRequested=false,satellites=null,sputnikOrbit=null;
 const adaptiveImagery=[];
 const post=(type,payload={})=>{if(parent!==window)parent.postMessage({channel:CHANNEL,type,...payload},location.origin);};
 const finite=value=>typeof value==='number'&&Number.isFinite(value);
@@ -294,7 +295,7 @@ async function addEarthBuildings(token){
     buildings=viewer.scene.primitives.add(value);sourceLabel='Cesium ion · World Terrain + OSM Buildings · photorealistic tiles unavailable';updateCredits();state(true);requestRender();
   }catch{/* Keep measured world terrain if the optional OSM asset is unavailable. */}
 }
-function suspend(value){paused=Boolean(value);satellites?.pause(paused);if(disposed||!viewer||viewer.isDestroyed())return;if(paused||document.hidden)cameraMotion?.cancel();viewer.useDefaultRenderLoop=(!paused||!ready)&&!document.hidden;effects?.pause(paused||document.hidden);if(!paused||!ready){viewer.resize();requestRender();}}
+function suspend(value){paused=Boolean(value);satellites?.pause(paused||sputnikOrbit?.active);sputnikOrbit?.pause(paused);if(disposed||!viewer||viewer.isDestroyed())return;if(paused||document.hidden)cameraMotion?.cancel();viewer.useDefaultRenderLoop=(!paused||!ready)&&!document.hidden;effects?.pause(paused||document.hidden);if(!paused||!ready){viewer.resize();requestRender();}}
 function applyViewTheme(value){
   const theme=value==='day'?'day':'night',palette=scenePalette(theme);
   document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=palette.light?'light':'dark';
@@ -311,6 +312,7 @@ function receive(event){
     applyViewTheme(value);
   }
   else if(action==='visualSettings'){effects?.setSettings(value);satellites?.setDetection(value?.detection!==false);satellites?.setDetectionSettings(value);document.documentElement.dataset.visualPreset=effects?.settings.style||'normal';celestial?.setLabelsVisible?.(effects?.settings.labels!==false);state(true);}
+  else if(action==='sputnik'&&body==='earth'){cameraMotion?.cancel();sputnikOrbit?.command(event.data.command,value);}
   else if(action==='focus')setFocus(event.data.focus);
   else if(action==='context'){focus.context=event.data.context||[];celestial?.setBodies(focus.context);state(true);}
   else if(action==='lookAt'&&typeof value==='string'){cameraMotion?.cancel();celestial?.lookAt(value);state(true);}
@@ -328,7 +330,7 @@ function receive(event){
   else if(action==='northUp')northUp();
   else if(action==='reveal')reveal();
 }
-function dispose(){if(disposed)return;disposed=true;missionMarker?.dispose();adaptiveQuality?.dispose();cameraMotion?.cancel();disposeCameraControls?.();satellites?.dispose();creditObserver.disconnect();window.removeEventListener('message',receive);earth3D?.destroy();effects?.destroy();celestial?.dispose();if(viewer&&!viewer.isDestroyed())viewer.destroy();}
+function dispose(){if(disposed)return;disposed=true;sputnikOrbit?.dispose();missionMarker?.dispose();adaptiveQuality?.dispose();cameraMotion?.cancel();disposeCameraControls?.();satellites?.dispose();creditObserver.disconnect();window.removeEventListener('message',receive);earth3D?.destroy();effects?.destroy();celestial?.dispose();if(viewer&&!viewer.isDestroyed())viewer.destroy();}
 async function start(){
   try{
     viewer=new Cesium.Viewer('globe',{ellipsoid,globe:new Cesium.Globe(ellipsoid),mapProjection:new Cesium.GeographicProjection(ellipsoid),
@@ -344,6 +346,7 @@ async function start(){
     celestial=createCelestialScene({Cesium,viewer,onSelect:id=>post('select',{id})});
     applyViewTheme(document.documentElement.dataset.theme);
     if(body==='earth')satellites=createEarthSatellites({Cesium,viewer,issOnly:true,getLanguage:()=>document.documentElement.lang,onLanguageChange:callback=>{window.addEventListener('relic-satellite-language',callback);return()=>window.removeEventListener('relic-satellite-language',callback);},onInteraction:()=>{cameraMotion.cancel();post('interaction');}});
+    if(body==='earth')sputnikOrbit=createSputnikOrbit({Cesium,viewer,onState:state=>post('sputnik-state',{state}),onActive:active=>{cameraMotion?.cancel();satellites?.pause(paused||active);satellites?.setMissionHidden(active);missionMarker?.setVisible(!active);}});
     scene.globe.baseColor=Cesium.Color.fromCssColorString(body==='earth'?'#183444':body==='moon'?'#777573':'#82533e');
     scene.globe.maximumScreenSpaceError=compact?2.5:1.5;scene.globe.tileCacheSize=compact?72:160;scene.globe.depthTestAgainstTerrain=true;
     if(scene.skyAtmosphere)scene.skyAtmosphere.show=false;if(scene.sun)scene.sun.show=false;if(scene.moon)scene.moon.show=false;
