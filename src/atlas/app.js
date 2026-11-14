@@ -1,3 +1,4 @@
+import {createLaunchpadView} from '../missions/launchpad-view.js';
 import {createMissionDepth} from '../missions/mission-depth.js';
 import {createFlightLine} from '../missions/flight-lines.js';
 import {createAtlasMission} from '../missions/atlas-mission.js';
@@ -542,8 +543,9 @@ const scaleReadout=createScaleReadout({host:sceneHost.parentElement,camera,getLa
   return {id:selected,distance,viewportHeight:viewportSize().height,radius,radiusKm,special,hideRuler:skyView,kmPerPixel:native?.metersPerPixel/1000};
 }});
 function updateScaleNote(){scaleReadout.update();}
-let wasDetailedActive=false,previousDetailedSource;
+let wasDetailedActive=false,previousDetailedSource,launchpadView=null;
 detailedGlobe=createDetailedGlobe({host:sceneHost,onState:state=>{
+  launchpadView?.sync(state);
   document.body.dataset.detailedGlobe=state.active?'active':state.loading?'loading':state.error?'unavailable':'inactive';
   document.body.style.setProperty('--detailed-credits-height',state.active?`${state.creditHeight||30}px`:'0px');
   renderer.domElement.style.visibility=state.active&&!state.transitioning?'hidden':'';
@@ -1202,6 +1204,7 @@ atlasMission=createAtlasMission({THREE,scene,camera,controls,createLine:createFl
   controls.enabled=true;hideGestureHint();window.dispatchEvent(new CustomEvent('planet-dashboard-panel',{detail:{open:false}}));
  },
  onStop(restore){
+  launchpadView?.close({resume:false});
   missionDepth.setScale(1);mascot.setSuspended(rendererSuspended);const url=new URL(location.href);url.searchParams.delete('mission');url.searchParams.delete('missionView');history.replaceState(null,'',url);
   camera.position.add(missionOrigin);controls.target.add(missionOrigin);if(flight)for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].add(missionOrigin);missionOrigin.set(0,0,0);
   updatePositions(simulationDays);naturalSystems?.update(simulationClock.date,0);solarIllumination.update(simulationClock.date);
@@ -1211,6 +1214,23 @@ atlasMission=createAtlasMission({THREE,scene,camera,controls,createLine:createFl
  },
  onTime:(time,playing,meta)=>window.dispatchEvent(new CustomEvent('relic-mission-time',{detail:{time,playing,meta}})),
  onStatus:(status,message)=>window.dispatchEvent(new CustomEvent('relic-mission-status',{detail:{status,message}}))
+});
+launchpadView=createLaunchpadView({globe:detailedGlobe,mission:atlasMission,
+ capture(){
+  const position=camera.position.clone(),target=controls.target.clone(),up=camera.up.clone();flight=null;atlasMission.releaseCamera();controls.enabled=false;
+  return()=>{camera.position.copy(position);camera.up.copy(up);controls.target.copy(target);const damping=controls.enableDamping;controls.enableDamping=false;controls.update();controls.enableDamping=damping;controls.enabled=!rendererSuspended;};
+ },
+ onChange:state=>{document.body.dataset.missionLaunchpad=state.active?'active':'inactive';window.dispatchEvent(new CustomEvent('relic-launchpad-state',{detail:state}));}
+});
+window.addEventListener('relic-launchpad-command',event=>{const action=event.detail?.action;if(action==='open')launchpadView.open();else if(action==='close')launchpadView.close();else if(action==='retry')launchpadView.retry();});
+// Click/tap the actual Saturn V point as well as its keyboard-accessible label.
+let launchpadPointer=null;
+renderer.domElement.addEventListener('pointerdown',event=>{launchpadPointer=atlasMission.active&&!detailedGlobe.active&&event.button===0?{id:event.pointerId,x:event.clientX,y:event.clientY}:null;});
+renderer.domElement.addEventListener('pointercancel',()=>{launchpadPointer=null;});
+renderer.domElement.addEventListener('pointerup',event=>{
+ const start=launchpadPointer;launchpadPointer=null;if(!start||event.pointerId!==start.id||filmActive||!atlasMission.active||detailedGlobe.active||Math.hypot(event.clientX-start.x,event.clientY-start.y)>6)return;
+ const point=atlasMission.projectAnnotations(renderer.domElement.getBoundingClientRect()).find(row=>row.text==='Saturn V'&&row.visible);
+ if(point&&Math.hypot(event.clientX-point.x,event.clientY-point.y)<(event.pointerType==='touch'?24:15))launchpadView.open();
 });
 window.addEventListener('relic-mission-start',event=>{event.detail?.connect?.(atlasMission);void atlasMission.start();});
 window.addEventListener('pagehide',event=>{if(!event.persisted)atlasMission.dispose();});

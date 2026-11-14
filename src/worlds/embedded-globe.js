@@ -217,6 +217,7 @@ function setLighting(value){
 }
 function setFocus(value){
   if(value?.id!==body)return;focus={...value};setLighting(value);
+  const launchpad=value.inspection==='apollo-launchpad';satellites?.setMissionHidden(launchpad);satellites?.pause(paused||launchpad);missionMarker?.setVisible(!launchpad);
   celestial?.setBodies(value.context||[]);
   if(finite(value.lat)&&finite(value.lon))goTo(value.lat,value.lon,finite(value.range)?value.range:radius*.08,finite(value.heading)?value.heading:0,finite(value.tilt)?value.tilt:0,ready);
   else resetView();
@@ -243,7 +244,7 @@ async function addTerrain(){
   if(body==='earth'&&ionStatus==='loading'){
     const refreshEarth=()=>{
       if(disposed)return;
-      if(earth3D.active){tileset=earth3D.tileset;sourceMode='ion-photorealistic';sourceLabel='Google Photorealistic 3D Tiles · Cesium ion';ionStatus='ready';}
+      if(earth3D.active){tileset=earth3D.tileset;sourceMode='ion-photorealistic';sourceLabel='Google Photorealistic 3D Tiles · Cesium ion';ionStatus=earth3D.status==='ready'?'ready':'loading';}
       else{
         sourceMode=earthTerrainReady?'ion-terrain':'imagery';
         sourceLabel=earthTerrainReady?'Cesium ion · World Terrain':'NASA / Esri imagery';
@@ -295,7 +296,7 @@ async function addEarthBuildings(token){
     buildings=viewer.scene.primitives.add(value);sourceLabel='Cesium ion · World Terrain + OSM Buildings · photorealistic tiles unavailable';updateCredits();state(true);requestRender();
   }catch{/* Keep measured world terrain if the optional OSM asset is unavailable. */}
 }
-function suspend(value){paused=Boolean(value);satellites?.pause(paused||sputnikOrbit?.active);sputnikOrbit?.pause(paused);if(disposed||!viewer||viewer.isDestroyed())return;if(paused||document.hidden)cameraMotion?.cancel();viewer.useDefaultRenderLoop=(!paused||!ready)&&!document.hidden;effects?.pause(paused||document.hidden);if(!paused||!ready){viewer.resize();requestRender();}}
+function suspend(value){paused=Boolean(value);satellites?.pause(paused||sputnikOrbit?.active||focus.inspection==='apollo-launchpad');sputnikOrbit?.pause(paused);if(disposed||!viewer||viewer.isDestroyed())return;if(paused||document.hidden)cameraMotion?.cancel();viewer.useDefaultRenderLoop=(!paused||!ready)&&!document.hidden;effects?.pause(paused||document.hidden);if(!paused||!ready){viewer.resize();requestRender();}}
 function applyViewTheme(value){
   const theme=value==='day'?'day':'night',palette=scenePalette(theme);
   document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=palette.light?'light':'dark';
@@ -390,6 +391,7 @@ async function start(){
     scene.canvas.addEventListener('wheel',interaction,{passive:true});
     scene.canvas.tabIndex=0;
     scene.canvas.addEventListener('keydown',event=>{
+      if(event.key==='Escape'&&focus.inspection==='apollo-launchpad'){event.preventDefault();post('launchpad-close');return;}
       const moves={w:'up',s:'down',a:'left',d:'right'};
       if(moves[event.key])move(moves[event.key]);
       else if(event.key==='+'||event.key==='=')zoom(.8);else if(event.key==='-')zoom(1.25);else if(['n','Home'].includes(event.key))orient(0,0,0);else if(event.key.toLowerCase()==='q')orient(0,-5);else if(event.key.toLowerCase()==='e')orient(0,5);else if(event.key.toLowerCase()==='r')resetView(true);else return;

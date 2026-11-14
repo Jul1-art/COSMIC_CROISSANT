@@ -66,6 +66,7 @@ export function createDetailedGlobe({host,onState=()=>{},onInteraction=()=>{},on
   function receive(event){
     if(disposed||event.origin!==origin||event.source!==frame?.contentWindow||event.data?.channel!==CHANNEL)return;
     const data=event.data;
+    if(data.type==='launchpad-close'&&current?.inspection==='apollo-launchpad'){window.dispatchEvent(new CustomEvent('relic-launchpad-command',{detail:{action:'close'}}));return;}
     if(data.type==='sputnik-state'&&current?.id==='earth'){sputnikActive=Boolean(data.state?.active);window.dispatchEvent(new CustomEvent('relic-sputnik-state',{detail:data.state}));return;}
     if(data.type==='fps'){if(active&&Number.isFinite(data.fps)&&data.fps>=0)window.dispatchEvent(new CustomEvent('relic-render-fps',{detail:{source:'inspection',body:current?.id,fps:data.fps}}));return;}
     if(data.type==='boot'){updateTheme();send('focus',{focus:current});if(visualSettings)send('visualSettings',{value:visualSettings});return;}

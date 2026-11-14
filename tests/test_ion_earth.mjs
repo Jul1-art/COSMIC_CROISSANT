@@ -63,11 +63,12 @@ test('a stalled request times out to the visible globe and cannot resurrect afte
   resolve({});assert.equal(await pending,false);assert.equal(f.created.length,0);assert.equal(f.controller.active,false);
 });
 
-test('partial tiles cannot claim a ready Earth and failed-view cleanup removes listeners',async t=>{
+test('real partial tiles stream without claiming complete detail or being discarded by the metadata deadline',async t=>{
   const f=fixture({timeoutMs:2});t.after(()=>f.controller.destroy());await f.controller.enable('fixture-token');
   const tiles=f.created[0];tiles.tileVisible.raise();tiles.tileFailed.raise({message:'private URL'});
-  assert.equal(f.controller.status,'loading');assert.equal(f.viewer.scene.globe.show,true);
-  await new Promise(done=>setTimeout(done,12));assert.equal(f.controller.status,'error');assert.equal(tiles.destroyed,true);
+  assert.equal(f.controller.status,'streaming');assert.equal(f.controller.active,true);assert.equal(f.viewer.scene.globe.show,false);
+  await new Promise(done=>setTimeout(done,12));assert.equal(f.controller.status,'streaming');assert.notEqual(tiles.destroyed,true);
+  tiles.initialTilesLoaded.raise();assert.equal(f.controller.status,'ready');
   assert.equal(tiles.tileVisible.listeners.size,0);assert.equal(tiles.initialTilesLoaded.listeners.size,0);
 });
 

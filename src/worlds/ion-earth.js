@@ -1,5 +1,6 @@
 /** Actual Google Photorealistic 3D Tiles, brokered by the caller's ion token.
- * The ordinary globe remains visible until the first complete 3D view renders.
+ * The ordinary globe remains visible until genuine tile geometry is selected.
+ * Stream visible geometry immediately; full detail can finish progressively.
  * https://cesium.com/learn/cesiumjs-learn/cesiumjs-photorealistic-3d-tiles/
  */
 export const ION_EARTH_ASSET_ID=2275207;
@@ -23,7 +24,8 @@ export function createIonEarthTiles({Cesium,viewer,compact=false,onState=()=>{},
   const unavailable=()=>destroyed||viewer.isDestroyed?.();
   const render=()=>{if(!unavailable())viewer.scene.requestRender();};
   function emit(next){status=next;onState({status,active});}
-  function stopWaiting(){clearTimeout(timer);timer=null;for(const remove of listeners.splice(0))remove?.();}
+  function stopTimer(){clearTimeout(timer);timer=null;}
+  function stopWaiting(){stopTimer();for(const remove of listeners.splice(0))remove?.();}
   function removeTiles(){if(tileset&&!viewer.isDestroyed?.())viewer.scene.primitives.remove(tileset);tileset=null;tilesToken='';usable=false;}
   function restore(){if(!viewer.isDestroyed?.())viewer.scene.globe.show=true;active=false;render();}
   function fail(request){if(request!==serial||unavailable()||active)return;serial++;stopWaiting();removeTiles();restore();emit('error');}
@@ -45,9 +47,13 @@ export function createIonEarthTiles({Cesium,viewer,compact=false,onState=()=>{},
         if(!visible||!complete||request!==serial||unavailable())return;
         stopWaiting();viewer.scene.globe.show=false;active=usable=true;emit('ready');render();
       };
-      listeners.push(next.tileVisible.addEventListener(()=>{visible=true;activate();}));
+      listeners.push(next.tileVisible.addEventListener(()=>{
+        visible=true;
+        if(!active){stopTimer();viewer.scene.globe.show=false;active=true;emit('streaming');render();}
+        activate();
+      }));
       listeners.push(next.initialTilesLoaded.addEventListener(()=>{complete=true;activate();}));
-      listeners.push(next.loadProgress.addEventListener(render));
+      listeners.push(next.loadProgress.addEventListener((pending,processing)=>{if(pending===0&&processing===0&&next.tilesLoaded){complete=true;activate();}render();}));
       // Listen without logging provider errors: their URLs can contain tokens.
       listeners.push(next.tileFailed.addEventListener(()=>{if(!active)render();}));
       render();return true;

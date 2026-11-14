@@ -127,3 +127,9 @@ test('Sputnik commands and state belong only to the current ready Earth frame',a
  const after=f.messages.length;send({detail:{action:'start'}});assert.equal(f.messages.length,after);
  f.globe.dispose();assert.equal(f.listeners.size,0);
 });
+
+test('Escape from the launchpad iframe requests a return only for that inspection',async()=>{
+ const f=await fixture();f.globe.setFocus({id:'earth'});let frame=f.frames[0];f.receive(frame,'launchpad-close',{});assert.equal(f.fpsEvents.length,0);
+ f.globe.setFocus({id:'earth',inspection:'apollo-launchpad'});f.receive(frame,'launchpad-close',{});assert.equal(f.fpsEvents.at(-1).type,'relic-launchpad-command');assert.equal(f.fpsEvents.at(-1).detail.action,'close');
+ f.globe.setFocus({id:'moon'});const count=f.fpsEvents.length;f.receive(frame,'launchpad-close',{});assert.equal(f.fpsEvents.length,count);f.globe.dispose();
+});
