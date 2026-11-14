@@ -8,7 +8,7 @@ uses the actual mesh radius, body orientation and a radial horizon test.
 ## Visitor flow
 
 1. Click the lunar pin: a compact, non-modal information card opens near it.
-   The map stays interactive. There is no mission landing-page dialog.
+   The card contains only the mission name, agency, landing date, landing site and a dropdown button. It has no photograph, slogan or expanded crew section. The map stays interactive. There is no mission landing-page dialog.
 2. Expand **Explorer la mission**: the mission immediately becomes a full-viewport
    3D view inside the running app. The URL and document do not change. The menu
    exposes **Vision 3D dans l’app**, **Voir la vidéo**, and **Les détails de la mission**.
@@ -72,8 +72,8 @@ this project, without depending on the previously failing SVS MP4 server.
 
 ## Visual system and motion
 
-The interface uses the project's local Inter and JetBrains Mono fonts, a dark
-olive surface palette, restrained sage controls and shared typography between
+The interface uses the project's local Inter and JetBrains Mono fonts, the application’s
+neutral day/night chrome and monochrome controls and shared typography between
 map card, film player, immersive controls and the editorial dossier. Popovers,
 menus, chapter headings, reading tabs and scroll reveals use native browser
 animations and respect reduced-motion preferences.
