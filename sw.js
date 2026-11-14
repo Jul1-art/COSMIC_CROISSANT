@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261114-v75-in-app';
-const INTERFACE_RELEASE = 'missions-20261114-v75';
+const VERSION = 'missions-20261114-v76-cinematic';
+const INTERFACE_RELEASE = 'missions-20261114-v76';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -17,7 +17,7 @@ const MAX_ASSET_BYTES = 16 * 1024 * 1024;
 const FETCH_CONCURRENCY = 3;
 const EXCLUDED_PATH = /\/(?:api|auth|_auth|oauth|login|logout|signin|signout|\.netlify)(?:\/|$)/i;
 const PRIVATE_QUERY = /^(?:access[_-]?token|api[_-]?key|token|key|authorization|auth|signature|secret|password)$/i;
-const STATIC = /\.(?:html|css|js|mjs|json|obj|gz|webmanifest|mp3|jpe?g|png|svg|webp|avif|woff2?|wasm)$/i;
+const STATIC = /\.(?:html|css|js|mjs|json|obj|glb|gz|webmanifest|mp3|jpe?g|png|svg|webp|avif|woff2?|wasm)$/i;
 
 // First install warms only navigation documents and install identity. The
 // already-open page continues loading its own resources normally, without a
@@ -33,6 +33,9 @@ const OFFLINE_CORE = [
   'assets/terrain/catalog.json','assets/terrain/moon-apollo11.bin','assets/terrain/moon-apollo11.webp','assets/earth-blue-marble-4k.webp',
   'pages/mission.html','src/missions/mission-dossier.js','src/missions/mission-dossier-content.js','src/missions/mission-dossier.css','src/missions/mission-film.js',
   'assets/missions/apollo-11/crew.jpg','assets/missions/apollo-11/launch.jpg','assets/missions/apollo-11/aldrin.jpg','assets/missions/apollo-11/seismometer.jpg','assets/missions/apollo-11/recovery.jpg','assets/missions/apollo-11/fiche-mission.pdf',
+  'src/missions/mission-motion.js','src/missions/mission-camera.js','src/missions/nasa-lunar-module.js',
+  'assets/missions/apollo-11/models/lunar-module.glb',
+  'vendor/three-addons/loaders/GLTFLoader.js','vendor/three-addons/loaders/DRACOLoader.js','vendor/three-addons/utils/BufferGeometryUtils.js','vendor/three-addons/environments/RoomEnvironment.js','vendor/three-addons/libs/draco/draco_wasm_wrapper.js','vendor/three-addons/libs/draco/draco_decoder.wasm',
   'src/missions/mission-icons.js','src/missions/apollo11-data.js','src/missions/mission-ui.js','src/missions/mission-scene.js','src/missions/mission-models.js','src/missions/mission-markers.js','src/missions/cesium-mission-marker.js','src/missions/missions.css',
   'src/satellites/propagation-worker.js','vendor/gods-eye-view/detection/detectionPolicy.js','vendor/gods-eye-view/detection/labelArbiter.js','vendor/gods-eye-view/detection/keyhole.js',
   'src/satellites/detection.js','vendor/gods-eye-view/detection/detectionDraw.js','vendor/gods-eye-view/detection/i18n.js',
