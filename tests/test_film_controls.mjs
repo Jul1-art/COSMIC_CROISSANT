@@ -110,3 +110,8 @@ test('the close follows the current edition and supports cue-only editions', () 
   assert.equal(suppressFilmOutroChrome({}, cues, 40), true);
   assert.equal(suppressFilmOutroChrome({}, [], 40), false);
 });
+
+test('the shared player keeps documentary controls available through its final frame',()=>{
+  assert.equal(resolveFilmEnding({endCard:false},[],1866.7,true),null);
+  assert.equal(suppressFilmOutroChrome({endCard:false},[],1866.7,true),false);
+});
