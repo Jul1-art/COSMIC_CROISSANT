@@ -30,6 +30,7 @@ export function createSputnikOrbit({Cesium:C,viewer,onState=()=>{},onActive=()=>
  }
  function command(action,value){if(action==='start'){start();return;}if(!active)return;
   if(action==='stop'){stop();return;}if(action==='frame'){frame();return;}
+  if(action==='pause'){playing=false;last=null;}
   if(action==='play'){if(seconds>=ORBIT_DURATION)seconds=0;playing=!playing;last=null;}
   if(action==='seek'&&Number.isFinite(value)){seconds=Math.max(0,Math.min(ORBIT_DURATION,value));last=null;}
   if(action==='speed'&&[1,30,120,600].includes(value))speed=value;

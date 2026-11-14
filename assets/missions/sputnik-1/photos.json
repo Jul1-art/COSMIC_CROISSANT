@@ -28,5 +28,50 @@
     "caption": "Les débuts de la course à l’espace : archives des premiers lanceurs américains, présentées par la NASA dans le contexte du lancement de Spoutnik.",
     "width": 1280,
     "height": 815
+  },
+  {
+    "file": "preparations.jpg",
+    "source": "https://www.nasa.gov/history/65-years-ago-sputnik-ushers-in-the-space-age/",
+    "download": "https://www.nasa.gov/wp-content/uploads/2022/10/sputnik_2_preflight_testing_1957.jpg",
+    "credit": "Archives historiques / NASA History",
+    "caption": "Préparatifs de Spoutnik 1 en 1957 : un technicien intervient sur le satellite avant son lancement.",
+    "width": 506,
+    "height": 351
+  },
+  {
+    "file": "launch.jpg",
+    "source": "https://www.nasa.gov/history/65-years-ago-sputnik-ushers-in-the-space-age/",
+    "download": "https://www.nasa.gov/wp-content/uploads/2022/10/sputnik_3_sputnik_launch_oct_4_1957.jpg",
+    "credit": "Archives historiques / NASA History",
+    "caption": "Lancement de Spoutnik 1 depuis Baïkonour, le 4 octobre 1957, tel que présenté par NASA History.",
+    "width": 800,
+    "height": 593
+  },
+  {
+    "file": "model.jpg",
+    "source": "https://www.nasa.gov/history/65-years-ago-sputnik-ushers-in-the-space-age/",
+    "download": "https://www.nasa.gov/wp-content/uploads/2022/10/sputnik_4_sputnik_model.jpg",
+    "credit": "Archives historiques / NASA History",
+    "caption": "Modèle de Spoutnik 1 : sphère métallique et quatre antennes. Il ne s’agit pas d’un objet récupéré en vol.",
+    "width": 350,
+    "height": 260
+  },
+  {
+    "file": "r7-test.jpg",
+    "source": "https://www.nasa.gov/history/65-years-ago-sputnik-ushers-in-the-space-age/",
+    "download": "https://www.nasa.gov/wp-content/uploads/2022/10/sputnik_1_r-7_may_15_1957_test_launch_failure.jpg",
+    "credit": "Archives historiques / NASA History",
+    "caption": "Échec d’un essai de la R-7 en mai 1957. Cette image montre le développement du lanceur, pas le lancement réussi du 4 octobre.",
+    "width": 842,
+    "height": 527
+  },
+  {
+    "file": "explorer.jpg",
+    "source": "https://www.nasa.gov/history/65-years-ago-sputnik-ushers-in-the-space-age/",
+    "download": "https://www.nasa.gov/wp-content/uploads/2022/10/sputnik_12_explorer_1_with_von_braun_et_al_and_rocket_1958.jpg",
+    "credit": "Archives historiques / NASA History",
+    "caption": "William Pickering, James Van Allen et Wernher von Braun présentent un modèle d’Explorer 1 en 1958 : la réponse américaine après Spoutnik.",
+    "width": 476,
+    "height": 320
   }
 ]

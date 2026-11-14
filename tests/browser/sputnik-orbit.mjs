@@ -25,7 +25,7 @@ try{
  });
  await page.waitForFunction(()=>window.globe.active,{timeout:60000});
  await page.waitForFunction(()=>document.querySelector('.satellite-loaded-total')?.textContent==='1',{timeout:30000});assert.deepEqual(feeds,['stations']);
- await page.evaluate(async()=>{const {openSputnik}=await import('/src/missions/sputnik.js');openSputnik();});
+ await page.evaluate(async()=>{const {installMissionUI}=await import('/src/missions/mission-ui.js');installMissionUI();const {openSputnik}=await import('/src/missions/sputnik.js');openSputnik();});
  assert.equal(await page.locator('#sputnik-card a').count(),1);assert.equal(await page.locator('#sputnik-card').getByText('Lire la fiche PDF').count(),0);
  await page.locator('#sputnik-card [data-sputnik=explore]').click();
  await page.waitForFunction(()=>window.sputnikStates.at(-1)?.active,{timeout:30000});
@@ -34,6 +34,7 @@ try{
  await page.waitForFunction(()=>window.sputnikStates.at(-1)?.seconds>=3000);
  await page.locator('#sputnik-orbit-controls [data-sputnik=play]').click();
  const at=await page.evaluate(()=>window.sputnikStates.at(-1).seconds);await page.waitForTimeout(400);assert.equal(await page.evaluate(()=>window.sputnikStates.at(-1).seconds),at);
+ await page.locator('#sputnik-card [data-sputnik=video]').click();await page.waitForFunction(()=>document.querySelector('#sputnik-intro-video')?.currentTime>.1,{timeout:30000});assert.equal(await page.locator('#sputnik-card').evaluate(node=>node.hidden),false);await page.locator('.mission-film-close').click();await page.locator('.mission-shared-film').waitFor({state:'detached'});assert.ok(await page.locator('#sputnik-card-actions').isVisible());
  await page.setViewportSize({width:390,height:844});await page.waitForTimeout(300);const box=await page.locator('#sputnik-orbit-controls').boundingBox();assert.ok(box.x>=0&&box.x+box.width<=390&&box.y>=0&&box.y+box.height<=844);
  await page.locator('#sputnik-orbit-controls [data-sputnik=stop]').click();await page.waitForFunction(()=>!window.sputnikStates.at(-1)?.active);assert.equal(await page.locator('#sputnik-orbit-controls').isVisible(),false);
  await page.setViewportSize({width:1280,height:900});await page.getByRole('button',{name:'Charger les autres satellites'}).click();await page.waitForFunction(()=>document.querySelector('.satellite-loaded-total')?.textContent==='2',{timeout:30000});assert.ok(feeds.includes('starlink'));assert.ok(feeds.includes('active'));

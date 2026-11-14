@@ -4,3 +4,7 @@ assets/comets/67p/shape-shap5-24k.obj -text
 # Keep packaged NASA video segments binary on every checkout.
 assets/missions/apollo-11/film/*.ts -text -diff linguist-generated=true
 assets/missions/apollo-11/film/*.m3u8 text eol=lf
+
+# Historical Sputnik visual dossier, streamed by the shared mission player.
+assets/missions/sputnik-1/film/*.ts -text -diff linguist-generated=true
+assets/missions/sputnik-1/film/*.m3u8 text eol=lf

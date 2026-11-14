@@ -45,12 +45,13 @@ function startMission(){
  if(popup.hidden)showPopup();positionPopup();revealMissionElement(panel,{duration:320,distance:8});
 }
 function endMission(){explorer=null;panel?.remove();panel=null;freeBadge?.remove();freeBadge=null;annotations?.remove();annotations=null;document.body.classList.remove('mission-exploring');closePopup();}
-function openVideo(){
+export function openVideo(id='apollo-11'){
+ const sputnik=id==='sputnik-1',media=sputnik?{hls:appURL('assets/missions/sputnik-1/film/index.m3u8').href,duration:113.27,bitrate:535000,poster:appURL('assets/missions/sputnik-1/launch.jpg').href,endCard:false,captions:{fr:[],en:[]}}:{hls:appURL(APOLLO_11.film.path).href,duration:APOLLO_11.film.duration,poster:appURL('assets/missions/apollo-11/launch.jpg').href,endCard:false};
  if(filmHost)return;const returnFocus=document.activeElement;explorer?.setPlaying(false);pauseAtlas(true);
  const host=document.createElement('section');host.className='intro mission-shared-film hidden';filmHost=host;document.body.append(host);
- film=createPrologue({element:host,idPrefix:'apollo-',getLanguage:()=> 'fr',reducedMotion:reducedMissionMotion,
-  media:{hls:appURL(APOLLO_11.film.path).href,duration:APOLLO_11.film.duration,poster:appURL('assets/missions/apollo-11/launch.jpg').href,endCard:false},
-  labels:{introduction:'Apollo 11 · Le film NASA',enter:'Retour à la mission',ready:'Apollo 11 · Archives NASA · 31 min',unavailable:'Le film NASA n’a pas pu être chargé.'},
+ film=createPrologue({element:host,idPrefix:sputnik?'sputnik-':'apollo-',getLanguage:()=> 'fr',reducedMotion:reducedMissionMotion,
+  media,
+  labels:{introduction:sputnik?'Spoutnik 1 · La mission en images':'Apollo 11 · Le film NASA',enter:'Retour à la mission',ready:sputnik?'Spoutnik 1 · Archives et récit en images · 1 min 53':'Apollo 11 · Archives NASA · 31 min',unavailable:'Le film n’a pas pu être chargé.'},
   onClose(){const instance=film;film=null;filmHost=null;pauseAtlas(false);setTimeout(()=>{instance?.dispose();host.remove();},650);positionPopup();if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});}
  });
  film.start();host.querySelector('.prologue-language').hidden=true;
@@ -77,6 +78,7 @@ export function installMissionUI(){
  actions=document.createElement('nav');actions.id='mission-actions';actions.className='mission-actions';actions.hidden=true;actions.setAttribute('aria-label','Apollo 11 · vidéo et dossier');
  actions.innerHTML=`${button(`${icon('play')}<span>Voir la vidéo</span>`,'video')}<a href="${appURL('pages/mission.html?mission=apollo-11').href}">${icon('read')}<span>Les détails de la mission</span></a>`;
  document.body.append(popup,actions);popup.addEventListener('click',handleAction);actions.addEventListener('click',handleAction);
+ window.addEventListener('relic-mission-video',event=>{if(event.detail?.id==='sputnik-1')openVideo('sputnik-1');});
  window.addEventListener('relic-mission-open',event=>openMission(event.detail?.id,'summary',event.detail?.anchor));
  window.addEventListener('relic-mission-anchor',event=>{if(!popup.hidden&&!explorer&&event.detail?.id==='apollo-11'){anchor=event.detail.anchor;positionPopup();}});
  window.addEventListener('relic-mission-time',event=>updateTime(event.detail.time,event.detail.playing,event.detail.meta));

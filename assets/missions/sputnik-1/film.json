@@ -1,0 +1,168 @@
+{
+  "title": "Spoutnik 1 · La mission en images",
+  "duration": 113.271333,
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Spoutnik 1 · Le premier satellite artificiel",
+      "source": "satellite.jpg"
+    },
+    {
+      "start": 12.0,
+      "title": "01 / Préparer un objet de 83,6 kg",
+      "source": "preparations.jpg"
+    },
+    {
+      "start": 24.0,
+      "title": "02 / Baïkonour · 4 octobre 1957",
+      "source": "launch.jpg"
+    },
+    {
+      "start": 34.0,
+      "title": "03 / Archives filmées · 7 octobre 1957",
+      "source": "https://archive.org/download/1957-10-07_New_Moon/1957-10-07_New_Moon.mp4"
+    },
+    {
+      "start": 79.25,
+      "title": "04 / Un signal autour de la Terre",
+      "source": "model.jpg"
+    },
+    {
+      "start": 91.25,
+      "title": "05 / Le matériel disparaît dans l’atmosphère",
+      "source": "satellite.jpg"
+    },
+    {
+      "start": 101.25,
+      "title": "06 / Le début de l’ère spatiale",
+      "source": "explorer.jpg"
+    }
+  ],
+  "archive": {
+    "page": "https://archive.org/details/1957-10-07_New_Moon",
+    "download": "https://archive.org/download/1957-10-07_New_Moon/1957-10-07_New_Moon.mp4",
+    "title": "New Moon. Reds Launch First Space Satellite, 1957/10/07",
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sha256": "24f7785d66e7e301cbca2b9bb3bbf1150331b7d48b45110a1d822a0dc805a82b",
+    "context": "Partial Universal newsreel, preserved in full with its original English sound. Its animation was reused from a Vanguard story; it is not measured Sputnik flight imagery."
+  },
+  "photos": "photos.json",
+  "missionFacts": "fiche-mission.pdf",
+  "editorialNote": "Photo essay with a contemporary archival newsreel; no invented on-board footage, orbital decay imagery, or recovered flight hardware. Museum models are explicitly identified in the dossier.",
+  "masterSha256": "ee93f118ee3d1c1ccc7ed90a23917211c65c05d0c44502ea209ad438bd87c068",
+  "playlist": "film/index.m3u8",
+  "segments": [
+    {
+      "file": "segment-000.ts",
+      "sha256": "c1bca5f2480136d96d6198ac17b479f3ac71fdf924e1357b6e9c364015895cc8"
+    },
+    {
+      "file": "segment-001.ts",
+      "sha256": "32625fa1197597d4041b2192ef90a8fd701c7bf614855608e3f102710c6ba718"
+    },
+    {
+      "file": "segment-002.ts",
+      "sha256": "870a74f20f4456141d28e58e6715ebb3f8b50e43e19c1d246c47a622126e702e"
+    },
+    {
+      "file": "segment-003.ts",
+      "sha256": "296b8aee554256751fdfa6b67dfa23117ae1580eed97b070e5e951fe822d0f6c"
+    },
+    {
+      "file": "segment-004.ts",
+      "sha256": "d7510278b0f5f3d88d39b1244c03126c691393b817ff127be43c08e1f9e67436"
+    },
+    {
+      "file": "segment-005.ts",
+      "sha256": "f13250434efdcc310b9289bdd85e359ceae448234642fe694e7380aa834fb9cf"
+    },
+    {
+      "file": "segment-006.ts",
+      "sha256": "dff14c26e819e7f13875c59b28b17d2b4e89e8746ff677e3caded0231605a102"
+    },
+    {
+      "file": "segment-007.ts",
+      "sha256": "f073228e16f72845013a6a0b7b5929d1d4e743c65fdb9ce72c1c0bdc0e4ce5ff"
+    },
+    {
+      "file": "segment-008.ts",
+      "sha256": "14447f1803e5fa72e2a2261f20a90e2c05dbeb53d2c42301ef18c457bebb1b14"
+    },
+    {
+      "file": "segment-009.ts",
+      "sha256": "d7b40b71a67ae9d63a27a71e039c3c6031ceae40a54e205b1324478a0381e82b"
+    },
+    {
+      "file": "segment-010.ts",
+      "sha256": "825daf33000a24d3c48240c2fcc7fabe27ab8b31f816f87c1fee657a051c2ec9"
+    },
+    {
+      "file": "segment-011.ts",
+      "sha256": "941b40369476e5973184f8464bf93d6cda15d607b5c593e5af390e9c554e7ac1"
+    },
+    {
+      "file": "segment-012.ts",
+      "sha256": "e62eec32f60ef92426d1bd2388e5c1ef8df5b5b72ed96a03fe4cfd6d60b0c130"
+    },
+    {
+      "file": "segment-013.ts",
+      "sha256": "d1375795475adbd44f3d58c4aff6989b2bd2ce46dafdc5828687fdb3476a6a74"
+    },
+    {
+      "file": "segment-014.ts",
+      "sha256": "5c6d122d8117b2addf5cb050304e2b0e929148908f3b8b9f8e265ad095d3c1eb"
+    },
+    {
+      "file": "segment-015.ts",
+      "sha256": "64beef12174341a111d0d3bf6e2480996ed722b60e4f478f98f77e8592be22da"
+    },
+    {
+      "file": "segment-016.ts",
+      "sha256": "5aefc3b47a4a1378aa9539ee2ef6cb34287f2b851e58f7b122e43f7b58cc452b"
+    },
+    {
+      "file": "segment-017.ts",
+      "sha256": "687eb81c41e5e10c38adbb5e7b13b79a1536aa75391747efce7428c29622505a"
+    },
+    {
+      "file": "segment-018.ts",
+      "sha256": "f14a0c2bc1878b3fd22134b0b619bb1231fcc144e578ed0baf15f5a34a3d9516"
+    },
+    {
+      "file": "segment-019.ts",
+      "sha256": "24d68af97dc2da8316c140d90c3d1774aa716704f5020dd936a5dc61b4e72bdd"
+    },
+    {
+      "file": "segment-020.ts",
+      "sha256": "2c616b44f0551bacbfa9f7730e61afc1e576294cef0b0eed7953a8b6480127a7"
+    },
+    {
+      "file": "segment-021.ts",
+      "sha256": "370a8f834f37dce0dbc7ba96f00971983f91ce438d7f8530e07beaaad1b9e657"
+    },
+    {
+      "file": "segment-022.ts",
+      "sha256": "c1394e99b5018a3ab97102ed44f59c774e63a419fdab113c7dffd93bba32ef91"
+    },
+    {
+      "file": "segment-023.ts",
+      "sha256": "b79e05242522c0dd5af49ce7e388d5f26da01204e036b36d03153a852219f762"
+    },
+    {
+      "file": "segment-024.ts",
+      "sha256": "fb1638a784044be375cfdb56816b87d71835eec358fe1533eae712cfec27975f"
+    },
+    {
+      "file": "segment-025.ts",
+      "sha256": "3f63452613c0239e72d496f9a2913e860a3ea4ac050ce8a91510f62cb1185cb8"
+    },
+    {
+      "file": "segment-026.ts",
+      "sha256": "804d763cc7c57efe7c1c1a7b64f0e8acf1b878c43b519b7c8661241f13b15301"
+    },
+    {
+      "file": "segment-027.ts",
+      "sha256": "8b1034d4ce6399e03b41f4cda1005738cabba626b5ee50cb95022b34339b3a01"
+    }
+  ]
+}
