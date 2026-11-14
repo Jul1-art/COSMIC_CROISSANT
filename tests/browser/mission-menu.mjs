@@ -17,7 +17,7 @@ try{
  await card.waitFor({timeout:60000});
  await page.locator('.pd-viewport').dispatchEvent('pointerdown');assert.ok(await card.isVisible(),'outside pointer input must not dismiss the summary');
  await toggle.click();await page.waitForFunction(()=>document.querySelector('.atlas-mission-controls')?.getAttribute('aria-busy')==='false',{timeout:60000});
- async function assertPinned(){assert.ok(await card.isVisible(),'mission card remains visible');assert.ok(await actions.isVisible(),'video and dossier stay accessible');assert.equal(await toggle.getAttribute('aria-expanded'),'true');const bounds=await card.boundingBox(),size=page.viewportSize();assert.ok(bounds.x+ bounds.width>=size.width-25,'Apollo summary stays on the right');const menu=page.getByRole('button',{name:'Ouvrir la carte et le menu Apollo 11'});assert.ok((await menu.textContent()).includes('Menu'));}
+ async function assertPinned(){assert.ok(await card.isVisible(),'mission card remains visible');assert.ok(await actions.isVisible(),'video and dossier stay accessible');assert.equal(await toggle.getAttribute('aria-expanded'),'true');const bounds=await card.boundingBox(),size=page.viewportSize();assert.ok(bounds.x+ bounds.width>=size.width-25,'Apollo summary stays on the right');const menu=page.getByRole('button',{name:'Open the Apollo 11 mission menu'});assert.ok((await menu.textContent()).includes('Menu'));}
  await assertPinned();
  await page.mouse.move(750,330);await page.mouse.down({button:'right'});await page.mouse.move(830,370,{steps:8});await page.mouse.up({button:'right'});await page.mouse.wheel(0,-120);await page.mouse.click(750,330);await assertPinned();
  await page.locator('#mission-time-slider').evaluate(input=>{input.value=Date.parse('1969-07-20T20:17:43Z');input.dispatchEvent(new Event('input',{bubbles:true}));});
@@ -32,7 +32,7 @@ try{
  await page.waitForFunction(()=>document.fullscreenElement?.classList.contains('mission-shared-film')||document.querySelector('#apollo-intro-video')?.currentTime>.1,{timeout:30000});
  await page.locator('.mission-film-close').click();await page.locator('.mission-shared-film').waitFor({state:'detached'});await assertPinned();
  await card.locator('[data-mission-action="close-popup"]').click();assert.equal(await card.isVisible(),false);
- const reopen=page.getByRole('button',{name:'Ouvrir la carte et le menu Apollo 11'});await reopen.click();await assertPinned();
+ const reopen=page.getByRole('button',{name:'Open the Apollo 11 mission menu'});await reopen.click();await assertPinned();
  await page.keyboard.press('Escape');assert.equal(await card.isVisible(),false);await reopen.click();await assertPinned();
  await page.locator('[data-mission-action="exit"]').click();assert.equal(await card.isVisible(),false);assert.equal(await actions.isVisible(),false);
  // Direct entry to the 3D mission also exposes the card and both actions.

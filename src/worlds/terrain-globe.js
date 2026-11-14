@@ -375,7 +375,7 @@ function updateHud(force = false) {
   if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
   $('#coordinates-value').textContent = `${lat.toFixed(4)}°, ${lon.toFixed(4)}°`;
   const altitude = Math.max(0, viewer.camera.positionCartographic.height);
-  $('#altitude-value').textContent = altitude < 1000 ? `${Math.round(altitude)} m` : `${(altitude / 1000).toLocaleString('fr-FR', { maximumFractionDigits:1 })} km`;
+  $('#altitude-value').textContent = altitude < 1000 ? `${Math.round(altitude)} m` : `${(altitude / 1000).toLocaleString(english()?'en-GB':'fr-FR', { maximumFractionDigits:1 })} km`;
   const data = displayTerrainData(dataForLocation(lat, lon), lat, lon);
   $('#terrain-value').textContent = googleState.active ? 'Google 3D'
     : terrainUnavailable ? (english() ? 'Unavailable' : 'Indisponible') : data.terrain;

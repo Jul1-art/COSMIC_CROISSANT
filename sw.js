@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261114-v88-mission-menu';
-const INTERFACE_RELEASE = 'missions-20261114-v88';
+const VERSION = 'missions-20261114-v89-english-archives';
+const INTERFACE_RELEASE = 'missions-20261114-v89';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -31,7 +31,7 @@ const CORE = [
 // This also covers a first visit whose early imports preceded worker control.
 const OFFLINE_CORE = [
   'assets/terrain/catalog.json','assets/terrain/moon-apollo11.bin','assets/terrain/moon-apollo11.webp','assets/earth-blue-marble-4k.webp',
-  'src/missions/sputnik-dossier.css','assets/missions/sputnik-1/satellite.jpg','assets/missions/sputnik-1/baikonur.jpg','assets/missions/sputnik-1/early-rockets.jpg','assets/missions/sputnik-1/photos.json','assets/missions/sputnik-1/preparations.jpg','assets/missions/sputnik-1/launch.jpg','assets/missions/sputnik-1/model.jpg','assets/missions/sputnik-1/r7-test.jpg','assets/missions/sputnik-1/explorer.jpg','assets/missions/sputnik-1/film.json','pages/sputnik.html','src/missions/sputnik.js','src/missions/sputnik-orbit.js','src/missions/sputnik-orbit-math.js','src/missions/sputnik-dossier.js','assets/missions/sputnik-1/fiche-mission.pdf','pages/mission.html','src/missions/mission-dossier.js','src/missions/mission-dossier-content.js','src/missions/mission-dossier.css','src/missions/mission-film.js',
+  'src/missions/sputnik-dossier.css','assets/missions/sputnik-1/satellite.jpg','assets/missions/sputnik-1/baikonur.jpg','assets/missions/sputnik-1/early-rockets.jpg','assets/missions/sputnik-1/photos.json','assets/missions/sputnik-1/preparations.jpg','assets/missions/sputnik-1/launch.jpg','assets/missions/sputnik-1/model.jpg','assets/missions/sputnik-1/r7-test.jpg','assets/missions/sputnik-1/explorer.jpg','assets/missions/sputnik-1/film.json','pages/sputnik.html','src/missions/sputnik.js','src/missions/sputnik-orbit.js','src/missions/sputnik-orbit-math.js','src/missions/sputnik-dossier.js','assets/missions/sputnik-1/fiche-mission.pdf','pages/mission.html','src/missions/mission-dossier.js','src/missions/dossier-experience.js','src/core/language.js','src/missions/mission-dossier-content.js','src/missions/mission-dossier.css','src/missions/mission-film.js',
   'assets/missions/apollo-11/crew.jpg','assets/missions/apollo-11/launch.jpg','assets/missions/apollo-11/aldrin.jpg','assets/missions/apollo-11/seismometer.jpg','assets/missions/apollo-11/recovery.jpg','assets/missions/apollo-11/fiche-mission.pdf',
   'assets/missions/apollo-11/trajectory.json','assets/missions/apollo-11/trajectory-anchors.json','src/missions/mission-depth.js','src/missions/flight-lines.js','src/missions/apollo-surface.js','src/missions/apollo-surface-math.js','vendor/three-addons/lines/Line2.js','vendor/three-addons/lines/LineSegments2.js','vendor/three-addons/lines/LineGeometry.js','vendor/three-addons/lines/LineSegmentsGeometry.js','vendor/three-addons/lines/LineMaterial.js','src/missions/apollo-flight.js','src/missions/atlas-mission.js','src/missions/mission-motion.js','src/missions/mission-camera.js','src/missions/nasa-lunar-module.js',
   'assets/missions/apollo-11/models/lunar-module.glb',

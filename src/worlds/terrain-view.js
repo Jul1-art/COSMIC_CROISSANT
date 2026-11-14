@@ -7,7 +7,7 @@ const $ = selector => document.querySelector(selector);
 const params = new URLSearchParams(location.search);
 const body = ['earth', 'mars', 'moon'].includes(params.get('body')) ? params.get('body') : 'earth';
 const sites = body === 'earth' ? EARTH_SITES : PLANET_SITES[body];
-const names = { earth:'TERRE', mars:'MARS', moon:'LUNE' };
+const names = { earth:'EARTH', mars:'MARS', moon:'MOON' };
 const palette = {
   earth:{ background:0x08141e, fog:0x0d2030, light:0xe2f4ff },
   mars:{ background:0x120f12, fog:0x301a18, light:0xffdbc6 },
@@ -233,10 +233,10 @@ async function loadSite(site) {
   $('#site-title').textContent = site.name;
   $('#site-description').textContent = site.description;
   $('#coverage').textContent = `${data.widthKm} × ${data.widthKm} km`;
-  $('#elevation-range').textContent = `${data.minMeters.toLocaleString('fr-FR')} à ${data.maxMeters.toLocaleString('fr-FR')} m`;
+  $('#elevation-range').textContent = `${data.minMeters.toLocaleString('en-GB')} to ${data.maxMeters.toLocaleString('en-GB')} m`;
   $('#elevation-source').href = data.elevationUrl;
   $('#imagery-source').href = data.imageryUrl;
-  $('#data-note').textContent = `${data.elevation}. Maillage 3D : ${Math.round(data.meshMeters)} m. ${data.imagery}. Relief amplifié × ${exaggeration}.`;
+  $('#data-note').textContent = `${data.elevation}. 3D mesh: ${Math.round(data.meshMeters)} m. ${data.imagery}. Terrain exaggeration × ${exaggeration}.`;
   $('#scene-credit').textContent = `${data.elevation} · ${data.imagery}`.toUpperCase();
   document.querySelectorAll('[data-site]').forEach(button => button.classList.toggle('active', button.dataset.site === site.id));
   history.replaceState({}, '', appURL(`pages/terrain.html?body=${body}&site=${encodeURIComponent(site.id)}`).href);
@@ -247,7 +247,7 @@ async function loadSite(site) {
       fetch(appURL(`assets/terrain/${key}.bin`)).then(response => { if (!response.ok) throw new Error(`Relief ${response.status}`); return response.arrayBuffer(); }),
       textureLoader.loadAsync(appURL(`assets/terrain/${key}.webp`).href),
     ]).then(([buffer, texture]) => {
-      if (buffer.byteLength !== catalog.grid * catalog.grid * 2) throw new Error('Fichier altimétrique incomplet');
+      if (buffer.byteLength !== catalog.grid * catalog.grid * 2) throw new Error('Incomplete elevation file');
       texture.colorSpace = THREE.SRGBColorSpace;
       texture.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
       const encoded = new Uint16Array(buffer);
@@ -341,7 +341,7 @@ function renderSites() {
 function showError(error) {
   console.error(error);
   $('#loading').classList.add('done');
-  $('#error').textContent = `Impossible de charger le terrain NASA. ${error.message || 'Réessayez après avoir rechargé la page.'}`;
+  $('#error').textContent = `NASA terrain could not load. ${error.message || 'Reload the page to try again.'}`;
   $('#error').hidden = false;
 }
 
@@ -349,7 +349,7 @@ $('#tilt-button').addEventListener('click', toggleTilt);
 $('#height-button').addEventListener('click', () => {
   exaggeration = exaggeration === 2 ? 1 : exaggeration === 1 ? 3 : 2;
   updateExaggeration();
-  if (current) $('#data-note').textContent = `${current.elevation}. Maillage 3D : ${Math.round(current.meshMeters)} m. ${current.imagery}. Relief amplifié × ${exaggeration}.`;
+  if (current) $('#data-note').textContent = `${current.elevation}. 3D mesh: ${Math.round(current.meshMeters)} m. ${current.imagery}. Terrain exaggeration × ${exaggeration}.`;
 });
 $('#reset-button').addEventListener('click', resetView);
 $('#zoom-in').addEventListener('click', () => zoom(.58));

@@ -106,7 +106,7 @@ function ensureStyles() {
 }
 
 function option(key, value, icon, hint = '') {
-  const languageLabel = value === 'en' ? 'English' : 'Français';
+  const languageLabel = value === 'en' ? 'English' : (getLanguage()==='fr'?'Français':'French');
   const label = key === 'language' ? `<strong lang="${value}">${languageLabel}</strong>` : `<strong data-settings-copy="${value}"></strong>`;
   const preview = key === 'accent' ? `<span class="relic-settings-swatch" data-swatch="${value}" aria-hidden="true"></span>`
     : key === 'theme' ? `<span class="relic-settings-preview" data-preview="${value}" aria-hidden="true">${worldIcon(icon)}</span>`

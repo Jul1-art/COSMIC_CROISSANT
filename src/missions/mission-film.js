@@ -5,11 +5,11 @@ import {appURL} from '../core/paths.js';
  * the complete HQ-194 documentary, with transport leaders and unrelated extras removed. */
 export function createMissionFilm(dialog){
  const player=dialog.querySelector('#mission-film-player'),chapters=dialog.querySelector('#mission-film-chapters'),status=dialog.querySelector('#mission-film-status');
- player.innerHTML=`<video controls playsinline preload="metadata" poster="${appURL('assets/missions/apollo-11/launch.jpg').href}" aria-label="Film complet Apollo 11, de JFK au retour sur Terre"></video>`;
+ player.innerHTML=`<video controls playsinline preload="metadata" poster="${appURL('assets/missions/apollo-11/launch.jpg').href}" aria-label="Complete Apollo 11 film, from JFK to the return to Earth"></video>`;
  const video=player.querySelector('video'),source=appURL(APOLLO_11.film.path).href;let hls=null,disposed=false;
- chapters.innerHTML='<button type="button" data-film-time="0">01 · Le discours de JFK</button><button type="button" data-film-time="125.736">02 · La mission complète et le retour</button>';
- status.innerHTML=`Un film continu : discours de JFK, préparatifs, décollage, voyage, alunissage, sortie lunaire et retour sur Terre. <a href="${APOLLO_11.film.source}" target="_blank" rel="noopener noreferrer">Film original NASA ↗</a>`;
- const failure=()=>{status.innerHTML=`Le film n’a pas pu être chargé. <a href="${APOLLO_11.film.source}" target="_blank" rel="noopener noreferrer">Ouvrir le documentaire sur le site NASA ↗</a> · <a href="${APOLLO_11.film.jfkSource}" target="_blank" rel="noopener noreferrer">Discours de JFK ↗</a>`;};
+ chapters.innerHTML='<button type="button" data-film-time="0">01 · The JFK speech</button><button type="button" data-film-time="125.736">02 · The complete mission and return</button>';
+ status.innerHTML=`A continuous film: JFK, preparations, launch, Earth–Moon flight, landing, moonwalk and return to Earth. <a href="${APOLLO_11.film.source}" target="_blank" rel="noopener noreferrer">Original NASA film ↗</a>`;
+ const failure=()=>{status.innerHTML=`The film could not be loaded. <a href="${APOLLO_11.film.source}" target="_blank" rel="noopener noreferrer">Open the documentary on NASA ↗</a> · <a href="${APOLLO_11.film.jfkSource}" target="_blank" rel="noopener noreferrer">JFK speech ↗</a>`;};
  if(video.canPlayType('application/vnd.apple.mpegurl'))video.src=source;
  else if(Hls.isSupported()){hls=new Hls({enableWorker:false,maxBufferLength:24,maxMaxBufferLength:40,maxBufferSize:24*1024*1024,backBufferLength:12});hls.loadSource(source);hls.attachMedia(video);hls.on(Hls.Events.ERROR,(_event,data)=>{if(data.fatal&&!disposed)failure();});}
  else failure();

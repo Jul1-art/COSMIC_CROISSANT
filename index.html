@@ -40,7 +40,7 @@
   <link rel="stylesheet" href="./src/ui/interaction-motion.css?v=story-9">
   <link rel="stylesheet" href="./src/ui/action-rail.css?v=19.4">
   <link rel="stylesheet" href="./src/ui/monochrome.css?v=17">
-  <script>if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='RELIC_INTERFACE_VERSION')event.ports?.[0]?.postMessage({release:'missions-20261114-v88'});});</script>
+  <script>if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='RELIC_INTERFACE_VERSION')event.ports?.[0]?.postMessage({release:'missions-20261114-v89'});});</script>
 </head>
 <body class="atlas-page" data-mode="overview">
   <div id="scene" aria-label="Interactive solar system"></div>
@@ -52,7 +52,7 @@
       <span class="identity-copy"><strong>RELIC</strong><small>Beyond the journey</small></span>
     </a>
     <div class="view-controls solar-view-controls"><button id="solar-inner-view" type="button"><span>Inner planets</span></button><button id="solar-whole-view" type="button"><span>Full solar system</span></button></div>
-    <span class="topbar-hint">GLISSER POUR TOURNER <span>·</span> PINCER OU DÉFILER POUR ZOOMER</span>
+    <span class="topbar-hint">DRAG TO ORBIT <span>·</span> PINCH OR SCROLL TO ZOOM</span>
     <div class="header-actions">
       <button id="relic-replay" class="relic-icon-button" type="button" aria-label="Watch the film" title="Watch the film"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg></button>
       <button id="relic-credits" class="relic-icon-button" type="button" aria-label="Sources and creators" title="Sources and creators"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 11v5m0-9v.1"/></svg></button>
@@ -79,7 +79,7 @@
   </main>
 
   <div class="imagery-credit" id="imagery-credit" data-source-detail hidden></div>
-  <div class="gesture-hint" id="gesture-hint" hidden>GLISSEZ POUR VOUS DÉPLACER <span>·</span> PINCEZ OU DÉFILEZ POUR ZOOMER</div>
+  <div class="gesture-hint" id="gesture-hint" hidden>DRAG TO MOVE <span>·</span> PINCH OR SCROLL TO ZOOM</div>
 
   <footer class="toolbar glass" aria-label="Exploration controls">
     <button class="tool-button info-button" id="info-toggle" type="button" aria-label="Show details" aria-expanded="false" hidden>Info</button>

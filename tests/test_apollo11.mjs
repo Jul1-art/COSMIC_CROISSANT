@@ -4,7 +4,7 @@ import {APOLLO_11,EVENTS,HARDWARE,START,END,eventTime,missionState,missionProgre
 
 test('Apollo 11 has a single mission at the NASA landing coordinates',()=>{
   assert.equal(MISSIONS.size,1);assert.equal(MISSIONS.get('apollo-11'),APOLLO_11);
-  assert.deepEqual(APOLLO_11.site,{name:'Base de la Tranquillité',body:'moon',latitude:.67409,longitude:23.47298});
+  assert.deepEqual(APOLLO_11.site,{name:'Tranquility Base',body:'moon',latitude:.67409,longitude:23.47298});
 });
 test('the clock clamps invalid and out-of-mission input and keeps boundaries reversible',()=>{
   assert.equal(missionState(NaN).time,START);assert.equal(missionState(START-1000).time,START);
@@ -25,13 +25,13 @@ test('all inventory objects have a valid appearance stage and unknown locations 
   assert.equal(new Set(HARDWARE.map(row=>row.id)).size,HARDWARE.length);
   for(const row of HARDWARE){assert.ok(EVENTS.some(event=>event.id===row.since));assert.ok(row.text.length>40);if(row.position)assert.ok(row.position.every(Number.isFinite));}
   for(const id of ['ascent','service','sivb','sla'])assert.equal(HARDWARE.find(row=>row.id===id).position,undefined);
-  assert.equal(HARDWARE.find(row=>row.id==='ascent').status,'Devenir non confirmé');
+  assert.equal(HARDWARE.find(row=>row.id==='ascent').status,'Final fate unconfirmed');
 });
 test('the complete mission film has NASA provenance and covers JFK through recovery',async()=>{
   const {readFile,stat}=await import('node:fs/promises');
   for(const [,url] of APOLLO_11.sources)assert.ok(new URL(url).hostname.endsWith('nasa.gov'));
   assert.equal(new URL(APOLLO_11.film.source).hostname,'images.nasa.gov');
-  assert.deepEqual(APOLLO_11.film.coverage,['JFK','Préparatifs','Décollage','Voyage Terre–Lune','Alunissage','Sortie lunaire','Retour sur Terre','Récupération']);
+  assert.deepEqual(APOLLO_11.film.coverage,['JFK','Preparations','Launch','Earth–Moon flight','Lunar landing','Moonwalk','Return to Earth','Recovery']);
   const base=new URL('../assets/missions/apollo-11/film/',import.meta.url),manifest=await readFile(new URL('mission.m3u8',base),'utf8');
   assert.match(manifest,/#EXT-X-PLAYLIST-TYPE:VOD/);assert.match(manifest,/#EXT-X-ENDLIST/);
   const duration=[...manifest.matchAll(/#EXTINF:([\d.]+)/g)].reduce((total,match)=>total+Number(match[1]),0);assert.ok(Math.abs(duration-APOLLO_11.film.duration)<.1);assert.ok(duration>1800);
@@ -42,7 +42,7 @@ test('the complete mission film has NASA provenance and covers JFK through recov
 
 test('the dossier keeps the five requested tabs and documented local NASA photographs',async()=>{
   const {DOSSIER_TABS,renderDossierTab}=await import('../src/missions/mission-dossier-content.js');const {readFile,stat}=await import('node:fs/promises');
-  assert.deepEqual(DOSSIER_TABS.map(row=>row[1]),['Identité de la mission','Inventaire du hardware perdu','Chronologie','Science et héritage','Sources et pour aller plus loin']);
+  assert.deepEqual(DOSSIER_TABS.map(row=>row[1]),['Mission profile','Hardware inventory','Timeline','Science & legacy','Sources & further reading']);
   assert.equal((renderDossierTab('inventaire').match(/class="dossier-hardware"/g)||[]).length,14);
   assert.match(renderDossierTab('sources'),/fiche-mission.pdf/);
   const photos=JSON.parse(await readFile(new URL('../assets/missions/apollo-11/photos.json',import.meta.url),'utf8'));assert.equal(Object.keys(photos).length,5);
@@ -62,5 +62,5 @@ test('the projected lunar pin is unique, accessible, horizon-occluded and remova
   listeners.get('click')();assert.deepEqual(opened,['apollo-11']);viewer.camera.positionWC=C.Cartesian3.negate(point,new C.Cartesian3());marker.update();assert.equal(added[0].hidden,true);
   marker.dispose();assert.ok(removed&&stopped);assert.equal(listeners.size,0);
   const earthPoint=C.Cartesian3.fromDegrees(63.3422,45.9203,0,C.Ellipsoid.WGS84);viewer.camera.positionWC=C.Cartesian3.multiplyByScalar(earthPoint,1.1,new C.Cartesian3());viewer.camera.directionWC=C.Cartesian3.negate(C.Cartesian3.normalize(earthPoint,new C.Cartesian3()),new C.Cartesian3());
-  const sp=createCesiumMissionMarker({Cesium:C,viewer,body:'earth',document,onOpen:id=>opened.push(id)});assert.ok(C.Cartesian3.distance(lastPosition,earthPoint)<1e-6);assert.match(added[1]['aria-label'],/Spoutnik 1/);listeners.get('click')();assert.equal(opened.at(-1),'sputnik-1');sp.dispose();
+  const sp=createCesiumMissionMarker({Cesium:C,viewer,body:'earth',document,onOpen:id=>opened.push(id)});assert.ok(C.Cartesian3.distance(lastPosition,earthPoint)<1e-6);assert.match(added[1]['aria-label'],/Sputnik 1/);listeners.get('click')();assert.equal(opened.at(-1),'sputnik-1');sp.dispose();
 });

@@ -497,14 +497,14 @@ const surfaceDetail = new SurfaceDetail(camera, renderer, state => {
     const link=document.createElement('a');link.href=state.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';link.textContent=getLanguage()==='fr'?'Source de l’imagerie':'Imagery source';imageryCredit.append(link);return;
   }
   imageryCredit.innerHTML = state.unavailable
-    ? `DÉTAIL DE SURFACE INDISPONIBLE · <a href="${state.id === 'mars' ? NASA_IMAGERY.marsTrek : state.id === 'moon' ? NASA_IMAGERY.moonTrek : NASA_IMAGERY.gibsInfo}" target="_blank" rel="noopener noreferrer">SOURCE NASA</a>`
+    ? `SURFACE DETAIL UNAVAILABLE · <a href="${state.id === 'mars' ? NASA_IMAGERY.marsTrek : state.id === 'moon' ? NASA_IMAGERY.moonTrek : NASA_IMAGERY.gibsInfo}" target="_blank" rel="noopener noreferrer">SOURCE NASA</a>`
     : state.loading
-    ? 'CHARGEMENT DES DÉTAILS DE SURFACE…'
+    ? 'LOADING SURFACE DETAIL…'
     : state.id === 'earth'
-      ? `IMAGERIE BLUE MARBLE · <a href="${NASA_IMAGERY.gibsInfo}" target="_blank" rel="noopener noreferrer">NASA GIBS</a>`
+      ? `IMAGERY BLUE MARBLE · <a href="${NASA_IMAGERY.gibsInfo}" target="_blank" rel="noopener noreferrer">NASA GIBS</a>`
       : state.id === 'mars'
-        ? `IMAGERIE ${state.local ? 'JEZERO · HIRISE · ZONE LIMITÉE' : 'GLOBALE · VIKING'} · <a href="${NASA_IMAGERY.marsTrek}" target="_blank" rel="noopener noreferrer">NASA MARS TREK</a>`
-        : `IMAGERIE ${state.local ? 'APOLLO 11 · LROC NAC · ZONE LIMITÉE' : 'GLOBALE · LROC WAC'} · <a href="${NASA_IMAGERY.moonTrek}" target="_blank" rel="noopener noreferrer">NASA MOON TREK</a>`;
+        ? `IMAGERY ${state.local ? 'JEZERO · HIRISE · LIMITED AREA' : 'GLOBAL · VIKING'} · <a href="${NASA_IMAGERY.marsTrek}" target="_blank" rel="noopener noreferrer">NASA MARS TREK</a>`
+        : `IMAGERY ${state.local ? 'APOLLO 11 · LROC NAC · LIMITED AREA' : 'GLOBAL · LROC WAC'} · <a href="${NASA_IMAGERY.moonTrek}" target="_blank" rel="noopener noreferrer">NASA MOON TREK</a>`;
 });
 
 function worldPosition(id) {
@@ -529,7 +529,7 @@ const inspector=createSolarInspector({host:$('#details .detail-expanded'),getLan
 const simulationControls=createSimulationControls({host:$('.solar-view-controls'),clock:simulationClock,getLanguage,onChange:()=>{livePanel?.render();},onOverview:()=>selectBody('overview')});
 const cometInspector=createCometInspector({host:$('#details .detail-expanded'),getMission:()=>comet,getLanguage,onSelect:id=>selectBody(id)});
 const scaleReadout=createScaleReadout({host:sceneHost.parentElement,camera,getLanguage,getContext:()=>{
-  if(atlasMission?.active)return {id:'mission',distance:camera.position.distanceTo(controls.target),viewportHeight:viewportSize().height,radius:bodyData('earth').size,radiusKm:6371,special:'Apollo 11 · Caméra libre'};
+  if(atlasMission?.active)return {id:'mission',distance:camera.position.distanceTo(controls.target),viewportHeight:viewportSize().height,radius:bodyData('earth').size,radiusKm:6371,special:'Apollo 11 · Free camera'};
   const detail=bodyData(selected),native=detailedGlobe?.getViewState();
   const navigation=globeNavigation?.getViewState();
   const radius=detail?.size,radiusKm=detail?.radiusKm;

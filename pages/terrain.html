@@ -7,7 +7,7 @@
   <link rel="manifest" href="../assets/manifest.webmanifest">
   <link rel="icon" href="../assets/relic-icon-v1-192.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/relic-icon-v1-192.png">
-  <meta name="description" content="Explorez en 3D des reliefs de la Terre, de Mars et de la Lune à partir de mesures et d'images NASA.">
+  <meta name="description" content="Explore Earth, Mars and Moon terrain in 3D using NASA measurements and imagery.">
   <title>3D worlds — RELIC</title>
   <script>(()=>{let theme='night';try{theme=JSON.parse(localStorage.getItem('relic.preferences.v1')||'{}').theme||localStorage.getItem('nasa-atlas-theme')||theme;}catch{}const requested=new URLSearchParams(location.search).get('theme');if(requested==='day'||requested==='night')theme=requested;document.documentElement.dataset.theme=theme==='day'?'day':'night';document.documentElement.dataset.accent='mono';document.documentElement.style.colorScheme=theme==='day'?'light':'dark';})();</script>
   <link rel="stylesheet" href="../vendor/cesium/Widgets/widgets.css">
@@ -28,20 +28,20 @@
   <link rel="stylesheet" href="../src/ui/interaction-motion.css?v=story-9">
   <link rel="stylesheet" href="../src/ui/action-rail.css?v=19.4">
   <link rel="stylesheet" href="../src/ui/monochrome.css?v=17">
-  <script>if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='RELIC_INTERFACE_VERSION')event.ports?.[0]?.postMessage({release:'missions-20261114-v88'});});</script>
+  <script>if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='RELIC_INTERFACE_VERSION')event.ports?.[0]?.postMessage({release:'missions-20261114-v89'});});</script>
 </head>
 <body class="terrain-page relic-world" data-dashboard-view="surface">
-  <div id="terrain-scene" aria-label="Globe 3D à exploration libre alimenté par les données NASA"></div>
+  <div id="terrain-scene" aria-label="Free exploration of a 3D globe powered by NASA data"></div>
   <div class="scene-vignette" aria-hidden="true"></div>
 
   <header class="topbar">
     <a id="back-link" class="back-link" href="../index.html"><span class="back-arrow" aria-hidden="true"><img class="relic-brand-mark relic-official-logo" src="../assets/relic-logo-v1.png" alt="" width="64" height="56"></span><span>RELIC</span></a>
-    <div class="topbar-title"><span>RELIC · 3D</span><strong id="world-title">Terre</strong></div>
+    <div class="topbar-title"><span>RELIC · 3D</span><strong id="world-title">Earth</strong></div>
     <div class="header-actions"><button class="world-settings-button" data-app-settings type="button" aria-label="Settings" title="Settings"><i class="world-icon" data-world-icon="gear" aria-hidden="true"></i></button><button class="header-language" data-language-toggle type="button" aria-label="Switch language">EN</button></div>
-    <nav aria-label="Changer de monde" class="world-nav">
-      <a href="./terrain.html?body=earth" data-world="earth">Terre</a>
+    <nav aria-label="Choose a world" class="world-nav">
+      <a href="./terrain.html?body=earth" data-world="earth">Earth</a>
       <a href="./terrain.html?body=mars" data-world="mars">Mars</a>
-      <a href="./terrain.html?body=moon" data-world="moon">Lune</a>
+      <a href="./terrain.html?body=moon" data-world="moon">Moon</a>
     </nav>
   </header>
 
@@ -49,42 +49,42 @@
     <section class="site-panel" id="world-info-panel" aria-labelledby="site-title">
       <div class="world-panel-heading"><div>
       <div class="eyebrow">Explorer <span>NASA</span></div>
-      <h1 id="site-title">Données</h1></div></div>
+      <h1 id="site-title">Data</h1></div></div>
       <div class="panel-divider"></div>
       <dl class="site-facts">
         <div><dt>Position</dt><dd id="coordinates-value">—</dd></div>
         <div><dt>Altitude</dt><dd id="altitude-value">—</dd></div>
-        <div><dt>Relief</dt><dd id="terrain-value">Chargement…</dd></div>
+        <div><dt>Terrain</dt><dd id="terrain-value">Loading…</dd></div>
       </dl>
       <section id="terrain-live-data" class="live-data" aria-live="polite"></section>
       <p class="data-note" id="data-note"></p>
-      <div class="source-row"><a id="elevation-source" target="_blank" rel="noopener noreferrer">ALTIMÉTRIE NASA </a><a id="imagery-source" target="_blank" rel="noopener noreferrer">IMAGERIE NASA </a><a id="runways-source" href="https://ourairports.com/data/" target="_blank" rel="noopener noreferrer" hidden>PISTES · OURAIRPORTS </a><a id="runway-source" href="https://www.sia.aviation-civile.gouv.fr/documents/download/f/d/15031542/" target="_blank" rel="noopener noreferrer" hidden>PISTES · AIP </a></div>
+      <div class="source-row"><a id="elevation-source" target="_blank" rel="noopener noreferrer">NASA ELEVATION </a><a id="imagery-source" target="_blank" rel="noopener noreferrer">NASA IMAGERY </a><a id="runways-source" href="https://ourairports.com/data/" target="_blank" rel="noopener noreferrer" hidden>RUNWAYS · OURAIRPORTS </a><a id="runway-source" href="https://www.sia.aviation-civile.gouv.fr/documents/download/f/d/15031542/" target="_blank" rel="noopener noreferrer" hidden>RUNWAYS · AIP </a></div>
     </section>
 
-    <div class="nav-hint" id="nav-hint">GLISSER : SE DÉPLACER <span>·</span> PINCER / MOLETTE : ZOOMER <span>·</span> TOUCHER : VISER <span>·</span> FLÈCHES : AVANCER</div>
+    <div class="nav-hint" id="nav-hint">DRAG: MOVE <span>·</span> PINCH / SCROLL: ZOOM <span>·</span> TAP: AIM <span>·</span> ARROW KEYS: MOVE</div>
     <div class="view-controls" aria-label="3D view controls">
       <div class="terrain-google3d" id="terrain-google3d" hidden><button id="terrain-google3d-toggle" type="button" aria-label="Google 3D" aria-pressed="false"><i class="world-icon" data-world-icon="cube" aria-hidden="true"></i><span class="world-button-label">Google 3D</span></button><span id="terrain-google3d-status" class="visually-hidden" role="status">Google 3D</span></div>
-      <button type="button" id="tilt-button" title="Basculer entre vue oblique et vue du dessus" aria-label="Basculer l'angle de vue"><i class="world-icon" data-world-icon="expand" aria-hidden="true"></i><span>Tilt</span></button>
-      <button type="button" id="height-button" title="Changer l'amplification du relief" aria-label="Changer l'amplification du relief"><i class="world-icon" data-world-icon="mountain-sun" aria-hidden="true"></i><span>Relief × 1</span></button>
-      <button type="button" id="north-button" title="Orienter le nord en haut" aria-label="Orienter le nord en haut"><i class="world-icon" data-world-icon="compass" aria-hidden="true"></i><span>North</span></button>
-      <button type="button" id="reset-button" title="Voir tout le globe" aria-label="Voir tout le globe"><i class="world-icon" data-world-icon="globe" aria-hidden="true"></i><span>Overview</span></button>
+      <button type="button" id="tilt-button" title="Switch between oblique and top-down views" aria-label="Change viewing angle"><i class="world-icon" data-world-icon="expand" aria-hidden="true"></i><span>Tilt</span></button>
+      <button type="button" id="height-button" title="Change terrain exaggeration" aria-label="Change terrain exaggeration"><i class="world-icon" data-world-icon="mountain-sun" aria-hidden="true"></i><span>Terrain × 1</span></button>
+      <button type="button" id="north-button" title="Orient north up" aria-label="Orient north up"><i class="world-icon" data-world-icon="compass" aria-hidden="true"></i><span>North</span></button>
+      <button type="button" id="reset-button" title="Show the whole globe" aria-label="Show the whole globe"><i class="world-icon" data-world-icon="globe" aria-hidden="true"></i><span>Overview</span></button>
     </div>
   </main>
 
   <form id="place-form" class="place-search terrain-place-search" data-dashboard-search="persistent" role="search" autocomplete="off">
-    <button class="search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-content"><i class="world-icon search-glass" data-world-icon="magnifying-glass" aria-hidden="true"></i><i class="world-icon search-close" data-world-icon="xmark" aria-hidden="true"></i><span class="search-toggle-label">Rechercher</span></button>
+    <button class="search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-content"><i class="world-icon search-glass" data-world-icon="magnifying-glass" aria-hidden="true"></i><i class="world-icon search-close" data-world-icon="xmark" aria-hidden="true"></i><span class="search-toggle-label">Search</span></button>
     <div class="search-content" id="search-content" inert>
-      <div class="place-search-field"><input id="place-input" type="search" role="combobox" aria-label="Rechercher un lieu" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" placeholder="Lieu ou coordonnées" spellcheck="false" autocomplete="off"><button type="submit" aria-label="Aller au lieu">Aller</button></div>
+      <div class="place-search-field"><input id="place-input" type="search" role="combobox" aria-label="Search for a location" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" placeholder="Place or coordinates" spellcheck="false" autocomplete="off"><button type="submit" aria-label="Go to location">Go</button></div>
       <div id="suggestions" class="place-search-results" role="listbox" hidden></div>
       <p id="search-state" class="place-search-status" role="status" aria-live="polite"></p>
-      <small class="place-search-credit">Sites NASA et coordonnées</small>
+      <small class="place-search-credit">NASA sites and coordinates</small>
     </div>
   </form>
 
-  <div class="scene-credit" id="scene-credit">DONNÉES NASA · TERRAIN 3D MESURÉ</div>
+  <div class="scene-credit" id="scene-credit">NASA DATA · MEASURED 3D TERRAIN</div>
   <div class="esri-attribution" id="esri-attribution" hidden><a href="https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" target="_blank" rel="noopener noreferrer">Powered by Esri · Source: Esri, Maxar, Earthstar Geographics, GIS User Community</a></div>
   <div id="cesium-credits" class="cesium-credits"></div>
-  <div id="loading" class="loading"><span class="view-loading-mark" aria-hidden="true"><img src="../assets/relic-logo-v1.png" alt="" width="30" height="27"></span><span>Chargement…</span></div>
+  <div id="loading" class="loading"><span class="view-loading-mark" aria-hidden="true"><img src="../assets/relic-logo-v1.png" alt="" width="30" height="27"></span><span>Loading…</span></div>
   <div id="error" class="error" hidden></div>
   <script type="module" src="../src/ui/theme.js?v=17"></script>
   <script type="module" src="../src/core/world-bridge.js?v=polish-4"></script>

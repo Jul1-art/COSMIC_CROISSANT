@@ -81,11 +81,11 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
   if(!loadSurface||surfaceRequest)return;
   surfaceRequest=loadSurface({signal:abort.signal,moonMesh:getMoonMesh(),worldPerMeter:meterScale()}).then(created=>{
    if(disposed){created.dispose();return;}surface=created;group.add(created.root);onMaterialsChanged();render(true);scheduleSurfaceFrame();
-  }).catch(error=>{if(error.name!=='AbortError')onStatus('surface-error','Le relief local est indisponible. La vue globale reste accessible.');});
+  }).catch(error=>{if(error.name!=='AbortError')onStatus('surface-error','Local terrain is unavailable. The global view remains available.');});
  }
  function ensureModel(){
   if(!loadModel||modelRequest||modelFailed)return;
-  modelRequest=loadModel().then(loaded=>{if(disposed){disposeModel(loaded);return;}model=loaded;model.root.traverse(node=>{if(node.isMesh){node.castShadow=true;node.receiveShadow=false;}});group.add(model.root);onMaterialsChanged();surface?.refreshShadows?.();render(true);}).catch(()=>{modelFailed=true;onStatus('model-error','Le modèle d’Eagle est indisponible. Sa position reste représentée par un point.');});
+  modelRequest=loadModel().then(loaded=>{if(disposed){disposeModel(loaded);return;}model=loaded;model.root.traverse(node=>{if(node.isMesh){node.castShadow=true;node.receiveShadow=false;}});group.add(model.root);onMaterialsChanged();surface?.refreshShadows?.();render(true);}).catch(()=>{modelFailed=true;onStatus('model-error','The Eagle model is unavailable. Its position is still shown as a point.');});
  }
  function render(force=false){
   if(!active||!data)return;const state=flightState(data,time);synchronizeBodies(state);
@@ -126,13 +126,13 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
    frame(center,center.clone().add(V([.12,.55,1]).normalize().multiplyScalar(distance)),savedUp);
   }
  }
- function report(){const state=flightState(data,time),name=state.seconds<data.anchors.find(a=>a.id==='csm-separation').t?'● Saturn V · Apollo 11':'● Columbia';onTime(time,playing,{method:mode==='site'&&surface?'Relief et imagerie LRO · trajectoire reconstruite':'Reconstruction physique · jalons NASA et éphémérides JPL',mode,vehicle:name+(state.eagle?' · ● Eagle':'')});}
+ function report(){const state=flightState(data,time),name=state.seconds<data.anchors.find(a=>a.id==='csm-separation').t?'● Saturn V · Apollo 11':'● Columbia';onTime(time,playing,{method:mode==='site'&&surface?'LRO terrain and imagery · reconstructed trajectory':'Physical reconstruction · NASA milestones and JPL ephemerides',mode,vehicle:name+(state.eagle?' · ● Eagle':'')});}
  const controller={
   get active(){return active;},get starting(){return starting;},get time(){return time;},get playing(){return playing;},get mode(){return mode;},get data(){return data;},get surfaceReady(){return Boolean(surface);},
   moonRelativePosition,
   projectAnnotations(bounds){
    if(!active)return [];camera.updateMatrixWorld(true);
-   const csm=columbia.position.clone().add(earth),lunar=moon.clone().add(earth),labels=[{id:'earth',text:'Terre',position:earth,body:'earth'},{id:'moon',text:'Lune',position:lunar,body:'moon'},{id:'columbia',text:(time-START)/1000<data.anchors.find(a=>a.id==='csm-separation').t?'Saturn V':'Columbia',position:csm}];
+   const csm=columbia.position.clone().add(earth),lunar=moon.clone().add(earth),labels=[{id:'earth',text:'Earth',position:earth,body:'earth'},{id:'moon',text:'Moon',position:lunar,body:'moon'},{id:'columbia',text:(time-START)/1000<data.anchors.find(a=>a.id==='csm-separation').t?'Saturn V':'Columbia',position:csm}];
    if(eagle.visible)labels.push({id:'eagle',text:'Eagle',position:eagle.position.clone().add(earth)});
    else if(model?.root.visible)labels.push({id:'eagle',text:'Eagle',position:site.clone().add(earth).addScaledVector(normal,6.8*meterScale())});
    return labels.map(label=>{
@@ -145,13 +145,13 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
    });
   },
   async start(){
-   if(active||starting||disposed)return;starting=true;const token=++generation;onStatus('loading','Chargement des trajectoires historiques…');
+   if(active||starting||disposed)return;starting=true;const token=++generation;onStatus('loading','Loading historical trajectories…');
    try{
-    if(!data){pending??=loadData({signal:abort.signal});data=await pending;if(!validateFlightData(data))throw new Error('Les données de trajectoire ne sont pas valides.');}
+    if(!data){pending??=loadData({signal:abort.signal});data=await pending;if(!validateFlightData(data))throw new Error('The trajectory data is invalid.');}
     if(token!==generation||disposed)return;
     starting=false;active=true;orbitalFrame=null;time=START;mode='journey';playing=!matchMedia('(prefers-reduced-motion: reduce)').matches;group.visible=true;
     savedUp.copy(camera.up);onStart();buildRoute();reset();onStatus('ready');report();
-   }catch(error){if(token!==generation||disposed)return;starting=false;pending=null;data=null;onStatus('error',error.message||'La reconstitution ne peut pas démarrer.');}
+   }catch(error){if(token!==generation||disposed)return;starting=false;pending=null;data=null;onStatus('error',error.message||'The reconstruction could not start.');}
   },
   setTime(value){if(!active)return;time=missionState(value).time;if(time>=END)playing=false;render(true);report();},
   setPlaying(value){if(!active)return;playing=Boolean(value)&&time<END;report();},

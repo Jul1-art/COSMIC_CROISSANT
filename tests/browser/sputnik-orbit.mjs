@@ -18,7 +18,7 @@ try{
  await page.setContent('<style>body{margin:0;background:#000}#host{position:fixed;inset:0}#inspection-satellite-controls{position:fixed;z-index:50;left:16px;top:16px;width:240px}</style><div id="host"></div><aside id="inspection-satellite-controls"></aside>');
  await page.addStyleTag({url:new URL('/src/ui/theme.css',base).href});await page.addStyleTag({url:new URL('/src/missions/missions.css',base).href});
  await page.evaluate(async()=>{
-  document.documentElement.dataset.theme='night';document.documentElement.lang='fr';
+  document.documentElement.dataset.theme='night';document.documentElement.lang='en';
   const {createDetailedGlobe}=await import('/src/atlas/detailed-globe.js');
   window.globe=createDetailedGlobe({host:document.querySelector('#host'),onState:()=>window.globe?.reveal()});window.globe.setFocus({id:'earth',lat:20,lon:0});
   window.sputnikStates=[];window.addEventListener('relic-sputnik-state',e=>sputnikStates.push(e.detail));
@@ -37,6 +37,6 @@ try{
  await page.locator('#sputnik-card [data-sputnik=video]').click();await page.waitForFunction(()=>document.querySelector('#sputnik-intro-video')?.currentTime>.1,{timeout:30000});assert.equal(await page.locator('#sputnik-card').evaluate(node=>node.hidden),false);await page.locator('.mission-film-close').click();await page.locator('.mission-shared-film').waitFor({state:'detached'});assert.ok(await page.locator('#sputnik-card-actions').isVisible());
  await page.setViewportSize({width:390,height:844});await page.waitForTimeout(300);const box=await page.locator('#sputnik-orbit-controls').boundingBox();assert.ok(box.x>=0&&box.x+box.width<=390&&box.y>=0&&box.y+box.height<=844);
  await page.locator('#sputnik-orbit-controls [data-sputnik=stop]').click();await page.waitForFunction(()=>!window.sputnikStates.at(-1)?.active);assert.equal(await page.locator('#sputnik-orbit-controls').isVisible(),false);
- await page.setViewportSize({width:1280,height:900});await page.getByRole('button',{name:'Charger les autres satellites'}).click();await page.waitForFunction(()=>document.querySelector('.satellite-loaded-total')?.textContent==='2',{timeout:30000});assert.ok(feeds.includes('starlink'));assert.ok(feeds.includes('active'));
+ await page.setViewportSize({width:1280,height:900});await page.getByRole('button',{name:'Load other satellites'}).click();await page.waitForFunction(()=>document.querySelector('.satellite-loaded-total')?.textContent==='2',{timeout:30000});assert.ok(feeds.includes('starlink'));assert.ok(feeds.includes('active'));
  await page.evaluate(()=>window.globe.hide());assert.deepEqual(errors,[]);console.log('PASS: ISS-only startup, explicit full catalogue load, Sputnik menu, orbital scene, time controls, responsive layout and teardown');
 }finally{await browser.close();}

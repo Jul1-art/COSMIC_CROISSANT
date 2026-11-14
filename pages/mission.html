@@ -1,21 +1,20 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080808">
-  <meta name="description" content="Apollo 11 : identité, matériel abandonné, chronologie, science et héritage. Un dossier RELIC illustré par les photographies NASA.">
-  <title>Apollo 11 — Dossier de mission · RELIC</title>
-  <link rel="icon" href="../assets/relic-icon-v1-192.png" type="image/png">
-  <script>(()=>{let theme='night';try{theme=JSON.parse(localStorage.getItem('relic.preferences.v1')||'{}').theme||localStorage.getItem('nasa-atlas-theme')||theme;}catch{}const requested=new URLSearchParams(location.search).get('theme');if(requested==='day'||requested==='night')theme=requested;document.documentElement.dataset.theme=theme==='day'?'day':'night';document.documentElement.dataset.accent='mono';document.documentElement.style.colorScheme=theme==='day'?'light':'dark';})();</script>
-  <link rel="stylesheet" href="../src/ui/theme.css?v=17">
-  <link rel="stylesheet" href="../src/missions/mission-dossier.css">
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#080808">
+ <meta name="description" content="Apollo 11: an illustrated mission archive, hardware inventory, flight timeline, science and original sources."><title>Apollo 11 — Mission archive · RELIC</title>
+ <link rel="icon" href="../assets/relic-icon-v1-192.png" type="image/png">
+ <script>(()=>{let theme='night';try{const prefs=JSON.parse(localStorage.getItem('relic.preferences.v1')||'{}');theme=prefs.theme||localStorage.getItem('nasa-atlas-theme')||theme;document.documentElement.dataset.motion=prefs.motion||'system';}catch{}const requested=new URLSearchParams(location.search).get('theme');if(requested==='day'||requested==='night')theme=requested;document.documentElement.dataset.theme=theme==='day'?'day':'night';document.documentElement.dataset.accent='mono';document.documentElement.style.colorScheme=theme==='day'?'light':'dark';})();</script>
+ <link rel="stylesheet" href="../src/ui/theme.css?v=17"><link rel="stylesheet" href="../src/missions/mission-dossier.css"><link rel="stylesheet" href="../src/missions/missions.css">
 </head>
-<body>
-  <header class="dossier-header"><a class="dossier-logo" href="../?view=inspection&amp;body=moon">RELIC <span>/ MISSIONS</span></a><a class="dossier-back" id="dossier-back" href="../?view=inspection&amp;body=moon&amp;lat=0.67409&amp;lon=23.47298&amp;range=3000000">← Retour à la Lune</a></header>
-  <section class="dossier-hero"><div class="dossier-hero-copy"><p class="dossier-archive-label">NASA / PROGRAMME APOLLO</p><h1>Apollo 11</h1><p class="dossier-subtitle">16–24 juillet 1969 · Mer de la Tranquillité</p><p class="dossier-introduction">Le premier alunissage habité, le voyage de son équipage et les équipements laissés dans l’espace.</p></div></section>
-  <nav class="dossier-tabs" id="dossier-tabs" role="tablist" aria-label="Sections du dossier Apollo 11"></nav>
-  <main id="dossier-content"><noscript>Activez JavaScript pour consulter les cinq onglets du dossier. <a href="../assets/missions/apollo-11/fiche-mission.pdf">La fiche PDF reste disponible.</a></noscript></main>
-  <script type="module" src="../src/missions/mission-dossier.js"></script>
+<body class="mission-dossier" data-mission="apollo-11">
+ <a class="dossier-skip" href="#dossier-content">Skip to mission record</a>
+ <header class="dossier-header"><a class="dossier-logo" href="../">RELIC <span>/ MISSION ARCHIVE</span></a><nav aria-label="Mission dossiers"><a href="mission.html?mission=apollo-11" aria-current="page">Apollo 11</a><a href="sputnik.html" >Sputnik 1</a></nav><a class="dossier-back" id="dossier-back" href="../?view=inspection&amp;body=moon">← Back to the atlas</a></header>
+ <section class="dossier-hero"><div class="dossier-hero-copy"><p class="dossier-archive-label"><span></span> ARCHIVE 001 / NASA / APOLLO PROGRAMME</p><h1>Apollo 11</h1><p class="dossier-hero-headline">A first step.<br>A lasting footprint.</p><p class="dossier-subtitle">16 — 24 JUL 1969</p><p class="dossier-introduction">The journey to Tranquility Base, the people who made it, and the equipment that never came home.</p><div class="dossier-hero-actions"><button class="dossier-primary " type="button" data-dossier-film>Watch the mission <span aria-hidden="true">↗</span></button><a href="../?mission=apollo-11&amp;missionView=explore" class="dossier-secondary">Explore in 3D <span aria-hidden="true">↗</span></a></div><div class="dossier-hero-facts"><div><strong>03<small>people</small></strong><span>Crew members</span></div><div><strong>08<small>days</small></strong><span>Journey duration</span></div><div><strong>21.55<small>kg</small></strong><span>Samples returned</span></div></div></div><figure class="dossier-hero-photo"><img src="../assets/missions/apollo-11/aldrin.jpg" alt="Buzz Aldrin on the Moon beside Eagle, photographed by Neil Armstrong." fetchpriority="high" width="1280" height="960"><figcaption>Buzz Aldrin at Tranquility Base · 20 July 1969 · NASA / AS11-40-5903</figcaption><span class="dossier-photo-tag" aria-hidden="true">1969 / AS-506</span></figure></section>
+ <div class="dossier-mission-note"><span>HARDWARE STATUS</span><p>A mission completed. <strong>A lunar site still holding its equipment and traces.</strong></p><span aria-hidden="true">↓</span></div>
+ <nav class="dossier-tabs" id="dossier-tabs" role="tablist" aria-label="Apollo 11 mission chapters"></nav>
+ <main id="dossier-content"><noscript>Enable JavaScript to read the five mission chapters. <a href="../assets/missions/apollo-11/fiche-mission.pdf">The original mission brief (French PDF) remains available.</a></noscript></main>
+ <footer class="dossier-footer"><a class="dossier-logo" href="../">RELIC</a><p>Historical missions. Real hardware. Documented sources.</p><a href="../assets/missions/apollo-11/fiche-mission.pdf" target="_blank" rel="noopener">Original mission brief (French) ↗</a></footer>
+ <script type="module" src="../src/missions/mission-dossier.js"></script>
 </body>
 </html>

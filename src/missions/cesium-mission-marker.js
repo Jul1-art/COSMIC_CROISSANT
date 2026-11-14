@@ -6,7 +6,7 @@ import {PIN_SVG} from './mission-icons.js';
 export function createCesiumMissionMarker({Cesium,viewer,body,onOpen,onAnchor=()=>{},getSurfaceHeight=()=>0,document:doc=globalThis.document}){
  if(!['moon','earth'].includes(body))return null;const mission=body==='earth'?SPUTNIK:APOLLO_11;
  if(!doc.querySelector('link[data-mission-marker-style]')){const link=doc.createElement('link');link.rel='stylesheet';link.href=new URL('./missions.css',import.meta.url).href;link.dataset.missionMarkerStyle='';doc.head.append(link);}
- const marker=doc.createElement('button');marker.type='button';marker.className='mission-marker';marker.hidden=true;marker.innerHTML=PIN_SVG+`<span>${mission.name}</span>`;marker.setAttribute('aria-label',mission.name+' · repère historique · ouvrir la mission');doc.body.append(marker);
+ const marker=doc.createElement('button');marker.type='button';marker.className='mission-marker';marker.hidden=true;marker.innerHTML=PIN_SVG+`<span>${mission.name}</span>`;marker.setAttribute('aria-label',mission.name+' · historical marker · open mission');doc.body.append(marker);
  const {latitude:lat,longitude:lon}=mission.site;
  const open=()=>{const rect=marker.getBoundingClientRect?.();onOpen(mission.id,rect?{x:rect.left+rect.width/2,y:rect.bottom}:undefined);};marker.addEventListener('click',open);
  let enabled=true,lastAnchor=-Infinity;const toward=new Cesium.Cartesian3(),pixel=new Cesium.Cartesian2();

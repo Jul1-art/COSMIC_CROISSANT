@@ -32,9 +32,9 @@ export async function loadFlightData({signal}={}){
  if(signal?.aborted)cancel();else signal?.addEventListener('abort',cancel,{once:true});
  try{
   const response=await fetch(new URL('../../assets/missions/apollo-11/trajectory.json',import.meta.url),{signal:controller.signal,cache:'force-cache'});
-  if(!response.ok)throw new Error('Les données de trajectoire sont indisponibles.');
-  const data=await response.json();if(!validateFlightData(data))throw new Error('Les données de trajectoire ne sont pas valides.');return data;
- }catch(error){if(controller.signal.aborted&&!signal?.aborted)throw new Error('Le chargement a pris trop de temps. Vous pouvez réessayer.');throw error;}
+  if(!response.ok)throw new Error('Trajectory data is unavailable.');
+  const data=await response.json();if(!validateFlightData(data))throw new Error('The trajectory data is invalid.');return data;
+ }catch(error){if(controller.signal.aborted&&!signal?.aborted)throw new Error('Loading timed out. Please try again.');throw error;}
  finally{clearTimeout(timer);signal?.removeEventListener('abort',cancel);}
 }
 

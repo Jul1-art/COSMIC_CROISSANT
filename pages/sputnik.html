@@ -1,24 +1,20 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080808">
-  <meta name="description" content="Spoutnik 1 : identité, matériel abandonné, chronologie, science et héritage. Un dossier RELIC illustré par les photographies NASA.">
-  <title>Spoutnik 1 — Dossier de mission · RELIC</title>
-  <link rel="icon" href="../assets/relic-icon-v1-192.png" type="image/png">
-  <script>(()=>{let theme='night';try{theme=JSON.parse(localStorage.getItem('relic.preferences.v1')||'{}').theme||localStorage.getItem('nasa-atlas-theme')||theme;}catch{}const requested=new URLSearchParams(location.search).get('theme');if(requested==='day'||requested==='night')theme=requested;document.documentElement.dataset.theme=theme==='day'?'day':'night';document.documentElement.dataset.accent='mono';document.documentElement.style.colorScheme=theme==='day'?'light':'dark';})();</script>
-  <link rel="stylesheet" href="../src/ui/theme.css?v=17">
-  <link rel="stylesheet" href="../src/missions/mission-dossier.css">
-  <link rel="stylesheet" href="../src/missions/missions.css">
-  <link rel="stylesheet" href="../src/missions/sputnik-dossier.css">
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#080808">
+ <meta name="description" content="Sputnik 1: an illustrated mission archive, hardware inventory, flight timeline, science and original sources."><title>Sputnik 1 — Mission archive · RELIC</title>
+ <link rel="icon" href="../assets/relic-icon-v1-192.png" type="image/png">
+ <script>(()=>{let theme='night';try{const prefs=JSON.parse(localStorage.getItem('relic.preferences.v1')||'{}');theme=prefs.theme||localStorage.getItem('nasa-atlas-theme')||theme;document.documentElement.dataset.motion=prefs.motion||'system';}catch{}const requested=new URLSearchParams(location.search).get('theme');if(requested==='day'||requested==='night')theme=requested;document.documentElement.dataset.theme=theme==='day'?'day':'night';document.documentElement.dataset.accent='mono';document.documentElement.style.colorScheme=theme==='day'?'light':'dark';})();</script>
+ <link rel="stylesheet" href="../src/ui/theme.css?v=17"><link rel="stylesheet" href="../src/missions/mission-dossier.css"><link rel="stylesheet" href="../src/missions/missions.css">
 </head>
-<body class="sputnik-dossier">
-  <header class="dossier-header"><a class="dossier-logo" href="../?view=inspection&amp;body=earth">RELIC <span>/ MISSIONS</span></a><a class="dossier-back" id="dossier-back" href="../?view=inspection&amp;body=earth&amp;lat=45.9203&amp;lon=63.3422&amp;range=3000000">← Retour à la Terre</a></header>
-  <section class="dossier-hero sputnik-hero"><div class="dossier-hero-copy"><p class="dossier-archive-label">URSS / PROGRAMME SPOUTNIK</p><h1>Spoutnik 1</h1><p class="dossier-subtitle">4 octobre 1957 – 4 janvier 1958 · Orbite terrestre basse</p><p class="dossier-introduction">Une sphère de 58 centimètres, quatre antennes et un signal radio. Le 4 octobre 1957, Spoutnik 1 ouvre l’ère spatiale.</p><button class="sputnik-watch-film" type="button" data-sputnik-film><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m9 5 11 7-11 7Z"/></svg>Voir la mission en images <span>≈ 2 min</span></button><div class="sputnik-hero-facts"><div><strong>83,6 <small>kg</small></strong><span>Masse du satellite</span></div><div><strong>22 <small>jours</small></strong><span>Émissions radio</span></div><div><strong>92 <small>jours ≈</small></strong><span>Présence en orbite</span></div></div></div><figure class="sputnik-hero-photo"><img src="../assets/missions/sputnik-1/satellite.jpg" width="792" height="1200" alt="Maquette de Spoutnik 1 : sphère métallique polie et longues antennes, exposée au Bourget" fetchpriority="high"><figcaption>Maquette grandeur nature · Le Bourget, 1975 · NASA</figcaption></figure></section><div class="sputnik-status"><span>DESTIN DU MATÉRIEL</span><p>Rentrée atmosphérique terminée en 1958. <strong>Aucun élément de la mission ne subsiste en orbite.</strong></p></div>
-  <nav class="dossier-tabs" id="dossier-tabs" role="tablist" aria-label="Sections du dossier Spoutnik 1"></nav>
-  <main id="dossier-content"><noscript>Activez JavaScript pour consulter les cinq onglets du dossier. <a href="../assets/missions/sputnik-1/fiche-mission.pdf">La fiche PDF reste disponible.</a></noscript></main>
-  <footer class="dossier-footer"><span>RELIC / Archives des missions spatiales</span><a href="../assets/missions/sputnik-1/fiche-mission.pdf" target="_blank" rel="noopener">Consulter la fiche de mission ↗</a></footer>
-  <script type="module" src="../src/missions/sputnik-dossier.js"></script>
+<body class="mission-dossier" data-mission="sputnik-1">
+ <a class="dossier-skip" href="#dossier-content">Skip to mission record</a>
+ <header class="dossier-header"><a class="dossier-logo" href="../">RELIC <span>/ MISSION ARCHIVE</span></a><nav aria-label="Mission dossiers"><a href="mission.html?mission=apollo-11" >Apollo 11</a><a href="sputnik.html" aria-current="page">Sputnik 1</a></nav><a class="dossier-back" id="dossier-back" href="../?view=inspection&amp;body=earth">← Back to the atlas</a></header>
+ <section class="dossier-hero"><div class="dossier-hero-copy"><p class="dossier-archive-label"><span></span> ARCHIVE 002 / SOVIET UNION / SPUTNIK PROGRAMME</p><h1>Sputnik 1</h1><p class="dossier-hero-headline">The signal that opened the Space Age.</p><p class="dossier-subtitle">04 OCT 1957 — 04 JAN 1958</p><p class="dossier-introduction">A 58-centimetre sphere, four antennas, and a radio signal heard around the world. Explore the flight and the hardware that made it possible.</p><div class="dossier-hero-actions"><button class="dossier-primary sputnik-watch-film" type="button" data-sputnik-film>Watch the mission <span aria-hidden="true">↗</span></button><a href="../?view=inspection&amp;body=earth&amp;lat=45.9203&amp;lon=63.3422&amp;range=3000000" class="dossier-secondary">View launch site <span aria-hidden="true">↗</span></a></div><div class="dossier-hero-facts"><div><strong>83.6<small>kg</small></strong><span>Satellite mass</span></div><div><strong>22<small>days</small></strong><span>Radio transmissions</span></div><div><strong>92<small>days ≈</small></strong><span>Time in orbit</span></div></div></div><figure class="dossier-hero-photo"><img src="../assets/missions/sputnik-1/satellite.jpg" alt="Full-size Sputnik 1 mockup showing the sphere and antennas." fetchpriority="high" width="792" height="1200"><figcaption>Full-size Sputnik 1 mockup · Paris Air Show, 1975 · NASA / S76-22361</figcaption><span class="dossier-photo-tag" aria-hidden="true">1957 / PS-1</span></figure></section>
+ <div class="dossier-mission-note"><span>HARDWARE STATUS</span><p>The satellite and launch-vehicle elements reentered. <strong>No original hardware remains in orbit.</strong></p><span aria-hidden="true">↓</span></div>
+ <nav class="dossier-tabs" id="dossier-tabs" role="tablist" aria-label="Sputnik 1 mission chapters"></nav>
+ <main id="dossier-content"><noscript>Enable JavaScript to read the five mission chapters. <a href="../assets/missions/sputnik-1/fiche-mission.pdf">The original mission brief (French PDF) remains available.</a></noscript></main>
+ <footer class="dossier-footer"><a class="dossier-logo" href="../">RELIC</a><p>Historical missions. Real hardware. Documented sources.</p><a href="../assets/missions/sputnik-1/fiche-mission.pdf" target="_blank" rel="noopener">Original mission brief (French) ↗</a></footer>
+ <script type="module" src="../src/missions/sputnik-dossier.js"></script>
 </body>
 </html>

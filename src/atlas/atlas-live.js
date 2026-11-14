@@ -1,8 +1,9 @@
+import {initialLanguage} from '../core/language.js';
 import { backendJSON, publicRequests } from '../core/atlas-services.js';
 import { approximatePositions, parseSolarWind } from './orbital-data.js';
 
 let language = 'en';
-try { language = localStorage.getItem('nasa-atlas-language') === 'fr' ? 'fr' : 'en'; } catch {}
+try { language = initialLanguage(localStorage); } catch {}
 const languageListeners = new Set();
 document.documentElement.lang = language;
 
@@ -30,8 +31,8 @@ for (const button of document.querySelectorAll('[data-language-toggle]')) {
   onLanguageChange(next => {
     button.dataset.activeLanguage = next;
     button.setAttribute('aria-pressed', String(next === 'en'));
-    button.setAttribute('aria-label', next === 'fr' ? 'Switch to English' : 'Passer en français');
-    button.title = next === 'fr' ? 'English' : 'Français';
+    button.setAttribute('aria-label', next === 'fr' ? 'Switch to English' : 'Switch to French');
+    button.title = next === 'fr' ? 'English' : 'French';
   });
 }
 
