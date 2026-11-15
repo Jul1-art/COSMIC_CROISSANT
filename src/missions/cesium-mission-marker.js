@@ -1,26 +1,133 @@
 import {localizeMissionElement} from './mission-locale.js';
-import {SPUTNIK} from './sputnik.js';
-import {APOLLO_11} from './apollo11-data.js';
 import {PIN_SVG} from './mission-icons.js';
-/** A keyboard-accessible pin projected from lunar coordinates. Native DOM input
- * remains reliable when a device cannot GPU-pick terrain-clamped billboards. */
-export function createCesiumMissionMarker({Cesium,viewer,body,onOpen,onAnchor=()=>{},getSurfaceHeight=()=>0,document:doc=globalThis.document}){
- if(!['moon','earth'].includes(body))return null;const mission=body==='earth'?SPUTNIK:APOLLO_11;
- if(!doc.querySelector('link[data-mission-marker-style]')){const link=doc.createElement('link');link.rel='stylesheet';link.href=new URL('./missions.css',import.meta.url).href;link.dataset.missionMarkerStyle='';doc.head.append(link);}
- const marker=doc.createElement('button');marker.type='button';marker.className='mission-marker';marker.hidden=true;marker.innerHTML=PIN_SVG+`<span>${mission.name}</span>`;marker.setAttribute('aria-label',mission.name+' · historical marker · open mission');doc.body.append(marker);const locale=localizeMissionElement(marker);
- const {latitude:lat,longitude:lon}=mission.site;
- const open=()=>{const rect=marker.getBoundingClientRect?.();onOpen(mission.id,rect?{x:rect.left+rect.width/2,y:rect.bottom}:undefined);};marker.addEventListener('click',open);
- let enabled=true,lastAnchor=-Infinity;const toward=new Cesium.Cartesian3(),pixel=new Cesium.Cartesian2();
- function update(){
-   if(!enabled||viewer.isDestroyed()){marker.hidden=true;return;}
-   const height=getSurfaceHeight(lat,lon),point=Cesium.Cartesian3.fromDegrees(lon,lat,Number.isFinite(height)?height:0,(body==='moon'?Cesium.Ellipsoid.MOON:Cesium.Ellipsoid.WGS84));
-   Cesium.Cartesian3.subtract(viewer.camera.positionWC,point,toward);
-   const screen=viewer.scene.cartesianToCanvasCoordinates(point,pixel);
-   const bounds=viewer.canvas.getBoundingClientRect();
-   // Radial horizon test works even below the datum ellipsoid in a lunar mare.
-   marker.hidden=!screen||Cesium.Cartesian3.dot(point,toward)<=0||Cesium.Cartesian3.dot(toward,viewer.camera.directionWC)>=0||screen.x<0||screen.y<0||screen.x>bounds.width||screen.y>bounds.height;
-   if(!marker.hidden){marker.style.left=`${bounds.left+screen.x}px`;marker.style.top=`${bounds.top+screen.y}px`;if(performance.now()-lastAnchor>100){lastAnchor=performance.now();onAnchor({x:bounds.left+screen.x,y:bounds.top+screen.y});}}
- }
- const stop=viewer.scene.postRender.addEventListener(update);update();
- return {update,setVisible(value){enabled=Boolean(value);update();},dispose(){locale.dispose();stop();marker.removeEventListener('click',open);marker.remove();}};
+import {getMissionSitesForBody} from './mission-sites.js';
+import {discoverMission} from '../core/mission-discoveries.js';
+
+/**
+ * Interactive, keyboard-accessible 3D surface pins for missions across Mars, Moon, and Earth.
+ * Projects geographic coordinates to screen space in Cesium with limb-horizon occlusion.
+ */
+export function createCesiumMissionMarker({
+  Cesium,
+  viewer,
+  body,
+  onOpen,
+  onLocate,
+  onAnchor=()=>{},
+  getSurfaceHeight=()=>0,
+  document:doc=globalThis.document
+}) {
+  const sites = getMissionSitesForBody(body);
+  if (!sites.length || !viewer) return null;
+
+  if (!doc.querySelector('link[data-mission-marker-style]')) {
+    const link = doc.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = new URL('./missions.css', import.meta.url).href;
+    link.dataset.missionMarkerStyle = '';
+    doc.head.append(link);
+  }
+
+  const ellipsoid = viewer.scene?.globe?.ellipsoid ||
+    (body === 'moon' ? Cesium.Ellipsoid.MOON : body === 'mars' ? new Cesium.Ellipsoid(3396190, 3396190, 3396190) : Cesium.Ellipsoid.WGS84);
+
+  const container = doc.createElement('div');
+  container.className = 'mission-markers-container';
+  container.setAttribute('aria-label', `Sites de mission · ${body}`);
+  doc.body.append(container);
+
+  const markerEntries = sites.map(site => {
+    const marker = doc.createElement('button');
+    marker.type = 'button';
+    marker.className = 'mission-marker';
+    marker.hidden = true;
+    marker.innerHTML = PIN_SVG + `<span>${site.name}</span>`;
+    marker.setAttribute('aria-label', `${site.name} · ${site.siteName || ''} · open mission`);
+    marker.dataset.missionId = site.id;
+    container.append(marker);
+
+    const locale = localizeMissionElement(marker);
+
+    const click = (event) => {
+      event?.stopPropagation();
+      discoverMission(site.id);
+      if (onLocate) {
+        onLocate({ lat: site.lat, lon: site.lon, name: site.name, id: site.id });
+      }
+      const rect = marker.getBoundingClientRect?.();
+      const anchor = rect ? { x: rect.left + rect.width / 2, y: rect.bottom } : undefined;
+      onOpen(site.id, anchor);
+    };
+
+    marker.addEventListener('click', click);
+    return { site, marker, locale, click };
+  });
+
+  let enabled = true;
+  let lastAnchor = -Infinity;
+  const toward = new Cesium.Cartesian3();
+  const pixel = new Cesium.Cartesian2();
+
+  function update() {
+    if (!enabled || viewer.isDestroyed()) {
+      for (const entry of markerEntries) entry.marker.hidden = true;
+      return;
+    }
+
+    const bounds = viewer.canvas?.getBoundingClientRect?.() || { left: 0, top: 0, width: innerWidth, height: innerHeight };
+    const cameraPos = viewer.camera.positionWC;
+    const cameraDir = viewer.camera.directionWC;
+
+    for (const entry of markerEntries) {
+      const { site, marker } = entry;
+      const height = getSurfaceHeight(site.lat, site.lon);
+      const point = Cesium.Cartesian3.fromDegrees(
+        site.lon,
+        site.lat,
+        Number.isFinite(height) ? height : 0,
+        ellipsoid
+      );
+
+      Cesium.Cartesian3.subtract(cameraPos, point, toward);
+      const screen = viewer.scene.cartesianToCanvasCoordinates(point, pixel);
+
+      // Horizon & boundary occlusion
+      const occluded = !screen ||
+        Cesium.Cartesian3.dot(point, toward) <= 0 ||
+        Cesium.Cartesian3.dot(toward, cameraDir) >= 0 ||
+        screen.x < -30 || screen.y < -40 ||
+        screen.x > bounds.width + 30 || screen.y > bounds.height + 40;
+
+      marker.hidden = occluded;
+      if (!occluded) {
+        marker.style.left = `${bounds.left + screen.x}px`;
+        marker.style.top = `${bounds.top + screen.y}px`;
+
+        if (performance.now() - lastAnchor > 120 && (site.id === 'curiosity' || site.id === 'apollo-11' || site.id === 'spoutnik-1')) {
+          lastAnchor = performance.now();
+          onAnchor({ x: bounds.left + screen.x, y: bounds.top + screen.y });
+        }
+      }
+    }
+  }
+
+  const stop = viewer.scene.postRender.addEventListener(update);
+  update();
+
+  return {
+    update,
+    setVisible(value) {
+      enabled = Boolean(value);
+      update();
+    },
+    dispose() {
+      stop();
+      for (const entry of markerEntries) {
+        entry.locale?.dispose?.();
+        entry.marker.removeEventListener('click', entry.click);
+        entry.marker.remove();
+      }
+      container.remove();
+    }
+  };
 }

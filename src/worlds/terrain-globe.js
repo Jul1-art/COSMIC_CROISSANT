@@ -14,6 +14,8 @@ import { initializeProviderCredits } from '../ui/provider-credits.js?v=14';
 import { backendFeatureAvailable, markBackendFeatureUnavailable } from '../core/atlas-services.js';
 import { observeSceneTheme } from '../ui/scene-theme.js';
 import { createStandaloneInspectionControls } from './inspection-controls.js';
+import { createCesiumMissionMarker } from '../missions/cesium-mission-marker.js';
+import { openMission } from '../missions/mission-ui.js';
 
 const $ = selector => document.querySelector(selector);
 const viewLoading = createViewLoading({ element:$('#loading'), errorElement:$('#error'), getLanguage });
@@ -537,6 +539,23 @@ async function start() {
       onLocate:value=>focus(value.lat,value.lon,value.range,.85,value.name||value.label||''),
     });
     inspection.setTheme(document.documentElement.dataset.theme);
+    createCesiumMissionMarker({
+      Cesium,
+      viewer,
+      body,
+      getSurfaceHeight:(lat, lon) => {
+        try {
+          const cart = Cesium.Cartographic.fromDegrees(lon, lat);
+          return viewer.scene.globe?.getHeight(cart) || 0;
+        } catch { return 0; }
+      },
+      onLocate:(site) => {
+        focus(site.lat, site.lon, Math.max(15000, radius * .035), 1.2, site.name);
+      },
+      onOpen:(id, anchor) => {
+        openMission(id, 'summary', anchor);
+      }
+    });
     if (startPoint) {
       if (startPoint.id) {
         $('#site-title').textContent = startPoint.name;

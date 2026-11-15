@@ -111,7 +111,7 @@ export function installMissionUI(){
  const query=new URL(location.href).searchParams;if(query.get('mission'))queueMicrotask(()=>openMission(query.get('mission'),query.get('missionView')||'summary'));
 }
 export function openMission(id,view='summary',nextAnchor){
- if(id==='sputnik-1'){installMissionUI();closePopup();openSputnik(nextAnchor);return;}
+ if(id==='sputnik-1'||id==='spoutnik-1'){installMissionUI();closePopup();openSputnik(nextAnchor);return;}
  if(!MISSIONS.has(id)){if(/^[a-z0-9-]+$/.test(id||'')){installMissionUI();closePopup();void import('./archive-ui.js').then(module=>module.openArchiveMission(id,view));}return;}discoverMission(id);installMissionUI();
  if(view==='article'){location.assign(appURL('pages/mission.html?mission=apollo-11').href);return;}
  if(view==='video'){openVideo();return;}if(view==='explore'){startMission();return;}showPopup(nextAnchor);
