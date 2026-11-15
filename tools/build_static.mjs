@@ -2,6 +2,7 @@ import { access, cp, lstat, mkdir, readdir, readFile, rm } from 'node:fs/promise
 import { extname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { restoreFilms } from './restore_film.mjs';
+import { prepareCloudflareAssets } from './cloudflare_assets.mjs';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const outputArgument = process.argv.indexOf('--output');
@@ -74,4 +75,5 @@ for (const directory of assetDirectories) {
   }
 }
 
+await prepareCloudflareAssets(output);
 console.log(`Static build ready: ${(await readdir(output)).length} root entries`);
