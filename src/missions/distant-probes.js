@@ -1,15 +1,10 @@
 import {openMission} from './mission-ui.js';
 import {getLanguage, onLanguageChange} from '../atlas/atlas-live.js?v=3';
+import {DISTANT_PROBES} from './distant-data.js';
+export {DISTANT_PROBES} from './distant-data.js';
 
 // NASA lists these five spacecraft on solar escape trajectories. Only the
 // Voyagers have a confirmed heliopause crossing; no live position is implied.
-export const DISTANT_PROBES = [
-  {id:'voyager-1', name:'Voyager 1', year:1977, interstellar:true},
-  {id:'voyager-2', name:'Voyager 2', year:1977, interstellar:true},
-  {id:'pioneer-10', name:'Pioneer 10', year:1972},
-  {id:'pioneer-11', name:'Pioneer 11', year:1973},
-  {id:'new-horizons', name:'New Horizons', year:2006},
-];
 
 export function createDistantProbeMenu() {
   const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('./distant-probes.css',import.meta.url).href;document.head.append(link);
@@ -21,7 +16,7 @@ export function createDistantProbeMenu() {
   const buttons=DISTANT_PROBES.map(probe=>{
     const button=document.createElement('button');button.type='button';button.className='distant-probe';button.dataset.probeId=probe.id;
     button.innerHTML=`<span><strong>${probe.name}</strong><small></small></span><span class="distant-probe-arrow" aria-hidden="true">↗</span>`;
-    button.addEventListener('click',()=>{expand(false);openMission(probe.id,'spacecraft');});entries.append(button);return button;
+    button.addEventListener('click',()=>{expand(false);openMission(probe.id,'distant');});entries.append(button);return button;
   });
   function localize(){
     const fr=getLanguage()==='fr';root.setAttribute('aria-label',fr?'Sondes lointaines':'Distant probes');

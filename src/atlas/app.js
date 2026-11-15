@@ -428,7 +428,7 @@ function updatePositions(days) {
   for(const node of [sun,solarGlow,solarCorona,sunlight]){node.position.set(0,0,0);if(archiveActive)node.position.sub(missionOrigin);}
   for (const planet of planets) {
     const group = planetGroups.get(planet.id);
-    const vector=planetaryEphemeris.getPosition(planet.id,positionDate);
+    const vector=atlasMission?.active&&atlasMission.distant?atlasMission.bodyPosition(planet.id,positionDate)||planetaryEphemeris.getPosition(planet.id,positionDate):planetaryEphemeris.getPosition(planet.id,positionDate);
     if(vector){group.position.set(kmToWorld(vector.x),kmToWorld(vector.z),-kmToWorld(vector.y));if(archiveActive)group.position.sub(missionOrigin);if(atlasMission?.active&&!atlasMission.archive&&planet.id==='earth')group.position.copy(missionEarthAnchor).sub(missionOrigin);}
   }
   const earthPosition = planetGroups.get('earth').position;
@@ -685,6 +685,7 @@ function applyFocusVisibility(){
   if(atlasMission?.active){
     for(const planet of planets)planetGroups.get(planet.id).visible=atlasMission.contextAvailable!==false&&planet.id===(atlasMission.focusBody==='moon'?'earth':atlasMission.focusBody||'earth');
     for(const node of [sun,solarGlow,solarCorona])node.visible=Boolean(atlasMission.archive&&atlasMission.focusBody==='sun'&&atlasMission.contextAvailable!==false);
+    if(atlasMission.distant){for(const planet of planets)planetGroups.get(planet.id).visible=atlasMission.showSolarSystem;for(const node of [sun,solarGlow,solarCorona])node.visible=atlasMission.showSolarSystem;}
   }
   updateScaleNote();
 }
@@ -1208,7 +1209,7 @@ const atlasMissionOptions={THREE,scene,camera,controls,renderer,createLine:creat
  onRebase(shift){
   missionOrigin.add(shift);if(atlasMission?.archive){for(const group of planetGroups.values())group.position.sub(shift);for(const node of [sun,solarGlow,solarCorona,sunlight])node.position.sub(shift);}else planetGroups.get('earth').position.sub(shift);camera.position.sub(shift);controls.target.sub(shift);
   if(flight)for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].sub(shift);
-  naturalSystems?.setFocus(atlasMission?.archive?atlasMission.focusBody:'earth');
+  if(!atlasMission?.distant)naturalSystems?.setFocus(atlasMission?.archive?atlasMission.focusBody:'earth');
  },
  onSurfaceActive(value){renderer.shadowMap.enabled=value?true:(missionShadowState?.enabled??false);if(value){renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.shadowMap.needsUpdate=true;}else if(missionShadowState)renderer.shadowMap.type=missionShadowState.type;},
  loadModel:()=>import('../missions/nasa-lunar-module.js').then(module=>module.loadNasaLunarModule()),
@@ -1268,25 +1269,19 @@ window.addEventListener('relic-archive-start',async event=>{
   if (planet === 'moon' || planet === 'mars') {
     const site = getMissionSite(detail.record.id);
     selectBody(planet);
-    if (site && Number.isFinite(site.lat) && Number.isFinite(site.lon)) {
-      focusCoordinates(planet, site.lat, site.lon, 12);
-    }
-    detail.onState?.({
-      progress: 0,
-      playing: false,
-      mode: 'site',
-      status: `${detail.record.name} · Carte 3D détaillée de ${planet === 'moon' ? 'la Lune' : 'Mars'} · ${site?.siteName || 'Surface'}`
-    });
+    if (site && Number.isFinite(site.lat) && Number.isFinite(site.lon)) focusCoordinates(planet, site.lat, site.lon, 12);
+    detail.onState?.({progress:0,playing:false,mode:'site',status:`${detail.record.name} · Carte 3D détaillée de ${planet === 'moon' ? 'la Lune' : 'Mars'} · ${site?.siteName || 'Surface'}`});
     return;
   }
-  const {createArchiveAtlas}=await import('../missions/archive-atlas.js');
-  const controller=createArchiveAtlas({...atlasMissionOptions,record:detail.record,events:detail.events,onState:detail.onState,
+  const {isDistantProbe}=await import('../missions/distant-data.js');
+  const createMission=isDistantProbe(detail.record.id)?(await import('../missions/distant-atlas.js')).createDistantAtlas:(await import('../missions/archive-atlas.js')).createArchiveAtlas;
+  const controller=createMission({...atlasMissionOptions,record:detail.record,events:detail.events,onState:detail.onState,
    getOrientation:id=>(naturalSystems?.getMesh(id)||(id==='moon'?moon:planetMeshes.get(id)))?.getWorldQuaternion(new THREE.Quaternion())||null,
    getPosition:id=>worldPosition(id),getName:id=>bodyData(id)?.name||id,getRadiusKm:id=>CELESTIAL_BODIES[id]?.radiusKm||bodyData(id)?.radiusKm||6371,setDepthScale:value=>missionDepth.setScale(value),
     onContextChanged:()=>applyFocusVisibility(),
    onStop(restore){atlasMissionOptions.onStop(false);atlasMission=apolloAtlasMission;window.dispatchEvent(new CustomEvent('relic-archive-ended',{detail:{id:detail.record.id}}));if(restore)selectBody('overview');}
   });atlasMission=controller;detail.connect(controller);await controller.start();
-  if(detail.initialMode==='site'&&controller.active){controller.setPlaying(false);controller.setMode('site');}
+  if(detail.initialMode&&controller.active){controller.setMode(detail.initialMode);controller.setPlaying(detail.initialMode==='journey');}
  }catch(error){detail.onState?.({status:'La reconstruction ne peut pas démarrer. Rechargez la mission.'});console.error(error);}
 });
 window.addEventListener('pagehide',event=>{if(!event.persisted)atlasMission.dispose();});

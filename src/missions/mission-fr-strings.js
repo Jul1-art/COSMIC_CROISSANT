@@ -1,5 +1,14 @@
 /** Shared French mission UI copy; English keys are the stable source strings. */
 export const MISSION_FR={
+  "3D visualization": "Visualisation 3D",
+  "Deep space": "Espace lointain",
+  "Deep-space position": "Position lointaine",
+  "Journey from Earth": "Voyage depuis la Terre",
+  "Launch from Earth": "Départ de la Terre",
+  "Present-day position": "Position actuelle",
+  "Spacecraft distance": "Distance de la sonde",
+  "Departure from Earth · followed by the NASA/JPL Horizons heliocentric trajectory.": "Départ de la Terre · puis trajectoire héliocentrique NASA/JPL Horizons.",
+  "Position calculated from NASA/JPL Horizons ephemerides · geometric distances to Earth and the Sun.": "Position calculée avec les éphémérides NASA/JPL Horizons · distances géométriques à la Terre et au Soleil.",
   "Drag to rotate · Right-drag to pan · Scroll to zoom": "Glisser pour tourner · Clic droit pour déplacer · Molette pour zoomer",
   "Mission position": "Position dans la mission",
   "Reset camera": "Recentrer",

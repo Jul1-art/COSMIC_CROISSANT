@@ -1,4 +1,18 @@
 @font-face{font-family:RelicInter;src:url('../../vendor/gods-eye-view/fonts/inter.woff2') format('woff2');font-weight:100 900;font-display:swap}
+.distant-readout{margin:12px 0;border-top:1px solid var(--chrome-line,#ffffff24);padding-top:10px}
+.distant-readout>dl{display:grid;gap:8px;margin:0 0 8px;font-size:10px}
+.mission-popup .distant-readout>dl>div{display:grid!important;gap:3px;grid-template-columns:1fr!important}
+.mission-popup .distant-readout>dl dd{text-align:left!important;font-variant-numeric:tabular-nums;font-weight:500}
+.distant-readout>dl [data-earth-distance]{font-size:14px;letter-spacing:-.3px}
+.distant-readout>small{display:block;font-size:8px;line-height:1.5;color:var(--chrome-muted,#b6b6b6)}
+.voyager-light-day{margin-top:12px;padding:10px;border:1px solid #d8b76d40;background:#d8b76d09;border-radius:8px;display:grid;gap:6px}
+.voyager-light-day strong{font-size:10px;font-weight:500;color:#e2ca94}
+.voyager-light-day output{font-size:17px;letter-spacing:.02em;font-variant-numeric:tabular-nums}
+.voyager-light-day small{font-size:8px;line-height:1.6;color:var(--chrome-muted,#b6b6b6)}
+.voyager-light-day a{width:max-content;color:#e2ca94;font-size:8px;text-decoration:none}
+.distant-mobile-metrics{display:none}
+@media(max-width:650px){body.distant-mission-active .mission-card-stack{right:12px!important;max-height:42dvh!important;top:84px!important}body.distant-mission-active .mission-card-stack:has(.mission-popup[hidden]){display:none}}
+@media(max-width:650px){.atlas-mission-controls[data-distant-mode]:not([data-distant-mode=journey]) #archive-event-text{display:none}.atlas-mission-controls[data-distant-mode] .distant-mobile-metrics{display:block;font-variant-numeric:tabular-nums;color:var(--chrome-ink,#fff);font-size:11px;line-height:1.7}.distant-mission-active .mission-free-badge>span{display:none}.distant-mission-active .mission-free-badge .archive-mission-name{max-width:140px!important}}
 .mission-popup,.mission-actions,.atlas-mission-controls{font:12px/1.5 RelicInter,system-ui,sans-serif;color:var(--chrome-ink,#fff);box-sizing:border-box;-webkit-font-smoothing:antialiased}
 .mission-popup *,.mission-actions *,.atlas-mission-controls *{box-sizing:border-box}
 .mission-popup[hidden],.mission-actions[hidden],.mission-marker[hidden]{display:none!important}

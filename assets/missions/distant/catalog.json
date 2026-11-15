@@ -1,0 +1,23 @@
+{
+  "source": "NASA/JPL Horizons",
+  "sourceUrl": "https://ssd.jpl.nasa.gov/horizons/",
+  "retrievedAt": "2026-11-15T20:48:32.922751+00:00",
+  "frame": "heliocentric J2000 ecliptic / ICRF",
+  "center": "500@10",
+  "timeScale": "UTC",
+  "correction": "geometric / NONE",
+  "units": {
+    "position": "km",
+    "velocity": "km/day",
+    "epoch": "JD UTC"
+  },
+  "interpolation": "cubic Hermite; no extrapolation",
+  "probes": {
+    "voyager-1": "voyager-1.json",
+    "voyager-2": "voyager-2.json",
+    "pioneer-10": "pioneer-10.json",
+    "pioneer-11": "pioneer-11.json",
+    "new-horizons": "new-horizons.json"
+  },
+  "planets": "planets.json"
+}

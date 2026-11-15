@@ -3,7 +3,10 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 
 const source=await readFile(new URL('../src/worlds/embedded-globe.js',import.meta.url),'utf8');
-const gestures=source.slice(source.indexOf('    const touchPoints=new Map();'),source.indexOf("    scene.canvas.addEventListener('pointerdown',interaction"));
+const start=source.search(/\bconst\s+touchPoints\s*=\s*new\s+Map\(\)/);
+const end=source.slice(start).search(/scene\.canvas\.addEventListener\('pointerdown',\s*interaction/);
+assert(start>=0&&end>0,'The real touch gesture handlers must be present in the fixture');
+const gestures=source.slice(start,start+end);
 function fixture(){
   const handlers=new Map(),updates=[],zooms=[],looks=[],captured=new Set(),controller={enableInputs:true};
   const canvas={clientWidth:800,clientHeight:600,
