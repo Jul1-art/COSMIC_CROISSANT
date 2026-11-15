@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261115-v96-recorded-typing';
-const INTERFACE_RELEASE = 'missions-20261115-v96';
+const VERSION = 'missions-20261115-v97-keyboard-mix';
+const INTERFACE_RELEASE = 'missions-20261115-v97';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;

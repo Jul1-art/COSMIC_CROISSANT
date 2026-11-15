@@ -8,7 +8,7 @@
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "sourceSha1": "35b9888564d62e8a67e0ad4fa9e9668c977a33ed",
   "recording": "Real keyboard recorded on a Rode NT1 microphone.",
-  "modifications": "Eight 130 ms excerpts; mono mix, per-excerpt peak alignment, 1 ms fade in and 6 ms fade out. No synthesized sound, pitch shifting, or added effects.",
+  "modifications": "Eight 130 ms excerpts; mono mix, per-excerpt peak alignment, 1 ms fade in and 6 ms fade out. No synthesized sound or pitch shifting. Playback equalization is documented below.",
   "file": "keyboard-keys.wav",
   "sha256": "5ed711a29799a0d4ded787f1d578c167e99a94729bc473ef465ddc76dc4f7a18",
   "clips": [
@@ -60,5 +60,13 @@
       "spriteStartSeconds": 0.91,
       "spriteDurationSeconds": 0.13
     }
-  ]
+  ],
+  "playbackProcessing": {
+    "highpassHz": 90,
+    "lowpassHz": 6500,
+    "filterQ": 0.707,
+    "gain": 0.4,
+    "gainChangeDb": 7.96,
+    "keySelection": "Random recorded key, excluding the preceding key; original pitch and speed."
+  }
 }
