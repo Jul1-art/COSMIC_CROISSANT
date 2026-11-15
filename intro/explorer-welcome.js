@@ -16,7 +16,7 @@ export function createExplorerWelcome({host,getLanguage,setLanguage,reducedMotio
  function restore(){for(const [node,inert]of background)node.inert=inert;}
  host.before(root);host.hidden=true;
  const title=root.querySelector('h1'),interaction=root.querySelector('.welcome-interaction'),back=root.querySelector('.welcome-back');
- const sound=createTypingSound();root.addEventListener('pointerdown',sound.unlock,{passive:true});root.addEventListener('keydown',sound.unlock);
+ const sound=createTypingSound();root.addEventListener('pointerdown',sound.unlock,{passive:true});root.addEventListener('keydown',sound.unlock);root.addEventListener('touchstart',sound.unlock,{passive:true});
  const typing=createOpeningTyping({element:title,getLanguage,reducedMotion});
  let step=0,name=getExplorerName(),frame=0,disposed=false,typed=false,duration=0;
  let compact=innerWidth<=650;
@@ -41,7 +41,30 @@ export function createExplorerWelcome({host,getLanguage,setLanguage,reducedMotio
  }
  function completeTyping(){cancelAnimationFrame(frame);typing.render({position:Math.max(1,duration+.15),gated:false});typed=true;root.classList.add('welcome-typing-done');}
  function advance(){if(step>=4||disposed)return;if(!typed){completeTyping();return;}step++;render();}
- root.addEventListener('click',event=>{if(!event.target.closest('button,input,form,a'))advance();});
+ let touchStartX=0,touchStartY=0,touchMoved=false,touchHandled=false;
+ root.addEventListener('touchstart',event=>{
+  sound.unlock();
+  if(event.touches.length===1){touchStartX=event.touches[0].clientX;touchStartY=event.touches[0].clientY;touchMoved=false;}
+ },{passive:true});
+ root.addEventListener('touchmove',event=>{
+  if(event.touches.length===1){
+   const dx=event.touches[0].clientX-touchStartX,dy=event.touches[0].clientY-touchStartY;
+   if(dx*dx+dy*dy>144)touchMoved=true;
+  }
+ },{passive:true});
+ root.addEventListener('touchend',event=>{
+  sound.unlock();
+  if(touchMoved)return;
+  if(event.target.closest('button,input,form,a'))return;
+  if(event.cancelable)event.preventDefault();
+  touchHandled=true;
+  setTimeout(()=>{touchHandled=false;},400);
+  advance();
+ },{passive:false});
+ root.addEventListener('click',event=>{
+  if(touchHandled)return;
+  if(!event.target.closest('button,input,form,a'))advance();
+ });
  root.addEventListener('keydown',event=>{if(step<4&&['Enter',' '].includes(event.key)&&!event.target.closest('button,input,form,a')){event.preventDefault();advance();}});
  back.onclick=()=>{if(step===5)name=normalizeExplorerName(root.querySelector('input')?.value);step=Math.max(0,step-1);render();};
  render(false);title.focus({preventScroll:true});
