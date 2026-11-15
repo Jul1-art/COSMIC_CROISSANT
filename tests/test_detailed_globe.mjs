@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import {readFile} from 'node:fs/promises';
 import {normalizeVisualSettings} from '../src/ui/visual-effects.js';
+import {MISSION_SITES} from '../src/missions/mission-sites.js';
 
 async function fixture(){
   const messages=[],states=[],fpsEvents=[],listeners=new Map(),frames=[],observers=[];
@@ -14,6 +15,7 @@ async function fixture(){
   const source=await readFile(new URL('../src/atlas/detailed-globe.js',import.meta.url),'utf8');
   const module=new vm.SourceTextModule(source,{context,initializeImportMeta(meta){meta.url='https://example.invalid/RELIC/src/atlas/detailed-globe.js';}});
   await module.link(name=>{
+    if(name==='../missions/mission-sites.js')return new vm.SyntheticModule(['MISSION_SITES'],function(){this.setExport('MISSION_SITES',MISSION_SITES);},{context});
     assert.equal(name,'../ui/visual-effects.js');
     return new vm.SyntheticModule(['normalizeVisualSettings'],function(){this.setExport('normalizeVisualSettings',normalizeVisualSettings);},{context});
   });await module.evaluate();
@@ -107,10 +109,10 @@ test('FPS accepts real zero only from the current visible same-origin renderer',
  send(0);assert.equal(f.fpsEvents[0].detail.fps,0);assert.equal(f.fpsEvents[0].detail.body,'earth');f.globe.dispose();
 });
 
-test('mission popups accept only Apollo 11 from the current Moon iframe',async()=>{
+test('mission popups reject unrelated bodies, replaced frames and untrusted origins',async()=>{
   const f=await fixture();
   const send=(frame,id='apollo-11',origin='https://example.invalid')=>f.listeners.get('message')({origin,source:frame.contentWindow,data:{channel:'relic-detailed-globe-v15',type:'mission',id}});
-  f.globe.setFocus({id:'earth'});const earth=f.frames[0];send(earth);assert.equal(f.fpsEvents.length,0);
+  f.globe.setFocus({id:'earth'});const earth=f.frames[0];send(earth,'surveyor-1');assert.equal(f.fpsEvents.length,0);
   f.globe.setFocus({id:'moon'});const moon=f.frames[1];send(earth);send(moon,'apollo-11','https://untrusted.invalid');send(moon,'unknown');assert.equal(f.fpsEvents.length,0);
   send(moon);assert.equal(f.fpsEvents.length,1);assert.equal(f.fpsEvents[0].type,'relic-mission-open');assert.equal(f.fpsEvents[0].detail.id,'apollo-11');f.globe.dispose();
 });
@@ -138,4 +140,15 @@ test('reduced-motion arrival completes immediately and cannot leave the input sh
  const f=await fixture();f.document.documentElement.dataset.motion='reduced';f.globe.setFocus({id:'earth'},{animateArrival:true});
  f.receive(f.frames[0],'ready');f.globe.reveal();assert.equal(f.globe.active,true);assert.equal(f.globe.loading,false);assert.equal(f.globe.transitioning,false);
  assert.ok(!f.messages.some(row=>row.message.action==='reveal'),'Reduced motion does not launch a camera journey');f.globe.dispose();
+});
+
+test('every surface dossier opens from its own globe while unrelated missions are rejected',async()=>{
+ const f=await fixture();
+ for(const body of ['earth','moon','mars']){
+  f.globe.setFocus({id:body});const frame=f.frames.at(-1);
+  const send=id=>f.listeners.get('message')({origin:'https://example.invalid',source:frame.contentWindow,data:{channel:'relic-detailed-globe-v15',type:'mission',id}});
+  for(const site of MISSION_SITES[body]){const before=f.fpsEvents.length;send(site.id);assert.equal(f.fpsEvents.length,before+1,`${body}: ${site.id} was dropped by the bridge`);assert.equal(f.fpsEvents.at(-1).detail.id,site.id);}
+  const before=f.fpsEvents.length;send('voyager-1');send('not-a-mission');assert.equal(f.fpsEvents.length,before);
+ }
+ f.globe.dispose();
 });

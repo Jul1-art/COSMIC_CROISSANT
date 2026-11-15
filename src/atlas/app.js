@@ -3,6 +3,8 @@ import {createMissionDepth} from '../missions/mission-depth.js';
 import {createFlightLine} from '../missions/flight-lines.js';
 import {createAtlasMission} from '../missions/atlas-mission.js';
 import {createMissionMarkers} from '../missions/mission-markers.js';
+import {createDistantProbeMenu} from '../missions/distant-probes.js';
+import {openMission} from '../missions/mission-ui.js';
 import {createRenderedFrameMeter} from '../worlds/world-performance.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -1173,7 +1175,7 @@ function restoreInspection(id){
   if(Number.isFinite(lat)&&Number.isFinite(lon))focusCoordinates(id,lat,lon,Number.isFinite(range)?range/1000:undefined,{heading,tilt});
 }
 if (atlasBodies.has(requestedBody)) restoreInspection(requestedBody);
-createComet67P({THREE,scene,auToWorld,onSelect:id=>selectBody(id),getLanguage,camera,labelHost}).then(mission=>{
+createComet67P({THREE,scene,auToWorld,onSelect:id=>{selectBody(id);if(id==='philae'||id==='rosetta')openMission('rosetta-philae','summary');},getLanguage,camera,labelHost}).then(mission=>{
   comet=mission;pickable.push(...mission.pickable);solarIllumination.register('67p',mission.getMesh('67p'));syncInspectionScene();
   cometOrbitDirections=createOrbitDirections({THREE,scene,planets:[{id:'67p',orbit:90,size:mission.getBody('67p').size}],orbitLines:new Map([['67p',mission.orbit]]),getPosition:()=>mission.worldPosition('67p')});
   cometOrbitDirections.setTheme(currentScenePalette.light?'day':'night');mission.orbit.material.color.set(currentScenePalette.orbit);mission.orbit.material.opacity=currentScenePalette.orbitOpacity;
@@ -1256,19 +1258,22 @@ window.addEventListener('relic-archive-start',async event=>{
     onContextChanged:()=>applyFocusVisibility(),
    onStop(restore){atlasMissionOptions.onStop(false);atlasMission=apolloAtlasMission;window.dispatchEvent(new CustomEvent('relic-archive-ended',{detail:{id:detail.record.id}}));if(restore)selectBody('overview');}
   });atlasMission=controller;detail.connect(controller);await controller.start();
+  if(detail.initialMode==='site'&&controller.active){controller.setPlaying(false);controller.setMode('site');}
  }catch(error){detail.onState?.({status:'La reconstruction ne peut pas démarrer. Rechargez la mission.'});console.error(error);}
 });
 window.addEventListener('pagehide',event=>{if(!event.persisted)atlasMission.dispose();});
+const distantProbeMenu=createDistantProbeMenu();
+window.addEventListener('pagehide',event=>{if(!event.persisted)distantProbeMenu.dispose();});
 const missionMarkers=createMissionMarkers({
   THREE,
   camera,
   getMoon:()=>naturalSystems?.getMesh('moon')||moon,
-  getBodyMesh:id=>id==='moon'?(naturalSystems?.getMesh('moon')||moon):planetMeshes.get(id),
+  getBodyMesh:id=>naturalSystems?.getMesh(id)||(id==='moon'?moon:planetMeshes.get(id)),
   getSelected:()=>selected,
   isDetailed:()=>detailedGlobe.active,
   onLocate:site=>{
-    const targetBody=selected==='overview'?'moon':selected;
-    selectBody(targetBody);focusDetailedView(targetBody,{lat:site.latitude||site.lat,lon:site.longitude||site.lon,range:1200,tilt:35});
+    const targetBody=site.body||(selected==='overview'?'moon':selected);
+    selectBody(targetBody);focusCoordinates(targetBody,site.latitude??site.lat,site.longitude??site.lon,12);
   }
 });
 camera.userData.missionViewport=()=>renderer.domElement.getBoundingClientRect();
@@ -1479,6 +1484,7 @@ function animate(time) {
   if (!atlasMission.active && !detailedGlobe.active && !flight && time >= surfaceSettleUntil) surfaceDetail.update(time, selected, surfaceMesh, bodyData(selected)?.size);
   positionLabels();
   missionMarkers.update();
+  distantProbeMenu.update({overview:selected==='overview',mission:atlasMission.active||atlasMission.starting,film:filmActive,launchpad:launchpadView?.active});
   previousNavigationCamera.copy(camera.position);
   if(!detailedGlobe.active){
     if(isWorldInspection()||inspectionSettings.style!=='normal')inspectionEffects.render(time);else renderer.render(scene,camera);

@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261115-v99-apollo-site-camera';
-const INTERFACE_RELEASE = 'missions-20261115-v99';
+const VERSION = 'missions-20261115-surface-probes-1';
+const INTERFACE_RELEASE = 'missions-20261115-surface-probes-1';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -45,7 +45,7 @@ const OFFLINE_CORE = [
   'assets/missions/apollo-11/trajectory.json','assets/missions/apollo-11/trajectory-anchors.json','src/missions/mission-depth.js','src/missions/flight-lines.js','src/missions/apollo-surface.js','src/missions/apollo-surface-math.js','vendor/three-addons/lines/Line2.js','vendor/three-addons/lines/LineSegments2.js','vendor/three-addons/lines/LineGeometry.js','vendor/three-addons/lines/LineSegmentsGeometry.js','vendor/three-addons/lines/LineMaterial.js','src/missions/apollo-flight.js','src/missions/atlas-mission.js','src/missions/mission-motion.js','src/missions/mission-camera.js','src/missions/nasa-lunar-module.js',
   'assets/missions/apollo-11/models/lunar-module.glb',
   'vendor/three-addons/loaders/GLTFLoader.js','vendor/three-addons/loaders/DRACOLoader.js','vendor/three-addons/utils/BufferGeometryUtils.js','vendor/three-addons/environments/RoomEnvironment.js','vendor/three-addons/libs/draco/draco_wasm_wrapper.js','vendor/three-addons/libs/draco/draco_decoder.wasm',
-  'src/missions/mission-sites.js','src/missions/mission-icons.js','src/missions/apollo11-data.js','src/missions/mission-ui.js','src/missions/launchpad-view.js','src/missions/mission-scene.js','src/missions/mission-models.js','src/missions/mission-markers.js','src/missions/cesium-mission-marker.js','src/missions/missions.css',
+  'src/missions/marker-labels.js','src/missions/distant-probes.js','src/missions/distant-probes.css','src/missions/mission-sites.js','src/missions/mission-icons.js','src/missions/apollo11-data.js','src/missions/mission-ui.js','src/missions/launchpad-view.js','src/missions/mission-scene.js','src/missions/mission-models.js','src/missions/mission-markers.js','src/missions/cesium-mission-marker.js','src/missions/missions.css',
   'src/satellites/propagation-worker.js','vendor/gods-eye-view/detection/detectionPolicy.js','vendor/gods-eye-view/detection/labelArbiter.js','vendor/gods-eye-view/detection/keyhole.js',
   'src/satellites/detection.js','vendor/gods-eye-view/detection/detectionDraw.js','vendor/gods-eye-view/detection/i18n.js',
   ...CORE,

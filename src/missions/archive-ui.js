@@ -12,7 +12,7 @@ const button=(label,action,attributes='')=>`<button type="button" data-archive-a
 let instance=null,generation=0;
 export async function openArchiveMission(id,view='summary'){
  const token=++generation;
- if(instance?.record.id===id){instance.card.hidden=false;instance.stack.hidden=false;if(view==='explore')instance.start();return;}
+ if(instance?.record.id===id){instance.card.hidden=false;instance.stack.hidden=false;if(view==='explore'||view==='spacecraft')instance.start(view==='spacecraft'?'site':null);return;}
  instance?.dispose();instance=null;
  const record=await loadJSON(`${id}.json`);if(token!==generation)return;discoverMission(record.id);
  if(view==='video'){openVideo(id);return;}
@@ -35,8 +35,8 @@ export async function openArchiveMission(id,view='summary'){
   if(status)panel.querySelector('#archive-status').textContent=status;
   panel.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===mode)));
  }
- async function start(){
-  if(controller||starting)return;starting=true;actions.hidden=false;card.querySelector('[data-archive-action=menu]').setAttribute('aria-expanded','true');
+ async function start(initialMode=null){
+  if(controller){if(initialMode&&controller.active){controller.setPlaying(false);controller.setMode(initialMode);}return;}if(starting)return;starting=true;actions.hidden=false;card.querySelector('[data-archive-action=menu]').setAttribute('aria-expanded','true');
   window.dispatchEvent(new CustomEvent('relic-sputnik-command',{detail:{action:'stop'}}));
   panel=document.createElement('section');panel.className='atlas-mission-controls';panel.setAttribute('aria-label',`${record.name} · reconstruction 3D`);
   panel.innerHTML=`<div class="atlas-mission-heading"><div><span>${e(record.name.toUpperCase())}</span><h2 id="archive-event-title">${e(events[0].title)}</h2></div>${button(icon('close'),'exit','aria-label="Exit reconstruction"')}</div><p id="archive-event-text">${e(events[0].text)}</p><div class="atlas-mission-views">${button('Mission overview','journey','data-view="journey" aria-pressed="true"')}${button('Around the destination','orbit','data-view="orbit" aria-pressed="false"')}${button('Spacecraft and instruments','site','data-view="site" aria-pressed="false"')}${button('Reset camera','reset')}</div><div class="atlas-mission-transport">${button(icon('play'),'play','aria-label="Play mission"')}<label class="mission-sr-only" for="archive-time">Mission position</label><input id="archive-time" type="range" min="0" max="${Math.max(1,events.length-1)}" step="0.001" value="0"><label class="mission-sr-only" for="archive-speed">Playback speed</label><select id="archive-speed"><option value=".5">×0,5</option><option value="1" selected>×1</option><option value="2">×2</option><option value="4">×4</option></select></div><div class="atlas-mission-meta"><output id="archive-clock">${e(events[0].date)}</output><label class="mission-sr-only" for="archive-chapter">Mission chapter</label><select id="archive-chapter">${events.map((ev,i)=>`<option value="${i}">${e(ev.title)}</option>`).join('')}</select></div><small id="archive-status" role="status">Reconstruction pédagogique · jalons de la fiche mission · préparation de l’engin…</small>`;
@@ -45,7 +45,7 @@ export async function openArchiveMission(id,view='summary'){
   panel.querySelector('#archive-time').oninput=event=>{controller?.setPlaying(false);controller?.setProgress(Number(event.target.value));};
   panel.querySelector('#archive-speed').onchange=event=>controller?.setSpeed(Number(event.target.value));
   panel.querySelector('#archive-chapter').onchange=event=>{controller?.setPlaying(false);controller?.setProgress(Number(event.target.value));};
-  window.dispatchEvent(new CustomEvent('relic-archive-start',{detail:{record,events,onState:report,connect:next=>{if(disposed){next.dispose();return;}controller=next;starting=false;}}}));
+  window.dispatchEvent(new CustomEvent('relic-archive-start',{detail:{record,events,initialMode,onState:report,connect:next=>{if(disposed){next.dispose();return;}controller=next;starting=false;}}}));
   disclosure=makeMissionControlsCollapsible(panel);for(const input of panel.querySelectorAll('button,input,select'))if(input.dataset.archiveAction!=='exit'&&!input.classList.contains('mission-controls-collapse'))input.disabled=true;badgeLocale=localizeMissionElement(badge);
   revealMissionElement(panel,{duration:320,distance:8});revealMissionElement(actions,{duration:240,distance:5});
  }
@@ -65,5 +65,5 @@ export async function openArchiveMission(id,view='summary'){
  function ended(event){if(event.detail?.id===id)dispose();}
  window.addEventListener('relic-archive-ended',ended);
  function dispose(){if(disposed)return;disposed=true;disclosure?.dispose();badgeLocale?.dispose();cardLocale.dispose();controller?.dispose();stack.remove();panel?.remove();badge?.remove();annotations?.remove();window.removeEventListener('relic-mission-annotations',updateAnnotations);document.body.classList.remove('mission-exploring');document.removeEventListener('keydown',escape);window.removeEventListener('relic-archive-ended',ended);if(instance?.record.id===id)instance=null;}
- instance={record,card,stack,start,dispose};revealMissionElement(card,{duration:220,distance:5});if(view==='explore')start();
+ instance={record,card,stack,start,dispose};revealMissionElement(card,{duration:220,distance:5});if(view==='explore'||view==='spacecraft')start(view==='spacecraft'?'site':null);
 }

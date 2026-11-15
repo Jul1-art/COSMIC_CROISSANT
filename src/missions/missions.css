@@ -5,10 +5,11 @@
 .mission-popup button,.mission-actions button,.atlas-mission-controls button{font:inherit;color:inherit;cursor:pointer}
 .mission-popup svg,.mission-actions svg,.atlas-mission-controls svg,.mission-film-close svg{width:16px;height:16px;flex-shrink:0}
 .mission-popup :focus-visible,.mission-actions :focus-visible,.atlas-mission-controls :focus-visible,.mission-marker:focus-visible{outline:2px solid var(--chrome-focus,#fff);outline-offset:3px}
-.mission-marker{position:fixed;z-index:46;display:flex;align-items:center;flex-direction:column;gap:7px;padding:0;border:0;background:none;cursor:pointer;transform:translate(-50%,-100%);filter:drop-shadow(0 3px 5px #0008)}
-.mission-marker svg{display:block;width:34px;height:42px;transition:transform .2s}
+.mission-marker{position:fixed;z-index:46;display:flex;align-items:center;flex-direction:column;width:34px;height:42px;padding:0;border:0;background:none;cursor:pointer;transform:translate(-50%,-100%);filter:drop-shadow(0 3px 5px #0008)}
+.mission-marker svg{position:relative;z-index:1;display:block;width:34px;height:42px;transition:transform .2s}
 .mission-marker:hover svg{transform:translateY(-3px)}
-.mission-marker span{border:1px solid #ffffff30;border-radius:5px;background:#111e;color:#fff;padding:3px 8px;font:10px RelicInter,system-ui,sans-serif;white-space:nowrap}
+.mission-marker span{position:absolute;z-index:2;bottom:calc(100% + 6px + var(--mission-label-offset,0px));left:calc(50% + var(--mission-label-x,0px));transform:translateX(-50%);border:1px solid #ffffff30;border-radius:5px;background:#111e;color:#fff;padding:3px 8px;font:10px RelicInter,system-ui,sans-serif;white-space:nowrap}
+.mission-marker-leader{position:absolute;left:50%;top:100%;height:1px;background:#ffffff60;transform-origin:0 0;pointer-events:none}
 .mission-popup{position:fixed;z-index:9000;width:238px;max-width:calc(100vw - 24px);padding:14px;border:1px solid var(--chrome-line,#ffffff24);border-radius:12px;background:var(--chrome-surface,#080808);box-shadow:var(--chrome-shadow,0 16px 54px #0007)}
 .mission-popup header{display:flex;align-items:center;gap:8px;margin-bottom:13px}
 .mission-popup h2{font-size:15px;line-height:1.2;font-weight:550;letter-spacing:-.3px;margin:0}

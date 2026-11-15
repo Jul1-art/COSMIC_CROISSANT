@@ -2,8 +2,9 @@ import {APOLLO_11} from './apollo11-data.js';
 import {SPUTNIK} from './sputnik.js';
 import {localizeMissionElement} from './mission-locale.js';
 import {PIN_SVG} from './mission-icons.js';
-import {getMissionSitesForBody} from './mission-sites.js';
+import {getMissionSitesForBody,missionSiteLabelOffset} from './mission-sites.js';
 import {discoverMission} from '../core/mission-discoveries.js';
+import {layoutMissionLabels} from './marker-labels.js';
 
 /**
  * Interactive, keyboard-accessible 3D surface pins for missions across Mars, Moon, and Earth.
@@ -133,6 +134,9 @@ export function createCesiumMissionMarker({
     marker.innerHTML = PIN_SVG + `<span>${site.name}</span>`;
     marker.setAttribute('aria-label', `${site.name} · ${site.siteName || ''} · open mission`);
     marker.dataset.missionId = site.id;
+    marker.title = `${site.siteName} · ${site.year}`;
+    marker.dataset.siteKind = site.kind || 'landing';
+    marker.style.setProperty('--mission-label-offset',`${missionSiteLabelOffset(site,sites)}px`);
     container.append(marker);
 
     const locale = localizeMissionElement(marker);
@@ -202,11 +206,16 @@ export function createCesiumMissionMarker({
     }
   }
 
-  const stop = viewer.scene.postRender.addEventListener(update);
-  update();
+  const renderMarkers = () => {
+    update();
+    const bounds=viewer.canvas?.getBoundingClientRect?.()||{left:0,top:0,width:innerWidth,height:innerHeight};
+    layoutMissionLabels(markerEntries,bounds);
+  };
+  const stop = viewer.scene.postRender.addEventListener(renderMarkers);
+  renderMarkers();
 
   return {
-    update,
+    update:renderMarkers,
     setVisible(value) {
       enabled = Boolean(value);
       update();

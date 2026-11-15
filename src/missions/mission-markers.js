@@ -1,7 +1,8 @@
 import {localizeMissionElement} from './mission-locale.js';
 import {PIN_SVG,installMissionUI,openMission} from './mission-ui.js';
-import {getMissionSitesForBody,MISSION_SITES} from './mission-sites.js';
+import {missionSiteLabelOffset,MISSION_SITES} from './mission-sites.js';
 import {discoverMission} from '../core/mission-discoveries.js';
+import {layoutMissionLabels} from './marker-labels.js';
 
 /**
  * Universal Three.js mission markers on planetary globes (Moon, Mars, Earth, Venus).
@@ -32,6 +33,9 @@ export function createMissionMarkers({THREE,camera,getMoon,getBodyMesh,getSelect
       marker.setAttribute('aria-label', `${site.name} · ${site.siteName || ''} · open mission`);
       marker.innerHTML = PIN_SVG + `<span>${site.name}</span>`;
       marker.dataset.missionId = site.id;
+      marker.title = `${site.siteName} · ${site.year}`;
+      marker.dataset.siteKind = site.kind || 'landing';
+      marker.style.setProperty('--mission-label-offset',`${missionSiteLabelOffset(site,sites)}px`);
       container.append(marker);
 
       const locale = localizeMissionElement(marker);
@@ -49,7 +53,7 @@ export function createMissionMarkers({THREE,camera,getMoon,getBodyMesh,getSelect
         discoverMission(site.id);
         const bounds = marker.getBoundingClientRect();
         const anchor = { x: bounds.left + bounds.width / 2, y: bounds.bottom };
-        onLocate?.({ latitude: site.lat, longitude: site.lon, ...site });
+        onLocate?.({ body, latitude: site.lat, longitude: site.lon, ...site });
         openMission(site.id, 'summary', anchor);
       };
 
@@ -63,10 +67,10 @@ export function createMissionMarkers({THREE,camera,getMoon,getBodyMesh,getSelect
 
   const locate = event => {
     const id = event.detail?.id;
-    for (const entries of entriesByBody.values()) {
+    for (const [body, entries] of entriesByBody) {
       const match = entries.find(e => e.site.id === id);
       if (match) {
-        onLocate?.(match.site);
+        onLocate?.({body,...match.site});
         break;
       }
     }
@@ -142,6 +146,7 @@ export function createMissionMarkers({THREE,camera,getMoon,getBodyMesh,getSelect
           }
         }
       }
+      layoutMissionLabels(activeEntries,viewport);
     },
     hide: hideAll,
     dispose() {

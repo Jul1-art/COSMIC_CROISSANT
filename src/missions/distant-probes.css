@@ -1,0 +1,24 @@
+/* Same glass, typography, divider and disclosure geometry as Display. */
+.distant-probes{position:fixed;z-index:47;right:max(16px,env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);width:176px;max-width:calc(100vw - 32px);pointer-events:none;font-family:var(--font-mono,monospace)}
+.distant-probes[hidden],.distant-probes [hidden]{display:none!important}
+.distant-probes.is-expanded{width:272px}
+.distant-probes-module{pointer-events:auto;border:1px solid var(--glass-border,#ffffff24);border-radius:var(--panel-radius,16px);background:var(--glass-bg,#10141bea);box-shadow:0 8px 32px #0006,inset 0 1px #ffffff0a;backdrop-filter:blur(24px) saturate(1.4);-webkit-backdrop-filter:blur(24px) saturate(1.4);overflow:hidden}
+.distant-probes button{font:inherit;cursor:pointer;color:var(--text-primary,#edf2f8)}
+.distant-probes-toggle{display:flex;align-items:center;gap:12px;width:100%;min-height:42px;padding:8px 18px;border:0;background:transparent;text-align:left;border-radius:16px}
+.distant-probes-title{color:var(--text-secondary,#b9c2ce);font-size:.58rem;font-weight:500;line-height:1.3;letter-spacing:.13rem;text-transform:uppercase}
+.distant-probes .panel-divider{flex:1;height:1px;background:var(--glass-border,#ffffff24)}
+.distant-probes-toggle svg{width:22px;height:22px;flex:0 0 22px;padding:4px;box-sizing:border-box;border:1px solid var(--glass-border,#ffffff24);border-radius:6px;background:#ffffff05;transform:rotate(180deg);transition:transform .2s}
+.distant-probes-toggle[aria-expanded=true] svg{transform:rotate(90deg);color:var(--accent,#9edcec)}
+#distant-probes-list{padding:12px;border-top:1px solid var(--glass-border,#ffffff24);max-height:min(430px,calc(100dvh - 210px));overflow:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.distant-probes-intro{margin:0 0 10px;font:11px/1.6 var(--font-sans,system-ui,sans-serif);color:var(--text-secondary,#a4afbe)}
+.distant-probes-entries{display:grid;gap:5px}
+.distant-probe{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:12px 10px;background:#ffffff03;border:1px solid #ffffff0b;border-radius:8px;text-align:left}
+.distant-probe strong{display:block;font-size:11px;letter-spacing:.03em;font-weight:500}
+.distant-probe small{display:block;margin-top:5px;font-size:9px;line-height:1.5;color:var(--text-secondary,#a4afbe)}
+.distant-probe-arrow{font-size:16px;color:var(--accent,#9edcec)}
+.distant-probes button:hover{background:#ffffff0a}
+.distant-probes button:focus-visible,.distant-probes a:focus-visible{outline:2px solid var(--accent,#9edcec);outline-offset:-3px}
+.distant-probes-source{display:block;width:max-content;margin-top:12px;font-size:9px;color:var(--text-secondary,#a4afbe);text-decoration:none;letter-spacing:.08em}
+body[data-film-active=true] .distant-probes,body.mission-exploring .distant-probes{display:none!important}
+@media(max-width:600px){.distant-probes{right:10px;width:156px}.distant-probes.is-expanded{width:min(272px,calc(100vw - 20px))}.distant-probes-toggle{padding:8px 12px;gap:8px}.distant-probes-title{font-size:.55rem;letter-spacing:.08rem}}
+@media(prefers-reduced-motion:reduce){.distant-probes-toggle svg{transition:none}}
