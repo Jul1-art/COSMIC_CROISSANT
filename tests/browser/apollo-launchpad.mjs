@@ -1,3 +1,4 @@
+import {skipWelcome} from './onboarding-helper.mjs';
 /** TEST_BASE_URL=http://localhost:4174 PLAYWRIGHT_MODULE=/path/to/playwright
  * CHROMIUM_PATH=/usr/bin/chromium node tests/browser/apollo-launchpad.mjs */
 import assert from 'node:assert/strict';
@@ -10,7 +11,7 @@ try{
  page.on('pageerror',e=>errors.push(e.message.replace(/https?:\/\/\S+/g,'[provider URL]')));
  await page.addInitScript(()=>{localStorage.setItem('relic.spacey-tour.v1','dismissed');window.padStates=[];window.addEventListener('message',e=>{if(e.data?.type==='state'&&e.data.state?.id==='earth')window.padStates.push({source:e.data.state.sourceMode,ion:e.data.state.ionStatus,lat:e.data.state.latitude,lon:e.data.state.longitude});});});
  await page.goto(new URL('/?mission=apollo-11&missionView=explore',base).href,{waitUntil:'domcontentloaded'});
- await page.waitForFunction(()=>Boolean(window.RELICFilm),{timeout:60000});if(await page.evaluate(()=>window.RELICFilm.phase!=='closed'))await page.locator('#intro .prologue-enter').click();
+ await page.waitForFunction(()=>Boolean(window.RELICFilm),{timeout:60000});await skipWelcome(page);if(await page.evaluate(()=>window.RELICFilm.phase!=='closed'))await page.locator('#intro .prologue-enter').click();
  const timeline=page.locator('.atlas-mission-controls[aria-label="Apollo 11 reconstruction"]');await timeline.waitFor({timeout:60000});await page.waitForFunction(()=>document.querySelector('.atlas-mission-controls')?.getAttribute('aria-busy')==='false',{timeout:60000});
  await page.selectOption('#mission-chapter','launch');const time=await page.locator('#mission-time-slider').inputValue();
  await page.locator('#mission-vehicle-key').click();await page.locator('#mission-launchpad').waitFor();await page.waitForFunction(()=>document.body.dataset.detailedGlobe==='active',{timeout:60000});

@@ -1,3 +1,4 @@
+import {skipWelcome} from './onboarding-helper.mjs';
 /** Run against a local static server:
  * TEST_BASE_URL=http://localhost:4173 PLAYWRIGHT_MODULE=/path/to/playwright
  * CHROMIUM_PATH=/usr/bin/chromium node tests/browser/mission-menu.mjs
@@ -36,6 +37,6 @@ try{
  await page.keyboard.press('Escape');assert.equal(await card.isVisible(),false);await reopen.click();await assertPinned();
  await page.locator('[data-mission-action="exit"]').click();assert.equal(await card.isVisible(),false);assert.equal(await actions.isVisible(),false);
  // Direct entry to the 3D mission also exposes the card and both actions.
- await page.goto(new URL('/?mission=apollo-11&missionView=explore',base).href,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>Boolean(window.RELICFilm));if(await page.evaluate(()=>window.RELICFilm.phase!=='closed'))await page.locator('#intro .prologue-enter').click();await card.waitFor({timeout:60000});await assertPinned();
+ await page.goto(new URL('/?mission=apollo-11&missionView=explore',base).href,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>Boolean(window.RELICFilm));await skipWelcome(page);if(await page.evaluate(()=>window.RELICFilm.phase!=='closed'))await page.locator('#intro .prologue-enter').click();await card.waitFor({timeout:60000});await assertPinned();
  assert.deepEqual(errors,[]);console.log('PASS: persistent summary and menu, scene input, time controls, viewport changes, film return, explicit close/reopen and direct 3D entry');
 }finally{await browser.close();}

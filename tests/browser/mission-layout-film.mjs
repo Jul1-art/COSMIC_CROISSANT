@@ -1,3 +1,4 @@
+import {skipWelcome} from './onboarding-helper.mjs';
 /** TEST_BASE_URL=http://localhost:4174 PLAYWRIGHT_MODULE=/path/to/playwright
  * CHROMIUM_PATH=/usr/bin/chromium node tests/browser/mission-layout-film.mjs */
 import assert from 'node:assert/strict';
@@ -13,7 +14,7 @@ try{
  await page.route('https://api.cesium.com/**',route=>route.abort());
  await page.route('**/src/atlas/app.js?*',async route=>{const source=await readFile(new URL('../../src/atlas/app.js',import.meta.url),'utf8');await route.fulfill({status:200,contentType:'application/javascript',body:source+'\nwindow.__missionCamera=()=>({position:camera.position.toArray(),target:controls.target.toArray(),flight:Boolean(flight),moon:(naturalSystems?.getMesh("moon")||moon).getWorldPosition(new THREE.Vector3()).toArray(),time:atlasMission.time});'});});
  await page.addInitScript(()=>localStorage.setItem('relic.spacey-tour.v1','dismissed'));
- await page.goto(new URL('/?mission=apollo-11&missionView=explore',base).href,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>Boolean(window.RELICFilm));if(await page.evaluate(()=>window.RELICFilm.phase!=='closed'))await page.locator('#intro .prologue-enter').click();
+ await page.goto(new URL('/?mission=apollo-11&missionView=explore',base).href,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>Boolean(window.RELICFilm));await skipWelcome(page);if(await page.evaluate(()=>window.RELICFilm.phase!=='closed'))await page.locator('#intro .prologue-enter').click();
  await page.waitForFunction(()=>document.querySelector('.atlas-mission-controls')?.getAttribute('aria-busy')==='false');await page.selectOption('#mission-chapter','launch');await page.locator('#mission-vehicle-key').click();await page.locator('#mission-launchpad').waitFor();
  for(const viewport of [{width:1280,height:900},{width:390,height:844},{width:844,height:280}]){
   await page.setViewportSize(viewport);await page.waitForTimeout(250);

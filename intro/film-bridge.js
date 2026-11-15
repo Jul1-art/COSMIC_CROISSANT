@@ -1,6 +1,7 @@
 import { getLanguage, setLanguage, onLanguageChange } from '../src/atlas/atlas-live.js?v=3';
 import { openSources as showCredits } from '../src/ui/app-sources.js';
 import { createPrologue } from './prologue-v8.js';
+import { createExplorerWelcome } from './explorer-welcome.js';
 import { PROLOGUE, PROLOGUE_MEDIA } from './prologue-data-v8.js';
 import * as offlineFilm from './film-offline.js';
 import { registerApplicationWorker, warmOfflineShell, RETURN_MARKER } from '../src/core/world-bridge.js';
@@ -188,7 +189,13 @@ try {
 const startupParameters = new URL(location.href).searchParams;
 const sharedInspection=startupParameters.get('view')==='inspection'&&startupParameters.has('body');
 if (startupParameters.has('sources') || (returningToAtlas||sharedInspection) && !startupParameters.has('film')) { introduction.classList.add('hidden'); setFilmActive(false); }
-else film.start();
+else {
+  setFilmActive(true);
+  createExplorerWelcome({host:introduction,getLanguage,setLanguage,reducedMotion,onComplete:({watch})=>{
+    if(watch){film.start();introduction.querySelector('.prologue-play-film')?.click();}
+    else{introduction.classList.add('hidden');setFilmActive(false);document.querySelector('#brand-home')?.focus({preventScroll:true});}
+  }});
+}
 
 // A small diagnostic surface is useful to host pages and automated playback
 // checks without exposing or loading any old atlas renderer.
