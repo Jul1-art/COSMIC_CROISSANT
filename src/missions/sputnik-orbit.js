@@ -1,3 +1,4 @@
+import {missionText} from './mission-locale.js';
 import {sputnikOrbitState,sputnikFixed,PERIOD_SECONDS,ORBIT_DURATION,SPUTNIK_ORBIT} from './sputnik-orbit-math.js';
 /** Reuses the current Cesium Earth scene; owns only its point and orbit line. */
 export function createSputnikOrbit({Cesium:C,viewer,onState=()=>{},onActive=()=>{}}){
@@ -20,7 +21,7 @@ export function createSputnikOrbit({Cesium:C,viewer,onState=()=>{},onActive=()=>
   savedView={destination:C.Cartesian3.clone(viewer.camera.positionWC),orientation:{direction:C.Cartesian3.clone(viewer.camera.directionWC),up:C.Cartesian3.clone(viewer.camera.upWC)}};
   active=true;seconds=0;playing=!globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches;last=null;
   points=scene.primitives.add(new C.PointPrimitiveCollection());point=points.add({position:position(sputnikOrbitState(0).position,0),pixelSize:10,color:C.Color.WHITE,outlineColor:C.Color.BLACK,outlineWidth:2,disableDepthTestDistance:0,id:'relic-sputnik-reconstruction'});
-  labels=scene.primitives.add(new C.LabelCollection());label=labels.add({text:'Sputnik 1',position:point.position,font:'12px system-ui',fillColor:C.Color.WHITE,outlineColor:C.Color.BLACK,outlineWidth:3,style:C.LabelStyle.FILL_AND_OUTLINE,pixelOffset:new C.Cartesian2(14,-14),disableDepthTestDistance:0});
+  labels=scene.primitives.add(new C.LabelCollection());label=labels.add({text:missionText('Sputnik 1'),position:point.position,font:'12px system-ui',fillColor:C.Color.WHITE,outlineColor:C.Color.BLACK,outlineWidth:3,style:C.LabelStyle.FILL_AND_OUTLINE,pixelOffset:new C.Cartesian2(14,-14),disableDepthTestDistance:0});
   const positions=Array.from({length:361},(_,n)=>new C.Cartesian3(...sputnikOrbitState(n/360*PERIOD_SECONDS).position.map(v=>v*1000)));
   route=scene.primitives.add(new C.Primitive({geometryInstances:new C.GeometryInstance({geometry:new C.PolylineGeometry({positions,width:1.5,vertexFormat:C.PolylineColorAppearance.VERTEX_FORMAT}),attributes:{color:C.ColorGeometryInstanceAttribute.fromColor(C.Color.WHITE.withAlpha(.55))}}),appearance:new C.PolylineColorAppearance({translucent:true}),asynchronous:false}));
   onActive(true);update();frame();report();
@@ -39,6 +40,7 @@ export function createSputnikOrbit({Cesium:C,viewer,onState=()=>{},onActive=()=>
  const remove=scene.preRender.addEventListener(()=>{if(!active||disposed)return;const now=performance.now();if(playing&&!paused&&!document.hidden&&last!==null){seconds=Math.min(ORBIT_DURATION,seconds+Math.min(.1,(now-last)/1000)*speed);if(seconds>=ORBIT_DURATION)playing=false;update();}last=now;if(now-lastReport>150){lastReport=now;report();}});
  // Request frames only while playing; Cesium stays in request-render mode.
  const timer=setInterval(()=>{if(active&&playing&&!paused&&!document.hidden)request();},33);
+ const language=()=>{if(label)label.text=missionText('Sputnik 1');request();};window.addEventListener('relic-satellite-language',language);
  const visibility=()=>{last=null;if(!document.hidden)request();};document.addEventListener('visibilitychange',visibility);
- return {command,get active(){return active;},pause(value){paused=Boolean(value);last=null;request();},dispose(){if(disposed)return;stop(false);disposed=true;clearInterval(timer);remove();document.removeEventListener('visibilitychange',visibility);}};
+ return {command,get active(){return active;},pause(value){paused=Boolean(value);last=null;request();},dispose(){if(disposed)return;stop(false);disposed=true;clearInterval(timer);remove();window.removeEventListener('relic-satellite-language',language);document.removeEventListener('visibilitychange',visibility);}};
 }

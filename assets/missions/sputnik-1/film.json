@@ -164,5 +164,14 @@
       "file": "segment-027.ts",
       "sha256": "90cbe8360aa09a70ac46c11f59d1b9c1b903362038d10e4a3d430c3f2dd977cb"
     }
-  ]
+  ],
+  "languages": {
+    "en": {
+      "playlist": "film-en/index.m3u8"
+    },
+    "fr": {
+      "playlist": "film-fr/index.m3u8",
+      "editorialSourceCommit": "41f6d6d"
+    }
+  }
 }

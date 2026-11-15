@@ -44,7 +44,7 @@ test('the dossier keeps the five requested tabs and documented local NASA photog
   const {DOSSIER_TABS,renderDossierTab}=await import('../src/missions/mission-dossier-content.js');const {readFile,stat}=await import('node:fs/promises');
   assert.deepEqual(DOSSIER_TABS.map(row=>row[1]),['Mission profile','Hardware inventory','Timeline','Science & legacy','Sources & further reading']);
   assert.equal((renderDossierTab('inventaire').match(/class="dossier-hardware"/g)||[]).length,14);
-  assert.match(renderDossierTab('sources'),/fiche-mission.pdf/);
+  assert.doesNotMatch(renderDossierTab('sources'),/fiche-mission.pdf/);
   const photos=JSON.parse(await readFile(new URL('../assets/missions/apollo-11/photos.json',import.meta.url),'utf8'));assert.equal(Object.keys(photos).length,5);
   for(const [key,row] of Object.entries(photos)){assert.equal(new URL(row.source).hostname,'images.nasa.gov');assert.ok((await stat(new URL(`../assets/missions/apollo-11/${key}.jpg`,import.meta.url))).size>1000);}
 });

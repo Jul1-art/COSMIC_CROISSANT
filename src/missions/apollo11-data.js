@@ -165,7 +165,7 @@ export function missionState(time){
   return {time:t,event,elapsedSeconds:Math.floor((t-START)/1000),landed:t>=eventTime('landing'),deployed:t>=eventTime('step'),ascent:t>=eventTime('ascent'),returned:t>=END};
 }
 export function missionProgress(time){return (missionState(time).time-START)/(END-START);}
-export function formatUTC(time){return new Intl.DateTimeFormat('en-GB',{timeZone:'UTC',day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(new Date(time))+' UTC';}
+export function formatUTC(time,language=globalThis.document?.documentElement.lang||'en'){return new Intl.DateTimeFormat(language==='fr'?'fr-FR':'en-GB',{timeZone:'UTC',day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(new Date(time))+' UTC';}
 export function elapsedLabel(time){const s=missionState(time).elapsedSeconds;return `T+${String(Math.floor(s/3600)).padStart(3,'0')}:${String(Math.floor(s/60)%60).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;}
 
 export const HARDWARE = [

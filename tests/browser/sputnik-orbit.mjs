@@ -30,9 +30,18 @@ try{
  await page.locator('#sputnik-card [data-sputnik=explore]').click();
  await page.waitForFunction(()=>window.sputnikStates.at(-1)?.active,{timeout:30000});
  await page.waitForTimeout(1500);if(process.env.SCREENSHOT_PATH)await page.screenshot({path:process.env.SCREENSHOT_PATH});assert.ok(await page.locator('#sputnik-orbit-controls').isVisible());
+ const beforeCollapse=await page.evaluate(()=>window.sputnikStates.at(-1).seconds);
+ await page.locator('#sputnik-orbit-controls .mission-controls-collapse').click();
+ assert.equal(await page.locator('#sputnik-orbit-controls .mission-controls-body').isVisible(),false);
+ await page.waitForTimeout(300);assert.ok(await page.evaluate(()=>window.sputnikStates.at(-1).seconds)>beforeCollapse);
+ await page.evaluate(()=>document.documentElement.lang='fr');await page.waitForTimeout(100);
+ assert.equal(await page.locator('#sputnik-orbit-controls .mission-controls-collapse').getAttribute('aria-label'),'Développer les commandes');
+ await page.locator('#sputnik-orbit-controls .mission-controls-collapse').click();assert.ok(await page.locator('#sputnik-orbit-controls .mission-controls-body').isVisible());
+ await page.evaluate(()=>document.documentElement.lang='en');await page.waitForTimeout(100);
  await page.evaluate(()=>window.dispatchEvent(new CustomEvent('relic-sputnik-command',{detail:{action:'seek',value:3000}})));
  await page.waitForFunction(()=>window.sputnikStates.at(-1)?.seconds>=3000);
  await page.locator('#sputnik-orbit-controls [data-sputnik=play]').click();
+ await page.waitForFunction(()=>window.sputnikStates.at(-1)?.playing===false);
  const at=await page.evaluate(()=>window.sputnikStates.at(-1).seconds);await page.waitForTimeout(400);assert.equal(await page.evaluate(()=>window.sputnikStates.at(-1).seconds),at);
  await page.locator('#sputnik-card [data-sputnik=video]').click();await page.waitForFunction(()=>document.querySelector('#sputnik-intro-video')?.currentTime>.1,{timeout:30000});assert.equal(await page.locator('#sputnik-card').evaluate(node=>node.hidden),false);await page.locator('.mission-film-close').click();await page.locator('.mission-shared-film').waitFor({state:'detached'});assert.ok(await page.locator('#sputnik-card-actions').isVisible());
  await page.setViewportSize({width:390,height:844});await page.waitForTimeout(300);const box=await page.locator('#sputnik-orbit-controls').boundingBox();assert.ok(box.x>=0&&box.x+box.width<=390&&box.y>=0&&box.y+box.height<=844);

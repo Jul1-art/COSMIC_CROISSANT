@@ -73,6 +73,22 @@ export function suppressFilmOutroChrome(media, cues, position, ended = false) {
   return Boolean(anchor && position >= Math.max(0, anchor.start - 2));
 }
 
+/** The same player must be self-contained on the atlas and mission pages. */
+const filmStyleLoads=new WeakMap();
+export function ensurePrologueStyles(document){
+ if(filmStyleLoads.has(document))return filmStyleLoads.get(document);
+ const ready=Promise.all(['prologue-v8.css','prologue-player.css','prologue-typing.css'].map(file=>new Promise((resolve,reject)=>{
+  const href=new URL('./'+file,import.meta.url).href;
+  let link=[...document.querySelectorAll('link[rel="stylesheet"]')].find(node=>new URL(node.href,document.baseURI).pathname===new URL(href).pathname);
+  if(link?.sheet){resolve();return;}
+  if(!link){link=document.createElement('link');link.rel='stylesheet';link.href=href;link.dataset.relicFilmStyle=file;}
+  const timeout=setTimeout(()=>done(false),10000);
+  function done(ok){clearTimeout(timeout);link.removeEventListener('load',loaded);link.removeEventListener('error',failed);if(ok)resolve();else{filmStyleLoads.delete(document);if(link.dataset.relicFilmStyle)link.remove();reject(new Error('Film styles could not load'));}}
+  const loaded=()=>done(true),failed=()=>done(false);link.addEventListener('load',loaded,{once:true});link.addEventListener('error',failed,{once:true});if(!link.isConnected)document.head.append(link);
+ })));
+ filmStyleLoads.set(document,ready);return ready;
+}
+
 /** A film-led opening. Editorial cues always follow the video's media clock. */
 export function createPrologue({
   element,
@@ -91,7 +107,7 @@ export function createPrologue({
   if (!element?.ownerDocument) throw new TypeError('A prologue element is required.');
   const document = element.ownerDocument;
   const view = document.defaultView;
-  if(!document.querySelector('link[data-prologue-player],link[href*="prologue-player.css"]')){const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('./prologue-player.css', import.meta.url).href;sheet.dataset.prologuePlayer='';document.head.append(sheet);}
+  void ensurePrologueStyles(document).catch(()=>{});
   const defaultCues = [...timeline].sort((a, b) => a.start - b.start);
   let session = null;
   let closing = null;
