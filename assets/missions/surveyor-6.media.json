@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "title": "Surveyor 6 on the Plains of Sinus Medii",
+      "credit": "NASA/GSFC/Arizona State University",
+      "date": "2010-03-21T22:44:35Z",
+      "source": "https://images.nasa.gov/details/PIA12978",
+      "nasaId": "PIA12978",
+      "description": "Surveyor 6 casting 18-meter long shadow with Sun just 8Â° above the horizon. Surveyor 6 Landed 10 November 1967 in Sinus Medii. This image was taken by NASA Lunar Reconnaissance Orbiter.",
+      "src": "archives/surveyor-6-nasa-PIA12978.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/surveyor-6.mp4",
+    "local": true,
+    "title": "Surveyor 6 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "surveyor-6.pdf",
+    "fingerprint": "bbaf3e39f736b4a59019b462aa340735aab63e3a1e8d8dea6448069c51463bce"
+  }
+}

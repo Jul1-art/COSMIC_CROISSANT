@@ -1,0 +1,277 @@
+{
+  "id": "venera-10",
+  "name": "Venera 10",
+  "body": "venus",
+  "family": "venera",
+  "year": 1975,
+  "summary": "~5 033 kg au lancement total (orbiteur de ~2 230 kg + module d'atterrissage de ~1 560 kg avec boucliers) • 0 objet actif • Second orbiteur de Vénus et atterrisseur ayant transmis des panoramas de surface réussis (25 octobre 1975).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 10 (Венера-10, appareil 4V-1 n° 661, COSPAR 1975-054A / Lander 054D)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (NPO Lavotchkine) — programme Venera"
+    ],
+    [
+      "Lancement",
+      "14 juin 1975, 03h00 UTC — Cosmodrome de Baïkonour (site 81/24), fusée Proton- K / Blok D"
+    ],
+    [
+      "Insertion & atterrissage",
+      "23 octobre 1975 (insertion orbitale réussie) ; atterrissage le 25 octobre 1975 à 02h17 UTC dans Beta Regio (15,42° N, 291,51° E)"
+    ],
+    [
+      "Fin de mission",
+      "25 octobre 1975 pour l'atterrisseur (65 minutes d'activité au sol) ; orbiteur opérationnel jusqu'en juin 1976"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission combinant orbiteur planétaire et atterrisseur lourd automatisé)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur lourd Proton-K / Blok D, orbiteur Venera 10 (~2 230 kg), module d'atterrissage (~1 560 kg au largage)"
+    ],
+    [
+      "Statut",
+      "Réussite majeure — second succès consécutif d'imagerie de surface sur Vénus, révélant des plaines volcaniques planes et des roches altérées."
+    ]
+  ],
+  "sourceFile": "Vénus/Venera 10 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "venera-10.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Venera 10 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~5 033 kg au lancement total (orbiteur de ~2 230 kg + module d'atterrissage de ~1 560 kg avec boucliers) • 0 objet actif • Second orbiteur de Vénus et atterrisseur ayant transmis des"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "panoramas de surface réussis (25 octobre 1975)."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 10 (Венера-10, appareil 4V-1 n° 661, COSPAR 1975-054A / Lander 054D)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (NPO Lavotchkine) — programme Venera"
+          ],
+          [
+            "Lancement",
+            "14 juin 1975, 03h00 UTC — Cosmodrome de Baïkonour (site 81/24), fusée Proton- K / Blok D"
+          ],
+          [
+            "Insertion & atterrissage",
+            "23 octobre 1975 (insertion orbitale réussie) ; atterrissage le 25 octobre 1975 à 02h17 UTC dans Beta Regio (15,42° N, 291,51° E)"
+          ],
+          [
+            "Fin de mission",
+            "25 octobre 1975 pour l'atterrisseur (65 minutes d'activité au sol) ; orbiteur opérationnel jusqu'en juin 1976"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission combinant orbiteur planétaire et atterrisseur lourd automatisé)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur lourd Proton-K / Blok D, orbiteur Venera 10 (~2 230 kg), module d'atterrissage (~1 560 kg au largage)"
+          ],
+          [
+            "Statut",
+            "Réussite majeure — second succès consécutif d'imagerie de surface sur Vénus, révélant des plaines volcaniques planes et des roches altérées."
+          ]
+        ]
+      },
+      {
+        "y": 511.76544189453125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 546.1342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 580.2205810546875,
+        "type": "text",
+        "text": "A. Surface de Vénus — Beta Regio (Atterrisseur Venera 10)"
+      },
+      {
+        "y": 600.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Capsule d'atterrissage (Lander)",
+            "~660 kg",
+            "Détruit / écrasé",
+            "Sphère pressurisée (65 min d'activité sur les plaines de Beta Regio)."
+          ],
+          [
+            "Caméras panoramiques & spectromètres",
+            "~35 kg",
+            "Détruits / inactifs",
+            "Téléphotomètres panoramiques de surface et densitomètre à rayons gamma mesurant la densité basaltique (2,7–2,9 g/cm3)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Orbite vénusienne & espace interplanétaire"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur Venera 10",
+            "~2 230 kg (initial)",
+            "Intact / inactif",
+            "Cylindre à panneaux solaires et antennes placé le 23 octobre 1975 sur une orbite elliptique autour de Vénus (1 620 × 113 900 km). A servi de relais radio pour l'atterrisseur avant la fin de mission en juin 1976."
+          ],
+          [
+            "Étage supérieur Blok D (Proton-K)",
+            "~2 500 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage d'injection interplanétaire ayant propulsé la sonde le 14 juin 1975 depuis Baïkonour ; placé sur une orbite solaire stable."
+          ]
+        ]
+      },
+      {
+        "y": 262.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 283.0869140625,
+        "type": "text",
+        "text": "Modèle d'ingénierie (NPO Lavotchkine) : répliques de test structurel conservées dans les musées spatiaux russes."
+      },
+      {
+        "y": 317.5869140625,
+        "type": "text",
+        "text": "Archives iconographiques historiques : panoramas originaux de la surface de Vénus (montrant des dalles de lave plate et des roches érodées) archivés par l'Académie des sciences d'URSS."
+      },
+      {
+        "y": 363.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 390.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "14 juin 1975",
+            "Décollage réussi de la fusée lourde Proton-K / Blok D depuis Baïkonour ; injection de Venera 10 vers Vénus."
+          ],
+          [
+            "23 octobre 1975",
+            "Insertion réussie de l'orbiteur Venera 10 en orbite elliptique autour de Vénus, trois jours après sa sœur Venera 9."
+          ],
+          [
+            "25 octobre 1975",
+            "Séparation et atterrissage de la capsule de descente dans Beta Regio ; début de la transmission des photographies de surface."
+          ],
+          [
+            "25 octobre 1975 (65 min)",
+            "Fin des transmissions de l'atterrisseur après 65 minutes d'activités scientifiques intenses sur le sol vénusien."
+          ],
+          [
+            "Juin 1976",
+            "Fin officielle des opérations de l'orbiteur Venera 10 après la conclusion de la mission de relais et d'analyse atmosphérique."
+          ]
+        ]
+      },
+      {
+        "y": 610.0154418945312,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 638.5869140625,
+        "type": "text",
+        "text": "Diversité géologique révélée : alors que Venera 9 avait photographié un champ de roches anguleuses, Venera 10 s'est posée sur une plaine volcanique plane parsemée de dalles de lave érodées, confirmant la diversité géologique de la surface vénusienne."
+      },
+      {
+        "y": 688.0869140625,
+        "type": "text",
+        "text": "Analyse de la densité des roches : grâce au densitomètre à rayons gamma, l'atterrisseur a mesuré"
+      },
+      {
+        "y": 702.4102172851562,
+        "type": "text",
+        "text": "une densité de 2,7 à 2,9 g/cm3, comparable à celle des basaltes tholéitiques terrestres."
+      },
+      {
+        "y": 724.0869140625,
+        "type": "text",
+        "text": "Consolidation du programme vénusien soviétique : le succès cumulé de Venera 9 et 10 a fourni à l'Union soviétique une maîtrise incontestée de l'exploration d'environnements planétaires extrêmes."
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Venera 10 Orbiter (1975- 054A) et Lander (1975-054D)"
+      },
+      {
+        "y": 115.8369140625,
+        "type": "text",
+        "text": "K. V. Basilevsky et al., The surface of Venus as revealed by Venera 9 and 10, JGR, 1976"
+      },
+      {
+        "y": 134.5869140625,
+        "type": "text",
+        "text": "B. Harvey, Soviet and Russian Lunar Exploration, Springer Praxis Books, 2007"
+      }
+    ]
+  ]
+}

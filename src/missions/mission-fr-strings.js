@@ -1,5 +1,13 @@
 /** Shared French mission UI copy; English keys are the stable source strings. */
 export const MISSION_FR={
+  "Drag to rotate · Right-drag to pan · Scroll to zoom": "Glisser pour tourner · Clic droit pour déplacer · Molette pour zoomer",
+  "Mission position": "Position dans la mission",
+  "Reset camera": "Recentrer",
+  "Spacecraft and instruments": "L’engin et ses instruments",
+  "Around the destination": "Autour de la destination",
+  "Mission overview": "Vue d’ensemble",
+  "Pause mission": "Mettre en pause",
+  "Destination": "Destination",
   "Saturn V lifts off from Kennedy Space Center. The crew enters an Earth parking orbit.": "Saturn V décolle du Kennedy Space Center. L’équipage rejoint une orbite de stationnement terrestre.",
   "Liftoff": "Décollage",
   "The S-IVB stage performs translunar injection. Columbia turns around, docks with Eagle and extracts it from its adapter.": "Le S-IVB réalise l’injection translunaire. Columbia se retourne et extrait Eagle de son adaptateur.",

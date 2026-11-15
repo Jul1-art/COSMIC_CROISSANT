@@ -1,0 +1,482 @@
+{
+  "id": "apollo-11",
+  "name": "Apollo 11",
+  "body": "moon",
+  "family": "apollo",
+  "year": 1969,
+  "summary": "~5,2 t de matériel laissé sur la Lune · 1 objet encore actif en 2026 (rétro-réflecteur laser) · 1 objet en orbite héliocentrique · 1 objet d'emplacement inconnu (étage d'ascension)",
+  "facts": [
+    [
+      "Nom officiel",
+      "Apollo 11"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Apollo"
+    ],
+    [
+      "Lancement",
+      "16 juillet 1969, 13h32 UTC — Kennedy Space Center, fusée Saturn V"
+    ],
+    [
+      "Alunissage",
+      "20 juillet 1969, 20h17 UTC — Mer de la Tranquillité (0,674° N, 23,473° E)"
+    ],
+    [
+      "Retour sur Terre",
+      "24 juillet 1969 — amerrissage Pacifique (8 j 3 h 18 min de mission)"
+    ],
+    [
+      "Équipage",
+      "Neil Armstrong (commandant), Buzz Aldrin (pilote LM), Michael Collins (pilote CSM)"
+    ],
+    [
+      "Véhicules",
+      "Saturn V · Module de commande/service Columbia (CSM) · Module lunaire Eagle (LM)"
+    ],
+    [
+      "Statut",
+      "Réussie — premier alunissage habité de l'histoire"
+    ]
+  ],
+  "sourceFile": "Lune/Apollo/Fiche mission-Apollo-11-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "apollo-11.pdf",
+  "pages": [
+    [
+      {
+        "y": 70.91584777832031,
+        "type": "text",
+        "text": "Apollo 11 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 118.42292785644531,
+        "type": "text",
+        "text": "Synthèse hardware : ~5,2 t de matériel laissé sur la Lune · 1 objet encore actif en 2026 (rétro-réflecteur laser) · 1 objet en orbite héliocentrique · 1 objet d'emplacement inconnu (étage d'ascension)"
+      },
+      {
+        "y": 188.0743865966797,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 217.87501220703126,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Apollo 11"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Apollo"
+          ],
+          [
+            "Lancement",
+            "16 juillet 1969, 13h32 UTC — Kennedy Space Center, fusée Saturn V"
+          ],
+          [
+            "Alunissage",
+            "20 juillet 1969, 20h17 UTC — Mer de la Tranquillité (0,674° N, 23,473° E)"
+          ],
+          [
+            "Retour sur Terre",
+            "24 juillet 1969 — amerrissage Pacifique (8 j 3 h 18 min de mission)"
+          ],
+          [
+            "Équipage",
+            "Neil Armstrong (commandant), Buzz Aldrin (pilote LM), Michael Collins (pilote CSM)"
+          ],
+          [
+            "Véhicules",
+            "Saturn V · Module de commande/service Columbia (CSM) · Module lunaire Eagle (LM)"
+          ],
+          [
+            "Statut",
+            "Réussie — premier alunissage habité de l'histoire"
+          ]
+        ]
+      },
+      {
+        "y": 417.1281433105469,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 447.9316711425781,
+        "type": "text",
+        "text": "Badges d'état : toujours actif · intact mais inactif · détruit / écrasé · localisation inconnue"
+      },
+      {
+        "y": 472.18359375,
+        "type": "text",
+        "text": "A. Surface lunaire — Mer de la Tranquillité (~5,2 t au total)"
+      },
+      {
+        "y": 497.3170979817708,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de descente du LM Eagle",
+            "~2 200 kg",
+            "",
+            "Structure aluminium/titane sur 4 pieds, moteur de descente (~45 kN), réservoirs vides, échelle et plateforme. Porte la plaque commémorative : « Here men from the planet Earth first set foot upon the Moon, July 1969 A.D. We came in peace for all mankind »"
+          ],
+          [
+            "Laser Ranging Retroreflector (LRRR)",
+            "~20 kg",
+            "",
+            "100 coins de cube rétroréflecteurs (équipe franco-américaine). Encore utilisé en 2026 : mesure de la distance Terre-Lune au millimètre près"
+          ],
+          [
+            "Passive Seismic Experiment (PSEP)",
+            "~50 kg",
+            "",
+            "Sismomètre à panneaux solaires ; a détecté des milliers de séismes lunaires et impacts avant de tomber en panne fin août 1969"
+          ],
+          [
+            "Moon Dust Detector",
+            "< 1 kg",
+            "",
+            "Capteur de poussière solaire fixé sur le PSEP, conçu pour mesurer l'accumulation de régolithe"
+          ],
+          [
+            "Drapeau américain (+ mât et barre télescopique)",
+            "~2 kg",
+            "",
+            "1,5 m, tendu par barre horizontale faute d'atmosphère. Renversé par le souffle du moteur d'ascension au décollage du 21 juillet. 3 petits drapeaux (13 × 21 cm) supplémentaires également laissés"
+          ],
+          [
+            "Antenne parabolique orientable (bande S) + antenne fouet",
+            "~30 kg",
+            "",
+            "Système de télécommunications du LM, resté avec l'étage de descente"
+          ],
+          [
+            "Caméra TV Westinghouse",
+            "~7 kg",
+            "",
+            "A filmé l'alunissage et le « premier pas » ; abandonnée sur le porche du LM"
+          ],
+          [
+            "Outils d'échantillonnage",
+            "~10 kg",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 56.583333333333336,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "",
+            "",
+            "",
+            "Pelle, râteau, gousset, perçeuse à main, boîtes vides (les échantillons, 21,5 kg, ont été ramenés)"
+          ],
+          [
+            "Sac de déchets (Jettison Bag)",
+            "~10 kg",
+            "",
+            "Déchets et équipements devenus inutiles ; un sac a été analysé par des chercheurs en 2019"
+          ],
+          [
+            "Protections thermiques et couvertures (Mylar doré)",
+            "~100 kg",
+            "",
+            "Isolation contre les écarts de +120 °C à −170 °C et les micrométéorites"
+          ]
+        ]
+      },
+      {
+        "y": 173.40606689453125,
+        "type": "text",
+        "text": "B. Orbite lunaire / écrasé sur la Lune"
+      },
+      {
+        "y": 198.5395711263021,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage d'ascension du LM Eagle",
+            "~2 400 kg",
+            "",
+            "Décollé le 21 juillet, amarré à Columbia, puis largué en orbite lunaire. Trajectoire devenue instable : s'est probablement écrasé sur la Lune, lieu exact jamais confirmé"
+          ],
+          [
+            "Module de service (SM)",
+            "~5 000 kg (à vide)",
+            "",
+            "Largué avant la rentrée atmosphérique ; désintégré dans l'atmosphère terrestre"
+          ]
+        ]
+      },
+      {
+        "y": 300.133544921875,
+        "type": "text",
+        "text": "C. Trajectoire d'échappement"
+      },
+      {
+        "y": 325.26707967122394,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage S-IVB de la Saturn V",
+            "~13 500 kg (à sec)",
+            "",
+            "Après injection translunaire, passé en orbite héliocentrique ; légèrement en avance sur la Terre sur son orbite solaire"
+          ]
+        ]
+      },
+      {
+        "y": 385.73480224609375,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 411.8379211425781,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 411.8379211425781,
+        "type": "text",
+        "text": "Capsule Columbia (module de commande, ~5 500 kg) — exposée au National Air and Space Museum"
+      },
+      {
+        "y": 428.2178955078125,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 428.2178955078125,
+        "type": "text",
+        "text": "21,5 kg d'échantillons lunaires"
+      },
+      {
+        "y": 444.597900390625,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 444.597900390625,
+        "type": "text",
+        "text": "Équipage (mis en quarantaine 21 jours, puis levée le 10 août)"
+      },
+      {
+        "y": 468.8498229980469,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 494.95294189453125,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 494.95294189453125,
+        "type": "text",
+        "text": "Panneaux d'adaptation (SLA) de la Saturn V, jetés après l'éjection de l'étage de sauvetage et le déploiement du LM"
+      },
+      {
+        "y": 524.8328857421875,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 524.8328857421875,
+        "type": "text",
+        "text": "Couvertures, équipements et détritus « jetés » hors du LM pendant la mission"
+      },
+      {
+        "y": 571.234375,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 601.0349853515625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "16 juillet 1969, 13h32 UTC",
+            "Lancement de Saturn V depuis Kennedy Space Center"
+          ],
+          [
+            "19 juillet",
+            "Insertion en orbite lunaire ; Armstrong et Aldrin passent dans Eagle"
+          ],
+          [
+            "20 juillet, 20h17 UTC",
+            "Alunissage au mer de la Tranquillité — « The Eagle has landed »"
+          ],
+          [
+            "21 juillet, 02h56 UTC",
+            "Armstrong descend l'échelle — « un petit pas pour l'homme… » ; EVA de 2 h 31 ; installation du LRRR et du PSEP, drapeau planté"
+          ],
+          [
+            "21 juillet, 17h54 UTC",
+            "Décollage d'Eagle — le drapeau est renversé par le souffle du moteur"
+          ],
+          [
+            "21 juillet",
+            "Amarrage LM/CSM ; l'étage d'ascension est largué en orbite lunaire"
+          ],
+          [
+            "22 juillet",
+            "Trajectoire de retour ; le module de service est largué (désintégration atmosphérique)"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 61.162986755371094,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "24 juillet, 16h50 UTC",
+            "Amerrissage dans le Pacifique"
+          ],
+          [
+            "10 août",
+            "Fin de la quarantaine de l'équipage"
+          ]
+        ]
+      },
+      {
+        "y": 146.0706329345703,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 176.8741912841797,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 176.8741912841797,
+        "type": "text",
+        "text": "Le LRRR fonctionne toujours (2026) : les observatoires (dont l'Observatoire de la Côte d'Azur, via la télémétrie laser Luna) y envoient des impulsions depuis plus de 55 ans. C'est aussi une réfutation directe des théories du complot : tout laboratoire équipé peut vérifier."
+      },
+      {
+        "y": 220.25418090820312,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 220.25418090820312,
+        "type": "text",
+        "text": "Le PSEP a fourni les premières données sismologiques lunaires et confirmé que la Lune est sismiquement active mais moins que la Terre."
+      },
+      {
+        "y": 250.13417053222656,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 250.13417053222656,
+        "type": "text",
+        "text": "Les échantillons (21,5 kg) sont encore étudiés ; la NASA en a ouvert des capsules scellées des décennies plus tard."
+      },
+      {
+        "y": 280.01416015625,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 280.01416015625,
+        "type": "text",
+        "text": "Préservation du site : les recommandations NASA de 2011 interdisent aux futures missions de s'approcher de Tranquility Base. Les images LRO (Lunar Reconnaissance Orbiter) montrent encore l'étage de descente, les instruments, le drapeau et les empreintes de pas."
+      },
+      {
+        "y": 323.3941650390625,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 323.3941650390625,
+        "type": "text",
+        "text": "Statut juridique : le traité de l'espace de 1967 interdit l'appropriation nationale de la Lune ; des projets de loi américains (Apollo Lunar Site Preservation Act) visent à classer le site au patrimoine."
+      },
+      {
+        "y": 383.2956237792969,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 414.09918212890625,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 414.09918212890625,
+        "type": "text",
+        "text": "NASA — Apollo 11 Mission Report (MSC-00171)"
+      },
+      {
+        "y": 430.4791564941406,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 430.4791564941406,
+        "type": "text",
+        "text": "NASA — Apollo 11 Preliminary Science Report (SP-214)"
+      },
+      {
+        "y": 446.85919189453125,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 446.85919189453125,
+        "type": "text",
+        "text": "Images LRO du site d'alunissage : lro.gsfc.nasa.gov"
+      },
+      {
+        "y": 463.2391357421875,
+        "type": "text",
+        "text": "•"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Spirit Rover on Husband Hill",
+      "credit": "NASA/JPL-Caltech/MSSS",
+      "date": "2006-01-03T17:17:10Z",
+      "source": "https://images.nasa.gov/details/PIA03253",
+      "nasaId": "PIA03253",
+      "description": "Spirit Rover on Husband Hill",
+      "src": "archives/spirit-nasa-PIA03253.jpg"
+    },
+    {
+      "title": "Spirit Stretches Out",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2004-01-10T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA05040",
+      "nasaId": "PIA05040",
+      "description": "This frame from an animation flips back and forth between images taken before and after deployment of the Mars Exploration Rover Spirit's bogie, a part of the rover's suspension system that extends the wheel base. These images were taken by Spirit's hazard avoidance camera.  An animation is available at http://photojournal.jpl.nasa.gov/catalog/PIA05040",
+      "src": "archives/spirit-nasa-PIA05040.jpg"
+    },
+    {
+      "title": "Spirit 360-Degree View on Sol 409 (vertical)",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2005-03-03T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA07410",
+      "nasaId": "PIA07410",
+      "description": "NASA's Mars Exploration Rover Spirit used its navigation camera to take the images combined into this 360-degree view of the rover's surroundings on Spirit's 409th martian day, or sol (Feb. 26, 2005). Spirit had driven 2 meters (7 feet) on this sol to get in position on \"Cumberland Ridge\" for looking into \"Tennessee Valley\" to the east. This location is catalogued as Spirit's Site 108. Rover-wheel tracks from climbing the ridge are visible on the right. The summit of \"Husband Hill\" is at the center, to the south. This view is presented in a vertical projection with geometric and brightness seam correction.  http://photojournal.jpl.nasa.gov/catalog/PIA07410",
+      "src": "archives/spirit-nasa-PIA07410.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/spirit.mp4",
+    "local": true,
+    "title": "Spirit (MER-A) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "spirit.pdf",
+    "fingerprint": "5bd41d89e3bdaccd66e7c81ffbf02b843c3df999aa804273cb83fb098593f745"
+  }
+}

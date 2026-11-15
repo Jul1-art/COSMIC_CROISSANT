@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "First Look: Apollo 12 and Surveyor 3",
+      "credit": "NASA/GSFC/Arizona State University",
+      "date": "2009-09-03T01:08:25Z",
+      "source": "https://images.nasa.gov/details/PIA12903",
+      "nasaId": "PIA12903",
+      "description": "Boulders perched on the summit of the central peak of Tsiolkovskiy crater are seen in this image from NASA Lunar Reconnaissance Orbiter.",
+      "src": "archives/surveyor-3-nasa-PIA12903.jpg"
+    },
+    {
+      "title": "View of two U.S. spacecraft on the surface of the moon",
+      "credit": "NASA / JSC",
+      "date": "1969-11-20T00:00:00Z",
+      "source": "https://images.nasa.gov/details/AS12-48-7133",
+      "nasaId": "AS12-48-7133",
+      "description": "AS12-48-7133 (20 Nov. 1969) --- This unusual photograph, taken during the second Apollo 12 extravehicular activity (EVA), shows two U.S. spacecraft on the surface of the moon. The Apollo 12 Lunar Module (LM) is in the background. The unmanned Surveyor 3 spacecraft is in the foreground. The Apollo 12 LM, with astronauts Charles Conrad Jr. and Alan L. Bean aboard, landed about 600 feet from Surveyor 3 in the Ocean of Storms. The television camera and several other pieces were taken from Surveyor 3 and brought back to Earth for scientific examination. Here, Conrad examines the Surveyor's TV camera prior to detaching it. Astronaut Richard F. Gordon Jr. remained with the Apollo 12 Command and Service Modules (CSM) in lunar orbit while Conrad and Bean descended in the LM to explore the moon. Surveyor 3 soft-landed on the moon on April 19, 1967.",
+      "src": "archives/surveyor-3-nasa-AS12-48-7133.jpg"
+    },
+    {
+      "title": "Apollo 12 Mission image - Astronaut Alan L. Bean,lunar module pilot,and two U.S. spacecraft ",
+      "credit": "NASA / JSC",
+      "date": "1969-11-20T00:00:00Z",
+      "source": "https://images.nasa.gov/details/AS12-48-7134",
+      "nasaId": "AS12-48-7134",
+      "description": "AS12-48-7134 (20 Nov. 1969) --- This unusual photograph, taken during the second Apollo 12 extravehicular activity (EVA), shows two U.S. spacecraft on the surface of the moon. The Apollo 12 Lunar Module (LM) is in the background. The unmanned Surveyor 3 spacecraft is in the foreground. The Apollo 12 LM, with astronauts Charles Conrad Jr. and Alan L. Bean aboard, landed about 600 feet from Surveyor 3 in the Ocean of Storms. The television camera and several other pieces were taken from Surveyor 3 and brought back to Earth for scientific examination. Here, Conrad examines the Surveyor's TV camera prior to detaching it. Astronaut Richard F. Gordon Jr. remained with the Apollo 12 Command and Service Modules (CSM) in lunar orbit while Conrad and Bean descended in the LM to explore the moon. Surveyor 3 soft-landed on the moon on April 19, 1967.",
+      "src": "archives/surveyor-3-nasa-AS12-48-7134.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/surveyor-3.mp4",
+    "local": true,
+    "title": "Surveyor 3 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "surveyor-3.pdf",
+    "fingerprint": "3e713fe119ddc30d26e6459f7d06530f72b1cefc0af77e33048e72f43eda3f71"
+  }
+}

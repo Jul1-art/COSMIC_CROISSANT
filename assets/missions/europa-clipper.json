@@ -1,0 +1,337 @@
+{
+  "id": "europa-clipper",
+  "name": "Europa Clipper",
+  "body": "outer",
+  "family": "orbiter",
+  "year": 2024,
+  "summary": "~5,7 t lancées vers Jupiter (plus grande sonde planétaire de la NASA) · 1 sonde spatiale active en novembre 2026 en croisière interplanétaire vers la Terre et Jupiter (arrivée en avril 2030) · 1 étage en orbite héliocentrique (second étage Falcon Heavy) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Europa Clipper — Mission d'étude de l'habitabilité de la lune Europe"
+    ],
+    [
+      "Agence & programme",
+      "NASA (JPL & Johns Hopkins APL) — Programme Planetary Science / Flagship Mission"
+    ],
+    [
+      "Lancement",
+      "14 octobre 2024, 16h06 UTC — Kennedy Space Center (Pad 39A), fusée SpaceX Falcon Heavy (FH-011)"
+    ],
+    [
+      "Arrivée sur cible",
+      "11 avril 2030 — Insertion en orbite autour de Jupiter (JOI) puis 49 survols rapprochés d'Europe"
+    ],
+    [
+      "Durée de mission",
+      "5,5 ans de croisière interplanétaire (trajectoire MEGA : Mars – Terre) + 4 ans de mission scientifique nominale (2030 – 2034)"
+    ],
+    [
+      "Type de mission",
+      "Mission robotique d'astrobiologie et de géophysique (sans équipage) d'étude de l'océan souterrain d'Europe"
+    ],
+    [
+      "Véhicules",
+      "Falcon Heavy (config. entièrement consommable) · Sonde Europa Clipper (coffre-fort anti-radiations en titane-aluminium)"
+    ],
+    [
+      "Statut",
+      "✔ Active (novembre 2026) — En transit interplanétaire entre Mars et la Terre avant l'assistance gravitationnelle terrestre de décembre 2026"
+    ]
+  ],
+  "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche mission Europa Clipper - Hardware perdu dans l_espace.pdf",
+  "pdf": "europa-clipper.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION DU SYSTÈME SOLAIRE EXTERNE · CATALOGUE DU PATRIMOINE SPATIAL Europa Clipper (NASA) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~5,7 t lancées vers Jupiter (plus grande sonde planétaire de la NASA) · 1 sonde spatiale active en novembre 2026 en croisière interplanétaire vers la Terre et Jupiter (arrivée en avril 2030) · 1"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "étage en orbite héliocentrique (second étage Falcon Heavy) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Europa Clipper — Mission d'étude de l'habitabilité de la lune Europe"
+          ],
+          [
+            "Agence & programme",
+            "NASA (JPL & Johns Hopkins APL) — Programme Planetary Science / Flagship Mission"
+          ],
+          [
+            "Lancement",
+            "14 octobre 2024, 16h06 UTC — Kennedy Space Center (Pad 39A), fusée SpaceX Falcon Heavy (FH-011)"
+          ],
+          [
+            "Arrivée sur cible",
+            "11 avril 2030 — Insertion en orbite autour de Jupiter (JOI) puis 49 survols rapprochés d'Europe"
+          ],
+          [
+            "Durée de mission",
+            "5,5 ans de croisière interplanétaire (trajectoire MEGA : Mars – Terre) + 4 ans de mission scientifique nominale (2030 – 2034)"
+          ],
+          [
+            "Type de mission",
+            "Mission robotique d'astrobiologie et de géophysique (sans équipage) d'étude de l'océan souterrain d'Europe"
+          ],
+          [
+            "Véhicules",
+            "Falcon Heavy (config. entièrement consommable) · Sonde Europa Clipper (coffre-fort anti-radiations en titane-aluminium)"
+          ],
+          [
+            "Statut",
+            "✔ Active (novembre 2026) — En transit interplanétaire entre Mars et la Terre avant l'assistance gravitationnelle terrestre de décembre 2026"
+          ]
+        ]
+      },
+      {
+        "y": 513.4171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 577.3233642578125,
+        "type": "text",
+        "text": "A. Sonde spatiale en croisière interplanétaire (~5,7 t au lancement)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde Europa Clipper (ensemble complet)",
+            "~5 700 kg",
+            "● Toujours actif",
+            "Masse au lancement incluant ~2 750 kg d'ergols (monométhylhydrazine et tétroxyde d'azote) pour ses 24 moteurs principaux, et ~3 240 kg à sec. Conçue pour endurer l'environnement radiatif extrême de Jupiter (équivalent de plusieurs millions de radiographies thoraciques par survol)."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Europa Clipper (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Panneaux solaires géants (2 ailes de 5 panneaux)",
+            "~550 kg (inclus)",
+            "● Toujours actif",
+            "Envergure totale de 30,5 m pour 4,1 m de hauteur (surface totale > 90 m², soit la taille d'un terrain de basket). Dimensionnés pour produire ~700 W à 780 millions de km du Soleil (où l'éclairement solaire ne représente que 3 à 4 % de celui reçu sur Terre)."
+          ],
+          [
+            "Suite scientifique (9 instruments + radioscience)",
+            "~352 kg (inclus)",
+            "● Toujours actif",
+            "Caméras grand-angle et haute résolution EIS, spectromètre imageur infrarouge MISE, imageur thermique E-THEMIS, spectrographe UV Europa-UVS, radar pénétrant REASON (antennes dipôles de 17,6 m fixées sur les panneaux solaires), magnétomètre ECM, plasma PIMS, spectromètre de masse MASPEX et analyseur de poussières SUDA."
+          ],
+          [
+            "Coffre-fort blindé & plaque commémorative en tantale",
+            "< 1 kg (plaque)",
+            "● Toujours actif",
+            "L'électronique centrale est enfermée dans un blindage aux parois de 9,2 mm en alliage titane-aluminium, fermé par une plaque triangulaire en tantale (18 × 28 cm) gravée d'un poème d'Ada Limón, du mot « eau » en 103 langues, de l'équation de Drake et d'une puce silicium portant 2,6 millions de noms du public."
+          ]
+        ]
+      },
+      {
+        "y": 433.3233642578125,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & lanceur Falcon Heavy consommable"
+      },
+      {
+        "y": 453.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Second étage de la fusée Falcon Heavy (FH-011)",
+            "~4 000 kg (à sec)",
+            "■ Orbite solaire",
+            "Propulsé par un moteur Merlin Vacuum (MVac). Après un long vol balistique de 58 min et un second allumage de haute précision le 14 octobre 2024, il a injecté Europa Clipper sur sa trajectoire interplanétaire avant d'être passivé sur une orbite héliocentrique permanente."
+          ],
+          [
+            "Propulseurs latéraux & corps central Falcon Heavy (3 boosters)",
+            "~77 000 kg (total à sec)",
+            "▲ Sacrifiés (océan)",
+            "Pour fournir la vitesse d'échappement maximale requise vers Mars et Jupiter, la Falcon Heavy a volé en configuration entièrement consommable (sans trains d'atterrissage ni ailettes en titane) : les 2 boosters latéraux (B1064, B1065) et l'étage central (B1089) sont retombés dans l'océan Atlantique."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Europa Clipper (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 62.8233642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.020263671875,
+        "type": "text",
+        "text": "Coiffe aérodynamique de la Falcon Heavy (2 demi-coiffes) : larguée durant l'ascension atmosphérique le 14 octobre 2024 et récupérée en mer dans l'océan Atlantique par les navires de SpaceX."
+      },
+      {
+        "y": 133.770263671875,
+        "type": "text",
+        "text": "Fin de mission planifiée (protection planétaire) : Europa Clipper ne reviendra jamais sur Terre. Afin d'éviter toute contamination biologique potentielle de l'océan d'Europe par des microbes terrestres, la sonde sera volontairement désorbitée à la fin de sa mission (vers 2034) pour s'écraser sur la lune rocheuse et glacée Ganymède."
+      },
+      {
+        "y": 206.0733642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 229.020263671875,
+        "type": "text",
+        "text": "Anneau d'adaptation de charge utile : reste solidaire du second étage de la Falcon Heavy en orbite héliocentrique ; aucun élément pyrotechnique ni couvercle libre n'est largué dans le système jovien afin de préserver la propreté de l'environnement orbital des lunes galiléennes."
+      },
+      {
+        "y": 288.4171447753906,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 313.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "14 octobre 2024, 16h06 UTC",
+            "Lancement de la fusée Falcon Heavy depuis le Kennedy Space Center ; déploiement réussi des panneaux solaires géants et des antennes radar REASON dans les semaines suivantes."
+          ],
+          [
+            "1er mars 2025",
+            "Première assistance gravitationnelle : survol de Mars à 884 km d'altitude, permettant de courber la trajectoire vers la Terre et de tester le radar REASON et l'imageur thermique E-THEMIS."
+          ],
+          [
+            "3 décembre 2026",
+            "Seconde assistance gravitationnelle prévue : survol rapproché de la Terre à ~3 200 km d'altitude afin de propulser définitivement la sonde vers le Système solaire externe."
+          ],
+          [
+            "11 avril 2030",
+            "Insertion en orbite autour de Jupiter (manœuvre JOI de 6 à 8 heures consommant la majorité des ergols embarqués)."
+          ],
+          [
+            "Printemps 2031 – 2034",
+            "Campagne scientifique principale : 49 survols rapprochés d'Europe (descendant jusqu'à 25 km d'altitude au-dessus de la banquise) répartis entre les hémisphères anti-jovien et sub-jovien."
+          ],
+          [
+            "Fin 2034 (prévisionnel)",
+            "Impact contrôlé de fin de mission sur Ganymède conformément aux règles internationales de protection planétaire du COSPAR."
+          ]
+        ]
+      },
+      {
+        "y": 621.4171142578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 648.270263671875,
+        "type": "text",
+        "text": "Évaluation de l'habitabilité d'un monde-océan : sous sa croûte de glace épaisse de 15 à 25 km, Europe abrite un océan d'eau liquide salée contenant environ deux fois le volume de tous les océans terrestres réunis. Europa Clipper déterminera si cet océan possède les trois piliers nécessaires à la vie : eau liquide, éléments chimiques essentiels (C, H, N, O, P, S) et sources d'énergie hydrothermale."
+      },
+      {
+        "y": 712.020263671875,
+        "type": "text",
+        "text": "Sondage radar de la banquise et détection de panaches : grâce au radar bifréquence REASON et au spectromètre de masse MASPEX, la sonde sondera la structure interne de la glace pour repérer d'éventuels lacs subglaciaires peu profonds et analysera directement la composition des gaz et grains de glace éjectés par d'éventuels geysers."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Europa Clipper (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 55.770263671875,
+        "type": "text",
+        "text": "Record d'ingénierie solaire en espace lointain : avec ses ailes solaires de 30,5 m d'envergure, Europa Clipper est le plus grand vaisseau jamais construit par la NASA pour une mission planétaire, démontrant que l'énergie photovoltaïque peut alimenter des missions complexes jusqu'à l'orbite de Jupiter sans recourir à des générateurs nucléaires RTG."
+      },
+      {
+        "y": 119.520263671875,
+        "type": "text",
+        "text": "Synergie internationale avec la mission européenne JUICE : en opérant simultanément dans le système jovien au début des années 2030 aux côtés de la sonde JUICE de l'ESA (lancée en avril 2023 et dédiée principalement à Ganymède), les deux observatoires offriront une couverture multipoint inédite de la magnétosphère de Jupiter et de ses lunes glacées."
+      },
+      {
+        "y": 193.91712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 222.82907104492188,
+        "type": "text",
+        "text": "NASA / JPL — Europa Clipper Press Kit & Mission Overview (europa.nasa.gov)"
+      },
+      {
+        "y": 240.82907104492188,
+        "type": "text",
+        "text": "Johns Hopkins APL — Europa Clipper Spacecraft Engineering & Radiation Vault Design"
+      },
+      {
+        "y": 258.8533630371094,
+        "type": "text",
+        "text": "Programme « Message in a Bottle » (poème d'Ada Limón et plaque en tantale) : europa.nasa.gov/message-in-a-bottle"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Europa Clipper (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

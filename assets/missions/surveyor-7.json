@@ -1,0 +1,373 @@
+{
+  "id": "surveyor-7",
+  "name": "Surveyor 7",
+  "body": "moon",
+  "family": "surveyor",
+  "year": 1968,
+  "summary": "1 atterrisseur de ~306 kg resté sur le glacis d'éjectas de Tycho, dernier contact le 21 février 1968 · 1 caméra de télévision, 1 analyseur à diffusion alpha, 1 pelle-griffe et 6 aimants · 1 moteur de freinage solide et 1 radar largués en descente · 1 étage Centaur, devenir non précisé · aucun élément récupéré · dernier atterrisseur du programme Surveyor, seul posé dans les hautes terres lunaires",
+  "facts": [
+    [
+      "Nom officiel",
+      "Surveyor 7"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Surveyor"
+    ],
+    [
+      "Lancement",
+      "7 janvier 1968, 06h30 UTC — Cape Canaveral (LC-36A), Atlas-Centaur (AC-15)"
+    ],
+    [
+      "Atterrissage",
+      "10 janvier 1968, 01h05:36 UTC — glacis d'éjectas au nord de Tycho, ~40,98° S, 11,51° O (~29 km du bord du cratère)"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — atterrisseur resté sur la Lune"
+    ],
+    [
+      "Durée d'exploitation",
+      "Du 10 janvier au 21 février 1968, deux jours lunaires ; dernier contact le 21 février 1968"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur · atterrisseur Surveyor 7 · moteur de freinage solide"
+    ],
+    [
+      "Statut",
+      "Réussie — ~21 000 images, analyse alpha de sol et de roche, essais de pelle ; silencieuse depuis le 21 février 1968"
+    ]
+  ],
+  "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-7-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "surveyor-7.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Surveyor 7 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 atterrisseur de ~306 kg resté sur le glacis d'éjectas de Tycho, dernier contact le 21 février 1968 · 1 caméra de télévision, 1 analyseur à diffusion alpha, 1 pelle-griffe et 6 aimants · 1 moteur de freinage solide et 1 radar largués en descente · 1 étage Centaur, devenir non précisé · aucun élément récupéré · dernier atterrisseur du programme Surveyor, seul posé dans les hautes terres lunaires"
+      },
+      {
+        "y": 195.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 217.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Surveyor 7"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Surveyor"
+          ],
+          [
+            "Lancement",
+            "7 janvier 1968, 06h30 UTC — Cape Canaveral (LC-36A), Atlas-Centaur (AC-15)"
+          ],
+          [
+            "Atterrissage",
+            "10 janvier 1968, 01h05:36 UTC — glacis d'éjectas au nord de Tycho, ~40,98° S, 11,51° O (~29 km du bord du cratère)"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — atterrisseur resté sur la Lune"
+          ],
+          [
+            "Durée d'exploitation",
+            "Du 10 janvier au 21 février 1968, deux jours lunaires ; dernier contact le 21 février 1968"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur · atterrisseur Surveyor 7 · moteur de freinage solide"
+          ],
+          [
+            "Statut",
+            "Réussie — ~21 000 images, analyse alpha de sol et de roche, essais de pelle ; silencieuse depuis le 21 février 1968"
+          ]
+        ]
+      },
+      {
+        "y": 464.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 489.2605895996094,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 531.596923828125,
+        "type": "text",
+        "text": "A. Surface lunaire — glacis de Tycho"
+      },
+      {
+        "y": 549.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Surveyor 7",
+            "305,7 kg à l'atterrissage ; 1 040,1 kg au lancement",
+            "",
+            "Batterie endommagée pendant la première nuit lunaire ; la pelle a répondu le 14 février 1968 mais l'alimentation ne permettait plus d'opérer ; dernier contact le 21 février 1968"
+          ],
+          [
+            "Caméra de télévision",
+            "—",
+            "",
+            "Vidicon, objectifs 25 et 100 mm, filtres polarisants, miroirs auxiliaires ; ~21 000 images, dont Terre, étoiles et couronne solaire"
+          ],
+          [
+            "Analyseur à diffusion alpha",
+            "—",
+            "",
+            "Source de curium 242 ; ne s'est pas abaissé jusqu'au sol, poussé en position par la griffe de la pelle ; mesures sur sol non perturbé, roche et zone creusée"
+          ],
+          [
+            "Pelle-griffe (soil mechanics surface sampler)",
+            "—",
+            "",
+            "Sur bras pantographe : 16 essais de portance, 7 de tranchées, 2 d'impact ; 36 h de fonctionnement du 11 au 23 janvier"
+          ],
+          [
+            "Aimants",
+            "—",
+            "",
+            "Barres aimantées sur deux patins et aimants sur la pelle"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Étages de lancement et éléments largués"
+      },
+      {
+        "y": 72.35438537597656,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Moteur de freinage solide",
+            "n.c.",
+            "",
+            "Déclenché par le radar de marquage d'altitude ; largué après combustion ; devenir non précisé"
+          ],
+          [
+            "Radar d'altitude",
+            "n.c.",
+            "",
+            "Largué avec le moteur de freinage ; devenir non précisé"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "Devenir non précisé dans mes sources"
+          ],
+          [
+            "Étage Atlas",
+            "n.c.",
+            "",
+            "Retombé ; non précisé"
+          ]
+        ]
+      },
+      {
+        "y": 197.19696044921875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 214.40438842773438,
+        "type": "text",
+        "text": "• Rien : seules des images et des mesures transmises par radio sont revenues"
+      },
+      {
+        "y": 242.19696044921875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 259.4043884277344,
+        "type": "text",
+        "text": "• Étages de l'Atlas et du Centaur ; seconde combustion du Centaur pour la trajectoire lunaire"
+      },
+      {
+        "y": 296.51763916015625,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 319.15435791015625,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "7 janvier 1968, 06h30",
+            "Lancement par Atlas-Centaur"
+          ],
+          [
+            "10 janvier 1968, 01h05:36",
+            "Atterrissage sur le glacis de Tycho (voir séquence ci-dessous)"
+          ],
+          [
+            "11-23 janvier 1968",
+            "36 h de manipulations de la pelle ; analyses alpha du 12 au 23 janvier"
+          ],
+          [
+            "20 janvier 1968",
+            "La caméra détecte deux lasers à l'argon (Kitt Peak, Table Mountain)"
+          ],
+          [
+            "25-26 janvier 1968",
+            "Coucher du Soleil le 25 à 06h06 ; fin des opérations le 26 à 14h12 (80 h après)"
+          ],
+          [
+            "12-21 février 1968",
+            "2e jour lunaire : 45 images et 34 h d'analyse alpha ; contact sporadique"
+          ],
+          [
+            "21 février 1968",
+            "Dernier contact"
+          ]
+        ]
+      },
+      {
+        "y": 493.3969421386719,
+        "type": "text",
+        "text": "Séquence d'atterrissage"
+      },
+      {
+        "y": 511.75433349609375,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "7 janvier",
+            "Seconde combustion du Centaur pour la trajectoire lunaire"
+          ],
+          [
+            "Descente",
+            "Un radar de marquage d'altitude déclenche le moteur de freinage solide"
+          ],
+          [
+            "Après combustion",
+            "Le moteur de freinage et le radar sont largués"
+          ],
+          [
+            "Fin de descente",
+            "Radars Doppler et altimètre pilotent les moteurs verniers jusqu'au contact"
+          ],
+          [
+            "10 janv., 01h05:36",
+            "Posé sur le glacis d'éjectas à ~2,4 km du centre de la cible, ~29 km au nord du bord de Tycho"
+          ]
+        ]
+      },
+      {
+        "y": 654.9176635742188,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 676.4043579101562,
+        "type": "text",
+        "text": "• Dernier atterrisseur du programme Surveyor : cinquième et dernier atterrissage réussi sur sept vols."
+      },
+      {
+        "y": 707.4043579101562,
+        "type": "text",
+        "text": "• Hautes terres lunaires : seul Surveyor posé dans cette région, donc terrain et échantillons différents des autres."
+      },
+      {
+        "y": 738.404296875,
+        "type": "text",
+        "text": "• Pelle-griffe : outil de manipulation à distance ; elle a notamment déplacé l'analyseur alpha vers deux autres sites."
+      },
+      {
+        "y": 769.404296875,
+        "type": "text",
+        "text": "• Lasers : deux faisceaux d'~1 W détectés, un test pour le réflecteur laser d'Apollo."
+      }
+    ],
+    [
+      {
+        "y": 50.204368591308594,
+        "type": "text",
+        "text": "• Images : ~21 000 (20 993, 20 961 ou 21 091 selon les sources)."
+      },
+      {
+        "y": 67.2043685913086,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 118.317626953125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 139.80435180664062,
+        "type": "text",
+        "text": "• Wikipedia — Surveyor 7 : masses, coordonnées, pelle, nuits lunaires, lasers"
+      },
+      {
+        "y": 156.80435180664062,
+        "type": "text",
+        "text": "• Beyond Earth Sky — « Surveyor VII, last Surveyor » : descente, résultats, héritage"
+      },
+      {
+        "y": 173.80435180664062,
+        "type": "text",
+        "text": "• Université d'Arizona (LPL) — Surveyor VII : images, opérations, dernier contact"
+      },
+      {
+        "y": 190.80435180664062,
+        "type": "text",
+        "text": "• Wikipedia (miroir cavac.at) — Surveyor 7 : instruments, griffe, lasers"
+      }
+    ]
+  ]
+}

@@ -54,6 +54,11 @@ export function initializeActionRail() {
   headingCopy.append(title,description);heading.append(handle,headingCopy);
   const worlds = element('div','rail-worlds');
   worlds.append(picker);
+  const missionArchive=element('a','rail-mission-archive');
+  missionArchive.href=new URL('../../pages/missions.html',import.meta.url).href;
+  const updateMissionArchive=()=>{missionArchive.textContent=getLanguage()==='fr'?'Missions · 3D, films et archives ↗':'Missions · 3D, films and archives ↗';};
+  updateMissionArchive();onLanguageChange(updateMissionArchive);worlds.append(missionArchive);
+
   const menu = element('div','rail-menu');
   const view = element('section','rail-view');
   const viewTitle = element('h3','rail-section-title');

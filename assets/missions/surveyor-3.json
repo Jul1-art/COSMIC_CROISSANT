@@ -1,0 +1,373 @@
+{
+  "id": "surveyor-3",
+  "name": "Surveyor 3",
+  "body": "moon",
+  "family": "surveyor",
+  "year": 1967,
+  "summary": "1 atterrisseur de ~302 kg resté dans l'Océan des Tempêtes, silencieux depuis mai 1967 · caméra, pelle, tubes et câble de la sonde rapportés sur Terre par Apollo 12 en novembre 1969 · 1 étage Centaur, devenir non précisé · première sonde à creuser dans le sol d'un autre corps",
+  "facts": [
+    [
+      "Nom officiel",
+      "Surveyor 3"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Surveyor"
+    ],
+    [
+      "Lancement",
+      "17 avril 1967, 07h05 UTC — Atlas-Centaur"
+    ],
+    [
+      "Atterrissage",
+      "20 avril 1967, 00h04 UTC — petit cratère de Mare Cognitum (Oceanus Procellarum), ~2,94° S, 23,34° O"
+    ],
+    [
+      "Retour sur Terre",
+      "Atterrisseur resté sur la Lune ; pièces récupérées par Apollo 12 (novembre 1969)"
+    ],
+    [
+      "Durée d'exploitation",
+      "Du 20 avril au 3 mai 1967 (coucher du Soleil) ; dernier contact le 4 mai 1967"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur · atterrisseur Surveyor 3"
+    ],
+    [
+      "Statut",
+      "Réussie — atterrissage après deux rebonds, 6 315 images, quatre tranchées creusées ; silencieuse depuis le 4 mai 1967"
+    ]
+  ],
+  "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-3-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "surveyor-3.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Surveyor 3 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 atterrisseur de ~302 kg resté dans l'Océan des Tempêtes, silencieux depuis mai 1967 · caméra, pelle, tubes et câble de la sonde rapportés sur Terre par Apollo 12 en novembre 1969 · 1 étage Centaur, devenir non précisé · première sonde à creuser dans le sol d'un autre corps"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Surveyor 3"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Surveyor"
+          ],
+          [
+            "Lancement",
+            "17 avril 1967, 07h05 UTC — Atlas-Centaur"
+          ],
+          [
+            "Atterrissage",
+            "20 avril 1967, 00h04 UTC — petit cratère de Mare Cognitum (Oceanus Procellarum), ~2,94° S, 23,34° O"
+          ],
+          [
+            "Retour sur Terre",
+            "Atterrisseur resté sur la Lune ; pièces récupérées par Apollo 12 (novembre 1969)"
+          ],
+          [
+            "Durée d'exploitation",
+            "Du 20 avril au 3 mai 1967 (coucher du Soleil) ; dernier contact le 4 mai 1967"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur · atterrisseur Surveyor 3"
+          ],
+          [
+            "Statut",
+            "Réussie — atterrissage après deux rebonds, 6 315 images, quatre tranchées creusées ; silencieuse depuis le 4 mai 1967"
+          ]
+        ]
+      },
+      {
+        "y": 436.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 461.2606201171875,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 503.596923828125,
+        "type": "text",
+        "text": "A. Surface lunaire — Mare Cognitum"
+      },
+      {
+        "y": 521.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Surveyor 3 (corps principal)",
+            "~302 kg à l'atterrissage",
+            "",
+            "Resté sur place après la visite d'Apollo 12 ; non réactivé à l'aube lunaire suivante (~14 jours plus tard) ; photographié par la sonde LRO en 2009, puis en 2011 à plus basse altitude"
+          ],
+          [
+            "Pelle de prélèvement du sol",
+            "—",
+            "",
+            "Pelle sur bras pantographe, la première utilisée sur un autre monde ; 4 tranchées jusqu'à ~18 cm de profondeur ; rapportée sur Terre par Apollo 12 (voir C)"
+          ],
+          [
+            "Caméra de télévision",
+            "—",
+            "",
+            "Tube vidicon, objectifs 25 et 100 mm, modes 200 et 600 lignes ; 6 315 images ; rapportée sur Terre par Apollo 12 (voir C) ; poussière sur le miroir, qui a dégradé beaucoup d'images"
+          ]
+        ]
+      },
+      {
+        "y": 682.596923828125,
+        "type": "text",
+        "text": "B. Étages de lancement et éléments largués"
+      },
+      {
+        "y": 700.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "Devenir non précisé dans mes sources"
+          ],
+          [
+            "Étage Atlas",
+            "n.c.",
+            "",
+            "Retombé ; non précisé"
+          ],
+          [
+            "Moteur de freinage solide",
+            "n.c.",
+            "",
+            "Largué pendant la descente ; non détaillé dans mes sources"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre par Apollo 12 (novembre 1969)"
+      },
+      {
+        "y": 71.2043685913086,
+        "type": "text",
+        "text": "• Caméra de télévision, pelle de prélèvement, deux sections de tube en aluminium (une non peinte, une à peinture blanche) et un segment de câble de télévision"
+      },
+      {
+        "y": 102.2043685913086,
+        "type": "text",
+        "text": "• Pete Conrad et Alan Bean ont inspecté la sonde, l'ont photographiée et ont ramené ces pièces au Lunar Receiving Laboratory de Houston pour étudier l'exposition à l'environnement lunaire"
+      },
+      {
+        "y": 133.20437622070312,
+        "type": "text",
+        "text": "• Plusieurs pièces sont restées dans les réserves de la NASA, d'autres ont été exposées ou offertes en récompense ; leur localisation actuelle est mal connue (une source cite la caméra au musée national de l'Air et de l'Espace et la pelle au JPL)"
+      },
+      {
+        "y": 178.20437622070312,
+        "type": "text",
+        "text": "• En janvier 1970, des bactéries Streptococcus mitis auraient été trouvées sur la caméra ; cette affirmation est contestée et la NASA ne la soutient plus d'après une source"
+      },
+      {
+        "y": 219.9969482421875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 237.20437622070312,
+        "type": "text",
+        "text": "• Étages de l'Atlas et du Centaur, séparés pendant l'ascension et la trajectoire directe"
+      },
+      {
+        "y": 274.317626953125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 296.9543762207031,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "17 avril 1967, 07h05",
+            "Lancement par Atlas-Centaur"
+          ],
+          [
+            "20 avril 1967, 00h04:53",
+            "Atterrissage dans un petit cratère (voir séquence ci-dessous)"
+          ],
+          [
+            "20 avril – 3 mai 1967",
+            "6 315 images transmises ; tranchées creusées avec la pelle"
+          ],
+          [
+            "3 mai 1967",
+            "Mise en veille au coucher du Soleil, panneaux solaires sans énergie"
+          ],
+          [
+            "4 mai 1967",
+            "Dernier contact"
+          ],
+          [
+            "Mai 1967",
+            "Réactivation impossible à l'aube lunaire suivante, ~14 jours plus tard"
+          ],
+          [
+            "19 novembre 1969",
+            "Apollo 12 se pose à proximité ; les astronautes récupèrent des pièces de la sonde"
+          ],
+          [
+            "Janvier 1970",
+            "Analyse de la caméra ; mention de bactéries, affirmation contestée par la suite"
+          ],
+          [
+            "2009 et 2011",
+            "Images de la sonde LRO montrant le site (traces de pas des astronautes en 2009)"
+          ]
+        ]
+      },
+      {
+        "y": 511.596923828125,
+        "type": "text",
+        "text": "Séquence d'atterrissage"
+      },
+      {
+        "y": 529.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "Descente",
+            "Des roches réfléchissantes brouillent le radar de descente"
+          ],
+          [
+            "~4,3 m (14 pi)",
+            "Un moteur ne s'arrête pas à l'altitude prévue"
+          ],
+          [
+            "1er contact",
+            "Premier rebond d'environ 10 m (35 pieds)"
+          ],
+          [
+            "2e contact",
+            "Deuxième rebond d'environ 3 m (11 pieds)"
+          ],
+          [
+            "3e contact",
+            "Atterrissage en douceur dans un petit cratère, à 00h04:53 UTC"
+          ]
+        ]
+      },
+      {
+        "y": 673.11767578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 694.6043701171875,
+        "type": "text",
+        "text": "• Première pelle utilisée sur un autre monde : portance du sol testée par creusement, tranchées et essais d'impact."
+      },
+      {
+        "y": 725.6043701171875,
+        "type": "text",
+        "text": "• Images : 6 315 vues transmises."
+      },
+      {
+        "y": 742.6043090820312,
+        "type": "text",
+        "text": "• Test pour Apollo : le site a ensuite été choisi pour la mission Apollo 12, qui a pu comparer la sonde après ~2,5 ans sur la Lune."
+      }
+    ],
+    [
+      {
+        "y": 50.204368591308594,
+        "type": "text",
+        "text": "• Rare retour de matériel d'un site lunaire : pièces d'un engin spatial ayant passé plusieurs années à la surface."
+      },
+      {
+        "y": 81.2043685913086,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 132.317626953125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 153.80435180664062,
+        "type": "text",
+        "text": "• Wikipedia (miroir cavac.at) — Surveyor 3 : instruments, images, Apollo 12"
+      },
+      {
+        "y": 170.80435180664062,
+        "type": "text",
+        "text": "• The Living Moon — fiche Surveyor 3 : masse, heure d'atterrissage, rebonds, tranchées"
+      },
+      {
+        "y": 187.80435180664062,
+        "type": "text",
+        "text": "• Astronomy.com — « May 4, 1967: Surveyor 3 last contact »"
+      },
+      {
+        "y": 204.80435180664062,
+        "type": "text",
+        "text": "• New Space Economy — « Surveyor 3: an overview » : atterrissage et retour de pièces"
+      }
+    ]
+  ]
+}

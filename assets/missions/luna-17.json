@@ -1,0 +1,325 @@
+{
+  "id": "luna-17",
+  "name": "Luna 17",
+  "body": "moon",
+  "family": "luna-orbiter",
+  "year": 1970,
+  "summary": "~1,78 t de matériel posé dans Mare Imbrium (atterrisseur fixe d'environ 1,2 t et astromobile Lunokhod 1 de 756 kg) · 0 objet actif en 2026 (10 mois et demi d'activité de Lunokhod 1 entre novembre 1970 et octobre 1971) · 0 objet de localisation inconnue (site d'atterrissage précisément imagé par la sonde LRO).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 17 (objet Ye-8 n° 203 — Atterrisseur & astromobile automatique Lunokhod 1)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+    ],
+    [
+      "Lancement",
+      "10 novembre 1970, 14h44m01s UTC — Cosmodrome de Baïkonour (Site 81/23), fusée Proton-K / Bloc D (8K82K)"
+    ],
+    [
+      "Alunissage",
+      "17 novembre 1970, 03h47 UTC — Mare Imbrium (Mer des Pluies), région de la Palus Putredinis (38,28° N, 325,00° E / 35,00° O)"
+    ],
+    [
+      "Durée de mission",
+      "Trajet de 7 jours Terre-Lune + 322 jours d'opérations terrestres (11 lunations) pour Lunokhod 1 (dernier contact le 4 octobre 1971)"
+    ],
+    [
+      "Type de mission",
+      "Mission automatique combinant une plateforme d'atterrissage fixe et le premier rover télécommandé de l'histoire spatiale"
+    ],
+    [
+      "Véhicules",
+      "Proton-K / Bloc D · Plateforme de descente Ye-8 (avec double rampe de débarquement) · Rover Lunokhod 1 (véhicule 8wheeled)"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier déploiement et pilotage réussi de l'histoire d'un robot mobile sur un autre monde (10,5 km parcourus)"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche mission Luna 17 - Hardware perdu dans l_espace.pdf",
+  "pdf": "luna-17.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION ROBOTIQUE LUNAIRE · CATALOGUE DU PATRIMOINE SPATIAL Luna 17 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 116.38310241699219,
+        "type": "text",
+        "text": "Synthèse hardware : ~1,78 t de matériel posé dans Mare Imbrium (atterrisseur fixe d'environ 1,2 t et astromobile Lunokhod 1 de 756 kg) · 0 objet actif en 2026 (10 mois et demi d'activité de Lunokhod 1 entre"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "novembre 1970 et octobre 1971) · 0 objet de localisation inconnue (site d'atterrissage précisément imagé par la sonde LRO)."
+      },
+      {
+        "y": 190.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 17 (objet Ye-8 n° 203 — Atterrisseur & astromobile automatique Lunokhod 1)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+          ],
+          [
+            "Lancement",
+            "10 novembre 1970, 14h44m01s UTC — Cosmodrome de Baïkonour (Site 81/23), fusée Proton-K / Bloc D (8K82K)"
+          ],
+          [
+            "Alunissage",
+            "17 novembre 1970, 03h47 UTC — Mare Imbrium (Mer des Pluies), région de la Palus Putredinis (38,28° N, 325,00° E / 35,00° O)"
+          ],
+          [
+            "Durée de mission",
+            "Trajet de 7 jours Terre-Lune + 322 jours d'opérations terrestres (11 lunations) pour Lunokhod 1 (dernier contact le 4 octobre 1971)"
+          ],
+          [
+            "Type de mission",
+            "Mission automatique combinant une plateforme d'atterrissage fixe et le premier rover télécommandé de l'histoire spatiale"
+          ],
+          [
+            "Véhicules",
+            "Proton-K / Bloc D · Plateforme de descente Ye-8 (avec double rampe de débarquement) · Rover Lunokhod 1 (véhicule 8wheeled)"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier déploiement et pilotage réussi de l'histoire d'un robot mobile sur un autre monde (10,5 km parcourus)"
+          ]
+        ]
+      },
+      {
+        "y": 541.1671142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 573.0,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 606.4705810546875,
+        "type": "text",
+        "text": "A. Surface lunaire — Mare Imbrium (Palus Putredinis, ~1,78 t au total)"
+      },
+      {
+        "y": 626.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur fixe Luna 17 (plateforme de descente)",
+            "~1 024 kg (à sec)",
+            "■ Intact / inactif",
+            "Masse de 5 600 kg au lancement (dont ~4 500 kg d'ergols). Plateforme octogonale munie de moteurs de freinage, de réservoirs vides, de quatre pieds amortisseurs et de deux rampes articulées (tribord et bâbord) ayant permis au rover de descendre sur le sol de Mare Imbrium (38,28° N, 35,00° O)."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 17 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 3"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Astromobile Lunokhod 1 (véhicule radioguidé)",
+            "756,0 kg",
+            "■ Intact / inactif",
+            "Châssis tubulaire étanche en magnésium pressurisé à l'azote, monté sur 8 roues indépendantes motrices et directrices dotées de moteurs électriques séparés. Long de 2,22 m, large de 2,15 m et haut de 1,60 m. Alimenté par un panneau solaire au sommet du couvercle ouvrant et chauffé la nuit par une source radioactive au polonium-210."
+          ],
+          [
+            "Instruments scientifiques de Lunokhod 1 (5 instruments)",
+            "~45 kg (inclus)",
+            "■ Intact / inactif",
+            "Deux caméras de télévision panoramique et quatre caméras de navigation pilotées depuis la Terre, spectromètre à fluorescence X, analyseur de pénétration du sol (pénétromètre conique), compteur de rayons cosmiques et rétroréflecteur laser (fourni par la France) pour la mesure géodésique Terre-Lune."
+          ],
+          [
+            "Médaillons commémoratifs & fanions soviétiques",
+            "< 1 kg (inclus)",
+            "■ Intact / inactif",
+            "Emblèmes de l'URSS et bas-relief de Lénine fixés sur la structure principale de l'atterrisseur et du rover Lunokhod 1."
+          ]
+        ]
+      },
+      {
+        "y": 365.7205810546875,
+        "type": "text",
+        "text": "B. Espace cislunaire & retombées lanceur Proton-K"
+      },
+      {
+        "y": 385.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Quatrième étage Bloc D (fusée Proton-K)",
+            "~2 450 kg (à sec)",
+            "■ Orbite solaire / haute",
+            "Étage cryogénique ayant injecté Luna 17 sur sa trajectoire translunaire le 10 novembre 1970 ; placé ensuite sur une orbite héliocentrique stable."
+          ],
+          [
+            "Troisième étage UR- 500K (fusée Proton- K)",
+            "~4 180 kg (à sec)",
+            "▲ Désintégré",
+            "Étage à ergols hypergoliques largué lors du lancement du 10 novembre 1970 ; rentré et consumé dans l'atmosphère terrestre quelques heures après le tir."
+          ]
+        ]
+      },
+      {
+        "y": 548.7205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 570.3369140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Luna 17 et son rover Lunokhod 1 sont des équipements conçus pour rester définitivement à la surface de la Lune. La position exacte du rover a été redécouverte en 2010 grâce aux images infrarouges et laser de la sonde américaine Lunar Reconnaissance Orbiter (LRO), permettant de refixer sa position à quelques mètres près."
+      },
+      {
+        "y": 643.9705810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 664.8369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique (4,35 m) & protections de rampes : coiffe éjectée durant l'ascension atmosphérique terrestre le 10 novembre 1970 ; verrous et housses de protection des rampes de débarquement éjectés lors de l'alunissage dans Mare Imbrium le 17 novembre 1970."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 17 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 3"
+      }
+    ],
+    [
+      {
+        "y": 67.91712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 93.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "10 novembre 1970, 14h44m01s UTC",
+            "Décollage de la fusée Proton-K depuis le cosmodrome de Baïkonour et injection directe sur trajectoire translunaire."
+          ],
+          [
+            "15 novembre 1970, 22h00 UTC",
+            "Insertion réussie en orbite lunaire circulaire (85 km d'altitude, inclinaison 141°)."
+          ],
+          [
+            "17 novembre 1970, 03h47 UTC",
+            "Descente propulsée et alunissage en douceur réussi dans Mare Imbrium (région de la Palus Putredinis : 38,28° N, 35,00° O)."
+          ],
+          [
+            "17 novembre 1970, 06h28 UTC",
+            "Ouverture des rampes de la plateforme et descente officielle de l'astromobile Lunokhod 1 sur le régolithe lunaire à 06h55 UTC."
+          ],
+          [
+            "Novembre 1970 – Octobre 1971",
+            "11 mois de mission active : 10,5 km parcourus, 20 000 images transmises, 500 analyses de sol par rayons X et mesures laser continues avec le réflecteur français."
+          ],
+          [
+            "4 octobre 1971",
+            "Épuisement définitif du fluide caloporteur et panne thermique lors de la 11e nuit lunaire ; fin officielle des transmissions radio."
+          ]
+        ]
+      },
+      {
+        "y": 359.6671447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 386.5869140625,
+        "type": "text",
+        "text": "Première mission mobile télécommandée de l'histoire de l'humanité : piloté depuis le Centre spatial de Crimée par un équipage terrien de 5 personnes (commandant, conducteur, ingénieur de bord, navigateur et opérateur radio) malgré un délai de transmission aller-retour de 2,6 secondes, Lunokhod 1 a révolutionné l'exploration planétaire."
+      },
+      {
+        "y": 451.0869140625,
+        "type": "text",
+        "text": "Cartographie mécanique et géologique de Mare Imbrium : au fil de ses 10,5 kilomètres de pistes, le rover a analysé la résistance mécanique et la densité du régolithe en plus de 500 points et réalisé plus de 200 analyses chimiques élémentaires par fluorescence X de surface."
+      },
+      {
+        "y": 499.0869140625,
+        "type": "text",
+        "text": "Découverte du rétro-réflecteur laser perdu et retrouvé : muni d'un panneau de miroirs catadioptriques français, Lunokhod 1 a servi de cible fixe pour mesurer au millimètre près la distance Terre-Lune. Bien que perdu de vue pendant 40 ans, sa position exacte a été redécouverte par télémétrie laser en avril 2010."
+      },
+      {
+        "y": 563.5869140625,
+        "type": "text",
+        "text": "Héritage technique des rovers planétaires : les solutions d'architecture (roues indépendantes, étanchéité sous pression d'azote, gestion thermique par source radioactive) ont servi de modèle direct à toutes les générations ultérieures de rovers martiens et lunaires (Lunokhod 2, programmes Mars Exploration Rover, Curiosity, Perseverance, Yutu et Pragyan)."
+      },
+      {
+        "y": 637.9171142578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 664.8369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Luna 17 / Lunokhod 1 Spacecraft Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 682.8369140625,
+        "type": "text",
+        "text": "NPO Lavotchkine / IKI RAN — First Planetary Rover : Lunokhod 1 (Ye-8)"
+      },
+      {
+        "y": 700.8369140625,
+        "type": "text",
+        "text": "Murphy, T. W. et al. (2011) — Laser ranging to the lost Lunokhod 1 reflector (Icarus, Vol. 211)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 17 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 3"
+      }
+    ]
+  ]
+}

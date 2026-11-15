@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "title": "Photomosaic of Tycho Crater - Surveyor 7",
+      "credit": "NASA/JPL",
+      "date": "2000-11-04T23:29:48Z",
+      "source": "https://images.nasa.gov/details/PIA02977",
+      "nasaId": "PIA02977",
+      "description": "Photomosaic of lunar panorama near the Tycho crater taken by Surveyor 7. The hills on the center horizon are about eight miles away from the spacecraft.",
+      "src": "archives/surveyor-7-nasa-PIA02977.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/surveyor-7.mp4",
+    "local": true,
+    "title": "Surveyor 7 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "surveyor-7.pdf",
+    "fingerprint": "e7865cc2fb91e89c73c749a48cc234451bb6c803fde57ed170bc1366e93a83aa"
+  }
+}

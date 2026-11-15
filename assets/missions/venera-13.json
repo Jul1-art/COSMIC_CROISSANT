@@ -1,0 +1,278 @@
+{
+  "id": "venera-13",
+  "name": "Venera 13",
+  "body": "venus",
+  "family": "venera",
+  "year": 1981,
+  "summary": "~4 363 kg au lancement total (bus de survol de ~3 200 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 1er mars 1982 avec un record de 127 minutes d'activité et transmission des premières photographies en couleur de la surface de Vénus.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 13 (Венера-13, appareil 4V-2 n° 760, COSPAR 1981-106A / Lander 106D)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (NPO Lavotchkine) — programme Venera"
+    ],
+    [
+      "Lancement",
+      "30 octobre 1981, 09h04 UTC — Cosmodrome de Baïkonour (site 200/39), fusée Proton-K / Blok D-1"
+    ],
+    [
+      "Atterrissage",
+      "1 mars 1982, 06h57 UTC — Surface de Vénus (7,5° S, 303,0° E, Phoebe Regio, à l'est de Phoebe)"
+    ],
+    [
+      "Fin de mission",
+      "1 mars 1982 pour l'atterrisseur (127 minutes d'activité au sol, record absolu) ; bus en orbite solaire jusqu'en 1983"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission combinant bus de survol interplanétaire et capsule d'atterrissage automatisée lourde)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur lourd Proton-K / Blok D-1, bus de survol Venera 13 (~3 200 kg), module d'atterrissage (~1 560 kg au largage)"
+    ],
+    [
+      "Statut",
+      "Réussite historique majeure — premier panorama en couleur de la surface de Vénus et analyses de sol inédites."
+    ]
+  ],
+  "sourceFile": "Vénus/Venera 13 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "venera-13.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Venera 13 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~4 363 kg au lancement total (bus de survol de ~3 200 kg + atterrisseur de ~1 560"
+      },
+      {
+        "y": 143.28004455566406,
+        "type": "text",
+        "text": "kg avec boucliers) • 0 objet actif • Atterrissage réussi le 1er mars 1982 avec un record de 127 minutes d'activité et transmission des premières photographies en couleur de la surface de Vénus."
+      },
+      {
+        "y": 199.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 225.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 13 (Венера-13, appareil 4V-2 n° 760, COSPAR 1981-106A / Lander 106D)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (NPO Lavotchkine) — programme Venera"
+          ],
+          [
+            "Lancement",
+            "30 octobre 1981, 09h04 UTC — Cosmodrome de Baïkonour (site 200/39), fusée Proton-K / Blok D-1"
+          ],
+          [
+            "Atterrissage",
+            "1 mars 1982, 06h57 UTC — Surface de Vénus (7,5° S, 303,0° E, Phoebe Regio, à l'est de Phoebe)"
+          ],
+          [
+            "Fin de mission",
+            "1 mars 1982 pour l'atterrisseur (127 minutes d'activité au sol, record absolu) ; bus en orbite solaire jusqu'en 1983"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission combinant bus de survol interplanétaire et capsule d'atterrissage automatisée lourde)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur lourd Proton-K / Blok D-1, bus de survol Venera 13 (~3 200 kg), module d'atterrissage (~1 560 kg au largage)"
+          ],
+          [
+            "Statut",
+            "Réussite historique majeure — premier panorama en couleur de la surface de Vénus et analyses de sol inédites."
+          ]
+        ]
+      },
+      {
+        "y": 527.5154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 561.8842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 595.9705810546875,
+        "type": "text",
+        "text": "A. Surface de Vénus — Phoebe Regio (Atterrisseur Venera 13)"
+      },
+      {
+        "y": 615.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Capsule d'atterrissage (Lander)",
+            "~760 kg",
+            "Détruit / écrasé",
+            "Module pressurisé (record absolu de 127 min d'activité le 1er mars 1982)."
+          ],
+          [
+            "Téléphotomètres couleur (FON)",
+            "~15 kg",
+            "Détruits / inactifs",
+            "Caméras dotées de filtres cyan, jaune et magenta pour les premières images couleur du sol vénusien."
+          ],
+          [
+            "Foreuse & spectromètre X",
+            "~25 kg",
+            "Détruits / inactifs",
+            "Système de carottage sous pression et analyseur de sol (identifiant un basalte alcalin potassique)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Bus de survol interplanétaire & espace"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bus de survol (Flyby Bus)",
+            "~3 200 kg (initial)",
+            "Détruit / héliocentrique",
+            "Structure principale ayant transporté la capsule et servi de relais radio pendant l'atterrissage. A survolé Vénus le 1er mars 1982 avant de se placer sur une orbite héliocentrique stable."
+          ],
+          [
+            "Étage supérieur Blok D-1 (Proton-K)",
+            "~2 500 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage d'injection interplanétaire ayant propulsé Venera 13 le 30 octobre 1981 depuis Baïkonour ; placé sur une orbite solaire stable."
+          ]
+        ]
+      },
+      {
+        "y": 265.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 286.8369140625,
+        "type": "text",
+        "text": "Modèle d'ingénierie (NPO Lavotchkine) : maquettes de test conservées dans les archives spatiales russes."
+      },
+      {
+        "y": 320.5869140625,
+        "type": "text",
+        "text": "Archives iconographiques historiques : clichés originaux des premières images en couleur de la surface de Vénus (ciel orange ambré et roches sombres) archivés par l'Académie des sciences d'URSS."
+      },
+      {
+        "y": 381.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 408.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "30 octobre 1981",
+            "Décollage réussi de la fusée Proton-K / Blok D-1 depuis Baïkonour ; injection de Venera 13 vers Vénus."
+          ],
+          [
+            "25 février 1982",
+            "Exécution réussie d'une correction de trajectoire à mi-course."
+          ],
+          [
+            "1 mars 1982",
+            "Arrivée à Vénus : séparation et atterrissage parfait de la capsule renforcée dans Phoebe Regio (7,5° S, 303° E) à 06h57 UTC."
+          ],
+          [
+            "1 mars 1982 (127 min)",
+            "L'atterrisseur établit un nouveau record en transmettant pendant 127 minutes de données, incluant de superbes panoramas couleur et des analyses de sol."
+          ],
+          [
+            "1 mars 1982 (fin)",
+            "Fin des transmissions suite à la défaillance des batteries et la fusion des circuits sous l'effet de la fournaise vénusienne (457 °C)."
+          ]
+        ]
+      },
+      {
+        "y": 615.2654418945312,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 643.8369140625,
+        "type": "text",
+        "text": "Premières images en couleur de la surface de Vénus : contrairement aux missions précédentes en noir et blanc, Venera 13 a muni ses caméras de filtres optiques cyan, jaune et magenta pour reconstituer les tout premiers clichés en couleur du sol vénusien, révélant un paysage aux teintes ocre et orangées sous un ciel brumeux."
+      },
+      {
+        "y": 708.3369140625,
+        "type": "text",
+        "text": "Analyse chimique par carottage sous pression : la foreuse embarquée a préconisé un échantillon de roche et l'a analysé dans une cuve pressurisée interne, identifiant un basalte alcalin riche en potassium."
+      }
+    ],
+    [
+      {
+        "y": 55.8369140625,
+        "type": "text",
+        "text": "Record de survie prolongée : avec 127 minutes d'activité dans des conditions extrêmes (89 atm, 457 °C), la mission a démontré l'excellence des protections thermiques et des systèmes de refroidissement internes soviétiques."
+      },
+      {
+        "y": 116.51544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 145.0869140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Venera 13 (ID : 1981- 106A)"
+      },
+      {
+        "y": 179.5869140625,
+        "type": "text",
+        "text": "L. P. Ksanfomaliti, Venustian Panoramas: The Venera 13 and 14 Results, Sky & Telescope, 1983"
+      },
+      {
+        "y": 198.3369140625,
+        "type": "text",
+        "text": "B. Harvey, Soviet and Russian Lunar Exploration, Springer Praxis Books, 2007"
+      }
+    ]
+  ]
+}

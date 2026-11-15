@@ -1,0 +1,408 @@
+{
+  "id": "pioneer-11",
+  "name": "Pioneer 11",
+  "body": "outer",
+  "family": "pioneer",
+  "year": 1973,
+  "summary": "~258 kg de sonde au lancement · 1 objet muet depuis novembre 1995 (dernières données d'ingénierie le 24 novembre 1995) · 12 instruments embarqués, aucun actif · 1 plaque d'or destinée à d'éventuels extraterrestres · 1 étage Star-37E d'emplacement inconnu",
+  "facts": [
+    [
+      "Nom officiel",
+      "Pioneer 11 (Pioneer G avant le lancement)"
+    ],
+    [
+      "Agence & programme",
+      "NASA / Ames Research Center — programme Pioneer"
+    ],
+    [
+      "Lancement",
+      "6 avril 1973, 02h11 UTC — Cape Canaveral, fusée Atlas-Centaur avec troisième étage Star-37E"
+    ],
+    [
+      "Survols planétaires",
+      "Jupiter, 3 décembre 1974 (~42 800 km des nuages) · Saturne, 1er septembre 1979 (~21 000 km des nuages)"
+    ],
+    [
+      "Ceinture d'astéroïdes",
+      "Traversée le 19 avril 1974 — deuxième sonde à la traverser"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — trajectoire d'échappement du Système solaire, vers la constellation de l'Écu (Scutum)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le centre Ames de la NASA"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur · troisième étage Star-37E · sonde Pioneer 11"
+    ],
+    [
+      "Statut",
+      "Réussie — première sonde à visiter Saturne ; mission terminée, silencieuse depuis 1995 (~113 UA de la Terre en juin 2024)"
+    ]
+  ],
+  "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-Pioneer-11-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "pioneer-11.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Pioneer 11 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : ~258 kg de sonde au lancement · 1 objet muet depuis novembre 1995 (dernières données d'ingénierie le 24 novembre 1995) · 12 instruments embarqués, aucun actif · 1 plaque d'or destinée à d'éventuels extraterrestres · 1 étage Star-37E d'emplacement inconnu"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Pioneer 11 (Pioneer G avant le lancement)"
+          ],
+          [
+            "Agence & programme",
+            "NASA / Ames Research Center — programme Pioneer"
+          ],
+          [
+            "Lancement",
+            "6 avril 1973, 02h11 UTC — Cape Canaveral, fusée Atlas-Centaur avec troisième étage Star-37E"
+          ],
+          [
+            "Survols planétaires",
+            "Jupiter, 3 décembre 1974 (~42 800 km des nuages) · Saturne, 1er septembre 1979 (~21 000 km des nuages)"
+          ],
+          [
+            "Ceinture d'astéroïdes",
+            "Traversée le 19 avril 1974 — deuxième sonde à la traverser"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — trajectoire d'échappement du Système solaire, vers la constellation de l'Écu (Scutum)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le centre Ames de la NASA"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur · troisième étage Star-37E · sonde Pioneer 11"
+          ],
+          [
+            "Statut",
+            "Réussie — première sonde à visiter Saturne ; mission terminée, silencieuse depuis 1995 (~113 UA de la Terre en juin 2024)"
+          ]
+        ]
+      },
+      {
+        "y": 458.7176513671875,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 483.6606140136719,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 511.9969482421875,
+        "type": "text",
+        "text": "A. Espace interstellaire — sonde Pioneer 11 (~258 kg)"
+      },
+      {
+        "y": 530.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bus de la sonde",
+            "258,5 kg au lancement",
+            "",
+            "Contact de routine terminé le 30 septembre 1995, à ~6,5 milliards de km de la Terre ; dernières bonnes données d'ingénierie le 24 novembre 1995, quand la Terre est sortie du champ de l'antenne"
+          ],
+          [
+            "Antenne à grand gain",
+            "—",
+            "",
+            "Deux émetteurs-récepteurs de 8 W (un sur l'antenne à grand gain, un sur les antennes omni et à gain moyen), en bande S (2 110 MHz montant, 2 292 MHz descendant)"
+          ],
+          [
+            "4 générateurs RTG (SNAP-19)",
+            "×4",
+            "",
+            "Sur deux mâts ; 155 W au lancement, 140 W en route vers Jupiter ; la sonde avait besoin de ~100 W pour tous ses systèmes"
+          ],
+          [
+            "Plaque d'or Pioneer",
+            "—",
+            "",
+            "Plaque en aluminium anodisé or portant des figures d'un homme et d'une femme et des symboles sur l'origine de la sonde"
+          ],
+          [
+            "12 instruments (voir B)",
+            "—",
+            "",
+            "Aucun n'est plus actif ; le détecteur de micrométéoroïdes a été coupé le 16 avril 1975 après la rencontre avec Jupiter"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques — état connu au 14 novembre 2026"
+      },
+      {
+        "y": 72.35435485839844,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "Magnétomètre à hélium (HVM)",
+            "Champ magnétique",
+            "",
+            "Champ de Jupiter et de Saturne"
+          ],
+          [
+            "Analyseur de plasma quadrisphérique",
+            "Plasma",
+            "",
+            "Vent solaire et plasma des magnétosphères"
+          ],
+          [
+            "Télescope à tube Geiger (GTT)",
+            "Rayonnement",
+            "",
+            "Rayonnement piégé"
+          ],
+          [
+            "Photopolarimètre imageur (IPP)",
+            "Imagerie",
+            "",
+            "Images de Jupiter et de Saturne"
+          ],
+          [
+            "Radiomètre infrarouge",
+            "Infrarouge",
+            "",
+            "Température des planètes"
+          ],
+          [
+            "Détecteur de micrométéoroïdes",
+            "Poussières",
+            "",
+            "Coupé le 16 avril 1975 après la rencontre avec Jupiter"
+          ],
+          [
+            "7 autres instruments",
+            "—",
+            "",
+            "Rayons cosmiques, particules chargées, rayonnement piégé, détecteurs de météoroïdes, photomètre ultraviolet, magnétomètre à vanne de flux (d'après mes connaissances ; non détaillés dans la page consultée)"
+          ]
+        ]
+      },
+      {
+        "y": 313.79693603515625,
+        "type": "text",
+        "text": "C. Étages de lancement et trajectoire d'échappement"
+      },
+      {
+        "y": 332.15435791015625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Troisième étage Star-37E",
+            "n.c.",
+            "",
+            "Séparé après l'injection interplanétaire ; devenir exact non précisé dans la page consultée"
+          ],
+          [
+            "Étages inférieurs de l'Atlas et du Centaur",
+            "n.c.",
+            "",
+            "Séparés pendant la montée ; devenir exact non confirmé"
+          ]
+        ]
+      },
+      {
+        "y": 427.79693603515625,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 445.0043640136719,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Pioneer 11 n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 462.0043640136719,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : première visite de Saturne, survols de Titan et de lunes, et mesures de la magnétosphère et du rayonnement"
+      },
+      {
+        "y": 493.0043640136719,
+        "type": "text",
+        "text": "• Un message voyage à bord : la plaque Pioneer (voir A)"
+      },
+      {
+        "y": 520.7969360351562,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 538.0043334960938,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension"
+      },
+      {
+        "y": 555.0043334960938,
+        "type": "text",
+        "text": "• Troisième étage Star-37E, séparé après l'injection interplanétaire"
+      },
+      {
+        "y": 592.11767578125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 614.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "6 avril 1973, 02h11 UTC",
+            "Lancement de l'Atlas-Centaur depuis Cape Canaveral"
+          ],
+          [
+            "19 avril 1974",
+            "Traversée de la ceinture d'astéroïdes — deuxième sonde à le faire"
+          ],
+          [
+            "3 décembre 1974",
+            "Survol de Jupiter (~42 800 km des nuages) ; assistance gravitationnelle vers Saturne"
+          ],
+          [
+            "16 avril 1975",
+            "Détecteur de micrométéoroïdes coupé"
+          ],
+          [
+            "29 août 1979",
+            "Passage à ~13,7 millions de km de Phœbé"
+          ],
+          [
+            "1er septembre 1979",
+            "Survol de Saturne (~21 000 km des nuages) ; traversée du plan des anneaux à l'aller"
+          ],
+          [
+            "2 septembre 1979",
+            "Passage à ~363 000 km de Titan : trop froid pour la vie"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.354347229003906,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "30 septembre 1995",
+            "Fin du contact de routine (~6,5 milliards de km)"
+          ],
+          [
+            "24 novembre 1995",
+            "Dernières bonnes données d'ingénierie, la Terre étant sortie du champ de l'antenne"
+          ]
+        ]
+      },
+      {
+        "y": 133.91766357421875,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 155.40438842773438,
+        "type": "text",
+        "text": "• Premier à Saturne : Pioneer 11 est la première sonde à visiter Saturne ; elle a traversé le plan des anneaux à un endroit que Voyager 2 devait aussi traverser plus tard."
+      },
+      {
+        "y": 186.40438842773438,
+        "type": "text",
+        "text": "• Découvertes : une petite lune inconnue et un anneau supplémentaire ; passage à ~4 000 km d'Épiméthée, avec aussi Janus et Mimas."
+      },
+      {
+        "y": 217.40438842773438,
+        "type": "text",
+        "text": "• Précurseur de Voyager : ses données ont aidé à planifier le programme Voyager."
+      },
+      {
+        "y": 234.40438842773438,
+        "type": "text",
+        "text": "• Destination : vers la constellation de l'Écu (Scutum), près de Messier 26 ; passage à ~0,82 année-lumière de l'étoile TYC 992-192-1 dans ~928 000 ans, puis près de Lambda Aquilae dans ~4 millions d'années."
+      },
+      {
+        "y": 279.4043884277344,
+        "type": "text",
+        "text": "• Anomalie Pioneer : la petite accélération inexpliquée vers le Soleil (~8,7 × 10−10 m/s²) a été attribuée à un rayonnement thermique inégal de la sonde."
+      },
+      {
+        "y": 310.4043884277344,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible dans l'espace."
+      },
+      {
+        "y": 361.51763916015625,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 383.0043640136719,
+        "type": "text",
+        "text": "• Wikipedia — Pioneer 11 : lancement, survols, instruments, RTG, fin de mission, anomalie"
+      },
+      {
+        "y": 400.0043640136719,
+        "type": "text",
+        "text": "• Space.com — « On this day in space! Sept. 1, 1979 » : premier survol de Saturne"
+      }
+    ]
+  ]
+}

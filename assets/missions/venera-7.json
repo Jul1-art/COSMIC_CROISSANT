@@ -1,0 +1,326 @@
+{
+  "id": "venera-7",
+  "name": "Venera 7",
+  "body": "venus",
+  "family": "venera-early",
+  "year": 1970,
+  "summary": "~495 kg de matériel posé à la surface de Vénus (hémisphère nocturne) · 0 objet actif en 2026 (23 minutes d'émission depuis le sol en décembre 1970) · 1 module orbital désintégré dans l'atmosphère vénusienne · 1 étage en orbite héliocentrique (bloc L de la fusée Molniya-M).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 7 (objet 3V n° 630)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (OKB-1 / Bureau d'études Lavotchkine) — Programme Venera"
+    ],
+    [
+      "Lancement",
+      "17 août 1970, 05h38 UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+    ],
+    [
+      "Atterrissage sur Vénus",
+      "15 décembre 1970, 05h34 UTC — Plaine nocturne de Vénus (5,0° S, 351,0° E)"
+    ],
+    [
+      "Durée de mission",
+      "120 jours de croisière interplanétaire + 35 min de descente atmosphérique + 23 min de transmission depuis la surface"
+    ],
+    [
+      "Type de mission",
+      "Sonde automatique interplanétaire (sans équipage) d'entrée atmosphérique et d'atterrissage sur Vénus"
+    ],
+    [
+      "Véhicules",
+      "Molniya-M (bloc L) · Plateforme porteuse 3V (bus interplanétaire) · Capsule d'atterrissage sphérique blindée"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier atterrissage en douceur réussi de l'histoire sur une autre planète et premières données transmises depuis sa surface"
+    ]
+  ],
+  "sourceFile": "Vénus/Fiche mission Venera 7 - Hardware perdu dans l_espace.pdf",
+  "pdf": "venera-7.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION DE VÉNUS · CATALOGUE DU PATRIMOINE SPATIAL Venera 7 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~495 kg de matériel posé à la surface de Vénus (hémisphère nocturne) · 0 objet actif en 2026 (23 minutes d'émission depuis le sol en décembre 1970) · 1 module orbital désintégré dans l'atmosphère"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "vénusienne · 1 étage en orbite héliocentrique (bloc L de la fusée Molniya-M)."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 7 (objet 3V n° 630)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (OKB-1 / Bureau d'études Lavotchkine) — Programme Venera"
+          ],
+          [
+            "Lancement",
+            "17 août 1970, 05h38 UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+          ],
+          [
+            "Atterrissage sur Vénus",
+            "15 décembre 1970, 05h34 UTC — Plaine nocturne de Vénus (5,0° S, 351,0° E)"
+          ],
+          [
+            "Durée de mission",
+            "120 jours de croisière interplanétaire + 35 min de descente atmosphérique + 23 min de transmission depuis la surface"
+          ],
+          [
+            "Type de mission",
+            "Sonde automatique interplanétaire (sans équipage) d'entrée atmosphérique et d'atterrissage sur Vénus"
+          ],
+          [
+            "Véhicules",
+            "Molniya-M (bloc L) · Plateforme porteuse 3V (bus interplanétaire) · Capsule d'atterrissage sphérique blindée"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier atterrissage en douceur réussi de l'histoire sur une autre planète et premières données transmises depuis sa surface"
+          ]
+        ]
+      },
+      {
+        "y": 485.6671447753906,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 517.5,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 550.3233642578125,
+        "type": "text",
+        "text": "A. Surface de Vénus — Zone nocturne (~495 kg au total)"
+      },
+      {
+        "y": 570.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Capsule d'atterrissage sphérique Venera 7",
+            "~495 kg",
+            "■ Intact / inactif",
+            "Coque sphérique monobloc en titane de ~1 m de diamètre renforcée pour résister à une pression de 180 bars et une décélération de 350 g, isolée intérieurement par de la fibre de verre. Suite à la déchirure partielle de son parachute durant la descente, elle a touché le sol à ~16,5 m/s (60 km/h) et a rebondi sur le flanc, continuant d'émettre pendant 23 minutes."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Venera 7 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 3"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Instruments scientifiques & batterie interne",
+            "~25 kg (inclus)",
+            "■ Intact / inactif",
+            "Thermomètre à résistance de platine (plage 25 à 540 °C), baromètre anéroïde (1 à 150 bars — tombé en panne durant la descente), émetteur radio décimétrique (922 MHz) et batterie plomb-acide pré-refroidie à −8 °C avant la séparation."
+          ],
+          [
+            "Médaillons commémoratifs soviétiques",
+            "< 1 kg (inclus)",
+            "■ Intact / inactif",
+            "Fanions métalliques gravés portant les armoiries de l'URSS et le portrait de Vladimir Lénine logés dans un boîtier protecteur à l'intérieur de la sphère en titane."
+          ],
+          [
+            "Parachute de freinage en fibre de verre",
+            "~12 kg",
+            "▲ Déchiré / posé",
+            "Parachute résistant aux hautes températures (surface réduite à 1,8 m² après fusion d'un fil de retenue pour accélérer la traversée de l'atmosphère brûlante). S'est déchiré à ~29 km d'altitude en raison de la chaleur et des turbulences, retombant à proximité de l'atterrisseur."
+          ]
+        ]
+      },
+      {
+        "y": 350.8233642578125,
+        "type": "text",
+        "text": "B. Rentrée atmosphérique vénusienne & trajectoire héliocentrique"
+      },
+      {
+        "y": 371.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Plateforme porteuse interplanétaire (bus 3V)",
+            "~685 kg",
+            "▲ Désintégré",
+            "Module cylindrique équipé de 2 panneaux solaires, d'une antenne parabolique grand gain de 2,3 m, d'un moteur de correction KDU-414 et de détecteurs de vent solaire et de rayons cosmiques. A assuré le refroidissement de l'atterrisseur avant de se séparer à l'entrée atmosphérique le 15 décembre 1970 et de se consumer dans la haute atmosphère de Vénus."
+          ],
+          [
+            "Étage supérieur Bloc L (fusée Molniya-M)",
+            "~1 160 kg (à sec)",
+            "■ Orbite solaire",
+            "Quatrième étage propulsé par un moteur S1.5400. Après une mise en orbite terrestre de parking puis un rallumage le 17 août 1970 pour injecter la sonde de 1 180 kg vers Vénus, il est entré sur une orbite héliocentrique permanente entre la Terre et Vénus."
+          ],
+          [
+            "Troisième étage Bloc I (fusée Molniya-M)",
+            "~2 400 kg (à sec)",
+            "▲ Désintégré",
+            "Étage placé en orbite basse terrestre (200 km) lors du lancement du 17 août 1970 ; rentré et consumé dans l'atmosphère terrestre quelques jours après le tir."
+          ]
+        ]
+      },
+      {
+        "y": 707.0733642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 730.0869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Venera 7 est une mission robotique à aller simple vers Vénus. Tous les étages inférieurs de la fusée Molniya-M (4 propulseurs latéraux et corps central) ainsi que la coiffe sont retombés dans les zones d'exclusion terrestres d'Asie centrale après le lancement depuis Baïkonour."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Venera 7 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 3"
+      }
+    ],
+    [
+      {
+        "y": 44.8233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 66.3369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique & couvercle du compartiment parachute : coiffe larguée durant l'ascension atmosphérique terrestre le 17 août 1970 ; trappe d'éjection du parachute et cône de protection largués à ~60 km d'altitude dans l'atmosphère vénusienne le 15 décembre 1970."
+      },
+      {
+        "y": 116.66712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 141.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "17 août 1970, 05h38 UTC",
+            "Lancement de la fusée Molniya-M depuis Baïkonour ; injection interplanétaire réussie vers Vénus par le Bloc L (la sonde jumelle Cosmos 359, lancée 5 jours plus tard, restera bloquée en orbite terrestre)."
+          ],
+          [
+            "2 octobre & 17 novembre 1970",
+            "Deux manœuvres de correction de trajectoire effectuées avec succès durant les 4 mois de croisière interplanétaire."
+          ],
+          [
+            "15 décembre 1970, 04h58 UTC",
+            "Entrée atmosphérique à 11,5 km/s sur le côté nuit de Vénus et séparation de la capsule sphérique d'avec la plateforme porteuse."
+          ],
+          [
+            "15 décembre 1970, ~05h12 UTC",
+            "Ouverture du parachute à ~60 km d'altitude ; déchirure partielle de la toile vers 29 km provoquant une chute accélérée."
+          ],
+          [
+            "15 décembre 1970, 05h34 UTC",
+            "Impact au sol à ~60 km/h (5,0° S, 351,0° E). Le signal radio chute fortement (la capsule ayant roulé sur le côté, son antenne n'est plus pointée vers la Terre), mais demeure captable pendant 23 minutes avant l'épuisement des batteries."
+          ],
+          [
+            "Janvier 1971",
+            "Confirmation officielle par l'Académie des sciences de l'URSS après analyse spectrale des enregistrements magnétiques du radiotélescope d'Evpatoria (Crimée), isolant les 23 minutes de télémétrie de surface."
+          ]
+        ]
+      },
+      {
+        "y": 400.9171447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 426.3369140625,
+        "type": "text",
+        "text": "Premier engin humain opérationnel sur une autre planète : après les échecs des sondes précédentes (Venera 4, 5 et 6) écrasées par la pression atmosphérique bien avant d'atteindre le sol, les ingénieurs soviétiques ont entièrement reconçu l'atterrisseur en sphère de titane ultra-épaisse (faisant passer sa masse de 405 à 495 kg), permettant à Venera 7 de survivre à l'environnement infernal de Vénus."
+      },
+      {
+        "y": 499.0869140625,
+        "type": "text",
+        "text": "Premières mesures directes à la surface de Vénus : les données transmises depuis le sol ont révélé une température de surface constante de 475 °C ± 20 °C et permis de déduire une pression atmosphérique d'environ 90 bars (90 fois la pression terrestre au niveau de la mer), confirmant l'existence d'un effet de serre extrême et d'une surface rocheuse solide."
+      },
+      {
+        "y": 557.5869140625,
+        "type": "text",
+        "text": "Validation de l'architecture des atterrisseurs vénusiens : l'analyse du rebond et de la désorientation de l'antenne après l'impact a conduit les ingénieurs du bureau Lavotchkine à doter les missions suivantes (dès Venera 8 en 1972) d'une antenne secondaire omnidirectionnelle posée séparément sur le sol et d'un anneau amortisseur d'atterrissage."
+      },
+      {
+        "y": 615.3369140625,
+        "type": "text",
+        "text": "Patrimoine historique durable : protégée par sa coque sphérique en titane (métal hautement résistant à la corrosion par l'acide sulfurique et à la chaleur), la capsule de Venera 7 demeure l'un des artefacts humains les plus anciens reposant intact à la surface d'une autre planète."
+      },
+      {
+        "y": 666.4171142578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 691.8369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Venera 7 Spacecraft & Descent Craft Technical Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 708.3369140625,
+        "type": "text",
+        "text": "IKI RAN (Institut de recherche spatiale de l'Académie des sciences de Russie) — Archives du programme Venera"
+      },
+      {
+        "y": 739.0869140625,
+        "type": "text",
+        "text": "Don P. Mitchell — Soviet Exploration of Venus : Venera 7 Telemetry & Engineering Analysis"
+      }
+    ]
+  ]
+}

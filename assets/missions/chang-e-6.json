@@ -1,0 +1,387 @@
+{
+  "id": "chang-e-6",
+  "name": "Chang'e 6",
+  "body": "moon",
+  "family": "lunar-lander",
+  "year": 2024,
+  "summary": "pile de ~8,2 à 8,35 t au lancement · 1 atterrisseur et 1 mini-rover Jinchan restés sur la face cachée · 1 étage de remontée hors service, probablement écrasé sur la Lune (non confirmé) · 1 orbiteur au point L2 Soleil-Terre, statut actuel non confirmé · 1 CubeSat ICUBE-Q, issue non précisée · 1 capsule récupérée avec 1 935,3 g d'échantillons",
+  "facts": [
+    [
+      "Nom officiel",
+      "Chang'e 6 (Chang'e-6)"
+    ],
+    [
+      "Agence & programme",
+      "CNSA (Chine) — programme chinois d'exploration lunaire"
+    ],
+    [
+      "Lancement",
+      "3 mai 2024, 09h27 UTC — Long March 5, site de Wenchang, île de Hainan"
+    ],
+    [
+      "Destination",
+      "Sud de la mer du bassin Apollo, face cachée (~41,6° S, 154,0° O), dans le bassin Pôle Sud–Aitken"
+    ],
+    [
+      "Retour sur Terre",
+      "25 juin 2024 — capsule posée à Siziwang Banner, Mongolie-Intérieure, sous parachute"
+    ],
+    [
+      "Échantillons",
+      "1 935,3 g de sol, roches et matériaux de sous-surface (pelle et foreuse)"
+    ],
+    [
+      "Charges utiles étrangères",
+      "DORN (France) · INRRI (Italie) · NILS (Suède, avec l'ESA) · ICUBE-Q (Pakistan)"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission robotique)"
+    ],
+    [
+      "Véhicules",
+      "Long March 5 · orbiteur · capsule de retour · atterrisseur · étage de remontée · rover Jinchan · CubeSat ICUBE-Q"
+    ],
+    [
+      "Statut",
+      "Réussie — premiers échantillons de la face cachée de la Lune ; orbiteur ensuite envoyé au point L2 Soleil-Terre"
+    ]
+  ],
+  "sourceFile": "Lune/Chang_e/Fiche-mission-Chang-e-6-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "chang-e-6.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Chang'e 6 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : pile de ~8,2 à 8,35 t au lancement · 1 atterrisseur et 1 mini-rover Jinchan restés sur la face cachée · 1 étage de remontée hors service, probablement écrasé sur la Lune (non confirmé) · 1 orbiteur au point L2 Soleil-Terre, statut actuel non confirmé · 1 CubeSat ICUBE-Q, issue non précisée · 1 capsule récupérée avec 1 935,3 g d'échantillons"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Chang'e 6 (Chang'e-6)"
+          ],
+          [
+            "Agence & programme",
+            "CNSA (Chine) — programme chinois d'exploration lunaire"
+          ],
+          [
+            "Lancement",
+            "3 mai 2024, 09h27 UTC — Long March 5, site de Wenchang, île de Hainan"
+          ],
+          [
+            "Destination",
+            "Sud de la mer du bassin Apollo, face cachée (~41,6° S, 154,0° O), dans le bassin Pôle Sud–Aitken"
+          ],
+          [
+            "Retour sur Terre",
+            "25 juin 2024 — capsule posée à Siziwang Banner, Mongolie-Intérieure, sous parachute"
+          ],
+          [
+            "Échantillons",
+            "1 935,3 g de sol, roches et matériaux de sous-surface (pelle et foreuse)"
+          ],
+          [
+            "Charges utiles étrangères",
+            "DORN (France) · INRRI (Italie) · NILS (Suède, avec l'ESA) · ICUBE-Q (Pakistan)"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission robotique)"
+          ],
+          [
+            "Véhicules",
+            "Long March 5 · orbiteur · capsule de retour · atterrisseur · étage de remontée · rover Jinchan · CubeSat ICUBE-Q"
+          ],
+          [
+            "Statut",
+            "Réussie — premiers échantillons de la face cachée de la Lune ; orbiteur ensuite envoyé au point L2 Soleil-Terre"
+          ]
+        ]
+      },
+      {
+        "y": 481.7176513671875,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 506.66058349609375,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 548.9969482421875,
+        "type": "text",
+        "text": "A. Surface lunaire — bassin Apollo, face cachée"
+      },
+      {
+        "y": 567.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur",
+            "~3 200 kg (estimation)",
+            "",
+            "Posé le 1er juin 2024 à 22h23 UTC ; reste sur la Lune ; probablement endommagé par le décollage de l'ascender ; sans chauffage radioisotopique, toute activité cessait avec la nuit lunaire (débutée le 11 juin)"
+          ],
+          [
+            "Rover Jinchan",
+            "~5 kg",
+            "",
+            "Mini-rover à spectromètre infrarouge imageur et caméras ; a photographié l'atterrisseur après le prélèvement ; fin d'activité non précisée"
+          ],
+          [
+            "Instruments de l'atterrisseur",
+            "—",
+            "",
+            "DORN (France, radon), INRRI (Italie, rétroréflecteur laser), NILS (Suède, ions négatifs)"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Étage de remontée (ascender)"
+      },
+      {
+        "y": 72.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de remontée",
+            "~700 kg (estimation)",
+            "",
+            "Décollé le 3 juin 2024 (premier décollage depuis la face cachée) ; amarré à l'orbiteur le 6 juin ; hors service ; probablement écrasé sur la Lune d'après l'absence de signaux (déduction, non confirmée par la Chine)"
+          ]
+        ]
+      },
+      {
+        "y": 158.9969482421875,
+        "type": "text",
+        "text": "C. Orbiteur et CubeSat"
+      },
+      {
+        "y": 177.35440063476562,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur / module de service",
+            "n.c.",
+            "",
+            "Quitte l'orbite lunaire vers le 20 juin 2024 ; capturé au point de Lagrange Soleil-Terre L2 le 9 septembre 2024 ; statut actuel non confirmé dans mes sources"
+          ],
+          [
+            "CubeSat ICUBE-Q",
+            "n.c.",
+            "",
+            "Pakistan (IST, SUPARCO, université Jiao-tong de Shanghai) ; deux caméras et un magnétomètre ; issue non précisée dans mes sources"
+          ]
+        ]
+      },
+      {
+        "y": 295.39697265625,
+        "type": "text",
+        "text": "D. Récupérés sur Terre"
+      },
+      {
+        "y": 312.6044006347656,
+        "type": "text",
+        "text": "• Capsule de retour (~300 kg) : récupérée en Mongolie-Intérieure le 25 juin 2024"
+      },
+      {
+        "y": 329.6043701171875,
+        "type": "text",
+        "text": "• 1 935,3 g d'échantillons : premiers échantillons de la face cachée de la Lune"
+      },
+      {
+        "y": 357.3969421386719,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 374.6043701171875,
+        "type": "text",
+        "text": "• Étages et coiffe de la Long March 5 : devenir non précisé dans mes sources"
+      },
+      {
+        "y": 411.7176513671875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 434.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "3 mai 2024, 09h27",
+            "Lancement de la Long March 5 depuis Wenchang"
+          ],
+          [
+            "8 mai 2024, 02h12",
+            "Insertion en orbite lunaire (orbite de 12 h)"
+          ],
+          [
+            "30 mai 2024",
+            "Séparation atterrisseur/ascender et orbiteur/capsule"
+          ],
+          [
+            "1er juin 2024, 22h06",
+            "Début de la descente depuis ~200 km d'altitude"
+          ],
+          [
+            "1er juin 2024, 22h23",
+            "Atterrissage dans le bassin Apollo (voir séquence ci-dessous) ; Jinchan à bord"
+          ],
+          [
+            "3 juin 2024, 23h38",
+            "Décollage de l'ascender, premier depuis la face cachée"
+          ],
+          [
+            "6 juin 2024, 06h48",
+            "Amarrage à l'orbiteur ; transfert des échantillons à 07h24"
+          ],
+          [
+            "~20 juin 2024",
+            "L'orbiteur quitte l'orbite lunaire ; allumage probable le 21 (observateurs amateurs)"
+          ],
+          [
+            "25 juin 2024, 06h07",
+            "Atterrissage de la capsule en Mongolie-Intérieure"
+          ],
+          [
+            "9 septembre 2024",
+            "Orbiteur capturé au point L2 Soleil-Terre"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "Séquence d'atterrissage"
+      },
+      {
+        "y": 72.35438537597656,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "30 mai",
+            "Séparation de l'atterrisseur (avec l'ascender) de l'orbiteur"
+          ],
+          [
+            "1er juin, 22h06",
+            "Début de la descente depuis ~200 km"
+          ],
+          [
+            "Descente",
+            "Évitement d'obstacles autonome avec caméra visible et scanner laser 3D pour choisir un site sûr"
+          ],
+          [
+            "Approche finale",
+            "Coupure du moteur ; un système d'amortissement absorbe la chute libre finale"
+          ],
+          [
+            "22h23:16",
+            "Posé dans la mer sud du bassin Apollo ; Jinchan est aussi à la surface"
+          ]
+        ]
+      },
+      {
+        "y": 215.51763916015625,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 237.00436401367188,
+        "type": "text",
+        "text": "• Première face cachée : premiers échantillons rapportés de la face cachée de la Lune, 1 935,3 g."
+      },
+      {
+        "y": 254.00436401367188,
+        "type": "text",
+        "text": "• Question scientifique : les échantillons pourraient contenir du manteau lunaire excavé par l'impact Pôle Sud–Aitken, pour comprendre la différence entre faces proche et cachée ; aucun résultat n'est reporté dans mes sources."
+      },
+      {
+        "y": 299.0043640136719,
+        "type": "text",
+        "text": "• Coopération internationale : charges utiles de France, d'Italie, de Suède (avec l'ESA) et du Pakistan ; des échantillons seront ensuite accessibles à des instituts étrangers."
+      },
+      {
+        "y": 330.0043640136719,
+        "type": "text",
+        "text": "• Premier décollage depuis la face cachée de la Lune."
+      },
+      {
+        "y": 347.0043640136719,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'atterrisseur et l'ascender sous la juridiction de la Chine ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 398.1176452636719,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 419.6043701171875,
+        "type": "text",
+        "text": "• Wikipedia — Chang'e 6 : masses, chronologie, charges utiles"
+      },
+      {
+        "y": 436.6043701171875,
+        "type": "text",
+        "text": "• Space.com — « What happened to China's Chang'e 6 lander on the moon's far side? »"
+      },
+      {
+        "y": 453.6043701171875,
+        "type": "text",
+        "text": "• Planetary Society — Chang'e-6 : vue d'ensemble et ICUBE-Q"
+      }
+    ]
+  ]
+}

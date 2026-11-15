@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "1966 CPA 3381",
+      "description": "1966 Soviet Union 6 kopeks stamp. Luna 11 .",
+      "credit": "Russian government",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:1966_CPA_3381.jpg",
+      "src": "archives/luna-11-commons.jpg",
+      "date": "1966",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-11.mp4",
+    "local": true,
+    "title": "Luna 11 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-11.pdf",
+    "fingerprint": "b407ed5a05972c4253b6456b9b9a8f99a2436659777324da4310f74032bab228"
+  }
+}

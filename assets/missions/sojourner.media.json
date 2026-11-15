@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Newly Deployed Sojourner Rover",
+      "credit": "NASA/JPL",
+      "date": "1999-06-22T00:28:35Z",
+      "source": "https://images.nasa.gov/details/PIA01551",
+      "nasaId": "PIA01551",
+      "description": "Newly Deployed Sojourner Rover",
+      "src": "archives/sojourner-nasa-PIA01551.jpg"
+    },
+    {
+      "title": "Airbags and Sojourner Rover",
+      "credit": "NASA/JPL",
+      "date": "1997-07-05T00:12:26Z",
+      "source": "https://images.nasa.gov/details/PIA00614",
+      "nasaId": "PIA00614",
+      "description": "This image from the Imager for Mars Pathfinder (IMP) camera shows the rear part of the Sojourner rover, the rolled-up rear ramp, and portions of the partially deflated airbags. The Alpha Proton X-ray Spectrometer instrument is protruding from the rear (right side) of the rover. The airbags behind the rover are presently blocking the ramp from being safely unfurled. The ramps are a pair of deployable metal reels that will provide a track for the rover as it slowly rolls off the lander, and onto the surface of Mars, once Pathfinder scientists determine it is safe to do so.  http://photojournal.jpl.nasa.gov/catalog/PIA00614",
+      "src": "archives/sojourner-nasa-PIA00614.jpg"
+    },
+    {
+      "title": "Sojourner Rover View of Pathfinder Lander",
+      "credit": "NASA/JPL",
+      "date": "1997-12-12T13:07:44Z",
+      "source": "https://images.nasa.gov/details/PIA01121",
+      "nasaId": "PIA01121",
+      "description": "Sojourner Rover View of Pathfinder Lander",
+      "src": "archives/sojourner-nasa-PIA01121.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/sojourner.mp4",
+    "local": true,
+    "title": "Sojourner (Mars Pathfinder) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "sojourner.pdf",
+    "fingerprint": "e09afacf327e3d2c754fd86bc7039711166dfc0424c5e2f165ae74cd8ac0906f"
+  }
+}

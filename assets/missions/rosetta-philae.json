@@ -1,0 +1,361 @@
+{
+  "id": "rosetta-philae",
+  "name": "Rosetta & Philae",
+  "body": "small-bodies",
+  "family": "rosetta",
+  "year": 2004,
+  "summary": "~1,33 t de matériel posé sur la comète 67P/Tchourioumov-Guérassimenko (atterrisseur Philae de 97,9 kg intact + orbiteur Rosetta de ~1 230 kg à sec posé en impact contrôlé) • 0 objet encore actif en 2026 (extinction définitive le 30 septembre 2016) • 1 étage supérieur en orbite héliocentrique.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Rosetta (mission pierre angulaire Horizon 2000 de l'ESA, COSPAR 2004-006A / Philae 2004-006C)"
+    ],
+    [
+      "Agence & programme",
+      "Agence spatiale européenne (ESA), avec participation du CNES, du DLR, de l'ASI et de la NASA"
+    ],
+    [
+      "Lancement",
+      "2 mars 2004, 07h17 UTC — Centre spatial guyanais (Kourou, ELA-3), fusée Ariane 5G+ (vol V-158)"
+    ],
+    [
+      "Arrivée & atterrissage",
+      "Mise en orbite autour de 67P le 6 août 2014 ; atterrissage de Philae le 12 novembre 2014 (sites Agilkia puis Abydos)"
+    ],
+    [
+      "Fin de mission",
+      "30 septembre 2016, 10h39 UTC (impact contrôlé de l'orbiteur Rosetta dans la région de Ma'at après 12 ans et 6 mois)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde automatique pilotée depuis l'ESOC à Darmstadt et le SONC à Toulouse pour Philae)"
+    ],
+    [
+      "Véhicules",
+      "Ariane 5G+, orbiteur Rosetta (~3 000 kg au lancement dont 1 670 kg d'ergols), atterrisseur Philae (97,9 kg)"
+    ],
+    [
+      "Statut",
+      "Réussie — première mise en orbite autour d'un noyau cométaire et premier atterrissage contrôlé sur une comète"
+    ]
+  ],
+  "sourceFile": "Astéroïdes et comètes/Rosetta & Philae - Fiche « Plus de détails ».pdf",
+  "pdf": "rosetta-philae.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Rosetta & Philae — Fiche « Plus de détails »"
+      },
+      {
+        "y": 128.97393798828125,
+        "type": "text",
+        "text": "Synthèse hardware : ~1,33 t de matériel posé sur la comète 67P/Tchourioumov-Guérassimenko (atterrisseur Philae de 97,9 kg intact + orbiteur Rosetta de ~1 230 kg à sec posé en impact contrôlé) • 0"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "objet encore actif en 2026 (extinction définitive le 30 septembre 2016) • 1 étage supérieur en orbite héliocentrique."
+      },
+      {
+        "y": 210.26544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 237.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Rosetta (mission pierre angulaire Horizon 2000 de l'ESA, COSPAR 2004-006A / Philae 2004-006C)"
+          ],
+          [
+            "Agence & programme",
+            "Agence spatiale européenne (ESA), avec participation du CNES, du DLR, de l'ASI et de la NASA"
+          ],
+          [
+            "Lancement",
+            "2 mars 2004, 07h17 UTC — Centre spatial guyanais (Kourou, ELA-3), fusée Ariane 5G+ (vol V-158)"
+          ],
+          [
+            "Arrivée & atterrissage",
+            "Mise en orbite autour de 67P le 6 août 2014 ; atterrissage de Philae le 12 novembre 2014 (sites Agilkia puis Abydos)"
+          ],
+          [
+            "Fin de mission",
+            "30 septembre 2016, 10h39 UTC (impact contrôlé de l'orbiteur Rosetta dans la région de Ma'at après 12 ans et 6 mois)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde automatique pilotée depuis l'ESOC à Darmstadt et le SONC à Toulouse pour Philae)"
+          ],
+          [
+            "Véhicules",
+            "Ariane 5G+, orbiteur Rosetta (~3 000 kg au lancement dont 1 670 kg d'ergols), atterrisseur Philae (97,9 kg)"
+          ],
+          [
+            "Statut",
+            "Réussie — première mise en orbite autour d'un noyau cométaire et premier atterrissage contrôlé sur une comète"
+          ]
+        ]
+      },
+      {
+        "y": 565.7654418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 600.1342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 634.2205810546875,
+        "type": "text",
+        "text": "A. Surface de la comète 67P/Tchourioumov-Guérassimenko (~1 330 kg au total)"
+      },
+      {
+        "y": 653.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Philae (plateforme & train)",
+            "97,9 kg",
+            "Intact / inactif",
+            "Structure en fibre de carbone à 3 pieds articulés (1 m × 1 m × 0,8 m), couverte de cellules solaires. Après deux rebonds, immobilisé sur le flanc dans une crevasse ombragée du site Abydos (petit lobe de 67P)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Harpons d'ancrage, foreuse SD2 & propulsion",
+            "~12 kg (inclus)",
+            "Intacts / inactifs",
+            "Deux harpons pyrotechniques (non déclenchés à l'impact), propulseur à gaz froid défaillant, foreuse SD2 (26 cm de profondeur) et vis à glace aux extrémités des pieds."
+          ],
+          [
+            "Suite scientifique de Philae (10 instruments)",
+            "26,7 kg (inclus)",
+            "Intacts / inactifs",
+            "Caméras CIVA/ROLIS, chromatographes COSAC et Ptolemy (détection de molécules organiques), radar CONSERT, magnétomètre ROMAP, spectromètre APXS, capteurs MUPUS et SESAME."
+          ],
+          [
+            "Orbiteur Rosetta (bus principal)",
+            "~1 230 kg (à sec)",
+            "Posé / inactif",
+            "Parallélépipède aluminium/nid d'abeille (2,8 × 2,1 × 2,0 m). Posé en douceur (~0,9 m/s, vitesse de marche) dans la région de Ma'at près du puits Deir el-Medina le 30 sept. 2016 ; extinction programmée des émetteurs à l'impact."
+          ],
+          [
+            "Panneaux solaires géants (2 ailes)",
+            "~160 kg (inclus)",
+            "Endommagés / inactifs",
+            "Envergure totale de 32 m (64 m2 de cellules silicium basse intensité/basse température) conçus pour opérer jusqu'à 5,25 UA du Soleil ; très probablement pliés ou brisés au contact du relief irrégulier de Ma'at."
+          ],
+          [
+            "Antenne grand gain orientable (bande S/X)",
+            "~35 kg (inclus)",
+            "Intacte / inactive",
+            "Parabole de 2,2 m de diamètre ayant transmis les données scientifiques vers Terre à plus de 800 millions de km ; définitivement dépointée lors du contact final avec la surface."
+          ],
+          [
+            "Suite scientifique de l'orbiteur (11 instruments)",
+            "165 kg (inclus)",
+            "Intacts / inactifs",
+            "Caméras haute résolution OSIRIS, spectromètres ALICE, VIRTIS et MIRO, spectromètre de masse ROSINA (détection de glycine, phosphore et eau lourde), analyseurs de poussières COSIMA, GIADA et MIDAS, radar CONSERT et plasma RPC."
+          ],
+          [
+            "Disque d'archivage Rosetta (Long Now)",
+            "~0,2 kg",
+            "Intact / passif",
+            "Disque en alliage de nickel de 7,5 cm gravé au microscope avec 13 000 pages de textes dans plus de 1 000 langues humaines (projet Rosetta de la fondation Long Now), fixé sur le châssis de l'orbiteur."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur EPS (Ariane 5G+)",
+            "~1 200 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage à ergols stockables ayant assuré l'injection interplanétaire le 2 mars 2004 ; placé sur une orbite solaire croisant périodiquement celles de la Terre et de Mars (brièvement confondu avec un astéroïde géocroiseur en 2007 sous le nom 2007 VN84)."
+          ],
+          [
+            "Mécanisme d'éjection & sangles de Philae",
+            "~4 kg",
+            "Orbite / échappement",
+            "Vis sans fin et système de séparation mécanique (MSS) ayant propulsé Philae à 18,7 cm/s vers 67P le 12 novembre 2014 ; resté solidaire de Rosetta ou dispersé dans l'environnement cométaire."
+          ],
+          [
+            "Étage principal EPC, 2 EAP & coiffe Ariane 5",
+            "~88 000 kg (à vide)",
+            "Écrasés / brûlés",
+            "Propulseurs d'appoint EAP retombés dans l'océan Atlantique au large de Kourou ; coiffe et étage cryogénique EPC retombés ou rentrés dans l'atmosphère terrestre peu après le lancement."
+          ]
+        ]
+      },
+      {
+        "y": 376.9705810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 397.8369140625,
+        "type": "text",
+        "text": "Aucun élément matériel récupéré : mission d'étude in situ sans retour d'échantillons (le projet initial de retour d'échantillons cométaires CNSR fut abandonné au profit de Rosetta)."
+      },
+      {
+        "y": 432.3369140625,
+        "type": "text",
+        "text": "Archives numériques complètes : plus de 100 000 images haute résolution d'OSIRIS et des dizaines de gigaoctets de mesures chimiques, magnétiques et plasmiques conservés dans l'archive scientifique planétaire (PSA) de l'ESA."
+      },
+      {
+        "y": 493.01544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 519.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "2 mars 2004, 07h17 UTC",
+            "Lancement par Ariane 5G+ depuis Kourou (après un report d'un an ayant contraint à changer d'objectif, de la comète 46P/Wirtanen à 67P)."
+          ],
+          [
+            "2005 – 2010",
+            "4 assistances gravitationnelles (3 fois la Terre, 1 fois Mars) et survols rapprochés des astéroïdes (2867) Šteins (sept. 2008) et (21) Lutetia (juil. 2010)."
+          ],
+          [
+            "8 juin 2011 – 20 janv. 2014",
+            "Mise en hibernation complète pendant 31 mois à 800 millions de km du Soleil, suivie du réveil réussi de la sonde (« Wake up, Rosetta! »)."
+          ],
+          [
+            "6 août 2014",
+            "Insertion de Rosetta en orbite autour du noyau bilobé de 67P/Tchourioumov- Guérassimenko (première historique)."
+          ],
+          [
+            "12 novembre 2014",
+            "Largage de Philae : rebond sur le site Agilkia suite à la panne des harpons et immobilisation à Abydos ; 60 heures de science sur batterie primaire avant hibernation."
+          ],
+          [
+            "13 juin – 9 juillet 2015",
+            "Bref réveil radio de Philae à l'approche du périhélie (7 contacts intermittents) avant le silence définitif ; localisation précise de Philae sur les clichés OSIRIS le 2 septembre 2016."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "30 septembre 2016, 10h39 UTC",
+            "Descente contrôlée de 14 heures et contact final de Rosetta sur la région de Ma'at à 720 millions de km de la Terre, mettant un terme officiel à la mission."
+          ]
+        ]
+      },
+      {
+        "y": 127.01544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 156.3369140625,
+        "type": "text",
+        "text": "Origine de l'eau terrestre remise en perspective : l'instrument ROSINA a révélé que le rapport deutérium/hydrogène (D/H) de l'eau de 67P est plus de trois fois supérieur à celui des océans terrestres, montrant que les comètes de la famille de Jupiter ne sont pas la source principale de l'eau sur Terre."
+      },
+      {
+        "y": 220.8369140625,
+        "type": "text",
+        "text": "Briques prébiotiques dans le noyau cométaire : Rosetta et Philae ont identifié directement la glycine (acide aminé le plus simple), du phosphore et 16 composés organiques (dont plusieurs jamais observés sur une comète), confirmant que les comètes ont pu ensemencer la Terre primitive en ingrédients clés du vivant."
+      },
+      {
+        "y": 285.3369140625,
+        "type": "text",
+        "text": "Structure bilobée et faible densité : le noyau en forme de « canard en plastique » (4,3 × 4,1 km) résulte de l'accrétion douce à basse vitesse de deux corps distincts ; sa densité moyenne très faible"
+      },
+      {
+        "y": 315.4102478027344,
+        "type": "text",
+        "text": "(533 kg/m3) traduit une porosité interne de 70 à 80 %."
+      },
+      {
+        "y": 337.0869140625,
+        "type": "text",
+        "text": "Un monument silencieux sur 67P : Rosetta et Philae reposent désormais à ~1 km l'un de l'autre sur 67P (période orbitale de 6,44 ans autour du Soleil), accompagnés du disque linguistique Long Now conçu pour survivre des millénaires dans le vide spatial."
+      },
+      {
+        "y": 397.01544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 426.3369140625,
+        "type": "text",
+        "text": "ESA Science & Technology — Rosetta Mission Summary & Archive (sci.esa.int/rosetta)"
+      },
+      {
+        "y": 445.0869140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiches Rosetta (2004-006A) et Philae (2004-006C)"
+      },
+      {
+        "y": 478.8369140625,
+        "type": "text",
+        "text": "K. Altwegg et al., 67P/Churyumov-Gerasimenko, a Jupiter family comet with a high D/H ratio, Science, vol. 347, 2015"
+      },
+      {
+        "y": 513.3369140625,
+        "type": "text",
+        "text": "H. Sierks et al., On the nucleus structure and activity of comet 67P/Churyumov-Gerasimenko, Science, vol. 347, 2015"
+      }
+    ]
+  ]
+}

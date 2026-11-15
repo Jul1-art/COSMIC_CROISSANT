@@ -1,0 +1,278 @@
+{
+  "id": "venera-9",
+  "name": "Venera 9",
+  "body": "venus",
+  "family": "venera",
+  "year": 1975,
+  "summary": "~4 936 kg au lancement total (orbiteur de ~2 325 kg + module d'atterrissage de ~1 560 kg avec boucliers) • 0 objet actif • Premier orbiteur de Vénus et premier engin à transmettre des images depuis la surface vénusienne (22 octobre 1975).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 9 (Венера-9, appareil 4V-1 n° 901, COSPAR 1975-050A / Lander 050C)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (NPO Lavotchkine) — programme Venera"
+    ],
+    [
+      "Lancement",
+      "8 juin 1975, 02h38 UTC — Cosmodrome de Baïkonour (site 81/23), fusée Proton-K / Blok D"
+    ],
+    [
+      "Insertion & atterrissage",
+      "20 octobre 1975 (insertion orbitale réussie) ; atterrissage le 22 octobre 1975 à 05h13 UTC dans Beta Regio (31,0° N, 291,6° E)"
+    ],
+    [
+      "Fin de mission",
+      "22 octobre 1975 pour l'atterrisseur (53 minutes d'activité au sol) ; orbiteur opérationnel jusqu'en 1976"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission combinant un orbiteur planétaire et un atterrisseur lourd automatisé)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur lourd Proton-K / Blok D, orbiteur Venera 9 (~2 325 kg), module d'atterrissage (~1 560 kg au largage)"
+    ],
+    [
+      "Statut",
+      "Réussite historique majeure — premier orbiteur de Vénus et premières photographies panoramiques de la surface d'une autre planète."
+    ]
+  ],
+  "sourceFile": "Vénus/Venera 9 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "venera-9.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Venera 9 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~4 936 kg au lancement total (orbiteur de ~2 325 kg + module d'atterrissage de ~1 560 kg avec boucliers) • 0 objet actif • Premier orbiteur de Vénus et premier engin à transmettre des"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "images depuis la surface vénusienne (22 octobre 1975)."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 9 (Венера-9, appareil 4V-1 n° 901, COSPAR 1975-050A / Lander 050C)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (NPO Lavotchkine) — programme Venera"
+          ],
+          [
+            "Lancement",
+            "8 juin 1975, 02h38 UTC — Cosmodrome de Baïkonour (site 81/23), fusée Proton-K / Blok D"
+          ],
+          [
+            "Insertion & atterrissage",
+            "20 octobre 1975 (insertion orbitale réussie) ; atterrissage le 22 octobre 1975 à 05h13 UTC dans Beta Regio (31,0° N, 291,6° E)"
+          ],
+          [
+            "Fin de mission",
+            "22 octobre 1975 pour l'atterrisseur (53 minutes d'activité au sol) ; orbiteur opérationnel jusqu'en 1976"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission combinant un orbiteur planétaire et un atterrisseur lourd automatisé)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur lourd Proton-K / Blok D, orbiteur Venera 9 (~2 325 kg), module d'atterrissage (~1 560 kg au largage)"
+          ],
+          [
+            "Statut",
+            "Réussite historique majeure — premier orbiteur de Vénus et premières photographies panoramiques de la surface d'une autre planète."
+          ]
+        ]
+      },
+      {
+        "y": 524.5154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 559.6342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 593.7205810546875,
+        "type": "text",
+        "text": "A. Surface de Vénus — Beta Regio (Atterrisseur Venera 9)"
+      },
+      {
+        "y": 613.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Capsule d'atterrissage (Lander)",
+            "~660 kg",
+            "Détruit / écrasé",
+            "Sphère pressurisée sur amortisseur (53 min d'activité dans Beta Regio)."
+          ],
+          [
+            "Caméras panoramiques & photomètres",
+            "~20 kg",
+            "Détruits / inactifs",
+            "Deux téléphotomètres mécaniques ayant transmis les premières images panoramiques de la surface de Vénus."
+          ],
+          [
+            "Spectromètres gamma & densitomètres",
+            "~15 kg",
+            "Détruits / inactifs",
+            "Analyseurs de composition radioactive et densitaires des roches de surface."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Orbite vénusienne & espace interplanétaire"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur Venera 9",
+            "~2 325 kg (initial)",
+            "Intact / inactif",
+            "Cylindre doté de deux panneaux solaires et d'antennes paraboliques, placé le 20 octobre 1975 sur une orbite elliptique autour de Vénus (1 500 × 11 220 km). A servi de relais radio pour l'atterrisseur avant la fin de mission en 1976."
+          ],
+          [
+            "Étage supérieur Blok D (Proton-K)",
+            "~2 500 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage d'injection interplanétaire ayant propulsé la sonde le 8 juin 1975 depuis Baïkonour ; placé sur une orbite solaire stable."
+          ]
+        ]
+      },
+      {
+        "y": 275.7205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 296.5869140625,
+        "type": "text",
+        "text": "Modèle d'ingénierie (NPO Lavotchkine) : répliques de test structurel et thermique conservées dans les musées spatiaux russes."
+      },
+      {
+        "y": 330.3369140625,
+        "type": "text",
+        "text": "Archives iconographiques historiques : clichés originaux des premières images de surface de Vénus traités et archivés par l'Académie des sciences d'URSS."
+      },
+      {
+        "y": 376.01544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 403.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "8 juin 1975",
+            "Décollage réussi de la fusée lourde Proton-K / Blok D depuis Baïkonour ; injection de Venera 9 vers Vénus."
+          ],
+          [
+            "20 octobre 1975",
+            "Insertion réussie de l'orbiteur Venera 9 autour de Vénus (premier satellite artificiel de la planète de l'Histoire)."
+          ],
+          [
+            "22 octobre 1975",
+            "Séparation et atterrissage de la capsule de descente dans Beta Regio ; début de la transmission des premières images de la surface de Vénus."
+          ],
+          [
+            "22 octobre 1975 (53 min)",
+            "Fin des transmissions de l'atterrisseur, terrassé par l'enfer thermique (485 °C) après 53 minutes d'activité fructueuse."
+          ],
+          [
+            "1976",
+            "Fin des opérations de l'orbiteur Venera 9 après des mois de cartographie nuageuse et de relais radio."
+          ]
+        ]
+      },
+      {
+        "y": 623.5154418945312,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 652.0869140625,
+        "type": "text",
+        "text": "Premières images de la surface de Vénus : Venera 9 a accompli l'un des plus grands exploits de l'exploration spatiale en transmettant les tout premiers clichés photographiques du sol d'une autre planète, révélant des roches anguleuses et un paysage sans ombres nettes (lumière diffuse)."
+      },
+      {
+        "y": 701.5869140625,
+        "type": "text",
+        "text": "Première satellisation autour de Vénus : la mission a prouvé la maîtrise soviétique des insertions orbitales planétaires lourdes, fournissant une plateforme d'observation continue de l'atmosphère et de l'ionosphère vénusiennes."
+      }
+    ],
+    [
+      {
+        "y": 55.8369140625,
+        "type": "text",
+        "text": "Résistance sous des conditions extrêmes : le module a confirmé l'incroyable sévérité de l'environnement de surface (90 atmosphères, 485 °C), ouvrant la voie à la caractérisation globale du climat de Vénus."
+      },
+      {
+        "y": 116.51544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 145.0869140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Venera 9 Orbiter (1975- 050A) et Lander (1975-050C)"
+      },
+      {
+        "y": 179.5869140625,
+        "type": "text",
+        "text": "K. V. Basilevsky et al., The surface of Venus as revealed by Venera 9 and 10, JGR, 1976"
+      },
+      {
+        "y": 198.3369140625,
+        "type": "text",
+        "text": "B. Harvey, Soviet and Russian Lunar Exploration, Springer Praxis Books, 2007"
+      }
+    ]
+  ]
+}

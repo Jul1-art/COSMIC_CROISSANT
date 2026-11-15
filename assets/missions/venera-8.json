@@ -1,0 +1,326 @@
+{
+  "id": "venera-8",
+  "name": "Venera 8",
+  "body": "venus",
+  "family": "venera-early",
+  "year": 1972,
+  "summary": "~495 kg de matériel posé sur la face éclairée de Vénus (plaine à l'est de Navka Planitia) · 0 objet actif en 2026 (50 minutes et 11 secondes d'émission continue depuis le sol en juillet 1972) · 1 module orbital désintégré dans l'atmosphère vénusienne · 1 étage en orbite héliocentrique (bloc L de la fusée Molniya- M).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 8 (objet V-72 n° 670)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (Bureau d'études Lavotchkine) — Programme Venera"
+    ],
+    [
+      "Lancement",
+      "27 mars 1972, 04h15 UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+    ],
+    [
+      "Atterrissage sur Vénus",
+      "22 juillet 1972, 09h32 UTC — Face diurne de Vénus, à l'est de Navka Planitia (10,70° S, 335,25° E)"
+    ],
+    [
+      "Durée de mission",
+      "117 jours de croisière interplanétaire + 55 min de descente atmosphérique + 50 min 11 s d'opérations au sol"
+    ],
+    [
+      "Type de mission",
+      "Sonde automatique interplanétaire (sans équipage) d'atterrissage diurne, photométrie et analyse géochimique de surface"
+    ],
+    [
+      "Véhicules",
+      "Molniya-M (bloc L) · Plateforme porteuse 3V modifiée · Atterrisseur sphérique en titane avec antenne secondaire déployable"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier atterrissage réussi sur l'hémisphère éclairé de Vénus et première analyse radioactive du sol vénusien"
+    ]
+  ],
+  "sourceFile": "Vénus/Fiche mission Venera 8 - Hardware perdu dans l_espace.pdf",
+  "pdf": "venera-8.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION DE VÉNUS · CATALOGUE DU PATRIMOINE SPATIAL Venera 8 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~495 kg de matériel posé sur la face éclairée de Vénus (plaine à l'est de Navka Planitia) · 0 objet actif en 2026 (50 minutes et 11 secondes d'émission continue depuis le sol en juillet 1972) · 1 module"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "orbital désintégré dans l'atmosphère vénusienne · 1 étage en orbite héliocentrique (bloc L de la fusée Molniya- M)."
+      },
+      {
+        "y": 190.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 8 (objet V-72 n° 670)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (Bureau d'études Lavotchkine) — Programme Venera"
+          ],
+          [
+            "Lancement",
+            "27 mars 1972, 04h15 UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+          ],
+          [
+            "Atterrissage sur Vénus",
+            "22 juillet 1972, 09h32 UTC — Face diurne de Vénus, à l'est de Navka Planitia (10,70° S, 335,25° E)"
+          ],
+          [
+            "Durée de mission",
+            "117 jours de croisière interplanétaire + 55 min de descente atmosphérique + 50 min 11 s d'opérations au sol"
+          ],
+          [
+            "Type de mission",
+            "Sonde automatique interplanétaire (sans équipage) d'atterrissage diurne, photométrie et analyse géochimique de surface"
+          ],
+          [
+            "Véhicules",
+            "Molniya-M (bloc L) · Plateforme porteuse 3V modifiée · Atterrisseur sphérique en titane avec antenne secondaire déployable"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier atterrissage réussi sur l'hémisphère éclairé de Vénus et première analyse radioactive du sol vénusien"
+          ]
+        ]
+      },
+      {
+        "y": 513.4171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 577.3233642578125,
+        "type": "text",
+        "text": "A. Surface de Vénus — Hémisphère éclairé (~495 kg au total)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur sphérique Venera 8",
+            "~495 kg",
+            "■ Intact / inactif",
+            "Coque pressurisée en titane (allégée par rapport à Venera 7 pour accueillir davantage d'instruments, tarée à 105 bars et 500 °C) équipée d'un système de refroidissement interne à eutectique (nitrate de lithium trihydraté) et d'un anneau amortisseur d'impact. Posé à ~8,3 m/s (30 km/h) à plus de 500 km au-delà du terminateur matin."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Venera 8 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 3"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Antenne secondaire déployable au sol",
+            "~4 kg (inclus)",
+            "■ Intact / inactif",
+            "Innovation tirée du retour d'expérience de Venera 7 : antenne hélicoïdale secondaire éjectée sur le régolithe dès l'impact au bout d'un câble résistant à la chaleur, garantissant un pointage optimal vers la Terre même en cas de basculement de la sphère."
+          ],
+          [
+            "Suite d'instruments scientifiques (5 capteurs)",
+            "~35 kg (inclus)",
+            "■ Intact / inactif",
+            "Spectromètre gamma (mesure des teneurs en uranium, thorium et potassium du sol), photomètre IOV-72 (mesure de la luminosité solaire traversant les nuages), analyseur chimique d'ammoniac IAV-72, altimètre radar (50–60 km), thermomètres et baromètres."
+          ],
+          [
+            "Parachute de freinage & médaillons commémoratifs",
+            "~10 kg",
+            "■ Intact / inactif",
+            "Parachute de 2,5 m de diamètre en fibre de verre ignifugée posé à côté de l'atterrisseur, ainsi que des fanions métalliques gravés aux armes de l'URSS logés à l'intérieur de la capsule."
+          ]
+        ]
+      },
+      {
+        "y": 350.8233642578125,
+        "type": "text",
+        "text": "B. Rentrée atmosphérique vénusienne & trajectoire héliocentrique"
+      },
+      {
+        "y": 371.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Plateforme porteuse interplanétaire (bus 3V)",
+            "~685 kg",
+            "▲ Désintégré",
+            "Module cylindrique muni de 2 panneaux solaires, d'une antenne parabolique grand gain de 2,3 m, d'un moteur KDU-414 et de détecteurs de particules solaires. S'est séparé de la capsule avant l'entrée atmosphérique le 22 juillet 1972 et s'est entièrement consumé dans la haute atmosphère de Vénus."
+          ],
+          [
+            "Étage supérieur Bloc L (fusée Molniya-M)",
+            "~1 160 kg (à sec)",
+            "■ Orbite solaire",
+            "Quatrième étage propulsé par un moteur S1.5400. Après avoir injecté la sonde de 1 184 kg vers Vénus le 27 mars 1972, l'étage est passé sur une orbite héliocentrique permanente entre la Terre et Vénus."
+          ],
+          [
+            "Troisième étage Bloc I (fusée Molniya-M)",
+            "~2 400 kg (à sec)",
+            "▲ Désintégré",
+            "Étage placé en orbite basse terrestre de parking lors du tir du 27 mars 1972 ; rentré et désintégré dans l'atmosphère terrestre quelques jours plus tard."
+          ]
+        ]
+      },
+      {
+        "y": 665.8233642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 688.8369140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Venera 8 est une mission robotique sans retour. Les étages inférieurs de la fusée Molniya-M et la coiffe sont retombés dans les zones terrestres prévues d'Asie centrale peu après le décollage de Baïkonour."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Venera 8 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 3"
+      }
+    ],
+    [
+      {
+        "y": 44.8233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 66.3369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique & trappe du compartiment parachute : coiffe larguée durant l'ascension atmosphérique terrestre le 27 mars 1972 ; couvercle supérieur du parachute largué à ~60 km d'altitude dans l'atmosphère vénusienne le 22 juillet 1972."
+      },
+      {
+        "y": 116.66712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 141.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "27 mars 1972, 04h15 UTC",
+            "Lancement de la fusée Molniya-M depuis Baïkonour et injection vers Vénus (4 jours avant l'échec de la sonde sœur Cosmos 482, restée bloquée en orbite terrestre)."
+          ],
+          [
+            "6 avril 1972",
+            "Correction de trajectoire à mi-course assurant le ciblage précis de l'étroit croissant éclairé de Vénus visible depuis la Terre."
+          ],
+          [
+            "22 juillet 1972, 08h37 UTC",
+            "Séparation de l'atterrisseur et entrée atmosphérique à 11,6 km/s ; freinage aérodynamique de 335 g et déploiement du parachute à 60 km d'altitude."
+          ],
+          [
+            "22 juillet 1972, 08h37 – 09h32 UTC",
+            "Descente de 55 minutes sous parachute : transmission en direct des profils de température, pression, vents zonaux et luminosité solaire à travers la couche nuageuse."
+          ],
+          [
+            "22 juillet 1972, 09h32 UTC",
+            "Atterrissage réussi sur la face diurne (10,70° S, 335,25° E) ; éjection de l'antenne secondaire et mesures du spectromètre gamma."
+          ],
+          [
+            "22 juillet 1972, 10h22 UTC",
+            "Fin des transmissions radio après 50 minutes et 11 secondes de fonctionnement continu à la surface sous l'effet de la chaleur extrême."
+          ]
+        ]
+      },
+      {
+        "y": 388.9171447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 414.3369140625,
+        "type": "text",
+        "text": "Preuve que la lumière du Soleil atteint le sol vénusien : le photomètre de Venera 8 a démontré que, malgré l'épaisse couverture nuageuse opaque entre 50 et 70 km d'altitude, environ 1 à 2 % de la lumière solaire parvient jusqu'à la surface (éclairement comparable à un jour très couvert sur Terre avec une visibilité horizontale d'environ 1 km). Cette découverte fondamentale a rendu possibles les premières photographies panoramiques prises trois ans plus tard par Venera 9 et 10."
+      },
+      {
+        "y": 486.3369140625,
+        "type": "text",
+        "text": "Première analyse géochimique d'une roche vénusienne : le spectromètre gamma a mesuré les concentrations naturelles d'uranium (2,2 ppm), de thorium (6,5 ppm) et de potassium (4 %) dans le régolithe du site d'atterrissage, révélant une composition proche des roches granitiques ou syénitiques alcalines terrestres et confirmant l'activité magmatique différenciée de Vénus."
+      },
+      {
+        "y": 544.8369140625,
+        "type": "text",
+        "text": "Découverte de la super-rotation atmosphérique : le suivi Doppler du signal radio durant la descente a mis en évidence des vents violents soufflant d'est en ouest à plus de 100 m/s (360 km/h) au sommet des nuages, décroissant progressivement jusqu'à moins de 1 m/s près du sol."
+      },
+      {
+        "y": 589.0869140625,
+        "type": "text",
+        "text": "Confirmation des conditions de surface : Venera 8 a mesuré une température au sol de 470 °C ± 8 °C et une pression de 90 ± 1,5 bars, validant pleinement les résultats de Venera 7 sur un second site éloigné de près de 3 000 km."
+      },
+      {
+        "y": 640.1671142578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 665.5869140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Venera 8 Spacecraft & Descent Craft Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 682.0869140625,
+        "type": "text",
+        "text": "IKI RAN (Institut de recherche spatiale de l'Académie des sciences de Russie) — Programme Venera (1972)"
+      },
+      {
+        "y": 712.8369140625,
+        "type": "text",
+        "text": "Vinogradov et al. (1973) — The Content of Uranium, Thorium, and Potassium in the Rocks of Venus as Measured by Venera 8 (Icarus)"
+      }
+    ]
+  ]
+}

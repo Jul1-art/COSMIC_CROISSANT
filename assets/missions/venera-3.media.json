@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "1966 CPA 3379",
+      "description": "1966 Soviet Union 6 kopeks stamp. Venera 3 Pendant and Medal.",
+      "credit": "Russian government",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:1966_CPA_3379.jpg",
+      "src": "archives/venera-3-commons.jpg",
+      "date": "",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-3.mp4",
+    "local": true,
+    "title": "Venera 3 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-3.pdf",
+    "fingerprint": "b31c48ff4953e9ebb7e9ee146745ad20a2b265835c89b8509e77423b9d584f75"
+  }
+}

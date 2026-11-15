@@ -1,0 +1,272 @@
+{
+  "id": "venera-12",
+  "name": "Venera 12",
+  "body": "venus",
+  "family": "venera",
+  "year": 1978,
+  "summary": "~4 458 kg au lancement total (bus de survol de ~3 150 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 21 décembre 1978 sur Vénus avec un record de 110 minutes d'activité de surface.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 12 (Венера-12, appareil 4V-2 n° 361, COSPAR 1978-086A / Lander 086C)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (NPO Lavotchkine) — programme Venera"
+    ],
+    [
+      "Lancement",
+      "14 septembre 1978, 02h25 UTC — Cosmodrome de Baïkonour (site 81/23), fusée Proton-K / Blok D-1"
+    ],
+    [
+      "Atterrissage",
+      "21 décembre 1978, 03h30 UTC — Surface de Vénus (7,0° S, 294,0° E, région de plaines au sud de Beta Regio)"
+    ],
+    [
+      "Fin de mission",
+      "21 décembre 1978 pour l'atterrisseur (110 minutes d'activité au sol, record pour l'époque) ; bus en orbite solaire jusqu'en avril 1980"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission combinant bus de survol interplanétaire et capsule d'atterrissage automatisée lourde)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur lourd Proton-K / Blok D-1, bus de survol Venera 12 (~3 150 kg), module d'atterrissage (~1 560 kg au largage)"
+    ],
+    [
+      "Statut",
+      "Réussite majeure — atterrissage réussi et transmission record de données de surface pendant 110 minutes, détection poussée d'éclairs et d'orages vénusiens."
+    ]
+  ],
+  "sourceFile": "Vénus/Venera 12 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "venera-12.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Venera 12 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~4 458 kg au lancement total (bus de survol de ~3 150 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 21 décembre 1978 sur Vénus avec un record de"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "110 minutes d'activité de surface."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 12 (Венера-12, appareil 4V-2 n° 361, COSPAR 1978-086A / Lander 086C)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (NPO Lavotchkine) — programme Venera"
+          ],
+          [
+            "Lancement",
+            "14 septembre 1978, 02h25 UTC — Cosmodrome de Baïkonour (site 81/23), fusée Proton-K / Blok D-1"
+          ],
+          [
+            "Atterrissage",
+            "21 décembre 1978, 03h30 UTC — Surface de Vénus (7,0° S, 294,0° E, région de plaines au sud de Beta Regio)"
+          ],
+          [
+            "Fin de mission",
+            "21 décembre 1978 pour l'atterrisseur (110 minutes d'activité au sol, record pour l'époque) ; bus en orbite solaire jusqu'en avril 1980"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission combinant bus de survol interplanétaire et capsule d'atterrissage automatisée lourde)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur lourd Proton-K / Blok D-1, bus de survol Venera 12 (~3 150 kg), module d'atterrissage (~1 560 kg au largage)"
+          ],
+          [
+            "Statut",
+            "Réussite majeure — atterrissage réussi et transmission record de données de surface pendant 110 minutes, détection poussée d'éclairs et d'orages vénusiens."
+          ]
+        ]
+      },
+      {
+        "y": 524.5154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 559.6342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 593.7205810546875,
+        "type": "text",
+        "text": "A. Surface de Vénus — Sud de Beta Regio (Atterrisseur Venera 12)"
+      },
+      {
+        "y": 613.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Capsule d'atterrissage (Lander)",
+            "~500 kg",
+            "Détruit / écrasé",
+            "Module pressurisé (record de 110 min d'activité le 21 déc. 1978)."
+          ],
+          [
+            "Détecteurs d'éclairs & chromatographe",
+            "~30 kg",
+            "Détruits / inactifs",
+            "Détecteurs d'ondes radio (GROZA) enregistrant ~1000 éclairs/heure, et chromatographes de gaz."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Bus de survol interplanétaire & espace"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bus de survol (Flyby Bus)",
+            "~3 150 kg (initial)",
+            "Détruit / héliocentrique",
+            "Structure principale ayant transporté la capsule et servi de relais radio. A survolé Vénus à ~35 000 km le 19 déc. 1978, puis a observé la comète Bradfield en 1980 avant la fin de mission en avril 1980."
+          ],
+          [
+            "Étage supérieur Blok D-1 (Proton-K)",
+            "~2 500 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage d'injection interplanétaire ayant propulsé Venera 12 le 14 septembre 1978 depuis Baïkonour ; placé sur une orbite solaire stable (périhélie 0,69 AU, aphélie 1,01 AU)."
+          ]
+        ]
+      },
+      {
+        "y": 275.7205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 296.5869140625,
+        "type": "text",
+        "text": "Modèle d'ingénierie (NPO Lavotchkine) : maquettes de test conservées dans les archives spatiales russes."
+      },
+      {
+        "y": 330.3369140625,
+        "type": "text",
+        "text": "Archives scientifiques intégrales : enregistrements intégraux de la télémétrie de surface, de la chromatographie atmosphérique et des ondes électromagnétiques."
+      },
+      {
+        "y": 376.01544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 403.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "14 septembre 1978",
+            "Décollage réussi de la fusée Proton-K / Blok D-1 depuis Baïkonour ; injection de Venera 12 vers Vénus."
+          ],
+          [
+            "19 décembre 1978",
+            "Survol réussi de Vénus par le bus transporteur à ~35 000 km et largage de la capsule d'atterrissage."
+          ],
+          [
+            "21 décembre 1978",
+            "Atterrissage en douceur réussi de l'atterrisseur dans les plaines vénusiennes (7° S, 294° E) à 03h30 UTC."
+          ],
+          [
+            "21 décembre 1978 (110 min)",
+            "L'atterrisseur transmet des données scientifiques et analyse l'atmosphère pendant un temps record de 110 minutes avant sa fusion thermique."
+          ],
+          [
+            "Avril 1980",
+            "Fin définitive des opérations scientifiques du bus de survol interplanétaire (après des observations coordonnées de sursauts gamma et de comètes)."
+          ]
+        ]
+      },
+      {
+        "y": 623.5154418945312,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 652.0869140625,
+        "type": "text",
+        "text": "Record de survie de surface : avec 110 minutes d'activité continue sous les conditions infernales de Vénus (88 atm, 470 °C), Venera 12 a établi un nouveau record d'endurance pour un avant-poste robotique sur une planète tellurique chaude."
+      },
+      {
+        "y": 701.5869140625,
+        "type": "text",
+        "text": "Confirmation de l'activité orageuse : les capteurs ont mesuré jusqu'à 1 000 éclairs par heure dans l'atmosphère vénusienne, confirmant la nature électrique intense des nuages de dioxyde de soufre."
+      },
+      {
+        "y": 735.3369140625,
+        "type": "text",
+        "text": "Observation astronomique opportuniste : après son survol de Vénus, le bus de survol a été utilisé pour détecter des sursauts gamma cosmiques (en réseau avec d'autres sondes) et observer la comète Bradfield en 1980."
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Venera 12 (ID : 1978- 086A)"
+      },
+      {
+        "y": 115.8369140625,
+        "type": "text",
+        "text": "V. L. Barsukov et al., Preliminary Results of Investigations with the Venera 11 and Venera 12 Spaceprobes, Space Research, 1980"
+      },
+      {
+        "y": 149.5869140625,
+        "type": "text",
+        "text": "B. Harvey, Soviet and Russian Lunar Exploration, Springer Praxis Books, 2007"
+      }
+    ]
+  ]
+}

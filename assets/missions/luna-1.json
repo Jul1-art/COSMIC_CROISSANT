@@ -1,0 +1,366 @@
+{
+  "id": "luna-1",
+  "name": "Luna 1",
+  "body": "moon",
+  "family": "luna-orbiter",
+  "year": 1959,
+  "summary": "1 sonde silencieuse depuis le 5 janvier 1959, en orbite héliocentrique · 1 étage supérieur de 1 472 kg (après combustion), devenir non précisé · 2 fanions métalliques aux armes de l'URSS, sort inconnu · 6 types d'instruments à bord, aucun actif · Luna 1 a marqué le début de l'exploration spatiale lointaine : première sonde à atteindre la vitesse de libération, première à passer près de la Lune, première « planète artificielle » du Soleil",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 1 (E-1 n° 4) — aussi appelée Mechta (« Rêve ») ; rebaptisée Luna 1 en 1963"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique — programme Luna"
+    ],
+    [
+      "Lancement",
+      "2 janvier 1959, 16h41 UTC — Baïkonour, fusée Luna 8K72 (Vostok-L)"
+    ],
+    [
+      "Objectif",
+      "Atteindre la Lune par trajectoire directe ; la sonde l'a manquée"
+    ],
+    [
+      "Survol lunaire",
+      "4 janvier 1959, à ~6 000 km de la surface (sources : 5 900 à 5 995 km)"
+    ],
+    [
+      "Orbite finale",
+      "Héliocentrique : ~146 à ~197 millions de km du Soleil, période ~450 jours"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — sonde sans retour"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Fusée Luna 8K72 · étage supérieur · sonde Luna 1"
+    ],
+    [
+      "Statut",
+      "Partielle — Lune manquée, mais premières mesures du vent solaire et première orbite héliocentrique ; silencieuse depuis le 5 janvier 1959"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche-mission-Luna-1-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "luna-1.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Luna 1 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 sonde silencieuse depuis le 5 janvier 1959, en orbite héliocentrique · 1 étage supérieur de 1 472 kg (après combustion), devenir non précisé · 2 fanions métalliques aux armes de l'URSS, sort inconnu · 6 types d'instruments à bord, aucun actif · Luna 1 a marqué le début de l'exploration spatiale lointaine : première sonde à atteindre la vitesse de libération, première à passer près de la Lune, première « planète artificielle » du Soleil"
+      },
+      {
+        "y": 195.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 217.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 1 (E-1 n° 4) — aussi appelée Mechta (« Rêve ») ; rebaptisée Luna 1 en 1963"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique — programme Luna"
+          ],
+          [
+            "Lancement",
+            "2 janvier 1959, 16h41 UTC — Baïkonour, fusée Luna 8K72 (Vostok-L)"
+          ],
+          [
+            "Objectif",
+            "Atteindre la Lune par trajectoire directe ; la sonde l'a manquée"
+          ],
+          [
+            "Survol lunaire",
+            "4 janvier 1959, à ~6 000 km de la surface (sources : 5 900 à 5 995 km)"
+          ],
+          [
+            "Orbite finale",
+            "Héliocentrique : ~146 à ~197 millions de km du Soleil, période ~450 jours"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — sonde sans retour"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Fusée Luna 8K72 · étage supérieur · sonde Luna 1"
+          ],
+          [
+            "Statut",
+            "Partielle — Lune manquée, mais premières mesures du vent solaire et première orbite héliocentrique ; silencieuse depuis le 5 janvier 1959"
+          ]
+        ]
+      },
+      {
+        "y": 473.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 498.2605895996094,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 540.596923828125,
+        "type": "text",
+        "text": "A. Orbite héliocentrique — sonde Luna 1"
+      },
+      {
+        "y": 558.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde Luna 1",
+            "n.c.",
+            "",
+            "Placée en orbite autour du Soleil après le survol de la Lune ; émetteur coupé le 5 janvier 1959 (~600 000 km de la Terre) ; classée comme engin abandonné en orbite héliocentrique"
+          ],
+          [
+            "Fanions métalliques (×2)",
+            "—",
+            "",
+            "Aux armes de l'Union soviétique, prévus pour être laissés à l'impact ; ont-ils été libérés ? non précisé dans mes sources"
+          ],
+          [
+            "Instruments (voir B)",
+            "—",
+            "",
+            "Aucun n'est plus actif"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques"
+      },
+      {
+        "y": 72.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "2 détecteurs de micrométéorites",
+            "Poussières",
+            "",
+            "Tatiana Nazarova"
+          ],
+          [
+            "4 pièges à ions",
+            "Vent solaire",
+            "",
+            "Konstantin Gringauz ; premières mesures directes du vent solaire"
+          ],
+          [
+            "2 compteurs Geiger à décharge gazeuse",
+            "Rayonnement",
+            "",
+            "Rayonnement cosmique"
+          ],
+          [
+            "Compteur à scintillation (iodure de sodium)",
+            "Rayonnement",
+            "",
+            "Particules énergétiques"
+          ],
+          [
+            "Détecteur Cherenkov",
+            "Rayonnement",
+            "",
+            "Particules rapides"
+          ],
+          [
+            "Compteur à scintillation de l'étage supérieur",
+            "Rayonnement",
+            "",
+            "Sur l'étage, pas sur la sonde"
+          ]
+        ]
+      },
+      {
+        "y": 259.9969482421875,
+        "type": "text",
+        "text": "C. Étage supérieur et lanceur"
+      },
+      {
+        "y": 278.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur (Vostok-L)",
+            "1 472 kg après combustion",
+            "",
+            "A relâché le nuage de sodium ; son sort exact n'est pas décrit dans mes sources"
+          ],
+          [
+            "Étages inférieurs du lanceur",
+            "n.c.",
+            "",
+            "Retombés ou abandonnés ; non précisé"
+          ]
+        ]
+      },
+      {
+        "y": 373.9969482421875,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 391.2043762207031,
+        "type": "text",
+        "text": "• Rien : aucun élément de Luna 1 n'a été récupéré"
+      },
+      {
+        "y": 418.9969482421875,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 436.2043762207031,
+        "type": "text",
+        "text": "• Nuage de sodium relâché par l'étage supérieur le 3 janvier 1959 (~113 000 km), comète artificielle pour suivre la trajectoire"
+      },
+      {
+        "y": 487.3176574707031,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 509.9543762207031,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "2 janvier 1959, 16h41",
+            "Lancement depuis Baïkonour"
+          ],
+          [
+            "3 janvier 1959, ~00h57",
+            "Libération d'un nuage de sodium à ~113 000 km ; photographié depuis un observatoire"
+          ],
+          [
+            "4 janvier 1959, ~02h59",
+            "Survol de la Lune (~6 000 km) ; la sonde entre en orbite héliocentrique"
+          ],
+          [
+            "5 janvier 1959, ~07h00",
+            "Batteries épuisées, émetteur muet à ~600 000 km de la Terre"
+          ],
+          [
+            "Mai 1959",
+            "Auditions au Congrès américain sur la mission"
+          ],
+          [
+            "1963",
+            "La sonde reçoit officiellement le nom de Luna 1"
+          ]
+        ]
+      },
+      {
+        "y": 673.317626953125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 694.8043212890625,
+        "type": "text",
+        "text": "• Début de l'exploration spatiale lointaine : Luna 1 est la première sonde à quitter l'orbite terrestre et à atteindre la vitesse de libération, et la première à passer près de la Lune."
+      },
+      {
+        "y": 725.8043212890625,
+        "type": "text",
+        "text": "• Première orbite héliocentrique : premier objet artificiel en orbite autour du Soleil, surnommé « planète artificielle »."
+      },
+      {
+        "y": 756.8043212890625,
+        "type": "text",
+        "text": "• Vent solaire : premières mesures directes."
+      },
+      {
+        "y": 773.8043212890625,
+        "type": "text",
+        "text": "• Champ magnétique lunaire : non détecté ; limite supérieure fixée à 1/10 000 de celui de la Terre."
+      }
+    ],
+    [
+      {
+        "y": 50.204368591308594,
+        "type": "text",
+        "text": "• Ceinture de Van Allen : quelques particules énergétiques détectées dans la ceinture externe."
+      },
+      {
+        "y": 67.2043685913086,
+        "type": "text",
+        "text": "• Radio : première communication à ~500 000 km."
+      },
+      {
+        "y": 84.2043685913086,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (l'URSS, aujourd'hui la Russie) ; aucune appropriation nationale n'est possible dans l'espace."
+      },
+      {
+        "y": 149.317626953125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 170.80435180664062,
+        "type": "text",
+        "text": "• Wikipedia (miroir cavac.at) — Luna 1 : instruments, noms, résultats"
+      },
+      {
+        "y": 187.80435180664062,
+        "type": "text",
+        "text": "• Orbital Focus — journal de bord de Luna 1 : heures, distances, orbite"
+      }
+    ]
+  ]
+}

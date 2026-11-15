@@ -1,0 +1,346 @@
+{
+  "id": "spoutnik-1",
+  "name": "Spoutnik 1",
+  "body": "earth",
+  "family": "sputnik",
+  "year": 1957,
+  "summary": "83,6 kg mis en orbite basse terrestre (premier satellite artificiel de l'histoire) · 0 objet restant en orbite en 2026 (rentrée atmosphérique du satellite le 4 janvier 1958 après 92 jours et 1 440 révolutions) · 2 objets principaux désintégrés dans l'atmosphère terrestre (satellite PS-1 et étage central de la fusée R-7).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Spoutnik 1 (PS-1 — Prosteïchi Spoutnik 1, « Satellite le plus simple 1 »)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (OKB-1 sous la direction de Sergueï Korolev) — Programme Spoutnik / Année géophysique internationale"
+    ],
+    [
+      "Lancement",
+      "4 octobre 1957, 19h28 UTC — Polygone de Tiouratam / Baïkonour (Site 1/5), fusée Spoutnik 8K71PS (R-7 modifiée)"
+    ],
+    [
+      "Orbite initiale",
+      "Orbite terrestre basse elliptique : 215 × 939 km, inclinée à 65,1°, période orbitale de 96,17 min"
+    ],
+    [
+      "Fin de mission",
+      "26 octobre 1957 (épuisement des batteries après 22 jours) · 4 janvier 1958 (rentrée atmosphérique)"
+    ],
+    [
+      "Type de mission",
+      "Satellite technologique et scientifique automatique (sans équipage) d'étude de l'ionosphère et de la densité atmosphérique"
+    ],
+    [
+      "Véhicules",
+      "Lanceur 8K71PS (4 propulseurs latéraux + corps central Bloc A) · Satellite sphérique pressurisé PS-1"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier objet fabriqué par l'homme placé en orbite autour de la Terre ; ouverture de l'ère spatiale"
+    ]
+  ],
+  "sourceFile": "Terre/Fiche mission Spoutnik 1 - Hardware perdu dans l_espace.pdf",
+  "pdf": "spoutnik-1.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "DÉBUT DE L'ÈRE SPATIALE · CATALOGUE DU PATRIMOINE SPATIAL Spoutnik 1 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : 83,6 kg mis en orbite basse terrestre (premier satellite artificiel de l'histoire) · 0 objet restant en orbite en 2026 (rentrée atmosphérique du satellite le 4 janvier 1958 après 92 jours et 1 440"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "révolutions) · 2 objets principaux désintégrés dans l'atmosphère terrestre (satellite PS-1 et étage central de la fusée R-7)."
+      },
+      {
+        "y": 190.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Spoutnik 1 (PS-1 — Prosteïchi Spoutnik 1, « Satellite le plus simple 1 »)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (OKB-1 sous la direction de Sergueï Korolev) — Programme Spoutnik / Année géophysique internationale"
+          ],
+          [
+            "Lancement",
+            "4 octobre 1957, 19h28 UTC — Polygone de Tiouratam / Baïkonour (Site 1/5), fusée Spoutnik 8K71PS (R-7 modifiée)"
+          ],
+          [
+            "Orbite initiale",
+            "Orbite terrestre basse elliptique : 215 × 939 km, inclinée à 65,1°, période orbitale de 96,17 min"
+          ],
+          [
+            "Fin de mission",
+            "26 octobre 1957 (épuisement des batteries après 22 jours) · 4 janvier 1958 (rentrée atmosphérique)"
+          ],
+          [
+            "Type de mission",
+            "Satellite technologique et scientifique automatique (sans équipage) d'étude de l'ionosphère et de la densité atmosphérique"
+          ],
+          [
+            "Véhicules",
+            "Lanceur 8K71PS (4 propulseurs latéraux + corps central Bloc A) · Satellite sphérique pressurisé PS-1"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier objet fabriqué par l'homme placé en orbite autour de la Terre ; ouverture de l'ère spatiale"
+          ]
+        ]
+      },
+      {
+        "y": 526.9171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 558.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 591.5733642578125,
+        "type": "text",
+        "text": "A. Orbite terrestre basse — Satellite principal (83,6 kg au total)"
+      },
+      {
+        "y": 612.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sphère pressurisée PS-1 (coque AMG6T)",
+            "~13,9 kg",
+            "▲ Désintégré",
+            "Sphère hermétique de 58 cm de diamètre assemblée à partir de deux demi-coques de 2 mm d'épaisseur en alliage aluminium-magnésium- titane (AMG6T), recouvertes d'un bouclier thermique poli de 1 mm et gonflées à l'azote sec à 1,3 bar pour réguler la température interne par convection."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Spoutnik 1 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Quatre antennes fouets extérieures",
+            "~8,4 kg",
+            "▲ Désintégré",
+            "Deux paires d'antennes dipôles déployées à 35° vers l'arrière dès la séparation d'avec le lanceur, mesurant respectivement 2,4 m et 2,9 m de longueur, assurant un rayonnement radio quasi isotrope quelle que soit la rotation de la sphère."
+          ],
+          [
+            "Batteries argent-zinc (bloc d'alimentation)",
+            "~51,0 kg",
+            "▲ Désintégré",
+            "Trois batteries argent-zinc de forme octogonale entourant l'émetteur (représentant plus de 60 % de la masse totale du satellite), conçues pour alimenter le bord pendant au moins 14 jours et ayant fonctionné 22 jours."
+          ],
+          [
+            "Émetteur radio bi- fréquence D-200 & capteurs",
+            "~3,5 kg",
+            "▲ Désintégré",
+            "Émetteur à tubes à vide de 1 W alternant des impulsions (« bip-bip ») de 0,3 s sur 20,005 MHz et 40,002 MHz, modulées en durée et fréquence par des interrupteurs thermiques et pressostatiques (détection de dépressurisation par micrométéorite), accompagné d'un ventilateur interne."
+          ]
+        ]
+      },
+      {
+        "y": 350.8233642578125,
+        "type": "text",
+        "text": "B. Éléments du lanceur en orbite terrestre & retombées"
+      },
+      {
+        "y": 371.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage central Bloc A (fusée Spoutnik 8K71PS)",
+            "~7 500 kg (à sec)",
+            "▲ Désintégré",
+            "Corps central de 28 m de long propulsé par un moteur RD-108 (kérosène/oxygène liquide), entré sur la même orbite basse que Spoutnik 1. Du fait de sa grande traînée atmosphérique (et d'un panneau réfléchissant fixé pour faciliter son repérage optique), il est rentré et s'est désintégré dans l'atmosphère le 2 décembre 1957 après 882 orbites."
+          ],
+          [
+            "Coiffe conique de protection (nose cone)",
+            "~45 kg",
+            "▲ Désintégré",
+            "Coiffe aérodynamique éjectée à l'extinction du moteur central (T+324 s) juste avant la séparation pneumatique du satellite PS-1. Placée brièvement sur une orbite basse très similaire, elle s'est consumée dans l'atmosphère terrestre quelques semaines après le lancement."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Spoutnik 1 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Quatre propulseurs d'appoint latéraux (Blocs B, V, G, D)",
+            "~3 500 kg chacun (à sec)",
+            "▲ Retombés (Terre)",
+            "Propulseurs coniques munis de moteurs RD-107, largués à T+116 s à ~50 km d'altitude (formant la célèbre « croix de Korolev ») et retombés sur Terre dans la steppe kazakhe à environ 400 km du pas de tir."
+          ]
+        ]
+      },
+      {
+        "y": 196.3233642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 218.5869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Spoutnik 1 et l'étage central de sa fusée ont été entièrement détruits par la chaleur de la rentrée atmosphérique respectivement les 4 janvier 1958 et 2 décembre 1957. Seules des maquettes d'ingénierie et doublures au sol (dont l'exemplaire historique conservé au musée RKK Energia de Korolev) subsistent sur Terre."
+      },
+      {
+        "y": 290.8233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 313.8369140625,
+        "type": "text",
+        "text": "Système de séparation pneumatique & sangles de maintien : mécanisme pyrotechnique et ressorts fixés à l'avant de l'étage central Bloc A, restés solidaires du corps central jusqu'à sa rentrée atmosphérique le 2 décembre 1957."
+      },
+      {
+        "y": 373.1671447753906,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 398.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "4 octobre 1957, 19h28m34s UTC",
+            "Décollage de la fusée Spoutnik 8K71PS depuis le Site 1 de Tiouratam (Baïkonour)."
+          ],
+          [
+            "4 octobre 1957, 19h33m58s UTC",
+            "Extinction du moteur central (T+324,5 s), éjection de la coiffe, séparation du satellite PS-1, déploiement des 4 antennes et émission des premiers signaux « bip-bip » captés à la fin de la première orbite."
+          ],
+          [
+            "26 octobre 1957",
+            "Extinction définitive de l'émetteur radio D-200 après 22 jours d'émission continue (épuisement des batteries argent-zinc) ; le satellite poursuit son vol silencieux suivi au radar et optiquement."
+          ],
+          [
+            "2 décembre 1957",
+            "Rentrée atmosphérique et désintégration de l'étage central de la fusée R-7 après 59 jours en orbite."
+          ],
+          [
+            "4 janvier 1958",
+            "Rentrée atmosphérique et destruction finale de Spoutnik 1 après 92 jours dans l'espace, 1 440 révolutions autour de la Terre et ~70 millions de km parcourus."
+          ]
+        ]
+      },
+      {
+        "y": 642.4171142578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 669.3369140625,
+        "type": "text",
+        "text": "Première mesure directe de la densité de la haute atmosphère : en mesurant précisément le taux de décroissance orbitale (freinage aérodynamique) de Spoutnik 1 et de son étage central entre 215 et 939 km d'altitude, les physiciens ont démontré que la haute atmosphère terrestre était nettement plus dense et plus étendue que ne le prévoyaient les modèles théoriques d'avant l'ère spatiale."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Spoutnik 1 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 55.8369140625,
+        "type": "text",
+        "text": "Sondage radio de l'ionosphère terrestre : le choix de deux fréquences radio (20,005 MHz et 40,002 MHz, choisies pour être captées par les radioamateurs du monde entier) a permis d'étudier la réfraction, la dispersion et l'absorption des ondes électromagnétiques à travers les couches ionisées de l'atmosphère, révélant la distribution électronique au-dessus du maximum de la couche F2."
+      },
+      {
+        "y": 119.5869140625,
+        "type": "text",
+        "text": "Validation de l'ingénierie spatiale et du milieu orbital : le maintien d'une pression interne constante de 1,3 bar pendant plus de trois semaines a prouvé qu'un engin pressurisé pouvait résister aux chocs thermiques (alternance jour/nuit toutes les 96 min) et au flux de micrométéorites en orbite basse, ouvrant la voie dès le mois suivant à Spoutnik 2 (avec la chienne Laïka) puis au programme habité Vostok."
+      },
+      {
+        "y": 199.0869140625,
+        "type": "text",
+        "text": "Déclenchement de la course à l'espace et du suivi orbital mondial : le retentissement planétaire du lancement de Spoutnik 1 a conduit à la création de la NASA en 1958 et à la mise en place des premiers réseaux internationaux d'observation optique et radar des objets artificiels en orbite (opération Moonwatch, NORAD)."
+      },
+      {
+        "y": 273.4171447753906,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 300.3369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Sputnik 1 Spacecraft & Telemetry Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 318.3369140625,
+        "type": "text",
+        "text": "RKK Energia — History of the First Artificial Earth Satellite (PS-1) (energia.ru)"
+      },
+      {
+        "y": 337.0869140625,
+        "type": "text",
+        "text": "Asif A. Siddiqi — Challenge to Apollo: The Soviet Union and the Space Race, 1945–1974 (NASA SP- 2000-4408)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Spoutnik 1 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

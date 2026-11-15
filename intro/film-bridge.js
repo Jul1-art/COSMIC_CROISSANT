@@ -188,7 +188,8 @@ try {
 } catch { /* Direct visits continue to show the opening. */ }
 const startupParameters = new URL(location.href).searchParams;
 const sharedInspection=startupParameters.get('view')==='inspection'&&startupParameters.has('body');
-if (startupParameters.has('sources') || (returningToAtlas||sharedInspection) && !startupParameters.has('film')) { introduction.classList.add('hidden'); setFilmActive(false); }
+const sharedMission=/^[a-z0-9-]+$/.test(startupParameters.get('mission')||'');
+if (startupParameters.has('sources') || (returningToAtlas||sharedInspection||sharedMission) && !startupParameters.has('film')) { introduction.classList.add('hidden'); setFilmActive(false); }
 else {
   setFilmActive(true);
   createExplorerWelcome({host:introduction,getLanguage,setLanguage,reducedMotion,onComplete:({watch})=>{

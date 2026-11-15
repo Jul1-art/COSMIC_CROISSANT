@@ -1,0 +1,386 @@
+{
+  "id": "apollo-16",
+  "name": "Apollo 16",
+  "body": "moon",
+  "family": "apollo",
+  "year": 1972,
+  "summary": "~3,0 t de matériel laissé sur les hauts plateaux de Descartes (dont le rover LRV-2 et le 1er observatoire astronomique lunaire) · 0 objet actif en 2026 (aucun LRRR sur cette mission) · 3 objets écrasés sur la Lune (étage S-IVB, sous-satellite PFS-2 et étage d'ascension du LM) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Apollo 16 (AS-511)"
+    ],
+    [
+      "Agence & programme",
+      "NASA — Programme Apollo (cinquième alunissage habité, deuxième mission scientifique longue de type J)"
+    ],
+    [
+      "Lancement",
+      "16 avril 1972, 17h54 UTC — Kennedy Space Center (Pad 39A), fusée Saturn V"
+    ],
+    [
+      "Alunissage",
+      "21 avril 1972, 02h23 UTC — Hauts plateaux de Descartes, près du cratère Cayley (8,9730° S, 15,5002° E)"
+    ],
+    [
+      "Retour sur Terre",
+      "27 avril 1972, 19h45 UTC — Amerrissage dans le Pacifique Sud (11 j 01 h 51 min de mission)"
+    ],
+    [
+      "Équipage",
+      "John W. Young (commandant), Charles M. Duke Jr. (pilote LM), Thomas K. Mattingly II (pilote CSM)"
+    ],
+    [
+      "Véhicules",
+      "Saturn V (SA-511) · Module de commande/service Casper (CSM-113) · Module lunaire Orion (LM-11) · Rover LRV-2"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Première exploration des hauts plateaux centraux de la Lune ; 95,7 kg d'échantillons rapportés (dont la plus grosse roche Apollo, « Big Muley »)"
+    ]
+  ],
+  "sourceFile": "Lune/Apollo/Fiche mission Apollo 16 - Hardware perdu dans l_espace.pdf",
+  "pdf": "apollo-16.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "PROGRAMME APOLLO · CATALOGUE DU PATRIMOINE SPATIAL Apollo 16 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 115.1776123046875,
+        "type": "text",
+        "text": "Synthèse hardware : ~3,0 t de matériel laissé sur les hauts plateaux de Descartes (dont le rover LRV-2 et le 1er observatoire astronomique lunaire) · 0 objet actif en 2026 (aucun LRRR sur cette mission) · 3 objets"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "écrasés sur la Lune (étage S-IVB, sous-satellite PFS-2 et étage d'ascension du LM) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 189.26544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Apollo 16 (AS-511)"
+          ],
+          [
+            "Agence & programme",
+            "NASA — Programme Apollo (cinquième alunissage habité, deuxième mission scientifique longue de type J)"
+          ],
+          [
+            "Lancement",
+            "16 avril 1972, 17h54 UTC — Kennedy Space Center (Pad 39A), fusée Saturn V"
+          ],
+          [
+            "Alunissage",
+            "21 avril 1972, 02h23 UTC — Hauts plateaux de Descartes, près du cratère Cayley (8,9730° S, 15,5002° E)"
+          ],
+          [
+            "Retour sur Terre",
+            "27 avril 1972, 19h45 UTC — Amerrissage dans le Pacifique Sud (11 j 01 h 51 min de mission)"
+          ],
+          [
+            "Équipage",
+            "John W. Young (commandant), Charles M. Duke Jr. (pilote LM), Thomas K. Mattingly II (pilote CSM)"
+          ],
+          [
+            "Véhicules",
+            "Saturn V (SA-511) · Module de commande/service Casper (CSM-113) · Module lunaire Orion (LM-11) · Rover LRV-2"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Première exploration des hauts plateaux centraux de la Lune ; 95,7 kg d'échantillons rapportés (dont la plus grosse roche Apollo, « Big Muley »)"
+          ]
+        ]
+      },
+      {
+        "y": 511.76544189453125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 578.7205810546875,
+        "type": "text",
+        "text": "A. Surface lunaire — Hauts plateaux de Descartes (~3,0 t au total)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de descente du LM Orion",
+            "~2 440 kg",
+            "■ Intact / inactif",
+            "Structure aluminium/titane de type J sur 4 pieds, moteur de descente (~45 kN), réservoirs vides, échelle et baie MESA. Porte la plaque commémorative : « Apollo 16 · Orion · April 1972 » avec les signatures de Young, Duke et Mattingly."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 16 — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Lunar Roving Vehicle (LRV-2)",
+            "~210 kg",
+            "■ Intact / inactif",
+            "Second rover électrique lunaire : a parcouru 26,7 km lors des 3 EVA et atteint la vitesse record officieuse de 18 km/h (« Grand Prix lunaire »). Garé à ~95 m à l'est du LM pour filmer le décollage."
+          ],
+          [
+            "Caméra / spectrographe UV lointain (UVC)",
+            "~22 kg",
+            "■ Intact / inactif",
+            "Premier observatoire astronomique installé hors de la Terre : télescope Schmidt de 75 mm plaqué or déployé à l'ombre du LM. A pris 178 clichés UV de la géocouronne terrestre, de nébuleuses et d'amas stellaires (seule la cassette de film a été rapportée)."
+          ],
+          [
+            "Station centrale ALSEP & RTG SNAP-27",
+            "~50 kg",
+            "■ Intact / inactif",
+            "Station de télémesure alimentée par le générateur nucléaire SNAP-27 (plutonium-238, ~71 W), accompagnée de son conteneur de combustible vide fixé sur l'étage de descente. Désactivée le 30 septembre 1977."
+          ],
+          [
+            "Instruments géophysiques ALSEP (PSE, ASE, LSM, HFE)",
+            "~52 kg",
+            "■ Intact / inactif",
+            "Sismomètre passif (PSE), expérience sismique active (ASE avec mortier à 3 grenades tirées avec succès), magnétomètre de surface (LSM) et sonde de flux thermique (HFE, dont le câble fut accidentellement sectionné par John Young)."
+          ],
+          [
+            "Magnétomètre portable (LPM) & détecteur de rayons cosmiques (LCR)",
+            "~12 kg",
+            "■ Intact / inactif",
+            "Magnétomètre portable monté sur trépied utilisé sur plusieurs stations géologiques (révélant un champ magnétique rémanent local étonnamment élevé à Descartes) et détecteur passif de rayons cosmiques (plaques de mica/plastique)."
+          ],
+          [
+            "Photo de famille de Charlie Duke & médaille",
+            "< 1 kg",
+            "■ Intact / inactif",
+            "Photographie plastifiée de Charles Duke entouré de sa femme et de ses deux fils (signée au dos), déposée sur le régolithe près du cratère Plum lors de la première EVA, ainsi qu'un médaillon commémoratif de l'US Air Force."
+          ],
+          [
+            "Drapeau américain, outils géologiques & sacs de déchets",
+            "~165 kg",
+            "■ Intact / inactif",
+            "Drapeau américain planté près du LM, foreuse électrique ALSD, râteau, pinces d'échantillonnage, gnomon, sacs de déchets (Jettison Bags) et couvertures thermiques en Mylar."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 16 — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Orbite lunaire, impacts contrôlés & rentrée atmosphérique"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage S-IVB de la Saturn V (S-IVB-511)",
+            "~14 002 kg (à sec)",
+            "▲ Écrasé (Lune)",
+            "Guidé volontairement vers la Lune après l'extraction du LM (perte temporaire du suivi radar avant l'impact). Percute la surface le 19 avril 1972 à 21h02 UTC par 1,92° N, 24,62° O (Mare Insularum), fournissant un signal sismique majeur."
+          ],
+          [
+            "Sous-satellite Particles & Fields (PFS-2)",
+            "~36,3 kg",
+            "▲ Écrasé (Lune)",
+            "Largué depuis le module SIM en orbite lunaire le 24 avril 1972. En raison d'une orbite inclinée non corrigée (périsélène trop bas), son altitude a chuté rapidement sous l'effet des mascons : impact sur la face cachée vers le 29 mai 1972 (après seulement 35 jours)."
+          ],
+          [
+            "Étage d'ascension du LM Orion",
+            "~2 138 kg",
+            "▲ Écrasé (Lune)",
+            "Largué le 24 avril 1972 après l'amarrage avec Casper, mais une panne d'interrupteur d'attitude a empêché la mise à feu de désorbitation immédiate. Il est resté en orbite lunaire instable pendant près d'un an avant de s'écraser sur la Lune vers avril 1973 (coordonnées exactes non observées)."
+          ],
+          [
+            "Module de service (SM-113)",
+            "~5 200 kg (à vide)",
+            "▲ Désintégré",
+            "Équipé de la baie scientifique SIM (spectromètres gamma, X et alpha, caméras panoramique et métrique). Largué avant la rentrée atmosphérique terrestre le 27 avril 1972 ; entièrement consumé au- dessus du Pacifique."
+          ]
+        ]
+      },
+      {
+        "y": 525.4705810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 547.020263671875,
+        "type": "text",
+        "text": "Capsule Casper (module de commande CM-113, ~5 500 kg) : amerrissage au sud-est des îles de la Ligne près du porte-hélicoptères USS Ticonderoga ; aujourd'hui exposée à l'U.S. Space & Rocket Center (Huntsville, Alabama)."
+      },
+      {
+        "y": 595.770263671875,
+        "type": "text",
+        "text": "Échantillons lunaires (95,71 kg) : 731 échantillons rocheux et carottes des hauts plateaux de Descartes, dont « Big Muley » (échantillon 61016, brèche d'impact de 11,7 kg, la plus lourde roche rapportée d'Apollo)."
+      },
+      {
+        "y": 643.770263671875,
+        "type": "text",
+        "text": "Films scientifiques SIM & caméra UV : cassettes récupérées lors de l'EVA trans-Terre de 1 h 23 min effectuée par Ken Mattingly le 25 avril 1972 (incluant une expérience sur la survie de spores microbiennes exposées au vide spatial)."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 16 — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 46.2205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 66.270263671875,
+        "type": "text",
+        "text": "Panneaux d'adaptation (SLA) de la Saturn V : quatre panneaux largués en orbite terrestre basse lors de l'extraction du module lunaire Orion."
+      },
+      {
+        "y": 97.020263671875,
+        "type": "text",
+        "text": "Équipements et conteneurs largués : sacs de déchets, surchaussures lunaires et emballages évacués hors du LM avant le largage final d'Orion."
+      },
+      {
+        "y": 132.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 158.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "16 avril 1972, 17h54 UTC",
+            "Lancement de Saturn V depuis le Kennedy Space Center."
+          ],
+          [
+            "19 avril 1972, 21h02 UTC",
+            "Mise en orbite lunaire ; impact volontaire de l'étage S-IVB sur la Lune (1,92° N, 24,62° O)."
+          ],
+          [
+            "20 & 21 avril 1972, 02h23 UTC",
+            "Une oscillation du moteur principal de Casper retarde la descente de 6 heures ; alunissage réussi d'Orion à Descartes (8,9730° S, 15,5002° E)."
+          ],
+          [
+            "21 avril, 16h47 – 23h58 UTC",
+            "EVA 1 (7 h 11 min) : déploiement du rover LRV-2, installation de la station ALSEP et de l'observatoire UV lointain ; trajet vers les cratères Flag et Spook."
+          ],
+          [
+            "22 avril, 16h33 – 23h56 UTC",
+            "EVA 2 (7 h 23 min) : ascension des pentes de Stone Mountain jusqu'aux cratères Cinco et Wreck (altitude record de 152 m au-dessus du site d'alunissage)."
+          ],
+          [
+            "23 avril, 15h25 – 21h05 UTC",
+            "EVA 3 (5 h 40 min) : trajet vers le nord jusqu'au cratère North Ray (1 km de diamètre) et collecte de la roche « House Rock »."
+          ],
+          [
+            "24 avril 1972, 01h25 UTC",
+            "Décollage d'Orion après 71 h 02 min sur la Lune ; largage du sous-satellite PFS- 2 et séparation de l'étage d'ascension."
+          ],
+          [
+            "25 & 27 avril 1972",
+            "EVA en espace profond de Ken Mattingly (25 avril) ; amerrissage dans le Pacifique Sud le 27 avril à 19h45 UTC."
+          ]
+        ]
+      },
+      {
+        "y": 442.76544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 469.770263671875,
+        "type": "text",
+        "text": "Révision de l'origine des hauts plateaux lunaires : avant Apollo 16, les géologues pensaient que les formations de Cayley et Descartes étaient d'origine volcanique. Les 95,7 kg de roches rapportées ont démontré qu'il s'agit exclusivement de brèches d'impact formées par la collision géante ayant creusé le bassin Mare Imbrium."
+      },
+      {
+        "y": 527.520263671875,
+        "type": "text",
+        "text": "Premier observatoire astronomique extra-terrestre : la caméra UV lointain (UVC) opérée par John Young et Charlie Duke a obtenu les premières images spectrographiques de l'atmosphère supérieure terrestre (géocouronne d'hydrogène) et du Grand Nuage de Magellan depuis un autre astre."
+      },
+      {
+        "y": 572.520263671875,
+        "type": "text",
+        "text": "Cartographie des « orbites gelées » lunaires : la chute prématurée du sous-satellite PFS-2 après seulement 35 jours en orbite basse a permis aux mécaniciens célestes de la NASA de modéliser précisément les anomalies gravitationnelles (mascons) et d'identifier les inclinaisons d'orbites lunaires stables (« frozen orbits ») utilisées par les sondes modernes."
+      },
+      {
+        "y": 631.020263671875,
+        "type": "text",
+        "text": "Imagerie LRO du site de Descartes : les survols de la sonde Lunar Reconnaissance Orbiter montrent avec netteté l'étage de descente d'Orion, le rover LRV-2 garé à l'est, la station ALSEP et les traces de pneus serpentant entre les cratères."
+      },
+      {
+        "y": 679.7654418945312,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 706.8369140625,
+        "type": "text",
+        "text": "NASA — Apollo 16 Mission Report (MSC-07230)"
+      },
+      {
+        "y": 723.3369140625,
+        "type": "text",
+        "text": "NASA — Apollo 16 Preliminary Science Report (SP-315)"
+      },
+      {
+        "y": 740.5869140625,
+        "type": "text",
+        "text": "Archives photographiques LRO du site de Descartes : lroc.sese.asu.edu / lro.gsfc.nasa.gov"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "id": "mars-express",
+  "name": "Mars Express",
+  "body": "mars",
+  "family": "orbiter",
+  "year": 2003,
+  "summary": "~1 123 kg au lancement (orbiteur de ~1 049 kg + atterrisseur Beagle 2 de 33,2 kg) • 1 sonde toujours active en novembre 2026 (orbiteur en service depuis plus de 23 ans) • 1 atterrisseur posé intact mais inactif sur la surface martienne (Beagle 2).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Mars Express (première mission planétaire de l'ESA, COSPAR 2003-022A / Beagle 2 2003-022C)"
+    ],
+    [
+      "Agence & programme",
+      "Agence spatiale européenne (ESA), avec participation de l'ASI, du CNES, du DLR et de l'UK Space Agency"
+    ],
+    [
+      "Lancement",
+      "2 juin 2003, 17h45 UTC — Cosmodrome de Baïkonour (site 31/6), fusée Soyuz-FG / Fregat"
+    ],
+    [
+      "Insertion orbitale & atterrissage",
+      "25 décembre 2003 — Insertion orbitale réussie de l'orbiteur ; largage et atterrissage de Beagle 2 sur Isidis Planitia (11,53° N, 90,43° E) avec perte de contact au sol"
+    ],
+    [
+      "Fin de mission",
+      "En cours (orbiteur toujours opérationnel en novembre 2026 après plus de 23 ans autour de Mars)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde automatique pilotée depuis l'ESOC à Darmstadt)"
+    ],
+    [
+      "Véhicules",
+      "Soyuz-FG / Fregat, orbiteur Mars Express (~1 049 kg au lancement dont 457 kg d'ergols), atterrisseur Beagle 2 (33,2 kg)"
+    ],
+    [
+      "Statut",
+      "En cours (succès majeur de l'orbiteur prolongé à plusieurs reprises, mission européenne la plus durable sur Mars)"
+    ]
+  ],
+  "sourceFile": "Mars/Orbiteurs/Mars Express - Fiche « Plus de détails ».pdf",
+  "pdf": "mars-express.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Mars Express — Fiche « Plus de détails »"
+      },
+      {
+        "y": 128.97393798828125,
+        "type": "text",
+        "text": "Synthèse hardware : ~1 123 kg au lancement (orbiteur de ~1 049 kg + atterrisseur Beagle 2 de 33,2 kg) • 1 sonde toujours active en novembre 2026 (orbiteur en service depuis plus de 23 ans) • 1 atterrisseur"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "posé intact mais inactif sur la surface martienne (Beagle 2)."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Mars Express (première mission planétaire de l'ESA, COSPAR 2003-022A / Beagle 2 2003-022C)"
+          ],
+          [
+            "Agence & programme",
+            "Agence spatiale européenne (ESA), avec participation de l'ASI, du CNES, du DLR et de l'UK Space Agency"
+          ],
+          [
+            "Lancement",
+            "2 juin 2003, 17h45 UTC — Cosmodrome de Baïkonour (site 31/6), fusée Soyuz-FG / Fregat"
+          ],
+          [
+            "Insertion orbitale & atterrissage",
+            "25 décembre 2003 — Insertion orbitale réussie de l'orbiteur ; largage et atterrissage de Beagle 2 sur Isidis Planitia (11,53° N, 90,43° E) avec perte de contact au sol"
+          ],
+          [
+            "Fin de mission",
+            "En cours (orbiteur toujours opérationnel en novembre 2026 après plus de 23 ans autour de Mars)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde automatique pilotée depuis l'ESOC à Darmstadt)"
+          ],
+          [
+            "Véhicules",
+            "Soyuz-FG / Fregat, orbiteur Mars Express (~1 049 kg au lancement dont 457 kg d'ergols), atterrisseur Beagle 2 (33,2 kg)"
+          ],
+          [
+            "Statut",
+            "En cours (succès majeur de l'orbiteur prolongé à plusieurs reprises, mission européenne la plus durable sur Mars)"
+          ]
+        ]
+      },
+      {
+        "y": 538.0154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 572.3842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 606.4705810546875,
+        "type": "text",
+        "text": "A. Surface martienne & orbite — Matériel au sol et en orbite"
+      },
+      {
+        "y": 626.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Beagle 2 (Isidis Planitia)",
+            "33,2 kg (dont 11,5 kg de charge utile)",
+            "Intact / inactif",
+            "Disque de 65 cm de diamètre replié sous coiffe. S'est posé le 25 déc. 2003 et a ouvert 3 de ses 4 panneaux solaires, mais le 4e panneau est resté bloqué, masquant l'antenne radio. Localisé par MRO en 2015 (11,53° N, 90,43° E)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Châssis & structure principale de l'orbiteur",
+            "~592 kg (à sec)",
+            "Toujours actif",
+            "Structure cubique en nid d'abeille d'aluminium (1,5 × 1,8 × 1,4 m), stabilisée sur 3 axes par roues de réaction et viseurs d'étoiles. En orbite polaire elliptique (~250 × 10 100 km)."
+          ],
+          [
+            "Panneaux solaires (2 ailes) & batteries",
+            "~115 kg (inclus)",
+            "Toujours actifs",
+            "Envergure de 12 m, fournissant ~650 W en orbite martienne et alimentant des batteries lithium-ion maintenues en service depuis plus de deux décennies."
+          ],
+          [
+            "Antenne grand gain (1,6 m) & relais UHF",
+            "~40 kg (inclus)",
+            "Toujours actifs",
+            "Parabole orientable (bande S et X) et émetteur UHF ayant servi de relais pour les atterrisseurs Spirit, Opportunity, Phoenix, Curiosity et Perseverance."
+          ],
+          [
+            "Caméra stéréo haute résolution HRSC",
+            "45 kg",
+            "Toujours active",
+            "Instrument phare de l'ESA (DLR) produisant des images stéréoscopiques et couleur en haute résolution (jusqu'à 2 m/pixel) de la surface martienne, ayant couvert plus de 95 % de la planète en 3D."
+          ],
+          [
+            "Spectromètre OMEGA & PFS",
+            "59 kg (30 + 29 kg)",
+            "Intacts / inactifs",
+            "OMEGA (minéralogie infrarouge, décisif pour identifier l'argile et l'eau) et PFS (spectromètre de Fourier planétaire pour la composition atmosphérique et le méthane, arrêté en 2005 / pannes ultérieures)."
+          ],
+          [
+            "Radar de sous-sol MARSIS",
+            "~22 kg",
+            "Toujours actif",
+            "Antennes dipôles géantes de 20 et 40 mètres fournies par l'Italie, sondant les structures géologiques et la glace d'eau enfouie à plusieurs kilomètres de profondeur sous les calottes et les plaines."
+          ],
+          [
+            "SPICAM, ASPERA-3 & VMC",
+            "~38 kg (total)",
+            "Toujours actifs",
+            "Spectromètre UV/IR SPICAM, analyseur de plasma ASPERA-3 et caméra de suivi visuel VMC (initialement conçue pour surveiller l'éjection de Beagle 2, devenue populaire pour les clichés globaux de Mars)."
+          ]
+        ]
+      },
+      {
+        "y": 580.2205810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 599.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur Fregat (Soyuz)",
+            "~950 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage autonome réallumable ayant assuré l'injection interplanétaire depuis l'orbite terrestre le 2 juin 2003 ; placé sur une orbite solaire (1,0 × 1,3 UA)."
+          ],
+          [
+            "Étages 1, 2, 3 de Soyuz-FG & coiffe",
+            "~22 000 kg (à vide)",
+            "Écrasés / brûlés",
+            "Éléments du lanceur Soyuz largués lors de la mise en orbite terrestre basse et rentrés dans l'atmosphère ou retombés dans les zones de dég au Kazakhstan."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Aucun élément matériel récupéré : mission orbitale et d'atterrissage sans capsule de retour vers la Terre."
+      },
+      {
+        "y": 119.5869140625,
+        "type": "text",
+        "text": "Archives scientifiques mondiales : plus de 23 années de données cartographiques, minéralogiques et radar stockées dans l'archive planétaire de l'ESA (PSA)."
+      },
+      {
+        "y": 164.51544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 192.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "2 juin 2003, 17h45 UTC",
+            "Lancement réussi de la fusée Soyuz-FG / Fregat depuis Baïkonour vers Mars."
+          ],
+          [
+            "19 décembre 2003",
+            "Séparation réussie de l'atterrisseur britannique Beagle 2 en direction de l'atmosphère martienne."
+          ],
+          [
+            "25 décembre 2003",
+            "Insertion orbitale de Mars Express réussie ; atterrissage de Beagle 2 sur Isidis Planitia mais silence radio (échec de l'antenne)."
+          ],
+          [
+            "Mars 2004",
+            "L'instrument OMEGA découvre des quantités massives de glace d'eau et de dioxyde de carbone gelé dans la calotte polaire sud de Mars."
+          ],
+          [
+            "2004 – 2026",
+            "Extensions de mission successives de l'orbiteur ; découvertes majeures sur le volcanisme, l'histoire de l'eau liquide et la structure interne (MARSIS)."
+          ],
+          [
+            "Janvier 2015",
+            "La caméra HiRISE de la sonde américaine MRO photographie et identifie clairement Beagle 2 intact au sol, résolvant le mystère de son échec de déploiement."
+          ],
+          [
+            "Novembre 2026",
+            "Mars Express célèbre plus de 23 ans d'opérations ininterrompues autour de Mars, continuant à fournir des images HRSC et des données radar."
+          ]
+        ]
+      },
+      {
+        "y": 484.01544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 512.5869140625,
+        "type": "text",
+        "text": "Cartographie 3D globale de référence : la caméra HRSC a fourni la couverture topographique et photographique en couleur la plus complète et détaillée de la surface martienne, servant de référence géodésique mondiale."
+      },
+      {
+        "y": 562.0869140625,
+        "type": "text",
+        "text": "Preuves irréfutables d'un passé aqueux : OMEGA et MARSIS ont mis en évidence l'omniprésence d'argiles (phyllosilicates) formées en présence d'eau neutre il y a plus de 3,5 milliards d'années, révolutionnant notre compréhension de l'habitabilité primitive de Mars."
+      },
+      {
+        "y": 611.5869140625,
+        "type": "text",
+        "text": "Découverte de structures souterraines : MARSIS a cartographié de vastes dépôts de glace d'eau purs enfouis sous les plaines et les calottes polaires, ainsi que la morphologie complexe de la lithosphère martienne."
+      },
+      {
+        "y": 661.0869140625,
+        "type": "text",
+        "text": "Héritage de Beagle 2 : bien que sa communication ait échoué, Beagle 2 a ouvert la voie à l'ingénierie européenne des atterrisseurs de surface (inspirant directement la mission ExoMars / Rosalind Franklin) et a été entièrement localisé en 2015."
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "ESA Science & Technology — Mars Express Mission Overview & 23rd Anniversary (sci.esa.int/mars- express, 2026)"
+      },
+      {
+        "y": 115.8369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche Mars Express (2003-022A) et Beagle 2 (2003-022C)"
+      },
+      {
+        "y": 149.5869140625,
+        "type": "text",
+        "text": "A. Chicarro et al., The Mars Express Mission: an overview, ESA SP-1240, 2004"
+      },
+      {
+        "y": 169.0869140625,
+        "type": "text",
+        "text": "J. P. Bibring et al., Mars Surface Diversity as Revealed by the OMEGA/Mars Express Observations, Science, vol. 307, 2005"
+      }
+    ]
+  ]
+}

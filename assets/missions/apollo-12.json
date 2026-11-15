@@ -1,0 +1,517 @@
+{
+  "id": "apollo-12",
+  "name": "Apollo 12",
+  "body": "moon",
+  "family": "apollo",
+  "year": 1969,
+  "summary": "~5 t de matériel laissé sur la Lune, dont le premier ALSEP complet et un réflecteur laser encore actif · 1 étage d'ascension écrasé volontairement sur la Lune (premier « impact sismique » expérimental) · 1 étage S-IVB en orbite héliocentrique · 1 épave de sonde Surveyor 3 partiellement ramenée",
+  "facts": [
+    [
+      "Nom officiel",
+      "Apollo 12"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Apollo"
+    ],
+    [
+      "Lancement",
+      "14 novembre 1969, 16h22 UTC — Kennedy Space Center, fusée Saturn V"
+    ],
+    [
+      "Événement marquant du lancement",
+      "Frappée deux fois par la foudre à 36 s et 52 s de vol (« SCE to AUX »)"
+    ],
+    [
+      "Alunissage",
+      "19 novembre 1969, 06h54 UTC — Océan des Tempêtes (3,012° S, 23,422° O), site Surveyor"
+    ],
+    [
+      "Prouesse",
+      "Alunissage de précision à ~163 m de la sonde robotique Surveyor 3"
+    ],
+    [
+      "Retour sur Terre",
+      "24 novembre 1969 — amerrissage Pacifique (10 j 4 h 36 min de mission)"
+    ],
+    [
+      "Équipage",
+      "Pete Conrad (commandant), Alan Bean (pilote LM), Richard Gordon (pilote CSM)"
+    ],
+    [
+      "Véhicules",
+      "Saturn V · CSM Yankee Clipper · LM Intrepid"
+    ],
+    [
+      "Statut",
+      "Réussie — deuxième alunissage habité, première mission scientifique ciblée"
+    ]
+  ],
+  "sourceFile": "Lune/Apollo/fiche-mission-apollo-12-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "apollo-12.pdf",
+  "pages": [
+    [
+      {
+        "y": 70.91584777832031,
+        "type": "text",
+        "text": "Apollo 12 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 118.42292785644531,
+        "type": "text",
+        "text": "Synthèse hardware : ~5 t de matériel laissé sur la Lune, dont le premier ALSEP complet et un réflecteur laser encore actif · 1 étage d'ascension écrasé volontairement sur la Lune (premier « impact sismique » expérimental) · 1 étage S-IVB en orbite héliocentrique · 1 épave de sonde Surveyor 3 partiellement ramenée"
+      },
+      {
+        "y": 215.0743865966797,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 244.87501220703126,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Apollo 12"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Apollo"
+          ],
+          [
+            "Lancement",
+            "14 novembre 1969, 16h22 UTC — Kennedy Space Center, fusée Saturn V"
+          ],
+          [
+            "Événement marquant du lancement",
+            "Frappée deux fois par la foudre à 36 s et 52 s de vol (« SCE to AUX »)"
+          ],
+          [
+            "Alunissage",
+            "19 novembre 1969, 06h54 UTC — Océan des Tempêtes (3,012° S, 23,422° O), site Surveyor"
+          ],
+          [
+            "Prouesse",
+            "Alunissage de précision à ~163 m de la sonde robotique Surveyor 3"
+          ],
+          [
+            "Retour sur Terre",
+            "24 novembre 1969 — amerrissage Pacifique (10 j 4 h 36 min de mission)"
+          ],
+          [
+            "Équipage",
+            "Pete Conrad (commandant), Alan Bean (pilote LM), Richard Gordon (pilote CSM)"
+          ],
+          [
+            "Véhicules",
+            "Saturn V · CSM Yankee Clipper · LM Intrepid"
+          ],
+          [
+            "Statut",
+            "Réussie — deuxième alunissage habité, première mission scientifique ciblée"
+          ]
+        ]
+      },
+      {
+        "y": 503.5431213378906,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 534.3466186523438,
+        "type": "text",
+        "text": "Badges d'état : toujours actif · intact mais inactif · détruit / écrasé · localisation inconnue"
+      },
+      {
+        "y": 558.5985717773438,
+        "type": "text",
+        "text": "A. Surface lunaire — Océan des Tempêtes, site Surveyor (~5 t au total)"
+      },
+      {
+        "y": 583.7320760091146,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de descente du LM Intrepid",
+            "~2 200 kg",
+            "",
+            "Même configuration qu'Apollo 11 : moteur de descente, réservoirs vides, échelle, pieds. Resté posé à ~163 m de l'épave de Surveyor 3"
+          ],
+          [
+            "ALSEP (Apollo Lunar Surface Experiments Package) — paquet complet n° 1",
+            "~170 kg",
+            "/",
+            "Premier ALSEP complet, alimenté par un générateur thermoélectrique au plutonium (RTG SNAP-27, ~3,8 kg d'Pu-238). Composants : sismomètre central, magnétomètre, spectromètre du vent solaire, capteur d'ions suprathermiques, jauge à cathode froide, détecteur de poussière. Transmis des données jusqu'au 30 septembre 1977, date d'arrêt budgétaire du réseau — le RTG fonctionnait encore"
+          ],
+          [
+            "Laser Ranging Retroreflector (LRRR-2)",
+            "~20 kg",
+            "",
+            "300 coins de cube (3 fois plus qu'Apollo 11). Encore utilisé en 2026 dans les campagnes de télémétrie laser Terre-Lune"
+          ],
+          [
+            "Drapeau américain (+ mât, barre télescopique)",
+            "~2 kg",
+            "",
+            "Planté à côté du LM ; celui-ci n'a pas été renversé au décollage (contrairement à Apollo 11) — visible encore debout sur les images LRO"
+          ],
+          [
+            "Caméra TV couleur",
+            "~8 kg",
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 56.583333333333336,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "",
+            "",
+            "",
+            "Détruite accidentellement : Alan Bean l'a pointée vers le Soleil en début d'EVA, brûlant le capteur. La plupart des images TV de la mission ont été perdues"
+          ],
+          [
+            "Antennes (parabolique bande S, fouet)",
+            "~30 kg",
+            "",
+            "Télécommunications du LM, restées avec l'étage de descente"
+          ],
+          [
+            "Outils d'échantillonnage, sacs, conteneurs",
+            "~15 kg",
+            "",
+            "Pelle, marteau, tubes de carotte, sacs — les 34,4 kg d'échantillons ont été ramenés"
+          ],
+          [
+            "Protections thermiques, couvertures Mylar",
+            "~100 kg",
+            "",
+            "Isolation abandonnée avec l'étage de descente"
+          ]
+        ]
+      },
+      {
+        "y": 214.53231811523438,
+        "type": "text",
+        "text": "B. Orbite lunaire / écrasé sur la Lune"
+      },
+      {
+        "y": 239.66582234700522,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage d'ascension du LM Intrepid",
+            "~2 400 kg",
+            "",
+            "Écrasé volontairement sur la Lune le 20 novembre 1969 à ~72 km du site — premier impact délibéré pour tester le sismomètre ALSEP, qui a enregistré une « sonnerie » d'environ une heure, suggérant un intérieur lunaire très sec et rigide"
+          ],
+          [
+            "Module de service (SM) de Yankee Clipper",
+            "~5 000 kg (à vide)",
+            "",
+            "Largué avant la rentrée, désintégré dans l'atmosphère terrestre"
+          ]
+        ]
+      },
+      {
+        "y": 364.0973205566406,
+        "type": "text",
+        "text": "C. Trajectoire d'échappement"
+      },
+      {
+        "y": 389.23085530598956,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage S-IVB de la Saturn V",
+            "~13 500 kg (à sec)",
+            "",
+            "Placé en orbite héliocentrique après l'injection translunaire (comme Apollo 11) ; il a même brièvement repris une orbite terrestre en 2002 (découvert comme « astéroïde » J002E3 avant identification)"
+          ]
+        ]
+      },
+      {
+        "y": 461.1173095703125,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 487.2204284667969,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 487.2204284667969,
+        "type": "text",
+        "text": "Capsule Yankee Clipper — exposée au Virginia Air and Space Center (Hampton)"
+      },
+      {
+        "y": 503.60040283203125,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 503.60040283203125,
+        "type": "text",
+        "text": "34,4 kg d'échantillons lunaires"
+      },
+      {
+        "y": 519.9804077148438,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 519.9804077148438,
+        "type": "text",
+        "text": "Des pièces de Surveyor 3 : caméra et éléments prélevés sur la sonde robotique (posée en 1967) pour étudier l'effet de 31 mois d'environnement lunaire — les microbes détectés se sont avérés être une contamination au retour sur Terre"
+      },
+      {
+        "y": 571.2322998046875,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 597.33544921875,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 597.33544921875,
+        "type": "text",
+        "text": "Panneaux d'adaptation (SLA) de la Saturn V, jetés après le déploiement du LM"
+      },
+      {
+        "y": 613.7153930664062,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 613.7153930664062,
+        "type": "text",
+        "text": "Équipements et détritus « jetés » hors du LM avant le décollage"
+      },
+      {
+        "y": 660.1168823242188,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 689.9174926757812,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "14 novembre 1969, 16h22 UTC",
+            "Lancement sous orage ; deux impacts de foudre sur la fusée, panne électrique momentanée corrigée par « SCE to AUX »"
+          ],
+          [
+            "16 novembre",
+            "Injection translunaire ; le S-IVB est dirigé vers une orbite héliocentrique"
+          ],
+          [
+            "19 novembre, 06h54 UTC",
+            "Alunissage de précision à ~163 m de Surveyor 3"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 56.55,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "19 novembre",
+            "EVA 1 (3 h 56 min) : déploiement de la caméra TV (endommagée par un reflet solaire), extraction du RTG de l'ALSEP"
+          ],
+          [
+            "19–20 novembre",
+            "EVA 2 (3 h 49 min) : déploiement complet de l'ALSEP, visite de Surveyor 3, prélèvement de la caméra de la sonde"
+          ],
+          [
+            "20 novembre, 14h25 UTC",
+            "Décollage d'Intrepid ; l'étage d'ascension est dirigé vers un impact sismique sur la Lune"
+          ],
+          [
+            "21 novembre",
+            "Amarrage avec Yankee Clipper ; largage de l'étage d'ascension"
+          ],
+          [
+            "24 novembre, 20h58 UTC",
+            "Amerrissage dans le Pacifique à ~3 km du porte-avions USS Hornet"
+          ]
+        ]
+      },
+      {
+        "y": 235.19313049316406,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 265.99664306640625,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 265.99664306640625,
+        "type": "text",
+        "text": "Alunissage de précision : démonstration qu'on peut viser un point précis — condition nécessaire pour les futures missions scientifiques (Apollo 15-17)."
+      },
+      {
+        "y": 295.8766784667969,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 295.8766784667969,
+        "type": "text",
+        "text": "L'ALSEP d'Apollo 12 a fonctionné 8 ans (1969–1977), bien au-delà de la garantie d'un an, et son sismomètre a enregistré les impacts des étages d'ascension des missions suivantes (S-IVB d'Apollo 13 et 14 compris)."
+      },
+      {
+        "y": 339.2566833496094,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 339.2566833496094,
+        "type": "text",
+        "text": "Le LRRR-2 est toujours actif en 2026 : avec celui d'Apollo 11 et ceux d'Apollo 14 et 15, il alimente la télémétrie laser Luna (mesure mm de la distance Terre-Lune, tests de la relativité générale)."
+      },
+      {
+        "y": 369.13665771484375,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 369.13665771484375,
+        "type": "text",
+        "text": "L'impact volontaire d'Intrepid a livré la première caractérisation sismique du sous-sol lunaire : résonance longue, absence d'eau."
+      },
+      {
+        "y": 399.01666259765625,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 399.01666259765625,
+        "type": "text",
+        "text": "Surveyor 3 : première « archéologie spatiale » — étude de la dégradation de matériaux après 31 mois sur la Lune."
+      },
+      {
+        "y": 428.89666748046875,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 428.89666748046875,
+        "type": "text",
+        "text": "Le S-IVB identifié comme J002E3 en 2002 a brièvement repris une orbite terrestre : exemple concret d'objet spatial « perdu » retrouvé et réattribué."
+      },
+      {
+        "y": 458.77667236328125,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 458.77667236328125,
+        "type": "text",
+        "text": "Statut juridique : le site Surveyor/Apollo 12 est cité dans les recommandations NASA de 2011 de préservation des sites historiques lunaires."
+      },
+      {
+        "y": 518.6781616210938,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 549.481689453125,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 549.481689453125,
+        "type": "text",
+        "text": "NASA — Apollo 12 Mission Report (MSC-01855)"
+      },
+      {
+        "y": 565.8616333007812,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 565.8616333007812,
+        "type": "text",
+        "text": "NASA — Apollo 12 Preliminary Science Report (SP-235)"
+      },
+      {
+        "y": 582.24169921875,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 582.24169921875,
+        "type": "text",
+        "text": "NASA — ALSEP Final Report (1974) et données d'exploitation jusqu'en 1977"
+      },
+      {
+        "y": 598.6216430664062,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 598.6216430664062,
+        "type": "text",
+        "text": "Images LRO du site : lm et ALSEP visibles, drapeau toujours debout"
+      },
+      {
+        "y": 615.0016479492188,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 615.0016479492188,
+        "type": "text",
+        "text": "JPL — J002E3 : identification radar du S-IVB d'Apollo 12 (2002)"
+      }
+    ]
+  ]
+}

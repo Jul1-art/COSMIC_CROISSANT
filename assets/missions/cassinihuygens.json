@@ -1,0 +1,431 @@
+{
+  "id": "cassinihuygens",
+  "name": "Cassini–Huygens",
+  "body": "saturn",
+  "family": "cassini",
+  "year": 1997,
+  "summary": "~5,7 t au lancement (orbiteur, sonde Huygens et carburant) · 1 orbiteur de ~2,1 t détruit dans l'atmosphère de Saturne le 15 septembre 2017 · 1 sonde Huygens (318 kg) posée sur Titan depuis 2005 · aucun objet encore actif · 1 étage Centaur d'emplacement inconnu",
+  "facts": [
+    [
+      "Nom officiel",
+      "Cassini-Huygens (orbiteur Cassini + sonde Huygens)"
+    ],
+    [
+      "Agence & programme",
+      "NASA / ESA / ASI (agence spatiale italienne) — mission phare vers Saturne"
+    ],
+    [
+      "Lancement",
+      "15 octobre 1997, Cape Canaveral (Floride) — fusée Titan IVB/Centaur"
+    ],
+    [
+      "Trajectoire",
+      "Vénus 26 avril 1998 et 24 juin 1999 · Terre 18 août 1999 · Jupiter 30 décembre 2000"
+    ],
+    [
+      "Arrivée à Saturne",
+      "1er juillet 2004 (UTC) — insertion en orbite ; 13 ans autour de Saturne"
+    ],
+    [
+      "Atterrissage sur Titan",
+      "14 janvier 2005 — sonde Huygens, région d'Adiri (premier atterrissage dans le Système solaire externe)"
+    ],
+    [
+      "Fin de mission",
+      "15 septembre 2017 — plongeon contrôlé dans Saturne, ~20 ans après le lancement"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — l'orbiteur a été volontairement détruit, Huygens reste sur Titan"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le JPL (NASA) ; Huygens gérée par l'ESA"
+    ],
+    [
+      "Véhicules",
+      "Titan IVB/Centaur · orbiteur Cassini · sonde Huygens (ESA)"
+    ],
+    [
+      "Statut",
+      "Réussie — mission terminée ; 294 orbites autour de Saturne, 453 048 images, 635 Go de données"
+    ]
+  ],
+  "sourceFile": "Planètes gazeuses, naines et espace lointain/Saturne/Fiche-mission-Cassini-Huygens-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "cassinihuygens.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Cassini-Huygens — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : ~5,7 t au lancement (orbiteur, sonde Huygens et carburant) · 1 orbiteur de ~2,1 t détruit dans l'atmosphère de Saturne le 15 septembre 2017 · 1 sonde Huygens (318 kg) posée sur Titan depuis 2005 · aucun objet encore actif · 1 étage Centaur d'emplacement inconnu"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Cassini-Huygens (orbiteur Cassini + sonde Huygens)"
+          ],
+          [
+            "Agence & programme",
+            "NASA / ESA / ASI (agence spatiale italienne) — mission phare vers Saturne"
+          ],
+          [
+            "Lancement",
+            "15 octobre 1997, Cape Canaveral (Floride) — fusée Titan IVB/Centaur"
+          ],
+          [
+            "Trajectoire",
+            "Vénus 26 avril 1998 et 24 juin 1999 · Terre 18 août 1999 · Jupiter 30 décembre 2000"
+          ],
+          [
+            "Arrivée à Saturne",
+            "1er juillet 2004 (UTC) — insertion en orbite ; 13 ans autour de Saturne"
+          ],
+          [
+            "Atterrissage sur Titan",
+            "14 janvier 2005 — sonde Huygens, région d'Adiri (premier atterrissage dans le Système solaire externe)"
+          ],
+          [
+            "Fin de mission",
+            "15 septembre 2017 — plongeon contrôlé dans Saturne, ~20 ans après le lancement"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — l'orbiteur a été volontairement détruit, Huygens reste sur Titan"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le JPL (NASA) ; Huygens gérée par l'ESA"
+          ],
+          [
+            "Véhicules",
+            "Titan IVB/Centaur · orbiteur Cassini · sonde Huygens (ESA)"
+          ],
+          [
+            "Statut",
+            "Réussie — mission terminée ; 294 orbites autour de Saturne, 453 048 images, 635 Go de données"
+          ]
+        ]
+      },
+      {
+        "y": 476.7176513671875,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 501.6606140136719,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 529.9969482421875,
+        "type": "text",
+        "text": "A. Surface de Titan — sonde Huygens (318 kg)"
+      },
+      {
+        "y": 548.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde Huygens (module de descente)",
+            "318 kg",
+            "",
+            "Séparée de Cassini le 25 décembre 2004 (heure sonde) ; entrée dans l'atmosphère de Titan à ~10h13 UTC, descente d'~2 h 30, atterrissage vers 12h43 UTC le 14 janvier 2005. Données transmises ~90 min après le toucher, puis batterie épuisée"
+          ],
+          [
+            "6 instruments de Huygens",
+            "—",
+            "",
+            "HASI (structure de l'atmosphère, microphone), DWE (vents), DISR (images de la descente et du sol), GC/MS (composition de l'atmosphère et du sol), ACP (aérosols), SSP (propriétés du sol)"
+          ],
+          [
+            "Bouclier thermique",
+            "2,7 m de diamètre",
+            "",
+            "Éjecté pendant la descente ; position exacte sur Titan inconnue"
+          ],
+          [
+            "Parachutes",
+            "—",
+            "",
+            "Système de parachutes largué pendant la descente ; position exacte inconnue"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Atmosphère de Saturne — orbiteur Cassini (~2,1 t) détruit"
+      },
+      {
+        "y": 72.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur Cassini (bus)",
+            "2 125 kg (fin de mission) · 6,7 m de haut",
+            "",
+            "Masse de lancement 5 712 kg avec Huygens et carburant ; désintégré dans l'atmosphère de Saturne après l'épuisement de ses propulseurs"
+          ],
+          [
+            "Antenne à grand gain",
+            "~4 m de diamètre",
+            "",
+            "Se détourne de la Terre quand les propulseurs saturent, ce qui coupe la liaison"
+          ],
+          [
+            "3 générateurs RTG (plutonium-238)",
+            "×3",
+            "",
+            "885 W au lancement, 633 W en fin de mission ; consumés dans l'atmosphère de Saturne"
+          ],
+          [
+            "Moteur principal et propulseurs",
+            "—",
+            "",
+            "183 allumages du moteur principal pendant la mission"
+          ],
+          [
+            "Instruments d'imagerie : ISS, VIMS, UVIS, CIRS",
+            "—",
+            "",
+            "Caméras et spectromètres (visible, ultraviolet, infrarouge) ; cartographie des lunes, anneaux et nuages"
+          ],
+          [
+            "Radar et radioscience (RSS)",
+            "—",
+            "",
+            "Cartographie de la surface de Titan à travers sa brume ; structure interne et anneaux"
+          ],
+          [
+            "Instruments in situ : CAPS, INMS, CDA, MAG, MIMI, RPWS",
+            "—",
+            "",
+            "Plasma, gaz, poussières, champ magnétique et ondes ; INMS et CDA ont échantillonné directement les panaches d'Enceladus et l'atmosphère de Saturne"
+          ],
+          [
+            "Équipement de support de Huygens",
+            "~30 kg",
+            "",
+            "Resté fixé à l'orbiteur après la séparation"
+          ]
+        ]
+      },
+      {
+        "y": 367.5969543457031,
+        "type": "text",
+        "text": "C. Étages de lancement et trajectoire d'échappement"
+      },
+      {
+        "y": 385.9543762207031,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "Après l'injection interplanétaire, placé en orbite héliocentrique ; position non suivie précisément"
+          ],
+          [
+            "Étages Titan IVB et propulseurs d'appoint",
+            "n.c.",
+            "",
+            "Séparés pendant la montée ; retombés dans l'océan Atlantique"
+          ]
+        ]
+      },
+      {
+        "y": 481.5969543457031,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 498.8043518066406,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Cassini-Huygens n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 515.8043212890625,
+        "type": "text",
+        "text": "• Le retour de la mission, c'est 635 Go de données et 453 048 images, soit 3 948 articles scientifiques publiés"
+      },
+      {
+        "y": 546.8043212890625,
+        "type": "text",
+        "text": "• Plusieurs survols d'assistance gravitationnelle (Vénus, Terre, Jupiter) ont aussi servi de mesures scientifiques"
+      },
+      {
+        "y": 588.596923828125,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 605.8043212890625,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension"
+      },
+      {
+        "y": 622.8043212890625,
+        "type": "text",
+        "text": "• Bouclier thermique et parachutes de Huygens, éjectés pendant la descente vers Titan"
+      }
+    ],
+    [
+      {
+        "y": 54.7176513671875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 77.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "15 octobre 1997",
+            "Lancement de Titan IVB/Centaur depuis Cape Canaveral"
+          ],
+          [
+            "26 avril 1998 · 24 juin 1999",
+            "Deux survols de Vénus (assistance gravitationnelle)"
+          ],
+          [
+            "18 août 1999",
+            "Survol de la Terre"
+          ],
+          [
+            "30 décembre 2000",
+            "Survol de Jupiter"
+          ],
+          [
+            "1er juillet 2004",
+            "Insertion en orbite autour de Saturne"
+          ],
+          [
+            "24–25 décembre 2004",
+            "Séparation de la sonde Huygens"
+          ],
+          [
+            "14 janvier 2005",
+            "Huygens atterrit sur Titan (descente d'~2 h 30)"
+          ],
+          [
+            "2005",
+            "Découverte des panaches de glace sur Enceladus"
+          ],
+          [
+            "26 avril 2017",
+            "Début du « Grand Finale » : 22 plongées entre Saturne et ses anneaux"
+          ],
+          [
+            "11 septembre 2017",
+            "Dernier survol lointain de Titan (le « baiser d'adieu »)"
+          ],
+          [
+            "15 septembre 2017, ~10h31 UTC",
+            "Entrée dans l'atmosphère de Saturne ; antenne détournée de la Terre ~1 min plus tard"
+          ],
+          [
+            "15 septembre 2017, 11h55 UTC",
+            "Signal perdu sur Terre (délai de ~83 min) — fin de la mission"
+          ]
+        ]
+      },
+      {
+        "y": 384.3176574707031,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 405.80438232421875,
+        "type": "text",
+        "text": "• Titan : Huygens a révélé des paysages proches de ceux de la Terre ; Cassini a cartographié des mers et des lacs d'hydrocarbures et trouvé des molécules organiques complexes."
+      },
+      {
+        "y": 436.80438232421875,
+        "type": "text",
+        "text": "• Enceladus et océans cachés : panaches de glace, indices d'activité hydrothermale ; deux lunes (Titan et Enceladus) sont désormais considérées comme abritant un océan."
+      },
+      {
+        "y": 467.80438232421875,
+        "type": "text",
+        "text": "• Saturne et ses anneaux : suivi des saisons, du vortex polaire nord, et des mesures les plus profondes de l'atmosphère de Saturne lors du plongeon final."
+      },
+      {
+        "y": 498.8043518066406,
+        "type": "text",
+        "text": "• Pourquoi détruire Cassini ? Les propulseurs étaient presque vides ; la destruction contrôlée évitait de contaminer, avec d'éventuels microbes terrestres, des lunes potentiellement habitables comme Enceladus."
+      },
+      {
+        "y": 543.8043212890625,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 impose d'éviter la contamination des corps célestes ; aucune appropriation nationale de Titan n'est possible, et Huygens y reste comme vestige de la mission."
+      },
+      {
+        "y": 608.9176635742188,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 630.4043579101562,
+        "type": "text",
+        "text": "• NASA — Cassini, faits clés : science.nasa.gov/mission/cassini/quick-facts"
+      },
+      {
+        "y": 647.4043579101562,
+        "type": "text",
+        "text": "• NASA — chronologie de fin de mission : science.nasa.gov/mission/cassini/grand-finale/cassini-end-of-mission-timeline"
+      },
+      {
+        "y": 678.4043579101562,
+        "type": "text",
+        "text": "• ESA — « Cassini concludes pioneering mission at Saturn » : sci.esa.int/web/cassini-huygens"
+      },
+      {
+        "y": 695.4043579101562,
+        "type": "text",
+        "text": "• Wikipedia — Huygens (sonde) : masse, séparation et atterrissage"
+      }
+    ]
+  ]
+}

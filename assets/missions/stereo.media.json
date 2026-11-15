@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Solar Terrestrial Relations Observatory Spacecraft Artist Concept",
+      "credit": "NASA/GSFC",
+      "date": "2011-06-01T22:38:56Z",
+      "source": "https://images.nasa.gov/details/PIA18172",
+      "nasaId": "PIA18172",
+      "description": "An artist conception of one of NASA Solar Terrestrial Relations Observatory STEREO spacecraft. The two observatories currently lie on either side of the sun, providing views of the entire sun simultaneously.",
+      "src": "archives/stereo-nasa-PIA18172.jpg"
+    },
+    {
+      "title": "Close-up View of an Active Region of the Sun, March 23, 2007",
+      "credit": "NASA/JPL-Caltech/NRL/GSFC",
+      "date": "2007-04-27T14:50:02Z",
+      "source": "https://images.nasa.gov/details/PIA09322",
+      "nasaId": "PIA09322",
+      "description": "NASA Solar TErrestrial RElations Observatory STEREO satellites have provided the first three-dimensional images of the Sun. The structure of the corona shows well in this image. ",
+      "src": "archives/stereo-nasa-PIA09322.jpg"
+    },
+    {
+      "title": "Full Disk Image of the Sun, March 26, 2007",
+      "credit": "NASA/JPL-Caltech/NRL/GSFC",
+      "date": "2007-04-27T14:50:00Z",
+      "source": "https://images.nasa.gov/details/PIA09320",
+      "nasaId": "PIA09320",
+      "description": "NASA Solar TErrestrial RElations Observatory STEREO satellites have provided the first three-dimensional images of the Sun. The structure of the corona shows well in this image. ",
+      "src": "archives/stereo-nasa-PIA09320.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "STEREO Solar Conjunction",
+      "credit": "Genna Duberstein, Tom Bridgman, Walt Feimer, Joe Gurman, C. Alex Young, Karen Fox",
+      "source": "https://images.nasa.gov/details/GSFC_20140703_STEREO_m11602_Solar",
+      "nasaId": "GSFC_20140703_STEREO_m11602_Solar",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20140703_STEREO_m11602_Solar/GSFC_20140703_STEREO_m11602_Solar~orig.mp4",
+      "description": "Since February 2011, the two spacecraft of NASA's STEREO mission have been providing scientists with unprecedented views of the far side of the sun. Placed in an orbit that allows their perspective to changed over the eight years since their launch in 2008 (ck), the satellites are about to enter a new phase of their journey: a time when the bright light and heat of the sun will stand in the way of sending data back to Earth. This phase is a direct result of the orbits for STEREO, which is short for the Solar Terrestrial Relations Observatory.  The spacecraft travel at different speeds. This means that over time, the satellites become increasingly out of sync, appearing from Earth's perspective to drift farther apart, able to observe first the sides and eventually the far side of the sun. For the first time ever, thanks to STEREO and near-Earth solar telescopes such as NASA’s Solar Dynamics Observatory the human race has had its first 360-degree view of the sun.  The orbits have continued to cause the STEREO spacecraft's position to change, however, and now they are nearing each other once again, this time on the other side of the sun. During this period when the sun blocks Earth's ",
+      "date": "2014-07-03T00:00:00Z",
+      "duration": 175.508667,
+      "bitrate": 16151877,
+      "bytes": 354349313,
+      "width": 1280,
+      "height": 720,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/stereo.mp4",
+    "local": true,
+    "title": "STEREO (Solar Terrestrial Relations Observatory) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "stereo.pdf",
+    "fingerprint": "f99741c9fe7dca8e3511ba5738c5f8579c1d922afbcd64e2258295185aacee3e"
+  }
+}

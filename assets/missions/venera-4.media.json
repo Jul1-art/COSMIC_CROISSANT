@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Venera 4 (MMA 2011) (1)",
+      "description": "Mockup (1:3) of the spacecraft Venera 4 at Memorial Museum of Astronautics (Moscow).",
+      "credit": "Armael",
+      "license": "CC0",
+      "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Venera_4_(MMA_2011)_(1).JPG",
+      "src": "archives/venera-4-commons.JPG",
+      "date": "2011-12-30 15:09:05",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-4.mp4",
+    "local": true,
+    "title": "Venera 4 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-4.pdf",
+    "fingerprint": "61bccb2f3e9b6f1e408d6d30fa37e1e3301b589bd7c241f9fdb1e58d7526db8b"
+  }
+}

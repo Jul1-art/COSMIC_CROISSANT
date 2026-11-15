@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Akatsuki-1",
+      "description": "探査機「あかつき」",
+      "credit": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Akatsuki-1.jpg",
+      "src": "archives/akatsuki-commons.jpg",
+      "date": "2010-07-30 13:15:06",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/akatsuki.mp4",
+    "local": true,
+    "title": "Akatsuki (Venus Climate Orbiter) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "akatsuki.pdf",
+    "fingerprint": "ceb4a9d95630fdb1d674aaa6b8ad7ac47eabd3548048e13f7cb3d20f9b35e6c9"
+  }
+}

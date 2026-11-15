@@ -1,0 +1,338 @@
+{
+  "id": "messenger",
+  "name": "MESSENGER",
+  "body": "mercury",
+  "family": "orbiter",
+  "year": 2004,
+  "summary": "~513 kg d'épave dispersés à la surface de Mercure (impact volontaire dans Suisei Planitia le 30 avril 2015 à 3,91 km/s) · 0 objet actif en 2026 (4 ans et 43 jours d'opérations en orbite mercurienne) · 1 étage en orbite héliocentrique (3e étage Star-48B de la fusée Delta II) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "MESSENGER — MErcury Surface, Space ENvironment, GEochemistry, and Ranging"
+    ],
+    [
+      "Agence & programme",
+      "NASA (Johns Hopkins Applied Physics Laboratory — APL) — Programme Discovery (mission n° 7)"
+    ],
+    [
+      "Lancement",
+      "3 août 2004, 06h15m56s UTC — Cap Canaveral (SLC-17B), fusée Delta II 7925H-9.5"
+    ],
+    [
+      "Mise en orbite & impact",
+      "18 mars 2011 (insertion en orbite autour de Mercure) · 30 avril 2015, 19h26m01s UTC (impact volontaire sur Mercure)"
+    ],
+    [
+      "Durée de mission",
+      "6,6 ans de croisière interplanétaire (6 survols planétaires) + 4,1 ans en orbite mercurienne (4 105 révolutions accomplies)"
+    ],
+    [
+      "Type de mission",
+      "Orbiteur planétaire robotique (sans équipage) de cartographie globale, géochimie, géophysique et magnétosphère de Mercure"
+    ],
+    [
+      "Véhicules",
+      "Delta II 7925H-9.5 (étage supérieur Star-48B) · Sonde spatiale MESSENGER (structure composite graphite-époxy + bouclier céramique)"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier orbiteur de l'histoire autour de Mercure ; épave écrasée à la surface dans Suisei Planitia"
+    ]
+  ],
+  "sourceFile": "Mercure/Fiche mission MESSENGER - Hardware perdu dans l_espace.pdf",
+  "pdf": "messenger.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION DU SYSTÈME SOLAIRE INTERNE · CATALOGUE DU PATRIMOINE SPATIAL MESSENGER (NASA) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 116.38420867919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~513 kg d'épave dispersés à la surface de Mercure (impact volontaire dans Suisei Planitia le 30 avril 2015 à 3,91 km/s) · 0 objet actif en 2026 (4 ans et 43 jours d'opérations en orbite"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "mercurienne) · 1 étage en orbite héliocentrique (3e étage Star-48B de la fusée Delta II) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 190.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "MESSENGER — MErcury Surface, Space ENvironment, GEochemistry, and Ranging"
+          ],
+          [
+            "Agence & programme",
+            "NASA (Johns Hopkins Applied Physics Laboratory — APL) — Programme Discovery (mission n° 7)"
+          ],
+          [
+            "Lancement",
+            "3 août 2004, 06h15m56s UTC — Cap Canaveral (SLC-17B), fusée Delta II 7925H-9.5"
+          ],
+          [
+            "Mise en orbite & impact",
+            "18 mars 2011 (insertion en orbite autour de Mercure) · 30 avril 2015, 19h26m01s UTC (impact volontaire sur Mercure)"
+          ],
+          [
+            "Durée de mission",
+            "6,6 ans de croisière interplanétaire (6 survols planétaires) + 4,1 ans en orbite mercurienne (4 105 révolutions accomplies)"
+          ],
+          [
+            "Type de mission",
+            "Orbiteur planétaire robotique (sans équipage) de cartographie globale, géochimie, géophysique et magnétosphère de Mercure"
+          ],
+          [
+            "Véhicules",
+            "Delta II 7925H-9.5 (étage supérieur Star-48B) · Sonde spatiale MESSENGER (structure composite graphite-époxy + bouclier céramique)"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier orbiteur de l'histoire autour de Mercure ; épave écrasée à la surface dans Suisei Planitia"
+          ]
+        ]
+      },
+      {
+        "y": 541.1671142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 573.0,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "MESSENGER (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 62.8233642578125,
+        "type": "text",
+        "text": "A. Surface de Mercure — Suisei Planitia (~513 kg à l'impact)"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde spatiale MESSENGER (châssis composite)",
+            "~513 kg (à sec)",
+            "▲ Écrasé (Mercure)",
+            "Masse de 1 107,9 kg au lancement (dont ~595 kg d'ergols hydrazine/N2O4 répartis dans 3 réservoirs principaux). Structure en composite graphite-époxy (1,85 × 1,42 × 1,27 m) dotée d'un moteur principal LEROS-1B (645 N) et de 16 propulseurs. A percuté Mercure à 3,91 km/s (14 080 km/h) le 30 avril 2015 (54,4° N, 149,9° O), creusant un cratère d'environ 16 m de diamètre."
+          ],
+          [
+            "Bouclier solaire thermique en tissu céramique",
+            "~35 kg (inclus)",
+            "▲ Écrasé (Mercure)",
+            "Pare-soleil incurvé de 2,5 × 2,0 m en tissu de fibres céramiques Nextel résistant à des températures externes de +370 °C (11 fois l'intensité solaire terrestre), maintenant l'électronique et les instruments à température ambiante (~20 °C) derrière lui."
+          ],
+          [
+            "Deux panneaux solaires orientables (cellules GaAs)",
+            "~48 kg (inclus)",
+            "▲ Écrasés (Mercure)",
+            "Deux ailes rotatives de 1,5 × 1,65 m (envergure totale de 6 m) composées aux deux tiers de miroirs réfléchissants optiques (OSR) et d'un tiers de cellules solaires arséniure de gallium-germanium, délivrant 450 W en orbite mercurienne tout en limitant la surchauffe."
+          ],
+          [
+            "Suite d'instruments scientifiques (7 instruments + radioscience)",
+            "~47 kg (inclus)",
+            "▲ Écrasés (Mercure)",
+            "Double caméra MDIS (291 000 clichés transmis), spectromètre rayons X et gamma GRNS, magnétomètre MAG (perche de 3,6 m), altimètre laser MLA, spectromètre atmosphérique et de surface MASCS, spectromètre de particules énergétiques et plasma EPPS, et sondeur neutrons NS."
+          ]
+        ]
+      },
+      {
+        "y": 595.3233642578125,
+        "type": "text",
+        "text": "B. Orbite héliocentrique & retombées lanceur Delta II"
+      },
+      {
+        "y": 615.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Troisième étage Star- 48B (module PAM-D)",
+            "~130 kg (à sec)",
+            "■ Orbite solaire",
+            "Propulseur à propergol solide stabilisé par rotation. Après l'allumage de 87 s le 3 août 2004 (57 min après le décollage) injectant MESSENGER sur sa trajectoire interplanétaire, il a été largué par système yo- yo et circule sur une orbite héliocentrique permanente."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "MESSENGER (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Deuxième étage Delta-K (moteur AJ10-118K)",
+            "~950 kg (à sec)",
+            "▲ Désintégré",
+            "Étage hypergolique placé sur une orbite basse terrestre de parking lors du lancement du 3 août 2004 ; rentré et consumé dans l'atmosphère terrestre plusieurs mois après le tir."
+          ],
+          [
+            "Premier étage Delta Thor XLT & 9 propulseurs GEM- 46",
+            "~8 200 kg (total à sec)",
+            "▲ Retombés (océan)",
+            "Éléments de propulsion lourde du premier étage largués durant l'ascension atmosphérique au large de Cap Canaveral le 3 août 2004 et retombés dans l'océan Atlantique."
+          ]
+        ]
+      },
+      {
+        "y": 245.8233642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 268.0869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : MESSENGER est une mission d'exploration planétaire à aller simple. Au terme de deux extensions de mission, les ingénieurs ont utilisé les dernières réserves d'hélium gazeux de pressurisation (propulsion à gaz froid) pour prolonger le vol à très basse altitude (descendant jusqu'à 5 km au-dessus du sol) avant l'impact final inévitable du 30 avril 2015."
+      },
+      {
+        "y": 340.3233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 363.3369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique Delta II (2,9 m de diamètre) & masses yo-yo de désaturation : coiffe larguée durant l'ascension atmosphérique au-dessus de l'océan Atlantique le 3 août 2004 ; masselottes de ralentissement de rotation du 3e étage Star-48B éjectées dans l'espace avant la séparation de la sonde."
+      },
+      {
+        "y": 437.6671447753906,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 463.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "3 août 2004, 06h15m56s UTC",
+            "Lancement de la fusée Delta II 7925H-9.5 depuis Cap Canaveral et injection sur trajectoire interplanétaire."
+          ],
+          [
+            "2005 – 2007",
+            "Trois premières assistances gravitationnelles : survol de la Terre (2 août 2005 à 2 347 km) puis deux survols de Vénus (24 octobre 2006 et 5 juin 2007 à 338 km)."
+          ],
+          [
+            "2008 – 2009",
+            "Trois survols rapprochés de Mercure (14 janvier 2008, 6 octobre 2008 et 29 septembre 2009 à 200 km d'altitude), permettant de cartographier les régions jamais vues par Mariner 10 en 1974–1975."
+          ],
+          [
+            "18 mars 2011, 00h45 UTC",
+            "Allumage principal de 15 minutes et insertion réussie en orbite polaire excentrique (200 × 15 200 km) autour de Mercure."
+          ],
+          [
+            "2011 – 2015",
+            "Quatre années d'observations scientifiques (mission nominale de 1 an suivie de deux extensions), cartographiant 100 % de la surface de Mercure et effectuant une campagne à très basse altitude (< 25 km) fin 2014 – début 2015."
+          ],
+          [
+            "30 avril 2015, 19h26m01s UTC",
+            "Épuisement complet des ergols et impact à grande vitesse (3,91 km/s) sur la face cachée de Mercure par rapport à la Terre (54,4° N, 149,9° O, dans Suisei Planitia près du cratère Janáček)."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "MESSENGER (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 67.91712951660156,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 94.8369140625,
+        "type": "text",
+        "text": "Preuve de l'existence de glace d'eau et de composés organiques aux pôles de Mercure : malgré sa proximité avec le Soleil, les spectromètres neutrons et laser de MESSENGER ont confirmé que les cratères polaires perpétuellement plongés dans l'ombre abritent d'épais dépôts de glace d'eau pure recouverts d'une fine couche sombre riche en composés organiques complexes."
+      },
+      {
+        "y": 158.5869140625,
+        "type": "text",
+        "text": "Révélation d'un noyau métallique géant et d'un champ magnétique décentré : les mesures gravimétriques et magnétiques ont révélé que le noyau riche en fer de Mercure occupe près de 85 % du rayon de la planète (bien plus que sur Terre) et que son dipôle magnétique est décalé de ~480 km vers le nord par rapport au centre géométrique du globe."
+      },
+      {
+        "y": 223.0869140625,
+        "type": "text",
+        "text": "Découverte d'un volcanisme effusif massif et de « hollows » (dépressions) : la cartographie complète à 100 % de la surface (contre 45 % observés par Mariner 10) a mis au jour d'immenses plaines volcaniques lisses dans l'hémisphère nord, des escarpements tectoniques témoignant d'une contraction globale de la planète de ~7 km de rayon, ainsi que des dépressions irrégulières brillantes (« hollows ») formées par la sublimation récente d'éléments volatils."
+      },
+      {
+        "y": 301.8369140625,
+        "type": "text",
+        "text": "Tremplin direct vers BepiColombo : l'ensemble des découvertes et la cartographie globale établies par MESSENGER ont permis de calibrer et d'orienter les objectifs scientifiques de la mission conjointe euro-japonaise BepiColombo."
+      },
+      {
+        "y": 361.1671447753906,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 388.0869140625,
+        "type": "text",
+        "text": "NASA NSSDCA — MESSENGER Spacecraft & Mercury Impact Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 406.0869140625,
+        "type": "text",
+        "text": "Johns Hopkins Applied Physics Laboratory (APL) — MESSENGER Mission Archive & Planetary Data (messenger.jhuapl.edu)"
+      },
+      {
+        "y": 439.8369140625,
+        "type": "text",
+        "text": "Solomon, S. C., Nittler, L. R. & Anderson, B. J. (2018) — Mercury: The View after MESSENGER (Cambridge University Press)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "MESSENGER (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

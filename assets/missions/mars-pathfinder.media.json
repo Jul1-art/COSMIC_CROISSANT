@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Delta Rocket Launch Carrying Mars Pathfinder",
+      "credit": "NASA/JPL",
+      "date": "2003-09-19T23:30:45Z",
+      "source": "https://images.nasa.gov/details/PIA04754",
+      "nasaId": "PIA04754",
+      "description": "NASA Mars Pathfinder was launched on a Delta Launch Vehicle at 1:56 am on 4 December 1996 from Cape Canaveral Spaceflight Center.  http://photojournal.jpl.nasa.gov/catalog/PIA04754",
+      "src": "archives/mars-pathfinder-nasa-PIA04754.jpg"
+    },
+    {
+      "title": "Mars PathFinder Rover Traverse Image",
+      "credit": "NASA/JPL",
+      "date": "1998-04-21T13:27:36Z",
+      "source": "https://images.nasa.gov/details/PIA01238",
+      "nasaId": "PIA01238",
+      "description": "Mars PathFinder Rover Traverse Image",
+      "src": "archives/mars-pathfinder-nasa-PIA01238.jpg"
+    },
+    {
+      "title": "Mars Pathfinder Landing Site",
+      "credit": "NASA/JPL",
+      "date": "1997-12-12T12:04:38Z",
+      "source": "https://images.nasa.gov/details/PIA01124",
+      "nasaId": "PIA01124",
+      "description": "Mars Pathfinder Landing Site",
+      "src": "archives/mars-pathfinder-nasa-PIA01124.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/mars-pathfinder.mp4",
+    "local": true,
+    "title": "Mars Pathfinder · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "mars-pathfinder.pdf",
+    "fingerprint": "604fefb55d839d4dbe0f789cf20fce7f7bc55abd1a4e06bcb5f4fb8a0a8850f1"
+  }
+}

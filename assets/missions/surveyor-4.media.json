@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Surveyor mockup",
+      "description": "Full-scale mockup of the Surveyor spacecraft, displayed on a terrestrial beach.",
+      "credit": "NASA",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Surveyor_mockup.jpg",
+      "src": "archives/surveyor-4-commons.jpg",
+      "date": "",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/surveyor-4.mp4",
+    "local": true,
+    "title": "Surveyor 4 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "surveyor-4.pdf",
+    "fingerprint": "44bcf41921235e34b1a640268ea0d4ca09c0762730aabe384120e48f13ee28b2"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "id": "chang-e-3",
+  "name": "Chang'e 3",
+  "body": "moon",
+  "family": "lunar-lander",
+  "year": 2013,
+  "summary": "~1,34 t de matériel posé intact sur la Lune dans Mare Imbrium (atterrisseur fixe de ~1 200 kg à sec et astromobile Yutu de 140 kg) · 0 objet actif en 2026 (fin de mobilité de Yutu en janvier 2014 et arrêt des transmissions en août 2016 ; record de longévité lunaire pour l'atterrisseur) · 1 étage désintégré dans l'atmosphère terrestre (3e étage cryogénique CZ-3B).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Chang'e 3 (CE-3) & astromobile Yutu (« Lapin de jade »)"
+    ],
+    [
+      "Agence & programme",
+      "CNSA (Administration spatiale nationale chinoise) — Programme CLEP (Phase II : alunissage et exploration mobile)"
+    ],
+    [
+      "Lancement",
+      "1er décembre 2013, 17h30 UTC — Base de lancement de Xichang (LC-2), fusée Longue Marche 3B (CZ-3B Y23)"
+    ],
+    [
+      "Alunissage",
+      "14 décembre 2013, 13h11m18s UTC — Mare Imbrium (Mer des Pluies), près du cratère Zi Wei (44,1214° N, 340,4884° E / 19,5116° O)"
+    ],
+    [
+      "Durée de mission",
+      "Mission nominale : 1 an (atterrisseur) et 3 mois (rover) · Durée réelle : 31 mois de fonctionnement (jusqu'en août 2016)"
+    ],
+    [
+      "Type de mission",
+      "Mission robotique automatique (sans équipage) combinant un atterrisseur fixe et un rover d'exploration géologique"
+    ],
+    [
+      "Véhicules",
+      "Longue Marche 3B (3 étages + 4 propulseurs) · Atterrisseur Chang'e 3 (moteur YF-36 à poussée variable) · Rover Yutu"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier alunissage en douceur de l'humanité depuis Luna 24 (1976) et premier rover lunaire depuis Lunokhod 2 (1973)"
+    ]
+  ],
+  "sourceFile": "Lune/Chang_e/Fiche mission Chang_e 3 - Hardware perdu dans l_espace.pdf",
+  "pdf": "chang-e-3.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "PROGRAMME CHINOIS D'EXPLORATION LUNAIRE · CATALOGUE DU PATRIMOINE SPATIAL Chang'e 3 (CNSA) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 116.38420867919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~1,34 t de matériel posé intact sur la Lune dans Mare Imbrium (atterrisseur fixe de ~1 200 kg à sec et astromobile Yutu de 140 kg) · 0 objet actif en 2026 (fin de mobilité de Yutu en janvier 2014 et"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "arrêt des transmissions en août 2016 ; record de longévité lunaire pour l'atterrisseur) · 1 étage désintégré dans l'atmosphère terrestre (3e étage cryogénique CZ-3B)."
+      },
+      {
+        "y": 190.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Chang'e 3 (CE-3) & astromobile Yutu (« Lapin de jade »)"
+          ],
+          [
+            "Agence & programme",
+            "CNSA (Administration spatiale nationale chinoise) — Programme CLEP (Phase II : alunissage et exploration mobile)"
+          ],
+          [
+            "Lancement",
+            "1er décembre 2013, 17h30 UTC — Base de lancement de Xichang (LC-2), fusée Longue Marche 3B (CZ-3B Y23)"
+          ],
+          [
+            "Alunissage",
+            "14 décembre 2013, 13h11m18s UTC — Mare Imbrium (Mer des Pluies), près du cratère Zi Wei (44,1214° N, 340,4884° E / 19,5116° O)"
+          ],
+          [
+            "Durée de mission",
+            "Mission nominale : 1 an (atterrisseur) et 3 mois (rover) · Durée réelle : 31 mois de fonctionnement (jusqu'en août 2016)"
+          ],
+          [
+            "Type de mission",
+            "Mission robotique automatique (sans équipage) combinant un atterrisseur fixe et un rover d'exploration géologique"
+          ],
+          [
+            "Véhicules",
+            "Longue Marche 3B (3 étages + 4 propulseurs) · Atterrisseur Chang'e 3 (moteur YF-36 à poussée variable) · Rover Yutu"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier alunissage en douceur de l'humanité depuis Luna 24 (1976) et premier rover lunaire depuis Lunokhod 2 (1973)"
+          ]
+        ]
+      },
+      {
+        "y": 526.9171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 558.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Chang'e 3 (CNSA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "A. Surface lunaire — Mare Imbrium (~1,34 t au total)"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Chang'e 3 (plateforme fixe)",
+            "~1 200 kg (à sec)",
+            "■ Intact / inactif",
+            "Masse de 3 780 kg au lancement (dont ~2 440 kg d'ergols MMH/N2O4). Plateforme octogonale à 4 pieds amortisseurs dotée d'un moteur principal YF-36 à poussée variable (1 500 à 7 500 N), de 28 propulseurs d'attitude, de 2 panneaux solaires, d'une rampe de déploiement et d'une source thermique au plutonium-238 (RHU) pour survivre aux nuits lunaires (−180 °C)."
+          ],
+          [
+            "Instruments scientifiques de l'atterrisseur (4 capteurs)",
+            "~65 kg (inclus)",
+            "■ Intact / inactif",
+            "Télescope astronomique ultraviolet LUT (150 mm, premier observatoire astronomique opérant depuis la surface lunaire), caméra dans l'ultraviolet extrême EUVC (étude de la plasmasphère terrestre), caméra de descente LCAM et 3 caméras topographiques panoramiques TCAM."
+          ],
+          [
+            "Astromobile Yutu (« Lapin de jade »)",
+            "140 kg",
+            "■ Intact / inactif",
+            "Rover à 6 roues indépendantes (1,5 × 1,0 × 1,1 m), alimenté par 2 panneaux solaires (dont un repliable la nuit) et chauffé par RHU au plutonium-238. Immobilisé à ~114 m au sud-ouest de l'atterrisseur suite à une anomalie mécanique du système de déplacement survenue le 25 janvier 2014 (2e nuit lunaire), mais resté actif comme station fixe pendant 31 mois."
+          ],
+          [
+            "Instruments scientifiques de Yutu (4 capteurs)",
+            "~20 kg (inclus)",
+            "■ Intact / inactif",
+            "Radar pénétrant du sous-sol lunaire LPR (antennes bipôles de 60 et 500 MHz sondant jusqu'à 400 m de profondeur), spectromètre imageur visible/proche infrarouge VNIS, spectromètre à rayons X induits par particules alpha APXS (monté sur bras robotique) et deux caméras panoramiques PCAM."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Chang'e 3 (CNSA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Orbite terrestre & retombées lanceur Longue Marche 3B"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Troisième étage cryogénique H-18 (CZ-3B Y23)",
+            "~2 800 kg (à sec)",
+            "▲ Désintégré",
+            "Étage supérieur propulsé par deux moteurs YF-75 (hydrogène/oxygène liquides). Après avoir injecté Chang'e 3 directement sur sa trajectoire d'injection translunaire (TLI) le 1er décembre 2013, il est resté sur une orbite terrestre très elliptique (200 × 380 000 km) avant de rentrer et de se consumer dans l'atmosphère terrestre en octobre 2014."
+          ],
+          [
+            "1er étage, 2e étage & 4 propulseurs d'appoint (CZ-3B)",
+            "~29 000 kg (total à sec)",
+            "▲ Retombés (Terre)",
+            "Éléments à ergols stockables (UDMH / N2O4) largués durant l'ascension depuis la base intérieure de Xichang le 1er décembre 2013 et retombés dans les zones d'exclusion terrestres du sud-ouest de la Chine."
+          ]
+        ]
+      },
+      {
+        "y": 359.7205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 380.5869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Chang'e 3 est une mission d'atterrissage et de mobilité lunaire sans retour (le retour d'échantillons constituera la phase III du programme chinois avec Chang'e 5 en 2020 et Chang'e 6 en 2024). Le modèle de réserve au sol (Chang'e 4) a été réaffecté pour réaliser en janvier 2019 le premier alunissage de l'histoire sur la face cachée de la Lune."
+      },
+      {
+        "y": 454.2205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 475.8369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique (4,0 m de diamètre) : larguée durant l'ascension atmosphérique le 1er décembre 2013 et retombée sur Terre en Chine."
+      },
+      {
+        "y": 508.8369140625,
+        "type": "text",
+        "text": "Couvercles de protection optique & goupilles de verrouillage : volets d'ouverture des caméras et du télescope LUT restés solidaires des châssis de l'atterrisseur et du rover dans Mare Imbrium."
+      },
+      {
+        "y": 553.1671142578125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 578.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "1er décembre 2013, 17h30 UTC",
+            "Lancement de la fusée Longue Marche 3B depuis Xichang et injection directe sur trajectoire translunaire."
+          ],
+          [
+            "6 décembre 2013, 09h53 UTC",
+            "Insertion en orbite lunaire circulaire à 100 km d'altitude, suivie d'un abaissement du périsélène à 15 km le 10 décembre."
+          ],
+          [
+            "14 décembre 2013, 13h11m18s UTC",
+            "Descente propulsée autonome (avec vol stationnaire à 100 m pour évitement d'obstacles par laser 3D) et alunissage réussi dans Mare Imbrium (44,1214° N, 19,5116° O)."
+          ],
+          [
+            "14 décembre 2013, 20h35 UTC",
+            "Descente du rover Yutu sur le sol lunaire via la rampe inclinée de l'atterrisseur ; prise des premières photographies mutuelles historiques le 15 décembre."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Chang'e 3 (CNSA) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "25 janvier 2014 (Jour lunaire 2)",
+            "Anomalie du circuit de commande mécanique immobilisant définitivement Yutu après 114,8 m parcourus ; le rover poursuit ses mesures scientifiques en mode stationnaire."
+          ],
+          [
+            "31 juillet / 3 août 2016",
+            "Fin officielle des opérations de Yutu après 31 mois sur la Lune (record de longévité pour un rover lunaire à l'époque), tandis que le télescope UV de l'atterrisseur poursuit ses observations encore plusieurs mois."
+          ]
+        ]
+      },
+      {
+        "y": 193.16712951660156,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 220.0869140625,
+        "type": "text",
+        "text": "Découverte d'un nouveau type de roche basaltique lunaire : l'analyse chimique par le spectromètre APXS et l'imageur VNIS de Yutu sur le bord d'un jeune cratère d'impact (Zi Wei) a révélé un basalte lunaire riche en fer et modérément riche en titane, issu d'une coulée volcanique relativement récente (~2,96 milliards d'années) de composition distincte des échantillons rapportés par les missions Apollo et Luna."
+      },
+      {
+        "y": 298.8369140625,
+        "type": "text",
+        "text": "Tomographie radar du sous-sol de Mare Imbrium : le radar LPR de Yutu a sondé pour la première fois la stratigraphie du sous-sol lunaire jusqu'à ~400 m de profondeur, identifiant au moins 9 couches géologiques distinctes témoignant d'épisodes successifs d'éruptions volcaniques et de formation de régolithe."
+      },
+      {
+        "y": 362.5869140625,
+        "type": "text",
+        "text": "Premier observatoire astronomique opérant depuis la Lune : installé sur l'atterrisseur fixe, le télescope ultraviolet LUT a profité de l'absence d'atmosphère et de la rotation lente de la Lune (27,3 jours) pour observer continuellement des étoiles variables, des galaxies actives et mesurer avec une précision inédite la teneur quasi nulle en eau (OH) de l'exosphère lunaire."
+      },
+      {
+        "y": 427.0869140625,
+        "type": "text",
+        "text": "Validation technologique du programme lunaire chinois : le succès du moteur à poussée variable YF-36, du guidage optique autonome d'évitement d'obstacles et des unités chauffantes au plutonium- 238 a servi de socle technique direct à toutes les missions chinoises ultérieures (Chang'e 4, 5 et 6)."
+      },
+      {
+        "y": 485.6671447753906,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 513.3369140625,
+        "type": "text",
+        "text": "CNSA / CLEP — Chang'e 3 Mission Archive & Scientific Data Release (moon.bao.ac.cn)"
+      },
+      {
+        "y": 531.3369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Chang'e 3 Lander & Yutu Rover Technical Summary (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 549.3369140625,
+        "type": "text",
+        "text": "Xiao, L. et al. (2015) — A young multilayered terrane of the northern Mare Imbrium revealed by Chang'E-3 mission (Science, Vol. 347)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Chang'e 3 (CNSA) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

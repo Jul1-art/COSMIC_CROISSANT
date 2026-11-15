@@ -1,0 +1,401 @@
+{
+  "id": "apollo-14",
+  "name": "Apollo 14",
+  "body": "moon",
+  "family": "apollo",
+  "year": 1971,
+  "summary": "~2,5 t de matériel laissé sur le site de Fra Mauro · 1 objet encore actif en 2026 (rétro- réflecteur laser LRRR) · 2 objets volontairement écrasés sur la Lune pour la sismologie (étage S-IVB et étage d'ascension du LM) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Apollo 14 (AS-509)"
+    ],
+    [
+      "Agence & programme",
+      "NASA — Programme Apollo (troisième alunissage habité, dernière mission de type H)"
+    ],
+    [
+      "Lancement",
+      "31 janvier 1971, 21h03 UTC — Kennedy Space Center (Pad 39A), fusée Saturn V"
+    ],
+    [
+      "Alunissage",
+      "5 février 1971, 09h18 UTC — Hauts plateaux de Fra Mauro (3,6453° S, 17,4714° O)"
+    ],
+    [
+      "Retour sur Terre",
+      "9 février 1971, 21h05 UTC — Amerrissage dans le Pacifique Sud (9 j 0 h 02 min de mission)"
+    ],
+    [
+      "Équipage",
+      "Alan B. Shepard Jr. (commandant), Edgar D. Mitchell (pilote LM), Stuart A. Roosa (pilote CSM)"
+    ],
+    [
+      "Véhicules",
+      "Saturn V (SA-509) · Module de commande/service Kitty Hawk (CSM-110) · Module lunaire Antares (LM-8)"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Alunissage le plus précis du programme Apollo ; 42,8 kg d'échantillons rapportés"
+    ]
+  ],
+  "sourceFile": "Lune/Apollo/Fiche mission Apollo 14 - Hardware perdu dans l_espace.pdf",
+  "pdf": "apollo-14.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "PROGRAMME APOLLO · CATALOGUE DU PATRIMOINE SPATIAL Apollo 14 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~2,5 t de matériel laissé sur le site de Fra Mauro · 1 objet encore actif en 2026 (rétro- réflecteur laser LRRR) · 2 objets volontairement écrasés sur la Lune pour la sismologie (étage S-IVB et étage"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "d'ascension du LM) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 175.76544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Apollo 14 (AS-509)"
+          ],
+          [
+            "Agence & programme",
+            "NASA — Programme Apollo (troisième alunissage habité, dernière mission de type H)"
+          ],
+          [
+            "Lancement",
+            "31 janvier 1971, 21h03 UTC — Kennedy Space Center (Pad 39A), fusée Saturn V"
+          ],
+          [
+            "Alunissage",
+            "5 février 1971, 09h18 UTC — Hauts plateaux de Fra Mauro (3,6453° S, 17,4714° O)"
+          ],
+          [
+            "Retour sur Terre",
+            "9 février 1971, 21h05 UTC — Amerrissage dans le Pacifique Sud (9 j 0 h 02 min de mission)"
+          ],
+          [
+            "Équipage",
+            "Alan B. Shepard Jr. (commandant), Edgar D. Mitchell (pilote LM), Stuart A. Roosa (pilote CSM)"
+          ],
+          [
+            "Véhicules",
+            "Saturn V (SA-509) · Module de commande/service Kitty Hawk (CSM-110) · Module lunaire Antares (LM-8)"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Alunissage le plus précis du programme Apollo ; 42,8 kg d'échantillons rapportés"
+          ]
+        ]
+      },
+      {
+        "y": 511.76544189453125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 578.7205810546875,
+        "type": "text",
+        "text": "A. Surface lunaire — Hauts plateaux de Fra Mauro (~2,5 t au total)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de descente du LM Antares",
+            "~2 144 kg",
+            "■ Intact / inactif",
+            "Structure aluminium/titane posée sur 4 pieds avec inclinaison de 8°, moteur de descente (~45 kN), réservoirs vides, échelle et plateforme MESA. Porte la plaque en acier inoxydable gravée : « Apollo 14 · Antares · February 1971 » suivie des signatures de l'équipage."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 14 — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Laser Ranging Retroreflector (LRRR)",
+            "~23 kg",
+            "● Toujours actif",
+            "Panneau composé de 100 coins de cube rétroréflecteurs en silice fondue, déployé à ~30 m à l'ouest de la station centrale ALSEP. Encore utilisé en 2026 pour la télémétrie laser Terre- Lune."
+          ],
+          [
+            "Station centrale ALSEP & RTG SNAP-27",
+            "~45 kg",
+            "■ Intact / inactif",
+            "Station de télémesure et générateur thermoélectrique à radioisotope (SNAP-27 au plutonium-238 produisant ~70 W), accompagné de son conteneur de combustible vide fixé sur l'étage de descente. Arrêté le 18 décembre 1977."
+          ],
+          [
+            "Expériences sismiques PSE & ASE",
+            "~25 kg",
+            "■ Intact / inactif",
+            "Passive Seismic Experiment (sismomètre longue période, ~11,5 kg) et Active Seismic Experiment (ligne de 3 géophones, mortier à 4 grenades restées non tirées par sécurité, et percuteur « Thumper » à 21 charges pyrotechniques)."
+          ],
+          [
+            "Capteurs d'environnement SIDE, CCIG & CPLEE",
+            "~16 kg",
+            "■ Intact / inactif",
+            "Détecteur d'ions suprathermiques (SIDE), jauge à cathode froide (CCIG) mesurant l'exosphère lunaire et spectromètre de particules chargées (CPLEE) étudiant le vent solaire."
+          ],
+          [
+            "Chariot MET (Modular Equipment Transporter)",
+            "~13,6 kg",
+            "■ Intact / inactif",
+            "Premier véhicule à roues sur la Lune : chariot manuel à 2 pneus Goodyear XLT rempli d'azote, utilisé lors de la marche vers le cratère Cone (3,45 km parcourus). Abandonné à ~70 m à l'ouest du LM."
+          ],
+          [
+            "Drapeau américain & antenne bande S orientable",
+            "~32 kg",
+            "■ Intact / inactif",
+            "Drapeau américain sur mât télescopique (~2 kg) planté devant le LM et resté debout au décollage. Antenne parabolique déployable (~30 kg) utilisée pour les communications directes avec la Terre."
+          ],
+          [
+            "Caméra TV couleur Westinghouse & trépied",
+            "~9 kg",
+            "■ Intact / inactif",
+            "Caméra déployée sur trépied à distance du LM pour filmer les deux sorties extravéhiculaires (EVA), laissée en place après la seconde EVA."
+          ],
+          [
+            "Outils géologiques, balles de golf & sacs de déchets",
+            "~130 kg",
+            "■ Intact / inactif",
+            "Pelles, râteau, pinces, tubes carottiers, manche utilisé comme javelot par Mitchell, 2 balles de golf frappées par Alan Shepard (avec une tête de fer 6 fixée sur un outil), sacs de déchets (Jettison Bags) et couvertures thermiques en Mylar."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 14 — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Impacts contrôlés & rentrée atmosphérique"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage S-IVB de la Saturn V (S-IVB-509)",
+            "~14 016 kg (à sec)",
+            "▲ Écrasé (Lune)",
+            "Guidé volontairement vers la surface lunaire après la séparation du CSM. Impact le 4 février 1971 à 07h40 UTC par 8,09° S, 26,02° O (à ~174 km du site d'Apollo 12), générant un signal sismique enregistré pendant 3 heures."
+          ],
+          [
+            "Étage d'ascension du LM Antares",
+            "~2 130 kg",
+            "▲ Écrasé (Lune)",
+            "Largué après l'amarrage avec Kitty Hawk et désorbité volontairement. Impact le 7 février 1971 à 00h45 UTC par 3,42° S, 19,67° O (entre les stations sismiques Apollo 12 et Apollo 14)."
+          ],
+          [
+            "Module de service (SM-110)",
+            "~5 000 kg (à vide)",
+            "▲ Désintégré",
+            "Largué juste avant la rentrée atmosphérique terrestre le 9 février 1971 ; entièrement détruit par friction dans la haute atmosphère au-dessus du Pacifique."
+          ]
+        ]
+      },
+      {
+        "y": 352.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 373.020263671875,
+        "type": "text",
+        "text": "Capsule Kitty Hawk (module de commande CM-110, ~5 500 kg) : amerrissage au sud des Samoa américaines à 7 km du porte-hélicoptères USS New Orleans ; aujourd'hui exposée au Kennedy Space Center Visitor Complex (Floride)."
+      },
+      {
+        "y": 421.770263671875,
+        "type": "text",
+        "text": "Échantillons lunaires (42,80 kg) : 94 roches et carottes de régolithe collectées dans les hauts plateaux de Fra Mauro, dont « Big Bertha » (échantillon 14321, contenant un fragment de roche d'origine terrestre vieux de ~4 milliards d'années)."
+      },
+      {
+        "y": 470.520263671875,
+        "type": "text",
+        "text": "Équipage : Shepard, Mitchell et Roosa placés en quarantaine biologique de 21 jours (derniers astronautes lunaires soumis au protocole de quarantaine, levé le 26 février 1971)."
+      },
+      {
+        "y": 514.2205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 535.020263671875,
+        "type": "text",
+        "text": "Panneaux d'adaptation (SLA) de la Saturn V : quatre panneaux largués en orbite terrestre basse lors de la manœuvre de transposition et d'extraction du module lunaire Antares."
+      },
+      {
+        "y": 568.770263671875,
+        "type": "text",
+        "text": "Équipements et conteneurs largués : sacs de déchets, surchaussures lunaires et emballages évacués par l'écoutille du LM lors de la dépressurisation précédant le largage final d'Antares."
+      },
+      {
+        "y": 610.7654418945312,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 638.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "31 janvier 1971, 21h03 UTC",
+            "Lancement de Saturn V depuis le Kennedy Space Center (retardé de 40 min par la météo)."
+          ],
+          [
+            "1er février 1971",
+            "Après 5 échecs d'amarrage en vol translunaire, Roosa réussit l'extraction d'Antares à la 6e tentative."
+          ],
+          [
+            "4 février 1971, 07h40 UTC",
+            "Mise en orbite lunaire ; l'étage S-IVB percute la Lune (8,09° S, 26,02° O) pour calibrer le sismomètre d'Apollo 12."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 14 — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "5 février 1971, 09h18 UTC",
+            "Alunissage d'Antares à Fra Mauro (3,6453° S, 17,4714° O), au plus près du point cible visé."
+          ],
+          [
+            "5 février, 14h42 – 19h30 UTC",
+            "EVA 1 (4 h 47 min) : déploiement du drapeau, de la station ALSEP, du réflecteur laser LRRR et tirs du « Thumper »."
+          ],
+          [
+            "6 février, 08h11 – 12h45 UTC",
+            "EVA 2 (4 h 34 min) : ascension vers le cratère Cone avec le chariot MET (3,45 km) ; Shepard frappe deux balles de golf."
+          ],
+          [
+            "6 février 1971, 18h48 UTC",
+            "Décollage d'Antares après 33 h 31 min sur la Lune ; amarrage à Kitty Hawk puis impact volontaire de l'étage d'ascension le 7 février à 00h45 UTC."
+          ],
+          [
+            "9 février 1971, 21h05 UTC",
+            "Amerrissage dans le Pacifique Sud ; fin de quarantaine de l'équipage le 26 février."
+          ]
+        ]
+      },
+      {
+        "y": 271.01544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 299.520263671875,
+        "type": "text",
+        "text": "Réseau sismologique triangulé : pour la première fois dans l'histoire spatiale, deux stations sismiques lunaires (Apollo 12 et Apollo 14, distantes de 181 km) ont fonctionné simultanément, permettant de localiser précisément les séismes lunaires et d'établir l'épaisseur de la croûte lunaire (~50–60 km)."
+      },
+      {
+        "y": 363.270263671875,
+        "type": "text",
+        "text": "Télémétrie laser active en 2026 : le LRRR d'Apollo 14 fait partie du réseau international de rétroréflecteurs lunaires (avec Apollo 11, Apollo 15 et Lunokhod 1/2) régulièrement pointé par les observatoires terrestres (dont l'Observatoire de la Côte d'Azur) pour mesurer l'éloignement de la Lune (~3,8 cm/an) et tester la relativité générale."
+      },
+      {
+        "y": 427.020263671875,
+        "type": "text",
+        "text": "Archives géologiques des hauts plateaux : les brèches rapportées de Fra Mauro sont des éjectas du bassin d'impact Mare Imbrium, datant le bombardement massif de la Lune à ~3,85 milliards d'années. En 2019, une étude sur l'échantillon 14321 a identifié un zircon terrestre projeté sur la Lune il y a ~4 milliards d'années."
+      },
+      {
+        "y": 491.520263671875,
+        "type": "text",
+        "text": "Imagerie LRO et préservation : les survols à basse altitude de la sonde Lunar Reconnaissance Orbiter (NASA) ont photographié en haute résolution l'étage de descente d'Antares, la station ALSEP, le LRRR, le chariot MET ainsi que les traces de pas et les sillons des roues du chariot."
+      },
+      {
+        "y": 549.2654418945312,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 579.1033325195312,
+        "type": "text",
+        "text": "NASA — Apollo 14 Mission Report (MSC-04112)"
+      },
+      {
+        "y": 597.1033325195312,
+        "type": "text",
+        "text": "NASA — Apollo 14 Preliminary Science Report (SP-272)"
+      },
+      {
+        "y": 615.1033325195312,
+        "type": "text",
+        "text": "Archives photographiques LRO du site de Fra Mauro : lroc.sese.asu.edu / lro.gsfc.nasa.gov"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 14 — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

@@ -1,3 +1,4 @@
+import {appURL} from '../core/paths.js';
 /** One selected world, its measured dimensions and its complete satellite list. */
 export function createSolarInspector({host,getLanguage,getBody,getSystems,onSelect,onFrame,onSurface,onLocation,sitesByBody={}}) {
   const root=document.createElement('section');root.className='solar-inspector';host.append(root);
@@ -30,6 +31,11 @@ export function createSolarInspector({host,getLanguage,getBody,getSystems,onSele
       actions.append(button(label,()=>onLocation?.(id,site.lat,site.lon,site.local?2:250)));
     }
     root.append(actions);
+    const missionArchive=document.createElement('a');missionArchive.className='solar-source';
+    const destination=['jupiter','uranus','neptune'].includes(id)?'outer':['67p','philae','rosetta'].includes(id)?'small-bodies':id;
+    missionArchive.href=appURL(`pages/missions.html?body=${encodeURIComponent(destination)}`).href;
+    missionArchive.textContent=fr()?'Missions · 3D, films et archives ↗':'Missions · 3D, films and archives ↗';root.append(missionArchive);
+
     const scale=document.createElement('p');scale.className='solar-model-note';
     scale.textContent=fr()?'Distances solaires proportionnelles ; corps agrandis pour rester repérables. Chaque système de lunes utilise sa propre échelle locale et les éléments orbitaux moyens JPL.':'Proportional solar distances; bodies enlarged for visibility. Each moon system uses its own local scale and JPL mean orbital elements.';
     root.append(scale);

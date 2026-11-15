@@ -1,0 +1,902 @@
+[
+  {
+    "id": "ace",
+    "name": "ACE (Advanced Composition Explorer)",
+    "body": "observatories",
+    "family": "orbiter",
+    "year": 1997,
+    "summary": "Analyse technique et historique détaillée de la sonde spatiale ACE (Explorer 71 / NASA), déployée sur une orbite de Lissajous autour du point de Lagrange L1 Soleil-Terre à 1,5 million de kilomètres en amont de notre planète. Conçu initialement pour une mission nominale de 2 à 5 ans, cet observatoire de 785 kg demeure opérationnel depuis plus de 29 ans, fournissant une caractérisation isotopique inégalée du vent solaire et des rayons cosmiques galactiques, tout en assurant une veille météorologique spatiale en temps réel indispensable à la protection des infrastructures terrestres et orbitales.",
+    "sourceFile": "ACE (Advanced Composition Explorer) — Dossier Technique Complet.pdf",
+    "pdf": "ace.pdf"
+  },
+  {
+    "id": "hera",
+    "name": "Hera (ESA)",
+    "body": "small-bodies",
+    "family": "orbiter",
+    "year": 2024,
+    "summary": "~1,1 t de matériel arrivé autour du système binaire Didymos-Dimorphos en novembre 2026 · 3 engins actifs en novembre 2026 (sonde mère Hera et ses deux CubeSats embarqués Juventas et Milani) · 1 étage en orbite héliocentrique (second étage Falcon 9) · 0 objet de localisation inconnue.",
+    "sourceFile": "Astéroïdes et comètes/Fiche mission Hera (ESA) - Hardware perdu dans l_espace.pdf",
+    "pdf": "hera.pdf"
+  },
+  {
+    "id": "near-shoemaker",
+    "name": "NEAR Shoemaker",
+    "body": "small-bodies",
+    "family": "orbiter",
+    "year": 1996,
+    "summary": "~487 kg de matériel posé intact à la surface de l'astéroïde géocroiseur (433) Éros · 0 objet actif en 2026 (arrêt final des transmissions le 28 février 2001 après 16 jours d'opérations au sol) · 1 étage en orbite héliocentrique (3e étage Star-48B de la fusée Delta II) · 0 objet de localisation inconnue.",
+    "sourceFile": "Astéroïdes et comètes/Fiche mission NEAR Shoemaker - Hardware perdu dans l_espace.pdf",
+    "pdf": "near-shoemaker.pdf"
+  },
+  {
+    "id": "rosetta-philae",
+    "name": "Rosetta & Philae",
+    "body": "small-bodies",
+    "family": "rosetta",
+    "year": 2004,
+    "summary": "~1,33 t de matériel posé sur la comète 67P/Tchourioumov-Guérassimenko (atterrisseur Philae de 97,9 kg intact + orbiteur Rosetta de ~1 230 kg à sec posé en impact contrôlé) • 0 objet encore actif en 2026 (extinction définitive le 30 septembre 2016) • 1 étage supérieur en orbite héliocentrique.",
+    "sourceFile": "Astéroïdes et comètes/Rosetta & Philae - Fiche « Plus de détails ».pdf",
+    "pdf": "rosetta-philae.pdf"
+  },
+  {
+    "id": "james-webb",
+    "name": "James Webb (JWST)",
+    "body": "observatories",
+    "family": "webb",
+    "year": 2021,
+    "summary": "~6,2 t de matériel déployé au point de Lagrange L2 à 1,5 million de km de la Terre · 1 observatoire toujours actif en 2026 (télescope spatial JWST) · 1 étage en orbite héliocentrique (étage supérieur ESC-D d'Ariane 5) · 0 objet de localisation inconnue.",
+    "sourceFile": "Fiche mission James Webb (JWST) - Hardware perdu dans l_espace.pdf",
+    "pdf": "james-webb.pdf"
+  },
+  {
+    "id": "nancy-grace-roman",
+    "name": "Nancy Grace Roman",
+    "body": "observatories",
+    "family": "roman",
+    "year": 2026,
+    "summary": "télescope de 9 174 kg lancé le 30 août 2026, actif, en route vers le point L2 Soleil-Terre (arrivée estimée vers le 8 décembre 2026) · miroir primaire de 2,4 m, caméra grand champ (WFI) et coronographe (CGI), tous deux déjà mis sous tension · 2 propulseurs latéraux de Falcon Heavy posés en vol de retour ; étage central, 2e étage et coiffe : devenir non précisé · aucun élément du télescope perdu",
+    "sourceFile": "Fiche-mission-Nancy-Grace-Roman-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "nancy-grace-roman.pdf"
+  },
+  {
+    "id": "apollo-14",
+    "name": "Apollo 14",
+    "body": "moon",
+    "family": "apollo",
+    "year": 1971,
+    "summary": "~2,5 t de matériel laissé sur le site de Fra Mauro · 1 objet encore actif en 2026 (rétro- réflecteur laser LRRR) · 2 objets volontairement écrasés sur la Lune pour la sismologie (étage S-IVB et étage d'ascension du LM) · 0 objet de localisation inconnue.",
+    "sourceFile": "Lune/Apollo/Fiche mission Apollo 14 - Hardware perdu dans l_espace.pdf",
+    "pdf": "apollo-14.pdf"
+  },
+  {
+    "id": "apollo-15",
+    "name": "Apollo 15",
+    "body": "moon",
+    "family": "apollo",
+    "year": 1971,
+    "summary": "~3,0 t de matériel laissé sur le site de Hadley-Apennine (dont le 1er rover lunaire LRV) · 1 objet encore actif en 2026 (rétro-réflecteur laser LRRR-15, le plus grand sur la Lune) · 3 objets écrasés sur la Lune (étage S-IVB, étage d'ascension du LM et sous-satellite PFS-1) · 0 objet de localisation inconnue.",
+    "sourceFile": "Lune/Apollo/Fiche mission Apollo 15 - Hardware perdu dans l_espace.pdf",
+    "pdf": "apollo-15.pdf"
+  },
+  {
+    "id": "apollo-16",
+    "name": "Apollo 16",
+    "body": "moon",
+    "family": "apollo",
+    "year": 1972,
+    "summary": "~3,0 t de matériel laissé sur les hauts plateaux de Descartes (dont le rover LRV-2 et le 1er observatoire astronomique lunaire) · 0 objet actif en 2026 (aucun LRRR sur cette mission) · 3 objets écrasés sur la Lune (étage S-IVB, sous-satellite PFS-2 et étage d'ascension du LM) · 0 objet de localisation inconnue.",
+    "sourceFile": "Lune/Apollo/Fiche mission Apollo 16 - Hardware perdu dans l_espace.pdf",
+    "pdf": "apollo-16.pdf"
+  },
+  {
+    "id": "apollo-17",
+    "name": "Apollo 17",
+    "body": "moon",
+    "family": "apollo",
+    "year": 1972,
+    "summary": "~19,3 t d'épaves et d'équipements laissés sur la Lune (dont ~2,9 t posées intactes dans Taurus-Littrow et ~16,4 t d'impacteurs volontaires S-IVB et LM-12) · 0 objet actif en 2026 (station ALSEP arrêtée en septembre 1977) · 1 module désintégré dans l'atmosphère terrestre (module de service America) · 0 objet de localisation inconnue.",
+    "sourceFile": "Lune/Apollo/Fiche mission Apollo 17 - Hardware perdu dans l_espace.pdf",
+    "pdf": "apollo-17.pdf"
+  },
+  {
+    "id": "apollo-11",
+    "name": "Apollo 11",
+    "body": "moon",
+    "family": "apollo",
+    "year": 1969,
+    "summary": "~5,2 t de matériel laissé sur la Lune · 1 objet encore actif en 2026 (rétro-réflecteur laser) · 1 objet en orbite héliocentrique · 1 objet d'emplacement inconnu (étage d'ascension)",
+    "sourceFile": "Lune/Apollo/Fiche mission-Apollo-11-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "apollo-11.pdf"
+  },
+  {
+    "id": "apollo-12",
+    "name": "Apollo 12",
+    "body": "moon",
+    "family": "apollo",
+    "year": 1969,
+    "summary": "~5 t de matériel laissé sur la Lune, dont le premier ALSEP complet et un réflecteur laser encore actif · 1 étage d'ascension écrasé volontairement sur la Lune (premier « impact sismique » expérimental) · 1 étage S-IVB en orbite héliocentrique · 1 épave de sonde Surveyor 3 partiellement ramenée",
+    "sourceFile": "Lune/Apollo/fiche-mission-apollo-12-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "apollo-12.pdf"
+  },
+  {
+    "id": "apollo-13",
+    "name": "Apollo 13",
+    "body": "moon",
+    "family": "apollo",
+    "year": 1970,
+    "summary": "rien laissé sur la Lune (alunissage annulé) · 1 étage S-IVB écrasé volontairement sur la Lune (enregistré par le sismomètre d'Apollo 12) · LM Aquarius et module de service désintégrés dans l'atmosphère terrestre · 1 module de commande récupéré — la mission « réussite ratée » qui n'a presque rien perdu… sauf tout",
+    "sourceFile": "Lune/Apollo/fiche-mission-apollo-13-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "apollo-13.pdf"
+  },
+  {
+    "id": "chang-e-3",
+    "name": "Chang'e 3",
+    "body": "moon",
+    "family": "lunar-lander",
+    "year": 2013,
+    "summary": "~1,34 t de matériel posé intact sur la Lune dans Mare Imbrium (atterrisseur fixe de ~1 200 kg à sec et astromobile Yutu de 140 kg) · 0 objet actif en 2026 (fin de mobilité de Yutu en janvier 2014 et arrêt des transmissions en août 2016 ; record de longévité lunaire pour l'atterrisseur) · 1 étage désintégré dans l'atmosphère terrestre (3e étage cryogénique CZ-3B).",
+    "sourceFile": "Lune/Chang_e/Fiche mission Chang_e 3 - Hardware perdu dans l_espace.pdf",
+    "pdf": "chang-e-3.pdf"
+  },
+  {
+    "id": "chang-e-4",
+    "name": "Chang'e 4",
+    "body": "moon",
+    "family": "lunar-lander",
+    "year": 2018,
+    "summary": "~1,35 t de matériel posé sur la face cachée de la Lune dans le cratère Von Kármán · 2 engins toujours actifs en novembre 2026 (atterrisseur fixe et rover Yutu-2 en activité prolongée) · 1 satellite relais en orbite de halo autour de L2 (Queqiao) · 1 étage désintégré dans l'atmosphère terrestre (3e étage CZ- 3B).",
+    "sourceFile": "Lune/Chang_e/Fiche mission Chang_e 4 - Hardware perdu dans l_espace.pdf",
+    "pdf": "chang-e-4.pdf"
+  },
+  {
+    "id": "chang-e-1",
+    "name": "Chang'e 1",
+    "body": "moon",
+    "family": "orbiter",
+    "year": 2007,
+    "summary": "orbiteur de 2 350 kg écrasé volontairement sur la Lune le 1er mars 2009, épave repérée sur des images de la sonde LRO · 24 instruments selon Wikipédia (caméra stéréo, altimètre laser, spectromètres, radiomètre…) · étages de la Long March 3A, devenir non précisé · aucun élément récupéré · première sonde lunaire chinoise : carte 3D de la Lune, ~1 400 gigabits de données",
+    "sourceFile": "Lune/Chang_e/Fiche-mission-Chang-e-1-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "chang-e-1.pdf"
+  },
+  {
+    "id": "chang-e-2",
+    "name": "Chang'e 2",
+    "body": "moon",
+    "family": "orbiter",
+    "year": 2010,
+    "summary": "orbiteur de 2 480 kg au lancement, désormais en orbite autour du Soleil, dernier contact vers 2014 selon Wikipédia (statut actuel non confirmé) · 4 groupes d'instruments (caméra stéréo, altimètre laser, spectromètres gamma/X, radiomètre micro-ondes) · étage de la Long March 3C, devenir non précisé · aucun élément récupéré · première sonde allée directement de l'orbite lunaire au point L2 Soleil-Terre, puis survol de l'astéroïde Toutatis",
+    "sourceFile": "Lune/Chang_e/Fiche-mission-Chang-e-2-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "chang-e-2.pdf"
+  },
+  {
+    "id": "chang-e-5",
+    "name": "Chang'e 5",
+    "body": "moon",
+    "family": "lunar-lander",
+    "year": 2020,
+    "summary": "pile de ~8,2 t au lancement · 1 atterrisseur resté sur la Lune (Océan des Tempêtes) · 1 étage de remontée écrasé volontairement sur la Lune · 1 orbiteur en mission étendue, statut actuel non confirmé · 1 capsule récupérée sur Terre avec 1 731 g d'échantillons",
+    "sourceFile": "Lune/Chang_e/Fiche-mission-Chang-e-5-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "chang-e-5.pdf"
+  },
+  {
+    "id": "chang-e-6",
+    "name": "Chang'e 6",
+    "body": "moon",
+    "family": "lunar-lander",
+    "year": 2024,
+    "summary": "pile de ~8,2 à 8,35 t au lancement · 1 atterrisseur et 1 mini-rover Jinchan restés sur la face cachée · 1 étage de remontée hors service, probablement écrasé sur la Lune (non confirmé) · 1 orbiteur au point L2 Soleil-Terre, statut actuel non confirmé · 1 CubeSat ICUBE-Q, issue non précisée · 1 capsule récupérée avec 1 935,3 g d'échantillons",
+    "sourceFile": "Lune/Chang_e/Fiche-mission-Chang-e-6-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "chang-e-6.pdf"
+  },
+  {
+    "id": "chandrayaan-3",
+    "name": "Chandrayaan 3",
+    "body": "moon",
+    "family": "lunar-lander",
+    "year": 2023,
+    "summary": "3 900 kg au lancement · 1 atterrisseur Vikram (1 726 kg) et 1 rover Pragyan (26 kg) immobiles près du pôle sud lunaire depuis 2023 · 1 module de propulsion (2 148 kg) en orbite terrestre haute · aucun objet lunaire actif · 1 étage cryotechnique LVM3 d'emplacement inconnu",
+    "sourceFile": "Lune/Fiche-mission-Chandrayaan-3-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "chandrayaan-3.pdf"
+  },
+  {
+    "id": "lro",
+    "name": "LRO (Lunar Reconnaissance Orbiter)",
+    "body": "moon",
+    "family": "orbiter",
+    "year": 2009,
+    "summary": "Analyse technique et historique détaillée de la sonde spatiale LRO (Lunar Reconnaissance Orbiter / NASA), lancée en juin 2009 conjointement avec l'impacteur LCROSS. Conçu initialement comme une mission de reconnaissance d'un an pour préparer le retour de l'homme sur la Lune, cet orbiteur polaire de 1 916 kg demeure pleinement opérationnel depuis plus de 17 ans en novembre 2026. Grâce à sa suite de 7 instruments scientifiques de haute précision, LRO a établi l'atlas topographique, thermique et photographique le plus détaillé jamais réalisé d'un corps céleste extraterrestre, tout en soutenant directement la sélection des sites d'atterrissage du programme Artemis.",
+    "sourceFile": "Lune/LRO (Lunar Reconnaissance Orbiter) — Dossier Technique Complet.pdf",
+    "pdf": "lro.pdf"
+  },
+  {
+    "id": "luna-10",
+    "name": "Luna 10",
+    "body": "moon",
+    "family": "luna-orbiter",
+    "year": 1966,
+    "summary": "~245 kg d'orbiteur scientifique ILS (premier satellite artificiel de la Lune) et ~850 kg de module propulsif E-6S écrasés sur la Lune après dégradation orbitale (sites d'impact non localisés avec précision) · 0 objet actif en 2026 (56 jours d'émissions en orbite lunaire en avril–mai 1966) · 2 objets de point d'impact exact inconnu.",
+    "sourceFile": "Lune/Luna/Fiche mission Luna 10 - Hardware perdu dans l_espace.pdf",
+    "pdf": "luna-10.pdf"
+  },
+  {
+    "id": "luna-11",
+    "name": "Luna 11",
+    "body": "moon",
+    "family": "luna-orbiter",
+    "year": 1966,
+    "summary": "~1 140 kg à sec (1 640 kg au lancement) d'orbiteur intégré E-6LF écrasés sur la Lune après dégradation orbitale (site d'impact non localisé avec précision) · 0 objet actif en 2026 (34 jours d'émissions en orbite lunaire d'août à octobre 1966) · 1 objet principal de point d'impact exact inconnu.",
+    "sourceFile": "Lune/Luna/Fiche mission Luna 11 - Hardware perdu dans l_espace.pdf",
+    "pdf": "luna-11.pdf"
+  },
+  {
+    "id": "luna-12",
+    "name": "Luna 12",
+    "body": "moon",
+    "family": "luna-orbiter",
+    "year": 1966,
+    "summary": "~1 140 kg à sec (1 625 kg au lancement) d'orbiteur intégré E-6LF écrasés sur la Lune après dégradation orbitale (site d'impact non localisé avec précision) · 0 objet actif en 2026 (86 jours d'émissions en orbite lunaire d'octobre 1966 à janvier 1967) · 1 objet principal de point d'impact exact inconnu.",
+    "sourceFile": "Lune/Luna/Fiche mission Luna 12 - Hardware perdu dans l_espace.pdf",
+    "pdf": "luna-12.pdf"
+  },
+  {
+    "id": "luna-13",
+    "name": "Luna 13",
+    "body": "moon",
+    "family": "luna-lander",
+    "year": 1966,
+    "summary": "~700 kg de matériel laissé sur la Lune dans Oceanus Procellarum (capsule sphérique ALS de 113 kg posée intacte avec 2 bras mécaniques déployés et ~585 kg d'étage de freinage et d'airbags écrasés à proximité) · 0 objet actif en 2026 (98 heures de fonctionnement à la surface en décembre 1966) · 0 objet de localisation générale inconnue.",
+    "sourceFile": "Lune/Luna/Fiche mission Luna 13 - Hardware perdu dans l_espace.pdf",
+    "pdf": "luna-13.pdf"
+  },
+  {
+    "id": "luna-14",
+    "name": "Luna 14",
+    "body": "moon",
+    "family": "luna-orbiter",
+    "year": 1968,
+    "summary": "~1 150 kg à sec (1 615 kg au lancement) d'orbiteur intégré E-6LS écrasés sur la Lune après dégradation orbitale (site d'impact non localisé avec précision) · 0 objet actif en 2026 (75 jours d'émissions en orbite lunaire d'avril à juin 1968) · 1 objet principal de point d'impact exact inconnu.",
+    "sourceFile": "Lune/Luna/Fiche mission Luna 14 - Hardware perdu dans l_espace.pdf",
+    "pdf": "luna-14.pdf"
+  },
+  {
+    "id": "luna-15",
+    "name": "Luna 15",
+    "body": "moon",
+    "family": "luna-return",
+    "year": 1969,
+    "summary": "~2,2 t d'épaves dispersées sur la Lune dans Mare Crisium (étage de descente KTDU- 417, étage de remontée et capsule de retour écrasés lors de la descente finale le 21 juillet 1969 à ~480 km/h) · 0 objet actif en 2026 (8 jours de vol et 52 orbites lunaires) · 0 objet revenu sur Terre.",
+    "sourceFile": "Lune/Luna/Fiche mission Luna 15 - Hardware perdu dans l_espace.pdf",
+    "pdf": "luna-15.pdf"
+  },
+  {
+    "id": "luna-16",
+    "name": "Luna 16",
+    "body": "moon",
+    "family": "luna-return",
+    "year": 1970,
+    "summary": "~1 580 kg de matériel laissé sur la Lune dans Mare Fecunditatis (étage de descente KTDU-417 et foreuse automatique posés intacts) · 0 objet actif en 2026 (mission de 10 jours en septembre 1970) · 1 capsule de rentrée récupérée sur Terre avec 101 g de sol lunaire.",
+    "sourceFile": "Lune/Luna/Fiche mission Luna 16 - Hardware perdu dans l_espace.pdf",
+    "pdf": "luna-16.pdf"
+  },
+  {
+    "id": "luna-17",
+    "name": "Luna 17",
+    "body": "moon",
+    "family": "luna-orbiter",
+    "year": 1970,
+    "summary": "~1,78 t de matériel posé dans Mare Imbrium (atterrisseur fixe d'environ 1,2 t et astromobile Lunokhod 1 de 756 kg) · 0 objet actif en 2026 (10 mois et demi d'activité de Lunokhod 1 entre novembre 1970 et octobre 1971) · 0 objet de localisation inconnue (site d'atterrissage précisément imagé par la sonde LRO).",
+    "sourceFile": "Lune/Luna/Fiche mission Luna 17 - Hardware perdu dans l_espace.pdf",
+    "pdf": "luna-17.pdf"
+  },
+  {
+    "id": "luna-2",
+    "name": "Luna 2",
+    "body": "moon",
+    "family": "luna-orbiter",
+    "year": 1959,
+    "summary": "~1,9 t d'épaves dispersées à la surface de la Lune dans la région de Palus Putredinis (390,2 kg pour l'impacteur sphérique et ~1 511 kg pour l'étage supérieur Bloc E) · 0 objet actif en 2026 (impact à ~3,3 km/s le 13 septembre 1959) · 1 nuage artificiel de vapeur de sodium dispersé dans l'espace cislunaire.",
+    "sourceFile": "Lune/Luna/Fiche mission Luna 2 - Hardware perdu dans l_espace.pdf",
+    "pdf": "luna-2.pdf"
+  },
+  {
+    "id": "luna-1",
+    "name": "Luna 1",
+    "body": "moon",
+    "family": "luna-orbiter",
+    "year": 1959,
+    "summary": "1 sonde silencieuse depuis le 5 janvier 1959, en orbite héliocentrique · 1 étage supérieur de 1 472 kg (après combustion), devenir non précisé · 2 fanions métalliques aux armes de l'URSS, sort inconnu · 6 types d'instruments à bord, aucun actif · Luna 1 a marqué le début de l'exploration spatiale lointaine : première sonde à atteindre la vitesse de libération, première à passer près de la Lune, première « planète artificielle » du Soleil",
+    "sourceFile": "Lune/Luna/Fiche-mission-Luna-1-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "luna-1.pdf"
+  },
+  {
+    "id": "luna-3",
+    "name": "Luna 3",
+    "body": "moon",
+    "family": "luna-orbiter",
+    "year": 1959,
+    "summary": "sonde de 278,5 kg probablement retombée dans l'atmosphère en 1960 (date incertaine) · 1 étage Blok-E d'échappement (+156,5 kg d'instrumentation), devenir non précisé · 1 système d'imagerie Yenisey-2 (40 vues de film 35 mm) · 29 photos de la face cachée de la Lune, 17 reçues sur Terre · aucun élément récupéré",
+    "sourceFile": "Lune/Luna/Fiche-mission-Luna-3-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "luna-3.pdf"
+  },
+  {
+    "id": "luna-9",
+    "name": "Luna 9",
+    "body": "moon",
+    "family": "luna-lander",
+    "year": 1966,
+    "summary": "1 capsule d'atterrissage de 99 kg posée sur la Lune, silencieuse depuis le 6 février 1966 · 1 caméra de télévision panoramique et 1 détecteur de rayonnement · 1 étage de freinage et des modules latéraux, devenir non précisé · 1 étage Blok-L, devenir non précisé · aucun élément récupéré · première capsule posée en douceur sur la Lune",
+    "sourceFile": "Lune/Luna/Fiche-mission-Luna-9-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "luna-9.pdf"
+  },
+  {
+    "id": "lunokhod-1",
+    "name": "Lunokhod 1 (Luna 17)",
+    "body": "moon",
+    "family": "lunokhod",
+    "year": 1970,
+    "summary": "~1,88 t de matériel laissé sur la Lune (astromobile Lunokhod 1 de 756 kg + étage d'alunissage Ye-8 de ~1 120 kg à vide) • 1 instrument encore actif en 2026 (rétroréflecteur laser franco- soviétique TL-1) • 0 élément récupéré sur Terre (mission robotique sans retour).",
+    "sourceFile": "Lune/Luna/Lunokhod 1 (Luna 17) - Fiche « Plus de détails ».pdf",
+    "pdf": "lunokhod-1.pdf"
+  },
+  {
+    "id": "lunokhod-2",
+    "name": "Lunokhod 2 (Luna 21)",
+    "body": "moon",
+    "family": "lunokhod",
+    "year": 1973,
+    "summary": "~1,96 t de matériel laissé sur la Lune (astromobile Lunokhod 2 de 840 kg + étage d'alunissage Ye-8 de ~1 120 kg à vide) • 1 instrument encore actif en 2026 (rétroréflecteur laser franco- soviétique TL-2) • 0 élément récupéré sur Terre (mission robotique sans retour).",
+    "sourceFile": "Lune/Luna/Lunokhod 2 (Luna 21) - Fiche « Plus de détails ».pdf",
+    "pdf": "lunokhod-2.pdf"
+  },
+  {
+    "id": "surveyor-1",
+    "name": "Surveyor 1",
+    "body": "moon",
+    "family": "surveyor",
+    "year": 1966,
+    "summary": "1 atterrisseur de 294,3 kg resté dans l'Océan des Tempêtes, silencieux depuis janvier 1967 · 1 caméra de télévision et plus de 100 capteurs d'ingénierie · 1 moteur de freinage solide largué en descente · 1 étage Centaur, devenir non précisé · aucun élément récupéré · première sonde américaine posée en douceur sur la Lune",
+    "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-1-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "surveyor-1.pdf"
+  },
+  {
+    "id": "surveyor-2",
+    "name": "Surveyor 2",
+    "body": "moon",
+    "family": "surveyor",
+    "year": 1966,
+    "summary": "1 atterrisseur de ~292 kg écrasé sur la Lune près du cratère Copernic, emplacement exact inconnu · 1 caméra de télévision jamais utilisée en surface · 1 étage Centaur parti en orbite solaire, identifié en 2020 · aucun élément récupéré · échec : un moteur vernier n'a pas démarré, la sonde a tourbillonné jusqu'à l'impact",
+    "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-2-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "surveyor-2.pdf"
+  },
+  {
+    "id": "surveyor-3",
+    "name": "Surveyor 3",
+    "body": "moon",
+    "family": "surveyor",
+    "year": 1967,
+    "summary": "1 atterrisseur de ~302 kg resté dans l'Océan des Tempêtes, silencieux depuis mai 1967 · caméra, pelle, tubes et câble de la sonde rapportés sur Terre par Apollo 12 en novembre 1969 · 1 étage Centaur, devenir non précisé · première sonde à creuser dans le sol d'un autre corps",
+    "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-3-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "surveyor-3.pdf"
+  },
+  {
+    "id": "surveyor-4",
+    "name": "Surveyor 4",
+    "body": "moon",
+    "family": "surveyor",
+    "year": 1967,
+    "summary": "1 atterrisseur de ~283 kg à sec (1 037 kg au lancement) probablement détruit à l'impact dans le Sinus Medii, après la perte du signal ~2,5 min avant le contact · caméra, pelle, jauges et pince magnétique jamais utilisées en surface · 1 étage Centaur, devenir non précisé · aucun élément récupéré · échec : vol vers la Lune sans défaut, silence pendant la descente finale",
+    "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-4-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "surveyor-4.pdf"
+  },
+  {
+    "id": "surveyor-5",
+    "name": "Surveyor 5",
+    "body": "moon",
+    "family": "surveyor",
+    "year": 1967,
+    "summary": "1 atterrisseur de 303 kg resté sur la Lune dans la mer de la Tranquillité, silencieux depuis le 17 décembre 1967 · 1 caméra de télévision, 1 analyseur à diffusion alpha et 1 aimant sur un patin · 1 étage Centaur, devenir non précisé · aucun élément récupéré · première analyse chimique du sol sur place sur un autre monde, malgré une fuite d'hélium en vol",
+    "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-5-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "surveyor-5.pdf"
+  },
+  {
+    "id": "surveyor-6",
+    "name": "Surveyor 6",
+    "body": "moon",
+    "family": "surveyor",
+    "year": 1967,
+    "summary": "1 atterrisseur de 299,6 kg resté sur la Lune dans le Sinus Medii, dernier contact le 14 décembre 1967 · 1 caméra de télévision, 1 analyseur à diffusion alpha et 1 aimant sur un patin · 1 étage Centaur, devenir non précisé · aucun élément récupéré · première sonde à décoller d'un autre corps céleste (« saut » de ~4 m le 17 novembre 1967)",
+    "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-6-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "surveyor-6.pdf"
+  },
+  {
+    "id": "surveyor-7",
+    "name": "Surveyor 7",
+    "body": "moon",
+    "family": "surveyor",
+    "year": 1968,
+    "summary": "1 atterrisseur de ~306 kg resté sur le glacis d'éjectas de Tycho, dernier contact le 21 février 1968 · 1 caméra de télévision, 1 analyseur à diffusion alpha, 1 pelle-griffe et 6 aimants · 1 moteur de freinage solide et 1 radar largués en descente · 1 étage Centaur, devenir non précisé · aucun élément récupéré · dernier atterrisseur du programme Surveyor, seul posé dans les hautes terres lunaires",
+    "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-7-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "surveyor-7.pdf"
+  },
+  {
+    "id": "2001-mars-odyssey",
+    "name": "2001 Mars Odyssey",
+    "body": "mars",
+    "family": "orbiter",
+    "year": 2001,
+    "summary": "~376 kg à sec (~380 kg avec ergols restants) en orbite martienne • 1 sonde toujours active en novembre 2026 (plus de 25 ans autour de Mars, record absolu de longévité autour d'une autre planète) • 2 étages supérieurs en orbite héliocentrique.",
+    "sourceFile": "Mars/Orbiteurs/2001 Mars Odyssey - Fiche « Plus de détails ».pdf",
+    "pdf": "2001-mars-odyssey.pdf"
+  },
+  {
+    "id": "exomars",
+    "name": "ExoMars (TGO & Schiaparelli)",
+    "body": "mars",
+    "family": "orbiter",
+    "year": 2016,
+    "summary": "~4 309 kg au lancement (orbiteur Trace Gas Orbiter de ~3 732 kg + atterrisseur Schiaparelli de 577 kg) • 1 orbiteur toujours très actif en novembre 2026 (plus de 10 ans autour de Mars) • 1 atterrisseur détruit à l'impact sur Meridiani Planum (2016).",
+    "sourceFile": "Mars/Orbiteurs/ExoMars (TGO & Schiaparelli) - Fiche « Plus de détails ».pdf",
+    "pdf": "exomars.pdf"
+  },
+  {
+    "id": "hope",
+    "name": "Hope (Al-Amal)",
+    "body": "mars",
+    "family": "orbiter",
+    "year": 2020,
+    "summary": "~550 kg de masse sèche (~1 350 kg au lancement avec ergols) en orbite martienne haute (20 000 × 43 000 km) • 1 sonde toujours très active en novembre 2026 (mission prolongée jusqu'en 2028) • 1 étage supérieur H-IIA en orbite héliocentrique.",
+    "sourceFile": "Mars/Orbiteurs/Hope (Al-Amal) - Fiche « Plus de détails ».pdf",
+    "pdf": "hope.pdf"
+  },
+  {
+    "id": "mars-express",
+    "name": "Mars Express",
+    "body": "mars",
+    "family": "orbiter",
+    "year": 2003,
+    "summary": "~1 123 kg au lancement (orbiteur de ~1 049 kg + atterrisseur Beagle 2 de 33,2 kg) • 1 sonde toujours active en novembre 2026 (orbiteur en service depuis plus de 23 ans) • 1 atterrisseur posé intact mais inactif sur la surface martienne (Beagle 2).",
+    "sourceFile": "Mars/Orbiteurs/Mars Express - Fiche « Plus de détails ».pdf",
+    "pdf": "mars-express.pdf"
+  },
+  {
+    "id": "mars-reconnaissance-orbiter",
+    "name": "Mars Reconnaissance Orbiter (MRO)",
+    "body": "mars",
+    "family": "orbiter",
+    "year": 2005,
+    "summary": "~1 031 kg à sec (~1 150 kg avec ergols résiduels) en orbite martienne • 1 sonde toujours active en novembre 2026 (plus de 20 ans autour de Mars, principal relais de données et imageur haute résolution) • 1 étage supérieur Centaur en orbite héliocentrique.",
+    "sourceFile": "Mars/Orbiteurs/Mars Reconnaissance Orbiter (MRO) - Fiche « Plus de détails ».pdf",
+    "pdf": "mars-reconnaissance-orbiter.pdf"
+  },
+  {
+    "id": "maven",
+    "name": "MAVEN",
+    "body": "mars",
+    "family": "orbiter",
+    "year": 2013,
+    "summary": "~809 kg à sec (~1,0–1,1 t avec ergols résiduels) en orbite martienne • 0 objet encore actif en novembre 2026 (perte de signal le 6 décembre 2025, fin officielle déclarée le 3 juin 2026 après plus de 11 ans autour de Mars) • 1 étage supérieur Centaur en orbite héliocentrique.",
+    "sourceFile": "Mars/Orbiteurs/MAVEN - Fiche « Plus de détails ».pdf",
+    "pdf": "maven.pdf"
+  },
+  {
+    "id": "tianwen-1",
+    "name": "Tianwen 1 (Orbiteur & Zhurong)",
+    "body": "mars",
+    "family": "zhurong",
+    "year": 2020,
+    "summary": "~3 179 kg au lancement (orbiteur de ~1 300 kg + ensemble d'atterrissage/rover Zhurong de ~1 300 kg + boucliers) • 1 orbiteur toujours actif en novembre 2026 • 1 rover (Zhurong) et 1 atterrisseur intacts mais inactifs sur Utopia Planitia.",
+    "sourceFile": "Mars/Orbiteurs/Tianwen-1 (Orbiteur & Zhurong) - Fiche « Plus de détails ».pdf",
+    "pdf": "tianwen-1.pdf"
+  },
+  {
+    "id": "curiosity",
+    "name": "Curiosity",
+    "body": "mars",
+    "family": "rover-rtg",
+    "year": 2011,
+    "summary": "~2,4 t d'éléments d'atterrissage et de matériel déposés dans le cratère Gale sur Mars · 1 astromobile toujours actif en 2026 (rover Curiosity) · 1 étage en orbite héliocentrique (Centaur) · 1 étage désintégré dans l'atmosphère martienne (étage de croisière).",
+    "sourceFile": "Mars/Surface/Fiche mission Curiosity - Hardware perdu dans l_espace.pdf",
+    "pdf": "curiosity.pdf"
+  },
+  {
+    "id": "mars-pathfinder",
+    "name": "Mars Pathfinder",
+    "body": "mars",
+    "family": "sojourner",
+    "year": 1996,
+    "summary": "1 atterrisseur (264 kg, ~360 kg posé avec airbags) devenu « Carl Sagan Memorial Station » · 1 rover Sojourner (10,5 kg) immobile · aucun objet encore actif · 3 éléments d'entrée (bouclier, coque arrière/parachute, étage de croisière) laissés sur Mars ou détruits · dernier contact le 27 septembre 1997",
+    "sourceFile": "Mars/Surface/Fiche-mission-Mars-Pathfinder-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "mars-pathfinder.pdf"
+  },
+  {
+    "id": "perseverance",
+    "name": "Perseverance",
+    "body": "mars",
+    "family": "rover-rtg",
+    "year": 2020,
+    "summary": "1 rover actif depuis le 18 février 2021 (sol 2 038, 45,25 km parcourus) · 1 hélicoptère Ingenuity inactif depuis janvier 2024 · 10 tubes d'échantillons déposés au dépôt Three Forks · 4 éléments de descente laissés sur Mars ou détruits à l'entrée · aucun retour d'échantillons prévu",
+    "sourceFile": "Mars/Surface/Fiche-mission-Perseverance-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "perseverance.pdf"
+  },
+  {
+    "id": "viking-1",
+    "name": "Viking 1",
+    "body": "mars",
+    "family": "viking",
+    "year": 1975,
+    "summary": "3 530 kg au lancement (orbiteur + atterrisseur) · 1 atterrisseur (572 kg à sec) immobile à Chryse Planitia depuis 1976 · 1 orbiteur (883 kg à sec) probablement encore en orbite autour de Mars · aucun objet actif · bouclier thermique et parachute de position inconnue",
+    "sourceFile": "Mars/Surface/Fiche-mission-Viking-1-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "viking-1.pdf"
+  },
+  {
+    "id": "viking-2",
+    "name": "Viking 2",
+    "body": "mars",
+    "family": "viking",
+    "year": 1975,
+    "summary": "3 530 kg au lancement (orbiteur + atterrisseur) · 1 atterrisseur (572 kg à sec) incliné de 8,2° à Utopia Planitia depuis 1976 · 1 orbiteur (883 kg à sec) coupé en 1978, devenir orbital non précisé · aucun objet actif · bioshield resté attaché à l'orbiteur",
+    "sourceFile": "Mars/Surface/Fiche-mission-Viking-2-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "viking-2.pdf"
+  },
+  {
+    "id": "opportunity",
+    "name": "Opportunity (MER-B)",
+    "body": "mars",
+    "family": "mer",
+    "year": 2003,
+    "summary": "Analyse technique et historique détaillée de l'astromobile Opportunity (MER-B), conçu pour une mission nominale de 90 sols et ayant fonctionné pendant près de 15 ans sur la surface martienne (2004–2018). Ce dossier retrace son architecture matérielle, sa suite d'instruments scientifiques de pointe, ses découvertes géologiques majeures sur Meridiani Planum, ainsi que son héritage technologique inestimable.",
+    "sourceFile": "Mars/Surface/Opportunity (MER-B) — Dossier Technique Complet.pdf",
+    "pdf": "opportunity.pdf"
+  },
+  {
+    "id": "rover-rosalind-franklin",
+    "name": "Rover Rosalind Franklin (ExoMars)",
+    "body": "mars",
+    "family": "exomars",
+    "year": 2028,
+    "summary": "~310 kg pour le rover Rosalind Franklin + plateforme d'atterrissage européenne • En phase finale d'essais au sol en novembre 2026 • Lancement programmé en octobre 2028 (Falcon Heavy) pour un atterrissage prévu le 30 novembre 2030 à Oxia Planum.",
+    "sourceFile": "Mars/Surface/Rover Rosalind Franklin (ExoMars) - Fiche « Plus de détails ».pdf",
+    "pdf": "rover-rosalind-franklin.pdf"
+  },
+  {
+    "id": "rover-zhurong",
+    "name": "Rover Zhurong (Tianwen 1)",
+    "body": "mars",
+    "family": "zhurong",
+    "year": 2020,
+    "summary": "Analyse technique et historique détaillée de la mission Tianwen-1 et de son astromobile Zhurong (CNSA), première incursion réussie de la Chine à la surface de Mars (mai 2021). Ce dossier retrace l'architecture combinée de l'orbiteur et du rover, la suite de 6 instruments scientifiques embarqués, les découvertes géologiques à Utopia Planitia, ainsi que l'état opérationnel de la mission en 2026.",
+    "sourceFile": "Mars/Surface/Rover Zhurong (Tianwen-1) — Dossier Technique Complet.pdf",
+    "pdf": "rover-zhurong.pdf"
+  },
+  {
+    "id": "sojourner",
+    "name": "Sojourner (Mars Pathfinder)",
+    "body": "mars",
+    "family": "sojourner",
+    "year": 1996,
+    "summary": "~274,5 kg de matériel laissé à la surface de Mars (station Pathfinder / Carl Sagan de ~264 kg + astromobile Sojourner de 10,5 kg) • 2 objets intacts mais inactifs à Ares Vallis • 1 étage supérieur en orbite héliocentrique.",
+    "sourceFile": "Mars/Surface/Sojourner (Mars Pathfinder) - Fiche « Plus de détails ».pdf",
+    "pdf": "sojourner.pdf"
+  },
+  {
+    "id": "spirit",
+    "name": "Spirit (MER-A)",
+    "body": "mars",
+    "family": "mer",
+    "year": 2003,
+    "summary": "Analyse technique et historique détaillée de l'astromobile Spirit (MER-A), conçu pour une mission nominale de 90 sols et ayant fonctionné pendant plus de 6 ans dans le cratère Gusev et sur les collines des Columbia Hills (2004–2010). Ce dossier retrace son architecture matérielle, sa suite instrumentale de pointe, ses découvertes volcaniques et hydrothermales, ainsi que son héritage technologique inestimable.",
+    "sourceFile": "Mars/Surface/Spirit (MER-A) — Dossier Technique Complet.pdf",
+    "pdf": "spirit.pdf"
+  },
+  {
+    "id": "bepicolombo",
+    "name": "BepiColombo",
+    "body": "mercury",
+    "family": "orbiter",
+    "year": 2018,
+    "summary": "~4,1 t lancées vers Mercure · 2 orbiteurs scientifiques actifs en novembre 2026 en approche finale de Mercure (MPO et Mio, capture orbitale le 21 novembre 2026) · 2 modules en orbite héliocentrique (module de transfert MTM largué le 3 septembre 2026 et étage supérieur ESC-D d'Ariane 5) · 0 objet de localisation inconnue.",
+    "sourceFile": "Mercure/Fiche mission BepiColombo - Hardware perdu dans l_espace.pdf",
+    "pdf": "bepicolombo.pdf"
+  },
+  {
+    "id": "messenger",
+    "name": "MESSENGER",
+    "body": "mercury",
+    "family": "orbiter",
+    "year": 2004,
+    "summary": "~513 kg d'épave dispersés à la surface de Mercure (impact volontaire dans Suisei Planitia le 30 avril 2015 à 3,91 km/s) · 0 objet actif en 2026 (4 ans et 43 jours d'opérations en orbite mercurienne) · 1 étage en orbite héliocentrique (3e étage Star-48B de la fusée Delta II) · 0 objet de localisation inconnue.",
+    "sourceFile": "Mercure/Fiche mission MESSENGER - Hardware perdu dans l_espace.pdf",
+    "pdf": "messenger.pdf"
+  },
+  {
+    "id": "europa-clipper",
+    "name": "Europa Clipper",
+    "body": "outer",
+    "family": "orbiter",
+    "year": 2024,
+    "summary": "~5,7 t lancées vers Jupiter (plus grande sonde planétaire de la NASA) · 1 sonde spatiale active en novembre 2026 en croisière interplanétaire vers la Terre et Jupiter (arrivée en avril 2030) · 1 étage en orbite héliocentrique (second étage Falcon Heavy) · 0 objet de localisation inconnue.",
+    "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche mission Europa Clipper - Hardware perdu dans l_espace.pdf",
+    "pdf": "europa-clipper.pdf"
+  },
+  {
+    "id": "juice",
+    "name": "JUICE (ESA)",
+    "body": "outer",
+    "family": "orbiter",
+    "year": 2023,
+    "summary": "~6,0 t lancées vers Jupiter (avant-dernier vol d'Ariane 5) · 1 sonde spatiale active en novembre 2026 en croisière interplanétaire vers Jupiter (arrivée en juillet 2031) · 1 étage en orbite héliocentrique (étage supérieur ESC-D d'Ariane 5) · 0 objet de localisation inconnue.",
+    "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche mission JUICE (ESA) - Hardware perdu dans l_espace.pdf",
+    "pdf": "juice.pdf"
+  },
+  {
+    "id": "galileo",
+    "name": "Galileo",
+    "body": "outer",
+    "family": "orbiter",
+    "year": 1989,
+    "summary": "~2 560 kg au lancement (orbiteur + sonde atmosphérique) · 1 orbiteur (1 880 kg à sec) détruit dans l'atmosphère de Jupiter le 21 septembre 2003 · 1 sonde atmosphérique (339 kg) vaporisée en 1995 · aucun objet encore actif · 1 étage IUS d'emplacement inconnu",
+    "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-Galileo-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "galileo.pdf"
+  },
+  {
+    "id": "new-horizons",
+    "name": "New Horizons",
+    "body": "pluto",
+    "family": "orbiter",
+    "year": 2006,
+    "summary": "~401 kg de sonde à sec (478 kg au lancement) · 1 objet encore actif en 2026 (la sonde elle-même, ~66 UA du Soleil) · 7 instruments embarqués · ~30 g de cendres de Clyde Tombaugh à bord · 1 étage Star 48B sur une trajectoire non suivie",
+    "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-New-Horizons-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "new-horizons.pdf"
+  },
+  {
+    "id": "pioneer-10",
+    "name": "Pioneer 10",
+    "body": "outer",
+    "family": "pioneer",
+    "year": 1972,
+    "summary": "~258 kg de sonde au lancement · 1 objet muet depuis le 23 janvier 2003 (dernier signal à ~80 UA) · 11 instruments embarqués, aucun actif · 1 plaque d'or destinée à d'éventuels extraterrestres · 1 étage Star-37E d'emplacement inconnu",
+    "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-Pioneer-10-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "pioneer-10.pdf"
+  },
+  {
+    "id": "pioneer-11",
+    "name": "Pioneer 11",
+    "body": "outer",
+    "family": "pioneer",
+    "year": 1973,
+    "summary": "~258 kg de sonde au lancement · 1 objet muet depuis novembre 1995 (dernières données d'ingénierie le 24 novembre 1995) · 12 instruments embarqués, aucun actif · 1 plaque d'or destinée à d'éventuels extraterrestres · 1 étage Star-37E d'emplacement inconnu",
+    "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-Pioneer-11-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "pioneer-11.pdf"
+  },
+  {
+    "id": "voyager-1",
+    "name": "Voyager 1",
+    "body": "outer",
+    "family": "voyager",
+    "year": 1977,
+    "summary": "~722 kg de sonde en route vers l'espace interstellaire · 2 instruments scientifiques encore actifs en 2026 (magnétomètre, ondes plasma) · 1 disque d'or (« Golden Record ») · 1 étage Centaur en orbite héliocentrique d'emplacement inconnu",
+    "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-Voyager-1-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "voyager-1.pdf"
+  },
+  {
+    "id": "voyager-2",
+    "name": "Voyager 2",
+    "body": "outer",
+    "family": "voyager",
+    "year": 1977,
+    "summary": "~722 kg de sonde en espace interstellaire · 3 instruments scientifiques encore signalés actifs (magnétomètre, ondes plasma, rayons cosmiques) · seule sonde à avoir survolé Uranus et Neptune · 1 disque d'or (« Golden Record ») · 1 étage Centaur d'emplacement inconnu",
+    "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-Voyager-2-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "voyager-2.pdf"
+  },
+  {
+    "id": "cassinihuygens",
+    "name": "Cassini–Huygens",
+    "body": "saturn",
+    "family": "cassini",
+    "year": 1997,
+    "summary": "~5,7 t au lancement (orbiteur, sonde Huygens et carburant) · 1 orbiteur de ~2,1 t détruit dans l'atmosphère de Saturne le 15 septembre 2017 · 1 sonde Huygens (318 kg) posée sur Titan depuis 2005 · aucun objet encore actif · 1 étage Centaur d'emplacement inconnu",
+    "sourceFile": "Planètes gazeuses, naines et espace lointain/Saturne/Fiche-mission-Cassini-Huygens-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "cassinihuygens.pdf"
+  },
+  {
+    "id": "parker-solar-probe",
+    "name": "Parker Solar Probe",
+    "body": "sun",
+    "family": "parker",
+    "year": 2018,
+    "summary": "555 kg de sonde à sec (685 kg au lancement) · 1 objet encore actif en 2026 (la sonde, orbite de ~88 jours autour du Soleil) · 4 suites d'instruments actives · 1 bouclier thermique de 73 kg qui lui survivra des millions d'années · 1 étage Star 48BV d'emplacement inconnu",
+    "sourceFile": "Soleil/Fiche-mission-Parker-Solar-Probe-hardware-perdu-dans-l-espace.pdf",
+    "pdf": "parker-solar-probe.pdf"
+  },
+  {
+    "id": "soho",
+    "name": "SOHO (Solar and Heliospheric Observatory)",
+    "body": "sun",
+    "family": "orbiter",
+    "year": 1995,
+    "summary": "Analyse technique et historique détaillée de l'observatoire solaire et héliosphérique SOHO (ESA / NASA), placé sur une orbite de halo autour du point de Lagrange L1 Terre-Soleil à 1,5 million de kilomètres de la Terre. Conçu initialement pour une mission nominale de deux ans (1996–1998), cet observatoire révolutionnaire de 1 850 kg demeure opérationnel après plus de trois décennies, ayant surmonté une perte totale de contrôle en 1998 et la défaillance de ses gyroscopes, tout en devenant le plus prolifique découvreur de comètes de l'histoire astronomique.",
+    "sourceFile": "Soleil/SOHO (Solar and Heliospheric Observatory) — Dossier Technique Complet.pdf",
+    "pdf": "soho.pdf"
+  },
+  {
+    "id": "stereo",
+    "name": "STEREO (Solar Terrestrial Relations Observatory)",
+    "body": "sun",
+    "family": "orbiter",
+    "year": 2006,
+    "summary": "Analyse technique et historique détaillée de la mission double STEREO (Solar Terrestrial Relations Observatory / NASA), composée de deux sondes spatiales quasi identiques — STEREO- A (Ahead) et STEREO-B (Behind) — lancées simultanément en octobre 2006 sur des orbites héliocentriques dérivantes autour du Soleil. Conçue pour une mission nominale de deux ans afin d'offrir les toutes premières vues stéréoscopiques en 3D des éjections de masse coronale (CME) et de l'atmosphère solaire globale, la mission a révolutionné la météorologie de l'espace. En novembre 2026, STEREO-A demeure pleinement opérationnel après plus de 20 ans d'activité, tandis que STEREO-B est silencieux depuis 2014 suite à une perte de contrôle d'attitude.",
+    "sourceFile": "Soleil/STEREO (Solar Terrestrial Relations Observatory) — Dossier Technique Complet.pdf",
+    "pdf": "stereo.pdf"
+  },
+  {
+    "id": "spoutnik-1",
+    "name": "Spoutnik 1",
+    "body": "earth",
+    "family": "sputnik",
+    "year": 1957,
+    "summary": "83,6 kg mis en orbite basse terrestre (premier satellite artificiel de l'histoire) · 0 objet restant en orbite en 2026 (rentrée atmosphérique du satellite le 4 janvier 1958 après 92 jours et 1 440 révolutions) · 2 objets principaux désintégrés dans l'atmosphère terrestre (satellite PS-1 et étage central de la fusée R-7).",
+    "sourceFile": "Terre/Fiche mission Spoutnik 1 - Hardware perdu dans l_espace.pdf",
+    "pdf": "spoutnik-1.pdf"
+  },
+  {
+    "id": "spoutnik-2",
+    "name": "Spoutnik 2",
+    "body": "earth",
+    "family": "sputnik2",
+    "year": 1957,
+    "summary": "508,3 kg de charge utile scientifique et biologique (solidaire du corps central Blok A de ~7,3 t, soit ~7,8 t au total en orbite terrestre basse) • 0 objet encore en orbite en 2026 (désintégration atmosphérique totale après 162 jours) • 0 élément récupéré sur Terre (mission sans dispositif de retour).",
+    "sourceFile": "Terre/Spoutnik 2 - Fiche « Plus de détails ».pdf",
+    "pdf": "spoutnik-2.pdf"
+  },
+  {
+    "id": "akatsuki",
+    "name": "Akatsuki (Venus Climate Orbiter)",
+    "body": "venus",
+    "family": "orbiter",
+    "year": 2010,
+    "summary": "Analyse complète de la première sonde météorologique japonaise dédiée à Vénus (Akatsuki). Ce dossier retrace la conception initiale, l'échec de l'insertion orbitale en décembre 2010, le sauvetage historique de décembre 2015 via les propulseurs RCS, une décennie d'observations novatrices sur la super-rotation atmosphérique et les ondes de gravité, jusqu'à la clôture officielle de la mission en septembre 2025.",
+    "sourceFile": "Vénus/Akatsuki (Venus Climate Orbiter) - Dossier Technique Complet.pdf",
+    "pdf": "akatsuki.pdf"
+  },
+  {
+    "id": "mariner-2",
+    "name": "Mariner 2",
+    "body": "venus",
+    "family": "orbiter",
+    "year": 1962,
+    "summary": "202,8 kg en orbite héliocentrique (première sonde à avoir survolé avec succès une autre planète) · 0 objet actif en 2026 (dernier contact radio le 3 janvier 1963 à 87,4 millions de km de la Terre) · 2 objets principaux intacts mais silencieux sur orbite solaire (sonde Mariner 2 et étage supérieur Agena B).",
+    "sourceFile": "Vénus/Fiche mission Mariner 2 - Hardware perdu dans l_espace.pdf",
+    "pdf": "mariner-2.pdf"
+  },
+  {
+    "id": "venera-7",
+    "name": "Venera 7",
+    "body": "venus",
+    "family": "venera-early",
+    "year": 1970,
+    "summary": "~495 kg de matériel posé à la surface de Vénus (hémisphère nocturne) · 0 objet actif en 2026 (23 minutes d'émission depuis le sol en décembre 1970) · 1 module orbital désintégré dans l'atmosphère vénusienne · 1 étage en orbite héliocentrique (bloc L de la fusée Molniya-M).",
+    "sourceFile": "Vénus/Fiche mission Venera 7 - Hardware perdu dans l_espace.pdf",
+    "pdf": "venera-7.pdf"
+  },
+  {
+    "id": "venera-8",
+    "name": "Venera 8",
+    "body": "venus",
+    "family": "venera-early",
+    "year": 1972,
+    "summary": "~495 kg de matériel posé sur la face éclairée de Vénus (plaine à l'est de Navka Planitia) · 0 objet actif en 2026 (50 minutes et 11 secondes d'émission continue depuis le sol en juillet 1972) · 1 module orbital désintégré dans l'atmosphère vénusienne · 1 étage en orbite héliocentrique (bloc L de la fusée Molniya- M).",
+    "sourceFile": "Vénus/Fiche mission Venera 8 - Hardware perdu dans l_espace.pdf",
+    "pdf": "venera-8.pdf"
+  },
+  {
+    "id": "pioneer-venus-multiprobe",
+    "name": "Pioneer Venus Multiprobe",
+    "body": "venus",
+    "family": "orbiter",
+    "year": 1978,
+    "summary": "~904 kg de masse totale lancée vers Vénus (bus transporteur + 4 sondes atmosphériques) • 0 objet actif en 2026 • L'ensemble des 5 éléments constitutifs est entré dans l'atmosphère de Vénus le 9 décembre 1978 pour s'y consumer ou s'écraser à la surface.",
+    "sourceFile": "Vénus/Pioneer Venus Multiprobe - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "pioneer-venus-multiprobe.pdf"
+  },
+  {
+    "id": "venera-10",
+    "name": "Venera 10",
+    "body": "venus",
+    "family": "venera",
+    "year": 1975,
+    "summary": "~5 033 kg au lancement total (orbiteur de ~2 230 kg + module d'atterrissage de ~1 560 kg avec boucliers) • 0 objet actif • Second orbiteur de Vénus et atterrisseur ayant transmis des panoramas de surface réussis (25 octobre 1975).",
+    "sourceFile": "Vénus/Venera 10 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-10.pdf"
+  },
+  {
+    "id": "venera-11",
+    "name": "Venera 11",
+    "body": "venus",
+    "family": "venera",
+    "year": 1978,
+    "summary": "~4 711 kg au lancement total (bus de survol de ~3 150 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 25 décembre 1978 sur Vénus avec 95 minutes d'activité de surface.",
+    "sourceFile": "Vénus/Venera 11 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-11.pdf"
+  },
+  {
+    "id": "venera-12",
+    "name": "Venera 12",
+    "body": "venus",
+    "family": "venera",
+    "year": 1978,
+    "summary": "~4 458 kg au lancement total (bus de survol de ~3 150 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 21 décembre 1978 sur Vénus avec un record de 110 minutes d'activité de surface.",
+    "sourceFile": "Vénus/Venera 12 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-12.pdf"
+  },
+  {
+    "id": "venera-13",
+    "name": "Venera 13",
+    "body": "venus",
+    "family": "venera",
+    "year": 1981,
+    "summary": "~4 363 kg au lancement total (bus de survol de ~3 200 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 1er mars 1982 avec un record de 127 minutes d'activité et transmission des premières photographies en couleur de la surface de Vénus.",
+    "sourceFile": "Vénus/Venera 13 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-13.pdf"
+  },
+  {
+    "id": "venera-14",
+    "name": "Venera 14",
+    "body": "venus",
+    "family": "venera",
+    "year": 1981,
+    "summary": "~4 394 kg au lancement total (bus de survol de ~3 200 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 5 mars 1982 dans Phoebe Regio avec 57 minutes d'activité de surface et transmission de panoramas couleur.",
+    "sourceFile": "Vénus/Venera 14 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-14.pdf"
+  },
+  {
+    "id": "venera-3",
+    "name": "Venera 3",
+    "body": "venus",
+    "family": "venera-early",
+    "year": 1965,
+    "summary": "~960 kg de masse totale lancée (bus interplanétaire + module d'atterrissage sphérique de 337 kg) • 0 objet actif • Premier objet fabriqué par l'humanité à atteindre la surface d'une autre planète (impact le 1er mars 1966 sur Vénus).",
+    "sourceFile": "Vénus/Venera 3 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-3.pdf"
+  },
+  {
+    "id": "venera-4",
+    "name": "Venera 4",
+    "body": "venus",
+    "family": "venera-early",
+    "year": 1967,
+    "summary": "~1 106 kg de masse totale lancée (bus interplanétaire + capsule de descente de 383 kg) • 0 objet actif • Premier engin spatial à réussir une analyse in situ de l'atmosphère d'une autre planète (18 octobre 1967).",
+    "sourceFile": "Vénus/Venera 4 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-4.pdf"
+  },
+  {
+    "id": "venera-5",
+    "name": "Venera 5",
+    "body": "venus",
+    "family": "venera-early",
+    "year": 1969,
+    "summary": "~1 130 kg de masse totale lancée (bus interplanétaire + capsule de descente renforcée de 410 kg) • 0 objet actif • A transmis des données atmosphériques approfondies pendant 53 minutes sous parachute jusqu'à ~18 km d'altitude le 16 mai 1969.",
+    "sourceFile": "Vénus/Venera 5 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-5.pdf"
+  },
+  {
+    "id": "venera-6",
+    "name": "Venera 6",
+    "body": "venus",
+    "family": "venera-early",
+    "year": 1969,
+    "summary": "~1 130 kg de masse totale lancée (bus interplanétaire + capsule de descente renforcée de 410 kg) • 0 objet actif • Sœur jumelle de Venera 5, ayant transmis des données atmosphériques approfondies pendant 51 minutes jusqu'à ~10–12 km d'altitude le 17 mai 1969.",
+    "sourceFile": "Vénus/Venera 6 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-6.pdf"
+  },
+  {
+    "id": "venera-9",
+    "name": "Venera 9",
+    "body": "venus",
+    "family": "venera",
+    "year": 1975,
+    "summary": "~4 936 kg au lancement total (orbiteur de ~2 325 kg + module d'atterrissage de ~1 560 kg avec boucliers) • 0 objet actif • Premier orbiteur de Vénus et premier engin à transmettre des images depuis la surface vénusienne (22 octobre 1975).",
+    "sourceFile": "Vénus/Venera 9 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+    "pdf": "venera-9.pdf"
+  }
+]

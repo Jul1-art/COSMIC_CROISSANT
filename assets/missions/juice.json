@@ -1,0 +1,341 @@
+{
+  "id": "juice",
+  "name": "JUICE (ESA)",
+  "body": "outer",
+  "family": "orbiter",
+  "year": 2023,
+  "summary": "~6,0 t lancées vers Jupiter (avant-dernier vol d'Ariane 5) · 1 sonde spatiale active en novembre 2026 en croisière interplanétaire vers Jupiter (arrivée en juillet 2031) · 1 étage en orbite héliocentrique (étage supérieur ESC-D d'Ariane 5) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "JUICE — Jupiter Icy Moons Explorer"
+    ],
+    [
+      "Agence & programme",
+      "ESA (Agence spatiale européenne), avec contributions NASA, JAXA et ISA — Programme Cosmic Vision (mission L1)"
+    ],
+    [
+      "Lancement",
+      "14 avril 2023, 12h14 UTC — Centre spatial guyanais (Kourou, ELA-3), fusée Ariane 5 ECA (VA260)"
+    ],
+    [
+      "Arrivée sur cible",
+      "Juillet 2031 — Insertion en orbite autour de Jupiter (JOI), puis mise en orbite autour de Ganymède en décembre 2034"
+    ],
+    [
+      "Durée de mission",
+      "8 ans de croisière interplanétaire (4 assistances gravitationnelles) + 4 ans d'opérations scientifiques joviennes (2031 – 2035)"
+    ],
+    [
+      "Type de mission",
+      "Mission robotique planétaire (sans équipage) d'étude de Jupiter et de ses trois lunes glacées océaniques (Ganymède, Callisto, Europe)"
+    ],
+    [
+      "Véhicules",
+      "Ariane 5 ECA (VA260) · Étage supérieur cryogénique ESC-D · Sonde spatiale JUICE (Airbus Defence and Space)"
+    ],
+    [
+      "Statut",
+      "✔ Active (novembre 2026) — En transit interplanétaire après son second survol terrestre (septembre 2026), en route vers son dernier survol de la Terre (janvier 2029)"
+    ]
+  ],
+  "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche mission JUICE (ESA) - Hardware perdu dans l_espace.pdf",
+  "pdf": "juice.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION DU SYSTÈME SOLAIRE EXTERNE · CATALOGUE DU PATRIMOINE SPATIAL JUICE (ESA) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~6,0 t lancées vers Jupiter (avant-dernier vol d'Ariane 5) · 1 sonde spatiale active en novembre 2026 en croisière interplanétaire vers Jupiter (arrivée en juillet 2031) · 1 étage en orbite"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "héliocentrique (étage supérieur ESC-D d'Ariane 5) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "JUICE — Jupiter Icy Moons Explorer"
+          ],
+          [
+            "Agence & programme",
+            "ESA (Agence spatiale européenne), avec contributions NASA, JAXA et ISA — Programme Cosmic Vision (mission L1)"
+          ],
+          [
+            "Lancement",
+            "14 avril 2023, 12h14 UTC — Centre spatial guyanais (Kourou, ELA-3), fusée Ariane 5 ECA (VA260)"
+          ],
+          [
+            "Arrivée sur cible",
+            "Juillet 2031 — Insertion en orbite autour de Jupiter (JOI), puis mise en orbite autour de Ganymède en décembre 2034"
+          ],
+          [
+            "Durée de mission",
+            "8 ans de croisière interplanétaire (4 assistances gravitationnelles) + 4 ans d'opérations scientifiques joviennes (2031 – 2035)"
+          ],
+          [
+            "Type de mission",
+            "Mission robotique planétaire (sans équipage) d'étude de Jupiter et de ses trois lunes glacées océaniques (Ganymède, Callisto, Europe)"
+          ],
+          [
+            "Véhicules",
+            "Ariane 5 ECA (VA260) · Étage supérieur cryogénique ESC-D · Sonde spatiale JUICE (Airbus Defence and Space)"
+          ],
+          [
+            "Statut",
+            "✔ Active (novembre 2026) — En transit interplanétaire après son second survol terrestre (septembre 2026), en route vers son dernier survol de la Terre (janvier 2029)"
+          ]
+        ]
+      },
+      {
+        "y": 526.9171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 558.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 591.5733642578125,
+        "type": "text",
+        "text": "A. Sonde spatiale en croisière interplanétaire (~6,0 t au lancement)"
+      },
+      {
+        "y": 612.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde spatiale JUICE (plateforme complète)",
+            "~6 070 kg",
+            "● Toujours actif",
+            "Masse au lancement incluant ~3 650 kg d'ergols chimiques (monométhylhydrazine et MON-3) pour le moteur principal de 425 N, et ~2 420 kg à sec. Protégée contre les radiations intenses de Jupiter par des blindages internes en plomb et tantale et par une isolation thermique multicouche grise."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "JUICE (ESA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Panneaux solaires géants (2 ailes en croix de 5 panneaux)",
+            "~480 kg (inclus)",
+            "● Toujours actif",
+            "Envergure de 27,1 m pour une surface totale de 85 m² (plus grands panneaux solaires jamais déployés sur une mission interplanétaire européenne), conçus pour délivrer ~850 W autour de Jupiter malgré des températures variant de +250 °C (près de Vénus) à −230 °C."
+          ],
+          [
+            "Suite scientifique (10 instruments + radioscience)",
+            "~280 kg (inclus)",
+            "● Toujours actif",
+            "Caméra haute résolution JANUS, spectromètres MAJIS (infrarouge), UVS (ultraviolet) et SWI (submillimétrique), altimètre laser GALA, radar pénétrant RIME (antenne dipôle de 16 m), magnétomètre J- MAG (perche de 10,6 m), particules PEP, ondes plasma RPWI et radioscience 3GM."
+          ],
+          [
+            "Antenne grand gain fixe (2,5 m) & plaque Galilée",
+            "~65 kg (inclus)",
+            "● Toujours actif",
+            "Antenne parabolique fixe en fibre de carbone (bandes X et Ka) faisant également office de bouclier thermique solaire durant les passages dans le Système solaire interne. Porte une plaque commémorative gravée de pages originales du Sidereus Nuncius de Galilée (1610)."
+          ]
+        ]
+      },
+      {
+        "y": 405.5733642578125,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & rentrée atmosphérique"
+      },
+      {
+        "y": 426.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur cryogénique ESC-D (Ariane 5 VA260)",
+            "~4 540 kg (à sec)",
+            "■ Orbite solaire",
+            "Propulsé par un moteur HM7B (hydrogène/oxygène liquides). Après avoir injecté JUICE sur sa trajectoire interplanétaire le 14 avril 2023 (28 min après le décollage), l'étage supérieur a été passivé et circule sur une orbite héliocentrique permanente."
+          ],
+          [
+            "Étage principal cryogénique EPC (H173)",
+            "~14 700 kg (à sec)",
+            "▲ Désintégré",
+            "Propulsé par le moteur Vulcain 2. Largué à haute altitude après 8 min 50 s de vol le 14 avril 2023 ; rentré dans l'atmosphère terrestre et retombé dans l'océan Atlantique."
+          ]
+        ]
+      },
+      {
+        "y": 630.5733642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 652.8369140625,
+        "type": "text",
+        "text": "Aucun retour physique : JUICE est une mission d'exploration lointaine à aller simple. Conformément aux règles internationales de protection planétaire (évitant toute contamination d'Europe), la sonde terminera sa mission fin 2035 par un impact contrôlé à la surface de Ganymède après épuisement de ses ergols."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "JUICE (ESA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 62.8233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique Ariane 5 (17 m) & 2 propulseurs à poudre EAP (P241) : largués durant l'ascension atmosphérique au-dessus de l'océan Atlantique le 14 avril 2023."
+      },
+      {
+        "y": 118.8369140625,
+        "type": "text",
+        "text": "Couvercles de protection des instruments : volets ouverts durant la phase de mise en service en vol (l'antenne radar RIME de 16 m, initialement bloquée par une goupille mécanique, a été entièrement libérée et déployée avec succès le 12 mai 2023)."
+      },
+      {
+        "y": 178.16712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 203.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "14 avril 2023, 12h14 UTC",
+            "Lancement d'Ariane 5 ECA (vol VA260) depuis Kourou ; déploiement des panneaux solaires et de la perche magnétométrique J-MAG, puis libération de l'antenne radar RIME en mai 2023."
+          ],
+          [
+            "19 – 20 août 2024",
+            "Première mondiale : double assistance gravitationnelle Lune-Terre (LEGA), enchaînant un survol de la Lune à 750 km puis de la Terre à 6 840 km pour économiser du carburant."
+          ],
+          [
+            "31 août 2025",
+            "Assistance gravitationnelle autour de Vénus (à ~5 000 km d'altitude), utilisant l'antenne grand gain comme bouclier solaire thermique."
+          ],
+          [
+            "29 septembre 2026",
+            "Second survol d'assistance gravitationnelle de la Terre (EGA-2), recalant la trajectoire de la sonde pour une dernière boucle de 2,3 ans dans le Système solaire interne."
+          ],
+          [
+            "18 janvier 2029",
+            "Troisième et dernier survol de la Terre (EGA-3), propulsant définitivement JUICE vers le système jovien."
+          ],
+          [
+            "Juillet 2031 – novembre 2034",
+            "Insertion en orbite autour de Jupiter (juillet 2031) et réalisation de 35 survols rapprochés des lunes glacées : 2 d'Europe (2032), 21 de Callisto et 12 de Ganymède."
+          ],
+          [
+            "Décembre 2034 – fin 2035",
+            "Insertion en orbite autour de Ganymède (premier satellite artificiel en orbite autour d'une lune autre que la Terre) puis impact contrôlé sur Ganymède en fin de mission."
+          ]
+        ]
+      },
+      {
+        "y": 560.6671142578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 587.5869140625,
+        "type": "text",
+        "text": "Premier orbiteur autour d'une lune glacée : en décembre 2034, JUICE deviendra le premier vaisseau spatial de l'histoire à se placer en orbite autour d'un satellite naturel autre que la Lune terrestre, étudiant pendant neuf mois l'épaisseur de la croûte de glace de Ganymède, son océan souterrain profond et son champ magnétique intrinsèque unique dans le Système solaire."
+      },
+      {
+        "y": 651.3369140625,
+        "type": "text",
+        "text": "Caractérisation comparative des mondes-océans : en combinant l'étude de Ganymède, Callisto et Europe (en complémentarité directe avec la mission américaine Europa Clipper), JUICE établira comment ces réservoirs d'eau liquide souterrains se forment, évoluent et s'ils réunissent les conditions physico-chimiques favorables à l'émergence de la vie."
+      },
+      {
+        "y": 715.8369140625,
+        "type": "text",
+        "text": "Prouesse de navigation interplanétaire (LEGA) : le double survol Lune-Terre d'août 2024 a inauguré une manœuvre orbitale inédite permettant de lancer une sonde lourde de 6 tonnes vers Jupiter avec un lanceur Ariane 5, tout en préservant des réserves d'ergols importantes pour abaisser l'orbite finale autour de Ganymède jusqu'à 200 km d'altitude."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "JUICE (ESA) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 55.8369140625,
+        "type": "text",
+        "text": "Sondage radar profond et spectroscopie haute résolution : le radar pénétrant RIME sondera la glace des lunes galiléennes jusqu'à 9 km de profondeur, tandis que l'imageur hyperspectral français MAJIS cartographiera la composition chimique des glaces, sels et composés organiques à leur surface."
+      },
+      {
+        "y": 130.16712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 157.0869140625,
+        "type": "text",
+        "text": "ESA — JUICE Mission Overview, Launch Kit & Operations Updates (esa.int/JUICE)"
+      },
+      {
+        "y": 175.8369140625,
+        "type": "text",
+        "text": "CNES — Mission JUICE : contributions scientifiques françaises (MAJIS, RIME, RPWI, J-MAG, 3GM) (cnes.fr)"
+      },
+      {
+        "y": 208.8369140625,
+        "type": "text",
+        "text": "Airbus Defence and Space — JUICE Spacecraft Technical Specifications"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "JUICE (ESA) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

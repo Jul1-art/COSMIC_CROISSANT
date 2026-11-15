@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Launch Vehicle Directorate and Centaur Rocket Model",
+      "credit": "NASA / GRC",
+      "date": "1979-05-23T00:00:00Z",
+      "source": "https://images.nasa.gov/details/GRC-1979-C-02339",
+      "nasaId": "GRC-1979-C-02339",
+      "description": "The National Aeronautics and Space Administration (NASA) Lewis Research Center’s Launch Vehicle Directorate in front of a full-scale model of the Centaur second-stage rocket. The photograph was taken to mark Centaur’s fiftieth launch. NASA Lewis managed the Centaur Program since 1962. At that time, the only prior launch attempt ended in failure. Lewis improved the spacecraft and tested it extensively throughout the early 1960s. In May 1966 an Atlas-Centaur sent the Surveyor spacecraft to the moon. It was the first successful soft landing on another planet.     The Launch Vehicles Division was formed in 1969 to handle the increasing number of Centaur launches. The Lewis team became experts at integrating the payload with the Centaur and calculating proper trajectories for the missions.    Centaur’s first 50 missions included Orbiting Astronomical Observatories, the Mariner 6 and 7 flybys of Mars, Mariner 9 which was the first spacecraft to orbit around another planet, the Pioneer 10 and 11 missions to the outer solar system, the Mariner 10 flyby of Venus and Mercury, the Viking 1 and 2 Mars landers, Voyagers 1 and 2 missions to Jupiter, Saturn, Uranus, and Neptune, and the Pioneer 1",
+      "src": "archives/pioneer-10-nasa-GRC-1979-C-02339.jpg"
+    },
+    {
+      "title": "ARC-1973-AC73-9279",
+      "credit": "NASA / ARC",
+      "date": "1973-07-01T00:00:00Z",
+      "source": "https://images.nasa.gov/details/ARC-1973-AC73-9279",
+      "nasaId": "ARC-1973-AC73-9279",
+      "description": "Photograph by Pioneer 10 Ganymede as seen by Pioneer 10",
+      "src": "archives/pioneer-10-nasa-ARC-1973-AC73-9279.jpg"
+    },
+    {
+      "title": "ARC-1972-AC72-2135",
+      "credit": "NASA / ARC",
+      "date": "1972-02-26T00:00:00Z",
+      "source": "https://images.nasa.gov/details/ARC-1972-AC72-2135",
+      "nasaId": "ARC-1972-AC72-2135",
+      "description": "PIONEER F (PIONEER-10) SPACECRAFT AT CAPE KENNEDY BEING READIED FOR MISSION (SHOWS THE POSITION OF THE PIONEER INTERSTALLER PLAQUE)",
+      "src": "archives/pioneer-10-nasa-ARC-1972-AC72-2135.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/pioneer-10.mp4",
+    "local": true,
+    "title": "Pioneer 10 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "pioneer-10.pdf",
+    "fingerprint": "f8078896a784759ad5d3501cbc1d419748723bd0918b7e9b6df9a14569baed67"
+  }
+}

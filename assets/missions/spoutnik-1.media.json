@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "SOVIET SPACEFLIGHT - MISC. - JSC",
+      "credit": "NASA / JSC",
+      "date": "1976-01-01T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S76-22361",
+      "nasaId": "S76-22361",
+      "description": "S76-22361 (June 1975) --- A close-up view of the full-scale mockup of the Sputnik  1 spacecraft on display at the Soviet Pavilion at the Paris Air Show, France.    Photo credit:  NASA or National Aeronautics and Space Administration",
+      "src": "archives/spoutnik-1-nasa-S76-22361.jpg"
+    },
+    {
+      "title": "jsc2012e224533",
+      "credit": "Photographer: Victor Zelentsov",
+      "date": "2012-10-18T00:00:00Z",
+      "source": "https://images.nasa.gov/details/jsc2012e224533",
+      "nasaId": "jsc2012e224533",
+      "description": "Expedition 33/34 Flight Engineer Kevin Ford of NASA (left), Soyuz Commander Oleg Novitskiy (center) and Flight Engineer Evgeny Tarelkin (right) pose for pictures in front of a model of Sputnik 1, the world’s first artificial satellite, in the Korolev Museum at the Baikonur Cosmodrome in Kazakhstan October 18, 2012. The trio completed a final “fit check” dress rehearsal, preparing for launch October 23 in their Soyuz TMA-06M spacecraft from the Cosmodrome for a five-month mission on the International Space Station. NASA/Victor Zelentsov",
+      "src": "archives/spoutnik-1-nasa-jsc2012e224533.jpg"
+    },
+    {
+      "title": "Early Rockets",
+      "credit": "NASA / MSFC",
+      "date": "1958-01-31T00:00:00Z",
+      "source": "https://images.nasa.gov/details/0100074",
+      "nasaId": "0100074",
+      "description": "Launch of Jupiter-C/Explorer 1 at Cape Canaveral, Florida on January 31, 1958. After the Russian Sputnik 1 was launched in October 1957, the launching of an American satellite assumed much greater importance. After the Vanguard rocket exploded on the pad in December 1957, the ability to orbit a satellite became a matter of national prestige. On January 31, 1958, slightly more than four weeks after the launch of Sputnik.The ABMA (Army Ballistic Missile Agency) in Redstone Arsenal, Huntsville, Alabama, in cooperation with the Jet Propulsion Laboratory, launched a Jupiter from Cape Canaveral, Florida. The rocket consisted of a modified version of the Redstone rocket's first stage and two upper stages of clustered Baby Sergeant rockets developed by the Jet Propulsion Laboratory and later designated as Juno boosters for space launches",
+      "src": "archives/spoutnik-1-nasa-0100074.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/spoutnik-1.mp4",
+    "local": true,
+    "title": "Spoutnik 1 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "spoutnik-1.pdf",
+    "fingerprint": "e501a32980d9d64ca6e1ec04fba584f7a27289f35627ff14b2ce00b9b646acfa"
+  }
+}

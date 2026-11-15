@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Luna 9 Musee du Bourget P1010505",
+      "description": "Mockup of the Lunar 9 soviet satellit (1966), Museum of Air and Space Paris, Le Bourget (France)",
+      "credit": "Pline",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Luna_9_Musee_du_Bourget_P1010505.JPG",
+      "src": "archives/luna-9-commons.JPG",
+      "date": "2009-02",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-9.mp4",
+    "local": true,
+    "title": "Luna 9 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-9.pdf",
+    "fingerprint": "a622d0b45adeaf14b56c9d7d575c4c81ac620db9f08f7571b3c2d5781843de63"
+  }
+}

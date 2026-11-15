@@ -1,0 +1,350 @@
+{
+  "id": "soho",
+  "name": "SOHO (Solar and Heliospheric Observatory)",
+  "body": "sun",
+  "family": "orbiter",
+  "year": 1995,
+  "summary": "Analyse technique et historique détaillée de l'observatoire solaire et héliosphérique SOHO (ESA / NASA), placé sur une orbite de halo autour du point de Lagrange L1 Terre-Soleil à 1,5 million de kilomètres de la Terre. Conçu initialement pour une mission nominale de deux ans (1996–1998), cet observatoire révolutionnaire de 1 850 kg demeure opérationnel après plus de trois décennies, ayant surmonté une perte totale de contrôle en 1998 et la défaillance de ses gyroscopes, tout en devenant le plus prolifique découvreur de comètes de l'histoire astronomique.",
+  "facts": [
+    [
+      "Nom officiel & international",
+      "Solar and Heliospheric Observatory (SOHO — COSPAR 1995-065A / SATCAT 23726)"
+    ],
+    [
+      "Agences & maîtrise d'œuvre",
+      "Coopération ESA (maîtrise d'œuvre industrielle Matra Marconi Space, France) et NASA (lancement, opérations au GSFC et réseau DSN)"
+    ],
+    [
+      "Lancement & Site",
+      "2 décembre 1995, 08:08:01 UTC — Complexe de lancement LC-36B, Cape Canaveral Air Station, Floride"
+    ],
+    [
+      "Lanceur",
+      "Fusée Atlas IIAS (configuration AC-121 avec 4 propulseurs d'appoint à poudre Castor 4A et étage supérieur Centaur IIA)"
+    ],
+    [
+      "Masse au lancement & charge utile",
+      "1 850 kg au lancement (dont ~250 kg d'ergols hydrazine et 610 kg d'instruments scientifiques) ; masse sèche ~1 350 kg"
+    ],
+    [
+      "Orbite opérationnelle",
+      "Orbite de halo quasi-périodique autour du point de Lagrange L1 Soleil-Terre (~1,5 million de km vers le Soleil, période ~178 jours)"
+    ],
+    [
+      "Statut de la mission (2026)",
+      "Observatoire toujours actif et opérationnel en orbite L1 (plus de 30 ans d'observations continues, piloté sans gyroscopes depuis 1999)."
+    ]
+  ],
+  "sourceFile": "Soleil/SOHO (Solar and Heliospheric Observatory) — Dossier Technique Complet.pdf",
+  "pdf": "soho.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.84381103515625,
+        "type": "text",
+        "text": "DOSSIER TECHNIQUE APPROFONDI — PROGRAMME D'EXPLORATION HÉLIOPHYSIQUE ESA / NASA SOHO (Solar and Heliospheric Observatory) — Dossier Technique Complet"
+      },
+      {
+        "y": 142.98788452148438,
+        "type": "text",
+        "text": "Synthèse exhaustive : Analyse technique et historique détaillée de l'observatoire solaire et héliosphérique SOHO (ESA / NASA), placé sur une orbite de halo autour du point de Lagrange L1 Terre-Soleil à 1,5 million de kilomètres de la Terre. Conçu initialement pour une mission nominale de deux ans (1996–1998), cet observatoire révolutionnaire de 1 850 kg demeure opérationnel après plus de trois décennies, ayant surmonté une perte totale de contrôle en 1998 et la défaillance de ses gyroscopes, tout en devenant le plus prolifique découvreur de comètes de l'histoire astronomique."
+      },
+      {
+        "y": 243.416015625,
+        "type": "text",
+        "text": "1. Identité institutionnelle & Paramètres de la mission"
+      },
+      {
+        "y": 267.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Caractéristique",
+            "Spécification technique"
+          ],
+          [
+            "Nom officiel & international",
+            "Solar and Heliospheric Observatory (SOHO — COSPAR 1995-065A / SATCAT 23726)"
+          ],
+          [
+            "Agences & maîtrise d'œuvre",
+            "Coopération ESA (maîtrise d'œuvre industrielle Matra Marconi Space, France) et NASA (lancement, opérations au GSFC et réseau DSN)"
+          ],
+          [
+            "Lancement & Site",
+            "2 décembre 1995, 08:08:01 UTC — Complexe de lancement LC-36B, Cape Canaveral Air Station, Floride"
+          ],
+          [
+            "Lanceur",
+            "Fusée Atlas IIAS (configuration AC-121 avec 4 propulseurs d'appoint à poudre Castor 4A et étage supérieur Centaur IIA)"
+          ],
+          [
+            "Masse au lancement & charge utile",
+            "1 850 kg au lancement (dont ~250 kg d'ergols hydrazine et 610 kg d'instruments scientifiques) ; masse sèche ~1 350 kg"
+          ],
+          [
+            "Orbite opérationnelle",
+            "Orbite de halo quasi-périodique autour du point de Lagrange L1 Soleil-Terre (~1,5 million de km vers le Soleil, période ~178 jours)"
+          ],
+          [
+            "Statut de la mission (2026)",
+            "Observatoire toujours actif et opérationnel en orbite L1 (plus de 30 ans d'observations continues, piloté sans gyroscopes depuis 1999)."
+          ]
+        ]
+      },
+      {
+        "y": 527.666015625,
+        "type": "text",
+        "text": "2. Inventaire exhaustif du Hardware & Instruments scientifiques"
+      },
+      {
+        "y": 557.679931640625,
+        "type": "text",
+        "text": "Légende des états : actif en orbite L1 inactif / hors service détruit / rentré orbite héliocentrique"
+      },
+      {
+        "y": 586.020263671875,
+        "type": "text",
+        "text": "A. Plateforme spatiale & Suite complète des 12 instruments scientifiques (Orbite L1)"
+      },
+      {
+        "y": 604.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Plateforme SOHO (Bus & Avionique)",
+            "~1 240 kg",
+            "Actif (L1)",
+            "Structure modulaire (4,3 m × 2,7 m × 3,7 m, envergure 9,5 m avec panneaux solaires fournissant 1 400 W). Stabilisé sur 3 axes par roues à réaction et propulseurs à hydrazine ; contrôle d'attitude sans gyroscope depuis 1999."
+          ],
+          [
+            "LASCO (Large Angle and Spectrometric Coronagraph)",
+            "68,0 kg",
+            "Actif (C2/C3)",
+            "Ensemble de trois coronographes (C1, C2, C3) occultant le disque solaire pour imager la couronne de 1,1 à 32 rayons solaires. Détecte les éjections de masse coronale (CME) et a permis la découverte de plus de 5 000 comètes. (C1 perdu en 1998)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "EIT (Extreme ultraviolet Imaging Telescope)",
+            "21,0 kg",
+            "Actif (L1)",
+            "Télescope à incidence normale observant l'atmosphère solaire complète dans quatre longueurs d'onde EUV (17,1 ; 19,5 ; 28,4 et 30,4 nm) entre 60 000 K et 3 millions de kelvins."
+          ],
+          [
+            "MDI (Michelson Doppler Imager)",
+            "57,0 kg",
+            "Inactif (2011)",
+            "Instrument d'héliosismologie mesurant les oscillations de vitesse, l'intensité et le champ magnétique de la photosphère solaire (remplacé fonctionnellement par SDO/HMI en avril 2011)."
+          ],
+          [
+            "SUMER (Solar Ultraviolet Measurements of Emitted Radiation)",
+            "88,0 kg",
+            "Inactif (2017)",
+            "Spectromètre ultraviolet haute résolution (50 à 161 nm) étudiant la dynamique des plasmas, les températures et les vitesses d'écoulement dans la chromosphère et la basse couronne."
+          ],
+          [
+            "CDS (Coronal Diagnostic Spectrometer)",
+            "99,0 kg",
+            "Inactif (2014)",
+            "Spectromètre double (incidence normale et rasante, 15 à 80 nm) mesurant la densité, la température et les abondances chimiques du plasma coronal solaire."
+          ],
+          [
+            "UVCS (Ultraviolet Coronagraph Spectrometer)",
+            "115,0 kg",
+            "Inactif (2013)",
+            "Coronographe spectroscopique UV sondant la couronne étendue (1,2 à 10 rayons solaires) pour identifier les mécanismes d'accélération du vent solaire rapide et lent."
+          ],
+          [
+            "CELIAS (Charge, Element, and Isotope Analysis System)",
+            "29,0 kg",
+            "Actif (L1)",
+            "Ensemble de spectromètres de masse et capteurs de particules (dont le moniteur de protons MTOF/PM) mesurant en continu la composition ionique et isotopique du vent solaire in situ."
+          ],
+          [
+            "COSTEP & ERNE (Suprathermal & Energetic Particles)",
+            "34,0 kg",
+            "Actif (L1)",
+            "Deux ensembles de détecteurs à semi-conducteurs et scintillateurs analysant les électrons, protons et noyaux lourds (de H à Ni) accélérés lors des éruptions solaires (de 40 keV à 500 MeV/nucléon)."
+          ],
+          [
+            "SWAN (Solar Wind Anisotropies)",
+            "13,0 kg",
+            "Actif (L1)",
+            "Photomètre Lyman-alpha cartographiant la distribution globale du vent solaire à travers toute l'héliosphère par l'observation de l'hydrogène neutre interstellaire."
+          ],
+          [
+            "GOLF & VIRGO (Héliosismologie globale & Irradiance)",
+            "44,0 kg",
+            "Actif (L1)",
+            "GOLF (spectrophotomètre à résonance sodium) mesure les oscillations globales à basse fréquence du cœur solaire ; VIRGO mesure l'irradiance solaire totale (constante solaire) et spectrale."
+          ]
+        ]
+      },
+      {
+        "y": 583.020263671875,
+        "type": "text",
+        "text": "B. Éléments du lanceur & Hardware largué en vol"
+      },
+      {
+        "y": 601.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails & Localisation"
+          ],
+          [
+            "Étage supérieur Centaur IIA (AC-121)",
+            "~2 000 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage cryogénique LH2/LOX ayant injecté SOHO depuis son orbite parking vers la trajectoire de transfert L1 le 2 décembre 1995 ; placé sur une orbite solaire stable après séparation."
+          ],
+          [
+            "4 Propulseurs Castor 4A, booster Atlas & coiffe",
+            "~16 500 kg (à vide)",
+            "Détruits / retombés",
+            "Éléments largués durant l'ascension atmosphérique depuis Cape Canaveral, retombés dans l'océan Atlantique ou consumés lors de la rentrée atmosphérique."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 62.666015625,
+        "type": "text",
+        "text": "3. Chronologie détaillée & Péripéties opérationnelles"
+      },
+      {
+        "y": 86.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement & Contexte analytique"
+          ],
+          [
+            "2 déc. 1995",
+            "Lancement nominal depuis Cape Canaveral par une fusée Atlas IIAS. Injection réussie sur une trajectoire de transfert de quatre mois vers le point de Lagrange L1."
+          ],
+          [
+            "14 fév. 1996",
+            "Insertion précise sur l'orbite de halo autour du point L1, six semaines plus tôt que prévu grâce à la précision exceptionnelle du lanceur Atlas IIAS, économisant d'importantes réserves d'ergols."
+          ],
+          [
+            "25 juin 1998",
+            "Perte critique de contrôle : lors d'une manœuvre de calibration gyroscopique de routine, une erreur de commande logicielle provoque la mise en rotation incontrôlée de SOHO. Les panneaux solaires perdent l'orientation vers le Soleil, vidant les batteries et coupant tout contact radio."
+          ],
+          [
+            "23 juil. – 3 août 1998",
+            "Sauvetage spatial historique : le radiotélescope géant d'Arecibo (Porto Rico) localise SOHO par écho radar (tournant à 1 tour/min). À mesure que l'orbite fait progressivement face aux panneaux solaires au Soleil, le signal radio est recapté le 3 août."
+          ],
+          [
+            "16 sept. 1998",
+            "Après des semaines de dégel progressif des réservoirs d'hydrazine et d'ajustement d'attitude, SOHO retrouve sa stabilisation nominale sur 3 axes et reprend ses observations scientifiques."
+          ],
+          [
+            "21 déc. 1998 – fév. 1999",
+            "Défaillance successive des trois gyroscopes embarqués (fatigués par le gel extrême de l'été 1998). Les ingénieurs de l'ESA et de la NASA développent un logiciel inédit de stabilisation sans gyroscope utilisant les roues à réaction et les senseurs stellaires/solaires, faisant de SOHO le premier satellite 3-axes opéré sans gyroscopes."
+          ],
+          [
+            "2000 – 2026",
+            "Extensions successives de la mission sur plus de trois cycles solaires complets (cycles 23, 24 et 25). En mars 2024, LASCO valide la découverte de la 5 000e comète de la mission. Toujours pleinement opérationnel en novembre 2026."
+          ]
+        ]
+      },
+      {
+        "y": 445.916015625,
+        "type": "text",
+        "text": "4. Apports scientifiques fondamentaux & Héliophysique"
+      },
+      {
+        "y": 469.9878845214844,
+        "type": "text",
+        "text": "Grâce à son positionnement privilégié au point de Lagrange L1, qui lui assure une vue ininterrompue du Soleil 24 heures sur 24 sans éclipse terrestre, SOHO a fondamentalement transformé la physique solaire moderne. Avant SOHO, notre connaissance de l'intérieur du Soleil reposait essentiellement sur des modèles théoriques ; grâce aux instruments d'héliosismologie MDI, GOLF et VIRGO, les astrophysiciens ont pu cartographier les flux de plasma sous la photosphère, mesurant la rotation différentielle interne et détectant les régions actives sur la face cachée du Soleil avant même qu'elles ne pivotent vers la Terre."
+      },
+      {
+        "y": 561.4878540039062,
+        "type": "text",
+        "text": "Dans le domaine de la météorologie de l'espace, le tandem formé par le télescope ultraviolet EIT et les coronographes LASCO a révolutionné la prévision des tempêtes géomagnétiques. En observant directement les éjections de masse coronale (CME) dirigées vers la Terre (« halo CME »), SOHO permet d'alerter les opérateurs de satellites, les réseaux électriques et les équipages spatiaux un à trois jours avant l'arrivée des nuages de plasma magnétisé. Par ailleurs, UVCS a identifié les zones d'origine du vent solaire rapide dans les trous coronaux polaires, apportant des éléments décisifs au problème du chauffage de la couronne solaire à plusieurs millions de degrés."
+      },
+      {
+        "y": 653.666015625,
+        "type": "text",
+        "text": "5. Le chasseur de comètes le plus prolifique de l'histoire"
+      },
+      {
+        "y": 676.9878540039062,
+        "type": "text",
+        "text": "Bien que SOHO n'ait jamais été conçu comme un observatoire cométaire, le large champ de vision et la haute sensibilité de ses coronographes LASCO C2 et C3 en ont fait un outil sans égal pour observer les comètes rasantes (« sungrazers »), en particulier celles du groupe de Kreutz qui frôlent ou plongent dans l'atmosphère solaire. Grâce au programme de science participative ouvert aux astronomes amateurs du monde entier analysant les images en temps réel, SOHO a franchi le cap historique des 5 000 comètes découvertes en mars 2024, représentant plus de la moitié de toutes les comètes connues dans l'histoire de l'humanité."
+      }
+    ],
+    [
+      {
+        "y": 62.666015625,
+        "type": "text",
+        "text": "6. Épreuves d'ingénierie & Résilience opérationnelle"
+      },
+      {
+        "y": 86.73788452148438,
+        "type": "text",
+        "text": "La survie et la longévité exceptionnelle de SOHO constituent l'une des plus remarquables démonstrations d'ingénierie spatiale de sauvetage en vol. Lors de la perte d'attitude de juin 1998, la température interne de l'observatoire a chuté jusqu'à −120 °C, gelant intégralement les canalisations d'hydrazine et dégradant les gyroscopes. La récupération méthodique de l'engin par les équipes conjointes ESA/NASA à Greenbelt (GSFC), suivie de la mise au point d'un algorithme de contrôle d'attitude entièrement affranchi des gyroscopes en février 1999, a non seulement sauvé la mission mais établi des protocoles de résilience adoptés par les générations ultérieures de sondes spatiales."
+      },
+      {
+        "y": 192.416015625,
+        "type": "text",
+        "text": "7. Sources & Références bibliographiques"
+      },
+      {
+        "y": 214.91773986816406,
+        "type": "text",
+        "text": "V. Domingo, B. Fleck & A. I. Poland, The SOHO Mission: An Overview, Solar Physics, vol. 162, pp. 1–37, 1995."
+      },
+      {
+        "y": 244.98788452148438,
+        "type": "text",
+        "text": "ESA Science & Technology — SOHO (Solar and Heliospheric Observatory) Official Mission Portal (sci.esa.int/soho)"
+      },
+      {
+        "y": 274.2378845214844,
+        "type": "text",
+        "text": "NASA Goddard Space Flight Center — SOHO Mission Operations & Recovery Report (soho.nascom.nasa.gov)"
+      },
+      {
+        "y": 289.9878845214844,
+        "type": "text",
+        "text": "B. Fleck, V. Domingo & A. I. Poland (Eds.), The SOHO Mission, Kluwer Academic Publishers, 1995."
+      },
+      {
+        "y": 305.7378845214844,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche technique SOHO (ID : 1995-065A)."
+      },
+      {
+        "y": 332.1371154785156,
+        "type": "text",
+        "text": "Référence du dossier : ESA-NASA-SOHO-L1-FULL-REPORT-2026 • Document généré conformément au cahier des charges de la carte 3D du patrimoine spatial."
+      }
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Cut-away model of a Soviet Venera 12 lander",
+      "description": "A life-size, cut-away model of a Venera type Venus lander on display in one of the pavilions of the Exhibition of Achievements of the National Economy.",
+      "credit": "Don S. Montgomery, U.S. Navy (Ret.)",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Cut-away_model_of_a_Soviet_Venera_12_lander.jpg",
+      "src": "archives/venera-12-commons.jpg",
+      "date": "1985-09-18",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-12.mp4",
+    "local": true,
+    "title": "Venera 12 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-12.pdf",
+    "fingerprint": "ec707b33c3bb8a56ae2028671cc2459e3e5c0bcc4aa94ac01a49d91963bcf761"
+  }
+}

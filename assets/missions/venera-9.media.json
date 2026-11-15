@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Venera 9 Space Probe 01",
+      "description": "Replica of Venera 9 space probe on display at the K. E. Tsiolkovsky Museum of the History of Cosmonautics",
+      "credit": "Stolbovsky",
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Venera_9_Space_Probe_01.jpg",
+      "src": "archives/venera-9-commons.jpg",
+      "date": "2022-05-05 15:11:58",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-9.mp4",
+    "local": true,
+    "title": "Venera 9 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-9.pdf",
+    "fingerprint": "f294ec51cc1daa6cbbf8d1d5444b253aff57b9161f43c27ab4121e95038cf3e4"
+  }
+}

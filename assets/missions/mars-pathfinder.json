@@ -1,0 +1,449 @@
+{
+  "id": "mars-pathfinder",
+  "name": "Mars Pathfinder",
+  "body": "mars",
+  "family": "sojourner",
+  "year": 1996,
+  "summary": "1 atterrisseur (264 kg, ~360 kg posé avec airbags) devenu « Carl Sagan Memorial Station » · 1 rover Sojourner (10,5 kg) immobile · aucun objet encore actif · 3 éléments d'entrée (bouclier, coque arrière/parachute, étage de croisière) laissés sur Mars ou détruits · dernier contact le 27 septembre 1997",
+  "facts": [
+    [
+      "Nom officiel",
+      "Mars Pathfinder — atterrisseur renommé Carl Sagan Memorial Station ; rover Sojourner"
+    ],
+    [
+      "Agence & programme",
+      "NASA / Jet Propulsion Laboratory — programme Discovery"
+    ],
+    [
+      "Lancement",
+      "4 décembre 1996, 06h58 UTC — Cape Canaveral, fusée Delta II"
+    ],
+    [
+      "Atterrissage",
+      "4 juillet 1997, ~16h57 UTC — Ares Vallis (19,33° N, 33,55° O) ; entrée directe sans mise en orbite préalable"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — l'atterrisseur et le rover sont restés sur Mars"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le JPL (Californie)"
+    ],
+    [
+      "Véhicules",
+      "Delta II · étage de croisière · capsule d'entrée (bouclier + coque arrière) · atterrisseur à airbags · rover Sojourner"
+    ],
+    [
+      "Statut",
+      "Réussie — premier rover roulant sur Mars et validation de l'atterrissage par airbags ; contact perdu le 27 septembre 1997"
+    ]
+  ],
+  "sourceFile": "Mars/Surface/Fiche-mission-Mars-Pathfinder-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "mars-pathfinder.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Mars Pathfinder — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 atterrisseur (264 kg, ~360 kg posé avec airbags) devenu « Carl Sagan Memorial Station » · 1 rover Sojourner (10,5 kg) immobile · aucun objet encore actif · 3 éléments d'entrée (bouclier, coque arrière/parachute, étage de croisière) laissés sur Mars ou détruits · dernier contact le 27 septembre 1997"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Mars Pathfinder — atterrisseur renommé Carl Sagan Memorial Station ; rover Sojourner"
+          ],
+          [
+            "Agence & programme",
+            "NASA / Jet Propulsion Laboratory — programme Discovery"
+          ],
+          [
+            "Lancement",
+            "4 décembre 1996, 06h58 UTC — Cape Canaveral, fusée Delta II"
+          ],
+          [
+            "Atterrissage",
+            "4 juillet 1997, ~16h57 UTC — Ares Vallis (19,33° N, 33,55° O) ; entrée directe sans mise en orbite préalable"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — l'atterrisseur et le rover sont restés sur Mars"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le JPL (Californie)"
+          ],
+          [
+            "Véhicules",
+            "Delta II · étage de croisière · capsule d'entrée (bouclier + coque arrière) · atterrisseur à airbags · rover Sojourner"
+          ],
+          [
+            "Statut",
+            "Réussie — premier rover roulant sur Mars et validation de l'atterrissage par airbags ; contact perdu le 27 septembre 1997"
+          ]
+        ]
+      },
+      {
+        "y": 441.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 466.2606201171875,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 494.5969543457031,
+        "type": "text",
+        "text": "A. Surface de Mars — Ares Vallis"
+      },
+      {
+        "y": 512.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Pathfinder (Carl Sagan Memorial Station)",
+            "264 kg (~360 kg posé avec airbags)",
+            "",
+            "Ouvert en pétales pour exposer ses trois panneaux solaires triangulaires. Dernière communication le 27 septembre 1997, pour des raisons inconnues"
+          ],
+          [
+            "Rover Sojourner",
+            "10,5 kg",
+            "",
+            "Six roues, piloté depuis la Terre avec un décalage de ~10 min. Descendu sur le sol le 6 juillet 1997 vers 05h40 UTC ; devait rouler à ~10 m de l'atterrisseur pendant 7 sols"
+          ],
+          [
+            "Imageur IMP, APXS, station météo ASI/MET",
+            "—",
+            "",
+            "Caméra stéréo de l'atterrisseur, spectromètre de composition des roches sur le rover, mesures de l'atmosphère et de la météo"
+          ],
+          [
+            "Airbags",
+            "—",
+            "",
+            "Dégonflés et rétractés autour de l'atterrisseur après l'atterrissage ; ils l'ont protégé pendant ~15 rebonds"
+          ],
+          [
+            "Coque arrière, parachute et fusées de freinage",
+            "—",
+            "",
+            "Largués juste avant l'impact (câble coupé avant la fin de la poussée) ; reposent à quelque distance de l'atterrisseur ; position exacte non confirmée dans mes sources"
+          ],
+          [
+            "Bouclier thermique",
+            "—",
+            "",
+            "Éjecté ~20 s après l'ouverture du parachute ; tombé sur Mars, position exacte non confirmée"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques — état connu au 13 novembre 2026"
+      },
+      {
+        "y": 72.35435485839844,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "IMP (Imager for Mars Pathfinder)",
+            "Caméra stéréo",
+            "",
+            "Images du site, du ciel et des rochers environnants ; hors service depuis 1997"
+          ],
+          [
+            "APXS (Alpha Proton X-ray Spectrometer)",
+            "Spectromètre",
+            "",
+            "Embarqué sur Sojourner ; composition chimique des roches et du sol"
+          ],
+          [
+            "ASI/MET",
+            "Atmosphère et météo",
+            "",
+            "Pression, température et vent mesurés pendant la descente et au sol"
+          ],
+          [
+            "Caméras du rover",
+            "Imagerie",
+            "",
+            "Images du terrain et du rover pour le pilotage depuis la Terre"
+          ]
+        ]
+      },
+      {
+        "y": 230.79693603515625,
+        "type": "text",
+        "text": "C. Étages de lancement et de croisière"
+      },
+      {
+        "y": 249.15435791015625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de croisière",
+            "n.c.",
+            "",
+            "Séparé ~30 min avant l'entrée atmosphérique ; désintégré dans l'atmosphère de Mars"
+          ],
+          [
+            "3e étage du Delta II",
+            "n.c.",
+            "",
+            "Après l'injection vers Mars, séparé de la sonde ; trajectoire non suivie précisément"
+          ]
+        ]
+      },
+      {
+        "y": 344.79693603515625,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 362.0043640136719,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Pathfinder n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 379.0043640136719,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : environ 16 500 images de l'atterrisseur, 550 images du rover, des analyses chimiques de roches et des millions de mesures météo"
+      },
+      {
+        "y": 410.0043640136719,
+        "type": "text",
+        "text": "• Le site d'atterrissage a été nommé en hommage à Carl Sagan"
+      },
+      {
+        "y": 437.79693603515625,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 455.0043640136719,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension du Delta II"
+      },
+      {
+        "y": 472.0043640136719,
+        "type": "text",
+        "text": "• Bouclier thermique, puis coque arrière et parachute, éjectés pendant la descente (voir C et la séquence ci-dessous)"
+      },
+      {
+        "y": 523.11767578125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 545.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "4 décembre 1996, 06h58 UTC",
+            "Lancement du Delta II depuis Cape Canaveral"
+          ],
+          [
+            "4 juillet 1997",
+            "Atterrissage à Ares Vallis (voir la séquence ci-dessous)"
+          ],
+          [
+            "6 juillet 1997, ~05h40 UTC",
+            "Sojourner descend la rampe et roule sur le sol martien"
+          ],
+          [
+            "Juillet–septembre 1997",
+            "Mission étendue bien au-delà des 30 sols prévus"
+          ],
+          [
+            "27 septembre 1997",
+            "Dernière communication avec l'atterrisseur, pour des raisons inconnues"
+          ]
+        ]
+      },
+      {
+        "y": 690.7969360351562,
+        "type": "text",
+        "text": "Séquence d'atterrissage — 4 juillet 1997"
+      },
+      {
+        "y": 711.4605712890625,
+        "type": "text",
+        "text": "Heures sur Mars (événements), UTC ; le signal arrive sur Terre ~10 min plus tard. T = entrée atmosphérique (~16h52 UTC)."
+      },
+      {
+        "y": 741.1543579101562,
+        "type": "table",
+        "rows": [
+          [
+            "Temps",
+            "Étape",
+            "Détails et matériel laissé"
+          ],
+          [
+            "T − 30 min",
+            "Séparation de l'étage de croisière",
+            "Le bouclier et la capsule se séparent de l'étage de croisière, qui se désintègre dans l'atmosphère"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Temps",
+            "Étape",
+            "Détails et matériel laissé"
+          ],
+          [
+            "T + 0",
+            "Entrée atmosphérique",
+            "Vitesse ~26 460 km/h, sans mise en orbite préalable"
+          ],
+          [
+            "T + ~70 s",
+            "Décélération maximale",
+            "~20 g"
+          ],
+          [
+            "T + 135–190 s",
+            "Ouverture du parachute",
+            "À 6–10 km d'altitude"
+          ],
+          [
+            "+ ~20 s",
+            "Séparation du bouclier thermique",
+            "Le bouclier tombe sur Mars"
+          ],
+          [
+            "+ ~20 s",
+            "Descente de l'atterrisseur sur câble",
+            "Il est descendu de la coque arrière au bout d'un câble de 20 m"
+          ],
+          [
+            "~1,5 km",
+            "Radar altimétrique",
+            "Début de la mesure de la distance au sol"
+          ],
+          [
+            "− 8 s",
+            "Gonflage des airbags",
+            "L'atterrisseur est enveloppé par les airbags"
+          ],
+          [
+            "− 4 s",
+            "Fusées de freinage (~2,2 s)",
+            "Le câble est coupé pour dégager la coque arrière et le parachute"
+          ],
+          [
+            "~16h57 UTC",
+            "Impact et rebonds",
+            "Chute libre jusqu'à ~30 m ; impact à ~18 m/s ; rebonds jusqu'à ~15 m de haut, environ 15 rebonds, puis roulement jusqu'à l'arrêt ~2,5 min plus tard, à ~1 km du premier point d'impact"
+          ],
+          [
+            "Quelques heures",
+            "Dégonflage et ouverture des pétales",
+            "Airbags rétractés, pétales dépliés ; émetteur coupé temporairement pour économiser l'énergie"
+          ]
+        ]
+      },
+      {
+        "y": 340.3176574707031,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 361.80438232421875,
+        "type": "text",
+        "text": "• Premier rover roulant sur Mars : Sojourner, un véhicule de ~10 kg, a analysé des roches et du sol autour de l'atterrisseur."
+      },
+      {
+        "y": 392.80438232421875,
+        "type": "text",
+        "text": "• Atterrissage par airbags : validé par Pathfinder, il a été repris plus tard par d'autres missions martiennes."
+      },
+      {
+        "y": 423.80438232421875,
+        "type": "text",
+        "text": "• Mission bien au-delà du plan : les objectifs principaux du rover étaient prévus pour les 7 premiers sols, et la mission s'est poursuivie jusqu'au 27 septembre 1997."
+      },
+      {
+        "y": 454.80438232421875,
+        "type": "text",
+        "text": "• Mission fondatrice : Pathfinder a relancé l'exploration de la surface de Mars par rovers."
+      },
+      {
+        "y": 471.80438232421875,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 interdit toute appropriation nationale de Mars ; les engins restent sous la juridiction de l'État qui les a immatriculés (les États-Unis)."
+      },
+      {
+        "y": 522.9176635742188,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 544.4043579101562,
+        "type": "text",
+        "text": "• NASA — Mars Pathfinder Landing Press Kit : mars.nasa.gov/internal_resources/816"
+      },
+      {
+        "y": 561.4043579101562,
+        "type": "text",
+        "text": "• NASA NSSDCA — Mars Pathfinder : nssdc.gsfc.nasa.gov/planetary/mesur.html"
+      },
+      {
+        "y": 578.4043579101562,
+        "type": "text",
+        "text": "• NASA / JPL — fiche d'information Mars Pathfinder"
+      }
+    ]
+  ]
+}

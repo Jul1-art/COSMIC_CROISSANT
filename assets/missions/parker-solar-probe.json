@@ -1,0 +1,451 @@
+{
+  "id": "parker-solar-probe",
+  "name": "Parker Solar Probe",
+  "body": "sun",
+  "family": "parker",
+  "year": 2018,
+  "summary": "555 kg de sonde à sec (685 kg au lancement) · 1 objet encore actif en 2026 (la sonde, orbite de ~88 jours autour du Soleil) · 4 suites d'instruments actives · 1 bouclier thermique de 73 kg qui lui survivra des millions d'années · 1 étage Star 48BV d'emplacement inconnu",
+  "facts": [
+    [
+      "Nom officiel",
+      "Parker Solar Probe (en hommage au physicien Eugene Parker)"
+    ],
+    [
+      "Agence & programme",
+      "NASA — Johns Hopkins Applied Physics Laboratory (APL)"
+    ],
+    [
+      "Lancement",
+      "12 août 2018, 07h31 UTC — Cape Canaveral, SLC-37, fusée Delta IV Heavy avec étage supérieur Star 48BV"
+    ],
+    [
+      "Survols de Vénus",
+      "7 survols d'assistance gravitationnelle, du 3 octobre 2018 au 6 novembre 2024"
+    ],
+    [
+      "Passage record",
+      "24 décembre 2024, 11h53 UTC — ~6,16 millions de km de la surface du Soleil, ~191 km/s (~690 000 km/h)"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — la sonde reste en orbite autour du Soleil jusqu'à la fin de sa vie"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le Johns Hopkins APL (Maryland)"
+    ],
+    [
+      "Véhicules",
+      "Delta IV Heavy · étage Star 48BV · sonde Parker Solar Probe"
+    ],
+    [
+      "Statut",
+      "Active — mission étendue jusqu'en 2029 ; 29e périhélie le 4 septembre 2026, systèmes nominaux"
+    ]
+  ],
+  "sourceFile": "Soleil/Fiche-mission-Parker-Solar-Probe-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "parker-solar-probe.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Parker Solar Probe — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 555 kg de sonde à sec (685 kg au lancement) · 1 objet encore actif en 2026 (la sonde, orbite de ~88 jours autour du Soleil) · 4 suites d'instruments actives · 1 bouclier thermique de 73 kg qui lui survivra des millions d'années · 1 étage Star 48BV d'emplacement inconnu"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Parker Solar Probe (en hommage au physicien Eugene Parker)"
+          ],
+          [
+            "Agence & programme",
+            "NASA — Johns Hopkins Applied Physics Laboratory (APL)"
+          ],
+          [
+            "Lancement",
+            "12 août 2018, 07h31 UTC — Cape Canaveral, SLC-37, fusée Delta IV Heavy avec étage supérieur Star 48BV"
+          ],
+          [
+            "Survols de Vénus",
+            "7 survols d'assistance gravitationnelle, du 3 octobre 2018 au 6 novembre 2024"
+          ],
+          [
+            "Passage record",
+            "24 décembre 2024, 11h53 UTC — ~6,16 millions de km de la surface du Soleil, ~191 km/s (~690 000 km/h)"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — la sonde reste en orbite autour du Soleil jusqu'à la fin de sa vie"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le Johns Hopkins APL (Maryland)"
+          ],
+          [
+            "Véhicules",
+            "Delta IV Heavy · étage Star 48BV · sonde Parker Solar Probe"
+          ],
+          [
+            "Statut",
+            "Active — mission étendue jusqu'en 2029 ; 29e périhélie le 4 septembre 2026, systèmes nominaux"
+          ]
+        ]
+      },
+      {
+        "y": 447.51763916015625,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 472.4606018066406,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 500.79693603515625,
+        "type": "text",
+        "text": "A. Orbite héliocentrique — sonde Parker (~555 kg à sec)"
+      },
+      {
+        "y": 519.1543579101562,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bus de la sonde",
+            "555 kg à sec · 685 kg au lancement",
+            "",
+            "Orbite d'environ 88 jours ; se rapproche du Soleil à ~6,1 millions de km de la surface (périhélie record du 24 décembre 2024). Prévue pour 7 ans ; mission principale terminée en 2025"
+          ],
+          [
+            "Bouclier thermique (TPS)",
+            "~73 kg · 2,3 m · 11,4 cm d'épaisseur",
+            "",
+            "Deux panneaux de carbone-carbone autour d'un cœur en mousse de carbone, recouverts d'alumine blanche ; supporte ~1 370 °C côté Soleil et garde les instruments vers 29 °C. Doit orbiter autour du Soleil pendant des millions d'années"
+          ],
+          [
+            "Panneaux solaires",
+            "~343 W au plus près",
+            "",
+            "Deux jeux : un grand panneau rétracté derrière le bouclier au périhélie, et un petit panneau refroidi par fluide qui alimente la sonde au plus près"
+          ],
+          [
+            "Propulseurs",
+            "—",
+            "",
+            "Le carburant finira par s'épuiser ; la sonde sera alors tournée pour que ses instruments fassent face au Soleil, où ils devraient être détruits"
+          ],
+          [
+            "4 suites d'instruments (voir B)",
+            "—",
+            "",
+            "FIELDS, SWEAP, WISPR et IS☉IS, tous opérationnels"
+          ],
+          [
+            "Carte mémoire de noms",
+            "1,1 million de noms",
+            "",
+            "Montée sur une plaque sous l'antenne à grand gain ; contient aussi des photos d'Eugene Parker et une copie de son article de 1958"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques — état connu au 13 novembre 2026"
+      },
+      {
+        "y": 72.35433959960938,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "FIELDS",
+            "Champs électriques et magnétiques",
+            "",
+            "Cinq antennes (dont quatre exposées au Soleil) et trois magnétomètres ; responsable : Stuart Bale (UC Berkeley)"
+          ],
+          [
+            "SWEAP",
+            "Vent solaire",
+            "",
+            "Compte électrons, protons et ions d'hélium via les analyseurs SPAN et la « Solar Probe Cup » ; responsable : Justin Kasper"
+          ],
+          [
+            "WISPR",
+            "Imageur à grand champ",
+            "",
+            "Deux télescopes optiques qui observent la couronne et l'héliosphère interne ; responsable : Russell Howard (NRL)"
+          ],
+          [
+            "IS☉IS",
+            "Particules énergétiques",
+            "",
+            "Deux instruments, EPI-Lo et EPI-Hi, qui identifient les particules, dont les isotopes de l'hélium ; responsable : David McComas (Princeton)"
+          ]
+        ]
+      },
+      {
+        "y": 275.596923828125,
+        "type": "text",
+        "text": "C. Étages de lancement et trajectoire"
+      },
+      {
+        "y": 293.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Star 48BV (étage supérieur)",
+            "n.c.",
+            "",
+            "Après l'injection vers Vénus, séparé de la sonde ; devenir exact non confirmé"
+          ],
+          [
+            "Étages du Delta IV Heavy",
+            "n.c.",
+            "",
+            "Séparés pendant la montée ; devenir exact non confirmé"
+          ]
+        ]
+      },
+      {
+        "y": 378.3969421386719,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 395.6043701171875,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Parker Solar Probe n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 412.6043701171875,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : mesures de la couronne, du vent solaire et des particules à moins de 10 rayons solaires"
+      },
+      {
+        "y": 443.6043701171875,
+        "type": "text",
+        "text": "• Première sonde à traverser la couronne solaire, le 28 avril 2021"
+      },
+      {
+        "y": 471.3969421386719,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 488.6043701171875,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension"
+      },
+      {
+        "y": 505.6043701171875,
+        "type": "text",
+        "text": "• Aucune pièce de la sonde n'a été larguée depuis : le bouclier reste fixé jusqu'à la fin de la mission"
+      },
+      {
+        "y": 542.7176513671875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 565.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "12 août 2018, 07h31 UTC",
+            "Lancement du Delta IV Heavy depuis Cape Canaveral"
+          ],
+          [
+            "3 octobre 2018",
+            "Premier survol de Vénus"
+          ],
+          [
+            "5 novembre 2018",
+            "Première approche du Soleil (périhélie)"
+          ],
+          [
+            "28 avril 2021",
+            "Première traversée de la couronne solaire par une sonde"
+          ],
+          [
+            "6 novembre 2024",
+            "Septième et dernier survol de Vénus, qui met la sonde sur son orbite la plus proche"
+          ],
+          [
+            "24 décembre 2024, 11h53 UTC",
+            "Passage record : ~6,16 millions de km de la surface, ~191 km/s"
+          ],
+          [
+            "19 juin 2025",
+            "24e périhélie — fin de la mission principale"
+          ],
+          [
+            "11 juin 2026",
+            "28e passage près du Soleil"
+          ],
+          [
+            "4 septembre 2026",
+            "29e périhélie : ~3,8 millions de miles (~6,1 millions de km), vitesse record égalée ; bip de contrôle le 7 septembre"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.354393005371094,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "2026",
+            "Mission étendue jusqu'en 2029 après la revue des missions d'héliophysique"
+          ]
+        ]
+      },
+      {
+        "y": 104.39697265625,
+        "type": "text",
+        "text": "Survols de Vénus (assistance gravitationnelle)"
+      },
+      {
+        "y": 122.75437927246094,
+        "type": "table",
+        "rows": [
+          [
+            "N°",
+            "Date (UTC)",
+            "Altitude de survol"
+          ],
+          [
+            "1",
+            "3 octobre 2018",
+            "~2 500 km (2 400–2 548 km selon les sources)"
+          ],
+          [
+            "2",
+            "26 décembre 2018",
+            "3 023 km"
+          ],
+          [
+            "3",
+            "11 juillet 2020",
+            "834 km"
+          ],
+          [
+            "4",
+            "20 février 2021",
+            "2 392 km"
+          ],
+          [
+            "5",
+            "16 octobre 2021",
+            "3 786 km"
+          ],
+          [
+            "6",
+            "21 août 2023",
+            "3 939 km"
+          ],
+          [
+            "7",
+            "6 novembre 2024",
+            "317 km"
+          ]
+        ]
+      },
+      {
+        "y": 373.51763916015625,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 395.0043640136719,
+        "type": "text",
+        "text": "• Toucher le Soleil : la sonde est passée dans la couronne et détient le record de vitesse d'un objet construit par l'humanité (~690 000 km/h), sans interruption de ses mesures."
+      },
+      {
+        "y": 426.0043640136719,
+        "type": "text",
+        "text": "• Questions scientifiques : pourquoi la couronne est bien plus chaude que la surface, et comment le vent solaire et les particules énergétiques sont accélérés."
+      },
+      {
+        "y": 457.0043640136719,
+        "type": "text",
+        "text": "• Mission étendue : prolongée jusqu'en 2029 pour observer le Soleil pendant sa phase de déclin d'activité."
+      },
+      {
+        "y": 488.0043640136719,
+        "type": "text",
+        "text": "• Fin de vie : quand le carburant s'épuisera, la sonde ne pourra plus orienter son bouclier ; ses instruments seront probablement détruits, tandis que le bouclier continuera d'orbiter pendant des millions d'années."
+      },
+      {
+        "y": 533.0043334960938,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible dans l'espace."
+      },
+      {
+        "y": 584.11767578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 605.6043701171875,
+        "type": "text",
+        "text": "• NASA — « After Latest Swing Past Sun, NASA's Parker Solar Probe Checks In » (10 septembre 2026)"
+      },
+      {
+        "y": 622.6043701171875,
+        "type": "text",
+        "text": "• Johns Hopkins APL — Parker Solar Probe : parkersolarprobe.jhuapl.edu"
+      },
+      {
+        "y": 639.6043701171875,
+        "type": "text",
+        "text": "• Wikipedia — Parker Solar Probe ; orbitalradar.com — suivi"
+      }
+    ]
+  ]
+}

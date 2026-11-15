@@ -1,0 +1,348 @@
+{
+  "id": "james-webb",
+  "name": "James Webb (JWST)",
+  "body": "observatories",
+  "family": "webb",
+  "year": 2021,
+  "summary": "~6,2 t de matériel déployé au point de Lagrange L2 à 1,5 million de km de la Terre · 1 observatoire toujours actif en 2026 (télescope spatial JWST) · 1 étage en orbite héliocentrique (étage supérieur ESC-D d'Ariane 5) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "James Webb Space Telescope (JWST)"
+    ],
+    [
+      "Agences & programme",
+      "NASA, ESA & CSA (Agence spatiale canadienne) — Programme Origins / Cosmic Origins"
+    ],
+    [
+      "Lancement",
+      "25 décembre 2021, 12h20 UTC — Centre spatial guyanais (Kourou, ELA-3), fusée Ariane 5 ECA (VA256)"
+    ],
+    [
+      "Mise en orbite finale",
+      "24 janvier 2022, 19h00 UTC — Orbite de halo autour du point de Lagrange Soleil-Terre L2 (~1,5 million de km)"
+    ],
+    [
+      "Durée de mission",
+      "Mission nominale de 5 à 10 ans ; réserves d'ergols estimées pour plus de 20 ans d'opérations (actif en 2026)"
+    ],
+    [
+      "Type de mission",
+      "Observatoire spatial infrarouge sans équipage (astronomie extragalactique, exoplanètes, formation stellaire)"
+    ],
+    [
+      "Véhicules",
+      "Ariane 5 ECA (VA256) · Étage supérieur cryogénique ESC-D · Observatoire spatial JWST (OTE + ISIM + Bus)"
+    ],
+    [
+      "Statut",
+      "✔ Active (2026) — Plus grand télescope astronomique jamais déployé dans l'espace ; observations scientifiques en cours"
+    ]
+  ],
+  "sourceFile": "Fiche mission James Webb (JWST) - Hardware perdu dans l_espace.pdf",
+  "pdf": "james-webb.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "ASTROPHYSIQUE SPATIALE · CATALOGUE DU PATRIMOINE SPATIAL James Webb (JWST) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~6,2 t de matériel déployé au point de Lagrange L2 à 1,5 million de km de la Terre · 1 observatoire toujours actif en 2026 (télescope spatial JWST) · 1 étage en orbite héliocentrique (étage"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "supérieur ESC-D d'Ariane 5) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "James Webb Space Telescope (JWST)"
+          ],
+          [
+            "Agences & programme",
+            "NASA, ESA & CSA (Agence spatiale canadienne) — Programme Origins / Cosmic Origins"
+          ],
+          [
+            "Lancement",
+            "25 décembre 2021, 12h20 UTC — Centre spatial guyanais (Kourou, ELA-3), fusée Ariane 5 ECA (VA256)"
+          ],
+          [
+            "Mise en orbite finale",
+            "24 janvier 2022, 19h00 UTC — Orbite de halo autour du point de Lagrange Soleil-Terre L2 (~1,5 million de km)"
+          ],
+          [
+            "Durée de mission",
+            "Mission nominale de 5 à 10 ans ; réserves d'ergols estimées pour plus de 20 ans d'opérations (actif en 2026)"
+          ],
+          [
+            "Type de mission",
+            "Observatoire spatial infrarouge sans équipage (astronomie extragalactique, exoplanètes, formation stellaire)"
+          ],
+          [
+            "Véhicules",
+            "Ariane 5 ECA (VA256) · Étage supérieur cryogénique ESC-D · Observatoire spatial JWST (OTE + ISIM + Bus)"
+          ],
+          [
+            "Statut",
+            "✔ Active (2026) — Plus grand télescope astronomique jamais déployé dans l'espace ; observations scientifiques en cours"
+          ]
+        ]
+      },
+      {
+        "y": 513.4171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 578.7205810546875,
+        "type": "text",
+        "text": "A. Point de Lagrange Soleil-Terre L2 (~6,2 t au total)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Observatoire spatial James Webb (ensemble complet)",
+            "~6 161 kg",
+            "● Toujours actif",
+            "Masse au lancement incluant ~300 kg d'ergols (hydrazine et tétroxyde d'azote). Évolue sur une orbite de halo de ~800 000 km de rayon autour de L2, maintenant ses instruments dans l'ombre thermique permanente du Soleil, de la Terre et de la Lune."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "James Webb (JWST) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Miroir primaire segmenté & structure optique (OTE)",
+            "~2 400 kg",
+            "● Toujours actif",
+            "Miroir primaire de 6,5 m de diamètre composé de 18 segments hexagonaux en béryllium recouverts d'une fine couche d'or (48,25 g au total), chacun ajusté au nanomètre près par 7 actionneurs. Opère à une température cryogénique de ~40 K (−233 °C)."
+          ],
+          [
+            "Suite d'instruments scientifiques (ISIM)",
+            "~1 400 kg",
+            "● Toujours actif",
+            "Châssis en composite de carbone abritant 4 instruments infrarouges : NIRCam (NASA), NIRSpec (ESA), MIRI (NASA/ESA, refroidi activement à 6,7 K par cryoréfrigérateur à hélium) et FGS/NIRISS (CSA)."
+          ],
+          [
+            "Bouclier thermique multicouche (Sunshield)",
+            "~350 kg",
+            "● Toujours actif",
+            "Pare-soleil déployable de 21,2 m × 14,2 m (taille d'un court de tennis) constitué de 5 membranes en Kapton aluminisé et dopé au silicium, créant un écart thermique de plus de 300 °C entre la face chaude (~383 K) et la face froide (~36 K)."
+          ],
+          [
+            "Plateforme de service (Spacecraft Bus) & antenne bande Ka",
+            "~1 700 kg",
+            "● Toujours actif",
+            "Module de propulsion, roues de réaction, ordinateurs de bord, panneau solaire de 2 kW et antenne parabolique orientable en bande Ka transmettant jusqu'à 57 Go de données scientifiques par jour vers le Deep Space Network."
+          ]
+        ]
+      },
+      {
+        "y": 428.7205810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & rentrée atmosphérique"
+      },
+      {
+        "y": 448.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur cryogénique ESC-D (Ariane 5 VA256)",
+            "~4 540 kg (à vide)",
+            "■ Orbite solaire",
+            "Équipé du moteur HM7B (hydrogène/oxygène liquides). Après avoir injecté le JWST sur sa trajectoire vers L2 le 25 décembre 2021 (27 min après le décollage), il a exécuté une manœuvre de passivation et circule sur une orbite héliocentrique proche de celle de la Terre."
+          ],
+          [
+            "Étage principal cryogénique EPC (H173)",
+            "~14 700 kg (à vide)",
+            "▲ Désintégré",
+            "Équipé du moteur Vulcain 2. Largué à ~160 km d'altitude après 8 min 49 s de vol ; rentré dans l'atmosphère terrestre et retombé dans l'océan Atlantique au large des côtes africaines."
+          ]
+        ]
+      },
+      {
+        "y": 667.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 688.8369140625,
+        "type": "text",
+        "text": "Aucun retour physique : comme tous les observatoires spatiaux en orbite lointaine (L2), le JWST n'est pas conçu pour revenir sur Terre ni pour être visité par une mission de maintenance habitée (contrairement au télescope Hubble en orbite basse terrestre). Seules les données télémétriques et les observations astronomiques sont transmises par ondes radio."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "James Webb (JWST) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique Ariane 5 (17 m × 5,4 m) & 2 propulseurs à poudre EAP (P241) : largués durant les premières minutes du lancement le 25 décembre 2021 au-dessus de l'océan Atlantique (coiffe spécialement modifiée avec des évents de dépressurisation pour protéger les membranes du bouclier thermique)."
+      },
+      {
+        "y": 148.8369140625,
+        "type": "text",
+        "text": "Couvercles de protection des instruments (ISIM) : volets internes ouverts en orbite durant la phase de mise en service cryogénique ; aucune pièce détachée n'a été larguée dans l'espace après la séparation d'avec Ariane 5 afin d'éviter toute contamination optique."
+      },
+      {
+        "y": 208.16712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 234.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "25 décembre 2021, 12h20 UTC",
+            "Lancement d'Ariane 5 (vol VA256) depuis Kourou ; séparation du JWST à 12h47 UTC avec une précision d'injection record, doublant la durée de vie estimée de ses ergols."
+          ],
+          [
+            "28 décembre 2021 – 4 janvier 2022",
+            "Déploiement réussi et mise en tension des 5 membranes du bouclier thermique (étape la plus critique des 344 points de défaillance unique)."
+          ],
+          [
+            "8 janvier 2022",
+            "Déploiement complet des deux ailes latérales du miroir primaire de 6,5 m ; fin de la séquence mécanique de déploiement."
+          ],
+          [
+            "24 janvier 2022, 19h00 UTC",
+            "Allumage de insertion (MCC2) : mise en orbite de halo autour du point de Lagrange L2 à 1,5 million de km de la Terre."
+          ],
+          [
+            "11 juillet 2022",
+            "Publication de la première image scientifique en champ profond (« Webb's First Deep Field », amas de galaxies SMACS 0723)."
+          ],
+          [
+            "2023 – 2026",
+            "Découverte des galaxies les plus anciennes connues (JADES-GS-z14-0, observée ~290 millions d'années après le Big Bang), caractérisation chimique d'atmosphères d'exoplanètes et poursuite des cycles d'observation généraux."
+          ]
+        ]
+      },
+      {
+        "y": 514.1671142578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 541.0869140625,
+        "type": "text",
+        "text": "Exploration de l'aube cosmique : grâce à sa sensibilité dans l'infrarouge proche et moyen (0,6 à 28,5 µm), le JWST observe la lumière décalée vers le rouge des toutes premières galaxies formées moins de 300 millions d'années après le Big Bang, révélant des galaxies massives et structurées plus précoces que prévu par les modèles cosmologiques."
+      },
+      {
+        "y": 604.8369140625,
+        "type": "text",
+        "text": "Spectroscopie des atmosphères d'exoplanètes : par spectroscopie de transit, le JWST a détecté pour la première fois du dioxyde de carbone (CO2), du dioxyde de soufre (SO2) et du méthane dans"
+      },
+      {
+        "y": 637.8369140625,
+        "type": "text",
+        "text": "l'atmosphère de planètes extrasolaires (WASP-39 b, K2-18 b), inaugurant l'analyse chimique fine des mondes rocheux tempérés (système TRAPPIST-1)."
+      },
+      {
+        "y": 671.5869140625,
+        "type": "text",
+        "text": "Ingénierie des télescopes déployables (architecture origami) : le déploiement sans faute des 18 segments hexagonaux et du pare-soleil géant à 1,5 million de kilomètres a validé l'optique active segmentée spatiale, ouvrant la voie aux futurs grands observatoires spatiaux (tel le projet Habitable Worlds Observatory)."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "James Webb (JWST) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 55.8369140625,
+        "type": "text",
+        "text": "Endurance aux micrométéorites en milieu L2 : après un impact de micrométéorite notable sur le segment C3 en mai 2022, les équipes ont ajusté les procédures de pointage (« micrometeoroid avoidance zone ») pour orienter le miroir à l'opposé du flux de poussières orbitales, préservant la qualité optique au-delà des spécifications initiales."
+      },
+      {
+        "y": 130.16712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 157.0869140625,
+        "type": "text",
+        "text": "NASA / STScI — James Webb Space Telescope User Documentation (jwst-docs.stsci.edu)"
+      },
+      {
+        "y": 175.8369140625,
+        "type": "text",
+        "text": "ESA — Webb Launch Kit & Ariane 5 Flight VA256 Mission Analysis (esa.int/Webb)"
+      },
+      {
+        "y": 193.8369140625,
+        "type": "text",
+        "text": "Catalogue public des observations et images calibrées : webbtelescope.org / archives MAST"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "James Webb (JWST) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

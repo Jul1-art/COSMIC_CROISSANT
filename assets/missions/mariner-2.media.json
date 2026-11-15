@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "title": "Checking Out Venus",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2016-10-27T18:40:04Z",
+      "source": "https://images.nasa.gov/details/PIA21117",
+      "nasaId": "PIA21117",
+      "description": "This archival image was released as part of a gallery comparing JPL's past and present, commemorating the 80th anniversary of NASA's Jet Propulsion Laboratory on Oct. 31, 2016.  This image shows engineers at NASA's Jet Propulsion Laboratory looking at data related to the Venus flyby of Mariner 2 on Dec. 14, 1962. This was the first successful flyby of another planet.  http://photojournal.jpl.nasa.gov/catalog/PIA21117",
+      "src": "archives/mariner-2-nasa-PIA21117.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/mariner-2.mp4",
+    "local": true,
+    "title": "Mariner 2 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "mariner-2.pdf",
+    "fingerprint": "8cdaf13dce7fcc481cac03c79d9e2c26f619e70e52b1331c5c208e83313f7a7d"
+  }
+}

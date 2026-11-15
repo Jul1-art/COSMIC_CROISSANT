@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Tianwen-1 launch 04 (cropped)",
+      "description": "Space probe of Tianwen-1 Mission was launching by Long March 5 Y4 carrier rocket",
+      "credit": "中新网",
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tianwen-1_launch_04_(cropped).jpg",
+      "src": "archives/tianwen-1-commons.jpg",
+      "date": "2020-07-24",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/tianwen-1.mp4",
+    "local": true,
+    "title": "Tianwen 1 (Orbiteur & Zhurong) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "tianwen-1.pdf",
+    "fingerprint": "7558f5a7579c3bbeca4d7c2ba78aa90ab39b0e7c8b4870bf8e467984b8349224"
+  }
+}

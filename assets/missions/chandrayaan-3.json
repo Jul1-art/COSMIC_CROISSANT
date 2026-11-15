@@ -1,0 +1,418 @@
+{
+  "id": "chandrayaan-3",
+  "name": "Chandrayaan 3",
+  "body": "moon",
+  "family": "lunar-lander",
+  "year": 2023,
+  "summary": "3 900 kg au lancement · 1 atterrisseur Vikram (1 726 kg) et 1 rover Pragyan (26 kg) immobiles près du pôle sud lunaire depuis 2023 · 1 module de propulsion (2 148 kg) en orbite terrestre haute · aucun objet lunaire actif · 1 étage cryotechnique LVM3 d'emplacement inconnu",
+  "facts": [
+    [
+      "Nom officiel",
+      "Chandrayaan-3 (« véhicule lunaire » en sanskrit) — atterrisseur Vikram, rover Pragyan"
+    ],
+    [
+      "Agence & programme",
+      "ISRO (Inde) — troisième mission lunaire indienne, après l'échec d'atterrissage de Chandrayaan-2 (2019)"
+    ],
+    [
+      "Lancement",
+      "14 juillet 2023, 14h35 IST (09h05 UTC) — Satish Dhawan Space Centre, Sriharikota, fusée LVM3 M4"
+    ],
+    [
+      "Atterrissage",
+      "23 août 2023, ~12h33 UTC (~18h04 IST) — « Statio Shiv Shakti », près du pôle sud lunaire (~69° S), entre les cratères Manzinus C et Simpelius N"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun pour Vikram et Pragyan ; le module de propulsion est revenu en orbite terrestre en novembre 2023"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis l'ISTRAC à Bengaluru"
+    ],
+    [
+      "Véhicules",
+      "LVM3 M4 · module de propulsion · atterrisseur Vikram · rover Pragyan"
+    ],
+    [
+      "Statut",
+      "Réussie — premier atterrissage près du pôle sud lunaire ; atterrisseur et rover inactifs depuis septembre 2023"
+    ]
+  ],
+  "sourceFile": "Lune/Fiche-mission-Chandrayaan-3-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "chandrayaan-3.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Chandrayaan-3 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 3 900 kg au lancement · 1 atterrisseur Vikram (1 726 kg) et 1 rover Pragyan (26 kg) immobiles près du pôle sud lunaire depuis 2023 · 1 module de propulsion (2 148 kg) en orbite terrestre haute · aucun objet lunaire actif · 1 étage cryotechnique LVM3 d'emplacement inconnu"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Chandrayaan-3 (« véhicule lunaire » en sanskrit) — atterrisseur Vikram, rover Pragyan"
+          ],
+          [
+            "Agence & programme",
+            "ISRO (Inde) — troisième mission lunaire indienne, après l'échec d'atterrissage de Chandrayaan-2 (2019)"
+          ],
+          [
+            "Lancement",
+            "14 juillet 2023, 14h35 IST (09h05 UTC) — Satish Dhawan Space Centre, Sriharikota, fusée LVM3 M4"
+          ],
+          [
+            "Atterrissage",
+            "23 août 2023, ~12h33 UTC (~18h04 IST) — « Statio Shiv Shakti », près du pôle sud lunaire (~69° S), entre les cratères Manzinus C et Simpelius N"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun pour Vikram et Pragyan ; le module de propulsion est revenu en orbite terrestre en novembre 2023"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis l'ISTRAC à Bengaluru"
+          ],
+          [
+            "Véhicules",
+            "LVM3 M4 · module de propulsion · atterrisseur Vikram · rover Pragyan"
+          ],
+          [
+            "Statut",
+            "Réussie — premier atterrissage près du pôle sud lunaire ; atterrisseur et rover inactifs depuis septembre 2023"
+          ]
+        ]
+      },
+      {
+        "y": 449.7176513671875,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 474.6606140136719,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 502.9969482421875,
+        "type": "text",
+        "text": "A. Surface lunaire — Statio Shiv Shakti (pôle sud)"
+      },
+      {
+        "y": 521.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Vikram",
+            "1 726 kg",
+            "",
+            "Conçu pour un jour lunaire (~14 jours terrestres), sans survie à la nuit lunaire (~ −120 °C). Expérience de « saut » le 3 septembre 2023 : ~40 cm de hauteur, ~50 cm de déplacement. N'a pas répondu aux appels de réveil du 22 et du 28 septembre 2023"
+          ],
+          [
+            "Rover Pragyan",
+            "26 kg",
+            "",
+            "A parcouru 101,4 m ; mis en veille le 3 septembre 2023, batteries chargées et récepteur allumé ; jamais réveillé"
+          ],
+          [
+            "Rampe de sortie du rover",
+            "—",
+            "",
+            "Déployée par l'atterrisseur pour faire descendre Pragyan"
+          ],
+          [
+            "Réflecteur laser de la NASA (LRA)",
+            "—",
+            "",
+            "Réseau de rétroréflecteurs monté sur Vikram, passif, utilisable depuis l'orbite lunaire pour des mesures de distance"
+          ],
+          [
+            "3 instruments de Vikram",
+            "—",
+            "",
+            "RAMBHA-LP (plasma), ChaSTE (propriétés thermiques du sol), ILSA (activité sismique)"
+          ],
+          [
+            "2 instruments de Pragyan",
+            "—",
+            "",
+            "APXS et LIBS : composition chimique et élémentaire du sol"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Orbite terrestre haute — module de propulsion (2 148 kg)"
+      },
+      {
+        "y": 72.3543472290039,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Module de propulsion",
+            "2 148 kg",
+            "",
+            "A mis Vikram en orbite lunaire de 100 km, puis s'est séparé le 17 août 2023. Ramené en orbite terrestre haute en novembre 2023 par l'expérience « Bhoomi » (annoncée par l'ISRO le 4 décembre 2023) ; testeur technologique de long terme, état de santé actuel non précisé"
+          ],
+          [
+            "Instrument SHAPE",
+            "—",
+            "",
+            "Spectro-polarimètre étudiant la Terre dans le proche infrarouge ; seul instrument du module"
+          ]
+        ]
+      },
+      {
+        "y": 201.596923828125,
+        "type": "text",
+        "text": "C. Étages de lancement"
+      },
+      {
+        "y": 219.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage cryotechnique du LVM3",
+            "n.c.",
+            "",
+            "Après l'injection en orbite de transfert ; devenir exact non confirmé dans mes sources"
+          ],
+          [
+            "Propulseurs d'appoint (S200) et étages inférieurs",
+            "n.c.",
+            "",
+            "Séparés pendant la montée ; retombés dans l'océan"
+          ]
+        ]
+      },
+      {
+        "y": 315.596923828125,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 332.80438232421875,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Chandrayaan-3 n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 349.80438232421875,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : mesures du sol près du pôle sud, relevés de température du régolithe, premières données sismiques et de plasma de la région"
+      },
+      {
+        "y": 380.80438232421875,
+        "type": "text",
+        "text": "• Vikram a la particularité d'avoir réalisé un « saut » sur la Lune, après Surveyor 6 en 1976"
+      },
+      {
+        "y": 408.5969543457031,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 425.80438232421875,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension du LVM3"
+      },
+      {
+        "y": 442.80438232421875,
+        "type": "text",
+        "text": "• Module de propulsion séparé de l'atterrisseur le 17 août 2023, avant la descente"
+      },
+      {
+        "y": 479.91766357421875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 502.55438232421875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "14 juillet 2023",
+            "Lancement du LVM3 M4 depuis Sriharikota"
+          ],
+          [
+            "5 août 2023",
+            "Insertion en orbite lunaire"
+          ],
+          [
+            "17 août 2023",
+            "Séparation de l'atterrisseur et du module de propulsion"
+          ],
+          [
+            "19 août 2023",
+            "Deuxième et dernière manœuvre de freinage (60 s) abaissant l'orbite"
+          ],
+          [
+            "23 août 2023",
+            "Atterrissage près du pôle sud (voir la séquence ci-dessous) et sortie du rover"
+          ],
+          [
+            "3 septembre 2023",
+            "Saut de Vikram ; mise en veille de Pragyan"
+          ],
+          [
+            "22 et 28 septembre 2023",
+            "Aucune réponse aux appels de réveil de l'atterrisseur et du rover"
+          ],
+          [
+            "Novembre 2023",
+            "Le module de propulsion rejoint l'orbite terrestre (annoncé le 4 décembre 2023)"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "Séquence d'atterrissage — 23 août 2023"
+      },
+      {
+        "y": 74.6606216430664,
+        "type": "text",
+        "text": "Descente motorisée autonome d'environ 19 minutes ; touchdown à ~12h33 UTC. Les temps de chaque phase sont des durées, pas des heures."
+      },
+      {
+        "y": 104.35438537597656,
+        "type": "table",
+        "rows": [
+          [
+            "Durée",
+            "Étape",
+            "Détails et matériel laissé"
+          ],
+          [
+            "~12 min",
+            "Freinage brutal (« rough braking »)",
+            "Début à ~30 km d'altitude, ~750 km de la cible, vitesse horizontale ~1,7 km/s ; les quatre moteurs de 800 N brûlent, réduisant la vitesse horizontale d'environ 80 %, jusqu'à ~7 km d'altitude"
+          ],
+          [
+            "~10 s",
+            "Maintien d'attitude",
+            "Huit petits propulseurs stabilisent l'atterrisseur pour que ses capteurs aient une vue stable du sol"
+          ],
+          [
+            "~3 min",
+            "Freinage fin (« fine braking »)",
+            "Deux moteurs sur quatre ; descente jusqu'à ~850 m, puis vol stationnaire bref et comparaison des images de la caméra avec des cartes chargées pour confirmer la zone cible"
+          ],
+          [
+            "~30 s",
+            "Descente finale et stationnaire",
+            "À ~150 m d'altitude ; le site en dessous étant jugé dangereux, l'atterrisseur s'est déplacé vers une zone voisine plus sûre"
+          ],
+          [
+            "12h33 UTC",
+            "Atterrissage",
+            "Les capteurs des jambes détectent le contact et coupent les moteurs ; vitesse verticale ~0,98 m/s, sous la limite prévue de 2 m/s ; arrêt à ~350 m de la cible. Vikram reste sur place"
+          ],
+          [
+            "Après l'arrêt",
+            "Déploiement du rover",
+            "Rampe déployée ; Pragyan descend sur le sol et roule"
+          ]
+        ]
+      },
+      {
+        "y": 368.51763916015625,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 390.0043640136719,
+        "type": "text",
+        "text": "• Premier atterrissage près du pôle sud lunaire : l'Inde est devenue le premier pays à poser un engin dans cette région (~69° S), riche en glace d'eau d'après les orbiteurs."
+      },
+      {
+        "y": 421.0043640136719,
+        "type": "text",
+        "text": "• Premières mesures sur place : température du sol à plusieurs profondeurs, plasma de surface, activité sismique locale et composition chimique, dont le soufre détecté par le rover."
+      },
+      {
+        "y": 452.0043640136719,
+        "type": "text",
+        "text": "• Un saut sur la Lune : le « hop » du 3 septembre 2023 a aussi servi de test pour de futures missions d'échantillons."
+      },
+      {
+        "y": 483.0043640136719,
+        "type": "text",
+        "text": "• Suite : Chandrayaan-4 (retour d'échantillons) et LUPEX avec le Japon sont prévus, d'après le suivi satellite consulté."
+      },
+      {
+        "y": 514.0043334960938,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 interdit toute appropriation nationale de la Lune ; les engins restent sous la juridiction de l'Inde, qui les a immatriculés."
+      },
+      {
+        "y": 565.11767578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 586.6043701171875,
+        "type": "text",
+        "text": "• ISRO — Chandrayaan-3, détails de la mission : isro.gov.in/Chandrayaan3_Details.html"
+      },
+      {
+        "y": 603.6043701171875,
+        "type": "text",
+        "text": "• Wikipedia — Chandrayaan-3 : masses, dates, instruments, saut"
+      },
+      {
+        "y": 620.6043701171875,
+        "type": "text",
+        "text": "• Jatan Space — « Chandrayaan 3 makes historic touchdown » : séquence d'atterrissage"
+      },
+      {
+        "y": 637.6043701171875,
+        "type": "text",
+        "text": "• satellitetracker.in — état du module de propulsion"
+      }
+    ]
+  ]
+}

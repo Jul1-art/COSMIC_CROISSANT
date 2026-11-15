@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Venera10surface",
+      "description": "Photograph of the venusian surface obtained by the photometer of the lander in 15°42' N 291°51' E.",
+      "credit": "Академия наук СССР (USSR Academy of Sciences) / powered by NASA National Space Science Data Center",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Venera10surface.gif",
+      "src": "archives/venera-10-commons.gif",
+      "date": "1975-10-25",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-10.mp4",
+    "local": true,
+    "title": "Venera 10 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-10.pdf",
+    "fingerprint": "928fdd891f8652cd5249d4ff6ed93720824f2253df8fe087c7e368e21b65fd9a"
+  }
+}

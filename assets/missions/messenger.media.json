@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Where is MESSENGER?",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington",
+      "date": "2013-05-28T15:45:26Z",
+      "source": "https://images.nasa.gov/details/PIA17228",
+      "nasaId": "PIA17228",
+      "description": "Where is MESSENGER?",
+      "src": "archives/messenger-nasa-PIA17228.jpg"
+    },
+    {
+      "title": "Today, MESSENGER Flies by Mercury!",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington",
+      "date": "2009-09-29T17:00:52Z",
+      "source": "https://images.nasa.gov/details/PIA12264",
+      "nasaId": "PIA12264",
+      "description": "Today, MESSENGER Flies by Mercury!",
+      "src": "archives/messenger-nasa-PIA12264.jpg"
+    },
+    {
+      "title": "MESSENGER Looks out on a Limb",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington",
+      "date": "2008-10-08T16:00:04Z",
+      "source": "https://images.nasa.gov/details/PIA11353",
+      "nasaId": "PIA11353",
+      "description": "MESSENGER Looks out on a Limb",
+      "src": "archives/messenger-nasa-PIA11353.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/messenger.mp4",
+    "local": true,
+    "title": "MESSENGER · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "messenger.pdf",
+    "fingerprint": "3d7af964360409b599c7418c41cd0d9a6081a26169c3ccace0e1cfa6fece9771"
+  }
+}

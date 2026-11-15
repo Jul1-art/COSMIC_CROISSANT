@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Nap Time for New Horizons: NASA Spacecraft Enters Hibernation",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute",
+      "date": "2017-04-11T00:02:11Z",
+      "source": "https://images.nasa.gov/details/PIA21589",
+      "nasaId": "PIA21589",
+      "description": "This is an overhead view of NASA's New Horizons full trajectory; the spacecraft has entered a hibernation phase on April 7 that will last until early September.  The full article is available at https://photojournal.jpl.nasa.gov/catalog/PIA21589",
+      "src": "archives/new-horizons-nasa-PIA21589.jpg"
+    },
+    {
+      "title": "New Horizons Tracks an Asteroid",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest   Research Institute",
+      "date": "2007-04-02T23:50:00Z",
+      "source": "https://images.nasa.gov/details/PIA09230",
+      "nasaId": "PIA09230",
+      "description": "The two pots in this image are a composite of two images of asteroid 2002 JF56 taken on June 11 and June 12, 2006, with the Multispectral Visible Imaging Camera component of the New Horizons Ralph imager.",
+      "src": "archives/new-horizons-nasa-PIA09230.jpg"
+    },
+    {
+      "title": "New Horizons Sees Pluto",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest   Research Institute",
+      "date": "2007-04-02T23:50:04Z",
+      "source": "https://images.nasa.gov/details/PIA09234",
+      "nasaId": "PIA09234",
+      "description": "The Long Range Reconnaissance Imager on NASA New Horizons acquired images of the Pluto field three days apart in late September 2006, in order to see Pluto motion against a dense background of stars.",
+      "src": "archives/new-horizons-nasa-PIA09234.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Tracking Space Weather for New Horizons with an Enlil Model",
+      "credit": "Genna Duberstein, Dusan Odstrcil, M. Leila Mays, Karen Fox",
+      "source": "https://images.nasa.gov/details/GSFC_20150710_NewHorizons_m11941_Enlil",
+      "nasaId": "GSFC_20150710_NewHorizons_m11941_Enlil",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20150710_NewHorizons_m11941_Enlil/GSFC_20150710_NewHorizons_m11941_Enlil~orig.mp4",
+      "description": "A few months before New Horizons was due to reach Pluto, a community of scientists came together to determine just what kind of a environment the mission would experience during its historic flyby. While the simulations aren't 100% conclusive, this first ever attempt to characterize space weather conditions so far from our own home opens the door to better protecting our spacecraft – and eventually humans -- as we continue to explore the solar system and beyond. To attempt to map what surges of particles are passing by Pluto, the Community Coordinated Modeling Center, or CCMC, at NASA's Goddard Space Flight Center in Greenbelt, Maryland, sought input from space weather scientists around the nation. The CCMC houses numerous software models to help scientists with their research and also to enable improved space weather forecasting.",
+      "date": "2015-07-10T00:00:00Z",
+      "duration": 98.431667,
+      "bitrate": 16188963,
+      "bytes": 199188336,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/new-horizons.mp4",
+    "local": true,
+    "title": "New Horizons · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "new-horizons.pdf",
+    "fingerprint": "2ef50a03dd90336df95d63f5546d25c4635c6120fec7660bccd72c9280be7ae8"
+  }
+}

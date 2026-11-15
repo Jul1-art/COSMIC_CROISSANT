@@ -1,0 +1,278 @@
+{
+  "id": "venera-11",
+  "name": "Venera 11",
+  "body": "venus",
+  "family": "venera",
+  "year": 1978,
+  "summary": "~4 711 kg au lancement total (bus de survol de ~3 150 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 25 décembre 1978 sur Vénus avec 95 minutes d'activité de surface.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 11 (Венера-11, appareil 4V-2 n° 360, COSPAR 1978-084A / Lander 084C)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (NPO Lavotchkine) — programme Venera"
+    ],
+    [
+      "Lancement",
+      "9 septembre 1978, 03h25 UTC — Cosmodrome de Baïkonour (site 81/23), fusée Proton-K / Blok D"
+    ],
+    [
+      "Atterrissage",
+      "25 décembre 1978, 03h24 UTC — Surface de Vénus (14,0° S, 299,0° E, région de highlands à l'est de Beta Regio)"
+    ],
+    [
+      "Fin de mission",
+      "25 décembre 1978 pour l'atterrisseur (95 minutes d'activité au sol avant défaillance thermique)"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission combinant bus de survol interplanétaire et capsule d'atterrissage automatisée lourde)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur lourd Proton-K / Blok D, bus de survol Venera 11 (~3 150 kg), module d'atterrissage (~1 560 kg au largage)"
+    ],
+    [
+      "Statut",
+      "Réussite majeure — atterrissage réussi et transmission de données scientifiques de surface pendant 95 minutes (découverte d'orages électriques et analyse chimique)."
+    ]
+  ],
+  "sourceFile": "Vénus/Venera 11 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "venera-11.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Venera 11 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~4 711 kg au lancement total (bus de survol de ~3 150 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 25 décembre 1978 sur Vénus avec 95 minutes"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "d'activité de surface."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 11 (Венера-11, appareil 4V-2 n° 360, COSPAR 1978-084A / Lander 084C)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (NPO Lavotchkine) — programme Venera"
+          ],
+          [
+            "Lancement",
+            "9 septembre 1978, 03h25 UTC — Cosmodrome de Baïkonour (site 81/23), fusée Proton-K / Blok D"
+          ],
+          [
+            "Atterrissage",
+            "25 décembre 1978, 03h24 UTC — Surface de Vénus (14,0° S, 299,0° E, région de highlands à l'est de Beta Regio)"
+          ],
+          [
+            "Fin de mission",
+            "25 décembre 1978 pour l'atterrisseur (95 minutes d'activité au sol avant défaillance thermique)"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission combinant bus de survol interplanétaire et capsule d'atterrissage automatisée lourde)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur lourd Proton-K / Blok D, bus de survol Venera 11 (~3 150 kg), module d'atterrissage (~1 560 kg au largage)"
+          ],
+          [
+            "Statut",
+            "Réussite majeure — atterrissage réussi et transmission de données scientifiques de surface pendant 95 minutes (découverte d'orages électriques et analyse chimique)."
+          ]
+        ]
+      },
+      {
+        "y": 538.0154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 572.3842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 606.4705810546875,
+        "type": "text",
+        "text": "A. Surface de Vénus — Est de Beta Regio (Atterrisseur Venera 11)"
+      },
+      {
+        "y": 626.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Capsule d'atterrissage (Lander)",
+            "~500 kg",
+            "Détruit / écrasé",
+            "Module pressurisé (95 min d'activité le 25 déc. 1978)."
+          ],
+          [
+            "Détecteurs d'orages électriques (GROZA)",
+            "~12 kg",
+            "Détruits / inactifs",
+            "Instruments mesurant les éclairs et ondes électromagnétiques (tonnerre vénusien)."
+          ],
+          [
+            "Chromatographe & spectromètre X",
+            "~20 kg",
+            "Détruits / inactifs",
+            "Analyseurs chimiques de l'atmosphère inférieure et spectromètre à fluorescence X pour le sol."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Bus de survol interplanétaire & espace"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bus de survol (Flyby Bus)",
+            "~3 150 kg (initial)",
+            "Détruit / héliocentrique",
+            "Structure principale ayant transporté la capsule et servi de relais radio pendant l'atterterrissage. A survolé Vénus à 35 000 km le 25 déc. 1978 avant de se placer sur une orbite héliocentrique."
+          ],
+          [
+            "Étage supérieur Blok D (Proton-K)",
+            "~2 500 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage d'injection interplanétaire ayant propulsé Venera 11 le 9 septembre 1978 depuis Baïkonour ; placé sur une orbite solaire stable."
+          ]
+        ]
+      },
+      {
+        "y": 262.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 283.0869140625,
+        "type": "text",
+        "text": "Modèle d'ingénierie (NPO Lavotchkine) : maquettes de test conservées dans les archives spatiales russes."
+      },
+      {
+        "y": 317.5869140625,
+        "type": "text",
+        "text": "Archives scientifiques intégrales : données de chromatographie, d'analyse de l'atmosphère et enregistrements d'ondes radio (tonnerre vénusien)."
+      },
+      {
+        "y": 363.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 390.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "9 septembre 1978",
+            "Décollage réussi de la fusée Proton-K / Blok D depuis Baïkonour ; injection de Venera 11 vers Vénus."
+          ],
+          [
+            "23 décembre 1978",
+            "Correction de trajectoire à mi-course exécutée avec succès."
+          ],
+          [
+            "25 décembre 1978",
+            "Arrivée à Vénus : séparation du module d'atterrissage qui pénètre l'atmosphère à 11,2 km/s et se pose en douceur à 03h24 UTC."
+          ],
+          [
+            "25 décembre 1978 (95 min)",
+            "L'atterrisseur transmet des données scientifiques ininterrompues pendant 95 minutes malgré le blocage des caches de ses caméras."
+          ],
+          [
+            "25 décembre 1978 (fin)",
+            "Fin des transmissions suite à la défaillance des batteries et la fusion des circuits sous 446 °C."
+          ]
+        ]
+      },
+      {
+        "y": 597.2654418945312,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 625.8369140625,
+        "type": "text",
+        "text": "Découverte d'orages électriques sur Vénus : les instruments de Venera 11 ont détecté de fréquents éclairs et du tonnerre (sferics) dans l'atmosphère vénusienne, prouvant l'activité électrique intense des nuages de l'acide sulfurique."
+      },
+      {
+        "y": 675.3369140625,
+        "type": "text",
+        "text": "Analyse chimique approfondie : mesure précise des gaz rares, du chlore, du soufre et de l'hydrogène dans l'atmosphère inférieure."
+      },
+      {
+        "y": 709.0869140625,
+        "type": "text",
+        "text": "Héritage et leçon technique : malgré le dysfonctionnement mineur des caches d'objectifs (problème qui affectera aussi sa jumelle Venera 12), la mission a largement validé la résistance et la fiabilité des atterrisseurs lourds soviétiques sous des conditions infernales."
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Venera 11 (ID : 1978- 084A)"
+      },
+      {
+        "y": 115.8369140625,
+        "type": "text",
+        "text": "V. L. Barsukov et al., Preliminary Results of Investigations with the Venera 11 and Venera 12 Spaceprobes, Space Research, 1980"
+      },
+      {
+        "y": 149.5869140625,
+        "type": "text",
+        "text": "B. Harvey, Soviet and Russian Lunar Exploration, Springer Praxis Books, 2007"
+      }
+    ]
+  ]
+}

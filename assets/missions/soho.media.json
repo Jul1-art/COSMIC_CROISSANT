@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "SOHO Orbit [Video]",
+      "credit": "NASA / GSFC",
+      "date": "2017-12-08T00:00:00Z",
+      "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002114",
+      "nasaId": "GSFC_20171208_Archive_e002114",
+      "description": "SOHO's orbit around the Lagrangian L1 point and the Sun  Credit: NASA/GSFC/SOHO/ESA Sound: Juan Carlos Garcia  To learn more go to the SOHO website:  <a href=\"http://sohowww.nascom.nasa.gov/home.html\" rel=\"nofollow\">sohowww.nascom.nasa.gov/home.html</a>  To learn more about NASA's Sun Earth Day go here:  <a href=\"http://sunearthday.nasa.gov/2010/index.php\" rel=\"nofollow\">sunearthday.nasa.gov/2010/index.php</a>",
+      "src": "archives/soho-nasa-GSFC_20171208_Archive_e002114.jpg"
+    },
+    {
+      "title": "SOHO Spacecraft Artist Concept",
+      "credit": "ESA/NASA/SOHO",
+      "date": "2006-02-15T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA18170",
+      "nasaId": "PIA18170",
+      "description": "Solar and Heliospheric Observatory SOHO was launched in December 1995 by an Atlas Centaur rocket and became operational in March 1996.  http://photojournal.jpl.nasa.gov/catalog/PIA18170",
+      "src": "archives/soho-nasa-PIA18170.jpg"
+    },
+    {
+      "title": "Handle-shaped Prominence",
+      "credit": "ESA/NASA/SOHO",
+      "date": "2001-02-17T22:22:34Z",
+      "source": "https://images.nasa.gov/details/PIA03149",
+      "nasaId": "PIA03149",
+      "description": "NASA Extreme Ultraviolet Imaging Telescope aboard ESA’s SOHO spacecraft took this image of a huge, handle-shaped prominence in 1999. Prominences are huge clouds of relatively cool dense plasma suspended in the Sun hot, thin corona.",
+      "src": "archives/soho-nasa-PIA03149.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "3,000 Comets for SOHO",
+      "credit": "Genna Duberstein, Tom Bridgman, Karl Battams",
+      "source": "https://images.nasa.gov/details/GSFC_20150915_SOHO_m11975_comets",
+      "nasaId": "GSFC_20150915_SOHO_m11975_comets",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20150915_SOHO_m11975_comets/GSFC_20150915_SOHO_m11975_comets~orig.mp4",
+      "description": "Since its launch nearly 20 years ago, NASA and the European Space Agency's Solar and Heliospheric Observatory has spotted 3000 comets. The mission's The Large Angle and Spectrometric Coronagraph (LASCO) instrument blocks out the bright solar disk, making it easier to see the corona of plasma and dust around the Sun, normally only visible during solar eclipses. This instrument also provides a very large field of view of the region around the Sun.  This visualization utilizes SOHO data from 1998 - 2010 and shows over 2000 comets. Comets that were first observed by SOHO carry no labels, and comets witnessed by not discovered by the spacecraft are represented with their labels. Trails on the comets are color coded based on family: yellow - unaffiliated comets, red - Kreutz group, green - Meyer group, blue - Marsden, cyan - Kracht, and magenta - Kracht 2.",
+      "date": "2015-09-15T00:00:00Z",
+      "duration": 219.085542,
+      "bitrate": 16052673,
+      "bytes": 439613578,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/soho.mp4",
+    "local": true,
+    "title": "SOHO (Solar and Heliospheric Observatory) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "soho.pdf",
+    "fingerprint": "c422fada72999fdb2ea2cb576ba79ce1040ccaebc63ca3d0d9222ab7c1f68a01"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "title": "Venus - Venera 8 Landing Site in Navka Region",
+      "credit": "NASA/JPL",
+      "date": "1996-09-26T10:08:57Z",
+      "source": "https://images.nasa.gov/details/PIA00460",
+      "nasaId": "PIA00460",
+      "description": "This image is a mosaic of 24 orbits of the Navka region of Venus. The image is centered at about 10 degrees south latitude and 335 degrees east longitude. The image is about 400 km (240 miles) across. 'Behepa 8' marks the approximate landing site of the Soviet Venera 8 lander, which took measurements at the surface of Venus in 1972. The Venera 8 lander measured granitic or continental-like materials at the landing site. Magellan data reveals the landing site to lie in a region of plains cut by tectonic ridges and troughs. Volcanic domes and flows are seen throughout the region. Studying the regional setting of the Venera landing sites is important in linking information about surface composition to surface morphology seen in radar images. Resolution of the Magellan data is about 120 meters (400 feet).   http://photojournal.jpl.nasa.gov/catalog/PIA00460",
+      "src": "archives/venera-8-nasa-PIA00460.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-8.mp4",
+    "local": true,
+    "title": "Venera 8 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-8.pdf",
+    "fingerprint": "e02002ee5920346d25679caf9069e63508e7ebc166b3edb52d91784a01aeb70b"
+  }
+}

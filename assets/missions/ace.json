@@ -1,0 +1,345 @@
+{
+  "id": "ace",
+  "name": "ACE (Advanced Composition Explorer)",
+  "body": "observatories",
+  "family": "orbiter",
+  "year": 1997,
+  "summary": "Analyse technique et historique détaillée de la sonde spatiale ACE (Explorer 71 / NASA), déployée sur une orbite de Lissajous autour du point de Lagrange L1 Soleil-Terre à 1,5 million de kilomètres en amont de notre planète. Conçu initialement pour une mission nominale de 2 à 5 ans, cet observatoire de 785 kg demeure opérationnel depuis plus de 29 ans, fournissant une caractérisation isotopique inégalée du vent solaire et des rayons cosmiques galactiques, tout en assurant une veille météorologique spatiale en temps réel indispensable à la protection des infrastructures terrestres et orbitales.",
+  "facts": [
+    [
+      "Nom officiel & international",
+      "Advanced Composition Explorer (ACE / Explorer 71 — COSPAR 1997-045A / SATCAT 24912)"
+    ],
+    [
+      "Agence & maîtrise d'œuvre",
+      "NASA (Goddard Space Flight Center / Caltech) — plate-forme conçue et assemblée par le Johns Hopkins University Applied Physics Laboratory (JHU/APL)"
+    ],
+    [
+      "Lancement & Site",
+      "25 août 1997, 14:39:00 UTC — Complexe de lancement SLC-17A, Cape Canaveral Air Station, Floride"
+    ],
+    [
+      "Lanceur",
+      "Fusée Delta II (configuration 7920-8 avec 9 propulseurs d'appoint à poudre GEM-40 et second étage Delta-K)"
+    ],
+    [
+      "Masse au lancement & charge utile",
+      "785 kg au lancement (dont 189 kg d'ergols hydrazine et ~155 kg d'instruments scientifiques) ; masse sèche ~596 kg"
+    ],
+    [
+      "Orbite opérationnelle",
+      "Orbite de Lissajous autour du point de Lagrange L1 Soleil-Terre (~1,5 million de km vers le Soleil, période orbitale de ~177 jours, inclinaison 20° sur l'écliptique)"
+    ],
+    [
+      "Statut de la mission (2026)",
+      "Observatoire toujours actif et opérationnel en orbite L1 (plus de 29 ans de service continu ; réserves d'ergols d'attitude estimées suffisantes jusqu'à la fin de la décennie 2020)."
+    ]
+  ],
+  "sourceFile": "ACE (Advanced Composition Explorer) — Dossier Technique Complet.pdf",
+  "pdf": "ace.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.031856536865234,
+        "type": "text",
+        "text": "DOSSIER TECHNIQUE APPROFONDI — PROGRAMME EXPLORER D'HÉLIOPHYSIQUE NASA ACE (Advanced Composition Explorer) — Dossier Technique Complet"
+      },
+      {
+        "y": 142.9276123046875,
+        "type": "text",
+        "text": "Synthèse exhaustive : Analyse technique et historique détaillée de la sonde spatiale ACE (Explorer 71 / NASA), déployée sur une orbite de Lissajous autour du point de Lagrange L1 Soleil-Terre à 1,5 million de kilomètres en amont de notre planète. Conçu initialement pour une mission nominale de 2 à 5 ans, cet observatoire de 785 kg demeure opérationnel depuis plus de 29 ans, fournissant une caractérisation isotopique inégalée du vent solaire et des rayons cosmiques galactiques, tout en assurant une veille météorologique spatiale en temps réel indispensable à la protection des infrastructures terrestres et orbitales."
+      },
+      {
+        "y": 243.416015625,
+        "type": "text",
+        "text": "1. Identité institutionnelle & Paramètres de la mission"
+      },
+      {
+        "y": 267.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Caractéristique",
+            "Spécification technique"
+          ],
+          [
+            "Nom officiel & international",
+            "Advanced Composition Explorer (ACE / Explorer 71 — COSPAR 1997-045A / SATCAT 24912)"
+          ],
+          [
+            "Agence & maîtrise d'œuvre",
+            "NASA (Goddard Space Flight Center / Caltech) — plate-forme conçue et assemblée par le Johns Hopkins University Applied Physics Laboratory (JHU/APL)"
+          ],
+          [
+            "Lancement & Site",
+            "25 août 1997, 14:39:00 UTC — Complexe de lancement SLC-17A, Cape Canaveral Air Station, Floride"
+          ],
+          [
+            "Lanceur",
+            "Fusée Delta II (configuration 7920-8 avec 9 propulseurs d'appoint à poudre GEM-40 et second étage Delta-K)"
+          ],
+          [
+            "Masse au lancement & charge utile",
+            "785 kg au lancement (dont 189 kg d'ergols hydrazine et ~155 kg d'instruments scientifiques) ; masse sèche ~596 kg"
+          ],
+          [
+            "Orbite opérationnelle",
+            "Orbite de Lissajous autour du point de Lagrange L1 Soleil-Terre (~1,5 million de km vers le Soleil, période orbitale de ~177 jours, inclinaison 20° sur l'écliptique)"
+          ],
+          [
+            "Statut de la mission (2026)",
+            "Observatoire toujours actif et opérationnel en orbite L1 (plus de 29 ans de service continu ; réserves d'ergols d'attitude estimées suffisantes jusqu'à la fin de la décennie 2020)."
+          ]
+        ]
+      },
+      {
+        "y": 539.666015625,
+        "type": "text",
+        "text": "2. Inventaire exhaustif du Hardware & Instruments scientifiques"
+      },
+      {
+        "y": 570.5181884765625,
+        "type": "text",
+        "text": "Légende des états : actif en orbite L1 inactif / dégradé détruit / rentré orbite héliocentrique"
+      },
+      {
+        "y": 598.020263671875,
+        "type": "text",
+        "text": "A. Plateforme spatiale & Suite complète des 9 instruments scientifiques (Orbite L1)"
+      },
+      {
+        "y": 616.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Plateforme ACE (Bus octogonal APL)",
+            "~441 kg (sec)",
+            "Actif (L1)",
+            "Structure octogonale de 1,6 m de diamètre et 1,0 m de hauteur (envergure 8,3 m avec 4 panneaux solaires GaAs fournissant 443 W). Stabilisée par rotation (5 tours/min) avec axe pointé vers le Soleil et système propulsif à hydrazine (10 tuyères)."
+          ],
+          [
+            "CRIS (Cosmic Ray Isotope Spectrometer)",
+            "29,0 kg",
+            "Actif (L1)",
+            "Télescope à détecteurs silicium et fibres scintillantes mesurant la composition isotopique des rayons cosmiques galactiques (de l'hélium au zinc, 50 à 500 MeV/nucléon) pour retracer la nucléosynthèse stellaire."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "SIS (Solar Isotope Spectrometer)",
+            "22,5 kg",
+            "Actif (L1)",
+            "Double télescope à matrice de silicium haute géométrie déterminant l'abondance isotopique des noyaux énergétiques solaires (de l'hélium au nickel, 10 à 100 MeV/nucléon) lors des éruptions majeures."
+          ],
+          [
+            "ULEIS (Ultra-Low Energy Isotope Spectrometer)",
+            "19,5 kg",
+            "Actif (L1)",
+            "Spectromètre à temps de vol (TOF) haute résolution analysant le flux ionique et la composition élémentaire des particules suprathermiques solaires et interplanétaires (de 45 keV à quelques MeV/nucléon)."
+          ],
+          [
+            "SEPICA (Solar Energetic Particle Ionic Charge Analyzer)",
+            "36,6 kg",
+            "Inactif (2008)",
+            "Analyseur électrostatique et compteur proportionnel à gaz mesurant l'état de charge ionique des particules énergétiques solaires (0,2 à 5 MeV/charge). Désactivé suite à l'épuisement du gaz d'isobutane et une panne de vanne."
+          ],
+          [
+            "SWIMS (Solar Wind Ion Mass Spectrometer)",
+            "9,3 kg",
+            "Actif (L1)",
+            "Spectromètre de masse à temps de vol linéaire déterminant la composition isotopique et élémentaire des ions du vent solaire pour toutes les conditions de vitesse d'écoulement."
+          ],
+          [
+            "SWICS (Solar Wind Ion Composition Spectrometer)",
+            "6,2 kg",
+            "Actif (L1)",
+            "Analyseur combinant déflexion électrostatique, temps de vol et mesure d'énergie résiduelle pour identifier la température coronale source et l'état d'ionisation des ions du vent solaire (de H à Fe)."
+          ],
+          [
+            "EPAM (Electron, Proton, and Alpha Monitor)",
+            "12,8 kg",
+            "Actif (L1)",
+            "Ensemble de cinq télescopes à détecteurs semi- conducteurs mesurant sur près de 4π stéradians les électrons (> 38 keV) et ions (> 47 keV) accélérés par les ondes de choc interplanétaires."
+          ],
+          [
+            "SWEPAM (Solar Wind Electron, Proton, and Alpha Monitor)",
+            "6,7 kg",
+            "Actif (L1)",
+            "Analyseurs électrostatiques sphériques mesurant en continu la densité, la vitesse (200 à 1 250 km/s), la température et la direction tridimensionnelle des électrons et ions du vent solaire."
+          ],
+          [
+            "MAG (Magnetic Field Monitor)",
+            "4,2 kg",
+            "Actif (L1)",
+            "Deux magnétomètres tri-axiaux à vanne de flux montés aux extrémités des mâts solaires (à 4,19 m du centre de la sonde) mesurant les fluctuations rapides du champ magnétique interplanétaire (FMI)."
+          ]
+        ]
+      },
+      {
+        "y": 562.770263671875,
+        "type": "text",
+        "text": "B. Éléments du lanceur & Hardware largué en vol"
+      },
+      {
+        "y": 581.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails & Localisation"
+          ],
+          [
+            "Second étage Delta-K (Delta II 7920-8)",
+            "~950 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage à ergols stockables (Aerozine 50 / N₂O₄) ayant effectué le second allumage pour injecter ACE vers le point L1 le 25 août 1997 ; placé sur une orbite héliocentrique stable."
+          ],
+          [
+            "9 Propulseurs GEM-40, 1er étage XLT & coiffe",
+            "~14 800 kg (à vide)",
+            "Détruits / retombés",
+            "Éléments largués durant l'ascension atmosphérique depuis Cape Canaveral, retombés dans l'océan Atlantique ou consumés lors de la rentrée atmosphérique."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 62.666015625,
+        "type": "text",
+        "text": "3. Chronologie détaillée & Jalons opérationnels"
+      },
+      {
+        "y": 86.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement & Contexte analytique"
+          ],
+          [
+            "25 août 1997",
+            "Lancement nominal depuis Cape Canaveral par une fusée Delta II 7920-8. Injection directe sur une trajectoire de transfert de quatre mois vers le point L1."
+          ],
+          [
+            "12 déc. 1997",
+            "Insertion précise sur l'orbite de Lissajous autour du point de Lagrange L1 Soleil-Terre grâce aux propulseurs à hydrazine embarqués."
+          ],
+          [
+            "21 janv. 1998",
+            "Début officiel des opérations scientifiques nominales et activation du flux de télémétrie continu à faible débit (RTSW — Real-Time Solar Wind) vers la NOAA."
+          ],
+          [
+            "Oct. – nov. 2003",
+            "Tempêtes solaires d'Halloween : ACE enregistre en temps réel des vitesses de vent solaire dépassant 1 850 km/s et des flux de particules record, démontrant son rôle vital d'alerte avancée malgré la saturation temporaire de certains capteurs de plasma."
+          ],
+          [
+            "2008",
+            "Fin des opérations scientifiques de l'instrument SEPICA suite à l'épuisement naturel de son gaz de détection et à la défaillance d'une vanne de régulation ; les 8 autres instruments poursuivent leurs relevés nominaux."
+          ],
+          [
+            "2015 – 2026",
+            "Transition de la veille météorologique spatiale opérationnelle principale vers le satellite DSCOVR (lancé en 2015), tandis qu'ACE demeure maintenu en service actif par la NASA comme observatoire scientifique de référence et sentinelle de secours en L1 sur près de trois cycles solaires complets."
+          ]
+        ]
+      },
+      {
+        "y": 362.666015625,
+        "type": "text",
+        "text": "4. Apports scientifiques fondamentaux & Cosmologie"
+      },
+      {
+        "y": 386.7378845214844,
+        "type": "text",
+        "text": "L'objectif premier d'ACE est de comparer avec une précision isotopique sans précédent la composition de la matière provenant de trois réservoirs cosmiques distincts : la couronne solaire (échantillonnée via le vent solaire et les particules énergétiques solaires), le milieu interstellaire local (ions capturés) et la galaxie lointaine (rayons cosmiques galactiques). Les mesures des spectromètres CRIS et SIS ont révélé que la composition isotopique des rayons cosmiques galactiques diffère significativement de celle du Système solaire sur certains isotopes clés, notamment le néon-22 (²²Ne/²⁰Ne), démontrant que les rayons cosmiques proviennent majoritairement de régions riches en étoiles massives et en supernovæ (superbulles OB) plutôt que du milieu interstellaire moyen."
+      },
+      {
+        "y": 491.7378845214844,
+        "type": "text",
+        "text": "De plus, en mesurant les abondances d'isotopes radioactifs servant d'« horloges cosmiques » — tels que le béryllium-10 (¹⁰Be), l'aluminium-26 (²⁶Al), le chlore-36 (³⁶Cl) et le manganèse-54 (⁵⁴Mn) —, ACE a établi que les rayons cosmiques résident en moyenne environ 15 millions d'années dans le disque et le halo galactique avant de s'échapper ou d'atteindre la Terre, et qu'un délai d'au moins 100 000 ans s'écoule entre la synthèse des noyaux dans une supernova et leur accélération par les ondes de choc."
+      },
+      {
+        "y": 569.666015625,
+        "type": "text",
+        "text": "5. Sentinelle mondiale de la météorologie de l'espace (RTSW)"
+      },
+      {
+        "y": 593.7378540039062,
+        "type": "text",
+        "text": "Grâce à sa position permanente en amont de la Terre au point L1, ACE intercepte le vent solaire et les éjections de masse coronale (CME) environ 30 à 60 minutes avant leur impact sur la magnétosphère terrestre. Son sous-système RTSW (Real-Time Solar Wind), exploitant les données continues de MAG, SWEPAM, EPAM et SIS, transmet des bulletins en temps réel aux centres de prévision de la NOAA (Space Weather Prediction Center) et aux agences internationales."
+      },
+      {
+        "y": 671.7378540039062,
+        "type": "text",
+        "text": "Cette capacité d'alerte avancée permet aux gestionnaires de réseaux électriques à haute tension de prévenir les blackouts induits par les courants géomagnétiques, aux opérateurs de constellations satellitaires de basculer leurs engins en mode sécurisé, et aux agences spatiales d'évaluer les risques radiatifs pour les astronautes en orbite basse (ISS) ou lors des missions habitées vers la Lune."
+      }
+    ],
+    [
+      {
+        "y": 62.666015625,
+        "type": "text",
+        "text": "6. Épreuves d'ingénierie & Longévité exceptionnelle"
+      },
+      {
+        "y": 86.73788452148438,
+        "type": "text",
+        "text": "Conçu pour une durée de vie minimale de deux ans avec un objectif de cinq ans, ACE illustre la robustesse des architectures stabilisées par rotation du laboratoire JHU/APL. L'absence de roues à réaction complexes et l'utilisation judicieuse des réserves d'hydrazine pour les manœuvres de maintien à poste autour du point L1 ont permis d'étendre la durée de vie opérationnelle à près de trois décennies. Bien que le vieillissement thermique et radiatif ait réduit la plage dynamique de certains détecteurs de SWEPAM, le calibrage croisé régulier avec les instruments SWICS et MAG garantit l'intégrité scientifique continue des séries temporelles."
+      },
+      {
+        "y": 178.916015625,
+        "type": "text",
+        "text": "7. Sources & Références bibliographiques"
+      },
+      {
+        "y": 202.23788452148438,
+        "type": "text",
+        "text": "E. C. Stone, A. M. Frandsen, R. A. Mewaldt, E. R. Christian, D. Margolies, J. F. Ormes & F. Snow, The Advanced Composition Explorer, Space Science Reviews, vol. 86, pp. 1–22, 1998."
+      },
+      {
+        "y": 231.48788452148438,
+        "type": "text",
+        "text": "Caltech Space Radiation Laboratory — ACE Science Center & Instrument Documentation (srl.caltech.edu/ACE)"
+      },
+      {
+        "y": 247.23788452148438,
+        "type": "text",
+        "text": "NASA Goddard Space Flight Center — Advanced Composition Explorer Mission Overview (science.nasa.gov/mission/ace)"
+      },
+      {
+        "y": 276.4878845214844,
+        "type": "text",
+        "text": "R. D. Zwickl et al., The NOAA Real-Time Solar-Wind (RTSW) System using ACE Data, Space Science Reviews, vol. 86, pp. 633–648, 1998."
+      },
+      {
+        "y": 305.7378845214844,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche technique ACE (ID : 1997-045A)."
+      },
+      {
+        "y": 332.1371154785156,
+        "type": "text",
+        "text": "Référence du dossier : NASA-EXPLORER-71-ACE-L1-FULL-REPORT-2026 • Document généré conformément au cahier des charges de la carte 3D du patrimoine spatial."
+      }
+    ]
+  ]
+}

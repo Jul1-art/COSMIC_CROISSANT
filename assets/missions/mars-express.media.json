@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Mars Express Seen by Mars Global Surveyor",
+      "credit": "NASA/JPL/MSSS",
+      "date": "2005-05-19T14:48:00Z",
+      "source": "https://images.nasa.gov/details/PIA07944",
+      "nasaId": "PIA07944",
+      "description": "This picture of the European Space Agency Mars Express spacecraft by the Mars Orbiter Camera on NASA Mars Global Surveyor is from the first successful imaging of any spacecraft orbiting Mars taken by another spacecraft orbiting Mars.",
+      "src": "archives/mars-express-nasa-PIA07944.jpg"
+    },
+    {
+      "title": "Radargram of Mars North Polar Plateau from Mars Express",
+      "credit": "ESA/NASA/JPL-Caltech/Univ. of Rome/ASI/GSFC",
+      "date": "2011-12-19T23:00:46Z",
+      "source": "https://images.nasa.gov/details/PIA15117",
+      "nasaId": "PIA15117",
+      "description": "This radargram profile from ESA Mars Express and NASA Mars Global Surveyor orbiter shows data from the subsurface of Mars in the ice-rich north polar plateau of Mars.",
+      "src": "archives/mars-express-nasa-PIA15117.jpg"
+    },
+    {
+      "title": "Jezero Crater as Seen by ESA's Mars Express Orbiter",
+      "credit": "ESA/DLR/FU-Berlin",
+      "date": "2020-09-21T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA24096",
+      "nasaId": "PIA24096",
+      "description": "This image shows the remains of an ancient delta in Mars' Jezero Crater, which NASA's Perseverance Mars rover will explore for signs of fossilized microbial life. The image was taken by the High Resolution Stereo Camera aboard the ESA (European Space Agency) Mars Express orbiter. The European Space Operations Centre in Darmstadt, Germany, operates the ESA mission. The High Resolution Stereo Camera was developed by a group with leadership at the Freie Universitat Berlin.  https://photojournal.jpl.nasa.gov/catalog/PIA24096",
+      "src": "archives/mars-express-nasa-PIA24096.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/mars-express.mp4",
+    "local": true,
+    "title": "Mars Express · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "mars-express.pdf",
+    "fingerprint": "0619c00bd2138775a53128a0ee22b3f38e61c5a81a4f18bcc82138344d7377bc"
+  }
+}

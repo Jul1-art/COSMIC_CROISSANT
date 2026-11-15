@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Launch of the Apollo 14 lunar landing mission",
+      "credit": "NASA / JSC",
+      "date": "1971-01-31T00:00:00Z",
+      "source": "https://images.nasa.gov/details/s71-18395",
+      "nasaId": "s71-18395",
+      "description": "S71-18395 (31 Jan. 1971) --- The huge, 363-feet tall Apollo 14 (Spacecraft 110/Lunar Module 8/Saturn 509) space vehicle is launched from Pad A, Launch Complex 39, Kennedy Space Center (KSC), Florida at 4:03:02 p.m. (EST), Jan. 31, 1971, on a lunar landing mission. Aboard the Apollo 14 spacecraft were astronauts Alan B. Shepard Jr., commander; Stuart A. Roosa, command module pilot; and Edgar D. Mitchell, lunar module pilot.",
+      "src": "archives/apollo-14-nasa-s71-18395.jpg"
+    },
+    {
+      "title": "Launch - Apollo 14 Lunar Landing Mission - KSC",
+      "credit": "NASA / JSC",
+      "date": "1971-01-31T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S71-17620",
+      "nasaId": "S71-17620",
+      "description": "S71-17620 (31 Jan. 1971) --- The huge, 363-feet tall Apollo 14 (Spacecraft 110/Lunar Module 8/Saturn 509) space vehicle is launched from Pad A, Launch Complex 39, Kennedy Space Center, Florida, at 4:03:02 p.m. (EST), Jan. 31, 1981, on a lunar landing mission. This view of the liftoff was taken by a camera mounted on the mobile launch tower. Aboard the Apollo 14 spacecraft were astronauts Alan B. Shepard Jr., commander; Stuart A. Roosa, command module pilot; and Edgar D. Mitchell, lunar module pilot.",
+      "src": "archives/apollo-14-nasa-S71-17620.jpg"
+    },
+    {
+      "title": "View of the U.S. flag near the Apollo 14 landing site during liftoff",
+      "credit": "NASA / JSC",
+      "date": "1971-02-05T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S71-19500",
+      "nasaId": "S71-19500",
+      "description": "S71-19500 (6 Feb. 1971) --- The Apollo 14 Lunar Module (LM) ascent stage lifts off the lunar surface and the powerful LM engine causes a brief force of wind which scatters gold-colored foil, covering the LM, and disturbs the U.S. flag. This picture was taken from film exposed by the 16mm data acquisition camera - which was mounted inside the LM.",
+      "src": "archives/apollo-14-nasa-S71-19500.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Apollo 14 Launch Coverage",
+      "credit": "HQ",
+      "source": "https://images.nasa.gov/details/Apollo%2014%20Launch%20Coverage",
+      "nasaId": "Apollo 14 Launch Coverage",
+      "src": "https://images-assets.nasa.gov/video/Apollo%2014%20Launch%20Coverage/Apollo%2014%20Launch%20Coverage~orig.mp4",
+      "description": "",
+      "date": "2021-01-28T00:00:00Z",
+      "duration": 188.6,
+      "bitrate": 3585590,
+      "bytes": 84530297,
+      "width": 480,
+      "height": 360,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/apollo-14.mp4",
+    "local": true,
+    "title": "Apollo 14 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "apollo-14.pdf",
+    "fingerprint": "4541ee5305710fd185648ddafd2396005efdd886fd32d7ca4b02f41e10d9766c"
+  }
+}

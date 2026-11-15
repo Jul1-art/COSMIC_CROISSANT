@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "NEAR Shoemaker Path",
+      "credit": "NASA/JPL/JHUAPL",
+      "date": "2001-02-17T21:18:37Z",
+      "source": "https://images.nasa.gov/details/PIA03142",
+      "nasaId": "PIA03142",
+      "description": "NEAR Shoemaker Path",
+      "src": "archives/near-shoemaker-nasa-PIA03142.jpg"
+    },
+    {
+      "title": "Location of the NEAR Shoemaker Landing Site",
+      "credit": "NASA/JPL/JHUAPL",
+      "date": "2001-02-17T21:19:23Z",
+      "source": "https://images.nasa.gov/details/PIA03143",
+      "nasaId": "PIA03143",
+      "description": "Location of the NEAR Shoemaker Landing Site",
+      "src": "archives/near-shoemaker-nasa-PIA03143.jpg"
+    },
+    {
+      "title": "Landmarks at NEAR Shoemaker Touchdown Site",
+      "credit": "NASA/JPL/JHUAPL",
+      "date": "2001-02-17T21:19:26Z",
+      "source": "https://images.nasa.gov/details/PIA03144",
+      "nasaId": "PIA03144",
+      "description": "Landmarks at NEAR Shoemaker Touchdown Site",
+      "src": "archives/near-shoemaker-nasa-PIA03144.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/near-shoemaker.mp4",
+    "local": true,
+    "title": "NEAR Shoemaker · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "near-shoemaker.pdf",
+    "fingerprint": "74d575b7fdee0539c19e16aa7e6a829ae9e22c29df621395db7f9c0ad8818b7d"
+  }
+}

@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="fr" data-theme="night"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080808"><title>Archive de mission · RELIC</title><meta name="description" content="Explorez la mission en 3D et découvrez son récit, son inventaire, ses images d’archives et ses sources."><link rel="icon" href="../assets/relic-icon-v1-192.png">
+<script type="importmap">{"imports":{"three":"../vendor/three.module.js","three/addons/":"../vendor/three-addons/","three/addons/controls/OrbitControls.js":"../vendor/OrbitControls.js"}}</script>
+<link rel="stylesheet" href="../src/ui/theme.css"><link rel="stylesheet" href="../src/missions/mission-dossier.css"><link rel="stylesheet" href="../src/missions/catalog.css"><link rel="stylesheet" href="../src/missions/missions.css">  <script>if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='RELIC_INTERFACE_VERSION')event.ports?.[0]?.postMessage({release:'missions-20261115-catalog90-1'});});</script>
+</head>
+<body class="mission-dossier"><a class="dossier-skip" href="#dossier-content">Aller au dossier</a>
+<header class="dossier-header"><a class="dossier-logo" href="../">RELIC<span>/ ARCHIVES DE MISSION</span></a><nav aria-label="Navigation des archives"><a href="missions.html">Toutes les missions</a></nav><a class="dossier-back" href="../">← Retour à l’atlas</a></header>
+<div id="mission-loading" class="mission-loading" role="status">Ouverture des archives…</div><div id="mission-root"></div>
+<nav class="dossier-tabs" id="dossier-tabs" role="tablist" aria-label="Chapitres de mission" hidden></nav><main id="dossier-content"></main>
+<footer class="dossier-footer"><a class="dossier-logo" href="../">RELIC</a><p>Des missions historiques. Du matériel réel. Des sources documentées.</p><a id="mission-original" href="missions.html">Fiche originale ↗</a></footer>
+
+<script type="module" src="../src/missions/exploration.js"></script></body></html>

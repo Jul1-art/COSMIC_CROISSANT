@@ -1,0 +1,401 @@
+{
+  "id": "chang-e-2",
+  "name": "Chang'e 2",
+  "body": "moon",
+  "family": "orbiter",
+  "year": 2010,
+  "summary": "orbiteur de 2 480 kg au lancement, désormais en orbite autour du Soleil, dernier contact vers 2014 selon Wikipédia (statut actuel non confirmé) · 4 groupes d'instruments (caméra stéréo, altimètre laser, spectromètres gamma/X, radiomètre micro-ondes) · étage de la Long March 3C, devenir non précisé · aucun élément récupéré · première sonde allée directement de l'orbite lunaire au point L2 Soleil-Terre, puis survol de l'astéroïde Toutatis",
+  "facts": [
+    [
+      "Nom officiel",
+      "Chang'e 2 (Chang'e-2)"
+    ],
+    [
+      "Agence & programme",
+      "CNSA (Chine) — programme chinois d'exploration lunaire"
+    ],
+    [
+      "Lancement",
+      "1er octobre 2010, 10h59:57 UTC — Long March 3C, centre de Xichang (Sichuan)"
+    ],
+    [
+      "Orbite lunaire",
+      "Insertion le 6 octobre 2010 ; orbite de travail de 100 km le 9 octobre ; plus tard 100 × 15 km"
+    ],
+    [
+      "Départ de la Lune",
+      "8 juin 2011 (9 juin selon une autre source)"
+    ],
+    [
+      "Point L2 Soleil-Terre",
+      "Arrivée le 25 août 2011, 14h27 UTC après 77 jours de transit ; départ le 15 avril 2012"
+    ],
+    [
+      "Survol de Toutatis",
+      "13 décembre 2012, 08h30 UTC, à 3,2 km, ~10,7 km/s"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — orbite héliocentrique ; retour dans le voisinage de la Terre attendu vers 2027"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Long March 3C · orbiteur Chang'e 2 (bus DFH-3)"
+    ],
+    [
+      "Statut",
+      "Réussie — mission prévue pour 6 mois, prolongée d'environ 4 ans ; dernier contact vers 2014"
+    ]
+  ],
+  "sourceFile": "Lune/Chang_e/Fiche-mission-Chang-e-2-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "chang-e-2.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Chang'e 2 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : orbiteur de 2 480 kg au lancement, désormais en orbite autour du Soleil, dernier contact vers 2014 selon Wikipédia (statut actuel non confirmé) · 4 groupes d'instruments (caméra stéréo, altimètre laser, spectromètres gamma/X, radiomètre micro-ondes) · étage de la Long March 3C, devenir non précisé · aucun élément récupéré · première sonde allée directement de l'orbite lunaire au point L2 Soleil-Terre, puis survol de l'astéroïde Toutatis"
+      },
+      {
+        "y": 195.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 217.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Chang'e 2 (Chang'e-2)"
+          ],
+          [
+            "Agence & programme",
+            "CNSA (Chine) — programme chinois d'exploration lunaire"
+          ],
+          [
+            "Lancement",
+            "1er octobre 2010, 10h59:57 UTC — Long March 3C, centre de Xichang (Sichuan)"
+          ],
+          [
+            "Orbite lunaire",
+            "Insertion le 6 octobre 2010 ; orbite de travail de 100 km le 9 octobre ; plus tard 100 × 15 km"
+          ],
+          [
+            "Départ de la Lune",
+            "8 juin 2011 (9 juin selon une autre source)"
+          ],
+          [
+            "Point L2 Soleil-Terre",
+            "Arrivée le 25 août 2011, 14h27 UTC après 77 jours de transit ; départ le 15 avril 2012"
+          ],
+          [
+            "Survol de Toutatis",
+            "13 décembre 2012, 08h30 UTC, à 3,2 km, ~10,7 km/s"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — orbite héliocentrique ; retour dans le voisinage de la Terre attendu vers 2027"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Long March 3C · orbiteur Chang'e 2 (bus DFH-3)"
+          ],
+          [
+            "Statut",
+            "Réussie — mission prévue pour 6 mois, prolongée d'environ 4 ans ; dernier contact vers 2014"
+          ]
+        ]
+      },
+      {
+        "y": 493.51763916015625,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 518.4605712890625,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 560.7969360351562,
+        "type": "text",
+        "text": "A. Espace interplanétaire — orbite héliocentrique"
+      },
+      {
+        "y": 579.1543579101562,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur Chang'e 2",
+            "2 480 kg au lancement",
+            "",
+            "Plus de 100 millions de km de la Terre en 2014, plus de 200 millions en 2016 (carburant pour ~300 millions de km) ; dernier contact vers 2014 ; statut actuel non confirmé dans mes sources"
+          ],
+          [
+            "Instruments (voir B)",
+            "—",
+            "",
+            "État actuel non confirmé"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques"
+      },
+      {
+        "y": 72.3543930053711,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "Caméra stéréo CCD",
+            "Imagerie",
+            "",
+            "Résolutions citées : ~1 m, ~10 m ou 1,3 m selon les sources (non réconciliées)"
+          ],
+          [
+            "Altimètre laser",
+            "Altimétrie",
+            "",
+            "Relief lunaire"
+          ],
+          [
+            "Spectromètres gamma et X",
+            "Éléments chimiques",
+            "",
+            "Composition du sol lunaire"
+          ],
+          [
+            "Détecteur micro-ondes (radiomètre)",
+            "Radiométrie",
+            "",
+            "Émission micro-ondes de la Lune"
+          ]
+        ]
+      },
+      {
+        "y": 208.39697265625,
+        "type": "text",
+        "text": "C. Étages de lancement"
+      },
+      {
+        "y": 226.75436401367188,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur de la Long March 3C",
+            "n.c.",
+            "",
+            "Orbite de transfert de 200 × 380 000 km ; devenir non précisé dans mes sources"
+          ]
+        ]
+      },
+      {
+        "y": 290.9969482421875,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 308.2043762207031,
+        "type": "text",
+        "text": "• Rien : aucun élément matériel récupéré"
+      },
+      {
+        "y": 325.2043762207031,
+        "type": "text",
+        "text": "• Seules des images et des données ont été transmises, dont des images de Toutatis jusqu'à 10 m par pixel"
+      },
+      {
+        "y": 366.9969482421875,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 384.2043762207031,
+        "type": "text",
+        "text": "• Étages de la Long March 3C, séparés pendant l'ascension ; non détaillés dans mes sources"
+      },
+      {
+        "y": 421.3176574707031,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 443.9543762207031,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "1er octobre 2010, 10h59:57",
+            "Lancement ; orbite de transfert de 200 × 380 000 km, la première chinoise en transfert direct"
+          ],
+          [
+            "6 octobre 2010, 03h06",
+            "Insertion en orbite lunaire (dans les 4 jours 16 h après le lancement)"
+          ],
+          [
+            "9 octobre 2010",
+            "Orbite de travail de 100 km après trois freinages"
+          ],
+          [
+            "Date non précisée",
+            "Orbite abaissée à 100 × 15 km (périlune de 15 km) ; date non donnée dans mes sources"
+          ],
+          [
+            "8 juin 2011",
+            "Départ de la Lune (9 juin selon la Planetary Society)"
+          ],
+          [
+            "25 août 2011, 14h27",
+            "Arrivée au point L2 Soleil-Terre, après 77 jours de transit"
+          ],
+          [
+            "15 avril 2012",
+            "Départ de L2 pour l'extension de mission vers un astéroïde"
+          ],
+          [
+            "13 décembre 2012, 08h30",
+            "Survol de Toutatis (voir séquence ci-dessous)"
+          ],
+          [
+            "~2014",
+            "Dernier contact, signal affaibli par la distance"
+          ],
+          [
+            "~2027",
+            "Retour attendu dans le voisinage de la Terre"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "Séquence du survol de Toutatis"
+      },
+      {
+        "y": 72.35440063476562,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "Avril 2012",
+            "Départ de L2 vers Toutatis ; manœuvres pour corriger la dérive naturelle près de L2"
+          ],
+          [
+            "Estimation",
+            "Planetary Society : survol attendu le 13 décembre 2012 vers 08h27 UT (d'abord annoncé pour le 6 janvier 2013)"
+          ],
+          [
+            "12 décembre 2012",
+            "Toutatis passe au plus près de la Terre (~18 distances lunaires)"
+          ],
+          [
+            "13 décembre 2012, 08h30",
+            "Survol de Toutatis à ~3,2 km, à ~10,73 km/s relatif"
+          ],
+          [
+            "Pendant le survol",
+            "Plusieurs images, jusqu'à 10 m par pixel"
+          ]
+        ]
+      },
+      {
+        "y": 226.7176513671875,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 248.20437622070312,
+        "type": "text",
+        "text": "• Transfert direct : première sonde lunaire chinoise lancée directement vers une orbite de transfert Terre-Lune."
+      },
+      {
+        "y": 279.2043762207031,
+        "type": "text",
+        "text": "• Lagrange L2 : premier objet à atteindre L2 directement depuis l'orbite lunaire."
+      },
+      {
+        "y": 296.2043762207031,
+        "type": "text",
+        "text": "• Survol d'astéroïde : Toutatis ; selon Space.com (2012), le prochain passage aussi proche de la Terre aura lieu en novembre 2069."
+      },
+      {
+        "y": 327.2043762207031,
+        "type": "text",
+        "text": "• Durée : prévue 6 mois, réalisée environ 4 ans."
+      },
+      {
+        "y": 344.2043762207031,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de la Chine ; aucune appropriation nationale n'est possible dans l'espace."
+      },
+      {
+        "y": 395.3176574707031,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 416.80438232421875,
+        "type": "text",
+        "text": "• Wikipedia — Chang'e 2 : lancement, masses, orbites, L2, Toutatis, statut"
+      },
+      {
+        "y": 433.80438232421875,
+        "type": "text",
+        "text": "• Planetary Society — « Chang'e 2: The Full Story » (2012) : départ de la Lune, L2, date du survol"
+      },
+      {
+        "y": 450.80438232421875,
+        "type": "text",
+        "text": "• Space.com — « Chinese probe flies by asteroid Toutatis » : survol, distance, images"
+      }
+    ]
+  ]
+}

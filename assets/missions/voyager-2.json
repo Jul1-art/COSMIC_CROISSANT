@@ -1,0 +1,488 @@
+{
+  "id": "voyager-2",
+  "name": "Voyager 2",
+  "body": "outer",
+  "family": "voyager",
+  "year": 1977,
+  "summary": "~722 kg de sonde en espace interstellaire · 3 instruments scientifiques encore signalés actifs (magnétomètre, ondes plasma, rayons cosmiques) · seule sonde à avoir survolé Uranus et Neptune · 1 disque d'or (« Golden Record ») · 1 étage Centaur d'emplacement inconnu",
+  "facts": [
+    [
+      "Nom officiel",
+      "Voyager 2 (Voyager 77-1)"
+    ],
+    [
+      "Agence & programme",
+      "NASA / Jet Propulsion Laboratory — programme Voyager"
+    ],
+    [
+      "Lancement",
+      "20 août 1977, 14h29 UTC — Cape Canaveral, Launch Complex 41, fusée Titan IIIE-Centaur (16 jours avant Voyager 1)"
+    ],
+    [
+      "Survols planétaires",
+      "Jupiter 9 juillet 1979 · Saturne 26 août 1981 · Uranus 24 janvier 1986 · Neptune 25 août 1989"
+    ],
+    [
+      "Entrée dans l'espace interstellaire",
+      "5 novembre 2018 — franchissement de l'héliopause (deuxième engin humain après Voyager 1)"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — trajectoire d'échappement du Système solaire (vitesse ~15 km/s)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le JPL via le Deep Space Network"
+    ],
+    [
+      "Véhicules",
+      "Titan IIIE · étage Centaur · moteur d'appoint à poudre · sonde Voyager 2 (type Mariner Jupiter-Saturn)"
+    ],
+    [
+      "Statut",
+      "Active — mission interstellaire étendue ; ~145 UA (≈ 21,7 milliards de km) de la Terre ; signal aller simple ≈ 20 h"
+    ]
+  ],
+  "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-Voyager-2-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "voyager-2.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Voyager 2 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : ~722 kg de sonde en espace interstellaire · 3 instruments scientifiques encore signalés actifs (magnétomètre, ondes plasma, rayons cosmiques) · seule sonde à avoir survolé Uranus et Neptune · 1 disque d'or (« Golden Record ») · 1 étage Centaur d'emplacement inconnu"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Voyager 2 (Voyager 77-1)"
+          ],
+          [
+            "Agence & programme",
+            "NASA / Jet Propulsion Laboratory — programme Voyager"
+          ],
+          [
+            "Lancement",
+            "20 août 1977, 14h29 UTC — Cape Canaveral, Launch Complex 41, fusée Titan IIIE-Centaur (16 jours avant Voyager 1)"
+          ],
+          [
+            "Survols planétaires",
+            "Jupiter 9 juillet 1979 · Saturne 26 août 1981 · Uranus 24 janvier 1986 · Neptune 25 août 1989"
+          ],
+          [
+            "Entrée dans l'espace interstellaire",
+            "5 novembre 2018 — franchissement de l'héliopause (deuxième engin humain après Voyager 1)"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — trajectoire d'échappement du Système solaire (vitesse ~15 km/s)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le JPL via le Deep Space Network"
+          ],
+          [
+            "Véhicules",
+            "Titan IIIE · étage Centaur · moteur d'appoint à poudre · sonde Voyager 2 (type Mariner Jupiter-Saturn)"
+          ],
+          [
+            "Statut",
+            "Active — mission interstellaire étendue ; ~145 UA (≈ 21,7 milliards de km) de la Terre ; signal aller simple ≈ 20 h"
+          ]
+        ]
+      },
+      {
+        "y": 458.7176513671875,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 483.6606140136719,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 511.9969482421875,
+        "type": "text",
+        "text": "A. Sonde Voyager 2 — espace interstellaire (~722 kg à sec)"
+      },
+      {
+        "y": 530.3543090820312,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bus de la sonde",
+            "721,9 kg (sonde à sec)",
+            "",
+            "Structure en prisme décagonal ; masse au lancement ~815 kg avec le carburant hydrazine. Conçue pour une mission de ~5 ans, toujours en fonctionnement après plus de 49 ans"
+          ],
+          [
+            "Antenne à grand gain",
+            "3,7 m de diamètre",
+            "",
+            "Liaison via le Deep Space Network. En juillet 2023, une commande erronée l'avait désorientée de ~2° ; contact complet rétabli le 4 août 2023. Signal aller simple ≈ 20 h"
+          ],
+          [
+            "3 générateurs RTG (plutonium-238)",
+            "×3",
+            "",
+            "470 W au lancement ; perdent ~4 W par an. Les équipes éteignent instruments et chauffages pour garder la sonde assez chaude et maintenir sa puissance au-dessus du seuil critique"
+          ],
+          [
+            "Magnétomètre (MAG)",
+            "—",
+            "",
+            "Toujours actif : mesure le champ magnétique du milieu interstellaire"
+          ],
+          [
+            "Plasma Wave Subsystem (PWS)",
+            "—",
+            "",
+            "Toujours actif : ondes de plasma et densité électronique"
+          ],
+          [
+            "Cosmic Ray Subsystem (CRS)",
+            "—",
+            "",
+            "Encore signalé actif ; son arrêt était annoncé « en 2026 » — aucune confirmation trouvée à ce jour"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Propulseurs à hydrazine",
+            "16 propulseurs",
+            "",
+            "Contrôle d'attitude ; quand ils cesseront de fonctionner, la liaison avec la Terre sera perdue"
+          ],
+          [
+            "Enregistreur de données (DTR)",
+            "~67 Mo",
+            "",
+            "Enregistreur numérique à bande conçu pour stocker des données entre deux transmissions"
+          ],
+          [
+            "Golden Record",
+            "disque de 30 cm",
+            "",
+            "Disque en cuivre doré : salutations en 55 langues, sons de la Terre et ~90 min de musique ; comité présidé par Carl Sagan. Gravé de symboles situant la Terre par rapport à des pulsars"
+          ],
+          [
+            "Instruments éteints (voir B)",
+            "—",
+            "",
+            "7 des 10 jeux d'instruments d'origine sont coupés, mais restent à bord de la sonde"
+          ]
+        ]
+      },
+      {
+        "y": 220.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques — état connu au 13 novembre 2026"
+      },
+      {
+        "y": 244.45095825195312,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "",
+            "Arrêt",
+            "",
+            "",
+            "État Détails"
+          ],
+          [
+            "Magnétomètre (MAG)",
+            "",
+            "—",
+            "",
+            "",
+            "Actif"
+          ],
+          [
+            "Plasma Wave Subsystem (PWS)",
+            "",
+            "—",
+            "",
+            "",
+            "Actif"
+          ],
+          [
+            "Cosmic Ray Subsystem (CRS)",
+            "",
+            "prévu 2026",
+            "",
+            "",
+            "Actif selon les sources les plus récentes ; arrêt programmé, date non confirmée"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Éteint pour économiser l'énergie (le petit moteur"
+          ],
+          [
+            "Low-Energy Charged Particles (LECP)",
+            "",
+            "24",
+            "mars 2025",
+            "",
+            "de l'instrument reste alimenté) ; en service"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "depuis 1977"
+          ],
+          [
+            "Plasma Science (PLS)",
+            "",
+            "26 septembre 2024",
+            "",
+            "",
+            "Éteint pour économiser l'énergie ; avait mesuré directement le plasma au franchissement de l'héliopause"
+          ],
+          [
+            "Caméras (ISS), IRIS, UVS, PPS, Radioastronomie planétaire (PRA)",
+            "",
+            "1989–1998",
+            "",
+            "",
+            "Arrêtés après les survols planétaires (dates approximatives)"
+          ],
+          [
+            "C. Étages de lancement et trajectoire",
+            "",
+            "",
+            "",
+            "d'échappement",
+            ""
+          ],
+          [
+            "Objet",
+            "Masse / taille",
+            "",
+            "État",
+            "Détails",
+            ""
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "",
+            "Après l'injection vers Jupiter, placé en orbite héliocentrique ; position non suivie précisément",
+            ""
+          ],
+          [
+            "Moteur d'appoint à poudre",
+            "n.c.",
+            "",
+            "",
+            "Largué après l'injection ; devenu un débris en orbite solaire",
+            ""
+          ],
+          [
+            "Étage principal Titan IIIE et propulseurs d'appoint",
+            "n.c.",
+            "",
+            "",
+            "Séparés dans les premières minutes du vol ; retombés dans l'océan Atlantique",
+            ""
+          ]
+        ]
+      },
+      {
+        "y": 594.7969360351562,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 612.0043334960938,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Voyager 2 n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 629.0043334960938,
+        "type": "text",
+        "text": "• Les données reçues (Jupiter, Saturne, Uranus, Neptune, puis milieu interstellaire) constituent tout le retour scientifique"
+      },
+      {
+        "y": 660.0043334960938,
+        "type": "text",
+        "text": "• Le Golden Record d'origine voyage à bord de la sonde"
+      },
+      {
+        "y": 687.7969360351562,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 705.0043334960938,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension"
+      },
+      {
+        "y": 722.0043334960938,
+        "type": "text",
+        "text": "• Protections et verrous de lancement des instruments et de la perche du magnétomètre, relâchés après le lancement"
+      }
+    ],
+    [
+      {
+        "y": 54.7176513671875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 77.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "20 août 1977, 14h29 UTC",
+            "Lancement de Titan IIIE-Centaur depuis Cape Canaveral"
+          ],
+          [
+            "9 juillet 1979",
+            "Survol de Jupiter (~645 000 km)"
+          ],
+          [
+            "26 août 1981",
+            "Survol de Saturne (~101 000 km)"
+          ],
+          [
+            "24 janvier 1986",
+            "Premier et seul survol d'Uranus (~81 500 km)"
+          ],
+          [
+            "25 août 1989",
+            "Premier et seul survol de Neptune (~4 800 km) ; fin du « Grand Tour » des planètes géantes"
+          ],
+          [
+            "Août 2007",
+            "Franchissement du choc terminal (limite de l'héliosphère)"
+          ],
+          [
+            "5 novembre 2018",
+            "Franchissement de l'héliopause — entrée dans l'espace interstellaire"
+          ],
+          [
+            "Juillet–4 août 2023",
+            "Commande erronée, antenne désorientée, puis contact complet rétabli"
+          ],
+          [
+            "26 septembre 2024",
+            "Arrêt de l'instrument Plasma Science (PLS)"
+          ],
+          [
+            "24 mars 2025",
+            "Arrêt du LECP ; trois instruments restent actifs"
+          ],
+          [
+            "2026",
+            "Arrêt du Cosmic Ray Subsystem programmé (non confirmé à ce jour)"
+          ]
+        ]
+      },
+      {
+        "y": 352.91766357421875,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 374.4043884277344,
+        "type": "text",
+        "text": "• Seule visite d'Uranus et de Neptune : Voyager 2 reste à ce jour la seule sonde passée près de ces deux planètes ; ses données sur les anneaux, les lunes et les champs magnétiques restent la référence."
+      },
+      {
+        "y": 419.4043884277344,
+        "type": "text",
+        "text": "• Deuxième sonde interstellaire : en 2018, son instrument de plasma a mesuré directement le franchissement de l'héliopause, complétant les données de Voyager 1 (dont le plasma ne fonctionnait plus)."
+      },
+      {
+        "y": 464.4043884277344,
+        "type": "text",
+        "text": "• Fin de vie programmée : avec ~4 W perdus par an, l'équipe applique un ordre d'extinction prédéfini ; l'objectif est de garder au moins un instrument actif jusqu'aux années 2030. À terme, la liaison avec la Terre sera perdue."
+      },
+      {
+        "y": 509.40435791015625,
+        "type": "text",
+        "text": "• Message à l'avenir : le Golden Record voyage à bord de la sonde, avec des sons et images de la Terre."
+      },
+      {
+        "y": 540.4043579101562,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible dans l'espace."
+      },
+      {
+        "y": 591.5176391601562,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 613.0043334960938,
+        "type": "text",
+        "text": "• NASA — Voyager 2 : science.nasa.gov/mission/voyager/voyager-2"
+      },
+      {
+        "y": 630.0043334960938,
+        "type": "text",
+        "text": "• NASA / JPL — « NASA Turns Off 2 Voyager Science Instruments to Extend Mission » (mars 2025)"
+      },
+      {
+        "y": 647.0043334960938,
+        "type": "text",
+        "text": "• Universe Today, PopSci, orbitalradar.com — état des instruments et distance"
+      },
+      {
+        "y": 664.0043334960938,
+        "type": "text",
+        "text": "• Trajectoire en direct : eyes.nasa.gov/apps/solar-system"
+      }
+    ]
+  ]
+}

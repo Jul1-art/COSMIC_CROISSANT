@@ -1,0 +1,354 @@
+{
+  "id": "lunokhod-2",
+  "name": "Lunokhod 2 (Luna 21)",
+  "body": "moon",
+  "family": "lunokhod",
+  "year": 1973,
+  "summary": "~1,96 t de matériel laissé sur la Lune (astromobile Lunokhod 2 de 840 kg + étage d'alunissage Ye-8 de ~1 120 kg à vide) • 1 instrument encore actif en 2026 (rétroréflecteur laser franco- soviétique TL-2) • 0 élément récupéré sur Terre (mission robotique sans retour).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 21 / Lunokhod 2 (Луноход-2, appareil 8EL n° 204, COSPAR 1973-001A / 1973-001D)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (NPO Lavotchkine de Gueorgui Babakine et VNIITransmash) — programme Luna"
+    ],
+    [
+      "Lancement",
+      "8 janvier 1973, 06h55 UTC — Cosmodrome de Baïkonour (site 81/23), fusée Proton-K / Blok D"
+    ],
+    [
+      "Alunissage",
+      "15 janvier 1973, 22h35 UTC — Cratère Le Monnier, bordure est de la mer de la Sérénité (25,8323° N, 30,9221° E)"
+    ],
+    [
+      "Fin de mission",
+      "11 mai 1973 (dernier contact radio ; fin officielle annoncée le 4 juin 1973 après 4 mois d'opérations)"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission robotique téléopérée depuis Simféropol en Crimée par un équipage de 5 opérateurs en temps réel)"
+    ],
+    [
+      "Véhicules",
+      "Proton-K / Blok D, étage d'alunissage KT (Ye-8), astromobile lunaire amélioré Lunokhod 2 à 8 roues motrices"
+    ],
+    [
+      "Statut",
+      "Réussie — record de distance sur un autre astre pendant 41 ans (39,16 km parcourus en 5 jours lunaires)"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Lunokhod 2 (Luna 21) - Fiche « Plus de détails ».pdf",
+  "pdf": "lunokhod-2.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Lunokhod 2 (Luna 21) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 130.24322509765625,
+        "type": "text",
+        "text": "Synthèse hardware : ~1,96 t de matériel laissé sur la Lune (astromobile Lunokhod 2 de 840 kg + étage d'alunissage Ye-8 de ~1 120 kg à vide) • 1 instrument encore actif en 2026 (rétroréflecteur laser franco-"
+      },
+      {
+        "y": 159.49322509765625,
+        "type": "text",
+        "text": "soviétique TL-2) • 0 élément récupéré sur Terre (mission robotique sans retour)."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 21 / Lunokhod 2 (Луноход-2, appareil 8EL n° 204, COSPAR 1973-001A / 1973-001D)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (NPO Lavotchkine de Gueorgui Babakine et VNIITransmash) — programme Luna"
+          ],
+          [
+            "Lancement",
+            "8 janvier 1973, 06h55 UTC — Cosmodrome de Baïkonour (site 81/23), fusée Proton-K / Blok D"
+          ],
+          [
+            "Alunissage",
+            "15 janvier 1973, 22h35 UTC — Cratère Le Monnier, bordure est de la mer de la Sérénité (25,8323° N, 30,9221° E)"
+          ],
+          [
+            "Fin de mission",
+            "11 mai 1973 (dernier contact radio ; fin officielle annoncée le 4 juin 1973 après 4 mois d'opérations)"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission robotique téléopérée depuis Simféropol en Crimée par un équipage de 5 opérateurs en temps réel)"
+          ],
+          [
+            "Véhicules",
+            "Proton-K / Blok D, étage d'alunissage KT (Ye-8), astromobile lunaire amélioré Lunokhod 2 à 8 roues motrices"
+          ],
+          [
+            "Statut",
+            "Réussie — record de distance sur un autre astre pendant 41 ans (39,16 km parcourus en 5 jours lunaires)"
+          ]
+        ]
+      },
+      {
+        "y": 550.7654418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 585.8842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 619.9705810546875,
+        "type": "text",
+        "text": "A. Surface lunaire — Cratère Le Monnier (~1 960 kg au total)"
+      },
+      {
+        "y": 639.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Astromobile Lunokhod 2 (châssis & 8 roues)",
+            "840 kg",
+            "Intact / inactif",
+            "Châssis pressurisé en alliage magnésium- aluminium (2,22 m × 2,15 m) sur 8 roues indépendantes à propulsion électrique renforcée. Immobilisé à l'est de Le Monnier (25,8323° N, 30,9221° E — site final ~25,47° N, 30,55° E)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Rétroréflecteur laser français (TL-2)",
+            "~3,5 kg",
+            "Toujours actif",
+            "Panneau de 14 prismes triangulaires en silice fondue fourni par le CNES / Sud-Aviation, monté à l'avant du rover. Toujours utilisé en 2026 pour la télémétrie laser Terre-Lune (signal atténué par la poussière)."
+          ],
+          [
+            "Couvercle supérieur à cellules solaires",
+            "~48 kg (estim.)",
+            "Intact / inactif",
+            "Dôme articulé tapissé de cellules photovoltaïques au silicium ; recouvert de régolithe après un heurt contre la paroi d'un cratère le 9 mai 1973, ce qui a fait chuter le rendement électrique et provoqué la surchauffe à sa fermeture."
+          ],
+          [
+            "Source thermique isotopique (Polonium 210)",
+            "~15 kg (bloc)",
+            "Intact / épuisé",
+            "Chauffage radio-isotopique (~11 g de 210Po, demi-vie 138 jours) maintenant les systèmes internes hors gel durant les nuits lunaires (−170 °C) ; complètement désintégré dès fin 1973."
+          ],
+          [
+            "3e caméra TV haute surélevée",
+            "~10 kg (estim.)",
+            "Intact / inactif",
+            "Nouvelle caméra installée en hauteur à hauteur d'homme (en plus des deux caméras frontales basses et des 4 téléphotomètres panoramiques) offrant une vision en perspective nettement améliorée pour la conduite rapide."
+          ],
+          [
+            "Magnétomètre triaxial (SG-70A)",
+            "~9 kg (estim.)",
+            "Intact / inactif",
+            "Capteur monté sur un mât déployable de 2,5 m à l'avant pour éloigner la sonde de la masse métallique du rover ; a mesuré les anomalies magnétiques crustales de la région de Le Monnier."
+          ],
+          [
+            "Spectromètre à fluorescence X (RIFMA- M)",
+            "~13 kg (estim.)",
+            "Intact / inactif",
+            "Version améliorée du spectromètre de Lunokhod 1 analysant la composition chimique du sol lunaire le long du parcours (transition entre les basaltes de mer et les hautes terres des monts Taurus)."
+          ],
+          [
+            "Astromètre photoélectrique AF-3L & photomètre",
+            "~11 kg (estim.)",
+            "Intact / inactif",
+            "Photomètre UV/visible mesurant la luminosité du ciel lunaire de jour et de nuit (détection de l'exosphère poussiéreuse) et détecteur laser Rubin-1 testant le pointage laser depuis la Terre."
+          ],
+          [
+            "Pénétromètre & odomètre (PrOP)",
+            "~8 kg (estim.)",
+            "Intact / inactif",
+            "Pénétromètre conique à ressort et 9e roue libre arrière mesurant la résistance mécanique du régolithe (plus de 700 essais) et confirmant la distance parcourue (39,16 km selon les mesures LRO)."
+          ],
+          [
+            "Étage d'alunissage Luna 21 (KT / Ye-8)",
+            "~1 120 kg (à vide)",
+            "Intact / inactif",
+            "Plateforme à 4 pieds amortisseurs, moteur principal KTDU-417, réservoirs vides et deux rampes déployables ; posée à 180 km au nord du site d'alunissage d'Apollo 17."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Jets en vol (lancement, transfert et orbite lunaire)"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur Blok D (4e étage Proton-K)",
+            "~2 450 kg (à vide)",
+            "Orbite / impact",
+            "A assuré l'injection translunaire puis le freinage d'insertion en orbite lunaire (12 janv. 1973) ; largué avant la descente finale, passé en orbite héliocentrique ou écrasé sur la Lune."
+          ],
+          [
+            "Compartiments auxiliaires de l'étage Ye-8",
+            "~180 kg (estim.)",
+            "Écrasés sur la Lune",
+            "Blocs d'avionique astro-inertielle et réservoirs largables éjectés à faible altitude juste avant l'allumage du moteur d'atterrissage au- dessus du cratère Le Monnier."
+          ],
+          [
+            "Étages 1, 2, 3 de Proton-K & coiffe",
+            "~52 000 kg (à vide)",
+            "Écrasés / brûlés",
+            "Retombés dans les zones de sécurité au Kazakhstan / Altaï (1er et 2e étages, coiffe) ou rentrés dans l'atmosphère terrestre depuis l'orbite parking (3e étage)."
+          ]
+        ]
+      },
+      {
+        "y": 331.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 353.3533630371094,
+        "type": "text",
+        "text": "Aucun élément matériel récupéré : mission 100 % téléopérée sans dispositif de retour d'échantillons vers la Terre."
+      },
+      {
+        "y": 387.1033630371094,
+        "type": "text",
+        "text": "Données scientifiques et cartographiques : plus de 80 000 clichés télévisés, 86 panoramas haute résolution, 700 essais mécaniques de sol et relevés magnétiques transmis à Simféropol."
+      },
+      {
+        "y": 431.51544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 458.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "8 janvier 1973, 06h55 UTC",
+            "Décollage de la fusée Proton-K / Blok D depuis Baïkonour ; injection de Luna 21 sur trajectoire translunaire."
+          ],
+          [
+            "12 janvier 1973",
+            "Insertion en orbite lunaire (90 × 110 km, inclinaison 60°), abaissée ensuite à un périsélène de 16 km."
+          ],
+          [
+            "15 janvier 1973, 22h35 UTC",
+            "Alunissage en douceur de Luna 21 dans le cratère Le Monnier ; descente de Lunokhod 2 sur le sol lunaire le 16 janvier à 01h14 UTC."
+          ],
+          [
+            "16 janv. – 9 mai 1973",
+            "5 jours lunaires d'exploration rapide : traversée de la plaine basaltique jusqu'aux contreforts des monts Taurus et exploration du sillon tectonique Fossa Recta (39,16 km parcourus)."
+          ],
+          [
+            "9 – 11 mai 1973",
+            "En manœuvrant dans un petit cratère, le couvercle ouvert de Lunokhod 2 heurte la paroi et se charge de poussière lunaire ; une fois refermé pour la nuit lunaire, la poussière isole le radiateur et provoque une surchauffe fatale des instruments."
+          ],
+          [
+            "17 mars 2010",
+            "La sonde américaine LRO photographie l'atterrisseur Luna 21, les traces sinueuses de 39 km et le rover immobilisé avec son couvercle ouvert (permettant la poursuite des tirs laser sur TL-2)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 82.60335540771484,
+        "type": "text",
+        "text": "Record historique de distance extraterrestre (41 ans) : avec 39,16 km parcourus (mesure révisée par les images LRO en 2013, contre 37 km initialement estimés), Lunokhod 2 a détenu le record absolu de distance roulée sur un autre corps céleste jusqu'au 27 juillet 2014, date à laquelle il fut dépassé sur Mars par le rover américain Opportunity."
+      },
+      {
+        "y": 147.1033477783203,
+        "type": "text",
+        "text": "Le rétroréflecteur TL-2 toujours suivi en 2026 : bien que la poussière tombée sur le rover en mai 1973 ait réduit la réflectivité de ses prismes français par rapport à Lunokhod 1, TL-2 reste ciblé par les stations de télémétrie laser lunaires (Apache Point, Observatoire de la Côte d'Azur) pour affiner les modèles d'orbite et de libration de la Lune."
+      },
+      {
+        "y": 212.3533477783203,
+        "type": "text",
+        "text": "Propriété privée symbolique : acquis en décembre 1993 chez Sotheby's (avec Luna 21) par l'entrepreneur et astronaute privé Richard Garriott pour 68 500 dollars ; ce dernier revendique symboliquement la propriété du véhicule posé sur la Lune."
+      },
+      {
+        "y": 261.1033630371094,
+        "type": "text",
+        "text": "Découverte d'une exosphère poussiéreuse : les mesures photométriques d'AF-3L au crépuscule lunaire ont révélé un halo lumineux à l'horizon, confirmant la lévitation électrostatique de fines particules de poussière au-dessus de la surface lunaire."
+      },
+      {
+        "y": 320.51544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 350.3533630371094,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Luna 21 / Lunokhod 2 (ID : 1973-001A / 1973-001D)"
+      },
+      {
+        "y": 384.8533630371094,
+        "type": "text",
+        "text": "LROC (Lunar Reconnaissance Orbiter Camera) — Lunokhod 2 Revisited & recalcul exact de la trajectoire (2010–2013)"
+      },
+      {
+        "y": 419.3533630371094,
+        "type": "text",
+        "text": "I. P. Karachevtseva et al., Cartography of the Lunokhod-2 landing site and traverse area, Planetary and Space Science, vol. 85, 2013"
+      },
+      {
+        "y": 453.1033630371094,
+        "type": "text",
+        "text": "Observatoire de la Côte d'Azur (Calern) & CNES — Bilan des réflecteurs laser lunaires TL-1 et TL-2"
+      }
+    ]
+  ]
+}

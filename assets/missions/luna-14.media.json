@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "source": "https://imagine.gsfc.nasa.gov/observatories/history/missions/luna.html",
+      "image": "https://imagine.gsfc.nasa.gov/observatories/history/missions/images/luna/luna10.jpg",
+      "title": "Luna 10 — document de contexte du programme d’orbiteurs Luna",
+      "credit": "Soviet Space Program / NASA Goddard",
+      "context": "Document de contexte : cette illustration représente Luna 10, et non une photographie de Luna 14.",
+      "src": "archives/luna-14-reviewed-1.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-14.mp4",
+    "local": true,
+    "title": "Luna 14 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-14.pdf",
+    "fingerprint": "5722b2685d729dafae19df6cdf6e164d839ae4125dce98f4a8728f0b0fa2c6ab"
+  }
+}

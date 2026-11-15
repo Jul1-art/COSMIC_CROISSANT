@@ -1,0 +1,265 @@
+{
+  "id": "akatsuki",
+  "name": "Akatsuki (Venus Climate Orbiter)",
+  "body": "venus",
+  "family": "orbiter",
+  "year": 2010,
+  "summary": "Analyse complète de la première sonde météorologique japonaise dédiée à Vénus (Akatsuki). Ce dossier retrace la conception initiale, l'échec de l'insertion orbitale en décembre 2010, le sauvetage historique de décembre 2015 via les propulseurs RCS, une décennie d'observations novatrices sur la super-rotation atmosphérique et les ondes de gravité, jusqu'à la clôture officielle de la mission en septembre 2025.",
+  "facts": [
+    [
+      "Nom officiel & international",
+      "Akatsuki (あかつき, « Aube »), Venus Climate Orbiter, PLANET-C, COSPAR 2010-020A"
+    ],
+    [
+      "Agence spatiale & maîtrise d'œuvre",
+      "Agence aérospatiale japonaise (JAXA / ISAS), construction principale par Mitsubishi Heavy Industries"
+    ],
+    [
+      "Lancement & Site",
+      "21 mai 2010, 21:58:39 UTC — Complexe de tir Yoshinobu (YLC-1), Centre spatial de Tanegashima, Japon"
+    ],
+    [
+      "Lanceur",
+      "Fusée H-IIA (configuration 202, vol F17)"
+    ],
+    [
+      "Masse au lancement & à sec",
+      "517,6 kg au total (dont 197 kg de propergol pour les manœuvres orbitales) ; masse sèche à l'insertion de ~326 kg"
+    ],
+    [
+      "Orbite vénusienne cible & atteinte",
+      "Orbite elliptique haute (périapse initial ~400 km, apoapse ~440 000 km, période orbitale de 13 jours et 23 heures)"
+    ],
+    [
+      "Statut de la mission (2026)",
+      "Mission close le 18 septembre 2025 après une panne d'attitude intervenue en avril 2024 ; orbiteur intact en orbite autour de Vénus."
+    ]
+  ],
+  "sourceFile": "Vénus/Akatsuki (Venus Climate Orbiter) - Dossier Technique Complet.pdf",
+  "pdf": "akatsuki.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.031856536865234,
+        "type": "text",
+        "text": "DOSSIER TECHNIQUE APPROFONDI — PROGRAMME D'EXPLORATION VÉNUSIENNE JAXA Akatsuki (Venus Climate Orbiter / PLANET-C) — Rapport de Mission"
+      },
+      {
+        "y": 139.98788452148438,
+        "type": "text",
+        "text": "Synthèse exhaustive : Analyse complète de la première sonde météorologique japonaise dédiée à Vénus (Akatsuki). Ce dossier retrace la conception initiale, l'échec de l'insertion orbitale en décembre 2010, le sauvetage historique de décembre 2015 via les propulseurs RCS, une décennie d'observations novatrices sur la super-rotation atmosphérique et les ondes de gravité, jusqu'à la clôture officielle de la mission en septembre 2025."
+      },
+      {
+        "y": 225.416015625,
+        "type": "text",
+        "text": "1. Identité institutionnelle & Paramètres de la mission"
+      },
+      {
+        "y": 249.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Caractéristique",
+            "Spécification technique"
+          ],
+          [
+            "Nom officiel & international",
+            "Akatsuki (あかつき, « Aube »), Venus Climate Orbiter, PLANET-C, COSPAR 2010-020A"
+          ],
+          [
+            "Agence spatiale & maîtrise d'œuvre",
+            "Agence aérospatiale japonaise (JAXA / ISAS), construction principale par Mitsubishi Heavy Industries"
+          ],
+          [
+            "Lancement & Site",
+            "21 mai 2010, 21:58:39 UTC — Complexe de tir Yoshinobu (YLC-1), Centre spatial de Tanegashima, Japon"
+          ],
+          [
+            "Lanceur",
+            "Fusée H-IIA (configuration 202, vol F17)"
+          ],
+          [
+            "Masse au lancement & à sec",
+            "517,6 kg au total (dont 197 kg de propergol pour les manœuvres orbitales) ; masse sèche à l'insertion de ~326 kg"
+          ],
+          [
+            "Orbite vénusienne cible & atteinte",
+            "Orbite elliptique haute (périapse initial ~400 km, apoapse ~440 000 km, période orbitale de 13 jours et 23 heures)"
+          ],
+          [
+            "Statut de la mission (2026)",
+            "Mission close le 18 septembre 2025 après une panne d'attitude intervenue en avril 2024 ; orbiteur intact en orbite autour de Vénus."
+          ]
+        ]
+      },
+      {
+        "y": 497.666015625,
+        "type": "text",
+        "text": "2. Inventaire exhaustif du Hardware & Instruments scientifiques"
+      },
+      {
+        "y": 526.2681884765625,
+        "type": "text",
+        "text": "Légende des états : actif intact en orbite (inactif) détruit orbite solaire"
+      },
+      {
+        "y": 551.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Plateforme & Structure Akatsuki",
+            "~483 kg",
+            "Intact / inactif",
+            "Structure cubique en alliage d'aluminium, panneaux solaires GaAs déployés (puissance nominale ~500 W), sous-système de contrôle d'attitude (RCS) et antennes grand gain."
+          ],
+          [
+            "Caméra Infrarouge 1 (IR1)",
+            "2,3 kg",
+            "Intact / inactif",
+            "Imagerie à 0,90, 0,95 et 1,01 µm pour sonder la surface de Vénus et les couches nuageuses basses de nuit."
+          ],
+          [
+            "Caméra Infrarouge 2 (IR2)",
+            "4,7 kg",
+            "Intact / inactif",
+            "Imagerie multispectrale dans les bandes de 1,73 à 2,32 µm pour analyser les nuages intermédiaires et le monoxyde de carbone (CO)."
+          ],
+          [
+            "Caméra Infrarouge Lointain (LIR)",
+            "2,8 kg",
+            "Intact / inactif",
+            "Radiomètre thermique mesurant l'émission des nuages sombres à 10 µm pour cartographier les variations de température et les ondes de gravité."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 34.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Caméra Ultraviolette (UVI)",
+            "2,4 kg",
+            "Intact / inactif",
+            "Imagerie UV à 283 et 365 nm pour observer la distribution du dioxyde de soufre (SO₂) et les brumes supérieures de l'atmosphère."
+          ],
+          [
+            "Caméra Lightning & Airglow (LAC)",
+            "3,9 kg",
+            "Intact / inactif",
+            "Photomètre ultra-rapide à 777 nm pour détecter les éclairs électriques nocturnes et la luminescence nocturne de l'oxygène."
+          ],
+          [
+            "Oscillateur Ultra-Stable (USO)",
+            "4,2 kg",
+            "Intact / inactif",
+            "Source radiofréquence de haute précision (bande X et S) pour les expériences de radio-occultation sondant la densité ionosphérique et neutre."
+          ],
+          [
+            "Second étage H-IIA",
+            "~3 000 kg",
+            "Orbite solaire",
+            "Étage cryogénique du lanceur ayant propulsé la sonde en mai 2010, placé sur une orbite héliocentrique stable."
+          ]
+        ]
+      },
+      {
+        "y": 235.166015625,
+        "type": "text",
+        "text": "3. Chronologie détaillée & Péripéties opérationnelles"
+      },
+      {
+        "y": 257.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement & Contexte analytique"
+          ],
+          [
+            "21 mai 2010",
+            "Lancement parfait depuis Tanegashima de la fusée H-IIA embarquant Akatsuki ainsi que la voile solaire expérimentale IKAROS."
+          ],
+          [
+            "7 déc. 2010",
+            "Premier échec d'insertion orbitale : une vanne de pressurisation défectueuse obstrue l'alimentation en propergol, provoquant une surchauffe et l'arrêt prématuré du moteur principal après 3 minutes. La sonde rate Vénus et se retrouve en orbite solaire."
+          ],
+          [
+            "7 déc. 2015",
+            "Tentative de rattrapage historique (cinq ans après l'échec) : la JAXA utilise exclusivement les petits propulseurs d'attitude (RCS) pendant 20 minutes pour injecter Akatsuki sur une orbite elliptique autour de Vénus. Un exploit technique mondial."
+          ],
+          [
+            "2016 – 2024",
+            "Phase d'exploration scientifique continue : découverte d'immenses ondes atmosphériques stationnaires, analyse des courants de jet et étude approfondie de la super-rotation vénusienne."
+          ],
+          [
+            "Avril 2024",
+            "Perte de contact radio inopinée consécutive à une anomalie du système de contrôle d'attitude, empêchant le maintien du pointage de l'antenne parabolique vers la Terre."
+          ],
+          [
+            "18 sept. 2025",
+            "Clôture officielle de la mission par la JAXA après 18 mois de tentatives infructueuses pour restaurer les liaisons de télécommunication, marquant la fin de la vie active de l'orbiteur."
+          ]
+        ]
+      },
+      {
+        "y": 508.166015625,
+        "type": "text",
+        "text": "4. Apports scientifiques & Héritage pour la planétologie"
+      },
+      {
+        "y": 531.0374145507812,
+        "type": "text",
+        "text": "Akatsuki a profondément révolutionné notre compréhension de la mécanique atmosphérique de Vénus. En maintenant une perspective orbitale continue pendant près d'une décennie, la sonde a permis de cartographier la structure tridimensionnelle des nuages vénusiens et d'analyser les mécanismes de la super-rotation — un phénomène où l'atmosphère fait le tour de la planète en seulement quatre jours terrestres, alors que la planète elle-même met 243 jours à pivoter sur elle-même."
+      },
+      {
+        "y": 604.5374145507812,
+        "type": "text",
+        "text": "La découverte d'ondes de gravité atmosphériques géantes, formées au-dessus des hauts reliefs topographiques de la surface et se propageant verticalement jusqu'aux couches sommitales des nuages, constitue l'une des contributions majeures de la mission. Ces travaux permettent de mieux modéliser l'équilibre thermique global des planètes telluriques à atmosphère dense."
+      },
+      {
+        "y": 664.916015625,
+        "type": "text",
+        "text": "5. Sources & Références bibliographiques"
+      },
+      {
+        "y": 687.7874145507812,
+        "type": "text",
+        "text": "JAXA / ISAS — Venus Climate Orbiter “AKATSUKI” (PLANET-C) Official Mission Archive (global.jaxa.jp)"
+      },
+      {
+        "y": 703.5374145507812,
+        "type": "text",
+        "text": "M. Nakamura et al., The Akatsuki Venus Climate Orbiter Mission, Earth, Planets and Space, vol. 68, 2016."
+      },
+      {
+        "y": 718.5374145507812,
+        "type": "text",
+        "text": "T. Imamura et al., Initial Science Results from Akatsuki: Sounding of the Venus Atmosphere, Space Science Reviews, vol. 213, 2017."
+      },
+      {
+        "y": 747.7874145507812,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche technique Akatsuki (ID : 2010-020A)."
+      },
+      {
+        "y": 772.3870849609375,
+        "type": "text",
+        "text": "Référence du dossier : JAXA-PLANET-C-AKATSUKI-FULL-REPORT-2026 • Document généré conformément au cahier des charges de la carte 3D du patrimoine spatial."
+      }
+    ]
+  ]
+}

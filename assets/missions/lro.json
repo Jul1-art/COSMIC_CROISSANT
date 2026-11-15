@@ -1,0 +1,333 @@
+{
+  "id": "lro",
+  "name": "LRO (Lunar Reconnaissance Orbiter)",
+  "body": "moon",
+  "family": "orbiter",
+  "year": 2009,
+  "summary": "Analyse technique et historique détaillée de la sonde spatiale LRO (Lunar Reconnaissance Orbiter / NASA), lancée en juin 2009 conjointement avec l'impacteur LCROSS. Conçu initialement comme une mission de reconnaissance d'un an pour préparer le retour de l'homme sur la Lune, cet orbiteur polaire de 1 916 kg demeure pleinement opérationnel depuis plus de 17 ans en novembre 2026. Grâce à sa suite de 7 instruments scientifiques de haute précision, LRO a établi l'atlas topographique, thermique et photographique le plus détaillé jamais réalisé d'un corps céleste extraterrestre, tout en soutenant directement la sélection des sites d'atterrissage du programme Artemis.",
+  "facts": [
+    [
+      "Nom officiel & international",
+      "Lunar Reconnaissance Orbiter (LRO — COSPAR 2009-031A / SATCAT 35315)"
+    ],
+    [
+      "Agence & maîtrise d'œuvre",
+      "NASA (Goddard Space Flight Center — conception, intégration et opérations de vol) avec contributions scientifiques d'universités américaines et de l'Institut de recherche spatiale de Russie (IKI)"
+    ],
+    [
+      "Lancement & Site",
+      "18 juin 2009, 21:32:00 UTC — Complexe de lancement SLC-41, Cape Canaveral Air Force Station, Floride"
+    ],
+    [
+      "Lanceur",
+      "Fusée Atlas V (configuration 401 avec étage supérieur cryogénique Centaur SEC et coiffe de 4 m)"
+    ],
+    [
+      "Masse au lancement & à sec",
+      "1 916 kg au lancement (dont 898 kg d'ergols hypergoliques et ~142 kg d'instruments scientifiques) ; masse sèche ~1 018 kg (hors charge utile secondaire LCROSS de ~891 kg)"
+    ],
+    [
+      "Orbite sélénocentrique",
+      "Orbite polaire quasi circulaire de cartographie (50 km × 50 km, période 113 min) durant la phase primaire, puis orbite elliptique figée basse consommation (périsélène ~30–70 km au-dessus du pôle Sud, aposélène ~120–180 km)"
+    ],
+    [
+      "Statut de la mission (2026)",
+      "Observatoire toujours actif et opérationnel en orbite lunaire (plus de 17 ans d'activité continue ; sixième mission scientifique étendue en cours)."
+    ]
+  ],
+  "sourceFile": "Lune/LRO (Lunar Reconnaissance Orbiter) — Dossier Technique Complet.pdf",
+  "pdf": "lro.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.031856536865234,
+        "type": "text",
+        "text": "DOSSIER TECHNIQUE APPROFONDI — PROGRAMME LUNAR PRECURSOR ROBOTIC NASA LRO (Lunar Reconnaissance Orbiter) — Dossier Technique Complet"
+      },
+      {
+        "y": 142.9276123046875,
+        "type": "text",
+        "text": "Synthèse exhaustive : Analyse technique et historique détaillée de la sonde spatiale LRO (Lunar Reconnaissance Orbiter / NASA), lancée en juin 2009 conjointement avec l'impacteur LCROSS. Conçu initialement comme une mission de reconnaissance d'un an pour préparer le retour de l'homme sur la Lune, cet orbiteur polaire de 1 916 kg demeure pleinement opérationnel depuis plus de 17 ans en novembre 2026. Grâce à sa suite de 7 instruments scientifiques de haute précision, LRO a établi l'atlas topographique, thermique et photographique le plus détaillé jamais réalisé d'un corps céleste extraterrestre, tout en soutenant directement la sélection des sites d'atterrissage du programme Artemis."
+      },
+      {
+        "y": 256.916015625,
+        "type": "text",
+        "text": "1. Identité institutionnelle & Paramètres de la mission"
+      },
+      {
+        "y": 280.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Caractéristique",
+            "Spécification technique"
+          ],
+          [
+            "Nom officiel & international",
+            "Lunar Reconnaissance Orbiter (LRO — COSPAR 2009-031A / SATCAT 35315)"
+          ],
+          [
+            "Agence & maîtrise d'œuvre",
+            "NASA (Goddard Space Flight Center — conception, intégration et opérations de vol) avec contributions scientifiques d'universités américaines et de l'Institut de recherche spatiale de Russie (IKI)"
+          ],
+          [
+            "Lancement & Site",
+            "18 juin 2009, 21:32:00 UTC — Complexe de lancement SLC-41, Cape Canaveral Air Force Station, Floride"
+          ],
+          [
+            "Lanceur",
+            "Fusée Atlas V (configuration 401 avec étage supérieur cryogénique Centaur SEC et coiffe de 4 m)"
+          ],
+          [
+            "Masse au lancement & à sec",
+            "1 916 kg au lancement (dont 898 kg d'ergols hypergoliques et ~142 kg d'instruments scientifiques) ; masse sèche ~1 018 kg (hors charge utile secondaire LCROSS de ~891 kg)"
+          ],
+          [
+            "Orbite sélénocentrique",
+            "Orbite polaire quasi circulaire de cartographie (50 km × 50 km, période 113 min) durant la phase primaire, puis orbite elliptique figée basse consommation (périsélène ~30–70 km au-dessus du pôle Sud, aposélène ~120–180 km)"
+          ],
+          [
+            "Statut de la mission (2026)",
+            "Observatoire toujours actif et opérationnel en orbite lunaire (plus de 17 ans d'activité continue ; sixième mission scientifique étendue en cours)."
+          ]
+        ]
+      },
+      {
+        "y": 577.166015625,
+        "type": "text",
+        "text": "2. Inventaire exhaustif du Hardware & Instruments scientifiques"
+      },
+      {
+        "y": 608.0181884765625,
+        "type": "text",
+        "text": "Légende des états : actif en orbite lunaire inactif / dégradé impacté / détruit orbite héliocentrique"
+      },
+      {
+        "y": 635.520263671875,
+        "type": "text",
+        "text": "A. Plateforme spatiale & Suite complète des 7 instruments scientifiques (Orbite lunaire)"
+      },
+      {
+        "y": 654.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Plateforme LRO (Bus GSFC)",
+            "~876 kg (sec)",
+            "Actif (Lune)",
+            "Structure modulaire en composite et aluminium (2,7 m × 2,6 m), panneau solaire déployable fournissant 1 850 W, antenne grand gain en bande Ka (100 Mbps), propulsion bipropulseur (MMH/N₂O₄) et 4 roues à réaction."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "LROC (Lunar Reconnaissance Orbiter Camera)",
+            "31,5 kg",
+            "Actif (Lune)",
+            "Système composé de deux caméras à angle étroit (NAC, résolution jusqu'à 0,5 m/pixel à 50 km d'altitude) et d'une caméra grand angle multispectrale (WAC, 7 bandes UV/visible, 100 m/pixel), photographiant les sites Apollo et les reliefs polaires."
+          ],
+          [
+            "LOLA (Lunar Orbiter Laser Altimeter)",
+            "12,3 kg",
+            "Actif (Lune)",
+            "Altimètre laser à impulsions (1 064 nm, divisé en 5 faisceaux à 28 Hz) mesurant l'altitude de la surface lunaire avec une précision verticale de 10 cm et cartographiant l'éclairement permanent et les zones d'ombre permanente (PSR)."
+          ],
+          [
+            "Diviner (Lunar Radiometer Experiment)",
+            "11,0 kg",
+            "Actif (Lune)",
+            "Radiomètre infrarouge à 9 canaux spectraux (de 0,35 à 400 µm) cartographiant les températures diurnes et nocturnes de la surface lunaire et identifiant les pièges froids polaires (< 30 K) capables de piéger la glace d'eau."
+          ],
+          [
+            "LAMP (Lyman Alpha Mapping Project)",
+            "6,1 kg",
+            "Actif (Lune)",
+            "Spectrographe imageur dans l'ultraviolet lointain (57 à 196 nm) utilisant la lumière ultraviolette des étoiles et du ciel interplanétaire (raie Lyman-alpha) pour scruter l'intérieur des cratères perpétuellement ombragés à la recherche de givre de surface."
+          ],
+          [
+            "LEND (Lunar Exploration Neutron Detector)",
+            "26,7 kg",
+            "Actif (Lune)",
+            "Détecteur de neutrons collimatés (fourni par IKI / Roscosmos) mesurant le flux de neutrons épithermiques émis par le régolithe sous l'effet des rayons cosmiques pour cartographier la concentration d'hydrogène et de glace d'eau jusqu'à 1 m de profondeur."
+          ],
+          [
+            "CRaTER (Cosmic Ray Telescope for the Effects of Radiation)",
+            "6,2 kg",
+            "Actif (Lune)",
+            "Télescope à détecteurs silicium séparés par un plastique équivalent aux tissus humains (TEP), quantifiant le transfert d'énergie linéique (TEL) des rayons cosmiques galactiques et des éruptions solaires pour évaluer les risques radiatifs pour les astronautes."
+          ],
+          [
+            "Mini-RF (Miniature Radio Frequency)",
+            "14,2 kg",
+            "Actif (bistatique)",
+            "Radar à synthèse d'ouverture (SAR) double fréquence (bande S et bande X) conçu pour détecter la glace d'eau enfouie par polarimétrie circulaire. Depuis la panne de son émetteur en décembre 2010, il fonctionne en mode radar bistatique avec les radiotélescopes terrestres."
+          ]
+        ]
+      },
+      {
+        "y": 602.520263671875,
+        "type": "text",
+        "text": "B. Mission conjointe LCROSS & Éléments du lanceur"
+      },
+      {
+        "y": 621.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails & Localisation"
+          ],
+          [
+            "Étage Centaur (AV-020) & Sonde berger LCROSS",
+            "~2 366 kg (impact Centaur) + ~621 kg (LCROSS)",
+            "Impactés (Cabeus)",
+            "Lancés conjointement avec LRO : l'étage supérieur Centaur a été volontairement précipité à 9 000 km/h dans le cratère polaire Cabeus le 9 octobre 2009 à 11:31 UTC, suivi 4 minutes plus tard par la sonde LCROSS après analyse du panache d'éjectas."
+          ],
+          [
+            "1er étage Common Core Booster & coiffe Atlas V",
+            "~22 500 kg (à vide)",
+            "Détruits / retombés",
+            "Éléments du lanceur Atlas V 401 largués lors de l'ascension depuis Cape Canaveral en juin 2009, retombés dans l'océan Atlantique."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 62.666015625,
+        "type": "text",
+        "text": "3. Chronologie détaillée & Péripéties opérationnelles"
+      },
+      {
+        "y": 86.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement & Contexte analytique"
+          ],
+          [
+            "18 juin 2009",
+            "Lancement nominal depuis Cape Canaveral par une fusée Atlas V 401 emportant LRO et l'impacteur LCROSS sur une trajectoire directe de transfert lunaire de 4,5 jours."
+          ],
+          [
+            "23 juin 2009",
+            "Insertion orbitale lunaire réussie après une série de quatre allumages des moteurs principaux, plaçant LRO sur une orbite de mise en service elliptique."
+          ],
+          [
+            "15 sept. 2009",
+            "Début de la mission primaire de cartographie à 50 km d'altitude. LRO transmet les premières photographies haute résolution montrant les modules lunaires Apollo, les rovers et les traces de pas des astronautes."
+          ],
+          [
+            "9 oct. 2009",
+            "Impact historique LCROSS : LRO observe en direct avec ses instruments (Diviner, LAMP, LROC, LEND) le panache soulevé par l'impact de l'étage Centaur dans le cratère Cabeus, confirmant la présence de ~5,6 % de glace d'eau dans le régolithe polaire."
+          ],
+          [
+            "11 déc. 2011",
+            "Transfert de LRO sur une orbite elliptique figée (« frozen orbit ») ne nécessitant presque aucune consommation d'ergols pour le maintien à poste, prolongeant la durée de vie potentielle de la mission de plus d'une décennie."
+          ],
+          [
+            "2013 – 2026",
+            "Extensions successives sous l'égide de la direction des missions scientifiques de la NASA (SMD). LRO photographie les sites d'atterrissage des missions Chang'e (3, 4, 5, 6), Chandrayaan-3, SLIM et IM-1, et cartographie les régions candidates d'Artemis III au pôle Sud."
+          ]
+        ]
+      },
+      {
+        "y": 374.666015625,
+        "type": "text",
+        "text": "4. Apports scientifiques fondamentaux & Découverte de l'eau lunaire"
+      },
+      {
+        "y": 398.7378845214844,
+        "type": "text",
+        "text": "LRO a profondément bouleversé notre vision d'une Lune géologiquement morte et totalement anhydre. Grâce à la synergie entre les mesures thermiques de Diviner, les spectres UV de LAMP et les cartes neutroniques de LEND, les planétologues ont démontré que le fond des cratères d'ombre permanente (PSR) près des pôles lunaires descend à des températures inférieures à 25 kelvins (−248 °C) — plus froides encore que la surface de Pluton — permettant de conserver des réservoirs de glace d'eau et de composés volatils piégés depuis des milliards d'années."
+      },
+      {
+        "y": 476.7378845214844,
+        "type": "text",
+        "text": "Par ailleurs, les images à très haute résolution de LROC ont révélé l'existence de milliers d'escarpements de faille lobés jeunes (âgés de moins de 50 millions d'années), prouvant que la Lune continue de se contracter lentement à mesure que son intérieur se refroidit, générant une activité tectonique et sismique contemporaine. LRO a également recensé des centaines de nouveaux cratères d'impact formés en direct durant sa mission, permettant de calibrer avec précision le taux de bombardement météoritique actuel dans le système Terre-Lune."
+      },
+      {
+        "y": 555.416015625,
+        "type": "text",
+        "text": "5. Soutien stratégique au programme Artemis & Archéologie spatiale"
+      },
+      {
+        "y": 578.7378540039062,
+        "type": "text",
+        "text": "Au-delà de ses découvertes fondamentales, LRO constitue l'infrastructure de reconnaissance indispensable au retour des équipages humains sur la Lune dans le cadre du programme Artemis. Les modèles numériques de terrain (MNT) générés par l'altimètre laser LOLA et la stéréophotogrammétrie LROC permettent de modéliser l'ensoleillement quasi continu des crêtes polaires (telles que le massif de Malapert ou les bords des cratères Shackleton et Nobile) ainsi que les pentes locales au mètre près pour sécuriser les alunissages habités."
+      },
+      {
+        "y": 656.7378540039062,
+        "type": "text",
+        "text": "Enfin, LRO a accompli une véritable œuvre d'archéologie spatiale en localisant et photographiant avec une netteté remarquable l'ensemble des sites d'atterrissage des missions Apollo (11 à 17), les sondes automatiques américaines Surveyor, les atterrisseurs et rovers soviétiques Luna et Lunokhod, ainsi que les sites d'impact des sondes contemporaines."
+      }
+    ],
+    [
+      {
+        "y": 62.666015625,
+        "type": "text",
+        "text": "6. Épreuves d'ingénierie & Longévité exceptionnelle"
+      },
+      {
+        "y": 86.73788452148438,
+        "type": "text",
+        "text": "Initialement conçu pour fonctionner pendant exactement une année terrestre sur une orbite circulaire basse très gourmande en ergols (50 km d'altitude), LRO devait épuiser ses réservoirs dès 2010. L'adoption ingénieuse d'une orbite elliptique figée fin 2011 a réduit la consommation annuelle d'ergols de plus de 90 %, permettant à l'observatoire de franchir le cap des 17 années d'activité en 2026. Malgré le vieillissement de ses gyroscopes inertiels — contourné dès 2018 par un mode de navigation s'appuyant uniquement sur les viseurs d'étoiles (« star trackers ») —, LRO continue de transmettre des centaines de téraoctets de données scientifiques vers la Terre."
+      },
+      {
+        "y": 178.916015625,
+        "type": "text",
+        "text": "7. Sources & Références bibliographiques"
+      },
+      {
+        "y": 202.23788452148438,
+        "type": "text",
+        "text": "G. Chin, S. Brylow, M. Foote, J. Garvin, J. Kasper, J. Keller, M. Litvak, I. Mitrofanov, D. Paige, K. Raney, M. Robinson, A. Sanin, D. Smith, H. Spence, P. Spudis, S. A. Stern & M. Zuber, Lunar Reconnaissance Orbiter Overview: The Instrument Suite and Mission, Space Science Reviews, vol. 129, pp. 391–419, 2007."
+      },
+      {
+        "y": 244.98788452148438,
+        "type": "text",
+        "text": "NASA Goddard Space Flight Center — Lunar Reconnaissance Orbiter Official Mission Portal (lunar.gsfc.nasa.gov)"
+      },
+      {
+        "y": 260.7378845214844,
+        "type": "text",
+        "text": "Arizona State University — LROC (Lunar Reconnaissance Orbiter Camera) Image Archive (lroc.sese.asu.edu)"
+      },
+      {
+        "y": 276.4878845214844,
+        "type": "text",
+        "text": "A. Colaprete et al., Detection of Water in the LCROSS Ejecta Plume, Science, vol. 330, pp. 463–468, 2010."
+      },
+      {
+        "y": 292.2378845214844,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche technique LRO (ID : 2009-031A)."
+      },
+      {
+        "y": 318.6371154785156,
+        "type": "text",
+        "text": "Référence du dossier : NASA-LPRP-LRO-LCROSS-FULL-REPORT-2026 • Document généré conformément au cahier des charges de la carte 3D du patrimoine spatial."
+      }
+    ]
+  ]
+}

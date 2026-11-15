@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "RIAN archive 510848 Interplanetary station Luna 1 - blacked",
+      "description": "“Interplanetary station Luna 1”. Interplanetary station Luna 1 exhibited in the \"Kosmos\" pavilion of the Exhibition of Achievements of National Economy of the USSR (VDNKh).",
+      "credit": "RIAN_archive_510848_Interplanetary_station_Luna_1.jpg : Alexander Mokletsov / Александр Моклецов derivative work: Craigboy ( talk )",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:RIAN_archive_510848_Interplanetary_station_Luna_1_-_blacked.jpg",
+      "src": "archives/luna-1-commons.jpg",
+      "date": "2012-01-24 03:06",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-1.mp4",
+    "local": true,
+    "title": "Luna 1 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-1.pdf",
+    "fingerprint": "5b5987475bd33178fb0182483f119309f75bce3370b9dc930fcefdeba91f2aff"
+  }
+}

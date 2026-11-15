@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Parker Solar Probe Prelaunch",
+      "credit": "NASA/Bill Ingalls",
+      "date": "2018-08-11T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ201808110001",
+      "nasaId": "NHQ201808110001",
+      "description": "The United Launch Alliance Delta IV Heavy rocket with the Parker Solar Probe is illuminated ahead of launch, Saturday, Aug. 11, 2018, Launch Complex 37 at Cape Canaveral Air Force Station in Florida. Parker Solar Probe is humanity’s first-ever mission into a part of the Sun’s atmosphere called the corona.  Here it will directly explore solar processes that are key to understanding and forecasting space weather events that can impact life on Earth. Photo Credit: (NASA/Bill Ingalls)",
+      "src": "archives/parker-solar-probe-nasa-NHQ201808110001.jpg"
+    },
+    {
+      "title": "Parker Solar Probe Launch",
+      "credit": "NASA/Bill Ingalls",
+      "date": "2018-08-12T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ201808120013",
+      "nasaId": "NHQ201808120013",
+      "description": "The United Launch Alliance Delta IV Heavy rocket launches NASA's Parker Solar Probe to touch the Sun, Sunday, Aug. 12, 2018 from Launch Complex 37 at Cape Canaveral Air Force Station, Florida. Parker Solar Probe is humanity’s first-ever mission into a part of the Sun’s atmosphere called the corona.  Here it will directly explore solar processes that are key to understanding and forecasting space weather events that can impact life on Earth. Photo Credit: (NASA/Bill Ingalls)",
+      "src": "archives/parker-solar-probe-nasa-NHQ201808120013.jpg"
+    },
+    {
+      "title": "Parker Solar Probe Rollback for Launch",
+      "credit": "NASA/Kim Shiflett",
+      "date": "2018-08-10T00:00:00Z",
+      "source": "https://images.nasa.gov/details/KSC-20180810-PH_KLS01_0177",
+      "nasaId": "KSC-20180810-PH_KLS01_0177",
+      "description": "On Friday, Aug. 10, 2018, at Cape Canaveral Air Force Station in Florida, the United Launch Alliance Delta IV Heavy rocket that will boost NASA's Parker Solar Probe is reflected in a nearby pond during rollback of the Mobile Service Tower gantry at Space Launch Complex 37. Parker Solar Probe will perform the closest-ever observations of a star when it travels through the Sun's atmosphere, called the corona. The probe will rely on measurements and imaging to revolutionize our understanding of the corona and the Sun-Earth connection.",
+      "src": "archives/parker-solar-probe-nasa-KSC-20180810-PH_KLS01_0177.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Parker Solar Probe Trailer",
+      "credit": "Genna Duberstein, Steve Gribben",
+      "source": "https://images.nasa.gov/details/GSFC_20180720_Parker_m12911_trailer.en_US",
+      "nasaId": "GSFC_20180720_Parker_m12911_trailer.en_US",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20180720_Parker_m12911_trailer.en_US/GSFC_20180720_Parker_m12911_trailer.en_US~orig.mp4",
+      "description": "Parker Solar Probe is NASA's mission to the Sun. The spacecraft will launch summer 2018.",
+      "date": "2018-07-20T00:00:00Z",
+      "duration": 65.834667,
+      "bitrate": 17440419,
+      "bytes": 143523026,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/parker-solar-probe.mp4",
+    "local": true,
+    "title": "Parker Solar Probe · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "parker-solar-probe.pdf",
+    "fingerprint": "3399abe92d0d2fe80ce858f272b11d908fbadba1a00053ca9d018b168d9b9894"
+  }
+}

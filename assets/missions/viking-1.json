@@ -1,0 +1,481 @@
+{
+  "id": "viking-1",
+  "name": "Viking 1",
+  "body": "mars",
+  "family": "viking",
+  "year": 1975,
+  "summary": "3 530 kg au lancement (orbiteur + atterrisseur) · 1 atterrisseur (572 kg à sec) immobile à Chryse Planitia depuis 1976 · 1 orbiteur (883 kg à sec) probablement encore en orbite autour de Mars · aucun objet actif · bouclier thermique et parachute de position inconnue",
+  "facts": [
+    [
+      "Nom officiel",
+      "Viking 1 (orbiteur + atterrisseur) — atterrisseur rebaptisé Thomas A. Mutch Memorial Station en janvier 1981"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Viking (deux missions jumelles, Viking 1 et Viking 2)"
+    ],
+    [
+      "Lancement",
+      "20 août 1975, 21h22 UTC — Cape Canaveral, LC-41, fusée Titan IIIE/Centaur"
+    ],
+    [
+      "Arrivée à Mars",
+      "19 juin 1976 — insertion en orbite ; trajet de ~11 mois"
+    ],
+    [
+      "Atterrissage",
+      "20 juillet 1976, 11h53 UTC (~16h13 heure locale martienne) — ouest de Chryse Planitia, ~22,7° N, 312° E"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — l'atterrisseur et l'orbiteur sont restés sur Mars ou autour"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le JPL (Californie)"
+    ],
+    [
+      "Véhicules",
+      "Titan IIIE/Centaur · orbiteur Viking 1 · aéroshell + atterrisseur"
+    ],
+    [
+      "Statut",
+      "Réussie — atterrisseur resté actif plus de six ans ; dernier contact le 11 novembre 1982 (sol 2 600)"
+    ]
+  ],
+  "sourceFile": "Mars/Surface/Fiche-mission-Viking-1-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "viking-1.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Viking 1 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 3 530 kg au lancement (orbiteur + atterrisseur) · 1 atterrisseur (572 kg à sec) immobile à Chryse Planitia depuis 1976 · 1 orbiteur (883 kg à sec) probablement encore en orbite autour de Mars · aucun objet actif · bouclier thermique et parachute de position inconnue"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Viking 1 (orbiteur + atterrisseur) — atterrisseur rebaptisé Thomas A. Mutch Memorial Station en janvier 1981"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Viking (deux missions jumelles, Viking 1 et Viking 2)"
+          ],
+          [
+            "Lancement",
+            "20 août 1975, 21h22 UTC — Cape Canaveral, LC-41, fusée Titan IIIE/Centaur"
+          ],
+          [
+            "Arrivée à Mars",
+            "19 juin 1976 — insertion en orbite ; trajet de ~11 mois"
+          ],
+          [
+            "Atterrissage",
+            "20 juillet 1976, 11h53 UTC (~16h13 heure locale martienne) — ouest de Chryse Planitia, ~22,7° N, 312° E"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — l'atterrisseur et l'orbiteur sont restés sur Mars ou autour"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le JPL (Californie)"
+          ],
+          [
+            "Véhicules",
+            "Titan IIIE/Centaur · orbiteur Viking 1 · aéroshell + atterrisseur"
+          ],
+          [
+            "Statut",
+            "Réussie — atterrisseur resté actif plus de six ans ; dernier contact le 11 novembre 1982 (sol 2 600)"
+          ]
+        ]
+      },
+      {
+        "y": 447.51763916015625,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 472.4606018066406,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 500.79693603515625,
+        "type": "text",
+        "text": "A. Surface de Mars — Chryse Planitia"
+      },
+      {
+        "y": 519.154296875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Viking 1",
+            "572 kg (à sec)",
+            "",
+            "A fonctionné 2 245 sols (~2 306 jours terrestres). Dernier contact le 11 novembre 1982 : une commande erronée a écrasé des données utilisées par le logiciel de pointage de l'antenne ; les tentatives de contact sur ~4 mois ont échoué. Imagé depuis l'orbite par la sonde MRO en 2006 (selon Wikipedia)"
+          ],
+          [
+            "Expériences biologiques",
+            "15,5 kg",
+            "",
+            "Trois expériences : pyrolytique, échange gazeux, et libération marquée ; résultats négatifs, sauf le test de libération marquée, que la plupart des scientifiques attribuent à la chimie minérale du sol"
+          ],
+          [
+            "Spectromètre de masse + chromatographe (GCMS)",
+            "—",
+            "",
+            "Analyse des composés organiques : aucun organique détecté dans le sol"
+          ],
+          [
+            "Spectromètre à fluorescence X",
+            "—",
+            "",
+            "Composition chimique du sol"
+          ],
+          [
+            "Deux caméras facsimilés + aimant",
+            "—",
+            "",
+            "Images panoramiques ; aimant monté sur le bras pour observer le sol magnétique"
+          ],
+          [
+            "Station météo",
+            "—",
+            "",
+            "Pression, température et vent, sur un mât météo"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sismomètre à trois axes",
+            "—",
+            "",
+            "N'a jamais été libéré de son verrou (« uncaging ») : aucune donnée sismique utile"
+          ],
+          [
+            "Bras échantillonneur",
+            "—",
+            "",
+            "Une goupille de verrouillage a mis cinq jours à se libérer avant les premiers prélèvements"
+          ]
+        ]
+      },
+      {
+        "y": 146.9969482421875,
+        "type": "text",
+        "text": "B. Orbite martienne — orbiteur Viking 1 (883 kg à sec)"
+      },
+      {
+        "y": 165.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur Viking 1",
+            "883 kg (à sec)",
+            "",
+            "Le 7 août 1980, presque à court de gaz de contrôle d'attitude, son orbite a été remontée de 357 × 33 943 km à 320 × 56 000 km ; opérations terminées le 17 août 1980 après 1 485 orbites. Une analyse de 2009 le juge très probablement toujours en orbite, sans exclure un impact"
+          ],
+          [
+            "Caméras de l'orbiteur",
+            "—",
+            "",
+            "Plus de 57 000 images renvoyées, dont celles ayant servi à choisir le site d'atterrissage"
+          ],
+          [
+            "Autres instruments de l'orbiteur",
+            "—",
+            "",
+            "Détecteur de vapeur d'eau et radiomètre thermique (infrarouge), d'après mes connaissances, non confirmé dans mes sources"
+          ]
+        ]
+      },
+      {
+        "y": 348.3969421386719,
+        "type": "text",
+        "text": "C. Étages de lancement et de croisière"
+      },
+      {
+        "y": 366.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "Après l'injection vers Mars, placé en orbite héliocentrique ; position non suivie précisément"
+          ],
+          [
+            "Étages inférieurs du Titan IIIE et propulseurs d'appoint",
+            "n.c.",
+            "",
+            "Séparés pendant la montée ; retombés dans l'océan"
+          ]
+        ]
+      },
+      {
+        "y": 473.5969543457031,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 490.80438232421875,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Viking 1 n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 507.8043212890625,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : des images du site, des analyses chimiques du sol et des mesures météo sur plus de six ans"
+      },
+      {
+        "y": 538.8043212890625,
+        "type": "text",
+        "text": "• Les résultats biologiques n'ont pas apporté de preuve de vie ; la chimie minérale du sol explique le test positif"
+      },
+      {
+        "y": 580.596923828125,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 597.8043212890625,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension"
+      },
+      {
+        "y": 614.8043212890625,
+        "type": "text",
+        "text": "• Aéroshell, bouclier thermique et parachute largués pendant la descente (voir la séquence ci-dessous)"
+      },
+      {
+        "y": 651.9176635742188,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 674.5543212890625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "20 août 1975, 21h22 UTC",
+            "Lancement du Titan IIIE/Centaur depuis Cape Canaveral"
+          ],
+          [
+            "19 juin 1976",
+            "Insertion en orbite martienne"
+          ],
+          [
+            "21 juin 1976",
+            "Orbite ajustée à 1 513 × 33 000 km pour certifier le site ; site principal jugé trop accidenté, atterrissage retardé"
+          ],
+          [
+            "20 juillet 1976",
+            "Séparation de l'atterrisseur et atterrissage à Chryse Planitia (voir la séquence ci-dessous)"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "7–17 août 1980",
+            "Orbite de l'orbiteur remontée puis fin de ses opérations"
+          ],
+          [
+            "Janvier 1981",
+            "L'atterrisseur est rebaptisé Thomas A. Mutch Memorial Station"
+          ],
+          [
+            "11 novembre 1982",
+            "Dernier contact avec l'atterrisseur (sol 2 600)"
+          ],
+          [
+            "2006",
+            "Image de l'atterrisseur au sol par la sonde Mars Reconnaissance Orbiter"
+          ]
+        ]
+      },
+      {
+        "y": 164.9969482421875,
+        "type": "text",
+        "text": "Séquence d'atterrissage — 20 juillet 1976"
+      },
+      {
+        "y": 185.66062927246094,
+        "type": "text",
+        "text": "Heures UTC, celles des événements (le délai de transmission Mars–Terre n'est pas inclus)."
+      },
+      {
+        "y": 201.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Heure (UTC)",
+            "Étape",
+            "Détails et matériel laissé"
+          ],
+          [
+            "08h51",
+            "Séparation de l'orbiteur",
+            "L'atterrisseur, dans son aéroshell, se détache à ~5 km/s ; l'orbiteur reste en orbite"
+          ],
+          [
+            "Après 08h51",
+            "Freinage de désorbitation",
+            "Les rétrofusées de l'aéroshell s'allument pour sortir de l'orbite"
+          ],
+          [
+            "~300 km",
+            "Réorientation",
+            "L'atterrisseur se positionne pour l'entrée atmosphérique"
+          ],
+          [
+            "Entrée",
+            "Entrée atmosphérique",
+            "Bouclier thermique ablatif ; instruments d'entrée en fonctionnement"
+          ],
+          [
+            "~6 km",
+            "Ouverture du parachute",
+            "À ~250 m/s ; parachute de 16 m"
+          ],
+          [
+            "+ 7 s",
+            "Largage de l'aéroshell",
+            "L'aéroshell et le bouclier thermique sont jetés"
+          ],
+          [
+            "+ 8 s",
+            "Déploiement des jambes",
+            "Trois jambes à amortisseurs en nid-d'abeilles d'aluminium"
+          ],
+          [
+            "+ 45 s",
+            "Vitesse réduite",
+            "~60 m/s"
+          ],
+          [
+            "~1,5 km",
+            "Allumage des rétrofusées",
+            "Les rétrofusées de l'atterrisseur freinent la fin de la descente ; devenir du parachute non précisé dans mes sources"
+          ],
+          [
+            "11h53:06",
+            "Atterrissage",
+            "~40 s après l'allumage, contact à ~2,4 m/s ; l'atterrisseur reste sur place"
+          ]
+        ]
+      },
+      {
+        "y": 490.3176574707031,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 511.8043212890625,
+        "type": "text",
+        "text": "• Images de la surface : l'atterrisseur a renvoyé des panoramas du site pendant plus de six ans."
+      },
+      {
+        "y": 528.8043212890625,
+        "type": "text",
+        "text": "• Expériences de vie : trois tests biologiques négatifs et un test positif (libération marquée), expliqué par la chimie minérale ; aucun composé organique n'a été détecté dans le sol."
+      },
+      {
+        "y": 559.8043212890625,
+        "type": "text",
+        "text": "• Orbiteur : plus de 57 000 images de Mars, utilisées aussi pour choisir le site d'atterrissage."
+      },
+      {
+        "y": 576.8043212890625,
+        "type": "text",
+        "text": "• Une longue vie : l'atterrisseur a fonctionné 2 245 sols, soit plus de six ans."
+      },
+      {
+        "y": 593.8043212890625,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 interdit toute appropriation nationale de Mars ; la protection planétaire vise à limiter la contamination de Mars par des microbes terrestres."
+      },
+      {
+        "y": 644.9176635742188,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 666.4043579101562,
+        "type": "text",
+        "text": "• Wikipedia — Viking 1 : masses, séquence de descente, orbiteur et fin de mission"
+      },
+      {
+        "y": 683.4043579101562,
+        "type": "text",
+        "text": "• NASA Science — Viking 1 : science.nasa.gov/mission/viking-1"
+      },
+      {
+        "y": 700.4043579101562,
+        "type": "text",
+        "text": "• NASA / JPL — « Attempts to communicate to Viking Lander 1 concluded »"
+      }
+    ]
+  ]
+}

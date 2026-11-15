@@ -1,0 +1,361 @@
+{
+  "id": "surveyor-6",
+  "name": "Surveyor 6",
+  "body": "moon",
+  "family": "surveyor",
+  "year": 1967,
+  "summary": "1 atterrisseur de 299,6 kg resté sur la Lune dans le Sinus Medii, dernier contact le 14 décembre 1967 · 1 caméra de télévision, 1 analyseur à diffusion alpha et 1 aimant sur un patin · 1 étage Centaur, devenir non précisé · aucun élément récupéré · première sonde à décoller d'un autre corps céleste (« saut » de ~4 m le 17 novembre 1967)",
+  "facts": [
+    [
+      "Nom officiel",
+      "Surveyor 6"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Surveyor"
+    ],
+    [
+      "Lancement",
+      "7 novembre 1967, 07h39 UTC — Cape Canaveral (LC-36B), Atlas-Centaur (AC-14)"
+    ],
+    [
+      "Atterrissage",
+      "10 novembre 1967, 01h01:06 UTC — Sinus Medii (centre de la face visible), ~0,47° N, 1,43° O"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — atterrisseur resté sur la Lune"
+    ],
+    [
+      "Durée d'exploitation",
+      "Du 10 au 24 novembre 1967 ; contact bref sans données utiles le 14 décembre 1967"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur · atterrisseur Surveyor 6 · moteur de freinage solide"
+    ],
+    [
+      "Statut",
+      "Réussie — ~30 000 images, analyse alpha du sol, saut propulsé ; silencieuse depuis le 14 décembre 1967"
+    ]
+  ],
+  "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-6-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "surveyor-6.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Surveyor 6 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 atterrisseur de 299,6 kg resté sur la Lune dans le Sinus Medii, dernier contact le 14 décembre 1967 · 1 caméra de télévision, 1 analyseur à diffusion alpha et 1 aimant sur un patin · 1 étage Centaur, devenir non précisé · aucun élément récupéré · première sonde à décoller d'un autre corps céleste (« saut » de ~4 m le 17 novembre 1967)"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Surveyor 6"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Surveyor"
+          ],
+          [
+            "Lancement",
+            "7 novembre 1967, 07h39 UTC — Cape Canaveral (LC-36B), Atlas-Centaur (AC-14)"
+          ],
+          [
+            "Atterrissage",
+            "10 novembre 1967, 01h01:06 UTC — Sinus Medii (centre de la face visible), ~0,47° N, 1,43° O"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — atterrisseur resté sur la Lune"
+          ],
+          [
+            "Durée d'exploitation",
+            "Du 10 au 24 novembre 1967 ; contact bref sans données utiles le 14 décembre 1967"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur · atterrisseur Surveyor 6 · moteur de freinage solide"
+          ],
+          [
+            "Statut",
+            "Réussie — ~30 000 images, analyse alpha du sol, saut propulsé ; silencieuse depuis le 14 décembre 1967"
+          ]
+        ]
+      },
+      {
+        "y": 439.1176452636719,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 464.06060791015625,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 506.39697265625,
+        "type": "text",
+        "text": "A. Surface lunaire — Sinus Medii"
+      },
+      {
+        "y": 524.7543334960938,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Surveyor 6",
+            "299,6 kg à l'atterrissage ; 1 008,3 kg au lancement",
+            "",
+            "Posé deux fois (atterrissage puis saut) ; plus de signal utile depuis le 24 novembre 1967 ; image LROC de 2010 : ombre de 18 m, Soleil à 8° de l'horizon"
+          ],
+          [
+            "Caméra de télévision",
+            "—",
+            "",
+            "Tube vidicon, objectifs 25 et 100 mm, filtres polarisants, miroir orientable ; ~30 000 images (chiffres variables selon les sources)"
+          ],
+          [
+            "Analyseur à diffusion alpha",
+            "—",
+            "",
+            "Source de curium 242 ; composition du sol, de type basaltique"
+          ],
+          [
+            "Aimant sur un patin",
+            "—",
+            "",
+            "Petite barre aimantée pour détecter des matériaux magnétiques"
+          ],
+          [
+            "Moteurs verniers",
+            "—",
+            "",
+            "Servi pour le « saut » du 17 novembre et pour une expérience d'érosion du sol par les gaz d'échappement"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Étages de lancement et éléments largués"
+      },
+      {
+        "y": 72.35435485839844,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "Devenir non précisé dans mes sources"
+          ],
+          [
+            "Étage Atlas",
+            "n.c.",
+            "",
+            "Retombé ; non précisé"
+          ],
+          [
+            "Moteur de freinage solide",
+            "n.c.",
+            "",
+            "Largué pendant la descente ; non détaillé dans mes sources"
+          ]
+        ]
+      },
+      {
+        "y": 165.79693603515625,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 183.00436401367188,
+        "type": "text",
+        "text": "• Rien : seules des images et des mesures transmises par radio sont revenues"
+      },
+      {
+        "y": 210.79693603515625,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 228.00436401367188,
+        "type": "text",
+        "text": "• Étages de l'Atlas et du Centaur, séparés pendant l'ascension et la trajectoire directe"
+      },
+      {
+        "y": 265.11767578125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 287.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "7 novembre 1967, 07h39",
+            "Lancement par Atlas-Centaur"
+          ],
+          [
+            "10 novembre 1967, 01h01:06",
+            "Atterrissage dans le Sinus Medii (voir séquence ci-dessous)"
+          ],
+          [
+            "17 novembre 1967, 10h32",
+            "« Saut » : moteurs verniers allumés 2,5 s (voir séquence)"
+          ],
+          [
+            "24 novembre 1967",
+            "Mise en veille pour la nuit lunaire (le 26 novembre selon une autre source)"
+          ],
+          [
+            "14 décembre 1967",
+            "Contact rétabli brièvement sans données utiles ; dernier contact"
+          ],
+          [
+            "Février 1968",
+            "Une zone proche de Surveyor 6 retenue comme site potentiel pour Apollo"
+          ],
+          [
+            "2010",
+            "Image de la sonde LRO montrant l'atterrisseur"
+          ]
+        ]
+      },
+      {
+        "y": 473.19696044921875,
+        "type": "text",
+        "text": "Séquence d'atterrissage et du saut"
+      },
+      {
+        "y": 491.5543518066406,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "Descente",
+            "Mes sources ne détaillent pas la descente (altitudes, allumages)"
+          ],
+          [
+            "10 nov., 01h01:06",
+            "Atterrissage en douceur ; les blocs écrasables laissent une double empreinte ; données de dynamique du contact collectées"
+          ],
+          [
+            "10-17 nov.",
+            "Images, analyse alpha du sol, tests mécaniques du sol"
+          ],
+          [
+            "17 nov., 10h32",
+            "Moteurs verniers allumés 2,5 s (poussée ~700 N) : l'engin s'élève d'environ 4 m (12 pi)"
+          ],
+          [
+            "Pendant le saut",
+            "Déplacement d'environ 2,5 m (8 pi) vers l'ouest, parfois cité à ~3 m (10 pi)"
+          ],
+          [
+            "Après le saut",
+            "Nouveau posé ; l'engin continue de fonctionner ; images stéréo avec les deux points de vue"
+          ]
+        ]
+      },
+      {
+        "y": 666.11767578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 687.6043701171875,
+        "type": "text",
+        "text": "• Première propulsion depuis la surface d'un autre corps : le « saut » du 17 novembre 1967, d'environ 4 m."
+      },
+      {
+        "y": 718.6043701171875,
+        "type": "text",
+        "text": "• Images : ~30 000 vues (30 027, 29 952 ou 29 914 selon la source et la période)."
+      },
+      {
+        "y": 735.6043090820312,
+        "type": "text",
+        "text": "• Sol : surface basaltique, proche de celle de Surveyor 5 ; portance suffisante pour des atterrissages habités."
+      },
+      {
+        "y": 766.6043090820312,
+        "type": "text",
+        "text": "• Choix des sites Apollo : en février 1968, une zone proche de Surveyor 6 est retenue ; Surveyor 7 est alors dirigée vers Tycho."
+      }
+    ],
+    [
+      {
+        "y": 50.204368591308594,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 101.317626953125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 122.80435180664062,
+        "type": "text",
+        "text": "• Wikipedia — Surveyor 6 : masses, instruments, saut, images, LRO"
+      },
+      {
+        "y": 139.80435180664062,
+        "type": "text",
+        "text": "• NASA — « 50 years ago: Surveyor 6 launches » : saut, résultats, choix des sites Apollo"
+      },
+      {
+        "y": 156.80435180664062,
+        "type": "text",
+        "text": "• Université d'Arizona (LPL) — Surveyor VI : images, saut, dernier contact"
+      }
+    ]
+  ]
+}

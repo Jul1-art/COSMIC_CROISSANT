@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "source": "https://www.nasa.gov/history/50-years-ago-national-goal-nears-fulfillment/",
+      "image": "https://www.nasa.gov/wp-content/uploads/2019/07/apollo_11_and_luna_15_landing_sites.png",
+      "title": "Carte des sites d’Apollo 11 et de Luna 15",
+      "credit": "NASA",
+      "context": "Carte de contexte historique ; Luna 15 s’est écrasée pendant sa descente, sans retour d’échantillons.",
+      "src": "archives/luna-15-reviewed-1.png"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-15.mp4",
+    "local": true,
+    "title": "Luna 15 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-15.pdf",
+    "fingerprint": "86399e9f1bf5cecda264fabd5aed49ca01d1233a465ba21a0187bca772afbe12"
+  }
+}

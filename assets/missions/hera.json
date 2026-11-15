@@ -1,0 +1,341 @@
+{
+  "id": "hera",
+  "name": "Hera (ESA)",
+  "body": "small-bodies",
+  "family": "orbiter",
+  "year": 2024,
+  "summary": "~1,1 t de matériel arrivé autour du système binaire Didymos-Dimorphos en novembre 2026 · 3 engins actifs en novembre 2026 (sonde mère Hera et ses deux CubeSats embarqués Juventas et Milani) · 1 étage en orbite héliocentrique (second étage Falcon 9) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Hera — Mission d'inspection du système binaire (65803) Didymos"
+    ],
+    [
+      "Agence & programme",
+      "ESA (Agence spatiale européenne), en coopération avec JAXA et NASA (collaboration AIDA) — Programme Space Safety"
+    ],
+    [
+      "Lancement",
+      "7 octobre 2024, 14h52 UTC — Cap Canaveral (SLC-40), fusée SpaceX Falcon 9 Block 5 (B1061-23)"
+    ],
+    [
+      "Arrivée sur cible",
+      "4 novembre 2026 — Mise en orbite de rendez-vous autour de l'astéroïde binaire Didymos (780 m) et sa lune Dimorphos (151 m)"
+    ],
+    [
+      "Durée de mission",
+      "2 ans de croisière interplanétaire (avec survol de Mars en mars 2025) + 6 mois d'opérations nominales autour de Didymos (novembre 2026 – juin 2027)"
+    ],
+    [
+      "Type de mission",
+      "Mission robotique de défense planétaire (évaluation post-impact de la déviation cinétique réalisée par NASA DART en 2022)"
+    ],
+    [
+      "Véhicules",
+      "Falcon 9 Block 5 · Sonde principale Hera (OHB) · CubeSat Juventas (GomSpace) · CubeSat Milani (Tyvak)"
+    ],
+    [
+      "Statut",
+      "✔ Active (novembre 2026) — Phase de caractérisation initiale (ECP) à 20–30 km des astéroïdes ; déploiement des CubeSats prévu en janvier 2027"
+    ]
+  ],
+  "sourceFile": "Astéroïdes et comètes/Fiche mission Hera (ESA) - Hardware perdu dans l_espace.pdf",
+  "pdf": "hera.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "DÉFENSE PLANÉTAIRE · CATALOGUE DU PATRIMOINE SPATIAL Hera (ESA) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 116.38420867919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~1,1 t de matériel arrivé autour du système binaire Didymos-Dimorphos en novembre 2026 · 3 engins actifs en novembre 2026 (sonde mère Hera et ses deux CubeSats embarqués Juventas et"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "Milani) · 1 étage en orbite héliocentrique (second étage Falcon 9) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Hera — Mission d'inspection du système binaire (65803) Didymos"
+          ],
+          [
+            "Agence & programme",
+            "ESA (Agence spatiale européenne), en coopération avec JAXA et NASA (collaboration AIDA) — Programme Space Safety"
+          ],
+          [
+            "Lancement",
+            "7 octobre 2024, 14h52 UTC — Cap Canaveral (SLC-40), fusée SpaceX Falcon 9 Block 5 (B1061-23)"
+          ],
+          [
+            "Arrivée sur cible",
+            "4 novembre 2026 — Mise en orbite de rendez-vous autour de l'astéroïde binaire Didymos (780 m) et sa lune Dimorphos (151 m)"
+          ],
+          [
+            "Durée de mission",
+            "2 ans de croisière interplanétaire (avec survol de Mars en mars 2025) + 6 mois d'opérations nominales autour de Didymos (novembre 2026 – juin 2027)"
+          ],
+          [
+            "Type de mission",
+            "Mission robotique de défense planétaire (évaluation post-impact de la déviation cinétique réalisée par NASA DART en 2022)"
+          ],
+          [
+            "Véhicules",
+            "Falcon 9 Block 5 · Sonde principale Hera (OHB) · CubeSat Juventas (GomSpace) · CubeSat Milani (Tyvak)"
+          ],
+          [
+            "Statut",
+            "✔ Active (novembre 2026) — Phase de caractérisation initiale (ECP) à 20–30 km des astéroïdes ; déploiement des CubeSats prévu en janvier 2027"
+          ]
+        ]
+      },
+      {
+        "y": 513.4171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 577.3233642578125,
+        "type": "text",
+        "text": "A. Système astéroïdal (65803) Didymos – Dimorphos (~1,1 t au total)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde spatiale Hera (plateforme principale)",
+            "~1 128 kg",
+            "● Toujours actif",
+            "Masse au lancement (~700 kg à sec) pour un châssis cubique de 1,6 × 1,6 × 1,7 m et 11,4 m d'envergure avec deux ailes solaires de 13 m². Équipée d'un système de navigation autonome (« conduite autonome ») et d'une antenne grand gain en bande X de 1,13 m. À terme, se posera ou sera placée sur orbite cimetière autour de Didymos."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Hera (ESA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Charge utile scientifique d'Hera (5 instruments)",
+            "~45 kg (inclus)",
+            "● Toujours actif",
+            "Deux caméras de cadrage redondantes AFC (Jena-Optronik), imageur hyperspectral HyperScout-H, imageur infrarouge thermique TIRI (fourni par la JAXA), altimètre laser PALT et expérience de radioscience en bande X (X- DST)."
+          ],
+          [
+            "CubeSat Juventas (6U- XL)",
+            "~12 kg",
+            "● Toujours actif",
+            "Nanosatellite développé par GomSpace (actuellement arrimé à Hera, largage prévu le 16 janvier 2027). Embarque le radar basse fréquence JuRa (sondage interne de Dimorphos jusqu'à 100 m de profondeur), le gravimètre GRASS et une caméra. Conçu pour se poser sur Dimorphos en fin de mission."
+          ],
+          [
+            "CubeSat Milani (6U-XL)",
+            "~12 kg",
+            "● Toujours actif",
+            "Nanosatellite développé par Tyvak International (largage prévu le 30 janvier 2027). Embarque le spectromètre hyperspectral ASPECT (minéralogie de surface) et la microbalance thermogravimétrique VISTA (analyse des poussières et volatils). Finira également posé sur Dimorphos."
+          ]
+        ]
+      },
+      {
+        "y": 405.5733642578125,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & récupération lanceur"
+      },
+      {
+        "y": 426.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Second étage de la fusée Falcon 9 (B1061-23)",
+            "~4 000 kg (à sec)",
+            "■ Orbite solaire",
+            "Propulsé par un moteur Merlin Vacuum (MVac). Après avoir placé la sonde Hera sur sa trajectoire d'échappement interplanétaire le 7 octobre 2024, l'étage supérieur est entré sur une orbite héliocentrique permanente."
+          ],
+          [
+            "Premier étage Falcon 9 (booster B1061-23)",
+            "~25 600 kg (à sec)",
+            "▲ Sacrifié (océan)",
+            "Pour ce 23e et dernier vol du booster B1061, toute la capacité d'ergols a été consacrée à l'injection interplanétaire à haute énergie : le premier étage n'a pas effectué de récupération et s'est abîmé dans l'océan Atlantique après séparation."
+          ]
+        ]
+      },
+      {
+        "y": 644.0733642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 666.3369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique de la Falcon 9 (2 demi-coiffes) : larguée durant l'ascension atmosphérique le 7 octobre 2024 et repêchée en mer dans l'océan Atlantique par les navires de récupération de SpaceX pour réutilisation."
+      },
+      {
+        "y": 715.0869140625,
+        "type": "text",
+        "text": "Aucun retour d'échantillons : Hera est une mission orbitale et de proximité sans retour sur Terre ; l'ensemble des images haute résolution, cartes spectrales et sondages radar sont transmis via le réseau d'espace profond de l'ESA (ESTRACK)."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Hera (ESA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 62.8233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Couvercles d'instruments & anneau d'adaptation : l'adaptateur de charge utile reste solidaire du second étage de la Falcon 9 en orbite héliocentrique ; aucun débris libre n'est éjecté autour du système Didymos afin d'éviter toute pollution de l'environnement orbital des CubeSats."
+      },
+      {
+        "y": 144.41712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 170.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "26 septembre 2022",
+            "(Contexte AIDA) La sonde américaine DART percute volontairement l'astéroïde Dimorphos, raccourcissant sa période orbitale autour de Didymos de 33 minutes."
+          ],
+          [
+            "7 octobre 2024, 14h52 UTC",
+            "Lancement d'Hera par une fusée Falcon 9 depuis Cap Canaveral et injection sur trajectoire interplanétaire."
+          ],
+          [
+            "12 mars 2025",
+            "Assistance gravitationnelle et survol rapproché de Mars (à ~5 000 km) et de sa lune Deimos (à ~1 000 km), permettant de calibrer les caméras AFC, HyperScout-H et l'imageur thermique TIRI."
+          ],
+          [
+            "4 novembre 2026",
+            "Arrivée autour du système binaire Didymos-Dimorphos (un mois plus tôt que le calendrier initial) et début de la phase de caractérisation initiale (ECP) à 20–30 km de distance."
+          ],
+          [
+            "2 décembre 2026",
+            "Début prévu de la phase de caractérisation détaillée (DCP) en orbite rapprochée entre 8 et 20 km."
+          ],
+          [
+            "16 & 30 janvier 2027",
+            "Déploiement successif prévu des deux nanosatellites CubeSats : Juventas (16 janvier) puis Milani (30 janvier)."
+          ],
+          [
+            "Février – juin 2027",
+            "Survols à très basse altitude (moins de 2 km du cratère d'impact de DART) et posé final des CubeSats sur Dimorphos."
+          ]
+        ]
+      },
+      {
+        "y": 485.6671447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 513.3369140625,
+        "type": "text",
+        "text": "Validation grandeur nature de la défense planétaire : en mesurant avec précision la masse de Dimorphos (auparavant estimée avec une forte incertitude), sa structure interne et la morphologie du cratère laissé par DART, Hera permet de déterminer le facteur exact de transfert de quantité de mouvement (β) et de transformer l'impacteur cinétique en une technique opérationnelle fiable pour protéger la Terre."
+      },
+      {
+        "y": 592.0869140625,
+        "type": "text",
+        "text": "Premier sondage radar interne d'un astéroïde : grâce au radar basse fréquence JuRa embarqué sur le CubeSat Juventas (développé avec l'IPAG à Grenoble), l'humanité réalise la première « tomographie » interne d'un petit corps céleste (151 m de diamètre) pour vérifier s'il s'agit d'un agrégat lâche de roches (« rubble pile »)."
+      },
+      {
+        "y": 655.8369140625,
+        "type": "text",
+        "text": "Navigation autonome en environnement inconnu : opérant à plus de 190 millions de kilomètres de la Terre dans un champ gravitationnel extrêmement faible et irrégulier, Hera inaugure un système de pilotage visuel autonome capable de suivre les repères de surface sans intervention humaine en temps réel."
+      },
+      {
+        "y": 719.5869140625,
+        "type": "text",
+        "text": "Premiers atterrissages de CubeSats sur un astéroïde : en fin de mission en 2027, Juventas et Milani deviendront les plus petits engins spatiaux à se poser à la surface d'un astéroïde binaire, mesurant directement la microgravité locale grâce au gravimètre GRASS."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Hera (ESA) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 67.91712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 94.8369140625,
+        "type": "text",
+        "text": "ESA — Hera Mission Overview & Operations Updates (esa.int/Hera)"
+      },
+      {
+        "y": 112.8369140625,
+        "type": "text",
+        "text": "CNES — Projet Hera : contributions scientifiques françaises (JuRa, OCA, IPAG, ISAE-Supaero) (cnes.fr)"
+      },
+      {
+        "y": 146.5869140625,
+        "type": "text",
+        "text": "JAXA — Hera Observation and Mission Operations Plan (hera.isas.jaxa.jp)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Hera (ESA) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

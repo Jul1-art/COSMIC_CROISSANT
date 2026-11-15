@@ -1,0 +1,420 @@
+{
+  "id": "apollo-13",
+  "name": "Apollo 13",
+  "body": "moon",
+  "family": "apollo",
+  "year": 1970,
+  "summary": "rien laissé sur la Lune (alunissage annulé) · 1 étage S-IVB écrasé volontairement sur la Lune (enregistré par le sismomètre d'Apollo 12) · LM Aquarius et module de service désintégrés dans l'atmosphère terrestre · 1 module de commande récupéré — la mission « réussite ratée » qui n'a presque rien perdu… sauf tout",
+  "facts": [
+    [
+      "Nom officiel",
+      "Apollo 13"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Apollo"
+    ],
+    [
+      "Lancement",
+      "11 avril 1970, 19h13 UTC — Kennedy Space Center, fusée Saturn V"
+    ],
+    [
+      "Accident",
+      "13 avril 1970, ~03h08 UTC — explosion du réservoir d'oxygène n° 2 du module de service, à ~330 000 km de la Terre"
+    ],
+    [
+      "Alunissage",
+      "Annulé — déroutée en contour de la Lune (passage à ~100 km d'altitude le 15 avril)"
+    ],
+    [
+      "Retour sur Terre",
+      "17 avril 1970, 18h07 UTC — amerrissage Pacifique (5 j 22 h 54 min)"
+    ],
+    [
+      "Équipage",
+      "Jim Lovell (commandant), Jack Swigert (pilote CSM, remplaçant de Ken Mattingly), Fred Haise (pilote LM)"
+    ],
+    [
+      "Véhicules",
+      "Saturn V · CSM Odyssey · LM Aquarius (transformé en canot de sauvetage)"
+    ],
+    [
+      "Statut",
+      "Échec partiel devenu « réussite » — aucun alunissage, mais retour vivant de l'équipage (« Houston, we've had a problem »)"
+    ]
+  ],
+  "sourceFile": "Lune/Apollo/fiche-mission-apollo-13-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "apollo-13.pdf",
+  "pages": [
+    [
+      {
+        "y": 70.91584777832031,
+        "type": "text",
+        "text": "Apollo 13 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 118.42292785644531,
+        "type": "text",
+        "text": "Synthèse hardware : rien laissé sur la Lune (alunissage annulé) · 1 étage S-IVB écrasé volontairement sur la Lune (enregistré par le sismomètre d'Apollo 12) · LM Aquarius et module de service désintégrés dans l'atmosphère terrestre · 1 module de commande récupéré — la mission « réussite ratée » qui n'a presque rien perdu… sauf tout"
+      },
+      {
+        "y": 215.0743865966797,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 244.87501220703126,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Apollo 13"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Apollo"
+          ],
+          [
+            "Lancement",
+            "11 avril 1970, 19h13 UTC — Kennedy Space Center, fusée Saturn V"
+          ],
+          [
+            "Accident",
+            "13 avril 1970, ~03h08 UTC — explosion du réservoir d'oxygène n° 2 du module de service, à ~330 000 km de la Terre"
+          ],
+          [
+            "Alunissage",
+            "Annulé — déroutée en contour de la Lune (passage à ~100 km d'altitude le 15 avril)"
+          ],
+          [
+            "Retour sur Terre",
+            "17 avril 1970, 18h07 UTC — amerrissage Pacifique (5 j 22 h 54 min)"
+          ],
+          [
+            "Équipage",
+            "Jim Lovell (commandant), Jack Swigert (pilote CSM, remplaçant de Ken Mattingly), Fred Haise (pilote LM)"
+          ],
+          [
+            "Véhicules",
+            "Saturn V · CSM Odyssey · LM Aquarius (transformé en canot de sauvetage)"
+          ],
+          [
+            "Statut",
+            "Échec partiel devenu « réussite » — aucun alunissage, mais retour vivant de l'équipage (« Houston, we've had a problem »)"
+          ]
+        ]
+      },
+      {
+        "y": 508.0918273925781,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 538.8953857421875,
+        "type": "text",
+        "text": "Badges d'état : toujours actif · intact mais inactif · détruit / écrasé · localisation inconnue"
+      },
+      {
+        "y": 571.1453857421875,
+        "type": "text",
+        "text": "Particularité Apollo 13 : mission lunaire sans dépôt lunaire. Tout le hardware « perdu » l'a été dans l'atmosphère terrestre ou sur la Lune sous forme d'impact — le LM, conçu pour se poser, a fini brûlé au- dessus du Pacifique."
+      },
+      {
+        "y": 632.1473388671875,
+        "type": "text",
+        "text": "A. Surface lunaire — sans objet"
+      },
+      {
+        "y": 658.2504272460938,
+        "type": "text",
+        "text": "Alunissage annulé après l'explosion ; le LM Aquarius n'a jamais touché le sol lunaire. L'ALSEP, le drapeau et les instruments prévus sont restés sur Terre (c'est la seule mission lunaire du programme dans ce cas, avec Apollo 18-20 annulées)."
+      },
+      {
+        "y": 709.5023193359375,
+        "type": "text",
+        "text": "B. Orbite lunaire / écrasé sur la Lune"
+      },
+      {
+        "y": 734.6358235677084,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "",
+            "",
+            "",
+            "Écrasé volontairement sur la Lune le 14 avril 1970 à ~120 km à l'est du site d'Apollo 12. Dérogation notable : les S-IVB d'Apollo 8 à 12 étaient envoyés en orbite héliocentrique,"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 56.625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage S- IVB de la Saturn V",
+            "~13 500 kg (à sec)",
+            "",
+            "mais celui d'Apollo 13, déjà accéléré, a été dirigé vers un impact sismique. L'onde enregistrée par le sismomètre ALSEP d'Apollo 12 a duré ~3 h 20, confirmant les propriétés « sonnantes » du sous-sol lunaire"
+          ]
+        ]
+      },
+      {
+        "y": 125.4098129272461,
+        "type": "text",
+        "text": "C. Trajectoire d'échappement — sans objet"
+      },
+      {
+        "y": 151.51292419433594,
+        "type": "text",
+        "text": "Aucun objet dirigé vers une orbite héliocentrique : le S-IVB a servi d'impacteur."
+      },
+      {
+        "y": 175.76483154296875,
+        "type": "text",
+        "text": "D. Retombés / désintégration atmosphérique"
+      },
+      {
+        "y": 200.8983357747396,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Module lunaire Aquarius",
+            "~4 700 kg (à vide ~2 400 kg + reste d'ergols)",
+            "",
+            "Utilisé comme canot de sauvetage (énergie, oxygène, propulsion d'ajustement, bouclier thermique du compartiment d'équipage) pendant ~83 h. Largué ~1 h avant la rentrée et désintégré dans l'atmosphère terrestre le 17 avril 1970 — le seul LM habité jamais perdu ainsi"
+          ],
+          [
+            "Module de service (SM) d'Odyssey",
+            "~5 000 kg (à vide)",
+            "",
+            "Largué ~4 h 30 avant l'amerrissage après inspection ; désintégré dans l'atmosphère. Ses photos ont révélé le panneau extérieur arraché et le dôme du réservoir d'O₂ endommagé"
+          ],
+          [
+            "Adaptateurs SLA et éléments de la Saturn V",
+            "—",
+            "",
+            "Jetés en vol comme à l'habitude"
+          ]
+        ]
+      },
+      {
+        "y": 366.4560852050781,
+        "type": "text",
+        "text": "E. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 392.55914306640625,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 392.55914306640625,
+        "type": "text",
+        "text": "Capsule Odyssey (module de commande, ~5 500 kg) — aujourd'hui exposée au Cosmosphere (Hutchinson, Kansas)"
+      },
+      {
+        "y": 422.4391784667969,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 422.4391784667969,
+        "type": "text",
+        "text": "Les trois astronautes — rentrés sains et saufs, légèrement déshydratés et hypothermiques"
+      },
+      {
+        "y": 438.81915283203125,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 438.81915283203125,
+        "type": "text",
+        "text": "Matériel d'analyse : le réservoir d'O₂ n° 2 défectueux (thermostat endommagé lors d'un test au sol en 1968) a été reconstitué pour l'enquête ; la sonde de niveau modifiée fut l'élément déclencheur"
+      },
+      {
+        "y": 498.7206115722656,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 528.5212524414062,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "11 avril 1970, 19h13 UTC",
+            "Lancement ; coupure anticipée du moteur central (phenomena de « pogo »), sans conséquence"
+          ],
+          [
+            "13 avril, ~03h08 UTC",
+            "Explosion du réservoir d'O₂ n° 2 — « Houston, we've had a problem » ; l'alunissage est abandonné"
+          ],
+          [
+            "13–14 avril",
+            "L'équipage se réfugie dans Aquarius ; trajectoire de retour libre (free-return) ajustée"
+          ],
+          [
+            "14 avril",
+            "Le S-IVB est dirigé vers un impact sur la Lune (enregistré par Apollo 12)"
+          ],
+          [
+            "15 avril, ~01h21 UTC",
+            "Passage derrière la Lune à 100 km — record d'altitude pour des humains (400 171 km de la Terre)"
+          ],
+          [
+            "14–17 avril",
+            "Survie à ~4 °C dans le LM, construction d'adaptateurs de CO₂ (cartouches carrées dans rondes), économies d'énergie"
+          ],
+          [
+            "17 avril, ~13h15 UTC",
+            "Largage du SM puis d'Aquarius — « Farewell, Aquarius » ; désintégration atmosphérique"
+          ],
+          [
+            "17 avril, 18h07 UTC",
+            "Amerrissage dans le Pacifique Sud ; récupération par l'USS Iwo Jima"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 58.20438766479492,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 89.00792694091797,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 89.00792694091797,
+        "type": "text",
+        "text": "Le S-IVB d'Apollo 13 est le premier « impacteur sismique » de grande masse du programme : son écrasement, capté par l'ALSEP d'Apollo 12, a affiné le modèle de l'intérieur lunaire avant les impacts planifiés des missions suivantes."
+      },
+      {
+        "y": 132.38792419433594,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 132.38792419433594,
+        "type": "text",
+        "text": "Safety culture : l'enquête (Rogers Commission antérieure de fait) a imposé des refontes des réservoirs O₂, du câblage et des procédures — les missions 14 à 17 ont bénéficié de ces correctifs."
+      },
+      {
+        "y": 162.26792907714844,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 162.26792907714844,
+        "type": "text",
+        "text": "Ingénierie de survie : adaptation des cartouches de CO₂, gestion d'énergie du LM, procédures de burn à bord du LM — devenues des références de gestion de crise (enseignées encore aujourd'hui)."
+      },
+      {
+        "y": 192.14793395996094,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 192.14793395996094,
+        "type": "text",
+        "text": "Rien à inventorier sur la Lune — mais le site d'impact du S-IVB est un point d'intérêt pour la carte 3D : un objet de ~13 t au sol lunaire, localisé approximativement (coordonnées d'impact ~2,75° S, 27,9° O selon les reconstitutions)."
+      },
+      {
+        "y": 235.52792358398438,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 235.52792358398438,
+        "type": "text",
+        "text": "Odyssey et les débris conservés alimentent encore les analyses sur les défaillances en vol."
+      },
+      {
+        "y": 281.9293518066406,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 312.73291015625,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 312.73291015625,
+        "type": "text",
+        "text": "NASA — Apollo 13 Mission Report (MSC-02680)"
+      },
+      {
+        "y": 329.1129150390625,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 329.1129150390625,
+        "type": "text",
+        "text": "NASA — Report of Apollo 13 Review Board (rapport Cortright, 1970)"
+      },
+      {
+        "y": 345.492919921875,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 345.492919921875,
+        "type": "text",
+        "text": "NASA — Apollo 12 Preliminary Science Report (données sismiques de l'impact du S-IVB)"
+      },
+      {
+        "y": 361.8729248046875,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 361.8729248046875,
+        "type": "text",
+        "text": "Cosmosphere (Hutchinson, Kansas) — capsule Odyssey"
+      },
+      {
+        "y": 378.2528991699219,
+        "type": "text",
+        "text": "•"
+      },
+      {
+        "y": 378.2528991699219,
+        "type": "text",
+        "text": "LRO — reconstitutions du point d'impact du S-IVB"
+      }
+    ]
+  ]
+}

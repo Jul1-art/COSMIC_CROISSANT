@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Mars 2020 Perseverance Prelaunch",
+      "credit": "NASA/Joel Kowsky",
+      "date": "2020-07-29T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ202007290005",
+      "nasaId": "NHQ202007290005",
+      "description": "NASA astronaut Zena Cardman answers questions from the media during a press conference ahead of the launch of NASA’s Mars 2020 Perseverance rover, Wednesday, July 29, 2020, at NASA’s Kennedy Space Center in Florida. The Perseverance rover is part of NASA’s Mars Exploration Program, a long-term effort of robotic exploration of the Red Planet. Launch is scheduled for Thursday, July 30.  Photo Credit: (NASA/Joel Kowsky)",
+      "src": "archives/perseverance-nasa-NHQ202007290005.jpg"
+    },
+    {
+      "title": "NASA Perseverance Rover Initial Surface Checkout Briefing",
+      "credit": "NASA/Bill Ingalls",
+      "date": "2021-02-19T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ202102190008",
+      "nasaId": "NHQ202102190008",
+      "description": "An image showing the descent stage holding NASA’s Perseverance rover can be seen falling through the Martian atmosphere, its parachute trailing behind, in this image taken on Feb. 18, 2021, by the High Resolution Imaging Experiment (HiRISE) camera aboard the Mars Reconnaissance Orbiter is shown during a NASA Perseverance rover initial surface checkout briefing, Friday Feb. 19, 2021, at NASA's Jet Propulsion Laboratory in Pasadena, California.  The ancient river delta, which is the target of the Perseverance mission, can be seen entering Jezero Crater from the left. A key objective for Perseverance’s mission on Mars is astrobiology, including the search for signs of ancient microbial life. The rover will characterize the planet’s geology and past climate, pave the way for human exploration of the Red Planet, and be the first mission to collect and cache Martian rock and regolith. Photo Credit: (NASA/Bill Ingalls)",
+      "src": "archives/perseverance-nasa-NHQ202102190008.jpg"
+    },
+    {
+      "title": "NASA Perseverance Rover Lands on Mars",
+      "credit": "NASA/Bill Ingalls",
+      "date": "2021-02-18T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ202102180048",
+      "nasaId": "NHQ202102180048",
+      "description": "Perseverance flight director Magdy Bareh and other members of NASA’s Perseverance Mars rover team study data on monitors in mission control, Thursday, Feb. 18, 2021, at NASA's Jet Propulsion Laboratory in Pasadena, California. A key objective for Perseverance’s mission on Mars is astrobiology, including the search for signs of ancient microbial life. The rover will characterize the planet’s geology and past climate, pave the way for human exploration of the Red Planet, and be the first mission to collect and cache Martian rock and regolith. Photo Credit: (NASA/Bill Ingalls)",
+      "src": "archives/perseverance-nasa-NHQ202102180048.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "NASA's Perseverance Rover Launches to Mars",
+      "credit": "JPL",
+      "source": "https://images.nasa.gov/details/JPL-20200730-M2020f-0003-NASA%E2%80%99s%20Perseverance%20Rover%20Launches",
+      "nasaId": "JPL-20200730-M2020f-0003-NASA’s Perseverance Rover Launches",
+      "src": "https://images-assets.nasa.gov/video/JPL-20200730-M2020f-0003-NASA%E2%80%99s%20Perseverance%20Rover%20Launches/JPL-20200730-M2020f-0003-NASA%E2%80%99s%20Perseverance%20Rover%20Launches~orig.mp4",
+      "description": "NASA’s Perseverance Rover began its long journey to Mars today by successfully launching from Cape Canaveral Air Force Station on a ULA Atlas V rocket. It now begins its seven-month journey to the Red Planet, landing there on Feb. 18, 2021.  Perseverance will seek signs of ancient microbial life on Mars along with collecting samples for future return to Earth and demonstrating key technologies to help prepare for future robotic and human exploration.   Also flying with Perseverance is NASA’s Ingenuity helicopter, which will attempt to show controlled flight is possible in the very thin Martian atmosphere.   For more about Perseverance, visit http://mars.nasa.gov/perseverance   For more about Ingenuity, visit https://mars.nasa.gov/technology/helicopter/  Credit: NASA/JPL-Caltech",
+      "date": "2020-07-30T00:00:00Z",
+      "duration": 71.187792,
+      "bitrate": 9604432,
+      "bytes": 85464796,
+      "width": 1280,
+      "height": 720,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/perseverance.mp4",
+    "local": true,
+    "title": "Perseverance · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "perseverance.pdf",
+    "fingerprint": "fc2a9cfa8d2e4fb7c6e09d02115707a5ec84b818e26dbc2843e2cdca56b329d0"
+  }
+}

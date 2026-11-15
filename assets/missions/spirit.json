@@ -1,0 +1,280 @@
+{
+  "id": "spirit",
+  "name": "Spirit (MER-A)",
+  "body": "mars",
+  "family": "mer",
+  "year": 2003,
+  "summary": "Analyse technique et historique détaillée de l'astromobile Spirit (MER-A), conçu pour une mission nominale de 90 sols et ayant fonctionné pendant plus de 6 ans dans le cratère Gusev et sur les collines des Columbia Hills (2004–2010). Ce dossier retrace son architecture matérielle, sa suite instrumentale de pointe, ses découvertes volcaniques et hydrothermales, ainsi que son héritage technologique inestimable.",
+  "facts": [
+    [
+      "Nom officiel & international",
+      "Mars Exploration Rover - A (MER-A) / Spirit (COSPAR 2003-027A)"
+    ],
+    [
+      "Agence spatiale & maîtrise d'œuvre",
+      "NASA (Jet Propulsion Laboratory / Cornell University), construction par JPL"
+    ],
+    [
+      "Lancement & Site",
+      "10 juin 2003, 17:58:47 UTC — Complexe de lancement SLC-17A, Cape Canaveral Air Force Station, Floride"
+    ],
+    [
+      "Lanceur",
+      "Fusée Delta II (configuration 7925 avec 9 propulseurs d'appoint à poudre Gem-40)"
+    ],
+    [
+      "Masse au lancement & atterrissage",
+      "1 063 kg au total (au lancement) ; atterrisseur et boucliers ~348 kg ; astromobile seul ~185 kg"
+    ],
+    [
+      "Site d'atterrissage",
+      "Cratère Gusev, Mars (14,57° S, 175,47° E) — Atterrissage le 4 janvier 2004"
+    ],
+    [
+      "Statut de la mission (2026)",
+      "Mission close le 25 mai 2011 suite à la perte définitive des communications en mars 2010. Astromobile intact mais inactif à Troy (Columbia Hills, 7,73 km parcourus)."
+    ]
+  ],
+  "sourceFile": "Mars/Surface/Spirit (MER-A) — Dossier Technique Complet.pdf",
+  "pdf": "spirit.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.031856536865234,
+        "type": "text",
+        "text": "DOSSIER TECHNIQUE APPROFONDI — PROGRAMME D'EXPLORATION MARTIENNE NASA Spirit (MER-A) — Dossier Technique Complet"
+      },
+      {
+        "y": 117.48788452148438,
+        "type": "text",
+        "text": "Synthèse exhaustive : Analyse technique et historique détaillée de l'astromobile Spirit (MER-A), conçu pour une mission nominale de 90 sols et ayant fonctionné pendant plus de 6 ans dans le cratère Gusev et sur les collines des Columbia Hills (2004–2010). Ce dossier retrace son architecture matérielle, sa suite instrumentale de pointe, ses découvertes volcaniques et hydrothermales, ainsi que son héritage technologique inestimable."
+      },
+      {
+        "y": 190.916015625,
+        "type": "text",
+        "text": "1. Identité institutionnelle & Paramètres de la mission"
+      },
+      {
+        "y": 214.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Caractéristique",
+            "Spécification technique"
+          ],
+          [
+            "Nom officiel & international",
+            "Mars Exploration Rover - A (MER-A) / Spirit (COSPAR 2003-027A)"
+          ],
+          [
+            "Agence spatiale & maîtrise d'œuvre",
+            "NASA (Jet Propulsion Laboratory / Cornell University), construction par JPL"
+          ],
+          [
+            "Lancement & Site",
+            "10 juin 2003, 17:58:47 UTC — Complexe de lancement SLC-17A, Cape Canaveral Air Force Station, Floride"
+          ],
+          [
+            "Lanceur",
+            "Fusée Delta II (configuration 7925 avec 9 propulseurs d'appoint à poudre Gem-40)"
+          ],
+          [
+            "Masse au lancement & atterrissage",
+            "1 063 kg au total (au lancement) ; atterrisseur et boucliers ~348 kg ; astromobile seul ~185 kg"
+          ],
+          [
+            "Site d'atterrissage",
+            "Cratère Gusev, Mars (14,57° S, 175,47° E) — Atterrissage le 4 janvier 2004"
+          ],
+          [
+            "Statut de la mission (2026)",
+            "Mission close le 25 mai 2011 suite à la perte définitive des communications en mars 2010. Astromobile intact mais inactif à Troy (Columbia Hills, 7,73 km parcourus)."
+          ]
+        ]
+      },
+      {
+        "y": 450.416015625,
+        "type": "text",
+        "text": "2. Inventaire exhaustif du Hardware & Instruments scientifiques"
+      },
+      {
+        "y": 481.179931640625,
+        "type": "text",
+        "text": "Légende des états : actif intact mais inactif détruit orbite héliocentrique"
+      },
+      {
+        "y": 508.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Châssis & Système de mobilité",
+            "180 kg",
+            "Intact / inactif",
+            "Architecture boggie-rocker à 6 roues indépendantes, panneaux solaires GaAs pliables, batteries Li-ion et électronique protégée dans une chaude-boîte isolée thermiquement. Immobilisé à Troy (Columbia Hills)."
+          ],
+          [
+            "Caméra Panoramique (Pancam)",
+            "1,68 kg",
+            "Intact / inactif",
+            "Caméra stéréo haute résolution montée sur mât (1,5 m de haut) dotée de roues à filtres spectraux (14 filtres au total) pour l'analyse géologique et minéralogique des paysages volcaniques."
+          ],
+          [
+            "Spectromètre Thermique (Mini-TES)",
+            "2,20 kg",
+            "Intact / inactif",
+            "Spectromètre infrarouge thermique mesurant à distance la minéralogie des roches, des sols et les profils thermiques atmosphériques de Gusev."
+          ],
+          [
+            "Bras Robotique (IDD) & Suite APXS",
+            "5,00 kg",
+            "Intact / inactif",
+            "Bras articulé à 4 degrés de liberté portant le spectromètre à rayons X alpha-particules (APXS), le spectromètre Mössbauer (analyse du fer), l'imagerie microscopique (MI) et l'outil d'abrasion (RAT)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Atterrisseur & Bouclier thermique",
+            "~293 kg",
+            "Éparpillés",
+            "Plateforme tétraédrique d'atterrissage (Columbia Memorial Station), bouclier thermique avant et coque arrière avec parachute largués lors de la descente atmosphérique supersonique."
+          ],
+          [
+            "Étage supérieur Star 48B (Delta II)",
+            "~130 kg",
+            "Orbite héliocentrique",
+            "Propulseur d'injection interplanétaire ayant placé Spirit sur sa trajectoire transmaritiane en juin 2003."
+          ]
+        ]
+      },
+      {
+        "y": 185.666015625,
+        "type": "text",
+        "text": "3. Chronologie détaillée & Jalons opérationnels"
+      },
+      {
+        "y": 209.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date / Sol",
+            "Événement & Contexte analytique"
+          ],
+          [
+            "10 juin 2003",
+            "Lancement réussi depuis Cape Canaveral par une fusée Delta II 7925, plaçant la sonde sur une trajectoire interplanétaire vers Mars."
+          ],
+          [
+            "4 janv. 2004 (Sol 1)",
+            "Atterrissage parfait à l'intérieur du cratère Gusev, après un rebond sur coussins gonflables et une décélération par parachutes et rétrofusées."
+          ],
+          [
+            "Mars 2004 (Sol 50)",
+            "Premières découvertes géologiques : les roches volcaniques basaltiques de Gusev montrent des signes d'altération aqueuse modérée mais pas de lac majeur immédiat en surface."
+          ],
+          [
+            "2005 – 2007",
+            "Ascension réussie des Columbia Hills. Découverte de dépôts riches en sulfates et en silice pure (Home Plate), attestant d'une ancienne activité hydrothermale."
+          ],
+          [
+            "2009 – 2010",
+            "Enlisement critique dans le piège de sable meuble de « Troy ». Efforts de désensablement infructueux avant l'arrivée de l'hiver martien."
+          ],
+          [
+            "22 mars 2010",
+            "Dernier contact radio reçu sur Terre avant que les réserves d'énergie ne s'épuisent face au froid polaire. Mission officiellement close en mai 2011."
+          ]
+        ]
+      },
+      {
+        "y": 448.916015625,
+        "type": "text",
+        "text": "4. Apports scientifiques fondamentaux & Hydrothermalism ancien"
+      },
+      {
+        "y": 472.9878845214844,
+        "type": "text",
+        "text": "Spirit a exploré le cratère Gusev, un ancien bassin d'impact de 166 km de diamètre pressenti initialement pour avoir abrité un lac de cratère. Contrairement aux attentes, les premières analyses des plaines basaltiques ont révélé des laves volcaniques relativement sèches, altérées par de faibles quantités d'eau au fil du temps. Cependant, la véritable percée scientifique est survenue lorsque Spirit a entrepris l'ascension des collines voisines, les Columbia Hills."
+      },
+      {
+        "y": 550.9878540039062,
+        "type": "text",
+        "text": "Sur le site de « Home Plate », les instruments de Spirit ont mis au jour des affleurements de silice pure à 90 %, témoignant de l'action de sources hydrothermales ou de fumerolles volcaniques anciennes. Cette découverte a prouvé que Mars a possédé par le passé des environnements thermiques complexes, potentiellement favorables à l'émergence d'une vie microbienne primitive."
+      },
+      {
+        "y": 615.416015625,
+        "type": "text",
+        "text": "5. Épreuves d'ingénierie & Résilience opérationnelle"
+      },
+      {
+        "y": 639.4878540039062,
+        "type": "text",
+        "text": "À l'instar d'Opportunity, Spirit a largement surpassé sa durée de vie nominale de 90 sols, malgré un terrain beaucoup plus accidenté et rocheux. En 2006, suite au blocage définitif de sa roue avant-gauche, Spirit a dû poursuivre sa route en marche arrière, traînant sa roue inerte qui a par chance creusé une tranchée révélant des sulfates de fer clairs (témoignant d'un ancien milieu acide)."
+      },
+      {
+        "y": 703.9878540039062,
+        "type": "text",
+        "text": "En mai 2009, Spirit s'est enraciné profondément dans une poche de sable sulfate meuble sur le site de Troy. Les ingénieurs du JPL ont conduit des tests de simulation pendant des mois, mais la perte de mobilité définitive et le manque d'inclinaison solaire favorable pour l'hiver ont conduit à l'extinction finale de la station en mars 2010."
+      }
+    ],
+    [
+      {
+        "y": 62.666015625,
+        "type": "text",
+        "text": "6. Héritage technologique et scientifique"
+      },
+      {
+        "y": 86.73788452148438,
+        "type": "text",
+        "text": "Le programme MER, dont Spirit fut le premier représentant, a forgé les bases de l'exploration robotique mobile moderne de Mars. Les techniques de navigation autonome par vision, la gestion thermique de survie par grand froid et la robustesse des bras robotiques ont permis de valider les architectures reprises par la suite sur Curiosity et Perseverance."
+      },
+      {
+        "y": 151.916015625,
+        "type": "text",
+        "text": "7. Sources & Références bibliographiques"
+      },
+      {
+        "y": 190.98788452148438,
+        "type": "text",
+        "text": "NASA Science — Mars Exploration Rover Mission (Spirit) (science.nasa.gov)"
+      },
+      {
+        "y": 206.73788452148438,
+        "type": "text",
+        "text": "S. W. Squyres et al., The Spirit Rover's Athena Science Investigation at Gusev Crater, Science, vol. 305, 2004."
+      },
+      {
+        "y": 222.48788452148438,
+        "type": "text",
+        "text": "R. V. Morris et al., Hydrothermal processes at Home Plate in Gusev Crater, Mars, Science, 2008."
+      },
+      {
+        "y": 238.23788452148438,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche technique Spirit (ID : 2003-027A)."
+      },
+      {
+        "y": 264.6371154785156,
+        "type": "text",
+        "text": "Référence du dossier : NASA-MER-A-SPIRIT-FULL-REPORT-2026 • Document généré conformément au cahier des charges de la carte 3D du patrimoine spatial."
+      }
+    ]
+  ]
+}

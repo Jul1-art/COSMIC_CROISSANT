@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "source": "https://www.nasa.gov/image-article/our-first-view-of-the-surface-of-mars/",
+      "title": "Première photographie de la surface de Mars par Viking 1",
+      "credit": "NASA / JPL",
+      "src": "archives/viking-1-reviewed-1.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/viking-1.mp4",
+    "local": true,
+    "title": "Viking 1 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "viking-1.pdf",
+    "fingerprint": "b02637fc969d963a7a96b69f87e105a97c85c5c4ccff8d342be14f8006bf5659"
+  }
+}

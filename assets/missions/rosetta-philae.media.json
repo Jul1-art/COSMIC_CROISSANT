@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Rosetta Selflessly Offers Beautiful Comet Selfie",
+      "credit": "Copyright: ESA/Rosetta/Philae/CIVA",
+      "date": "2014-10-14T20:59:02Z",
+      "source": "https://images.nasa.gov/details/PIA18826",
+      "nasaId": "PIA18826",
+      "description": "A composite image from a camera on ESA Rosetta mission Philae comet lander shows a solar array, with comet 67P/Churyumov-Gerasimenko in the background.",
+      "src": "archives/rosetta-philae-nasa-PIA18826.jpg"
+    },
+    {
+      "title": "Rosetta Mission Selfie at 30 Miles",
+      "credit": "Copyright: ESA/Rosetta/Philae/CIVA",
+      "date": "2014-11-11T16:20:16Z",
+      "source": "https://images.nasa.gov/details/PIA18872",
+      "nasaId": "PIA18872",
+      "description": "The Philae lander of the European Space Agency Rosetta mission took this self-portrait of the spacecraft on Sept. 7, 2014, at a distance of about 30 miles 50 kilometers from comet 67P/Churyumov-Gerasimenko.",
+      "src": "archives/rosetta-philae-nasa-PIA18872.jpg"
+    },
+    {
+      "title": "Rosetta Mission Selfie at 10 Miles",
+      "credit": "Copyright: ESA/Rosetta/Philae/CIVA",
+      "date": "2014-11-12T17:10:02Z",
+      "source": "https://images.nasa.gov/details/PIA18871",
+      "nasaId": "PIA18871",
+      "description": "The Philae lander of the European Space Agency Rosetta mission took this self-portrait of the spacecraft on Sept. 7, 2014, at a distance of about 10 miles 16 kilometers from comet 67P/Churyumov-Gerasimenko.",
+      "src": "archives/rosetta-philae-nasa-PIA18871.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/rosetta-philae.mp4",
+    "local": true,
+    "title": "Rosetta & Philae · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "rosetta-philae.pdf",
+    "fingerprint": "0f35e72b169b9846d45092420bea833f74de95323ab16b81ca846d3d8855aa09"
+  }
+}

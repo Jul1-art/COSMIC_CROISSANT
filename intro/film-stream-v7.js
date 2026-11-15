@@ -16,8 +16,13 @@ export function attachFilmSource(video,media={}, {shouldResume=()=>false,onBuffe
   }
   function getBufferState(rebuffer=waitingTarget){
     const p=policy(rebuffer),ahead=bufferedFilmSeconds(video.buffered,video.currentTime);
-    const target=waiters.size?p.required:intent?p.forwardTarget:p.preloadTarget;
-    return {...p,ahead,target,progress:target>0?Math.min(1,ahead/target):1,ready:video.readyState>=2&&(ahead+.15>=p.required||p.remaining<=.15),preloading:!intent,suspended,networkRecovering:retryTimer!==null,networkFailed};
+    // Native MP4 preload can stop at the browser's own cap. Waiting for a
+    // larger reserve would deadlock: loading resumes only after playback.
+    // HLS continues to use the full measured-bandwidth reserve.
+    const nativeCap=controller.mode==='mp4'&&video.readyState>=4&&video.networkState===1;
+    const required=nativeCap?Math.min(p.required,(rebuffer?18:8)*Math.max(.25,Number(video.playbackRate)||1)):p.required;
+    const target=waiters.size?required:intent?p.forwardTarget:p.preloadTarget;
+    return {...p,required,ahead,target,progress:target>0?Math.min(1,ahead/target):1,ready:video.readyState>=2&&(ahead+.15>=required||p.remaining<=.15),preloading:!intent,suspended,networkRecovering:retryTimer!==null,networkFailed};
   }
   function publish(){
     if(destroyed)return;
@@ -111,7 +116,7 @@ export function attachFilmSource(video,media={}, {shouldResume=()=>false,onBuffe
     if(!media.src)throw new Error('This browser does not support the film stream.');
     fallbackActive=true;video.src=media.src;video.load();
   }
-  for(const type of ['progress','loadedmetadata','loadeddata','canplay','durationchange','timeupdate','seeked','ratechange'])listen(type,applyPolicy);
+  for(const type of ['progress','suspend','loadedmetadata','loadeddata','canplay','durationchange','timeupdate','seeked','ratechange'])listen(type,applyPolicy);
   connection?.addEventListener?.('change',applyPolicy);publish();
   return controller;
 }

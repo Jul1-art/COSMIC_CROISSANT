@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "The Soviet Union 1969 CPA 3821 stamp (Space Probe, Space Capsule and Orbits)",
+      "description": "USSR stampː Space Probe, Space Capsule and Orbits. Seriesː Space Exploration",
+      "credit": "USSR Post",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Soviet_Union_1969_CPA_3821_stamp_(Space_Probe,_Space_Capsule_and_Orbits).jpg",
+      "src": "archives/venera-5-commons.jpg",
+      "date": "1969-11-25",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-5.mp4",
+    "local": true,
+    "title": "Venera 5 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-5.pdf",
+    "fingerprint": "4378307909dbaac636c4960c1108798db0c112e2a737f6915b7eb37b82823789"
+  }
+}

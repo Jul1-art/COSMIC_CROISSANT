@@ -1,0 +1,430 @@
+{
+  "id": "new-horizons",
+  "name": "New Horizons",
+  "body": "pluto",
+  "family": "orbiter",
+  "year": 2006,
+  "summary": "~401 kg de sonde à sec (478 kg au lancement) · 1 objet encore actif en 2026 (la sonde elle-même, ~66 UA du Soleil) · 7 instruments embarqués · ~30 g de cendres de Clyde Tombaugh à bord · 1 étage Star 48B sur une trajectoire non suivie",
+  "facts": [
+    [
+      "Nom officiel",
+      "New Horizons"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme New Frontiers ; sonde construite et pilotée par le Johns Hopkins APL"
+    ],
+    [
+      "Lancement",
+      "19 janvier 2006, 19h00 UTC — Cape Canaveral, Space Launch Complex 41, fusée Atlas V 551"
+    ],
+    [
+      "Survols",
+      "Jupiter 28 février 2007 (~2,3 millions de km) · Pluton 14 juillet 2015 (~12 500 km) · Arrokoth 1er janvier 2019 (~3 500 km)"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — trajectoire d'échappement du Système solaire (vitesse ~13,6 km/s)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le Johns Hopkins APL (Maryland)"
+    ],
+    [
+      "Véhicules",
+      "Atlas V 551 · étage Centaur · 3e étage Star 48B · sonde New Horizons"
+    ],
+    [
+      "Statut",
+      "Active — mission étendue dans la ceinture de Kuiper ; ~66 UA (≈ 9,9 milliards de km) du Soleil ; signal aller simple ≈ 9 h"
+    ]
+  ],
+  "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-New-Horizons-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "new-horizons.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "New Horizons — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : ~401 kg de sonde à sec (478 kg au lancement) · 1 objet encore actif en 2026 (la sonde elle-même, ~66 UA du Soleil) · 7 instruments embarqués · ~30 g de cendres de Clyde Tombaugh à bord · 1 étage Star 48B sur une trajectoire non suivie"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "New Horizons"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme New Frontiers ; sonde construite et pilotée par le Johns Hopkins APL"
+          ],
+          [
+            "Lancement",
+            "19 janvier 2006, 19h00 UTC — Cape Canaveral, Space Launch Complex 41, fusée Atlas V 551"
+          ],
+          [
+            "Survols",
+            "Jupiter 28 février 2007 (~2,3 millions de km) · Pluton 14 juillet 2015 (~12 500 km) · Arrokoth 1er janvier 2019 (~3 500 km)"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — trajectoire d'échappement du Système solaire (vitesse ~13,6 km/s)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le Johns Hopkins APL (Maryland)"
+          ],
+          [
+            "Véhicules",
+            "Atlas V 551 · étage Centaur · 3e étage Star 48B · sonde New Horizons"
+          ],
+          [
+            "Statut",
+            "Active — mission étendue dans la ceinture de Kuiper ; ~66 UA (≈ 9,9 milliards de km) du Soleil ; signal aller simple ≈ 9 h"
+          ]
+        ]
+      },
+      {
+        "y": 416.1176452636719,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 441.06060791015625,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 469.3969421386719,
+        "type": "text",
+        "text": "A. Ceinture de Kuiper — sonde New Horizons (~401 kg à sec)"
+      },
+      {
+        "y": 487.7543640136719,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bus de la sonde",
+            "401 kg (à sec) · 478 kg au lancement",
+            "",
+            "Passe l'essentiel de sa croisière en hibernation, avec des réveils annuels de contrôle ; la plus longue hibernation a duré 321 jours (7 août 2025 – 23 juin 2026), sonde « en bonne santé »"
+          ],
+          [
+            "Antenne à grand gain",
+            "2,1 m de diamètre",
+            "",
+            "Liaison via le Deep Space Network ; signal aller simple ≈ 9 h"
+          ],
+          [
+            "Générateur RTG (plutonium-238)",
+            "×1",
+            "",
+            "245,7 W au lancement, ~190 W en 2019 ; perd ~3,5 W par an. D'ici les années 2030, il ne pourra plus alimenter les émetteurs"
+          ],
+          [
+            "7 instruments scientifiques (voir B)",
+            "—",
+            "",
+            "Tous restent à bord ; trois ont continué à collecter des données pendant l'hibernation (vent solaire, particules chargées, poussières)"
+          ],
+          [
+            "Cendres de Clyde Tombaugh",
+            "~30 g",
+            "",
+            "Découvreur de Pluton (1930) ; ses cendres voyagent à bord de la sonde"
+          ],
+          [
+            "CD de noms et d'images",
+            "—",
+            "",
+            "Un CD de 434 738 noms et un CD d'images des membres de l'équipe du projet"
+          ],
+          [
+            "Pièce de SpaceShipOne",
+            "—",
+            "",
+            "Fragment du premier vaisseau suborbital privé habité"
+          ],
+          [
+            "Timbre « Not Yet Explored » et drapeaux",
+            "—",
+            "",
+            "Timbre postal américain « Pluton : pas encore explorée », et 2 drapeaux américains"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.354347229003906,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Pièces de monnaie (Floride, Maryland)",
+            "—",
+            "",
+            "Une pièce de la Floride (lest d'équilibrage) et une pièce du Maryland rendant hommage aux constructeurs"
+          ]
+        ]
+      },
+      {
+        "y": 115.596923828125,
+        "type": "text",
+        "text": "B. Instruments scientifiques — état connu au 13 novembre 2026"
+      },
+      {
+        "y": 133.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "LORRI",
+            "Imageur longue portée",
+            "",
+            "Images haute résolution en lumière visible"
+          ],
+          [
+            "Ralph (MVIC + LEISA)",
+            "Imageur visible et infrarouge",
+            "",
+            "Caméra couleur et cartographie proche infrarouge"
+          ],
+          [
+            "Alice",
+            "Spectromètre ultraviolet",
+            "",
+            "Composition de l'atmosphère ; doit cartographier l'hydrogène de l'héliosphère externe à la reprise d'activité"
+          ],
+          [
+            "REX",
+            "Radioscience",
+            "",
+            "Mesures radio de l'atmosphère et de la masse (utilisé lors des survols)"
+          ],
+          [
+            "SWAP",
+            "Vent solaire",
+            "",
+            "Particules du vent solaire jusqu'à 6,5 keV ; collecte aussi pendant l'hibernation"
+          ],
+          [
+            "PEPSSI",
+            "Particules énergétiques",
+            "",
+            "Ions et électrons jusqu'à 1 MeV ; collecte aussi pendant l'hibernation"
+          ],
+          [
+            "Student Dust Counter (SDC)",
+            "Poussières",
+            "",
+            "Compteur construit par des étudiants, nommé d'après Venetia Burney ; collecte aussi pendant l'hibernation"
+          ]
+        ]
+      },
+      {
+        "y": 397.79693603515625,
+        "type": "text",
+        "text": "C. Étages de lancement et trajectoire d'échappement"
+      },
+      {
+        "y": 416.15435791015625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Star 48B (3e étage)",
+            "n.c.",
+            "",
+            "Après l'injection vers Jupiter, séparé de la sonde ; trajectoire d'échappement non suivie précisément"
+          ],
+          [
+            "Étage Centaur et propulseurs d'appoint de l'Atlas V",
+            "n.c.",
+            "",
+            "Séparés pendant la montée ; devenir exact non confirmé"
+          ]
+        ]
+      },
+      {
+        "y": 522.9969482421875,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 540.204345703125,
+        "type": "text",
+        "text": "• Rien : aucune pièce de New Horizons n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 557.204345703125,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : images et mesures de Pluton, Charon, Arrokoth et du milieu entre planètes"
+      },
+      {
+        "y": 588.204345703125,
+        "type": "text",
+        "text": "• Un objet voyage à bord : les cendres de Clyde Tombaugh (voir A)"
+      },
+      {
+        "y": 615.9969482421875,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 633.204345703125,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension"
+      },
+      {
+        "y": 650.204345703125,
+        "type": "text",
+        "text": "• Étage Star 48B, séparé après l'injection interplanétaire"
+      }
+    ],
+    [
+      {
+        "y": 54.7176513671875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 77.35438537597656,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "19 janvier 2006, 19h00 UTC",
+            "Lancement d'Atlas V 551 depuis Cape Canaveral"
+          ],
+          [
+            "28 février 2007",
+            "Survol de Jupiter (~2,3 millions de km) — assistance gravitationnelle"
+          ],
+          [
+            "28 juin 2007",
+            "Premier cycle d'hibernation"
+          ],
+          [
+            "14 juillet 2015",
+            "Survol de Pluton (~12 500 km au-dessus de la surface)"
+          ],
+          [
+            "1er janvier 2019",
+            "Survol d'Arrokoth (~3 500 km) — objet le plus lointain exploré de près à l'époque"
+          ],
+          [
+            "17 avril 2021",
+            "Franchit 50 UA — cinquième engin à atteindre cette distance"
+          ],
+          [
+            "7 août 2025",
+            "Début de la plus longue hibernation (321 jours)"
+          ],
+          [
+            "23 juin 2026",
+            "Réveil de la sonde ; reprise des opérations annoncée par la NASA le 7 juillet 2026"
+          ],
+          [
+            "2028–2029",
+            "Sortie prévue de la ceinture de Kuiper"
+          ],
+          [
+            "Années 2030",
+            "Le RTG ne pourra plus alimenter les émetteurs"
+          ]
+        ]
+      },
+      {
+        "y": 321.51763916015625,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 343.0043640136719,
+        "type": "text",
+        "text": "• Première visite de Pluton : Pluton s'est révélée géologiquement active, avec une atmosphère brumeuse et de vastes plaines de glace d'azote."
+      },
+      {
+        "y": 374.0043640136719,
+        "type": "text",
+        "text": "• Arrokoth : survol d'un objet de la ceinture de Kuiper, vestige du Système solaire primitif, à plus de 6 milliards de km de la Terre."
+      },
+      {
+        "y": 405.0043640136719,
+        "type": "text",
+        "text": "• Mission étendue : depuis l'année fiscale 2025, la mission est tournée vers l'héliophysique (plasma, poussières et gaz) ; le Congrès l'a financée pour l'année fiscale 2026 malgré une proposition de coupe."
+      },
+      {
+        "y": 450.0043640136719,
+        "type": "text",
+        "text": "• Avenir : l'équipe veut poursuivre jusqu'à la sortie de la ceinture de Kuiper, vers 2028–2029 ; la baisse de puissance du RTG limitera ensuite les transmissions."
+      },
+      {
+        "y": 481.0043640136719,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible dans l'espace."
+      },
+      {
+        "y": 532.11767578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 553.6043701171875,
+        "type": "text",
+        "text": "• NASA — New Horizons : science.nasa.gov/mission/new-horizons"
+      },
+      {
+        "y": 570.6043701171875,
+        "type": "text",
+        "text": "• Johns Hopkins APL — pages de la mission : pluto.jhuapl.edu"
+      },
+      {
+        "y": 587.6043701171875,
+        "type": "text",
+        "text": "• Wikipedia — New Horizons ; The Watchers — réveil de juillet 2026 ; orbitalradar.com — suivi"
+      }
+    ]
+  ]
+}

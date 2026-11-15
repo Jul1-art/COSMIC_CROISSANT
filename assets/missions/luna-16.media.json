@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "title": "Luna 16",
+      "credit": "NASA/GSFC/Arizona State University",
+      "date": "2010-03-25T19:00:03Z",
+      "source": "https://images.nasa.gov/details/PIA12984",
+      "nasaId": "PIA12984",
+      "description": "Luna 16 was the first robotic mission to land on the Moon on basaltic plains of Mare Fecunditatis and return a sample to the Earth. It was launched by the Soviet Union on 12 September 1970. This image was taken by NASA Lunar Reconnaissance Orbiter.",
+      "src": "archives/luna-16-nasa-PIA12984.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-16.mp4",
+    "local": true,
+    "title": "Luna 16 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-16.pdf",
+    "fingerprint": "460ebd6d1045f74344dc54ed53187004cab039995abb857b6eb43b8defee1c44"
+  }
+}

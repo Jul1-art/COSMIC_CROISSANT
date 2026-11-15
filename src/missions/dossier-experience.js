@@ -5,7 +5,7 @@ import {reducedMissionMotion} from './mission-motion.js';
 import {localizeMissionElement,missionText} from './mission-locale.js';
 /** Shared policies for every mission: locale, top-of-page navigation, no brief
  * links/footer, accessible chapters/images, and an isolated film player. */
-export function mountDossier({renderTab}){
+export function mountDossier({renderTab,missionName}){
  discoverMission(document.body.dataset.mission);
  const nav=document.querySelector('#dossier-tabs'),content=document.querySelector('#dossier-content'),reduced=()=>reducedMissionMotion();
  let current='',transition=null,frame=0,contentLocale=null,observer;
@@ -51,7 +51,7 @@ export function mountDossier({renderTab}){
   content.innerHTML=DOSSIER_TABS.map(([id],i)=>`<section class="dossier-panel" role="tabpanel" id="panel-${id}" aria-labelledby="tab-${id}" tabindex="0" hidden>${renderTab(id,language)}<nav class="dossier-chapter-end" aria-label="Continue reading"><span>0${i+1} / 05</span><button type="button" data-tab="${DOSSIER_TABS[(i+1)%5][0]}">${i===4?'Back to mission profile':'Next: '+DOSSIER_TABS[i+1][1]} <span aria-hidden="true">→</span></button></nav></section>`).join('');
   normalize();setupImages(content);icons(content);contentLocale=localizeMissionElement(content);
   if(!reduced()&&'IntersectionObserver' in window){observer=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){e.target.classList.add('is-revealed');observer.unobserve(e.target);}},{threshold:.06});content.querySelectorAll('.dossier-photo,.dossier-hardware,.dossier-facts>div,.dossier-source-list>a,.dossier-timeline li,.dossier-crew article').forEach(node=>{node.classList.add('dossier-reveal');observer.observe(node);});}
-  const name=missionText(document.body.dataset.mission==='sputnik-1'?'Sputnik 1':'Apollo 11');nav.setAttribute('aria-label',name+(language==='fr'?' · rubriques de la mission':' mission chapters'));document.title=name+' — '+(language==='fr'?'Dossier de mission':'Mission archive')+' · RELIC';toggle.textContent=language==='fr'?'FR / EN':'EN / FR';toggle.setAttribute('aria-label',language==='fr'?'Passer en anglais':'Switch to French');select(keep,{write:false});
+  const name=missionName||missionText(document.body.dataset.mission==='sputnik-1'?'Sputnik 1':'Apollo 11');nav.setAttribute('aria-label',name+(language==='fr'?' · rubriques de la mission':' mission chapters'));document.title=name+' — '+(language==='fr'?'Dossier de mission':'Mission archive')+' · RELIC';toggle.textContent=language==='fr'?'FR / EN':'EN / FR';toggle.setAttribute('aria-label',language==='fr'?'Passer en anglais':'Switch to French');select(keep,{write:false});
  }
  const toggle=document.createElement('button');toggle.type='button';toggle.className='dossier-language';toggle.onclick=()=>setLanguage(getLanguage()==='fr'?'en':'fr');document.querySelector('.dossier-header').append(toggle);
  setupImages(document);icons(document);localizeMissionElement(document.querySelector('.dossier-skip'));const headerLocale=localizeMissionElement(document.querySelector('.dossier-header')),heroLocale=localizeMissionElement(document.querySelector('.dossier-hero')),noteLocale=localizeMissionElement(document.querySelector('.dossier-mission-note'));

@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "المركبة الفضائية العربية الإماراتية (الأمل)",
+      "description": "لحظة وصول المركبة، إلى اليابان في أواخر أبريل / نيسان على متن طائرة شحن أنتونوف من دبي.",
+      "credit": "Mohammed msx",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9_%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%8A%D8%A9_(%D8%A7%D9%84%D8%A3%D9%85%D9%84).jpg",
+      "src": "archives/hope-commons.jpg",
+      "date": "2020-04-22",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/hope.mp4",
+    "local": true,
+    "title": "Hope (Al-Amal) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "hope.pdf",
+    "fingerprint": "2d5162568a6ecf561dcdc7779649a36308af57fe99959206146e627d9cb19aef"
+  }
+}

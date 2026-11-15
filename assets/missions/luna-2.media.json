@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Luna 1 - 2 Spacecraft",
+      "description": "Model of Soviet Lunik/Luna 1 - 2 spacecraft.",
+      "credit": "NASA/NSSDCA (public domain)",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Luna_1_-_2_Spacecraft.png",
+      "src": "archives/luna-2-commons.png",
+      "date": "2021-03-26",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-2.mp4",
+    "local": true,
+    "title": "Luna 2 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-2.pdf",
+    "fingerprint": "f74f3dc7c391c7c5426f590b15edbc192933e3efe41f52f9b60f42f77e6c3820"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Hera in orbit",
+      "description": "ESA’s Hera mission concept, currently under study, would be humanity’s first mission to a binary asteroid: the 800 m-diameter Didymos is accompanied by a 170 m-diameter secondary body. Hera will study the aftermath of the impact caused by the NASA spacecraft DART on the smaller body.",
+      "credit": "ESA – Science Office",
+      "license": "CC BY-SA 3.0 igo",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Hera_in_orbit.jpg",
+      "src": "archives/hera-commons.jpg",
+      "date": "2015-06-01 17:42:08",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/hera.mp4",
+    "local": true,
+    "title": "Hera (ESA) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "hera.pdf",
+    "fingerprint": "85573a4df5ec5232b268761c5f25a30b4ec17196b861bcba0e1d6d53e744ff0b"
+  }
+}

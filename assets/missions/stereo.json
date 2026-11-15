@@ -1,0 +1,322 @@
+{
+  "id": "stereo",
+  "name": "STEREO (Solar Terrestrial Relations Observatory)",
+  "body": "sun",
+  "family": "orbiter",
+  "year": 2006,
+  "summary": "Analyse technique et historique détaillée de la mission double STEREO (Solar Terrestrial Relations Observatory / NASA), composée de deux sondes spatiales quasi identiques — STEREO- A (Ahead) et STEREO-B (Behind) — lancées simultanément en octobre 2006 sur des orbites héliocentriques dérivantes autour du Soleil. Conçue pour une mission nominale de deux ans afin d'offrir les toutes premières vues stéréoscopiques en 3D des éjections de masse coronale (CME) et de l'atmosphère solaire globale, la mission a révolutionné la météorologie de l'espace. En novembre 2026, STEREO-A demeure pleinement opérationnel après plus de 20 ans d'activité, tandis que STEREO-B est silencieux depuis 2014 suite à une perte de contrôle d'attitude.",
+  "facts": [
+    [
+      "Noms officiels & désignations",
+      "Solar Terrestrial Relations Observatory : STEREO-A (Ahead — COSPAR 2006-047A / SATCAT 29510) et STEREO-B (Behind — COSPAR 2006-047B / SATCAT 29511)"
+    ],
+    [
+      "Agence & maîtrise d'œuvre",
+      "NASA (Goddard Space Flight Center / programme Solar Terrestrial Probes) — plate- formes conçues et intégrées par le Johns Hopkins University Applied Physics Laboratory (JHU/APL) avec consortiums instrumentaux internationaux (USA, France, Royaume-Uni, Allemagne)"
+    ],
+    [
+      "Lancement & Site",
+      "26 octobre 2006, 00:52:00 UTC — Complexe de lancement SLC-17B, Cape Canaveral Air Force Station, Floride (lancement double superposé)"
+    ],
+    [
+      "Lanceur",
+      "Fusée Delta II (configuration 7925-10L avec 9 propulseurs d'appoint GEM-40, second étage Delta-K et troisième étage Star 48B)"
+    ],
+    [
+      "Masse au lancement & à sec",
+      "620 kg par sonde au lancement (1 240 kg au total pour la paire, incluant ~72 kg d'hydrazine et ~92 kg d'instruments scientifiques par observatoire) ; masse sèche ~548 kg par sonde"
+    ],
+    [
+      "Orbites héliocentriques",
+      "Orbites héliocentriques à 1 UA : STEREO-A orbite légèrement plus près du Soleil (~0,96 UA, période ~346 jours, avançant de ~22°/an devant la Terre) ; STEREO-B orbite légèrement plus loin (~1,04 UA, période ~388 jours, dérivant de ~22°/an derrière la Terre)"
+    ],
+    [
+      "Statut de la mission (2026)",
+      "STEREO-A : Actif et opérationnel en orbite héliocentrique (plus de 20 ans de service). STEREO-B : Intact mais inactif/silencieux en orbite héliocentrique (perte de contact le 1er octobre 2014 ; fin des tentatives de récupération en octobre 2018)."
+    ]
+  ],
+  "sourceFile": "Soleil/STEREO (Solar Terrestrial Relations Observatory) — Dossier Technique Complet.pdf",
+  "pdf": "stereo.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.031856536865234,
+        "type": "text",
+        "text": "DOSSIER TECHNIQUE APPROFONDI — PROGRAMME SOLAR TERRESTRIAL PROBES NASA STEREO (Solar Terrestrial Relations Observatory) — Dossier Technique Complet"
+      },
+      {
+        "y": 142.9276123046875,
+        "type": "text",
+        "text": "Synthèse exhaustive : Analyse technique et historique détaillée de la mission double STEREO (Solar Terrestrial Relations Observatory / NASA), composée de deux sondes spatiales quasi identiques — STEREO- A (Ahead) et STEREO-B (Behind) — lancées simultanément en octobre 2006 sur des orbites héliocentriques dérivantes autour du Soleil. Conçue pour une mission nominale de deux ans afin d'offrir les toutes premières vues stéréoscopiques en 3D des éjections de masse coronale (CME) et de l'atmosphère solaire globale, la mission a révolutionné la météorologie de l'espace. En novembre 2026, STEREO-A demeure pleinement opérationnel après plus de 20 ans d'activité, tandis que STEREO-B est silencieux depuis 2014 suite à une perte de contrôle d'attitude."
+      },
+      {
+        "y": 270.416015625,
+        "type": "text",
+        "text": "1. Identité institutionnelle & Paramètres de la mission"
+      },
+      {
+        "y": 294.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Caractéristique",
+            "Spécification technique"
+          ],
+          [
+            "Noms officiels & désignations",
+            "Solar Terrestrial Relations Observatory : STEREO-A (Ahead — COSPAR 2006-047A / SATCAT 29510) et STEREO-B (Behind — COSPAR 2006-047B / SATCAT 29511)"
+          ],
+          [
+            "Agence & maîtrise d'œuvre",
+            "NASA (Goddard Space Flight Center / programme Solar Terrestrial Probes) — plate- formes conçues et intégrées par le Johns Hopkins University Applied Physics Laboratory (JHU/APL) avec consortiums instrumentaux internationaux (USA, France, Royaume-Uni, Allemagne)"
+          ],
+          [
+            "Lancement & Site",
+            "26 octobre 2006, 00:52:00 UTC — Complexe de lancement SLC-17B, Cape Canaveral Air Force Station, Floride (lancement double superposé)"
+          ],
+          [
+            "Lanceur",
+            "Fusée Delta II (configuration 7925-10L avec 9 propulseurs d'appoint GEM-40, second étage Delta-K et troisième étage Star 48B)"
+          ],
+          [
+            "Masse au lancement & à sec",
+            "620 kg par sonde au lancement (1 240 kg au total pour la paire, incluant ~72 kg d'hydrazine et ~92 kg d'instruments scientifiques par observatoire) ; masse sèche ~548 kg par sonde"
+          ],
+          [
+            "Orbites héliocentriques",
+            "Orbites héliocentriques à 1 UA : STEREO-A orbite légèrement plus près du Soleil (~0,96 UA, période ~346 jours, avançant de ~22°/an devant la Terre) ; STEREO-B orbite légèrement plus loin (~1,04 UA, période ~388 jours, dérivant de ~22°/an derrière la Terre)"
+          ],
+          [
+            "Statut de la mission (2026)",
+            "STEREO-A : Actif et opérationnel en orbite héliocentrique (plus de 20 ans de service). STEREO-B : Intact mais inactif/silencieux en orbite héliocentrique (perte de contact le 1er octobre 2014 ; fin des tentatives de récupération en octobre 2018)."
+          ]
+        ]
+      },
+      {
+        "y": 629.666015625,
+        "type": "text",
+        "text": "2. Inventaire exhaustif du Hardware & Instruments scientifiques"
+      },
+      {
+        "y": 660.429931640625,
+        "type": "text",
+        "text": "Légende des états : actif en orbite solaire intact mais silencieux détruit / rentré orbite héliocentrique"
+      }
+    ],
+    [
+      {
+        "y": 59.520263671875,
+        "type": "text",
+        "text": "A. Plateformes spatiales & Suites scientifiques embarquées (x2 — STEREO-A & STEREO-B)"
+      },
+      {
+        "y": 78.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Plateforme STEREO-A (Ahead)",
+            "~528 kg (sec)",
+            "Actif (1 UA)",
+            "Bus parallélépipédique (1,14 m × 1,22 m × 2,03 m, envergure 6,47 m avec 2 panneaux solaires fournissant ~596 W). Stabilisé sur 3 axes par 4 roues à réaction, unités de mesure inertielle (IMU) et 12 propulseurs à hydrazine."
+          ],
+          [
+            "Plateforme STEREO-B (Behind)",
+            "~528 kg (sec)",
+            "Intact / muet",
+            "Observatoire jumeau symétrique (antennes orientées à l'opposé pour maintenir le pointage vers la Terre). Mis en rotation incontrôlée lors d'un test en 2014 ; silencieux en orbite solaire à ~1,04 UA."
+          ],
+          [
+            "SECCHI (Sun Earth Connection Coronal and Heliospheric Investigation)",
+            "~45,0 kg (par sonde)",
+            "Actif (A) / Muet (B)",
+            "Suite de 5 télescopes optiques observant le Soleil de la chromosphère jusqu'à 1 UA : imageur ultraviolet extrême (EUVI, 4 longueurs d'onde), deux coronographes à lumière blanche (COR1 et COR2, de 1,4 à 15 rayons solaires) et deux imageurs héliosphériques grand champ (HI-1 et HI-2) suivant les CME jusqu'à la Terre."
+          ],
+          [
+            "IMPACT (In-situ Measurements of Particles and CME Transients)",
+            "~17,5 kg (par sonde)",
+            "Actif (A) / Muet (B)",
+            "Ensemble de 7 capteurs répartis sur une perche déployable de 4,3 m et le corps principal (magnétomètre tri-axial MAG, analyseur d'électrons du vent solaire SWEA, détecteurs d'ions suprathermiques STE, SEPT, SIT, LET et HET couvrant de quelques eV à 100 MeV/nucléon)."
+          ],
+          [
+            "PLASTIC (Plasma and Suprathermal Ion Composition)",
+            "~13,5 kg (par sonde)",
+            "Actif (A) / Muet (B)",
+            "Spectromètre de masse et d'énergie à temps de vol mesurant in situ la densité, la vitesse, la température et l'état de charge ionique des protons, particules alpha et ions lourds (C, O, Fe) du vent solaire et des éjections coronales."
+          ],
+          [
+            "S/WAVES (STEREO/WAVES Radio Burst Tracker)",
+            "~16,0 kg (par sonde)",
+            "Actif (A) / Muet (B)",
+            "Récepteur radio interplanétaire doté de trois antennes monopôles orthogonales de 6 m (Observatoire de Paris-Meudon / NASA), traquant les sursauts radio de type II et III (de 2,5 kHz à 16 MHz) générés par les ondes de choc des CME entre le Soleil et la Terre."
+          ]
+        ]
+      },
+      {
+        "y": 560.520263671875,
+        "type": "text",
+        "text": "B. Éléments du lanceur & Hardware largué en vol"
+      },
+      {
+        "y": 579.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails & Localisation"
+          ],
+          [
+            "Étage supérieur Star 48B & adaptateur double",
+            "~210 kg (à vide)",
+            "Orbite héliocentrique",
+            "Troisième étage à poudre ayant propulsé l'ensemble double sur une orbite terrestre très excentrique avant les assistances gravitationnelles lunaires ; éjecté sur une orbite héliocentrique."
+          ],
+          [
+            "Étages Delta-K, XLT, 9 GEM-40 & coiffe",
+            "~15 750 kg (à vide)",
+            "Détruits / retombés",
+            "Éléments du lanceur Delta II 7925-10L largués durant l'ascension depuis Cape Canaveral, retombés dans l'océan Atlantique ou consumés lors de la rentrée atmosphérique."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 62.666015625,
+        "type": "text",
+        "text": "3. Chronologie détaillée & Péripéties opérationnelles"
+      },
+      {
+        "y": 86.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement & Contexte analytique"
+          ],
+          [
+            "26 oct. 2006",
+            "Lancement double nominal depuis Cape Canaveral par une fusée Delta II 7925-10L. Les deux sondes sont placées sur une orbite terrestre très elliptique atteignant l'orbite de la Lune."
+          ],
+          [
+            "15 déc. 2006 & 21 janv. 2007",
+            "Manœuvres d'assistance gravitationnelle lunaire inédites : le 15 décembre, les deux sondes survolent la Lune ; STEREO-A est éjecté devant l'orbite terrestre, tandis que STEREO-B effectue un second survol lunaire le 21 janvier 2007 pour être propulsé en sens inverse derrière la Terre."
+          ],
+          [
+            "Avril 2007",
+            "Publication des premières images stéréoscopiques en 3D du Soleil obtenues par la combinaison simultanée des instruments SECCHI/EUVI des deux observatoires."
+          ],
+          [
+            "6 fév. 2011",
+            "Opposition à 180° — Vue intégrale du Soleil : STEREO-A et STEREO-B atteignent des positions diamétralement opposées par rapport au Soleil, permettant à l'humanité d'observer simultanément 100 % de la sphère solaire pour la première fois de l'histoire."
+          ],
+          [
+            "23 juil. 2012",
+            "Super-tempête solaire manquée : STEREO-A est frappé directement par une éjection de masse coronale (CME) d'une puissance exceptionnelle (comparable à l'événement de Carrington de 1859), enregistrant un champ magnétique record de 109 nT et une vitesse supérieure à 2 200 km/s."
+          ],
+          [
+            "1er oct. 2014",
+            "Perte de contact avec STEREO-B : lors d'un test de réinitialisation logicielle destiné à préparer la conjonction solaire supérieure (passage derrière le Soleil vu de la Terre), une anomalie de l'unité inertielle (IMU) provoque une rotation rapide de la sonde."
+          ],
+          [
+            "21 août – sept. 2016",
+            "Brève reprise de contact avec STEREO-B par le réseau Deep Space Network (DSN) après 22 mois de silence, confirmant la rotation incontrôlée de l'engin (~3°/s) et la faiblesse des batteries. Le signal est perdu définitivement le 23 septembre 2016 ; la NASA clôt les tentatives de récupération le 17 octobre 2018."
+          ],
+          [
+            "12 août 2023 – 2026",
+            "STEREO-A repasse au plus près de la Terre (conjonction inférieure après un tour complet autour du Soleil en 17 ans) et poursuit ses observations stéréoscopiques en synergie avec les observatoires SDO, SOHO et Solar Orbiter en 2026."
+          ]
+        ]
+      },
+      {
+        "y": 500.666015625,
+        "type": "text",
+        "text": "4. Apports scientifiques fondamentaux & Vision 3D du Soleil"
+      },
+      {
+        "y": 524.7378540039062,
+        "type": "text",
+        "text": "Avant le lancement de STEREO, toutes les observations spatiales du Soleil étaient confinées à la ligne Soleil-Terre (orbite terrestre ou point de Lagrange L1), limitant les astronomes à une perspective plane en deux dimensions et rendant impossible la mesure directe de la vitesse radiale et de l'orientation des éjections de masse coronale (CME) dirigées vers la Terre. Grâce à la séparation angulaire progressive des deux sondes STEREO, les astrophysiciens ont pu appliquer la triangulation stéréoscopique aux boucles magnétiques coronales et aux nuages de plasma éjectés."
+      },
+      {
+        "y": 615.4878540039062,
+        "type": "text",
+        "text": "Les imageurs héliosphériques grand champ HI-1 et HI-2 de la suite SECCHI ont accompli une prouesse technique longtemps jugée impossible : photographier en lumière blanche la propagation continue des CME à travers l'espace interplanétaire sur l'intégralité des 150 millions de kilomètres séparant le Soleil de la Terre, permettant de suivre leur décélération, leur déflexion et leur interaction avec le vent solaire ambiant jusqu'à leur impact avec la magnétosphère terrestre."
+      },
+      {
+        "y": 694.166015625,
+        "type": "text",
+        "text": "5. Météorologie de l'espace & Surveillance de la face cachée"
+      },
+      {
+        "y": 718.2378540039062,
+        "type": "text",
+        "text": "L'écartement orbital de STEREO-A et STEREO-B a également éliminé l'angle mort solaire. En observant la face cachée du Soleil avant que la rotation solaire (période sidérale de 25,4 jours) n'expose les taches solaires complexes face à la Terre, STEREO a fourni aux centres de prévision météorologique spatiale (NOAA/SWPC) un préavis de plusieurs jours sur l'émergence de régions actives potentiellement éruptives."
+      }
+    ],
+    [
+      {
+        "y": 51.48788070678711,
+        "type": "text",
+        "text": "L'analyse de la super-tempête du 23 juillet 2012 mesurée in situ par STEREO-A — qui aurait provoqué des dommages économiques majeurs aux réseaux électriques et satellites mondiaux si elle s'était produite neuf jours plus tôt lorsque la région active faisait face à la Terre — demeure l'étude de référence mondiale pour calibrer les risques extrêmes de météorologie spatiale."
+      },
+      {
+        "y": 116.666015625,
+        "type": "text",
+        "text": "6. Épreuves d'ingénierie & Résilience opérationnelle"
+      },
+      {
+        "y": 140.73788452148438,
+        "type": "text",
+        "text": "La mission STEREO a démontré une ingénierie de navigation spatiale remarquable dès son lancement, en utilisant deux assistances gravitationnelles lunaires opposées pour propulser deux sondes empilées sur un même lanceur vers des orbites héliocentriques symétriques. Par ailleurs, la traversée de la conjonction solaire supérieure en 2015 — période durant laquelle chaque sonde est passée directement derrière le Soleil vu de la Terre, subissant une coupure totale des communications et des températures extrêmes sur ses antennes grand gain — a nécessité le développement de modes autonomes sophistiqués de gestion thermique et de pointage."
+      },
+      {
+        "y": 232.23788452148438,
+        "type": "text",
+        "text": "Si STEREO-B a succombé à une défaillance de ses capteurs inertiels lors de la préparation de cette phase critique, les ingénieurs ont tiré parti de ce retour d'expérience pour modifier les logiciels de bord de STEREO-A, lui permettant de franchir sa conjonction solaire en 2015 sans incident et de poursuivre sa mission pendant plus de deux décennies."
+      },
+      {
+        "y": 297.416015625,
+        "type": "text",
+        "text": "7. Sources & Références bibliographiques"
+      },
+      {
+        "y": 319.917724609375,
+        "type": "text",
+        "text": "M. L. Kaiser, T. A. Kucera, J. M. Davila, O. C. St. Cyr, M. Guhathakurta & E. Christian, The STEREO Mission: An Introduction, Space Science Reviews, vol. 136, pp. 5–16, 2008."
+      },
+      {
+        "y": 349.9878845214844,
+        "type": "text",
+        "text": "NASA Goddard Space Flight Center — STEREO Science Center & Mission Operations Portal (stereo- ssc.nascom.nasa.gov)"
+      },
+      {
+        "y": 379.2378845214844,
+        "type": "text",
+        "text": "Johns Hopkins University Applied Physics Laboratory (JHU/APL) — STEREO Spacecraft & Mission Design Archive (stereo.jhuapl.edu)"
+      },
+      {
+        "y": 408.4878845214844,
+        "type": "text",
+        "text": "D. N. Baker et al., A major solar eruptive event in July 2012: Defining extreme space weather scenarios, Space Weather, vol. 11, pp. 585–591, 2013."
+      },
+      {
+        "y": 437.7378845214844,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiches techniques STEREO-A (1996/2006-047A) et STEREO-B (2006-047B)."
+      },
+      {
+        "y": 477.6371154785156,
+        "type": "text",
+        "text": "Référence du dossier : NASA-STP-STEREO-AB-FULL-REPORT-2026 • Document généré conformément au cahier des charges de la carte 3D du patrimoine spatial."
+      }
+    ]
+  ]
+}

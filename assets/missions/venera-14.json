@@ -1,0 +1,272 @@
+{
+  "id": "venera-14",
+  "name": "Venera 14",
+  "body": "venus",
+  "family": "venera",
+  "year": 1981,
+  "summary": "~4 394 kg au lancement total (bus de survol de ~3 200 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 5 mars 1982 dans Phoebe Regio avec 57 minutes d'activité de surface et transmission de panoramas couleur.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 14 (Венера-14, appareil 4V-2 n° 761, COSPAR 1981-110A / Lander 110D)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (NPO Lavotchkine) — programme Venera"
+    ],
+    [
+      "Lancement",
+      "4 novembre 1981, 05h31 UTC — Cosmodrome de Baïkonour (site 200/39), fusée Proton-K / Blok D-1"
+    ],
+    [
+      "Atterrissage",
+      "5 mars 1982, 07h00 UTC — Surface de Vénus (13,25° S, 310,0° E, Phoebe Regio, plaine basaltique)"
+    ],
+    [
+      "Fin de mission",
+      "5 mars 1982 pour l'atterrisseur (57 minutes d'activité au sol) ; bus en orbite solaire jusqu'en avril 1983"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission combinant bus de survol interplanétaire et capsule d'atterrissage automatisée lourde)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur lourd Proton-K / Blok D-1, bus de survol Venera 14 (~3 200 kg), module d'atterrissage (~1 560 kg au largage)"
+    ],
+    [
+      "Statut",
+      "Réussite majeure — panoramas couleur de la surface, analyses géologiques de la plaine basaltique et mesures in situ de l'atmosphère."
+    ]
+  ],
+  "sourceFile": "Vénus/Venera 14 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "venera-14.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Venera 14 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~4 394 kg au lancement total (bus de survol de ~3 200 kg + atterrisseur de ~1 560 kg avec boucliers) • 0 objet actif • Atterrissage réussi le 5 mars 1982 dans Phoebe Regio avec 57 minutes"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "d'activité de surface et transmission de panoramas couleur."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 14 (Венера-14, appareil 4V-2 n° 761, COSPAR 1981-110A / Lander 110D)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (NPO Lavotchkine) — programme Venera"
+          ],
+          [
+            "Lancement",
+            "4 novembre 1981, 05h31 UTC — Cosmodrome de Baïkonour (site 200/39), fusée Proton-K / Blok D-1"
+          ],
+          [
+            "Atterrissage",
+            "5 mars 1982, 07h00 UTC — Surface de Vénus (13,25° S, 310,0° E, Phoebe Regio, plaine basaltique)"
+          ],
+          [
+            "Fin de mission",
+            "5 mars 1982 pour l'atterrisseur (57 minutes d'activité au sol) ; bus en orbite solaire jusqu'en avril 1983"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission combinant bus de survol interplanétaire et capsule d'atterrissage automatisée lourde)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur lourd Proton-K / Blok D-1, bus de survol Venera 14 (~3 200 kg), module d'atterrissage (~1 560 kg au largage)"
+          ],
+          [
+            "Statut",
+            "Réussite majeure — panoramas couleur de la surface, analyses géologiques de la plaine basaltique et mesures in situ de l'atmosphère."
+          ]
+        ]
+      },
+      {
+        "y": 524.5154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 559.6342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 593.7205810546875,
+        "type": "text",
+        "text": "A. Surface de Vénus — Plaine basaltique (Atterrisseur Venera 14)"
+      },
+      {
+        "y": 613.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Capsule d'atterrissage (Lander)",
+            "~760 kg",
+            "Détruit / écrasé",
+            "Module pressurisée (57 min d'activité le 5 mars 1982)."
+          ],
+          [
+            "Caméras couleur & Pénétromètre",
+            "~30 kg",
+            "Détruits / inactifs",
+            "Caméras panoramiques couleur et bras pénétromètre mesurant la dureté de surface (et le cache d'objectif)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Bus de survol interplanétaire & espace"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bus de survol (Flyby Bus)",
+            "~3 200 kg (initial)",
+            "Détruit / héliocentrique",
+            "Structure principale ayant transporté la capsule et servi de relais radio. A survolé Vénus le 5 mars 1982, puis a effectué des corrections orbitales en novembre 1982 avant la fin de mission en avril 1983."
+          ],
+          [
+            "Étage supérieur Blok D-1 (Proton-K)",
+            "~2 500 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage d'injection interplanétaire ayant propulsé Venera 14 le 4 novembre 1981 depuis Baïkonour ; placé sur une orbite solaire stable."
+          ]
+        ]
+      },
+      {
+        "y": 262.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 283.0869140625,
+        "type": "text",
+        "text": "Modèle d'ingénierie (NPO Lavotchkine) : maquettes de test conservées dans les archives spatiales russes."
+      },
+      {
+        "y": 317.5869140625,
+        "type": "text",
+        "text": "Archives iconographiques historiques : panoramas couleur de la surface de Vénus et données de composition minéralogique archivés par l'Académie des sciences d'URSS."
+      },
+      {
+        "y": 363.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 390.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "4 novembre 1981",
+            "Décollage réussi de la fusée Proton-K / Blok D-1 depuis Baïkonour ; injection de Venera 14 vers Vénus (cinq jours après sa jumelle Venera 13)."
+          ],
+          [
+            "27 février 1982",
+            "Exécution réussie d'une correction de trajectoire à mi-course."
+          ],
+          [
+            "5 mars 1982",
+            "Arrivée à Vénus : séparation et atterrissage de l'atterrisseur dans une plaine basaltique de Phoebe Regio (13,25° S, 310° E) à 07h00 UTC."
+          ],
+          [
+            "5 mars 1982 (57 min)",
+            "L'atterrisseur transmet des panoramas couleur et effectue ses analyses scientifiques pendant 57 minutes avant la défaillance thermique."
+          ],
+          [
+            "Avril 1983",
+            "Fin définitive des transmissions et de la télémétrie du bus de survol interplanétaire en orbite solaire."
+          ]
+        ]
+      },
+      {
+        "y": 597.2654418945312,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 625.8369140625,
+        "type": "text",
+        "text": "Caractérisation des plaines basaltiques : les analyses par fluorescence X ont révélé que la roche de la plaine d'atterrissage était un basalte tholéitique similaire aux fonds océaniques terrestres."
+      },
+      {
+        "y": 659.5869140625,
+        "type": "text",
+        "text": "L'incident anecdotique du cache d'objectif : le bras du pénétromètre automatique est tombé précisément sur le couvercle de l'objectif de la caméra qui venait d'être éjecté, mesurant par inadvertance la compressibilité du cache plutôt celle du sol vénusien — une anecdote célèbre de l'histoire de l'ingénierie spatiale."
+      },
+      {
+        "y": 724.0869140625,
+        "type": "text",
+        "text": "Clôture de l'âge d'or des atterrisseurs Venera : avec Venera 13 et 14, l'Union soviétique a parachevé ses missions d'imagerie et d'analyse directe de la surface de Vénus, qui restent à ce jour les dernières images prises depuis le sol de cette planète."
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Venera 14 (ID : 1981- 110A)"
+      },
+      {
+        "y": 115.8369140625,
+        "type": "text",
+        "text": "C. P. Florensky et al., The Venera 13 and Venera 14 Landers: Initial Results, Proceedings of the Lunar and Planetary Science Conference, 1983"
+      },
+      {
+        "y": 149.5869140625,
+        "type": "text",
+        "text": "B. Harvey, Soviet and Russian Lunar Exploration, Springer Praxis Books, 2007"
+      }
+    ]
+  ]
+}

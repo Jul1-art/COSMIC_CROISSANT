@@ -1,0 +1,429 @@
+{
+  "id": "viking-2",
+  "name": "Viking 2",
+  "body": "mars",
+  "family": "viking",
+  "year": 1975,
+  "summary": "3 530 kg au lancement (orbiteur + atterrisseur) · 1 atterrisseur (572 kg à sec) incliné de 8,2° à Utopia Planitia depuis 1976 · 1 orbiteur (883 kg à sec) coupé en 1978, devenir orbital non précisé · aucun objet actif · bioshield resté attaché à l'orbiteur",
+  "facts": [
+    [
+      "Nom officiel",
+      "Viking 2 (orbiteur + atterrisseur) — atterrisseur rebaptisé Gerald Soffen Memorial Station en juillet 2001"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Viking (deuxième de deux missions jumelles)"
+    ],
+    [
+      "Lancement",
+      "9 septembre 1975, 18h39 UTC — Cape Canaveral, LC-41, fusée Titan IIIE/Centaur"
+    ],
+    [
+      "Arrivée à Mars",
+      "7 août 1976 — insertion en orbite (~1 500 × 33 000 km) ; orbite ajustée le 9 août à 27,3 h"
+    ],
+    [
+      "Atterrissage",
+      "3 septembre 1976, ~22h58 UTC (~9h49 heure locale martienne) — Utopia Planitia, à ~200 km à l'ouest du cratère Mie, ~48° N, ~226° O"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — l'atterrisseur et l'orbiteur sont restés sur Mars ou autour"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le JPL (Californie)"
+    ],
+    [
+      "Véhicules",
+      "Titan IIIE/Centaur · orbiteur Viking 2 · aéroshell + atterrisseur"
+    ],
+    [
+      "Statut",
+      "Réussie — atterrisseur actif 1 281 sols ; dernier contact en avril 1980 (batteries défaillantes)"
+    ]
+  ],
+  "sourceFile": "Mars/Surface/Fiche-mission-Viking-2-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "viking-2.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Viking 2 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 3 530 kg au lancement (orbiteur + atterrisseur) · 1 atterrisseur (572 kg à sec) incliné de 8,2° à Utopia Planitia depuis 1976 · 1 orbiteur (883 kg à sec) coupé en 1978, devenir orbital non précisé · aucun objet actif · bioshield resté attaché à l'orbiteur"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Viking 2 (orbiteur + atterrisseur) — atterrisseur rebaptisé Gerald Soffen Memorial Station en juillet 2001"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Viking (deuxième de deux missions jumelles)"
+          ],
+          [
+            "Lancement",
+            "9 septembre 1975, 18h39 UTC — Cape Canaveral, LC-41, fusée Titan IIIE/Centaur"
+          ],
+          [
+            "Arrivée à Mars",
+            "7 août 1976 — insertion en orbite (~1 500 × 33 000 km) ; orbite ajustée le 9 août à 27,3 h"
+          ],
+          [
+            "Atterrissage",
+            "3 septembre 1976, ~22h58 UTC (~9h49 heure locale martienne) — Utopia Planitia, à ~200 km à l'ouest du cratère Mie, ~48° N, ~226° O"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — l'atterrisseur et l'orbiteur sont restés sur Mars ou autour"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le JPL (Californie)"
+          ],
+          [
+            "Véhicules",
+            "Titan IIIE/Centaur · orbiteur Viking 2 · aéroshell + atterrisseur"
+          ],
+          [
+            "Statut",
+            "Réussie — atterrisseur actif 1 281 sols ; dernier contact en avril 1980 (batteries défaillantes)"
+          ]
+        ]
+      },
+      {
+        "y": 447.51763916015625,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 472.4606018066406,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 500.79693603515625,
+        "type": "text",
+        "text": "A. Surface de Mars — Utopia Planitia"
+      },
+      {
+        "y": 519.1543579101562,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Viking 2",
+            "572 kg (à sec)",
+            "",
+            "A fonctionné 1 281 sols (1 316 jours terrestres) sur énergie radio-isotopique ; coupé en avril 1980 quand ses batteries ont défailli, ce qui a mis fin aux contacts. Posé avec une jambe sur un rocher, incliné de 8,2° ; ~22 kg de carburant restaient à l'atterrissage"
+          ],
+          [
+            "Expériences biologiques",
+            "15,5 kg",
+            "",
+            "Trois expériences : pyrolytique (PR), libération marquée (LR) et échange gazeux (GEX) ; PR et LR positifs, GEX et GCMS négatifs ; résultats jugés non concluants"
+          ],
+          [
+            "Spectromètre de masse + chromatographe (GCMS)",
+            "—",
+            "",
+            "Analyse des composés organiques du sol"
+          ],
+          [
+            "Caméras et aimants",
+            "—",
+            "",
+            "Images immédiates après l'atterrissage, dont du givre sur le sol (sols 955, 959 et 960) ; les aimants ont mesuré 3–7 % de matière magnétique dans le sol"
+          ],
+          [
+            "Spectromètre X, station météo, sismomètre",
+            "—",
+            "",
+            "Même instrumentation que Viking 1 (d'après mes connaissances) ; non détaillés dans la page consultée"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Orbite martienne — orbiteur Viking 2 (883 kg à sec)"
+      },
+      {
+        "y": 72.35438537597656,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur Viking 2",
+            "883 kg (à sec)",
+            "",
+            "Une fuite du système de propulsion a vidé son gaz de contrôle d'attitude ; mis sur une orbite de 302 × 33 176 km et coupé le 25 juillet 1978. A renvoyé près de 16 000 images en ~700–706 orbites. Devenir orbital (décroissance, impact) non précisé dans mes sources"
+          ],
+          [
+            "Bioshield",
+            "—",
+            "",
+            "Devait être éjecté après la séparation mais est resté attaché à l'orbiteur à cause de problèmes de séparation"
+          ],
+          [
+            "Approches de Déimos",
+            "—",
+            "",
+            "Rapprochements de Déimos en octobre 1977 ; périapse abaissée à 300 km le 23 octobre 1977"
+          ]
+        ]
+      },
+      {
+        "y": 244.19696044921875,
+        "type": "text",
+        "text": "C. Étages de lancement et de croisière"
+      },
+      {
+        "y": 262.55438232421875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "Après l'injection vers Mars, placé en orbite héliocentrique ; position non suivie précisément"
+          ],
+          [
+            "Étages inférieurs du Titan IIIE et propulseurs d'appoint",
+            "n.c.",
+            "",
+            "Séparés pendant la montée ; retombés dans l'océan"
+          ]
+        ]
+      },
+      {
+        "y": 369.3969421386719,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 386.6043701171875,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Viking 2 n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 403.6043701171875,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : images, analyses du sol, givre, météo, et observations orbitales de traces d'eau ancienne (vallées d'écoulement)"
+      },
+      {
+        "y": 434.6043701171875,
+        "type": "text",
+        "text": "• Les résultats biologiques restent ambigus, la chimie minérale étant l'explication la plus citée"
+      },
+      {
+        "y": 462.3969421386719,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 479.6043701171875,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension"
+      },
+      {
+        "y": 496.6043701171875,
+        "type": "text",
+        "text": "• Aéroshell et bouclier thermique largués pendant la descente (voir la séquence ci-dessous)"
+      },
+      {
+        "y": 533.7176513671875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 556.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "9 septembre 1975, 18h39 UTC",
+            "Lancement du Titan IIIE/Centaur depuis Cape Canaveral"
+          ],
+          [
+            "7 août 1976",
+            "Insertion en orbite martienne"
+          ],
+          [
+            "9 août 1976",
+            "Orbite ajustée à 27,3 h pour certifier le site d'atterrissage"
+          ],
+          [
+            "3 septembre 1976",
+            "Séparation de l'atterrisseur et atterrissage à Utopia Planitia (voir la séquence ci-dessous)"
+          ],
+          [
+            "5 octobre 1976",
+            "Fin de la mission principale de l'orbiteur (début de la conjonction solaire)"
+          ],
+          [
+            "14 décembre 1976",
+            "Début de la mission étendue de l'orbiteur"
+          ],
+          [
+            "Octobre 1977",
+            "Rapprochements de Déimos"
+          ],
+          [
+            "25 juillet 1978",
+            "Orbiteur coupé après la fuite de gaz de contrôle d'attitude"
+          ],
+          [
+            "12 avril 1980",
+            "Atterrisseur coupé après défaillance des batteries — dernier contact"
+          ],
+          [
+            "Juillet 2001",
+            "L'atterrisseur est rebaptisé Gerald Soffen Memorial Station"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "Séquence d'atterrissage — 3 septembre 1976"
+      },
+      {
+        "y": 74.6606216430664,
+        "type": "text",
+        "text": "Heures UTC des événements. La page consultée n'en détaille qu'une partie ; le reste est signalé comme non confirmé."
+      },
+      {
+        "y": 104.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Heure (UTC)",
+            "Étape",
+            "Détails et matériel laissé"
+          ],
+          [
+            "19h39 (ou 22h37)",
+            "Séparation de l'orbiteur",
+            "La page donne deux horaires contradictoires ; l'atterrisseur se détache à ~4 km/s ; l'orbiteur reste en orbite, le bioshield resté attaché"
+          ],
+          [
+            "Après séparation",
+            "Freinage de désorbitation",
+            "Les rétrofusées de l'aéroshell s'allument pour sortir de l'orbite"
+          ],
+          [
+            "~300 km",
+            "Réorientation",
+            "L'atterrisseur se positionne pour l'entrée atmosphérique"
+          ],
+          [
+            "Entrée",
+            "Entrée atmosphérique",
+            "Le bouclier thermique ablatif ralentit l'engin"
+          ],
+          [
+            "Non détaillé",
+            "Parachute, largage de l'aéroshell, jambes",
+            "Altitudes et vitesses non précisées dans mes sources ; séquence présumée identique à celle de Viking 1 (conception jumelle)"
+          ],
+          [
+            "Avant le toucher",
+            "Anomalie radar",
+            "Le radar a pris un rocher ou une surface réfléchissante pour le sol : les propulseurs ont poussé 0,4 s de trop, fissurant la surface et soulevant de la poussière"
+          ],
+          [
+            "22h58:20 (ou 22h37:50)",
+            "Atterrissage",
+            "Jambe posée sur un rocher, atterrisseur incliné de 8,2° ; ~22 kg de propergol restant ; caméras actives immédiatement"
+          ]
+        ]
+      },
+      {
+        "y": 366.3176574707031,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 387.80438232421875,
+        "type": "text",
+        "text": "• Givre sur Mars : l'atterrisseur a photographié du givre au sol, et des levers de soleil."
+      },
+      {
+        "y": 404.80438232421875,
+        "type": "text",
+        "text": "• Expériences de vie : résultats mixtes (PR et LR positifs, GCMS et GEX négatifs), expliqués par la chimie minérale ; le perchlorate, trouvé plus tard par Phoenix, a pu détruire les organiques."
+      },
+      {
+        "y": 435.80438232421875,
+        "type": "text",
+        "text": "• Sol martien : proche d'une lave basaltique altérée, avec ~1 % d'eau libérée à la chauffe."
+      },
+      {
+        "y": 452.80438232421875,
+        "type": "text",
+        "text": "• Eau ancienne : les orbiteurs Viking ont révélé de grands chenaux d'écoulement et des réseaux ramifiés."
+      },
+      {
+        "y": 483.8043518066406,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 interdit toute appropriation nationale de Mars ; la protection planétaire vise à limiter la contamination de Mars par des microbes terrestres."
+      },
+      {
+        "y": 534.9176635742188,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 556.4043579101562,
+        "type": "text",
+        "text": "• Wikipedia — Viking 2 : masses, atterrissage, orbiteur, instruments et résultats"
+      },
+      {
+        "y": 573.4043579101562,
+        "type": "text",
+        "text": "• NASA Science — Viking : science.nasa.gov/mission/viking"
+      }
+    ]
+  ]
+}

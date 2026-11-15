@@ -1,0 +1,32 @@
+{
+  "images": [
+    {
+      "title": "ARC-1978-AC78-9245",
+      "credit": "NASA / ARC",
+      "date": "1978-03-02T00:00:00Z",
+      "source": "https://images.nasa.gov/details/ARC-1978-AC78-9245",
+      "nasaId": "ARC-1978-AC78-9245",
+      "description": "Art by  Paul Hudson Pioneer Venus:  Multiprobe Artwork",
+      "src": "archives/pioneer-venus-multiprobe-nasa-ARC-1978-AC78-9245.jpg"
+    },
+    {
+      "title": "ARC-1977-AC77-0376-8",
+      "credit": "TRW",
+      "date": "1977-04-01T00:00:00Z",
+      "source": "https://images.nasa.gov/details/ARC-1977-AC77-0376-8",
+      "nasaId": "ARC-1977-AC77-0376-8",
+      "description": "Charlie Hall inspects the Pioneer Venus multiprobe at Hughes Aircraft Co. in Dec. 1976",
+      "src": "archives/pioneer-venus-multiprobe-nasa-ARC-1977-AC77-0376-8.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/pioneer-venus-multiprobe.mp4",
+    "local": true,
+    "title": "Pioneer Venus Multiprobe · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "pioneer-venus-multiprobe.pdf",
+    "fingerprint": "6118207c39794329dcd5b2ddbf571343c895eb8f1e6e8ad7ce85c2dac177f712"
+  }
+}

@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261115-v98-spacey-greeting';
-const INTERFACE_RELEASE = 'missions-20261115-v98';
+const VERSION = 'missions-20261115-catalog90-1';
+const INTERFACE_RELEASE = 'missions-20261115-catalog90-1';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -31,7 +31,14 @@ const CORE = [
 // This also covers a first visit whose early imports preceded worker control.
 const OFFLINE_CORE = [
   'intro/typing-sound.js','intro/assets/typing/keyboard-keys.wav','intro/assets/typing/provenance.json','src/core/mission-discoveries.js','src/ui/spacey-speech.js',
+  'src/missions/archive-ephemeris.js','assets/missions/ephemerides/catalog.json','assets/missions/ephemerides/stereo.json',
+  'vendor/three-addons/loaders/KTX2Loader.js','vendor/three-addons/utils/WorkerPool.js','vendor/three-addons/libs/ktx-parse.module.js','vendor/three-addons/libs/zstddec.module.js','vendor/three-addons/libs/basis/basis_transcoder.js','vendor/three-addons/libs/basis/basis_transcoder.wasm',
   'intro/explorer-welcome.js','intro/explorer-welcome.css','src/core/explorer-profile.js',
+  'pages/missions.html','pages/exploration.html','assets/missions/catalog.json',
+  'src/missions/catalog.js','src/missions/catalog.css','src/missions/exploration.js',
+  'src/missions/archive-ui.js','src/missions/archive-atlas.js','src/missions/archive-data.js',
+  'src/missions/archive-dossier-content.js','src/missions/archive-orbit.js','src/missions/archive-targets.js',
+  'src/missions/archive-vehicle-size.js','src/missions/archive-clock.js','src/missions/archive-framing.js','src/missions/archive-model-resources.js','src/missions/normalize-spacecraft.js','src/missions/spacecraft-models.js',
   'assets/terrain/catalog.json','assets/terrain/moon-apollo11.bin','assets/terrain/moon-apollo11.webp','assets/earth-blue-marble-4k.webp',
   'src/missions/sputnik-dossier.css','assets/missions/sputnik-1/satellite.jpg','assets/missions/sputnik-1/baikonur.jpg','assets/missions/sputnik-1/early-rockets.jpg','assets/missions/sputnik-1/photos.json','assets/missions/sputnik-1/preparations.jpg','assets/missions/sputnik-1/launch.jpg','assets/missions/sputnik-1/model.jpg','assets/missions/sputnik-1/r7-test.jpg','assets/missions/sputnik-1/explorer.jpg','assets/missions/sputnik-1/film.json','pages/sputnik.html','src/missions/sputnik.js','src/missions/sputnik-orbit.js','src/missions/sputnik-orbit-math.js','src/missions/sputnik-dossier.js','assets/missions/sputnik-1/fiche-mission.pdf','pages/mission.html','src/missions/mission-dossier.js','src/missions/dossier-experience.js','src/missions/mission-controls.js','src/missions/mission-locale.js','src/missions/mission-fr-strings.js','src/missions/mission-fr-data.js','src/missions/mission-dossier-fr.js','src/missions/sputnik-dossier-fr.js','src/missions/mission-films.js','src/core/language.js','src/missions/mission-dossier-content.js','src/missions/mission-dossier.css','src/missions/mission-film.js',
   'assets/missions/apollo-11/crew.jpg','assets/missions/apollo-11/launch.jpg','assets/missions/apollo-11/aldrin.jpg','assets/missions/apollo-11/seismometer.jpg','assets/missions/apollo-11/recovery.jpg','assets/missions/apollo-11/fiche-mission.pdf',

@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Astronaut Richard F. Gordon suits up during Apollo 12 prelaunch countdown",
+      "credit": "NASA / JSC",
+      "date": "1969-11-14T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S69-58882",
+      "nasaId": "S69-58882",
+      "description": "Astronaut Richard F. Gordon Jr., Apollo 12 command module pilot, suits up in the Kennedy Space Center's Manned Spacecraft Operations Building during the Apollo 12 prelaunch countdown.",
+      "src": "archives/apollo-12-nasa-S69-58882.jpg"
+    },
+    {
+      "title": "Astronaut Alan Bean deploys ALSEP during first Apollo 12 EVA on moon",
+      "credit": "NASA / JSC",
+      "date": "1969-11-19T00:00:00Z",
+      "source": "https://images.nasa.gov/details/as12-47-6919",
+      "nasaId": "as12-47-6919",
+      "description": "AS12-47-6919 (19 Nov. 1969) --- Astronaut Alan L. Bean, lunar module pilot, deploys components of the Apollo Lunar Surface Experiments Package (ALSEP) during the first Apollo 12 extravehicular activity (EVA) on the moon. The photo was made by astronaut Charles Conrad Jr., commander, using a 70mm handheld Hasselblad camera modified for lunar surface usage.",
+      "src": "archives/apollo-12-nasa-as12-47-6919.jpg"
+    },
+    {
+      "title": "Apollo 12 Mission image - Astronaut Alan L. Bean,lunar module pilot,and two U.S. spacecraft ",
+      "credit": "NASA / JSC",
+      "date": "1969-11-20T00:00:00Z",
+      "source": "https://images.nasa.gov/details/AS12-48-7134",
+      "nasaId": "AS12-48-7134",
+      "description": "AS12-48-7134 (20 Nov. 1969) --- This unusual photograph, taken during the second Apollo 12 extravehicular activity (EVA), shows two U.S. spacecraft on the surface of the moon. The Apollo 12 Lunar Module (LM) is in the background. The unmanned Surveyor 3 spacecraft is in the foreground. The Apollo 12 LM, with astronauts Charles Conrad Jr. and Alan L. Bean aboard, landed about 600 feet from Surveyor 3 in the Ocean of Storms. The television camera and several other pieces were taken from Surveyor 3 and brought back to Earth for scientific examination. Here, Conrad examines the Surveyor's TV camera prior to detaching it. Astronaut Richard F. Gordon Jr. remained with the Apollo 12 Command and Service Modules (CSM) in lunar orbit while Conrad and Bean descended in the LM to explore the moon. Surveyor 3 soft-landed on the moon on April 19, 1967.",
+      "src": "archives/apollo-12-nasa-AS12-48-7134.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Apollo 12 Mission Summary and Highlights - featuring Splashdown with President Nixon",
+      "credit": "KSC",
+      "source": "https://images.nasa.gov/details/KSC-1969-MH-NAS01-0001-Apollo_12_Mission_Summary_Highlights_Splashdown_with_President_Nixon-HM_3599",
+      "nasaId": "KSC-1969-MH-NAS01-0001-Apollo_12_Mission_Summary_Highlights_Splashdown_with_President_Nixon-HM_3599",
+      "src": "https://images-assets.nasa.gov/video/KSC-1969-MH-NAS01-0001-Apollo_12_Mission_Summary_Highlights_Splashdown_with_President_Nixon-HM_3599/KSC-1969-MH-NAS01-0001-Apollo_12_Mission_Summary_Highlights_Splashdown_with_President_Nixon-HM_3599~orig.mp4",
+      "description": "Apollo 12 Mission Summary. From pre-launch through liftoff, splashdown and recovery.",
+      "date": "1969-01-01T00:00:00Z",
+      "duration": 3959.739125,
+      "bitrate": 10188018,
+      "bytes": 5042736872,
+      "width": 1280,
+      "height": 720,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/apollo-12.mp4",
+    "local": true,
+    "title": "Apollo 12 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "apollo-12.pdf",
+    "fingerprint": "91d1a98e74b00b09486083c7cdde819ae0cd1e83785453ecdec0841db4f867d0"
+  }
+}

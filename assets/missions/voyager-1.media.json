@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Voyager 1 Launch 1977",
+      "credit": "NASA/KSC",
+      "date": "2013-09-19T21:57:28Z",
+      "source": "https://images.nasa.gov/details/PIA17464",
+      "nasaId": "PIA17464",
+      "description": "This photograph from Sept. 5, 1977, shows the launch of NASA Voyager 1 spacecraft from NASA Kennedy Space Center at Cape Canaveral, Fla.",
+      "src": "archives/voyager-1-nasa-PIA17464.jpg"
+    },
+    {
+      "title": "Voyager 1 Launch",
+      "credit": "NASA/JPL-Caltech/KSC",
+      "date": "1977-09-05T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA21747",
+      "nasaId": "PIA21747",
+      "description": "NASA's Voyager 1 spacecraft launched atop its Titan/Centaur-6 launch vehicle from the Kennedy Space Center Launch Complex in Florida on September 5, 1977, at 8:56 a.m. local time.  https://photojournal.jpl.nasa.gov/catalog/PIA21747",
+      "src": "archives/voyager-1-nasa-PIA21747.jpg"
+    },
+    {
+      "title": "Voyager 1's Launch Vehicle",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2017-07-05T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA21740",
+      "nasaId": "PIA21740",
+      "description": "Engineers secure the cover over the Voyager 1 Golden Record in this archival image from 1977.  https://photojournal.jpl.nasa.gov/catalog/PIA21740",
+      "src": "archives/voyager-1-nasa-PIA21740.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Voyager 1 Team Reacts to Receiving Engineering Data From Spacecraft",
+      "credit": "JPL",
+      "source": "https://images.nasa.gov/details/JPL-20240425-VOYAGEf-0001-Voyager%201%20Team%20Reacts%20to%20Receiving%20Engineering%20Data%20From%20Spacecraft",
+      "nasaId": "JPL-20240425-VOYAGEf-0001-Voyager 1 Team Reacts to Receiving Engineering Data From Spacecraft",
+      "src": "https://images-assets.nasa.gov/video/JPL-20240425-VOYAGEf-0001-Voyager%201%20Team%20Reacts%20to%20Receiving%20Engineering%20Data%20From%20Spacecraft/JPL-20240425-VOYAGEf-0001-Voyager%201%20Team%20Reacts%20to%20Receiving%20Engineering%20Data%20From%20Spacecraft~orig.mp4",
+      "description": "B-roll for media and public use. In a conference room at NASA’s Jet Propulsion Laboratory in Southern California on April 20, 2024, members of the Voyager mission team received  engineering data from the spacecraft for the first time since November 2023.   Nearly two full days earlier, the team had sent a series of commands to move a section of software code used by the flight data subsystem (FDS) computer to a new location. The physical location where the code was previously stored has been damaged, causing mission controllers to go five months without receiving science or engineering data. But the commands were a success, and the team received data about the health and status of the spacecraft, prompting celebration.  The commands were sent on April 18, 2024. Due to Voyager 1’s distance from Earth – over 15 billion miles (24 billion kilometers) – a radio signal takes about 22 ½ hours to travel to the spacecraft, and 22 ½ hours to return to Earth.   Voyager 2 continues to operate normally. Launched over 46 years ago, the twin Voyager spacecraft are the longest-running and most distant spacecraft in history.    Shown are Voyager team members Kareem Badaruddin, Joey Jefferson, Jeff ",
+      "date": "2024-04-25T00:00:00Z",
+      "duration": 43.743708,
+      "bitrate": 10360156,
+      "bytes": 56648956,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/voyager-1.mp4",
+    "local": true,
+    "title": "Voyager 1 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "voyager-1.pdf",
+    "fingerprint": "3c4367af67acd2f2425b0e880b8c709ff9a4fcc68ea1e46c0ca2369b45087ba5"
+  }
+}

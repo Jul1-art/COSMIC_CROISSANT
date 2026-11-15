@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Chang'e-2 mockup at BASM",
+      "description": "Chang'e-2 mockup displayed at Beijing Air and Space Museum.",
+      "credit": "Shujianyang",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Chang%27e-2_mockup_at_BASM.jpg",
+      "src": "archives/chang-e-2-commons.jpg",
+      "date": "2023-06-23",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/chang-e-2.mp4",
+    "local": true,
+    "title": "Chang'e 2 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "chang-e-2.pdf",
+    "fingerprint": "d916c90a5e47213287db92ec17cd90c3502eaccf7e439e2a04bca2f6d6cdd2ad"
+  }
+}

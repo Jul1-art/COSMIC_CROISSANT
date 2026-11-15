@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "James Webb Space Telescope Prelaunch",
+      "credit": "NASA/Bill Ingalls",
+      "date": "2021-12-25T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ202112250025",
+      "nasaId": "NHQ202112250025",
+      "description": "NASA Program Director for the James Webb Space Telescope Program Greg Robinson gives a brief interview on NASA television as he and the launch team monitor the countdown of the launch of Arianespace's Ariane 5 rocket carrying NASA’s James Webb Space Telescope, Saturday, Dec. 25, 2021, in the Jupiter Center at the Guiana Space Center in Kourou, French Guiana. The James Webb Space Telescope (sometimes called JWST or Webb) is a large infrared telescope with a 21.3 foot (6.5 meter) primary mirror. The observatory will study every phase of cosmic history—from within our solar system to the most distant observable galaxies in the early universe. Photo Credit: (NASA/Bill Ingalls)",
+      "src": "archives/james-webb-nasa-NHQ202112250025.jpg"
+    },
+    {
+      "title": "James Webb Space Telescope Launch",
+      "credit": "NASA/Bill Ingalls",
+      "date": "2021-12-25T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ202112250019",
+      "nasaId": "NHQ202112250019",
+      "description": "NASA James Webb Space Telescope Program Scientist Eric Smith reacts after hearing confirmation that the James Webb Space Telescope successfully separated from the Ariane 5 rocket, Saturday, Dec. 25, 2021, in the Jupiter Hall of the Guiana Space Centre in Kourou, French Guiana. The James Webb Space Telescope (sometimes called JWST or Webb) is a large infrared telescope with a 21.3 foot (6.5 meter) primary mirror. The observatory will study every phase of cosmic history—from within our solar system to the most distant observable galaxies in the early universe. Photo Credit: (NASA/Bill Ingalls)",
+      "src": "archives/james-webb-nasa-NHQ202112250019.jpg"
+    },
+    {
+      "title": "Ariane 5 with James Webb Space Telescope Prelaunch",
+      "credit": "NASA/Bill Ingalls",
+      "date": "2021-12-23T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ202112230018",
+      "nasaId": "NHQ202112230018",
+      "description": "Arianespace's Ariane 5 rocket with NASA’s James Webb Space Telescope onboard, is seen at the launch pad, Thursday, Dec. 23, 2021, at Europe’s Spaceport, the Guiana Space Center in Kourou, French Guiana. The James Webb Space Telescope (sometimes called JWST or Webb) is a large infrared telescope with a 21.3 foot (6.5 meter) primary mirror. The observatory will study every phase of cosmic history—from within our solar system to the most distant observable galaxies in the early universe. Photo Credit: (NASA/Bill Ingalls)",
+      "src": "archives/james-webb-nasa-NHQ202112230018.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Launch of the James Webb Space Telescope on an Ariane 5 rocket from the Guiana Space Center in Kourou, French Guiana",
+      "credit": "HQ",
+      "source": "https://images.nasa.gov/details/Coverage%20of%20the%20launch%20of%20the%20James%20Webb%20Space%20Telescope%20on%20an%20Ariane%205%20rocket%20from%20the%20Guiana%20Space%20Center%20in%20Kourou%2C%20French%20Guiana",
+      "nasaId": "Coverage of the launch of the James Webb Space Telescope on an Ariane 5 rocket from the Guiana Space Center in Kourou, French Guiana",
+      "src": "https://images-assets.nasa.gov/video/Coverage%20of%20the%20launch%20of%20the%20James%20Webb%20Space%20Telescope%20on%20an%20Ariane%205%20rocket%20from%20the%20Guiana%20Space%20Center%20in%20Kourou%2C%20French%20Guiana/Coverage%20of%20the%20launch%20of%20the%20James%20Webb%20Space%20Telescope%20on%20an%20Ariane%205%20rocket%20from%20the%20Guiana%20Space%20Center%20in%20Kourou%2C%20French%20Guiana~orig.mp4",
+      "description": "The James Webb Space Telescope launched at 7:20 a.m. EST Friday, Dec. 25, 2021, on an ESA-provided Ariane 5 rocket from Europe’s Spaceport in Kourou, French Guiana, on the northeastern coast of South America.  The Webb mission, an international partnership with the European Space Agency (ESA) and Canadian Space Agency, will explore every phase of cosmic history – from within the solar system to the most distant observable galaxies in the early universe, and everything in between. Webb will reveal new and unexpected discoveries and help humanity understand the origins of the universe and our place in it.",
+      "date": "2021-12-25T00:00:00Z",
+      "duration": 8145.919979,
+      "bitrate": 2663441,
+      "bytes": 2712022318,
+      "width": 1280,
+      "height": 720,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/james-webb.mp4",
+    "local": true,
+    "title": "James Webb (JWST) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "james-webb.pdf",
+    "fingerprint": "1483e93958b330ffbd8dd73e03033b0d40453730b0b9d9469ee84c1df34cf577"
+  }
+}

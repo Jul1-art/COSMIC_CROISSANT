@@ -1,0 +1,358 @@
+{
+  "id": "2001-mars-odyssey",
+  "name": "2001 Mars Odyssey",
+  "body": "mars",
+  "family": "orbiter",
+  "year": 2001,
+  "summary": "~376 kg à sec (~380 kg avec ergols restants) en orbite martienne • 1 sonde toujours active en novembre 2026 (plus de 25 ans autour de Mars, record absolu de longévité autour d'une autre planète) • 2 étages supérieurs en orbite héliocentrique.",
+  "facts": [
+    [
+      "Nom officiel",
+      "2001 Mars Odyssey (programme Mars Exploration Program, COSPAR 2001-014A)"
+    ],
+    [
+      "Agence & programme",
+      "NASA (Jet Propulsion Laboratory / Lockheed Martin Astronautics / Arizona State University)"
+    ],
+    [
+      "Lancement",
+      "7 avril 2001, 15h02 UTC — Cape Canaveral Air Force Station (SLC-17A), fusée Delta II 7925-9.5"
+    ],
+    [
+      "Insertion orbitale",
+      "24 octobre 2001, 02h30 UTC — Orbite polaire quasi circulaire héliosynchrone (~400 km d'altitude, inclinaison 93,1°, période 118 min)"
+    ],
+    [
+      "Fin de mission",
+      "En cours (toujours opérationnelle en novembre 2026 après plus de 25 ans et 105 000 orbites autour de Mars)"
+    ],
+    [
+      "Équipage",
+      "Aucun (orbiteur automatique piloté par le JPL à Pasadena et Lockheed Martin à Denver)"
+    ],
+    [
+      "Véhicules",
+      "Delta II 7925-9.5, orbiteur 2001 Mars Odyssey (725 kg au lancement dont 348,7 kg d'ergols, 376,3 kg à sec)"
+    ],
+    [
+      "Statut",
+      "Toujours active — plus longue mission en activité continue autour d'une planète autre que la Terre"
+    ]
+  ],
+  "sourceFile": "Mars/Orbiteurs/2001 Mars Odyssey - Fiche « Plus de détails ».pdf",
+  "pdf": "2001-mars-odyssey.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX 2001 Mars Odyssey — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~376 kg à sec (~380 kg avec ergols restants) en orbite martienne • 1 sonde toujours active en novembre 2026 (plus de 25 ans autour de Mars, record absolu de longévité autour"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "d'une autre planète) • 2 étages supérieurs en orbite héliocentrique."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "2001 Mars Odyssey (programme Mars Exploration Program, COSPAR 2001-014A)"
+          ],
+          [
+            "Agence & programme",
+            "NASA (Jet Propulsion Laboratory / Lockheed Martin Astronautics / Arizona State University)"
+          ],
+          [
+            "Lancement",
+            "7 avril 2001, 15h02 UTC — Cape Canaveral Air Force Station (SLC-17A), fusée Delta II 7925-9.5"
+          ],
+          [
+            "Insertion orbitale",
+            "24 octobre 2001, 02h30 UTC — Orbite polaire quasi circulaire héliosynchrone (~400 km d'altitude, inclinaison 93,1°, période 118 min)"
+          ],
+          [
+            "Fin de mission",
+            "En cours (toujours opérationnelle en novembre 2026 après plus de 25 ans et 105 000 orbites autour de Mars)"
+          ],
+          [
+            "Équipage",
+            "Aucun (orbiteur automatique piloté par le JPL à Pasadena et Lockheed Martin à Denver)"
+          ],
+          [
+            "Véhicules",
+            "Delta II 7925-9.5, orbiteur 2001 Mars Odyssey (725 kg au lancement dont 348,7 kg d'ergols, 376,3 kg à sec)"
+          ],
+          [
+            "Statut",
+            "Toujours active — plus longue mission en activité continue autour d'une planète autre que la Terre"
+          ]
+        ]
+      },
+      {
+        "y": 538.0154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 572.3842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 606.4705810546875,
+        "type": "text",
+        "text": "A. Orbite martienne — Sonde toujours opérationnelle (~380 kg au total)"
+      },
+      {
+        "y": 626.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Plateforme & châssis Mars Odyssey",
+            "331,8 kg (bus à sec)",
+            "Toujours actif",
+            "Structure modulaire en aluminium et titane (2,2 × 1,7 × 2,6 m), divisée en modules propulsion et équipement. Stabilisée sur 3 axes par 4 roues de réaction (dont une de secours) et viseurs d'étoiles."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Panneaux solaires AsGa & batterie NiH2",
+            "86 kg (inclus)",
+            "Toujours actifs",
+            "Trois panneaux déployables (7 m2 de cellules à l'arséniure de gallium) fournissant ~750 W autour de Mars et rechargeant une batterie nickel-hydrogène de 16 Ah."
+          ],
+          [
+            "Système télécoms (bande X & relais UHF)",
+            "23,9 kg (inclus)",
+            "Toujours actifs",
+            "Antenne parabolique orientable grand gain de 1,3 m (bande X), antennes moyen/faible gain et émetteur-récepteur UHF servant depuis 2004 de relais principal pour les rovers et atterrisseurs martiens."
+          ],
+          [
+            "Imageur multispectral THEMIS",
+            "11,2 kg",
+            "Toujours actif",
+            "Caméra visible (5 bandes, 18 m/pixel) et infrarouge thermique (10 bandes, 100 m/pixel) conçue par l'ASU ; cartographie la minéralogie, les nuages, le givre et l'horizon martien en 2026."
+          ],
+          [
+            "Spectromètre gamma GRS (capteur & mât)",
+            "30,5 kg (total GRS)",
+            "Intact / hors service",
+            "Capteur au germanium haute pureté déployé au bout d'un mât de 6 m pour éviter le bruit de fond du bus ; a dressé la carte chimique globale de Mars avant l'arrêt de son refroidissement passif."
+          ],
+          [
+            "Détecteurs de neutrons HEND & NS",
+            "Inclus dans GRS",
+            "Toujours actifs",
+            "Détecteur russe à neutrons de haute énergie (HEND, fourni par l'IKI) et spectromètre à neutrons (NS) mesurant l'hydrogène et la glace d'eau dans le premier mètre du sous- sol martien."
+          ],
+          [
+            "Expérience radiométrique MARIE",
+            "3,3 kg",
+            "Endommagé / inactif",
+            "Spectromètre de particules énergétiques conçu pour évaluer les risques radiatifs pour de futurs astronautes ; mis hors service le 28 octobre 2003 par les puissantes éruptions solaires d'Halloween."
+          ],
+          [
+            "Propulsion & ergols résiduels",
+            "49,7 kg (+ ~4 kg ergols)",
+            "Toujours actifs",
+            "Moteur principal bi-ergols (hydrazine / peroxyde d'azote, 695 N) utilisé pour l'insertion orbitale, 4 propulseurs de 22 N et 4 de 0,9 N ; réserves quasi épuisées permettant le maintien d'attitude jusqu'à fin 2026 / 2027."
+          ]
+        ]
+      },
+      {
+        "y": 622.9705810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 642.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur Star 48B (3e étage Delta II)",
+            "~130 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage à propergol solide ayant assuré l'injection finale vers Mars le 7 avril 2001 ; placé sur une orbite solaire (1,0 × 1,5 UA) croisant périodiquement celles de la Terre et de Mars."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "2e étage Delta-K (Delta II 7925)",
+            "~950 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage à ergols hypergoliques AJ10-118K ayant placé l'ensemble Star 48B + Odyssey sur trajectoire d'échappement terrestre avant sa séparation."
+          ],
+          [
+            "1er étage Thor XLT, 9 boosters GEM & coiffe",
+            "~20 500 kg (total à vide)",
+            "Écrasés / brûlés",
+            "9 propulseurs d'appoint à poudre GEM-40, coiffe de 2,9 m et premier étage RS-27A retombés dans l'océan Atlantique au large de Cape Canaveral peu après le décollage."
+          ]
+        ]
+      },
+      {
+        "y": 216.4705810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 238.0869140625,
+        "type": "text",
+        "text": "Aucun élément matériel récupéré : sonde orbitale conçue pour rester en orbite autour de Mars (les règles de protection planétaire imposent une orbite stable d'au moins 50 ans avant toute rentrée atmosphérique)."
+      },
+      {
+        "y": 287.5869140625,
+        "type": "text",
+        "text": "Plus vaste banque d'images thermiques de Mars : plus de 1,4 million d'images THEMIS et 25 ans de mesures radiatives et neutroniques archivés en libre accès dans le Planetary Data System (PDS) de la NASA."
+      },
+      {
+        "y": 347.51544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 375.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "7 avril 2001, 15h02 UTC",
+            "Décollage de la fusée Delta II 7925 depuis Cape Canaveral ; injection directe vers Mars."
+          ],
+          [
+            "24 octobre 2001, 02h30 UTC",
+            "Insertion en orbite martienne très elliptique (270 × 26 818 km), suivie de 3 mois d'aérofreinage (332 passages dans la haute atmosphère) jusqu'à l'orbite de travail à ~400 km."
+          ],
+          [
+            "19 février 2002",
+            "Début de la mission scientifique primaire (jusqu'en août 2004) ; découverte rapide par GRS/HEND de vastes réserves de glace d'eau juste sous la surface aux hautes latitudes."
+          ],
+          [
+            "28 octobre 2003",
+            "Une tempête solaire majeure endommage définitivement l'instrument MARIE après 18 mois de mesures des radiations en orbite martienne."
+          ],
+          [
+            "Janvier 2004 – présent",
+            "Relais de télécommunications critique pour Spirit, Opportunity, Phoenix, Curiosity, InSight et Perseverance (plus de 85 % des données des rovers MER ont transité par Odyssey)."
+          ],
+          [
+            "15 décembre 2010",
+            "2001 Mars Odyssey dépasse Mars Global Surveyor et devient la sonde spatiale la plus durable de l'histoire autour d'une planète autre que la Terre."
+          ],
+          [
+            "Avril – octobre 2026",
+            "Célébration des 25 ans de lancement (avril 2026) et des 25 ans en orbite autour de Mars (24 octobre 2026) ; la sonde poursuit ses observations atmosphériques et de surface en novembre 2026."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "Découverte de l'eau glacée peu profonde sur Mars : dès 2002, les instruments GRS et HEND ont révélé d'immenses quantités d'hydrogène dans le premier mètre du sol aux latitudes polaires et subpolaires, confirmant l'omniprésence de glace d'eau souterraine et guidant directement le choix du site d'atterrissage de la sonde Phoenix (2008)."
+      },
+      {
+        "y": 145.8369140625,
+        "type": "text",
+        "text": "Cartographie géologique et sélection des sites d'atterrissage : la caméra THEMIS a dressé la première carte minéralogique et thermique mondiale de Mars à 100 m de résolution, permettant d'identifier des minéraux hydratés, des dépôts d'hématite (site d'Opportunity) et des zones planes sans rochers dangereux pour Curiosity et Perseverance."
+      },
+      {
+        "y": 211.0869140625,
+        "type": "text",
+        "text": "Colonne vertébrale de l'« Internet interplanétaire » martien : pendant plus de deux décennies, Odyssey a servi de pont radio UHF indispensable entre les missions de surface et la Terre, offrant une géométrie d'orbite complémentaire aux orbiteurs plus récents (MRO, TGO)."
+      },
+      {
+        "y": 259.8369140625,
+        "type": "text",
+        "text": "Record absolu de longévité planétaire : toujours active en novembre 2026 avec plus de 105 000 révolutions autour de Mars, la sonde fonctionne grâce à une gestion très fine de ses ultimes réserves d'ergols (estimées par la NASA par suivi thermique des réservoirs) et de ses roues de réaction."
+      },
+      {
+        "y": 320.51544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 349.0869140625,
+        "type": "text",
+        "text": "NASA Science — 2001 Mars Odyssey Mission Overview & 25th Anniversary (science.nasa.gov/mission/odyssey, 2026)"
+      },
+      {
+        "y": 383.5869140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission 2001 Mars Odyssey (ID : 2001-014A)"
+      },
+      {
+        "y": 418.0869140625,
+        "type": "text",
+        "text": "W. V. Boynton et al., Distribution of Hydrogen in the Near Surface of Mars: Evidence for Subsurface Ice Deposits, Science, vol. 297, 2002"
+      },
+      {
+        "y": 451.8369140625,
+        "type": "text",
+        "text": "Arizona State University (ASU) — Mars Space Flight Facility & archive publique des images THEMIS"
+      }
+    ]
+  ]
+}

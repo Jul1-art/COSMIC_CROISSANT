@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "LRO, LCROSS Liftoff on Lunar Journey",
+      "credit": "NASA/Bill Ingalls",
+      "date": "2009-06-17T00:00:00Z",
+      "source": "https://images.nasa.gov/details/200906180002HQ",
+      "nasaId": "200906180002HQ",
+      "description": "The Lunar Reconnaissance Orbiter and Lunar Crater Observation and Sensing Satellite are bound for the moon after a flawless liftoff Thursday, June 18, 2009, from Cape Canaveral Air Force Station in Florida aboard an Atlas V rocket. Photo Credit: (NASA/Bill Ingalls)",
+      "src": "archives/lro-nasa-200906180002HQ.jpg"
+    },
+    {
+      "title": "Diviner Following Integration to the Lunar Reconnaissance Orbiter LRO",
+      "credit": "NASA/JPL",
+      "date": "2009-07-07T17:24:57Z",
+      "source": "https://images.nasa.gov/details/PIA12088",
+      "nasaId": "PIA12088",
+      "description": "The Diviner instrument following integration to NASA Lunar Reconnaissance Orbiter. Diviner is one of seven instruments aboard the Lunar Reconnaissance Orbiter.",
+      "src": "archives/lro-nasa-PIA12088.jpg"
+    },
+    {
+      "title": "Loading Lunar Reconnaissance Orbiter LRO in the Thermal Vacuum Chamber",
+      "credit": "NASA/JPL",
+      "date": "2009-07-07T17:24:55Z",
+      "source": "https://images.nasa.gov/details/PIA12086",
+      "nasaId": "PIA12086",
+      "description": "Loading the Lunar Reconnaissance Orbiter into the thermal vacuum chamber at Goddard Space Flight Center. Diviner is one of seven instruments aboard NASA LRO Mission.",
+      "src": "archives/lro-nasa-PIA12086.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Return with LRO",
+      "credit": "Rich Melnick, Chris Meaney, Cathy Peddie",
+      "source": "https://images.nasa.gov/details/GSFC_20080611_LRO_m10257_Return",
+      "nasaId": "GSFC_20080611_LRO_m10257_Return",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20080611_LRO_m10257_Return/GSFC_20080611_LRO_m10257_Return~orig.mp4",
+      "description": "The Deputy Project Manager for the Lunar Reconnaissance Orbiter (LRO) program, Cathy Peddie, expresses her personal and professional thoughts on the upcoming LRO mission.",
+      "date": "2008-06-11T00:00:00Z",
+      "duration": 202.252063,
+      "bitrate": 15847964,
+      "bytes": 400660440,
+      "width": 1280,
+      "height": 720,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/lro.mp4",
+    "local": true,
+    "title": "LRO (Lunar Reconnaissance Orbiter) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "lro.pdf",
+    "fingerprint": "81c7e07db4cb6048ee426ef2602ab98117e11bb431012ed3908ef30f66924843"
+  }
+}

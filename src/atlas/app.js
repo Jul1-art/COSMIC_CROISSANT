@@ -34,7 +34,7 @@ import { auToWorld, kmToWorld, createScaleReadout } from './solar-scale.js';
 import { createPlanetaryEphemeris } from './planetary-ephemeris.js';
 import { createDetailedGlobe } from './detailed-globe.js';
 import { sunDirectionScene } from './solar-illumination.js';
-import { makeCelestialContext } from './celestial-context.js';
+import { makeCelestialContext, CELESTIAL_BODIES } from './celestial-context.js';
 import { scenePalette, observeSceneTheme } from '../ui/scene-theme.js';
 
 const dashboard = initializePlanetDashboard({ view:'atlas' });
@@ -421,10 +421,12 @@ const moonData = { id:'moon', name:'La Lune', kind:'Satellite naturel', color:'#
 
 moonData.radiusKm=1737.4;
 function updatePositions(days) {
+  const archiveActive=atlasMission?.active&&atlasMission.archive,positionDate=archiveActive?new Date(atlasMission.time):new Date(epochTime+days*86400000);
+  for(const node of [sun,solarGlow,solarCorona,sunlight]){node.position.set(0,0,0);if(archiveActive)node.position.sub(missionOrigin);}
   for (const planet of planets) {
     const group = planetGroups.get(planet.id);
-    const vector=planetaryEphemeris.getPosition(planet.id,new Date(epochTime+days*86400000));
-    if(vector){group.position.set(kmToWorld(vector.x),kmToWorld(vector.z),-kmToWorld(vector.y));if(atlasMission?.active&&planet.id==='earth')group.position.copy(missionEarthAnchor).sub(missionOrigin);}
+    const vector=planetaryEphemeris.getPosition(planet.id,positionDate);
+    if(vector){group.position.set(kmToWorld(vector.x),kmToWorld(vector.z),-kmToWorld(vector.y));if(archiveActive)group.position.sub(missionOrigin);if(atlasMission?.active&&!atlasMission.archive&&planet.id==='earth')group.position.copy(missionEarthAnchor).sub(missionOrigin);}
   }
   const earthPosition = planetGroups.get('earth').position;
   const moonAngle = .55 + days * Math.PI * 2 / 27.32;
@@ -529,7 +531,7 @@ const inspector=createSolarInspector({host:$('#details .detail-expanded'),getLan
 const simulationControls=createSimulationControls({host:$('.solar-view-controls'),clock:simulationClock,getLanguage,onChange:()=>{livePanel?.render();},onOverview:()=>selectBody('overview')});
 const cometInspector=createCometInspector({host:$('#details .detail-expanded'),getMission:()=>comet,getLanguage,onSelect:id=>selectBody(id)});
 const scaleReadout=createScaleReadout({host:sceneHost.parentElement,camera,getLanguage,getContext:()=>{
-  if(atlasMission?.active)return {id:'mission',distance:camera.position.distanceTo(controls.target),viewportHeight:viewportSize().height,radius:bodyData('earth').size,radiusKm:6371,special:'Apollo 11 · Free camera'};
+  if(atlasMission?.active)return {id:'mission',distance:camera.position.distanceTo(controls.target),viewportHeight:viewportSize().height,radius:atlasMission.archive?atlasMission.bodyRadius:bodyData('earth').size,radiusKm:atlasMission.archive?atlasMission.bodyRadiusKm:6371,special:(atlasMission.name||'Apollo 11')+' · '+(getLanguage()==='fr'?'Caméra libre':'Free camera')};
   const detail=bodyData(selected),native=detailedGlobe?.getViewState();
   const navigation=globeNavigation?.getViewState();
   const radius=detail?.size,radiusKm=detail?.radiusKm;
@@ -673,13 +675,13 @@ function applyFocusVisibility(){
   const parent=parentBodyId(selected);
   for(const planet of planets){const group=planetGroups.get(planet.id);group.visible=true;group.scale.setScalar(1);}
   for(const node of [sun,solarGlow,solarCorona])node.visible=true;
-  const displayFocus=atlasMission?.active?'earth':selected;naturalSystems?.setFocus(displayFocus);comet?.setFocus(displayFocus);belts.setFocus?.(displayFocus);
+  const displayFocus=atlasMission?.active?(atlasMission.focusBody||'earth'):selected;naturalSystems?.setFocus(displayFocus);comet?.setFocus(displayFocus);belts.setFocus?.(displayFocus);
   syncInspectionScene();
   systemSunlight.visible=Boolean(atlasMission?.active)||(selected!=='overview'&&selected!=='sun');sunlight.intensity=systemSunlight.visible?0:200;
-  if(systemSunlight.visible){const center=worldPosition(atlasMission?.active?'earth':parent);const direction=center.clone().normalize().negate();systemSunlight.position.copy(center).addScaledVector(direction,3000);systemSunlight.target.position.copy(center);}
+  if(systemSunlight.visible){const center=worldPosition(atlasMission?.active?(atlasMission.focusBody||'earth'):parent);const direction=center.clone().normalize().negate();systemSunlight.position.copy(center).addScaledVector(direction,3000);systemSunlight.target.position.copy(center);}
   if(atlasMission?.active){
-    for(const planet of planets)planetGroups.get(planet.id).visible=planet.id==='earth';
-    for(const node of [sun,solarGlow,solarCorona])node.visible=false;
+    for(const planet of planets)planetGroups.get(planet.id).visible=atlasMission.contextAvailable!==false&&planet.id===(atlasMission.focusBody==='moon'?'earth':atlasMission.focusBody||'earth');
+    for(const node of [sun,solarGlow,solarCorona])node.visible=Boolean(atlasMission.archive&&atlasMission.focusBody==='sun'&&atlasMission.contextAvailable!==false);
   }
   updateScaleNote();
 }
@@ -1179,12 +1181,13 @@ createComet67P({THREE,scene,auToWorld,onSelect:id=>selectBody(id),getLanguage,ca
   document.body.dataset.cometCatalogue='ready';
   if(COMET_IDS.includes(requestedBody))restoreInspection(requestedBody);
 }).catch(error=>{document.body.dataset.cometCatalogue='failed';console.error('67P data unavailable',error);});
-atlasMission=createAtlasMission({THREE,scene,camera,controls,createLine:createFlightLine,onMaterialsChanged:()=>missionDepth.install(scene),loadSurface:options=>import('../missions/apollo-surface.js').then(module=>module.loadApolloSurface(options)),
+const atlasMissionOptions={THREE,scene,camera,controls,renderer,createLine:createFlightLine,onMaterialsChanged:()=>missionDepth.install(scene),loadSurface:options=>import('../missions/apollo-surface.js').then(module=>module.loadApolloSurface(options)),
  onCameraTranslation(shift){if(flight)for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].add(shift);},
+ onCameraRotation(rotation,origin){if(flight){for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].sub(origin).applyQuaternion(rotation).add(origin);for(const key of ['fromUp','toUp'])flight[key]?.applyQuaternion(rotation);}},
  onRebase(shift){
-  missionOrigin.add(shift);planetGroups.get('earth').position.sub(shift);camera.position.sub(shift);controls.target.sub(shift);
+  missionOrigin.add(shift);if(atlasMission?.archive){for(const group of planetGroups.values())group.position.sub(shift);for(const node of [sun,solarGlow,solarCorona,sunlight])node.position.sub(shift);}else planetGroups.get('earth').position.sub(shift);camera.position.sub(shift);controls.target.sub(shift);
   if(flight)for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].sub(shift);
-  naturalSystems?.setFocus('earth');
+  naturalSystems?.setFocus(atlasMission?.archive?atlasMission.focusBody:'earth');
  },
  onSurfaceActive(value){renderer.shadowMap.enabled=value?true:(missionShadowState?.enabled??false);if(value){renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.shadowMap.needsUpdate=true;}else if(missionShadowState)renderer.shadowMap.type=missionShadowState.type;},
  loadModel:()=>import('../missions/nasa-lunar-module.js').then(module=>module.loadNasaLunarModule()),
@@ -1193,10 +1196,10 @@ atlasMission=createAtlasMission({THREE,scene,camera,controls,createLine:createFl
  frame(target,position,up,options={}){const damping=controls.enableDamping;controls.enableDamping=false;controls.update();controls.enableDamping=damping;const fromUp=camera.up.clone();flyTo(target,position,options.approach?1600:800,options);if(up){if(flight){flight.fromUp=fromUp;flight.toUp=up.clone();}else{camera.up.copy(up);camera.lookAt(target);}}},
 
  onStart(){
-  missionShadowState={enabled:renderer.shadowMap.enabled,type:renderer.shadowMap.type};missionEarthAnchor.copy(worldPosition('earth'));mascot.setSuspended(!document.body.classList.contains('spacey-guiding'));missionDepth.install(scene);missionDepth.setScale(6371000/bodyData('earth').size);
+  missionShadowState={enabled:renderer.shadowMap.enabled,type:renderer.shadowMap.type};missionEarthAnchor.copy(worldPosition('earth'));mascot.setSuspended(!document.body.classList.contains('spacey-guiding'));missionDepth.install(scene);missionDepth.setScale(atlasMission.archive?1:6371000/bodyData('earth').size);
   detailedGlobe.hide();solarNavigation?.cancel();globeNavigation.reset();surfaceDetail.clear();flight=null;trackedPosition=null;
   selected='overview';delete document.body.dataset.world;simulationClock.setInspection(true);setDashboardBody('overview');document.body.dataset.mode='overview';
-  const url=new URL(location.href);for(const key of ['body','view','lat','lon','range','heading','tilt'])url.searchParams.delete(key);url.searchParams.set('mission','apollo-11');url.searchParams.set('missionView','explore');history.replaceState(null,'',url);
+  const url=new URL(location.href);for(const key of ['body','view','lat','lon','range','heading','tilt'])url.searchParams.delete(key);url.searchParams.set('mission',atlasMission.id||'apollo-11');url.searchParams.set('missionView','explore');history.replaceState(null,'',url);
   document.querySelectorAll('[data-body]').forEach(node=>node.classList.remove('active'));
   applyFocusVisibility();setDetailsCollapsed(true);refreshOrbits();updateExplorationProjection();inspectionControls?.publish(true);if(!naturalSystems)ensureMoonTexture();
   controls.enableZoom=true;controls.enablePan=true;controls.enableDamping=true;controls.zoomToCursor=false;
@@ -1215,7 +1218,9 @@ atlasMission=createAtlasMission({THREE,scene,camera,controls,createLine:createFl
  },
  onTime:(time,playing,meta)=>window.dispatchEvent(new CustomEvent('relic-mission-time',{detail:{time,playing,meta}})),
  onStatus:(status,message)=>window.dispatchEvent(new CustomEvent('relic-mission-status',{detail:{status,message}}))
-});
+};
+atlasMission=createAtlasMission(atlasMissionOptions);
+const apolloAtlasMission=atlasMission;
 launchpadView=createLaunchpadView({globe:detailedGlobe,mission:atlasMission,
  capture(){
   const position=camera.position.clone(),target=controls.target.clone(),up=camera.up.clone();flight=null;atlasMission.releaseCamera();controls.enabled=false;
@@ -1233,7 +1238,20 @@ renderer.domElement.addEventListener('pointerup',event=>{
  const point=atlasMission.projectAnnotations(renderer.domElement.getBoundingClientRect()).find(row=>row.text==='Saturn V'&&row.visible);
  if(point&&Math.hypot(event.clientX-point.x,event.clientY-point.y)<(event.pointerType==='touch'?24:15))launchpadView.open();
 });
-window.addEventListener('relic-mission-start',event=>{event.detail?.connect?.(atlasMission);void atlasMission.start();});
+window.addEventListener('relic-mission-start',event=>{if(atlasMission!==apolloAtlasMission){atlasMission.dispose();atlasMission=apolloAtlasMission;}event.detail?.connect?.(atlasMission);void atlasMission.start();});
+window.addEventListener('relic-archive-start',async event=>{
+ const detail=event.detail;if(!detail?.record)return;
+ try{
+  if(atlasMission.active||atlasMission.starting)atlasMission.stop(false);
+  const {createArchiveAtlas}=await import('../missions/archive-atlas.js');
+  const controller=createArchiveAtlas({...atlasMissionOptions,record:detail.record,events:detail.events,onState:detail.onState,
+   getOrientation:id=>(naturalSystems?.getMesh(id)||(id==='moon'?moon:planetMeshes.get(id)))?.getWorldQuaternion(new THREE.Quaternion())||null,
+   getPosition:id=>worldPosition(id),getName:id=>bodyData(id)?.name||id,getRadiusKm:id=>CELESTIAL_BODIES[id]?.radiusKm||bodyData(id)?.radiusKm||6371,setDepthScale:value=>missionDepth.setScale(value),
+    onContextChanged:()=>applyFocusVisibility(),
+   onStop(restore){atlasMissionOptions.onStop(false);atlasMission=apolloAtlasMission;window.dispatchEvent(new CustomEvent('relic-archive-ended',{detail:{id:detail.record.id}}));if(restore)selectBody('overview');}
+  });atlasMission=controller;detail.connect(controller);await controller.start();
+ }catch(error){detail.onState?.({status:'La reconstruction ne peut pas démarrer. Rechargez la mission.'});console.error(error);}
+});
 window.addEventListener('pagehide',event=>{if(!event.persisted)atlasMission.dispose();});
 const missionMarkers=createMissionMarkers({THREE,camera,getMoon:()=>naturalSystems?.getMesh('moon')||moon,getSelected:()=>selected,isDetailed:()=>detailedGlobe.active,onLocate:site=>{
   selectBody('moon');focusDetailedView('moon',{lat:site.latitude,lon:site.longitude,range:1200,tilt:35});
@@ -1360,13 +1378,14 @@ function animate(time) {
   }
   const advancedSeconds=simulationClock.advance(elapsedSeconds),modelDate=simulationClock.date;
   simulationDays=(simulationClock.time-epochTime)/86400000;
+  if(atlasMission.active&&atlasMission.archive)atlasMission.advance(elapsedSeconds);
   updatePositions(simulationDays);
   if(!atlasMission.active&&selected==='overview'&&Math.abs(simulationClock.time-lastOrbitDate)>7*86400000)rebuildPlanetOrbits();
   if(!atlasMission.active&&selected==='overview'&&advancedSeconds){
     sun.rotation.y=(sun.rotation.y+advancedSeconds*Math.PI*2/(25.38*86400))%(Math.PI*2);
     solarCorona.rotation.y=(solarCorona.rotation.y-advancedSeconds*Math.PI*2/(25.38*86400))%(Math.PI*2);
   }
-  atlasMission.advance(elapsedSeconds);
+  if(!atlasMission.archive)atlasMission.advance(elapsedSeconds);
   const missionDate=atlasMission.active?new Date(atlasMission.time):modelDate;
   naturalSystems?.update(missionDate,dt);comet?.update(modelDate);
   cometOrbitDirections?.update(camera,selected==='overview'&&!atlasMission.active,modelDate);

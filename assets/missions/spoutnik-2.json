@@ -1,0 +1,336 @@
+{
+  "id": "spoutnik-2",
+  "name": "Spoutnik 2",
+  "body": "earth",
+  "family": "sputnik2",
+  "year": 1957,
+  "summary": "508,3 kg de charge utile scientifique et biologique (solidaire du corps central Blok A de ~7,3 t, soit ~7,8 t au total en orbite terrestre basse) • 0 objet encore en orbite en 2026 (désintégration atmosphérique totale après 162 jours) • 0 élément récupéré sur Terre (mission sans dispositif de retour).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Spoutnik 2 (Спутник-2, désignation interne PS-2 / 2-y ISZ, COSPAR 1957-002A)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (OKB-1 de Sergueï Korolev) — programme Spoutnik"
+    ],
+    [
+      "Lancement",
+      "3 novembre 1957, 02h30 UTC — Cosmodrome de Baïkonour (site 1/5), fusée Spoutnik 8K71PS (R-7 Semiorka)"
+    ],
+    [
+      "Orbite initiale",
+      "Orbite terrestre basse elliptique : 212 km (périgée) × 1 660 km (apogée), inclinaison 65,33°, période 103,7 min"
+    ],
+    [
+      "Fin de mission",
+      "14 avril 1958 — rentrée destructive au-dessus des Antilles après 162 jours et 2 570 révolutions"
+    ],
+    [
+      "Passager",
+      "Laïka (chienne bâtarde de ~6 kg, premier être vivant mis en orbite autour de la Terre)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur R-7 Semiorka (8K71PS), étage central Blok A conservé en orbite, satellite conique PS-2 (4 m de haut, 2 m de diamètre à la base)"
+    ],
+    [
+      "Statut",
+      "Réussie — premier vol spatial orbital habité par un être vivant et premières mesures scientifiques orbitales"
+    ]
+  ],
+  "sourceFile": "Terre/Spoutnik 2 - Fiche « Plus de détails ».pdf",
+  "pdf": "spoutnik-2.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Spoutnik 2 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : 508,3 kg de charge utile scientifique et biologique (solidaire du corps central Blok A de ~7,3 t, soit ~7,8 t au total en orbite terrestre basse) • 0 objet encore en orbite en 2026 (désintégration"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "atmosphérique totale après 162 jours) • 0 élément récupéré sur Terre (mission sans dispositif de retour)."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Spoutnik 2 (Спутник-2, désignation interne PS-2 / 2-y ISZ, COSPAR 1957-002A)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (OKB-1 de Sergueï Korolev) — programme Spoutnik"
+          ],
+          [
+            "Lancement",
+            "3 novembre 1957, 02h30 UTC — Cosmodrome de Baïkonour (site 1/5), fusée Spoutnik 8K71PS (R-7 Semiorka)"
+          ],
+          [
+            "Orbite initiale",
+            "Orbite terrestre basse elliptique : 212 km (périgée) × 1 660 km (apogée), inclinaison 65,33°, période 103,7 min"
+          ],
+          [
+            "Fin de mission",
+            "14 avril 1958 — rentrée destructive au-dessus des Antilles après 162 jours et 2 570 révolutions"
+          ],
+          [
+            "Passager",
+            "Laïka (chienne bâtarde de ~6 kg, premier être vivant mis en orbite autour de la Terre)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur R-7 Semiorka (8K71PS), étage central Blok A conservé en orbite, satellite conique PS-2 (4 m de haut, 2 m de diamètre à la base)"
+          ],
+          [
+            "Statut",
+            "Réussie — premier vol spatial orbital habité par un être vivant et premières mesures scientifiques orbitales"
+          ]
+        ]
+      },
+      {
+        "y": 524.5154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 559.6342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 593.7205810546875,
+        "type": "text",
+        "text": "A. Orbite terrestre basse — Désintégrés lors de la rentrée atmosphérique (14 avril 1958)"
+      },
+      {
+        "y": 613.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Structure conique & châssis PS-2",
+            "~508,3 kg (satellite complet)",
+            "Détruit / brûlé",
+            "Cône en alliage d'aluminium et de magnésium (4 m de hauteur, 2 m de diamètre) assemblé en quatre semaines sur ordre de Nikita Khrouchtchev ; consumé dans l'atmosphère le 14 avril 1958."
+          ],
+          [
+            "Cabine biologique pressurisée (GKZh)",
+            "~80 kg (estim.)",
+            "Détruit / brûlé",
+            "Cylindre hermétique en aluminium (0,80 m × 0,64 m) dérivé des conteneurs suborbitaux R-2A, doté d'un hublot frontal, d'un revêtement matelassé et d'un harnais de retenue pour Laïka."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Système de support de vie & régulation thermique",
+            "~45 kg (estim.)",
+            "Détruit / brûlé",
+            "Générateur d'oxygène chimique (superoxydes), absorbeur de CO2, distributeur d'eau et de nourriture gélifiée, ventilateur et radiateur thermique (défaillant après arrachement partiel de l'isolation)."
+          ],
+          [
+            "Capteurs biomédicaux & télémétrie Tral-D",
+            "~35 kg (estim.)",
+            "Détruit / brûlé",
+            "Électrocardiogramme, capteurs de fréquence respiratoire, de pression artérielle, de mouvements et 12 sondes thermiques ; transmission multicanale Tral-D (15 min par orbite)."
+          ],
+          [
+            "Sphère radio & batteries (conteneur supérieur)",
+            "~83 kg",
+            "Détruit / brûlé",
+            "Sphère de secours issue du programme Spoutnik 1 montée sur treillis métallique, abritant deux émetteurs (20,005 et 40,002 MHz) et des batteries argent-zinc épuisées après 7 jours."
+          ],
+          [
+            "Spectrophotomètre solaire SP-65",
+            "~15 kg (estim.)",
+            "Détruit / brûlé",
+            "Trois photomultiplicateurs espacés à 120° équipés de filtres optiques (raie Lyman-alpha UV à 121,6 nm et rayons X mous solaires), conçus sous la direction de S. L. Mandelshtam."
+          ],
+          [
+            "Compteurs de rayons cosmiques (Vernov)",
+            "~12 kg (estim.)",
+            "Détruit / brûlé",
+            "Deux compteurs à décharge gazeuse (Geiger- Müller) conçus par Sergueï Vernov pour mesurer les particules chargées en orbite ; ont enregistré les premiers signes des ceintures de radiations."
+          ],
+          [
+            "Corps central Blok A de la fusée R-7",
+            "~7 280 kg (à vide)",
+            "Détruit / brûlé",
+            "Étage central du lanceur (28 m de long) volontairement laissé solidaire du satellite PS-2 pour utiliser son système de télémétrie ; a perturbé l'équilibre thermique de la cabine avant de brûler à la rentrée."
+          ]
+        ]
+      },
+      {
+        "y": 505.9705810546875,
+        "type": "text",
+        "text": "B. Jets en vol (phase d'ascension et mise en orbite)"
+      },
+      {
+        "y": 525.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "4 propulseurs latéraux Blok B, V, G, D (R-7)",
+            "~13 600 kg (total à vide)",
+            "Écrasés / dispersés",
+            "Séparés à T + 116 s à la fin de la propulsion d'appoint ; retombés dans les steppes du Kazakhstan (zone de retombée balistique du pas de tir de Baïkonour)."
+          ],
+          [
+            "Coiffe aérodynamique (ogive de protection)",
+            "~300 kg (estim.)",
+            "Détruite / brûlée",
+            "Éjectée avec succès par verrou pyropneumatique après l'insertion orbitale afin d'exposer les capteurs solaires et les antennes ; rentrée rapide dans la haute atmosphère."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Aucun élément matériel récupéré : contrairement aux missions ultérieures Korabl-Spoutnik (1960) et Vostok (1961), Spoutnik 2 ne disposait ni de bouclier thermique ni de parachute."
+      },
+      {
+        "y": 119.5869140625,
+        "type": "text",
+        "text": "Données télémétriques et enregistrements au sol : bandes magnétiques des signaux radio et biomédicaux captés par les stations soviétiques (et par des observatoires étrangers, dont l'université de Sydney)."
+      },
+      {
+        "y": 180.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 207.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "4 octobre 1957",
+            "Succès de Spoutnik 1 ; Nikita Khrouchtchev demande à Sergueï Korolev un nouveau coup d'éclat spatial pour le 40e anniversaire de la révolution d'Octobre (7 novembre)."
+          ],
+          [
+            "31 octobre 1957",
+            "Installation de Laïka dans la cabine hermétique GKZh à Baïkonour, trois jours avant le tir, sous surveillance médicale constante."
+          ],
+          [
+            "3 novembre 1957, 02h30 UTC",
+            "Décollage de la fusée R-7 (8K71PS) depuis Baïkonour ; mise en orbite de Spoutnik 2 (212 × 1 660 km) et éjection réussie de la coiffe."
+          ],
+          [
+            "3 novembre 1957 (orbites 1 à 4)",
+            "Arrachement partiel de l'isolation thermique et défaillance du régulateur de température : la cabine dépasse 40 °C. Laïka meurt d'hyperthermie et de stress après environ 5 à 7 heures de vol."
+          ],
+          [
+            "10 novembre 1957",
+            "Épuisement complet des batteries chimiques embarquées ; arrêt définitif des émissions radio et scientifiques de Spoutnik 2 après 7 jours de fonctionnement."
+          ],
+          [
+            "14 avril 1958",
+            "Freiné par l'atmosphère résiduelle après 162 jours et 2 570 orbites, l'ensemble Spoutnik 2 / Blok A se désintègre au-dessus des Antilles (traînée lumineuse observée par des navires et astronomes amateurs)."
+          ]
+        ]
+      },
+      {
+        "y": 505.76544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 534.3369140625,
+        "type": "text",
+        "text": "Première preuve de survie biologique en orbite : malgré la mort prématurée de Laïka, les données biomédicales des premières heures ont démontré qu'un mammifère pouvait supporter les fortes accélérations du lancement et l'apesanteur orbitale, ouvrant la voie aux vols habités."
+      },
+      {
+        "y": 583.8369140625,
+        "type": "text",
+        "text": "Détection précoce des ceintures de Van Allen : les compteurs de Sergueï Vernov ont enregistré une hausse anormale du flux de particules aux hautes latitudes nord. L'URSS ayant gardé les codes de télémétrie secrets et les stations australiennes n'ayant pas transmis les enregistrements bruts, la découverte officielle fut attribuée au satellite américain Explorer 1 en 1958."
+      },
+      {
+        "y": 648.3369140625,
+        "type": "text",
+        "text": "Révélation tardive de 2002 : pendant 45 ans, la version officielle soviétique affirma que Laïka avait survécu plusieurs jours avant d'être euthanasiée par une portion empoisonnée. En octobre 2002, le médecin Dmitri Malachenkov révéla lors du congrès mondial de l'espace (Houston) qu'elle avait succombé dès les premières heures à la surchauffe de la cabine."
+      },
+      {
+        "y": 712.8369140625,
+        "type": "text",
+        "text": "Mémoire et éthique spatiale : la mission a suscité un vif débat international sur l'expérimentation animale et accéléré la mise au point de capsules récupérables (retour sain et sauf des chiennes Belka et Strelka sur Korabl-Spoutnik 2 en août 1960). Un monument dédié à Laïka a été inauguré à Moscou en 2008."
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Sputnik 2 (ID : 1957- 002A)"
+      },
+      {
+        "y": 115.8369140625,
+        "type": "text",
+        "text": "Dmitri Malachenkov, Abstracts of the 34th COSPAR Scientific Assembly (Houston, octobre 2002) — Analyse médicale du vol de Spoutnik 2"
+      },
+      {
+        "y": 149.5869140625,
+        "type": "text",
+        "text": "Anatoly Zak, RussianSpaceWeb.com — Architecture technique de PS-2 et de la cabine GKZh"
+      },
+      {
+        "y": 169.0869140625,
+        "type": "text",
+        "text": "Asif A. Siddiqi, Challenge to Apollo: The Soviet Union and the Space Race, 1945–1974 (NASA SP- 2000-4408)"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "source": "https://nssdc.gsfc.nasa.gov/photo_gallery/photogallery-venus.html",
+      "image": "https://nssdc.gsfc.nasa.gov/image/planetary/venus/venera14.jpg",
+      "title": "Panorama de la surface de Vénus transmis par Venera 14",
+      "credit": "Soviet Space Program / NASA NSSDCA",
+      "src": "archives/venera-14-reviewed-1.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-14.mp4",
+    "local": true,
+    "title": "Venera 14 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-14.pdf",
+    "fingerprint": "eb649064c50dd958a97ea75d95f44f66a0d426c9f453e3b319e3ef332be9a15a"
+  }
+}

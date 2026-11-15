@@ -1,0 +1,393 @@
+{
+  "id": "luna-9",
+  "name": "Luna 9",
+  "body": "moon",
+  "family": "luna-lander",
+  "year": 1966,
+  "summary": "1 capsule d'atterrissage de 99 kg posée sur la Lune, silencieuse depuis le 6 février 1966 · 1 caméra de télévision panoramique et 1 détecteur de rayonnement · 1 étage de freinage et des modules latéraux, devenir non précisé · 1 étage Blok-L, devenir non précisé · aucun élément récupéré · première capsule posée en douceur sur la Lune",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 9"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique — programme Luna"
+    ],
+    [
+      "Lancement",
+      "31 janvier 1966, 11h41 UTC — Baïkonour, fusée Molniya-M avec étage Blok-L"
+    ],
+    [
+      "Atterrissage",
+      "3 février 1966, ~18h44 UTC — Oceanus Procellarum, à l'ouest des cratères Reiner et Marius"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — capsule restée sur la Lune"
+    ],
+    [
+      "Durée à la surface",
+      "~3 jours terrestres ; dernière transmission le 6 février 1966, 22h55 UTC (batteries épuisées)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Molniya-M · étage Blok-L · sonde Luna 9 (étage de freinage + capsule d'atterrissage)"
+    ],
+    [
+      "Statut",
+      "Réussie — première capsule posée en douceur sur la Lune, premières images de sa surface ; silencieuse depuis le 6 février 1966"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche-mission-Luna-9-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "luna-9.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Luna 9 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 capsule d'atterrissage de 99 kg posée sur la Lune, silencieuse depuis le 6 février 1966 · 1 caméra de télévision panoramique et 1 détecteur de rayonnement · 1 étage de freinage et des modules latéraux, devenir non précisé · 1 étage Blok-L, devenir non précisé · aucun élément récupéré · première capsule posée en douceur sur la Lune"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 9"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique — programme Luna"
+          ],
+          [
+            "Lancement",
+            "31 janvier 1966, 11h41 UTC — Baïkonour, fusée Molniya-M avec étage Blok-L"
+          ],
+          [
+            "Atterrissage",
+            "3 février 1966, ~18h44 UTC — Oceanus Procellarum, à l'ouest des cratères Reiner et Marius"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — capsule restée sur la Lune"
+          ],
+          [
+            "Durée à la surface",
+            "~3 jours terrestres ; dernière transmission le 6 février 1966, 22h55 UTC (batteries épuisées)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Molniya-M · étage Blok-L · sonde Luna 9 (étage de freinage + capsule d'atterrissage)"
+          ],
+          [
+            "Statut",
+            "Réussie — première capsule posée en douceur sur la Lune, premières images de sa surface ; silencieuse depuis le 6 février 1966"
+          ]
+        ]
+      },
+      {
+        "y": 439.1176452636719,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 464.06060791015625,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 506.39697265625,
+        "type": "text",
+        "text": "A. Surface lunaire — Oceanus Procellarum"
+      },
+      {
+        "y": 524.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Capsule d'atterrissage",
+            "99 kg ; sphère ~1,5 m",
+            "",
+            "Rebondie plusieurs fois avant de s'immobiliser près d'un cratère d'environ 25 m ; le sol a cédé sous la capsule (inclinaison de ~15° à ~22,5°) ; position exacte discutée (voir B)"
+          ],
+          [
+            "Système de télévision",
+            "—",
+            "",
+            "Caméra à miroir type périscope ; 3 séries d'images les 4 et 6 février"
+          ],
+          [
+            "Détecteur de rayonnement",
+            "—",
+            "",
+            "Seul instrument scientifique dédié ; ~30 millirads par jour mesurés"
+          ],
+          [
+            "Pétales et antennes",
+            "—",
+            "",
+            "Quatre pétales ouverts ~250 s après le contact ; antennes à tige ; l'intérieur des pétales sert de réflecteur"
+          ]
+        ]
+      },
+      {
+        "y": 694.39697265625,
+        "type": "text",
+        "text": "B. Position de la capsule"
+      },
+      {
+        "y": 711.6043701171875,
+        "type": "text",
+        "text": "• Coordonnées historiques : 7°08′ N, 64°22′ O (une autre source donne 7,13° N, 60,36° O)"
+      },
+      {
+        "y": 728.6043090820312,
+        "type": "text",
+        "text": "• Recherches : en 2015, la capsule restait introuvable sur les images de la sonde LRO ; une étude de 2026 affirme avoir repéré un groupe d'objets compatible avec la séquence d'atterrissage près de 7°02′ N, 64°20′ O (non confirmé de façon indépendante dans mes sources)"
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "C. Étages"
+      },
+      {
+        "y": 72.3543930053711,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de freinage et modules latéraux",
+            "n.c.",
+            "",
+            "Rétrofusée principale arrêtée à ~250 m, puis moteurs d'appoint ; modules latéraux largués à ~75 km ; devenir non précisé"
+          ],
+          [
+            "Étage Blok-L",
+            "n.c.",
+            "",
+            "A porté la sonde vers la Lune ; devenir non précisé dans mes sources"
+          ],
+          [
+            "Étages inférieurs de la Molniya-M",
+            "n.c.",
+            "",
+            "Retombés ; non précisé"
+          ]
+        ]
+      },
+      {
+        "y": 199.39697265625,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 216.60440063476562,
+        "type": "text",
+        "text": "• Rien : seules des images transmises par radio sont revenues"
+      },
+      {
+        "y": 233.60440063476562,
+        "type": "text",
+        "text": "• Le signal suivait la norme Radiofax des journaux : l'observatoire britannique de Jodrell Bank a pu décoder les images, diffusées dans le monde entier"
+      },
+      {
+        "y": 275.39697265625,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 292.6044006347656,
+        "type": "text",
+        "text": "• Étages de la Molniya-M, séparés pendant l'ascension"
+      },
+      {
+        "y": 309.6044006347656,
+        "type": "text",
+        "text": "• Modules latéraux de la sonde, largués vers 75 km d'altitude lunaire"
+      },
+      {
+        "y": 346.7176513671875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 369.3543395996094,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "31 janvier 1966, 11h41",
+            "Lancement ; orbite terrestre de ~168 × 219 km"
+          ],
+          [
+            "31 janvier 1966, 12h48",
+            "L'étage Blok-L met la sonde en route vers la Lune"
+          ],
+          [
+            "1er février 1966, 19h29",
+            "Correction de trajectoire (moteur allumé 48 s)"
+          ],
+          [
+            "3 février 1966, ~18h44",
+            "Atterrissage (voir séquence ci-dessous)"
+          ],
+          [
+            "4 février 1966, 01h50",
+            "Première série d'images (107 min), puis deuxième à 14h00 (174 min)"
+          ],
+          [
+            "6 février 1966, 20h37",
+            "Trois séries d'images supplémentaires (138 min)"
+          ],
+          [
+            "6 février 1966, 22h55",
+            "Dernière transmission, batteries épuisées"
+          ]
+        ]
+      },
+      {
+        "y": 543.596923828125,
+        "type": "text",
+        "text": "Séquence d'atterrissage"
+      },
+      {
+        "y": 561.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Altitude",
+            "Événement"
+          ],
+          [
+            "8 300 km",
+            "Orientation pour le freinage ; rotation arrêtée"
+          ],
+          [
+            "~75 km",
+            "L'altimètre radar déclenche : largage des modules latéraux, gonflage des airbags, allumage de la rétrofusée"
+          ],
+          [
+            "~250 m",
+            "La rétrofusée principale s'arrête ; quatre moteurs d'appoint prennent le relais"
+          ],
+          [
+            "~5 m",
+            "Un capteur de contact arrête les moteurs ; éjection de la capsule, airbags gonflés"
+          ],
+          [
+            "Contact",
+            "Touché à ~22 km/h (une autre section de la source dit plus de 54 km/h) ; plusieurs rebonds"
+          ],
+          [
+            "+ ~250 s",
+            "Ouverture de quatre pétales qui redressent la capsule"
+          ],
+          [
+            "+ ~15 min",
+            "Première image test, contraste faible : Soleil à ~3° de l'horizon"
+          ],
+          [
+            "+ ~7 h",
+            "Reprise des images lorsque le Soleil atteint ~7° : panoramas"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 54.7176513671875,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 76.2043685913086,
+        "type": "text",
+        "text": "• Premier atterrissage en douceur d'une capsule sur la Lune et premières images depuis sa surface."
+      },
+      {
+        "y": 93.2043685913086,
+        "type": "text",
+        "text": "• Panoramas : 3 séries d'images assemblées en plusieurs vues panoramiques (4 ou 5 selon les sources) ; 27 photos individuelles selon Orbital Focus."
+      },
+      {
+        "y": 124.20437622070312,
+        "type": "text",
+        "text": "• Nature du sol : la capsule a bougé sur le régolithe (inclinaison passée de ~15° à ~22,5°)."
+      },
+      {
+        "y": 141.20437622070312,
+        "type": "text",
+        "text": "• Radiation : ~30 millirads par jour."
+      },
+      {
+        "y": 158.20437622070312,
+        "type": "text",
+        "text": "• Diffusion mondiale : Jodrell Bank, le Daily Express et la BBC ont décodé et publié les images."
+      },
+      {
+        "y": 175.20437622070312,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (l'URSS, aujourd'hui la Russie) ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 226.317626953125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 247.80435180664062,
+        "type": "text",
+        "text": "• Wikipedia (miroir) — Luna 9 : séquence d'atterrissage, masses, Jodrell Bank, imagerie LRO"
+      },
+      {
+        "y": 264.8043518066406,
+        "type": "text",
+        "text": "• Orbital Focus — journal de bord de Luna 9 : heures, coordonnées"
+      },
+      {
+        "y": 281.8043518066406,
+        "type": "text",
+        "text": "• Space.com — « Luna 9: 1st Soft Landing on the Moon » : capsule, images, recherches"
+      }
+    ]
+  ]
+}

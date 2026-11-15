@@ -1,0 +1,334 @@
+{
+  "id": "luna-11",
+  "name": "Luna 11",
+  "body": "moon",
+  "family": "luna-orbiter",
+  "year": 1966,
+  "summary": "~1 140 kg à sec (1 640 kg au lancement) d'orbiteur intégré E-6LF écrasés sur la Lune après dégradation orbitale (site d'impact non localisé avec précision) · 0 objet actif en 2026 (34 jours d'émissions en orbite lunaire d'août à octobre 1966) · 1 objet principal de point d'impact exact inconnu.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 11 (objet E-6LF n° 101 — Orbiteur lunaire photographique et scientifique)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+    ],
+    [
+      "Lancement",
+      "24 août 1966, 08h03m21s UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+    ],
+    [
+      "Insertion en orbite lunaire",
+      "27 août 1966, 21h49 UTC — Orbite sélénocentrique quasi équatoriale : 160 × 1 193 km, inclinée à 27°, période de 178 min"
+    ],
+    [
+      "Durée de mission",
+      "85 heures de transit Terre-Lune + 34 jours d'opérations actives en orbite lunaire (277 révolutions jusqu'au 1er octobre 1966)"
+    ],
+    [
+      "Type de mission",
+      "Orbiteur lunaire automatique (sans équipage) de reconnaissance photographique et de mesure des rayons X, gamma et poussières"
+    ],
+    [
+      "Véhicules",
+      "Molniya-M (bloc L) · Orbiteur intégré E-6LF (bus propulsif KTDU-5A + compartiment pressurisé non séparable)"
+    ],
+    [
+      "Statut",
+      "✔ Réussie (partielle) — Deuxième satellite artificiel de la Lune ; mesures scientifiques réussies malgré la perte du pointage caméra"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche mission Luna 11 - Hardware perdu dans l_espace.pdf",
+  "pdf": "luna-11.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION LUNAIRE · CATALOGUE DU PATRIMOINE SPATIAL Luna 11 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.41356658935547,
+        "type": "text",
+        "text": "Synthèse hardware : ~1 140 kg à sec (1 640 kg au lancement) d'orbiteur intégré E-6LF écrasés sur la Lune après dégradation orbitale (site d'impact non localisé avec précision) · 0 objet actif en 2026 (34 jours"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "d'émissions en orbite lunaire d'août à octobre 1966) · 1 objet principal de point d'impact exact inconnu."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 11 (objet E-6LF n° 101 — Orbiteur lunaire photographique et scientifique)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+          ],
+          [
+            "Lancement",
+            "24 août 1966, 08h03m21s UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+          ],
+          [
+            "Insertion en orbite lunaire",
+            "27 août 1966, 21h49 UTC — Orbite sélénocentrique quasi équatoriale : 160 × 1 193 km, inclinée à 27°, période de 178 min"
+          ],
+          [
+            "Durée de mission",
+            "85 heures de transit Terre-Lune + 34 jours d'opérations actives en orbite lunaire (277 révolutions jusqu'au 1er octobre 1966)"
+          ],
+          [
+            "Type de mission",
+            "Orbiteur lunaire automatique (sans équipage) de reconnaissance photographique et de mesure des rayons X, gamma et poussières"
+          ],
+          [
+            "Véhicules",
+            "Molniya-M (bloc L) · Orbiteur intégré E-6LF (bus propulsif KTDU-5A + compartiment pressurisé non séparable)"
+          ],
+          [
+            "Statut",
+            "✔ Réussie (partielle) — Deuxième satellite artificiel de la Lune ; mesures scientifiques réussies malgré la perte du pointage caméra"
+          ]
+        ]
+      },
+      {
+        "y": 513.4171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 578.7205810546875,
+        "type": "text",
+        "text": "A. Environnement lunaire — Orbite puis impact non localisé (~1,14 t à sec)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur intégré Luna 11 (bus E-6LF complet)",
+            "~1 140 kg (à sec)",
+            "? Impact non localisé",
+            "Masse de 1 640 kg au lancement (incluant ~500 kg d'ergols pour le moteur principal KTDU-5A). Contrairement à Luna 10, le compartiment scientifique pressurisé restait fixé au module propulsif afin d'assurer la stabilisation sur 3 axes par jets d'azote froid. Après épuisement des batteries le 1er octobre 1966, l'orbite s'est progressivement dégradée jusqu'à l'impact sur la Lune en un point inconnu."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 11 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Système phototélévisé Ienisseï-2 (caméra + développeur)",
+            "~48 kg (inclus)",
+            "▲ Écrasé (Lune)",
+            "Caméra argentique à double objectif (focales 110 mm et 500 mm, résolution 15–20 m) avec développement chimique automatique à bord et numérisation par faisceau lumineux. En raison d'un corps étranger ayant bloqué une tuyère de contrôle d'attitude dès le 28 août 1966, la sonde a tourné sur elle-même et la caméra n'a photographié que l'espace vide."
+          ],
+          [
+            "Suite d'instruments géophysiques (7 expériences)",
+            "~38 kg (inclus)",
+            "▲ Écrasés (Lune)",
+            "Spectromètre rayons X et gamma (composition chimique du sol lunaire), détecteur de rayons cosmiques et protons solaires, pièges à ions (étude du sillage magnétique terrestre autour de la Lune), détecteurs de micrométéorites (essaims des Perséides) et radioaltimètre de démonstration."
+          ],
+          [
+            "Expérience technologique R-1 (engrenage sous vide)",
+            "~3 kg (inclus)",
+            "▲ Écrasée (Lune)",
+            "Banc d'essai mécanique comportant un train d'engrenages non lubrifiés exposé directement au vide spatial et aux variations thermiques lunaires pour tester les matériaux destinés aux futurs astromobiles Lunokhod."
+          ]
+        ]
+      },
+      {
+        "y": 420.4705810546875,
+        "type": "text",
+        "text": "B. Espace cislunaire & rentrée atmosphérique terrestre"
+      },
+      {
+        "y": 440.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Deux compartiments latéraux largables du bus E-6LF",
+            "~250 kg (total)",
+            "■ Orbite solaire / haute",
+            "Caissons latéraux abritant les viseurs optiques Soleil-Terre-Lune et les réservoirs d'azote froid initiaux, largués à ~8 000 km de la Lune juste avant l'allumage de freinage d'insertion en orbite lunaire le 27 août 1966."
+          ],
+          [
+            "Étage supérieur Bloc L (fusée Molniya-M)",
+            "~1 160 kg (à sec)",
+            "■ Orbite haute / solaire",
+            "Quatrième étage propulsé par le moteur S1.5400. Après avoir injecté la sonde de 1 640 kg vers la Lune le 24 août 1966, il est passé sur une orbite terrestre très excentrique/héliocentrique."
+          ],
+          [
+            "Troisième étage Bloc I (fusée Molniya-M)",
+            "~2 400 kg (à sec)",
+            "▲ Désintégré",
+            "Étage placé en orbite basse terrestre de parking lors du lancement du 24 août 1966 ; rentré et consumé dans l'atmosphère terrestre quelques jours après le tir."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 11 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.020263671875,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Luna 11 est une mission orbitale lunaire sans retour. Les étages inférieurs de la fusée Molniya-M et la coiffe sont retombés dans les zones d'exclusion d'Asie centrale après le décollage de Baïkonour. La mission sœur Luna 12, lancée deux mois plus tard (octobre 1966) avec le même système Ienisseï-2 corrigé, réussira la prise des clichés haute résolution manqués par Luna 11."
+      },
+      {
+        "y": 158.7205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 180.270263671875,
+        "type": "text",
+        "text": "Coiffe aérodynamique & obturateurs optiques : coiffe larguée durant l'ascension atmosphérique le 24 août 1966 ; volets de protection des objectifs Ienisseï-2 ouverts en orbite lunaire avant le blocage de la tuyère d'attitude."
+      },
+      {
+        "y": 239.66712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 264.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "24 août 1966, 08h03m21s UTC",
+            "Décollage de la fusée Molniya-M depuis Baïkonour (dix jours après la mise en orbite lunaire de la sonde américaine Lunar Orbiter 1) et injection translunaire."
+          ],
+          [
+            "26 août 1966",
+            "Manœuvre de correction de trajectoire à mi-course assurant le passage à faible altitude au-dessus de l'équateur lunaire."
+          ],
+          [
+            "27 août 1966, 21h49 UTC",
+            "Allumage de freinage du moteur KTDU-5A et insertion réussie sur une orbite lunaire basse inclinée à 27° (160 × 1 193 km)."
+          ],
+          [
+            "28 août 1966",
+            "Obstruction d'une tuyère de contrôle d'attitude entraînant une rotation continue de la sonde (1,2 tr/min) : la caméra pointe vers le ciel profond mais les capteurs omnidirectionnels fonctionnent normalement."
+          ],
+          [
+            "27 août – 1er octobre 1966",
+            "137 sessions de télémétrie accomplies au cours de 277 révolutions autour de la Lune jusqu'à l'épuisement complet des batteries argent-zinc le 1er octobre 1966."
+          ]
+        ]
+      },
+      {
+        "y": 495.4171447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 522.270263671875,
+        "type": "text",
+        "text": "Spectroscopie X et gamma de la surface lunaire : grâce à la rotation lente de la sonde qui balayait alternativement le sol lunaire et le ciel, le spectromètre X/gamma de Luna 11 a mesuré la fluorescence X induite par le Soleil sur les éléments majeurs du régolithe (silicium, aluminium, magnésium), affinant la cartographie chimique globale amorcée par Luna 10."
+      },
+      {
+        "y": 585.176025390625,
+        "type": "text",
+        "text": "Essai en conditions réelles des mécanismes pour les futurs rovers Lunokhod : l'expérience R-1 a démontré la tenue mécanique à long terme d'engrenages métalliques fonctionnant sans lubrifiant liquide dans le vide lunaire poussé, validant directement les solutions de transmission utilisées sur Lunokhod 1 dès 1970."
+      },
+      {
+        "y": 650.520263671875,
+        "type": "text",
+        "text": "Étude du sillage magnétique terrestre et des essaims météoritiques : les pièges à ions et détecteurs de poussières ont traversé à plusieurs reprises la queue magnétosphérique de la Terre à distance lunaire et enregistré les impacts de micrométéorites associés aux courants météoritiques saisonniers."
+      },
+      {
+        "y": 714.270263671875,
+        "type": "text",
+        "text": "Cartographie des perturbations gravitationnelles en orbite inclinée : en évoluant sur une orbite peu inclinée (27° contre 71,9° pour Luna 10), le suivi Doppler de Luna 11 a fourni des contraintes essentielles sur les asymétries du champ gravitationnel lunaire (mascons), indispensables au calcul des trajectoires de rendez-vous et d'alunissage de précision."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 11 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 67.91712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 94.8369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Luna 11 Spacecraft & Lunar Orbiter Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 112.8369140625,
+        "type": "text",
+        "text": "NPO Lavotchkine / IKI RAN — Second Artificial Satellite of the Moon : Luna 11 (Station E-6LF)"
+      },
+      {
+        "y": 131.5869140625,
+        "type": "text",
+        "text": "Asif A. Siddiqi — Beyond Earth: A Chronicle of Deep Space Exploration, 1958–2016 (NASA SP-2018- 4041)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 11 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "id": "venera-4",
+  "name": "Venera 4",
+  "body": "venus",
+  "family": "venera-early",
+  "year": 1967,
+  "summary": "~1 106 kg de masse totale lancée (bus interplanétaire + capsule de descente de 383 kg) • 0 objet actif • Premier engin spatial à réussir une analyse in situ de l'atmosphère d'une autre planète (18 octobre 1967).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 4 (Венера-4, appareil 1V n° 310, COSPAR 1967-058A)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (OKB-1 / NPO Lavotchkine) — programme Venera"
+    ],
+    [
+      "Lancement",
+      "12 juin 1967, 02h36 UTC — Cosmodrome de Baïkonour (site 1/5), fusée Molnia-M (8K78M)"
+    ],
+    [
+      "Entrée atmosphérique",
+      "18 octobre 1967 — Atmosphère de Vénus (nuit, ~19° N, 38° E estimé)"
+    ],
+    [
+      "Fin de mission",
+      "18 octobre 1967 (fin des transmissions à ~24,9 km d'altitude suite à la compression thermique et la pression extrême)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde automatique combinant un bus de croisière et une capsule sphérique renforcée)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur Molnia-M, étage supérieur Blok L, bus interplanétaire, capsule de descente (383 kg)"
+    ],
+    [
+      "Statut",
+      "Réussite historique majeure — première mesure directe de la composition atmosphérique et de la température d'une autre planète."
+    ]
+  ],
+  "sourceFile": "Vénus/Venera 4 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "venera-4.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Venera 4 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~1 106 kg de masse totale lancée (bus interplanétaire + capsule de descente de 383 kg) • 0 objet actif • Premier engin spatial à réussir une analyse in situ de l'atmosphère d'une autre"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "planète (18 octobre 1967)."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 4 (Венера-4, appareil 1V n° 310, COSPAR 1967-058A)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (OKB-1 / NPO Lavotchkine) — programme Venera"
+          ],
+          [
+            "Lancement",
+            "12 juin 1967, 02h36 UTC — Cosmodrome de Baïkonour (site 1/5), fusée Molnia-M (8K78M)"
+          ],
+          [
+            "Entrée atmosphérique",
+            "18 octobre 1967 — Atmosphère de Vénus (nuit, ~19° N, 38° E estimé)"
+          ],
+          [
+            "Fin de mission",
+            "18 octobre 1967 (fin des transmissions à ~24,9 km d'altitude suite à la compression thermique et la pression extrême)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde automatique combinant un bus de croisière et une capsule sphérique renforcée)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur Molnia-M, étage supérieur Blok L, bus interplanétaire, capsule de descente (383 kg)"
+          ],
+          [
+            "Statut",
+            "Réussite historique majeure — première mesure directe de la composition atmosphérique et de la température d'une autre planète."
+          ]
+        ]
+      },
+      {
+        "y": 511.76544189453125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 546.1342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 580.2205810546875,
+        "type": "text",
+        "text": "A. Atmosphère de Vénus (~1 106 kg au total)"
+      },
+      {
+        "y": 600.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Capsule de descente",
+            "383 kg",
+            "Détruit en altitude",
+            "Sphère pressurisée dotée d'un bouclier et de parachutes (détruite à ~24,9 km)."
+          ],
+          [
+            "Analyseurs de gaz & capteurs météo",
+            "~30 kg",
+            "Détruits / inactifs",
+            "Analyseurs automatiques de composition (détectant ~95% de CO2), thermomètres, baromètres et altimètre radio."
+          ],
+          [
+            "Bus interplanétaire & étage Blok L",
+            "~693 kg",
+            "Détruit / brûlé",
+            "Structure de transport et réservoirs consumés dans la haute atmosphère."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 46.2205810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 65.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étages inférieurs 1, 2, 3 de la fusée Molnia-M",
+            "~30 000 kg (total)",
+            "Écrasés / brûlés",
+            "Propulseurs d'appoint et étages inférieurs du lanceur soviétique retombés dans les zones balistiques au Kazakhstan ou consumés lors de l'insertion orbitale initiale."
+          ]
+        ]
+      },
+      {
+        "y": 154.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 173.5869140625,
+        "type": "text",
+        "text": "Modèle d'ingénierie (NPO Lavotchkine) : maquettes de test de la sphère pressurisée conservées dans les musées spatiaux russes."
+      },
+      {
+        "y": 205.0869140625,
+        "type": "text",
+        "text": "Données télémétriques de descente : registres complets des 93 minutes de transmission atmosphérique sauvegardés dans les centres de contrôle soviétiques."
+      },
+      {
+        "y": 240.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 266.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "12 juin 1967",
+            "Décollage réussi de la fusée Molnia-M depuis Baïkonour ; injection de Venera 4 vers Vénus."
+          ],
+          [
+            "29 juillet 1967",
+            "Correction de trajectoire à mi-course effectuée avec succès pour cibler précisément la planète Vénus."
+          ],
+          [
+            "18 octobre 1967",
+            "Arrivée à Vénus : séparation de la capsule de descente (383 kg) qui pénètre l'atmosphère à 11 km/s et déploie son parachute à 52 km d'altitude."
+          ],
+          [
+            "18 octobre 1967 (93 min)",
+            "La capsule transmet en continu les données de température, pression et composition chimique, révélant une atmosphère écrasante de dioxyde de carbone."
+          ],
+          [
+            "18 octobre 1967 (fin)",
+            "À 24,9 km d'altitude, la pression atteint ~1,8 MPa (~18 atm) et la température ~270 °C, provoquant la défaillance et l'écrasement de la capsule avant qu'elle ne touche le sol."
+          ]
+        ]
+      },
+      {
+        "y": 487.01544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 513.3369140625,
+        "type": "text",
+        "text": "Première mesure in situ de l'atmosphère vénusienne : Venera 4 a réalisé l'exploit historique de transmettre les tout premiers relevés directs de la température, de la densité et de la composition chimique (révélant une proportion massive de CO2) d'une autre planète."
+      },
+      {
+        "y": 561.3369140625,
+        "type": "text",
+        "text": "Révélation de la sévérité de l'effet de serre : les données ont prouvé que Vénus possédait une atmosphère beaucoup plus dense et chaude que ce que les astronomes n'imaginaient alors, corrigeant radicalement les modèles théoriques de l'époque."
+      },
+      {
+        "y": 606.3369140625,
+        "type": "text",
+        "text": "Héritage technique : le succès de la phase de déploiement de parachute et de résistance sous haute pression a ouvert la voie aux missions ultérieures (notamment Venera 7, qui réussira à transmettre depuis la surface en 1970)."
+      },
+      {
+        "y": 655.0154418945312,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 682.0869140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Venera 4 (ID : 1967- 058A)"
+      },
+      {
+        "y": 713.5869140625,
+        "type": "text",
+        "text": "V. S. Avduevsky et al., The Venus Atmosphere as Measured by Venera 4, Journal of Atmospheric Sciences, 1968"
+      },
+      {
+        "y": 745.0869140625,
+        "type": "text",
+        "text": "B. Harvey, Soviet and Russian Lunar Exploration, Springer Praxis Books, 2007"
+      }
+    ]
+  ]
+}

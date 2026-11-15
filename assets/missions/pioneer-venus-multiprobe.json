@@ -1,0 +1,280 @@
+{
+  "id": "pioneer-venus-multiprobe",
+  "name": "Pioneer Venus Multiprobe",
+  "body": "venus",
+  "family": "orbiter",
+  "year": 1978,
+  "summary": "~904 kg de masse totale lancée vers Vénus (bus transporteur + 4 sondes atmosphériques) • 0 objet actif en 2026 • L'ensemble des 5 éléments constitutifs est entré dans l'atmosphère de Vénus le 9 décembre 1978 pour s'y consumer ou s'écraser à la surface.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Pioneer Venus Multiprobe / Pioneer Venus 2 / Pioneer 13 (COSPAR 1978-051A à E)"
+    ],
+    [
+      "Agence & programme",
+      "NASA (Ames Research Center / Hughes Aircraft Company) — programme Pioneer Venus"
+    ],
+    [
+      "Lancement",
+      "8 août 1978, 00h33 UTC — Cape Canaveral Air Force Station (LC-36A), fusée Atlas-Centaur (SLV-3D)"
+    ],
+    [
+      "Entrée atmosphérique",
+      "9 décembre 1978 — Pénétration coordonnée des 5 modules dans l'atmosphère de Vénus à travers différentes latitudes"
+    ],
+    [
+      "Fin de mission",
+      "9 décembre 1978 (mission atmosphérique éclair d'une durée de quelques dizaines de minutes par sonde, avec une survie surprise de 78 minutes au sol pour la sonde de nuit)"
+    ],
+    [
+      "Équipage",
+      "Aucun (flotte de cinq sondes autonomes d'analyse atmosphérique)"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur, Bus transporteur (Sounder Bus), 1 Grande Sonde (Sounder Probe), 3 Petites Sondes (North, Day, Night Probes)"
+    ],
+    [
+      "Statut",
+      "Réussite spectaculaire — première exploration in situ multi-points de l'atmosphère d'une planète géante/tellurique dense"
+    ]
+  ],
+  "sourceFile": "Vénus/Pioneer Venus Multiprobe - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "pioneer-venus-multiprobe.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Pioneer Venus Multiprobe (Pioneer 13) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~904 kg de masse totale lancée vers Vénus (bus transporteur + 4 sondes atmosphériques) • 0 objet actif en 2026 • L'ensemble des 5 éléments constitutifs est entré dans l'atmosphère de Vénus le 9 décembre 1978 pour s'y consumer ou s'écraser à la surface."
+      },
+      {
+        "y": 225.26544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 252.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Pioneer Venus Multiprobe / Pioneer Venus 2 / Pioneer 13 (COSPAR 1978-051A à E)"
+          ],
+          [
+            "Agence & programme",
+            "NASA (Ames Research Center / Hughes Aircraft Company) — programme Pioneer Venus"
+          ],
+          [
+            "Lancement",
+            "8 août 1978, 00h33 UTC — Cape Canaveral Air Force Station (LC-36A), fusée Atlas-Centaur (SLV-3D)"
+          ],
+          [
+            "Entrée atmosphérique",
+            "9 décembre 1978 — Pénétration coordonnée des 5 modules dans l'atmosphère de Vénus à travers différentes latitudes"
+          ],
+          [
+            "Fin de mission",
+            "9 décembre 1978 (mission atmosphérique éclair d'une durée de quelques dizaines de minutes par sonde, avec une survie surprise de 78 minutes au sol pour la sonde de nuit)"
+          ],
+          [
+            "Équipage",
+            "Aucun (flotte de cinq sondes autonomes d'analyse atmosphérique)"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur, Bus transporteur (Sounder Bus), 1 Grande Sonde (Sounder Probe), 3 Petites Sondes (North, Day, Night Probes)"
+          ],
+          [
+            "Statut",
+            "Réussite spectaculaire — première exploration in situ multi-points de l'atmosphère d'une planète géante/tellurique dense"
+          ]
+        ]
+      },
+      {
+        "y": 580.0154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 614.3842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 649.2205810546875,
+        "type": "text",
+        "text": "A. Atmosphère & surface de Vénus (~904 kg au total)"
+      },
+      {
+        "y": 668.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Bus transporteur (Sounder Bus)",
+            "~290 kg",
+            "Détruit / brûlé",
+            "Structure cylindrique ayant transporté les 4 sondes. Consumé dans la haute atmosphère vénusienne."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Grande Sonde & Instruments (LNMS, LIR, etc.)",
+            "~316,5 kg",
+            "Détruit / écrasé",
+            "Sonde principale dotée d'un spectromètre de masse (LNMS), chromatographe, radiomètre infrarouge (LIR) et néphélomètre."
+          ],
+          [
+            "Petites Sondes (Nord, Jour, Nuit) & Capteurs",
+            "~270 kg (total)",
+            "Détruits / écrasés",
+            "Sondes d'impact équipées de radiomètres de flux solaire et thermique, et capteurs de pression/température."
+          ]
+        ]
+      },
+      {
+        "y": 190.2205810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 210.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur Centaur (Atlas- Centaur)",
+            "~2 000 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage cryogénique ayant propulsé la mission Multiprobe vers Vénus le 8 août 1978 depuis Cape Canaveral ; placé sur une orbite solaire stable."
+          ]
+        ]
+      },
+      {
+        "y": 313.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 334.0869140625,
+        "type": "text",
+        "text": "Modèle d'ingénierie (Hughes Aircraft) : maquettes de test structurel et thermique conservées dans les archives de la NASA et musées aérospatiaux."
+      },
+      {
+        "y": 368.5869140625,
+        "type": "text",
+        "text": "Archives scientifiques intégrales : profils verticaux de température, de pression, de densité et de composition chimique de l'atmosphère vénusienne archivés au PDS."
+      },
+      {
+        "y": 414.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 441.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "8 août 1978",
+            "Lancement réussi de la fusée Atlas-Centaur depuis Cape Canaveral transportant la flotte Pioneer Venus Multiprobe."
+          ],
+          [
+            "16 novembre 1978",
+            "Séparation automatisée de la Grande Sonde et des trois Petites Sondes du bus transporteur, toutes placées sur des trajectoires d'impact indépendantes vers Vénus."
+          ],
+          [
+            "9 décembre 1978",
+            "Entrée atmosphérique fracassante : les cinq modules pénètrent l'enveloppe vénusienne à quelques heures d'intervalle, mesurant l'effet de serre, les nuages et les vents extrêmes."
+          ],
+          [
+            "9 décembre 1978 (fin)",
+            "Fin des transmissions des sondes écrasées ou consumées ; la Sonde de Nuit cesse d'émettre après avoir tenu 78 minutes dans l'enfer thermique de la surface."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "Démystification de l'effet de serre vénusien : les mesures des sondes ont confirmé que la fournaise de la surface vénusienne (460 °C) est causée par un effet de serre intense piégé par une atmosphère épaisse de CO2 et des couches nuageuses denses."
+      },
+      {
+        "y": 133.0869140625,
+        "type": "text",
+        "text": "Première cartographie thermique multi-points : l'architecture à cinq sondes a permis de comparer simultanément l'équateur, les pôles, le jour et la nuit, révélant une homogénéité thermique surprenante sous les nuages."
+      },
+      {
+        "y": 182.5869140625,
+        "type": "text",
+        "text": "Héritage technologique : la conception des boucliers thermiques et des pressurisations extrêmes a posé les bases de l'ingénierie des sondes d'immersion planétaire (comme Huygens sur Titan ou Galileo sur Jupiter)."
+      },
+      {
+        "y": 243.26544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 271.8369140625,
+        "type": "text",
+        "text": "NASA Science — Pioneer Venus Project Overview (science.nasa.gov)"
+      },
+      {
+        "y": 291.3369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche Pioneer Venus Multiprobe (ID : 1978-051A)"
+      },
+      {
+        "y": 325.0869140625,
+        "type": "text",
+        "text": "L. Colin, The Pioneer Venus Program, Space Science Reviews, vol. 20, 1977"
+      },
+      {
+        "y": 344.5869140625,
+        "type": "text",
+        "text": "A. Seiff et al., The Pioneer Venus OVE Sounder Probe Experiment, JGR, 1980"
+      }
+    ]
+  ]
+}

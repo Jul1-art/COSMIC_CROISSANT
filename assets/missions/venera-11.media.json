@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Timbre consacré aux missions Venera 11 et Venera 12",
+      "description": "USSR stamp dedicated to Venera-11 and Venera-12 space exploration mission",
+      "credit": "Р. Стрельников",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Venus_12.jpg",
+      "src": "archives/venera-11-commons.jpg",
+      "date": "1979-03-16",
+      "context": "Document philatélique de 1979 consacré aux deux missions ; ce n’est pas une photographie de Venera 11."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-11.mp4",
+    "local": true,
+    "title": "Venera 11 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-11.pdf",
+    "fingerprint": "f564aaff7490bec227913141daeb269c663376c54e83f7318dfc08e8a5159853"
+  }
+}

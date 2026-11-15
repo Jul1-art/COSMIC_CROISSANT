@@ -1,0 +1,280 @@
+{
+  "id": "opportunity",
+  "name": "Opportunity (MER-B)",
+  "body": "mars",
+  "family": "mer",
+  "year": 2003,
+  "summary": "Analyse technique et historique détaillée de l'astromobile Opportunity (MER-B), conçu pour une mission nominale de 90 sols et ayant fonctionné pendant près de 15 ans sur la surface martienne (2004–2018). Ce dossier retrace son architecture matérielle, sa suite d'instruments scientifiques de pointe, ses découvertes géologiques majeures sur Meridiani Planum, ainsi que son héritage technologique inestimable.",
+  "facts": [
+    [
+      "Nom officiel & international",
+      "Mars Exploration Rover - B (MER-B) / Opportunity (« Oppy », COSPAR 2003-032A)"
+    ],
+    [
+      "Agence spatiale & maîtrise d'œuvre",
+      "NASA (Jet Propulsion Laboratory / Cornell University), construction par JPL"
+    ],
+    [
+      "Lancement & Site",
+      "7 juillet 2003, 03:18:15 UTC — Complexe de lancement SLC-17B, Cape Canaveral Air Force Station, Floride"
+    ],
+    [
+      "Lanceur",
+      "Fusée Delta II (configuration 7925H avec 9 propulseurs d'appoint à poudre Gem-40)"
+    ],
+    [
+      "Masse au lancement & atterrissage",
+      "1 063 kg au total (au lancement) ; atterrisseur et boucliers ~348 kg ; astromobile seul ~185 kg"
+    ],
+    [
+      "Site d'atterrissage",
+      "Eagle Crater, Meridiani Planum (2,07° S, 354,47° E) — Atterrissage le 25 janvier 2004"
+    ],
+    [
+      "Statut de la mission (2026)",
+      "Mission close le 13 février 2019 suite à la tempête globale de juin 2018. Astromobile intact mais inactif à Perseverance Valley (45,16 km parcourus)."
+    ]
+  ],
+  "sourceFile": "Mars/Surface/Opportunity (MER-B) — Dossier Technique Complet.pdf",
+  "pdf": "opportunity.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.031856536865234,
+        "type": "text",
+        "text": "DOSSIER TECHNIQUE APPROFONDI — PROGRAMME D'EXPLORATION MARTIENNE NASA Opportunity (MER-B) — Dossier Technique Complet"
+      },
+      {
+        "y": 118.05107116699219,
+        "type": "text",
+        "text": "Synthèse exhaustive : Analyse technique et historique détaillée de l'astromobile Opportunity (MER-B), conçu pour une mission nominale de 90 sols et ayant fonctionné pendant près de 15 ans sur la surface martienne (2004–2018). Ce dossier retrace son architecture matérielle, sa suite d'instruments scientifiques de pointe, ses découvertes géologiques majeures sur Meridiani Planum, ainsi que son héritage technologique inestimable."
+      },
+      {
+        "y": 190.916015625,
+        "type": "text",
+        "text": "1. Identité institutionnelle & Paramètres de la mission"
+      },
+      {
+        "y": 214.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Caractéristique",
+            "Spécification technique"
+          ],
+          [
+            "Nom officiel & international",
+            "Mars Exploration Rover - B (MER-B) / Opportunity (« Oppy », COSPAR 2003-032A)"
+          ],
+          [
+            "Agence spatiale & maîtrise d'œuvre",
+            "NASA (Jet Propulsion Laboratory / Cornell University), construction par JPL"
+          ],
+          [
+            "Lancement & Site",
+            "7 juillet 2003, 03:18:15 UTC — Complexe de lancement SLC-17B, Cape Canaveral Air Force Station, Floride"
+          ],
+          [
+            "Lanceur",
+            "Fusée Delta II (configuration 7925H avec 9 propulseurs d'appoint à poudre Gem-40)"
+          ],
+          [
+            "Masse au lancement & atterrissage",
+            "1 063 kg au total (au lancement) ; atterrisseur et boucliers ~348 kg ; astromobile seul ~185 kg"
+          ],
+          [
+            "Site d'atterrissage",
+            "Eagle Crater, Meridiani Planum (2,07° S, 354,47° E) — Atterrissage le 25 janvier 2004"
+          ],
+          [
+            "Statut de la mission (2026)",
+            "Mission close le 13 février 2019 suite à la tempête globale de juin 2018. Astromobile intact mais inactif à Perseverance Valley (45,16 km parcourus)."
+          ]
+        ]
+      },
+      {
+        "y": 450.416015625,
+        "type": "text",
+        "text": "2. Inventaire exhaustif du Hardware & Instruments scientifiques"
+      },
+      {
+        "y": 481.179931640625,
+        "type": "text",
+        "text": "Légende des états : actif intact mais inactif détruit orbite héliocentrique"
+      },
+      {
+        "y": 508.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Châssis & Système de mobilité",
+            "180 kg",
+            "Intact / inactif",
+            "Architecture boggie-rocker à 6 roues indépendantes, panneaux solaires GaAs pliables, batteries Li-ion et électronique protégée dans une chaude-boîte isolée thermiquement. Immobilisé à Perseverance Valley."
+          ],
+          [
+            "Caméra Panoramique (Pancam)",
+            "1,68 kg",
+            "Intact / inactif",
+            "Caméra stéréo haute résolution montée sur mât (1,5 m de haut) dotée de roues à filtres spectraux (14 filtres au total) pour l'analyse géologique et minéralogique des affleurements."
+          ],
+          [
+            "Spectromètre Thermique (Mini-TES)",
+            "2,20 kg",
+            "Intact / inactif",
+            "Spectromètre infrarouge thermique mesurant à distance la minéralogie des roches, des sols et les profils thermiques atmosphériques."
+          ],
+          [
+            "Bras Robotique (IDD) & Suite APXS",
+            "5,00 kg",
+            "Intact / inactif",
+            "Bras articulé à 4 degrés de liberté portant le spectromètre à rayons X alpha-particules (APXS), le spectromètre Mössbauer (analyse du fer), l'imagerie microscopique (MI) et l'outil d'abrasion (RAT)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Composant / Instrument",
+            "Masse",
+            "État",
+            "Rôle scientifique & Spécifications techniques"
+          ],
+          [
+            "Atterrisseur & Bouclier thermique",
+            "~293 kg",
+            "Éparpillés",
+            "Plateforme tétraédrique d'atterrissage (Eagle Crater), bouclier thermique avant et coque arrière avec parachute largués lors de la descente atmosphérique supersonique."
+          ],
+          [
+            "Étage supérieur Star 48B (Delta II)",
+            "~130 kg",
+            "Orbite héliocentrique",
+            "Propulseur d'injection interplanétaire ayant placé Opportunity sur sa trajectoire transmaritiane en juillet 2003."
+          ]
+        ]
+      },
+      {
+        "y": 197.666015625,
+        "type": "text",
+        "text": "3. Chronologie détaillée & Jalons opérationnels"
+      },
+      {
+        "y": 221.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date / Sol",
+            "Événement & Contexte analytique"
+          ],
+          [
+            "7 juillet 2003",
+            "Lancement réussi depuis Cape Canaveral par une fusée Delta II 7925H, plaçant la sonde sur une trajectoire interplanétaire précise de 6 mois et demi."
+          ],
+          [
+            "25 janv. 2004 (Sol 1)",
+            "Atterrissage parfait à l'intérieur d'Eagle Crater à Meridiani Planum, après un rebond spectaculaire sur coussins gonflables (airbags) et une décélération par parachutes et rétrofusées."
+          ],
+          [
+            "Mars 2004 (Sol 50)",
+            "Annonce scientifique majeure : découverte des « blueberries » (sphérules d'hématite) et de structures stratifiées prouvant sans équivoque la présence passée d'eau liquide acide de surface."
+          ],
+          [
+            "2008 – 2011",
+            "Exploration prolongée de Victoria Crater puis arrivée au gigantesque cratère Endeavour après des années de traversée des dunes de sable de Meridiani."
+          ],
+          [
+            "10 juin 2018",
+            "Dernier contact radio reçu sur Terre au moment où une tempête de poussière globale obscurcit l'atmosphère martienne, privant les panneaux solaires de lumière directe."
+          ],
+          [
+            "13 fév. 2019",
+            "Clôture officielle de la mission par la NASA après plus de 1 000 tentatives infructueuses de reconnexion, couronnant un parcours total de 45,16 km."
+          ]
+        ]
+      },
+      {
+        "y": 472.916015625,
+        "type": "text",
+        "text": "4. Apports scientifiques fondamentaux & Hydrologie ancienne"
+      },
+      {
+        "y": 498.13311767578125,
+        "type": "text",
+        "text": "Opportunity a radicalement transformé notre compréhension géologique de Mars. En se posant directement sur les plaines lisses de Meridiani Planum, le rover a découvert des affleurements rocheux sédimentaires riches en sulfates de magnésium et de calcium, indiquant qu'un environnement aqueux de type mer peu profonde ou nappe phréatique affleurante a existé dans le passé géologique de la planète."
+      },
+      {
+        "y": 562.6331176757812,
+        "type": "text",
+        "text": "La découverte fortuite de concrétions riches en hématite (surnommées « blueberries ») et de rainures de dissolution dans la roche a fourni la preuve irréfutable que l'eau a non seulement circulé en grande quantité, mais qu'elle a interagi chimiquement avec les minéraux d'origine volcanique. Plus tard, à Endeavour Crater, les analyses ont mis en évidence des veines de gypse pur, témoignant de fluides neutres et non acides, beaucoup plus propices à l'apparition potentielle de formes de vie microbienne."
+      },
+      {
+        "y": 640.166015625,
+        "type": "text",
+        "text": "5. Épreuves d'ingénierie & Résilience opérationnelle"
+      },
+      {
+        "y": 665.3831176757812,
+        "type": "text",
+        "text": "Conçu pour une durée de vie nominale de 90 sols et un rayon d'action de seulement 600 mètres, Opportunity a surmonté de nombreux obstacles mécaniques et environnementaux. Le blocage de la roue avant-droite en 2005 a nécessité de faire avancer le rover en marche arrière sur de longues distances. En 2005 également, Opportunity s'est enraciné dans une dune de sable appelée « Purgatory Dune », nécessitant cinq semaines de simulations intensives sur Terre pour en extraire le véhicule."
+      },
+      {
+        "y": 742.6331176757812,
+        "type": "text",
+        "text": "Malgré l'accumulation de poussière sur ses panneaux solaires — partiellement nettoyés périodiquement par des vents de type « dust devils » —, le rover a maintenu un bilan énergétique positif pendant plus de 14 ans, démontrant une robustesse sans précédent dans l'histoire de l'exploration spatiale."
+      }
+    ],
+    [
+      {
+        "y": 62.666015625,
+        "type": "text",
+        "text": "6. Héritage technologique et scientifique"
+      },
+      {
+        "y": 87.88310241699219,
+        "type": "text",
+        "text": "L'héritage d'Opportunity perdure à travers les missions martiennes actuelles et futures. Les leçons tirées de la gestion thermique des rovers, de la navigation autonome par vision et de la conception des outils d'abrasion (RAT) ont directement inspiré les astromobiles Curiosity et Perseverance. Opportunity demeure l'archétype même de la synergie parfaite entre ingénierie de précision et investigation scientifique de terrain."
+      },
+      {
+        "y": 151.916015625,
+        "type": "text",
+        "text": "7. Sources & Références bibliographiques"
+      },
+      {
+        "y": 192.1331024169922,
+        "type": "text",
+        "text": "NASA Science — Mars Exploration Rover Mission (Opportunity) (science.nasa.gov)"
+      },
+      {
+        "y": 207.3010711669922,
+        "type": "text",
+        "text": "S. W. Squyres et al., The Opportunity Rover's Athena Science Investigation at Meridiani Planum, Science, vol. 306, 2004."
+      },
+      {
+        "y": 237.1331024169922,
+        "type": "text",
+        "text": "A. Knoll et al., Aqueous environments on Mars: The MER science investigation, Journal of Geophysical Research, 2008."
+      },
+      {
+        "y": 266.38311767578125,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche technique Opportunity (ID : 2003-032A)."
+      },
+      {
+        "y": 291.6371154785156,
+        "type": "text",
+        "text": "Référence du dossier : NASA-MER-B-OPPORTUNITY-FULL-REPORT-2026 • Document généré conformément au cahier des charges de la carte 3D du patrimoine spatial."
+      }
+    ]
+  ]
+}

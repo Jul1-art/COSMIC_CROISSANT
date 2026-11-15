@@ -1,0 +1,311 @@
+{
+  "id": "luna-15",
+  "name": "Luna 15",
+  "body": "moon",
+  "family": "luna-return",
+  "year": 1969,
+  "summary": "~2,2 t d'épaves dispersées sur la Lune dans Mare Crisium (étage de descente KTDU- 417, étage de remontée et capsule de retour écrasés lors de la descente finale le 21 juillet 1969 à ~480 km/h) · 0 objet actif en 2026 (8 jours de vol et 52 orbites lunaires) · 0 objet revenu sur Terre.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 15 (objet Ye-8-5 n° 401 — Sonde automatique lourde de retour d'échantillons lunaires)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+    ],
+    [
+      "Lancement",
+      "13 juillet 1969, 02h54m42s UTC — Cosmodrome de Baïkonour (Site 81/24), fusée Proton-K / Bloc D (8K82K)"
+    ],
+    [
+      "Impact sur la Lune",
+      "21 juillet 1969, 15h50m50s UTC — Mare Crisium (Mer des Crises), vers 17° N, 60° E (pendant le séjour d'Apollo 11 sur la Lune)"
+    ],
+    [
+      "Durée de mission",
+      "8 jours, 12 heures et 56 minutes (102 h de transit + 52 révolutions autour de la Lune)"
+    ],
+    [
+      "Type de mission",
+      "Sonde automatique de retour d'échantillons lunaires (sans équipage) — première tentative de la série Ye-8-5"
+    ],
+    [
+      "Véhicules",
+      "Proton-K / Bloc D · Étage de descente KTDU-417 (4 pieds) · Étage de remontée KRD-61 · Capsule sphérique de retour"
+    ],
+    [
+      "Statut",
+      "✖ Échec à l'atterrissage — Insertion et manœuvres en orbite lunaire réussies, mais crash final dans Mare Crisium à ~480 km/h"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche mission Luna 15 - Hardware perdu dans l_espace.pdf",
+  "pdf": "luna-15.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "COURSE À LA LUNE · CATALOGUE DU PATRIMOINE SPATIAL Luna 15 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 116.38420867919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~2,2 t d'épaves dispersées sur la Lune dans Mare Crisium (étage de descente KTDU- 417, étage de remontée et capsule de retour écrasés lors de la descente finale le 21 juillet 1969 à ~480 km/h) ·"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "0 objet actif en 2026 (8 jours de vol et 52 orbites lunaires) · 0 objet revenu sur Terre."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 15 (objet Ye-8-5 n° 401 — Sonde automatique lourde de retour d'échantillons lunaires)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+          ],
+          [
+            "Lancement",
+            "13 juillet 1969, 02h54m42s UTC — Cosmodrome de Baïkonour (Site 81/24), fusée Proton-K / Bloc D (8K82K)"
+          ],
+          [
+            "Impact sur la Lune",
+            "21 juillet 1969, 15h50m50s UTC — Mare Crisium (Mer des Crises), vers 17° N, 60° E (pendant le séjour d'Apollo 11 sur la Lune)"
+          ],
+          [
+            "Durée de mission",
+            "8 jours, 12 heures et 56 minutes (102 h de transit + 52 révolutions autour de la Lune)"
+          ],
+          [
+            "Type de mission",
+            "Sonde automatique de retour d'échantillons lunaires (sans équipage) — première tentative de la série Ye-8-5"
+          ],
+          [
+            "Véhicules",
+            "Proton-K / Bloc D · Étage de descente KTDU-417 (4 pieds) · Étage de remontée KRD-61 · Capsule sphérique de retour"
+          ],
+          [
+            "Statut",
+            "✖ Échec à l'atterrissage — Insertion et manœuvres en orbite lunaire réussies, mais crash final dans Mare Crisium à ~480 km/h"
+          ]
+        ]
+      },
+      {
+        "y": 526.9171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 558.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 591.5733642578125,
+        "type": "text",
+        "text": "A. Surface lunaire — Mare Crisium (~2,2 t à l'impact)"
+      },
+      {
+        "y": 612.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de descente Ye- 8-5 (plateforme KTDU- 417)",
+            "~1 650 kg (à sec)",
+            "▲ Écrasé (Lune)",
+            "Masse totale de 5 712 kg au lancement (dont ~3 500 kg d'ergols UDMH/N2O4). Plateforme à 4 trains d'atterrissage munie du moteur principal KTDU-417 à poussée réglable et d'un bras de forage rotatif latéral. A percuté le relief accidenté de Mare Crisium à ~133 m/s (480 km/h) le 21 juillet 1969, 4 minutes après l'allumage de freinage final."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 15 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 3"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de remontée Terre-Lune (moteur KRD-61)",
+            "~515 kg (avec ergols)",
+            "▲ Écrasé (Lune)",
+            "Module supérieur monté au sommet de l'atterrisseur, comportant 3 réservoirs sphériques d'ergols, le moteur de remontée KRD-61 (18,8 kN) et le calculateur de vol balistique destiné au retour direct vers la Terre sans correction à mi-course ; détruit lors de l'impact."
+          ],
+          [
+            "Capsule sphérique de retour atmosphérique",
+            "~35 kg",
+            "▲ Écrasée (Lune)",
+            "Sphère de 50 cm de diamètre recouverte d'un bouclier thermique ablatif, dotée d'un conteneur cylindrique étanche (destiné à recevoir la carotte de régolithe), d'un parachute et d'émetteurs radio de localisation terrestre ; détruite avec l'ensemble de la sonde."
+          ],
+          [
+            "Médaillons commémoratifs & instruments de vol",
+            "~18 kg (inclus)",
+            "▲ Écrasés (Lune)",
+            "Fanions métalliques gravés aux armoiries de l'URSS, détecteur de micrométéorites, dosimètre de radiations et téléphotomètre panoramique destinés à photographier la zone de forage."
+          ]
+        ]
+      },
+      {
+        "y": 419.0733642578125,
+        "type": "text",
+        "text": "B. Espace cislunaire & rentrée atmosphérique terrestre"
+      },
+      {
+        "y": 440.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Quatrième étage Bloc D (fusée Proton-K)",
+            "~2 450 kg (à sec)",
+            "■ Orbite solaire / haute",
+            "Étage cryogénique kérosène/oxygène liquide (moteur RD-58). Après avoir placé la sonde sur orbite terrestre de parking puis assuré l'injection translunaire le 13 juillet 1969, il s'est séparé et dérive sur une orbite héliocentrique/terrestre très haute."
+          ],
+          [
+            "Troisième étage UR-500K (fusée Proton-K)",
+            "~4 180 kg (à sec)",
+            "▲ Désintégré",
+            "Étage à ergols hypergoliques largué juste avant l'allumage du Bloc D le 13 juillet 1969 ; rentré et consumé dans l'atmosphère terrestre peu après le tir."
+          ]
+        ]
+      },
+      {
+        "y": 644.0733642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 666.270263671875,
+        "type": "text",
+        "text": "Aucun matériel récupéré : contrairement à sa mission sœur Luna 16 (qui rapportera 101 g de sol lunaire en septembre 1970 depuis Mare Fecunditatis), la capsule de retour de Luna 15 s'est écrasée sur la Lune avec le reste de la sonde. Les 1er et 2e étages de la fusée Proton-K sont retombés dans les zones d'exclusion du Kazakhstan le 13 juillet 1969."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 15 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 3"
+      }
+    ],
+    [
+      {
+        "y": 44.8233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 66.270263671875,
+        "type": "text",
+        "text": "Coiffe aérodynamique (4,35 m) & compartiments auxiliaires de croisière : coiffe larguée durant l'ascension atmosphérique terrestre le 13 juillet 1969 ; réservoirs externes auxiliaires du bus Ye-8-5 largués avant le freinage final au-dessus de Mare Crisium le 21 juillet 1969."
+      },
+      {
+        "y": 116.66712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 141.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "13 juillet 1969, 02h54m42s UTC",
+            "Décollage de la fusée Proton-K depuis Baïkonour, 3 jours avant le lancement d'Apollo 11 (après l'échec au lancement de la première sonde Ye-8-5 n° 402 le 14 juin 1969)."
+          ],
+          [
+            "17 juillet 1969, 10h00 UTC",
+            "Insertion réussie en orbite lunaire (134 × 292 km, inclinée à 126°) ; l'URSS transmet les paramètres orbitaux à la NASA pour garantir l'absence de risque de collision avec Apollo 11."
+          ],
+          [
+            "19 – 20 juillet 1969",
+            "Deux manœuvres orbitales abaissent l'orbite à 16 × 110 km au-dessus de Mare Crisium (pendant qu'Eagle alunit dans Mare Tranquillitatis à ~800 km au sud- ouest)."
+          ],
+          [
+            "21 juillet 1969, 15h46m43s UTC",
+            "Allumage de la rétro-fusée KTDU-417 pour amorcer la descente finale vers la surface lunaire (moins de 2 heures avant le décollage d'Apollo 11 depuis la Lune)."
+          ],
+          [
+            "21 juillet 1969, 15h50m50s UTC",
+            "Perte brutale des signaux radio (suivie en direct par l'observatoire de Jodrell Bank) : la sonde percute le relief montagneux de Mare Crisium à ~480 km/h (17° N, 60° E)."
+          ]
+        ]
+      },
+      {
+        "y": 394.1671447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 419.520263671875,
+        "type": "text",
+        "text": "Témoin dramatique de l'apogée de la course à la Lune : lancée comme ultime tentative soviétique pour rapporter sur Terre quelques grammes de sol lunaire avant le retour d'Apollo 11, Luna 15 a opéré en orbite lunaire simultanément avec le vol habité américain, donnant lieu au premier échange direct d'informations de sécurité spatiale entre Moscou et Houston."
+      },
+      {
+        "y": 478.020263671875,
+        "type": "text",
+        "text": "Révélation de l'impact critique des reliefs et des « mascons » sur les descentes basses : la cause du crash de Luna 15 a été attribuée à une erreur d'évaluation altimétrique au-dessus du relief accidenté bordant Mare Crisium (la sonde a heurté une montagne de ~3 km d'altitude avant la fin de sa phase de freinage) combinée aux perturbations gravitationnelles locales, conduisant les ingénieurs de Lavotchkine à revoir le profil de descente."
+      },
+      {
+        "y": 549.9322509765625,
+        "type": "text",
+        "text": "Qualification en vol de la plateforme lourde Ye-8-5 : malgré l'échec des dernières secondes d'atterrissage, Luna 15 a validé en conditions réelles le lancement par Proton-K/Bloc D, la navigation cislunaire et l'insertion en orbite basse de l'architecture Ye-8-5, permettant le triomphe de Luna 16 quatorze mois plus tard (septembre 1970)."
+      },
+      {
+        "y": 614.6671142578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 640.0869140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Luna 15 Spacecraft & Mission Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 657.3369140625,
+        "type": "text",
+        "text": "NPO Lavotchkine / IKI RAN — First Automatic Sample Return Attempt : Luna 15 (Ye-8-5)"
+      },
+      {
+        "y": 673.8369140625,
+        "type": "text",
+        "text": "Jodrell Bank Observatory Archives — Live Doppler Tracking of Luna 15 Crash during Apollo 11 (July 21, 1969)"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Apollo 13 - Prime Crew Portrait",
+      "credit": "NASA / JSC",
+      "date": "1969-12-11T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S69-62224",
+      "nasaId": "S69-62224",
+      "description": "S69-62224 (December 1969) --- The members of the prime crew of the Apollo 13 lunar landing mission (left to right) are astronauts James A. Lovell Jr., commander; Thomas K. Mattingly II, command module pilot; and Fred W. Haise Jr., lunar module pilot.  They are seated in front of a scene of the Lagoon Nebula, with the mission insignia and two items of early navigation in the foreground. Represented in the Apollo 13 emblem (center) is Apollo, the sun god of Greek mythology, symbolizing that the Apollo flights have extended the light of knowledge to all mankind. The Latin phrase Ex Luna, Scientia means \"From the Moon, Knowledge.\" The Hindu astrolabe in Sanskrit (on right) was used to predict the position of celestial bodies before the invention of the octant (on left) was used in 1790 to determine the altitude of celestial bodies from aboard ship.",
+      "src": "archives/apollo-13-nasa-S69-62224.jpg"
+    },
+    {
+      "title": "Photographic replica of the plaque Apollo 13 astronauts will leave on moon",
+      "credit": "NASA / JSC",
+      "date": "1970-04-13T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S70-34685",
+      "nasaId": "S70-34685",
+      "description": "S70-34685 (April 1970) --- A photographic replica of the plaque which the Apollo 13 astronauts will leave behind on the moon during their lunar landing mission.  Astronauts James A. Lovell Jr., commander; and Fred W. Haise Jr., lunar module pilot, will descend to the lunar surface in the Lunar Module (LM) \"Aquarius\".  Astronaut John L. Swigert Jr., command module pilot, will remain with the Command and Service Modules (CSM) in lunar orbit.  The plaque will be attached to the ladder of the landing gear strut on the LM?s descent stage.  Commemorative plaques were also left on the moon by the Apollo 11 and Apollo 12 astronauts.",
+      "src": "archives/apollo-13-nasa-S70-34685.jpg"
+    },
+    {
+      "title": "View of Mission Control Center during the Apollo 13 liftoff",
+      "credit": "NASA / JSC",
+      "date": "1970-04-11T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S70-34627",
+      "nasaId": "S70-34627",
+      "description": "S70-34627 (11 April 1970) --- Sigurd A. Sjoberg, director of flight operations, at the Manned Spacecraft Center (MSC), views the Apollo 13 liftoff from a console in the MSC Mission Control Center (MCC), Building 30.  Apollo 13 lifted off at 1:13 p.m. (CST) April 11, 1970.  Photo credit: NASA",
+      "src": "archives/apollo-13-nasa-S70-34627.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Apollo 13 Splashdown and Recovery",
+      "credit": "KSC",
+      "source": "https://images.nasa.gov/details/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373",
+      "nasaId": "KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373",
+      "src": "https://images-assets.nasa.gov/video/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373/KSC-19700417-MH-NAS01-0001-Apollo_13_Splashdown_and_Recovery_B_1373~orig.mp4",
+      "description": "Apollo 13 Splashdown and Recovery, April 1970. Total run time: 01:02:40",
+      "date": "1970-04-17T00:00:00Z",
+      "duration": 3704.934567,
+      "bitrate": 10133385,
+      "bytes": 4692941272,
+      "width": 1280,
+      "height": 720,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/apollo-13.mp4",
+    "local": true,
+    "title": "Apollo 13 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "apollo-13.pdf",
+    "fingerprint": "7f006d5af8ce48577c35bac2f98f7ee90bc46fa852c15ed0360f702d20ed5033"
+  }
+}

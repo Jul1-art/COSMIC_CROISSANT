@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "title": "Landing in Oxia Palus",
+      "credit": "NASA/JPL-Caltech/University of Arizona",
+      "date": "2019-06-12T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA23289",
+      "nasaId": "PIA23289",
+      "description": "This image shows a cratered area to the southeast of the ExoMars 2020 Rosalind Franklin rover landing site at Oxia Palus.  Selecting and characterizing landing sites is a balance between having science targets and avoiding potential obstacles, and HiRISE is used for both purposes.  Craters like this one excavate material from within the crust, including both sedimentary and igneous rocks, and scatter this material far from the crater itself. This is one of the ways that so-called \"float rocks\" (rocks that are not connected to their original outcrop) can occur across a landing site: they are often ejecta from distant impacts.  Here, an ejecta blanket is visible in the rays of material surrounding this 2-kilometer diameter crater. The ExoMars rover has a suite of cameras and a close-up imager (called CLUPI) that will be used to study these float rocks. Studying such samples has been an important way of learning about the deep crust of Mars on previous missions, notably the Spirit and Opportunity rovers and now, Curiosity.  https://photojournal.jpl.nasa.gov/catalog/PIA23289",
+      "src": "archives/rover-rosalind-franklin-nasa-PIA23289.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/rover-rosalind-franklin.mp4",
+    "local": true,
+    "title": "Rover Rosalind Franklin (ExoMars) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "rover-rosalind-franklin.pdf",
+    "fingerprint": "cb5c68bfa890e1d2eb9b1a89b01621bf2f81f932f6a74ca7c553455c5457cebf"
+  }
+}

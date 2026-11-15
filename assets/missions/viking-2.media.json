@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Viking 2 30th!",
+      "credit": "NASA/JPL/Malin Space Science Systems",
+      "date": "2006-09-03T14:00:35Z",
+      "source": "https://images.nasa.gov/details/PIA08723",
+      "nasaId": "PIA08723",
+      "description": "Viking 2 30th!",
+      "src": "archives/viking-2-nasa-PIA08723.jpg"
+    },
+    {
+      "title": "Viking 2 Image of Mars Utopian Plain",
+      "credit": "NASA/JPL",
+      "date": "2000-05-02T16:30:28Z",
+      "source": "https://images.nasa.gov/details/PIA01522",
+      "nasaId": "PIA01522",
+      "description": "Viking 2 Image of Mars Utopian Plain",
+      "src": "archives/viking-2-nasa-PIA01522.jpg"
+    },
+    {
+      "title": "ARC-2000-89-HC-271",
+      "credit": "NASA / ARC",
+      "date": "2000-04-26T10:12:11Z",
+      "source": "https://images.nasa.gov/details/ARC-2000-89-HC-271",
+      "nasaId": "ARC-2000-89-HC-271",
+      "description": "A paper collage interpreting the craters and ridged planes of Mars and the Viking 2 as it passed over Mar's surface on 2 November 1982, prior to landing.",
+      "src": "archives/viking-2-nasa-ARC-2000-89-HC-271.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/viking-2.mp4",
+    "local": true,
+    "title": "Viking 2 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "viking-2.pdf",
+    "fingerprint": "70dd26ed864215e2f3a043c140e6fe5e37fbe48d4b2213c92319b950d2d26a4e"
+  }
+}

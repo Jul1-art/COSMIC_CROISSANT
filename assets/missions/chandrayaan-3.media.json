@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "source": "https://www.nasa.gov/image-article/nasas-lro-observes-chandrayaan-3-landing-site/",
+      "title": "Site d’atterrissage de Chandrayaan-3 observé par LRO",
+      "credit": "NASA / Goddard / Arizona State University",
+      "src": "archives/chandrayaan-3-reviewed-1.png"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/chandrayaan-3.mp4",
+    "local": true,
+    "title": "Chandrayaan 3 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "chandrayaan-3.pdf",
+    "fingerprint": "f2950039fbe103e5e23f5e8bb417653488e0b06d0c43b44d587be395e5bd76f8"
+  }
+}

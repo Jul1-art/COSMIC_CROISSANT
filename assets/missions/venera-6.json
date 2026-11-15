@@ -1,0 +1,270 @@
+{
+  "id": "venera-6",
+  "name": "Venera 6",
+  "body": "venus",
+  "family": "venera-early",
+  "year": 1969,
+  "summary": "~1 130 kg de masse totale lancée (bus interplanétaire + capsule de descente renforcée de 410 kg) • 0 objet actif • Sœur jumelle de Venera 5, ayant transmis des données atmosphériques approfondies pendant 51 minutes jusqu'à ~10–12 km d'altitude le 17 mai 1969.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 6 (Венера-6, appareil 2V n° 332, COSPAR 1969-002A)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (NPO Lavotchkine) — programme Venera"
+    ],
+    [
+      "Lancement",
+      "10 janvier 1969, 05h51 UTC — Cosmodrome de Baïkonour (site 1/5), fusée Molnia- M (8K78M)"
+    ],
+    [
+      "Entrée atmosphérique",
+      "17 mai 1969 — Atmosphère de Vénus (nuit, ~5° S, 23° E estimé)"
+    ],
+    [
+      "Fin de mission",
+      "17 mai 1969 (fin des transmissions à ~10–12 km d'altitude suite à la pression de ~40 atm et la température de ~380 °C)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde automatique combinant bus de croisière et capsule sphérique renforcée)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur Molnia-M, étage supérieur Blok L, bus interplanétaire, capsule de descente (410 kg)"
+    ],
+    [
+      "Statut",
+      "Réussite majeure — mission conjointe avec Venera 5, fournissant des données de pression et de température record en altitude plus profonde."
+    ]
+  ],
+  "sourceFile": "Vénus/Venera 6 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "venera-6.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Venera 6 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~1 130 kg de masse totale lancée (bus interplanétaire + capsule de descente renforcée de 410 kg) • 0 objet actif • Sœur jumelle de Venera 5, ayant transmis des données"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "atmosphériques approfondies pendant 51 minutes jusqu'à ~10–12 km d'altitude le 17 mai 1969."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 6 (Венера-6, appareil 2V n° 332, COSPAR 1969-002A)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (NPO Lavotchkine) — programme Venera"
+          ],
+          [
+            "Lancement",
+            "10 janvier 1969, 05h51 UTC — Cosmodrome de Baïkonour (site 1/5), fusée Molnia- M (8K78M)"
+          ],
+          [
+            "Entrée atmosphérique",
+            "17 mai 1969 — Atmosphère de Vénus (nuit, ~5° S, 23° E estimé)"
+          ],
+          [
+            "Fin de mission",
+            "17 mai 1969 (fin des transmissions à ~10–12 km d'altitude suite à la pression de ~40 atm et la température de ~380 °C)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde automatique combinant bus de croisière et capsule sphérique renforcée)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur Molnia-M, étage supérieur Blok L, bus interplanétaire, capsule de descente (410 kg)"
+          ],
+          [
+            "Statut",
+            "Réussite majeure — mission conjointe avec Venera 5, fournissant des données de pression et de température record en altitude plus profonde."
+          ]
+        ]
+      },
+      {
+        "y": 511.76544189453125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 546.1342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 580.2205810546875,
+        "type": "text",
+        "text": "A. Atmosphère de Vénus (~1 130 kg au total)"
+      },
+      {
+        "y": 600.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Capsule de descente renforcée",
+            "410 kg",
+            "Détruit en altitude",
+            "Sphère renforcée jumelle de Venera 5 (détruite à ~10-12 km)."
+          ],
+          [
+            "Analyseurs de gaz & capteurs d'altitude",
+            "~35 kg",
+            "Détruits / inactifs",
+            "Chambres d'analyse chimique de l'air, baromètres haute pression et capteurs de température sous conditions extrêmes."
+          ],
+          [
+            "Bus interplanétaire & étage Blok L",
+            "~685 kg",
+            "Détruit / brûlé",
+            "Structure de transport consumée le 17 mai 1969."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 46.2205810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 65.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étages inférieurs 1, 2, 3 de la fusée Molnia-M",
+            "~30 000 kg (total)",
+            "Écrasés / brûlés",
+            "Propulseurs d'appoint et étages inférieurs du lanceur soviétique retombés dans les zones balistiques au Kazakhstan ou consumés lors de l'injection initiale."
+          ]
+        ]
+      },
+      {
+        "y": 154.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 173.5869140625,
+        "type": "text",
+        "text": "Modèle d'ingénierie (NPO Lavotchkine) : réplique exacte conservée dans les musées spatiaux russes pour l'analyse historique."
+      },
+      {
+        "y": 205.0869140625,
+        "type": "text",
+        "text": "Archives télémétriques : enregistrements intégraux des 51 minutes de mesures atmosphériques de haute précision archivés par l'Académie des sciences d'URSS."
+      },
+      {
+        "y": 240.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 266.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "10 janvier 1969",
+            "Décollage réussi de la fusée Molnia-M depuis Baïkonour ; injection de Venera 6 sur une trajectoire interplanétaire vers Vénus."
+          ],
+          [
+            "16 mars 1969",
+            "Exécution réussie d'une correction de trajectoire à mi-course pour optimiser l'angle d'interception de la planète."
+          ],
+          [
+            "17 mai 1969",
+            "Arrivée à Vénus (exactement 24 heures après Venera 5) : séparation de la capsule (410 kg) qui pénètre dans l'atmosphère nocturne et déploie son parachute."
+          ],
+          [
+            "17 mai 1969 (51 min)",
+            "La capsule transmet en continu de précieuses données atmosphériques, sondant des couches encore plus profondes que sa prédécesseure."
+          ],
+          [
+            "17 mai 1969 (fin)",
+            "À ~10–12 km d'altitude, la pression atteint ~4,0 MPa (~40 atm) et la température ~380 °C, provoquant l'écrasement de la capsule."
+          ]
+        ]
+      },
+      {
+        "y": 473.51544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 500.5869140625,
+        "type": "text",
+        "text": "Exploration en tandem avec Venera 5 : lancée cinq jours après Venera 5 et arrivée un jour plus tard sur un site voisin, Venera 6 a permis de croiser les mesures atmosphériques pour valider l'homogénéité des conditions extrêmes sur Vénus."
+      },
+      {
+        "y": 545.5869140625,
+        "type": "text",
+        "text": "Pénétration record en altitude : en transmettant des données jusqu'à 10–12 km de la surface sous une pression de 40 atmosphères, Venera 6 a repoussé les limites de résistance thermique et mécanique des sondes de l'époque."
+      },
+      {
+        "y": 591.3369140625,
+        "type": "text",
+        "text": "Héritage direct : l'accumulation de ces données d'altitude a permis de concevoir les protections blindées ultérieures (Venera 7), qui parviendront enfin à transmettre depuis le sol solide de Vénus."
+      },
+      {
+        "y": 626.5154418945312,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 653.5869140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Venera 6 (ID : 1969- 002A)"
+      },
+      {
+        "y": 684.3369140625,
+        "type": "text",
+        "text": "V. S. Avduevsky et al., Atmospheric Parameters of Venus According to Data Obtained by Venera 5 and Venera 6, Journal of Atmospheric Sciences, 1970"
+      },
+      {
+        "y": 715.8369140625,
+        "type": "text",
+        "text": "B. Harvey, Soviet and Russian Lunar Exploration, Springer Praxis Books, 2007"
+      }
+    ]
+  ]
+}

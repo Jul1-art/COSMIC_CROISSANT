@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Voyager 2 Preparing for Launch",
+      "credit": "NASA/JPL-Caltech",
+      "date": "1977-08-05T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA21742",
+      "nasaId": "PIA21742",
+      "description": "NASA's Voyager 2 spacecraft, encapsulated within its payload fairing, is seen on August 5, 1977. It launched atop the Titan/Centaur-7 launch vehicle from Cape Canaveral Air Force Station in Florida on August 20, 1977, at 10:29 a.m. local time.  https://photojournal.jpl.nasa.gov/catalog/PIA21742",
+      "src": "archives/voyager-2-nasa-PIA21742.jpg"
+    },
+    {
+      "title": "Voyager 2 Launch",
+      "credit": "NASA/JPL",
+      "date": "1998-10-30T14:49:14Z",
+      "source": "https://images.nasa.gov/details/PIA01480",
+      "nasaId": "PIA01480",
+      "description": "NASA Voyager 2 was launched on Aug. 20, 1977 from the NASA Kennedy Space Center at Cape Canaveral in Florida where it was propelled into space on a Titan/Centaur rocket.",
+      "src": "archives/voyager-2-nasa-PIA01480.jpg"
+    },
+    {
+      "title": "Voyager 2 in Launch Vehicle",
+      "credit": "NASA/JPL-Caltech/KSC",
+      "date": "2017-07-05T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA21727",
+      "nasaId": "PIA21727",
+      "description": "The Voyager 2 spacecraft, encapsulated within its payload fairing, is seen in August 1977, as it was being hoisted upward for attachment to its launch vehicle at NASA's Kennedy Space Center in Cape Canaveral, Florida.  https://photojournal.jpl.nasa.gov/catalog/PIA21727",
+      "src": "archives/voyager-2-nasa-PIA21727.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/voyager-2.mp4",
+    "local": true,
+    "title": "Voyager 2 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "voyager-2.pdf",
+    "fingerprint": "d30a77836674ee3c8d2bfb26d05b852d2a2266228ce9e2d3c29e2994033753d2"
+  }
+}

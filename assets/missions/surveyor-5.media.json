@@ -1,0 +1,32 @@
+{
+  "images": [
+    {
+      "title": "Surveyor 5 Footpad Resting on the Lunar Soil",
+      "credit": "NASA/JPL",
+      "date": "2000-11-04T23:29:50Z",
+      "source": "https://images.nasa.gov/details/PIA02978",
+      "nasaId": "PIA02978",
+      "description": "Surveyor 5 image of the footpad resting in the lunar soil. The trench at right was formed by the footpad sliding during landing. Surveyor 5 landed on the Moon on 11 September 1967 at 1.41 N, 23.18E in Mare Tranquillitatis.",
+      "src": "archives/surveyor-5-nasa-PIA02978.jpg"
+    },
+    {
+      "title": "Surveyor 5: A Hole-in-One",
+      "credit": "NASA/GSFC/Arizona State University",
+      "date": "2010-03-21T22:44:34Z",
+      "source": "https://images.nasa.gov/details/PIA12977",
+      "nasaId": "PIA12977",
+      "description": "Surveyor 5 sitting in a 10-meter diameter crater. Surveyor 5 landed on Mare Tranquillitatis in September of 1967. This image was taken by NASA Lunar Reconnaissance Orbiter.",
+      "src": "archives/surveyor-5-nasa-PIA12977.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/surveyor-5.mp4",
+    "local": true,
+    "title": "Surveyor 5 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "surveyor-5.pdf",
+    "fingerprint": "5388c8c18c3d405b78050c9bb55b4690ae74b2e07f847126cb1c4b4dd5e9d68b"
+  }
+}

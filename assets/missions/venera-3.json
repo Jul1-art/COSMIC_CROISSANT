@@ -1,0 +1,266 @@
+{
+  "id": "venera-3",
+  "name": "Venera 3",
+  "body": "venus",
+  "family": "venera-early",
+  "year": 1965,
+  "summary": "~960 kg de masse totale lancée (bus interplanétaire + module d'atterrissage sphérique de 337 kg) • 0 objet actif • Premier objet fabriqué par l'humanité à atteindre la surface d'une autre planète (impact le 1er mars 1966 sur Vénus).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Venera 3 (Венера-3, appareil 3VOM n° 1, COSPAR 1965-092A)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique (OKB-1 de Sergueï Korolev) — programme Venera"
+    ],
+    [
+      "Lancement",
+      "16 novembre 1965, 04h19 UTC — Cosmodrome de Baïkonour (site 31/6), fusée Molnia-M (8K78M)"
+    ],
+    [
+      "Impact sur Vénus",
+      "1 mars 1966 — Surface de Vénus (face nocturne, ~0° N, 20° E estimé)"
+    ],
+    [
+      "Fin de mission",
+      "16 février 1966 (perte définitive des télécommunications radio peu avant l'arrivée en raison d'une surchauffe interne)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde automatique combinant un bus de croisière et une capsule d'atterrissage)"
+    ],
+    [
+      "Véhicules",
+      "Lanceur Molnia-M, étage supérieur Blok L, bus interplanétaire, capsule d'atterrissage sphérique (337 kg)"
+    ],
+    [
+      "Statut",
+      "Succès historique partiel — premier contact physique de l'histoire avec une autre planète, mais sans transmission de données atmosphériques (panne radio préalable)."
+    ]
+  ],
+  "sourceFile": "Vénus/Venera 3 - Fiche « Plus de détails » (Mise à jour Hardware).pdf",
+  "pdf": "venera-3.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Venera 3 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 130.24322509765625,
+        "type": "text",
+        "text": "Synthèse hardware : ~960 kg de masse totale lancée (bus interplanétaire + module d'atterrissage sphérique de 337 kg) • 0 objet actif • Premier objet fabriqué par l'humanité à atteindre la surface d'une"
+      },
+      {
+        "y": 159.28504943847656,
+        "type": "text",
+        "text": "autre planète (impact le 1er mars 1966 sur Vénus)."
+      },
+      {
+        "y": 199.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 225.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Venera 3 (Венера-3, appareil 3VOM n° 1, COSPAR 1965-092A)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique (OKB-1 de Sergueï Korolev) — programme Venera"
+          ],
+          [
+            "Lancement",
+            "16 novembre 1965, 04h19 UTC — Cosmodrome de Baïkonour (site 31/6), fusée Molnia-M (8K78M)"
+          ],
+          [
+            "Impact sur Vénus",
+            "1 mars 1966 — Surface de Vénus (face nocturne, ~0° N, 20° E estimé)"
+          ],
+          [
+            "Fin de mission",
+            "16 février 1966 (perte définitive des télécommunications radio peu avant l'arrivée en raison d'une surchauffe interne)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde automatique combinant un bus de croisière et une capsule d'atterrissage)"
+          ],
+          [
+            "Véhicules",
+            "Lanceur Molnia-M, étage supérieur Blok L, bus interplanétaire, capsule d'atterrissage sphérique (337 kg)"
+          ],
+          [
+            "Statut",
+            "Succès historique partiel — premier contact physique de l'histoire avec une autre planète, mais sans transmission de données atmosphériques (panne radio préalable)."
+          ]
+        ]
+      },
+      {
+        "y": 527.5154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 561.8842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 595.9705810546875,
+        "type": "text",
+        "text": "A. Surface & atmosphère de Vénus (~960 kg au total)"
+      },
+      {
+        "y": 615.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet / Instrument",
+            "Masse",
+            "État",
+            "Détails & Rôle scientifique"
+          ],
+          [
+            "Capsule d'atterrissage sphérique",
+            "337 kg",
+            "Détruit / écrasé",
+            "Sphère pressurisée stérilisée s'étant écrasée sur la face nocturne le 1er mars 1966."
+          ],
+          [
+            "Instruments scientifiques embarqués",
+            "~25 kg",
+            "Détruits / inactifs",
+            "Capteurs de température, pression, détecteurs de micrométéorites et émetteurs radio haute fréquence (silencieux suite à la panne du 16 fév.)."
+          ],
+          [
+            "Bus interplanétaire & étage Blok L",
+            "~598 kg",
+            "Détruit / brûlé",
+            "Structure de croisière et propulseur consommés dans l'atmosphère vénusienne."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 46.9705810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 66.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étages inférieurs 1, 2, 3 de la fusée Molnia-M",
+            "~30 000 kg (total)",
+            "Écrasés / brûlés",
+            "Propulseurs d'appoint et étages inférieurs du lanceur soviétique retombés dans les zones balistiques autorisées au Kazakhstan ou consumés lors de la mise en orbite parking."
+          ]
+        ]
+      },
+      {
+        "y": 162.4705810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 184.6033477783203,
+        "type": "text",
+        "text": "Modèle d'ingénierie (OKB-1) : maquettes de test de la capsule sphérique conservées dans les musées spatiaux russes."
+      },
+      {
+        "y": 219.1033477783203,
+        "type": "text",
+        "text": "Données de télémétrie de transit : enregistrements du voyage interplanétaire et des corrections de trajectoire (26 décembre 1965)."
+      },
+      {
+        "y": 255.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 282.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "16 novembre 1965",
+            "Décollage réussi de la fusée Molnia-M depuis Baïkonour ; injection de Venera 3 sur une trajectoire interplanétaire vers Vénus."
+          ],
+          [
+            "26 décembre 1965",
+            "Exécution réussie d'une correction de trajectoire à mi-course pour affiner l'axe d'interception de la planète Vénus."
+          ],
+          [
+            "16 février 1966",
+            "Panne critique et définitive des systèmes de télécommunication à bord, probablement due à la surchauffe des équipements électroniques durant l'approche."
+          ],
+          [
+            "1 mars 1966",
+            "Venera 3 pénètre l'atmosphère et s'écrase sur la surface de Vénus, devenant le tout premier objet façonné par l'homme à toucher un autre corps céleste."
+          ]
+        ]
+      },
+      {
+        "y": 472.01544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 502.6033630371094,
+        "type": "text",
+        "text": "Premier impact planétaire de l'histoire : bien que la perte des communications le 16 février 1966 ait empêché la capsule de transmettre ses relevés atmosphériques in situ, Venera 3 a accompli l'exploit technique sans précédent d'atteindre physiquement une autre planète."
+      },
+      {
+        "y": 551.3533325195312,
+        "type": "text",
+        "text": "Pionnier de la stérilité planétaire : la sonde fut l'un des premiers engins spatiaux à subir des protocoles stricts de décontamination thermique pour éviter toute contamination biologique de Vénus."
+      },
+      {
+        "y": 585.8533325195312,
+        "type": "text",
+        "text": "Ouverture de l'ère vénusienne soviétique : les leçons tirées de la défaillance thermique de Venera 3 ont permis de concevoir les blindages renforcés des missions suivantes (notamment Venera 4, qui réussira à transmettre des données atmosphériques en 1967)."
+      },
+      {
+        "y": 637.7654418945312,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 667.6033325195312,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Venera 3 (ID : 1965- 092A)"
+      },
+      {
+        "y": 702.1033325195312,
+        "type": "text",
+        "text": "B. Harvey, Soviet and Russian Lunar Exploration, Springer Praxis Books, 2007"
+      },
+      {
+        "y": 720.8533325195312,
+        "type": "text",
+        "text": "A. J. Perminov, The Difficult Road to Mars: A Brief History of Soviet Lunar and Planetary Exploration, NASA History Division, 1999"
+      }
+    ]
+  ]
+}

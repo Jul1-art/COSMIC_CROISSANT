@@ -1,0 +1,395 @@
+{
+  "id": "luna-3",
+  "name": "Luna 3",
+  "body": "moon",
+  "family": "luna-orbiter",
+  "year": 1959,
+  "summary": "sonde de 278,5 kg probablement retombée dans l'atmosphère en 1960 (date incertaine) · 1 étage Blok-E d'échappement (+156,5 kg d'instrumentation), devenir non précisé · 1 système d'imagerie Yenisey-2 (40 vues de film 35 mm) · 29 photos de la face cachée de la Lune, 17 reçues sur Terre · aucun élément récupéré",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 3 (E-2A)"
+    ],
+    [
+      "Agence & programme",
+      "Union soviétique — programme Luna"
+    ],
+    [
+      "Lancement",
+      "4 octobre 1959, 00h43 UTC — Baïkonour, fusée Luna 8K72 (Vostok) avec étage Blok-E"
+    ],
+    [
+      "Survol lunaire",
+      "6 octobre 1959, 14h16 UTC, à ~6 200 km, près du pôle sud lunaire"
+    ],
+    [
+      "Photographie",
+      "7 octobre 1959, 03h30–04h10 UTC : 29 clichés de la face cachée, ~70 % de sa surface"
+    ],
+    [
+      "Orbite après survol",
+      "Orbite terrestre allongée : apogée initiale ~480 000 km, périgée ~47 500 km"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — la sonde a probablement brûlé dans l'atmosphère en 1960"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Luna 8K72 · étage Blok-E · sonde Luna 3"
+    ],
+    [
+      "Statut",
+      "Réussie — premières images de la face cachée de la Lune ; contact perdu en octobre 1959"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche-mission-Luna-3-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "luna-3.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Luna 3 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : sonde de 278,5 kg probablement retombée dans l'atmosphère en 1960 (date incertaine) · 1 étage Blok-E d'échappement (+156,5 kg d'instrumentation), devenir non précisé · 1 système d'imagerie Yenisey-2 (40 vues de film 35 mm) · 29 photos de la face cachée de la Lune, 17 reçues sur Terre · aucun élément récupéré"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 3 (E-2A)"
+          ],
+          [
+            "Agence & programme",
+            "Union soviétique — programme Luna"
+          ],
+          [
+            "Lancement",
+            "4 octobre 1959, 00h43 UTC — Baïkonour, fusée Luna 8K72 (Vostok) avec étage Blok-E"
+          ],
+          [
+            "Survol lunaire",
+            "6 octobre 1959, 14h16 UTC, à ~6 200 km, près du pôle sud lunaire"
+          ],
+          [
+            "Photographie",
+            "7 octobre 1959, 03h30–04h10 UTC : 29 clichés de la face cachée, ~70 % de sa surface"
+          ],
+          [
+            "Orbite après survol",
+            "Orbite terrestre allongée : apogée initiale ~480 000 km, périgée ~47 500 km"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — la sonde a probablement brûlé dans l'atmosphère en 1960"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Luna 8K72 · étage Blok-E · sonde Luna 3"
+          ],
+          [
+            "Statut",
+            "Réussie — premières images de la face cachée de la Lune ; contact perdu en octobre 1959"
+          ]
+        ]
+      },
+      {
+        "y": 459.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 484.2606201171875,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 526.596923828125,
+        "type": "text",
+        "text": "A. Orbite terrestre allongée — sonde Luna 3"
+      },
+      {
+        "y": 544.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde Luna 3",
+            "278,5 kg ; 1,3 m × 1,19 m",
+            "",
+            "Cylindre à deux calottes, cellules solaires, volets thermiques, jets de gaz ; contact perdu le 22 octobre 1959 ; probablement retombée en mars-avril 1960 après ~11 révolutions (sources divergentes)"
+          ],
+          [
+            "Système d'imagerie Yenisey-2",
+            "—",
+            "",
+            "Caméra à deux objectifs, développement automatique du film à bord, puis scanner à balayage ; film de 40 vues de 35 mm"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques"
+      },
+      {
+        "y": 72.3543930053711,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "Caméra AFA-E1 (200 mm f/5,6 et 500 mm f/9,5)",
+            "Imagerie",
+            "",
+            "Obturateur mécanique bloqué à ~66 700 km après 29 clichés"
+          ],
+          [
+            "Détecteurs de micrométéoroïdes",
+            "Poussières",
+            "",
+            "À bord de la sonde"
+          ],
+          [
+            "Détecteurs de rayons cosmiques",
+            "Rayonnement",
+            "",
+            "À bord de la sonde"
+          ],
+          [
+            "Cellules photoélectriques et capteurs Soleil/Lune",
+            "Orientation",
+            "",
+            "Commandent les jets de gaz de contrôle d'attitude"
+          ]
+        ]
+      },
+      {
+        "y": 208.39697265625,
+        "type": "text",
+        "text": "C. Étage de lancement et trajectoire"
+      },
+      {
+        "y": 226.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Blok-E",
+            "+156,5 kg d'in strumentation",
+            "",
+            "Étage d'échappement ; son devenir n'est pas précisé dans mes sources"
+          ],
+          [
+            "Étages inférieurs de la Luna 8K72",
+            "n.c.",
+            "",
+            "Retombés ou abandonnés ; non précisé"
+          ]
+        ]
+      },
+      {
+        "y": 322.3969421386719,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 339.6043701171875,
+        "type": "text",
+        "text": "• Rien : aucun élément matériel récupéré"
+      },
+      {
+        "y": 356.6043701171875,
+        "type": "text",
+        "text": "• Seules les images transmises par radio sont revenues : environ 17 reçues (certaines sources : 12), dont quelques-unes publiées"
+      },
+      {
+        "y": 398.3969421386719,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 415.6043701171875,
+        "type": "text",
+        "text": "• Étages inférieurs de la fusée, séparés pendant l'ascension ; non détaillés dans mes sources"
+      },
+      {
+        "y": 452.7176513671875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 475.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "4 octobre 1959, 00h43",
+            "Lancement depuis Baïkonour, trajectoire directe vers la Lune"
+          ],
+          [
+            "6 octobre 1959, 14h16",
+            "Survol lunaire à ~6 200 km près du pôle sud ; assistance gravitationnelle vers une orbite terrestre"
+          ],
+          [
+            "7 octobre 1959, 03h30",
+            "Début de la photographie de la face cachée à ~65 200 km (voir séquence ci-dessous)"
+          ],
+          [
+            "8 octobre 1959",
+            "Premières tentatives de transmission : les quatre premières sans image exploitable"
+          ],
+          [
+            "10 octobre 1959",
+            "Sonde à ~480 000 km de la Terre"
+          ],
+          [
+            "18 octobre 1959",
+            "Passage près de la Terre ; 17 photos reçues"
+          ],
+          [
+            "22 octobre 1959",
+            "Perte de contact"
+          ],
+          [
+            "Mars-avril 1960",
+            "Rentrée probable dans l'atmosphère (29 mars dans une source)"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "Séquence d'imagerie"
+      },
+      {
+        "y": 72.35433959960938,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "Approche",
+            "Capteurs Soleil et Lune pilotent les jets de gaz pour orienter la sonde"
+          ],
+          [
+            "03h30",
+            "Début des prises de vue depuis ~65 200 km"
+          ],
+          [
+            "~40 min",
+            "29 clichés, couvrant ~70 % de la face cachée"
+          ],
+          [
+            "~66 700 km",
+            "Obturateur mécanique bloqué ; fin des prises de vue"
+          ],
+          [
+            "À bord",
+            "Développement automatique du film, puis balayage pour transmission radio (jusqu'à 1 000 lignes)"
+          ],
+          [
+            "Retour",
+            "Signal faible : quatre premiers essais sans image exploitable ; 17 photos reçues au périgée du 18 octobre"
+          ]
+        ]
+      },
+      {
+        "y": 246.91766357421875,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 268.4043884277344,
+        "type": "text",
+        "text": "• Premières images de la face cachée de la Lune : floues et bruitées, mais elles montraient très peu de mers sombres, ce que des sondes ultérieures ont confirmé."
+      },
+      {
+        "y": 299.4043884277344,
+        "type": "text",
+        "text": "• Premières : première sonde stabilisée sur trois axes et première utilisation d'une assistance gravitationnelle (d'après la page consultée)."
+      },
+      {
+        "y": 330.4043884277344,
+        "type": "text",
+        "text": "• Cellules solaires : première sonde soviétique à recharger ses batteries ainsi."
+      },
+      {
+        "y": 347.4043884277344,
+        "type": "text",
+        "text": "• Noms : des reliefs de la face cachée ont reçu des noms (mer de Moscou, cratères Tsiolkovski, Jules Verne, Marie Curie, Edison) ; la « mer du Désir » s'est révélée correspondre à une autre formation."
+      },
+      {
+        "y": 378.4043884277344,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (l'URSS, aujourd'hui la Russie) ; aucune appropriation nationale n'est possible dans l'espace."
+      },
+      {
+        "y": 443.51763916015625,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 465.0043640136719,
+        "type": "text",
+        "text": "• Wikipedia (miroir cavac.at) — Luna 3 : imagerie, dates, noms"
+      },
+      {
+        "y": 482.0043640136719,
+        "type": "text",
+        "text": "• Orbital Focus — journal de bord de Luna 3 : heures, distances"
+      },
+      {
+        "y": 499.0043640136719,
+        "type": "text",
+        "text": "• Drew Ex Machina — « Luna 3: Shedding Light on the Dark Side of the Moon » : masse, film, orbite"
+      }
+    ]
+  ]
+}

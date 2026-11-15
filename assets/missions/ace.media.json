@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "KSC-97PC1230",
+      "credit": "NASA / KSC",
+      "date": "1997-08-11T00:00:00Z",
+      "source": "https://images.nasa.gov/details/KSC-97PC1230",
+      "nasaId": "KSC-97PC1230",
+      "description": "Extension of the solar panels is tested on the Advanced Composition Explorer (ACE) spacecraft in KSC’s Spacecraft Assembly and Encapsulation Facility-II (SAEF-II). Scheduled for launch on a Delta II rocket from Cape Canaveral Air Station on Aug. 25, ACE will study low-energy particles of solar origin and high-energy galactic particles. The collecting power of instruments aboard ACE is 10 to 1,000 times greater than anything previously flown to collect similar data by NASA",
+      "src": "archives/ace-nasa-KSC-97PC1230.jpg"
+    },
+    {
+      "title": "KSC-97DC1283",
+      "credit": "NASA / KSC",
+      "date": "1997-08-19T00:00:00Z",
+      "source": "https://images.nasa.gov/details/KSC-97DC1283",
+      "nasaId": "KSC-97DC1283",
+      "description": "Workers make final checks as the second part of the bi-sector payload fairing for the Advanced Composition Explorer (ACE) is closed around the spacecraft at Launch Complex 17A, Cape Canaveral Air Station. ACE will be launched on a Boeing Delta II expendable launch vehicle. The spacecraft will investigate the origin and evolution of solar phenomenon, the formation of solar corona, solar flares and acceleration of the solar wind. This will be the second Delta launch under the Boeing name and the first from Cape Canaveral. Liftoff is scheduled Aug. 24",
+      "src": "archives/ace-nasa-KSC-97DC1283.jpg"
+    },
+    {
+      "title": "KSC-97PC904",
+      "credit": "NASA / KSC",
+      "date": "1997-06-16T00:00:00Z",
+      "source": "https://images.nasa.gov/details/KSC-97PC904",
+      "nasaId": "KSC-97PC904",
+      "description": "Workers in the Spacecraft Assembly and  Encapsulation Facility-2 (SAEF-2) begin prelaunch processing of the Advanced  Composition Explorer (ACE) which will investigate the origin and evolution of solar  phenomenon, the formation of the solar corona, solar flares and the acceleration of the  solar wind. ACE was built for NASA by the Johns Hopkins Applied Physics Laboratory.  The spacecraft is scheduled to be launched Aug. 21 aboard a two-stage Delta II 7920-8  rocket from Space Launch Complex 17, Pad A",
+      "src": "archives/ace-nasa-KSC-97PC904.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/ace.mp4",
+    "local": true,
+    "title": "ACE (Advanced Composition Explorer) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "ace.pdf",
+    "fingerprint": "c6c7dcdf59296b5e1ba59746bb704a3d169993fd9c95a089a308f765522b8dac"
+  }
+}

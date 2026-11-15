@@ -1,0 +1,392 @@
+{
+  "id": "chang-e-1",
+  "name": "Chang'e 1",
+  "body": "moon",
+  "family": "orbiter",
+  "year": 2007,
+  "summary": "orbiteur de 2 350 kg écrasé volontairement sur la Lune le 1er mars 2009, épave repérée sur des images de la sonde LRO · 24 instruments selon Wikipédia (caméra stéréo, altimètre laser, spectromètres, radiomètre…) · étages de la Long March 3A, devenir non précisé · aucun élément récupéré · première sonde lunaire chinoise : carte 3D de la Lune, ~1 400 gigabits de données",
+  "facts": [
+    [
+      "Nom officiel",
+      "Chang'e 1 (Chang'e-1)"
+    ],
+    [
+      "Agence & programme",
+      "CNSA (Chine) — programme chinois d'exploration lunaire"
+    ],
+    [
+      "Lancement",
+      "24 octobre 2007, 10h05 UTC — Long March 3A, centre de Xichang (Sichuan)"
+    ],
+    [
+      "Orbite lunaire",
+      "Circulaire à ~200 km d'altitude, inclinaison 64° (« polaire » dans le texte), période 127 min"
+    ],
+    [
+      "Insertion en orbite lunaire",
+      "5 novembre 2007 ; première image le 26 novembre 2007"
+    ],
+    [
+      "Fin de mission",
+      "1er mars 2009, 08h13:10 UTC — impact contrôlé près de 1,5° S, 52,4° E"
+    ],
+    [
+      "Durée",
+      "Prévue 1 an ; réelle 1 an, 4 mois et 5 jours"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Long March 3A · orbiteur Chang'e 1"
+    ],
+    [
+      "Statut",
+      "Réussie — carte 3D de la Lune ; orbiteur écrasé volontairement le 1er mars 2009"
+    ]
+  ],
+  "sourceFile": "Lune/Chang_e/Fiche-mission-Chang-e-1-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "chang-e-1.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Chang'e 1 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : orbiteur de 2 350 kg écrasé volontairement sur la Lune le 1er mars 2009, épave repérée sur des images de la sonde LRO · 24 instruments selon Wikipédia (caméra stéréo, altimètre laser, spectromètres, radiomètre…) · étages de la Long March 3A, devenir non précisé · aucun élément récupéré · première sonde lunaire chinoise : carte 3D de la Lune, ~1 400 gigabits de données"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Chang'e 1 (Chang'e-1)"
+          ],
+          [
+            "Agence & programme",
+            "CNSA (Chine) — programme chinois d'exploration lunaire"
+          ],
+          [
+            "Lancement",
+            "24 octobre 2007, 10h05 UTC — Long March 3A, centre de Xichang (Sichuan)"
+          ],
+          [
+            "Orbite lunaire",
+            "Circulaire à ~200 km d'altitude, inclinaison 64° (« polaire » dans le texte), période 127 min"
+          ],
+          [
+            "Insertion en orbite lunaire",
+            "5 novembre 2007 ; première image le 26 novembre 2007"
+          ],
+          [
+            "Fin de mission",
+            "1er mars 2009, 08h13:10 UTC — impact contrôlé près de 1,5° S, 52,4° E"
+          ],
+          [
+            "Durée",
+            "Prévue 1 an ; réelle 1 an, 4 mois et 5 jours"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Long March 3A · orbiteur Chang'e 1"
+          ],
+          [
+            "Statut",
+            "Réussie — carte 3D de la Lune ; orbiteur écrasé volontairement le 1er mars 2009"
+          ]
+        ]
+      },
+      {
+        "y": 448.1176452636719,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 473.06060791015625,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 515.39697265625,
+        "type": "text",
+        "text": "A. Surface lunaire — impact contrôlé"
+      },
+      {
+        "y": 533.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur Chang'e 1",
+            "2 350 kg (dont 130 kg de charge utile)",
+            "",
+            "Écrasé le 1er mars 2009 à 08h13:10 UTC ; « impact planifié et contrôlé » ; emplacement estimé vers 1,66° S, 52,27° E, identifié sur des images LRO"
+          ],
+          [
+            "Instruments scientifiques",
+            "130 kg",
+            "",
+            "Détruits avec l'orbiteur (voir B)"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques"
+      },
+      {
+        "y": 72.35438537597656,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "Caméra stéréo et spectro-imageur",
+            "Imagerie",
+            "",
+            "Résolution optique de 120 m ; spectro-imageur de 0,48 à 0,96 µm"
+          ],
+          [
+            "Altimètre laser",
+            "Altimétrie",
+            "",
+            "1 064 nm, résolution verticale de 1 m"
+          ],
+          [
+            "Spectromètre imageur",
+            "Minéralogie",
+            "",
+            "Cartographie de la composition"
+          ],
+          [
+            "Spectromètres gamma et X",
+            "Éléments chimiques",
+            "",
+            "Abondances d'éléments dans le sol"
+          ],
+          [
+            "Radiomètre micro-ondes",
+            "Radiométrie",
+            "",
+            "3, 7,8, 19,35 et 37 GHz ; premier radiomètre multicanal passif sur la Lune"
+          ],
+          [
+            "Détecteur de particules et détecteurs de vent solaire",
+            "Environnement spatial",
+            "",
+            "Haute énergie + 2 détecteurs de vent solaire"
+          ]
+        ]
+      },
+      {
+        "y": 271.19696044921875,
+        "type": "text",
+        "text": "C. Étages de lancement"
+      },
+      {
+        "y": 294.65093994140625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étages de la Long March 3A",
+            "n.c.",
+            "",
+            "Devenir non précisé dans mes sources"
+          ]
+        ]
+      },
+      {
+        "y": 353.79693603515625,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 371.0043640136719,
+        "type": "text",
+        "text": "• Rien : aucun élément matériel récupéré"
+      },
+      {
+        "y": 388.0043640136719,
+        "type": "text",
+        "text": "• Seules des données ont été transmises : ~1 400 gigabits (~175 Go)"
+      },
+      {
+        "y": 415.79693603515625,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 433.0043640136719,
+        "type": "text",
+        "text": "• Étages de la Long March 3A, séparés pendant l'ascension ; non détaillés dans mes sources"
+      },
+      {
+        "y": 470.1176452636719,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 492.75433349609375,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "24 octobre 2007, 10h05",
+            "Lancement depuis Xichang"
+          ],
+          [
+            "Fin octobre 2007",
+            "Trois orbites terrestres avec allumages au périgée, puis injection translunaire"
+          ],
+          [
+            "31 octobre 2007",
+            "Départ de l'orbite de transfert lunaire"
+          ],
+          [
+            "5 novembre 2007",
+            "Insertion en orbite lunaire ; allumages successifs au périsélène jusqu'à l'orbite circulaire finale"
+          ],
+          [
+            "26 novembre 2007",
+            "Première image de la Lune transmise"
+          ],
+          [
+            "Novembre 2007 – juillet 2008",
+            "Collecte des données de la carte lunaire"
+          ],
+          [
+            "12 novembre 2008",
+            "Publication de la carte complète de la surface lunaire"
+          ],
+          [
+            "1er mars 2009, 08h13:10",
+            "Impact contrôlé, fin de mission"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "Séquence de fin de mission"
+      },
+      {
+        "y": 72.35440063476562,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "Orbite finale",
+            "Dernière orbite lunaire ; images de la zone d'impact"
+          ],
+          [
+            "Commande",
+            "Impact « planifié et contrôlé » selon l'administration chinoise"
+          ],
+          [
+            "1er mars 2009, 08h13:10",
+            "Impact vers 1,50° S, 52,36° E (cible annoncée)"
+          ],
+          [
+            "Trajectoire",
+            "Du sud vers le nord ; ~1,80° S, 52,23° E selon une équipe chinoise (Liu et al.)"
+          ],
+          [
+            "Repérage",
+            "Éjectas en éventail vers 1,66° S, 52,27° E sur des images LRO comparées à des images d'Apollo 16 (Phil Stooke)"
+          ]
+        ]
+      },
+      {
+        "y": 226.7176513671875,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 248.20437622070312,
+        "type": "text",
+        "text": "• Première sonde lunaire chinoise : premier élément du programme lunaire chinois."
+      },
+      {
+        "y": 265.2043762207031,
+        "type": "text",
+        "text": "• Carte 3D de la Lune : cartographie haute résolution du relief."
+      },
+      {
+        "y": 282.2043762207031,
+        "type": "text",
+        "text": "• Radiométrie micro-ondes : première télédétection passive multicanal de la Lune."
+      },
+      {
+        "y": 299.2043762207031,
+        "type": "text",
+        "text": "• Données : ~1 400 gigabits transmis, utilisés pour cartographier le relief, les éléments chimiques et l'environnement spatial."
+      },
+      {
+        "y": 330.2043762207031,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'épave sous la juridiction de la Chine ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 381.3176574707031,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 402.80438232421875,
+        "type": "text",
+        "text": "• Wikipedia — Chang'e 1 : lancement, masses, instruments, chronologie, impact"
+      },
+      {
+        "y": 419.80438232421875,
+        "type": "text",
+        "text": "• Planetary Society — « Finding spacecraft impacts on the Moon » (Phil Stooke, 2017) : repérage du site d'impact"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "id": "pioneer-10",
+  "name": "Pioneer 10",
+  "body": "outer",
+  "family": "pioneer",
+  "year": 1972,
+  "summary": "~258 kg de sonde au lancement · 1 objet muet depuis le 23 janvier 2003 (dernier signal à ~80 UA) · 11 instruments embarqués, aucun actif · 1 plaque d'or destinée à d'éventuels extraterrestres · 1 étage Star-37E d'emplacement inconnu",
+  "facts": [
+    [
+      "Nom officiel",
+      "Pioneer 10 (Pioneer F avant le lancement)"
+    ],
+    [
+      "Agence & programme",
+      "NASA / Ames Research Center — programme Pioneer"
+    ],
+    [
+      "Lancement",
+      "3 mars 1972, 01h49 UTC — Cape Canaveral, LC-36A, fusée Atlas-Centaur avec troisième étage Star-37E"
+    ],
+    [
+      "Survols planétaires",
+      "Jupiter, 3 décembre 1973 (~132 000 km) — premier survol de Jupiter"
+    ],
+    [
+      "Ceinture d'astéroïdes",
+      "Entrée le 15 juillet 1972, sortie vers le 15 février 1973 — première sonde à la traverser"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — trajectoire d'échappement du Système solaire, vers la constellation du Taureau"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le centre Ames de la NASA"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur · troisième étage Star-37E · sonde Pioneer 10"
+    ],
+    [
+      "Statut",
+      "Réussie — mission terminée ; silencieuse depuis le 23 janvier 2003, ~141 UA du Soleil (estimation, juillet 2026)"
+    ]
+  ],
+  "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-Pioneer-10-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "pioneer-10.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Pioneer 10 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : ~258 kg de sonde au lancement · 1 objet muet depuis le 23 janvier 2003 (dernier signal à ~80 UA) · 11 instruments embarqués, aucun actif · 1 plaque d'or destinée à d'éventuels extraterrestres · 1 étage Star-37E d'emplacement inconnu"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Pioneer 10 (Pioneer F avant le lancement)"
+          ],
+          [
+            "Agence & programme",
+            "NASA / Ames Research Center — programme Pioneer"
+          ],
+          [
+            "Lancement",
+            "3 mars 1972, 01h49 UTC — Cape Canaveral, LC-36A, fusée Atlas-Centaur avec troisième étage Star-37E"
+          ],
+          [
+            "Survols planétaires",
+            "Jupiter, 3 décembre 1973 (~132 000 km) — premier survol de Jupiter"
+          ],
+          [
+            "Ceinture d'astéroïdes",
+            "Entrée le 15 juillet 1972, sortie vers le 15 février 1973 — première sonde à la traverser"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — trajectoire d'échappement du Système solaire, vers la constellation du Taureau"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le centre Ames de la NASA"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur · troisième étage Star-37E · sonde Pioneer 10"
+          ],
+          [
+            "Statut",
+            "Réussie — mission terminée ; silencieuse depuis le 23 janvier 2003, ~141 UA du Soleil (estimation, juillet 2026)"
+          ]
+        ]
+      },
+      {
+        "y": 436.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 461.2606201171875,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 489.5969543457031,
+        "type": "text",
+        "text": "A. Espace interstellaire — sonde Pioneer 10 (~258 kg)"
+      },
+      {
+        "y": 507.95440673828125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bus de la sonde",
+            "258 kg au lancement",
+            "",
+            "Silencieux depuis le 23 janvier 2003 (dernier signal reçu). Mission officiellement terminée le 31 mars 1997 ; dernière télémétrie réussie le 27 avril 2002 à 80,22 UA. Dernière tentative de contact le 4 mars 2006, sans réponse"
+          ],
+          [
+            "Antenne à grand gain",
+            "2,74 m de diamètre",
+            "",
+            "Parabole pointée vers la Terre ; émetteur présumé inopérant, la puissance des RTG étant tombée sous le niveau nécessaire"
+          ],
+          [
+            "4 générateurs RTG (SNAP-19)",
+            "×4",
+            "",
+            "~155 W au lancement, ~140 W à Jupiter, 65 W en 2001 ; la NASA ne tente plus de contact"
+          ],
+          [
+            "Plaque d'or Pioneer",
+            "152 × 229 mm",
+            "",
+            "Plaque en aluminium anodisé or fixée sur les entretoises de l'antenne : un message de la Terre pour une éventuelle vie intelligente"
+          ],
+          [
+            "11 instruments (voir B)",
+            "—",
+            "",
+            "Tous opérationnels dans les dix jours suivant le lancement ; aucun n'est plus actif"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques — état connu au 14 novembre 2026"
+      },
+      {
+        "y": 72.35435485839844,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "Magnétomètre à hélium (HVM)",
+            "Champ magnétique",
+            "",
+            "Mesures du champ de Jupiter et du vent solaire"
+          ],
+          [
+            "Analyseur de plasma quadrisphérique",
+            "Plasma",
+            "",
+            "Vent solaire et plasma de la magnétosphère"
+          ],
+          [
+            "Instrument de particules chargées (CPI)",
+            "Particules",
+            "",
+            "Particules énergétiques"
+          ],
+          [
+            "Télescope à rayons cosmiques (CRT)",
+            "Rayons cosmiques",
+            "",
+            "Composition et flux des rayons cosmiques"
+          ],
+          [
+            "Télescope à tube Geiger (GTT)",
+            "Rayonnement",
+            "",
+            "Rayonnement piégé autour de Jupiter"
+          ],
+          [
+            "Détecteur de rayonnement piégé (TRD)",
+            "Rayonnement",
+            "",
+            "Rayonnement piégé autour de Jupiter"
+          ],
+          [
+            "Détecteurs de météoroïdes et d'astéroïdes",
+            "Poussières",
+            "",
+            "Deux détecteurs : mesures dans la ceinture d'astéroïdes"
+          ],
+          [
+            "Photomètre ultraviolet (UV)",
+            "Ultraviolet",
+            "",
+            "Observation de l'hydrogène et de l'hélium"
+          ],
+          [
+            "Photopolarimètre imageur (IPP)",
+            "Imagerie",
+            "",
+            "Images de Jupiter pendant le survol"
+          ],
+          [
+            "Radiomètre infrarouge",
+            "Infrarouge",
+            "",
+            "Température de Jupiter"
+          ]
+        ]
+      },
+      {
+        "y": 340.79693603515625,
+        "type": "text",
+        "text": "C. Étages de lancement et trajectoire d'échappement"
+      },
+      {
+        "y": 359.15435791015625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Troisième étage Star-37E",
+            "n.c.",
+            "",
+            "Séparé après l'injection interplanétaire ; devenir exact non précisé dans la page consultée"
+          ],
+          [
+            "Étages inférieurs de l'Atlas et du Centaur",
+            "n.c.",
+            "",
+            "Séparés pendant la montée ; devenir exact non confirmé"
+          ]
+        ]
+      },
+      {
+        "y": 454.79693603515625,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 472.0043640136719,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Pioneer 10 n'a été ou ne sera récupérée"
+      },
+      {
+        "y": 489.0043640136719,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : premières mesures de près de Jupiter, de la ceinture d'astéroïdes et de l'héliosphère externe"
+      },
+      {
+        "y": 520.0043334960938,
+        "type": "text",
+        "text": "• Un message voyage à bord : la plaque Pioneer (voir A)"
+      },
+      {
+        "y": 547.7969360351562,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 565.0043334960938,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension"
+      },
+      {
+        "y": 582.0043334960938,
+        "type": "text",
+        "text": "• Troisième étage Star-37E, séparé après l'injection interplanétaire"
+      },
+      {
+        "y": 619.11767578125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 641.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "3 mars 1972, 01h49 UTC",
+            "Lancement de l'Atlas-Centaur depuis Cape Canaveral"
+          ],
+          [
+            "15 juillet 1972",
+            "Entrée dans la ceinture d'astéroïdes — première sonde à y entrer"
+          ],
+          [
+            "~15 février 1973",
+            "Sortie de la ceinture d'astéroïdes"
+          ],
+          [
+            "3 décembre 1973",
+            "Survol de Jupiter (~132 000 km) — premier survol de la planète"
+          ],
+          [
+            "1976 · 1979",
+            "Passage de l'orbite de Saturne (1976) puis d'Uranus (1979)"
+          ],
+          [
+            "25 avril 1983",
+            "Passage de l'orbite de Pluton"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.354339599609375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "13 juin 1983",
+            "Passage de l'orbite de Neptune — premier objet humain au-delà des orbites des planètes majeures"
+          ],
+          [
+            "31 mars 1997",
+            "Fin officielle de la mission ; télémétrie encore reçue ensuite"
+          ],
+          [
+            "27 avril 2002",
+            "Dernière télémétrie réussie (80,22 UA)"
+          ],
+          [
+            "23 janvier 2003",
+            "Dernier signal reçu (~80 UA, ~12 milliards de km)"
+          ],
+          [
+            "7 février 2003",
+            "Tentative de contact infructueuse"
+          ],
+          [
+            "4 mars 2006",
+            "Dernière tentative de contact, sans réponse"
+          ]
+        ]
+      },
+      {
+        "y": 225.91766357421875,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 247.40438842773438,
+        "type": "text",
+        "text": "• Premiers : première sonde à traverser la ceinture d'astéroïdes et à survoler Jupiter ; premier objet humain à passer au-delà des orbites de Neptune et de Pluton."
+      },
+      {
+        "y": 278.4043884277344,
+        "type": "text",
+        "text": "• Anomalie Pioneer : un suivi radio entre 20 et 70 UA a révélé une petite accélération persistante (~8,7 × 10−10 m/s²) vers le Soleil ; en 2012, des chercheurs l'ont attribuée à un rayonnement thermique inégal de la sonde."
+      },
+      {
+        "y": 323.4043884277344,
+        "type": "text",
+        "text": "• Destination : la sonde se dirige vers la constellation du Taureau, dans la direction d'Aldébaran ; il lui faudrait plus de deux millions d'années pour l'atteindre. Dans environ 90 000 ans, elle passera à ~0,75 année-lumière de HIP 117795."
+      },
+      {
+        "y": 368.4043884277344,
+        "type": "text",
+        "text": "• Panne et radiations : le capteur d'étoile Canopus est tombé en panne, et les radiations de Jupiter ont provoqué de fausses commandes."
+      },
+      {
+        "y": 399.4043884277344,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible dans l'espace."
+      },
+      {
+        "y": 450.51763916015625,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 472.0043640136719,
+        "type": "text",
+        "text": "• Wikipedia — Pioneer 10 : lancement, instruments, RTG, fin de mission, anomalie"
+      },
+      {
+        "y": 489.0043640136719,
+        "type": "text",
+        "text": "• NASA — Pioneer 10 : science.nasa.gov/mission/pioneer-10 (« Pioneer 10 sends last signal »)"
+      }
+    ]
+  ]
+}

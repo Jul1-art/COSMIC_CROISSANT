@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "title": "The Zhurong Rover Explores Utopia Planitia",
+      "credit": "NASA/JPL-Caltech/University of Arizona",
+      "date": "2021-09-29T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA24914",
+      "nasaId": "PIA24914",
+      "description": "The Chinese Zhurong rover, named after the god of fire in Chinese mythology, landed in Utopia Planitia in May 2021. Utopia Planitia is a volcanic region located in the low-lying Northern Hemisphere of Mars.  The expansive, flat, smooth plains of Utopia are dimpled by impact craters, volcanic domes, light-toned ridges made of wind-blown materials, and troughs. If the rover continues to drive south from its landing site, this HiRISE view shows the kind of terrain and features Zhurong may explore.  https://photojournal.jpl.nasa.gov/catalog/PIA24914",
+      "src": "archives/rover-zhurong-nasa-PIA24914.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/rover-zhurong.mp4",
+    "local": true,
+    "title": "Rover Zhurong (Tianwen 1) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "rover-zhurong.pdf",
+    "fingerprint": "1e128a6bd23a2bbfb0d92f9725091169fd622c957a745d0e686cb9a587dd9878"
+  }
+}

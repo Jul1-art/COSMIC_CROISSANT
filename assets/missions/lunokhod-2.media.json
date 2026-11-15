@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "title": "Luna 21 Lander",
+      "credit": "NASA/GSFC/Arizona State University",
+      "date": "2010-03-19T22:44:34Z",
+      "source": "https://images.nasa.gov/details/PIA12976",
+      "nasaId": "PIA12976",
+      "description": "Luna 21 lander delivered the Lunokhod 2 rover to the floor of Le Monnier crater in January 1973. This image taken by NASA Lunar Reconnaissance Orbiter also shows the rover tracks.",
+      "src": "archives/lunokhod-2-nasa-PIA12976.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/lunokhod-2.mp4",
+    "local": true,
+    "title": "Lunokhod 2 (Luna 21) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "lunokhod-2.pdf",
+    "fingerprint": "8671851f4c244698bbdf0e85d5f12816adc77db29a825c367fbf9c5e5945a3af"
+  }
+}

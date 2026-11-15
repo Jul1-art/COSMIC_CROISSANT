@@ -1,0 +1,337 @@
+{
+  "id": "mars-reconnaissance-orbiter",
+  "name": "Mars Reconnaissance Orbiter (MRO)",
+  "body": "mars",
+  "family": "orbiter",
+  "year": 2005,
+  "summary": "~1 031 kg à sec (~1 150 kg avec ergols résiduels) en orbite martienne • 1 sonde toujours active en novembre 2026 (plus de 20 ans autour de Mars, principal relais de données et imageur haute résolution) • 1 étage supérieur Centaur en orbite héliocentrique.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Mars Reconnaissance Orbiter (MRO, programme Mars Exploration Program, COSPAR 2005-029A)"
+    ],
+    [
+      "Agence & programme",
+      "NASA (Jet Propulsion Laboratory / Lockheed Martin Space Systems / University of Arizona)"
+    ],
+    [
+      "Lancement",
+      "12 août 2005, 11h43 UTC — Cape Canaveral Air Force Station (SLC-41), fusée Atlas V 401"
+    ],
+    [
+      "Insertion orbitale",
+      "10 mars 2006, 21h24 UTC — Orbite polaire quasi circulaire héliosynchrone (255 × 320 km, inclinaison 92,7°, période 112 min)"
+    ],
+    [
+      "Fin de mission",
+      "En cours (toujours opérationnelle en novembre 2026 après plus de 20 ans et 88 000 orbites autour de Mars)"
+    ],
+    [
+      "Équipage",
+      "Aucun (orbiteur automatique piloté par le JPL à Pasadena et Lockheed Martin à Denver)"
+    ],
+    [
+      "Véhicules",
+      "Atlas V 401 (CCAS), orbiteur MRO (2 180 kg au lancement dont 1 149 kg d'hydrazine, 1 031 kg à sec)"
+    ],
+    [
+      "Statut",
+      "Toujours active — sonde ayant transmis plus de données scientifiques de Mars que toutes les autres missions réunies"
+    ]
+  ],
+  "sourceFile": "Mars/Orbiteurs/Mars Reconnaissance Orbiter (MRO) - Fiche « Plus de détails ».pdf",
+  "pdf": "mars-reconnaissance-orbiter.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Mars Reconnaissance Orbiter (MRO) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~1 031 kg à sec (~1 150 kg avec ergols résiduels) en orbite martienne • 1 sonde toujours active en novembre 2026 (plus de 20 ans autour de Mars, principal relais de données et imageur haute résolution) • 1 étage supérieur Centaur en orbite héliocentrique."
+      },
+      {
+        "y": 225.26544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 252.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Mars Reconnaissance Orbiter (MRO, programme Mars Exploration Program, COSPAR 2005-029A)"
+          ],
+          [
+            "Agence & programme",
+            "NASA (Jet Propulsion Laboratory / Lockheed Martin Space Systems / University of Arizona)"
+          ],
+          [
+            "Lancement",
+            "12 août 2005, 11h43 UTC — Cape Canaveral Air Force Station (SLC-41), fusée Atlas V 401"
+          ],
+          [
+            "Insertion orbitale",
+            "10 mars 2006, 21h24 UTC — Orbite polaire quasi circulaire héliosynchrone (255 × 320 km, inclinaison 92,7°, période 112 min)"
+          ],
+          [
+            "Fin de mission",
+            "En cours (toujours opérationnelle en novembre 2026 après plus de 20 ans et 88 000 orbites autour de Mars)"
+          ],
+          [
+            "Équipage",
+            "Aucun (orbiteur automatique piloté par le JPL à Pasadena et Lockheed Martin à Denver)"
+          ],
+          [
+            "Véhicules",
+            "Atlas V 401 (CCAS), orbiteur MRO (2 180 kg au lancement dont 1 149 kg d'hydrazine, 1 031 kg à sec)"
+          ],
+          [
+            "Statut",
+            "Toujours active — sonde ayant transmis plus de données scientifiques de Mars que toutes les autres missions réunies"
+          ]
+        ]
+      },
+      {
+        "y": 580.0154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 614.3842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 649.2205810546875,
+        "type": "text",
+        "text": "A. Orbite martienne — Sonde toujours opérationnelle (~1 150 kg au total)"
+      },
+      {
+        "y": 668.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Structure composite & bus principal MRO",
+            "1 031 kg (total à sec)",
+            "Toujours actif",
+            "Châssis en nid d'abeille d'aluminium et composite graphite (hauteur 6,5 m, largeur 13,6 m déployé), construit autour du grand réservoir central de propulsion de 1 175 litres en titane."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Panneaux solaires & batteries NiH2",
+            "~125 kg (inclus)",
+            "Toujours actifs",
+            "Deux ailes orientables de 5,35 × 2,53 m chacune (20 m2 de cellules triple jonction InGaP/GaAs/Ge fournissant ~2 000 W autour de Mars) et deux batteries nickel-hydrogène de 50 Ah."
+          ],
+          [
+            "Antenne parabolique (3 m) & relais UHF Electra",
+            "~65 kg (inclus)",
+            "Toujours actifs",
+            "Grande antenne grand gain de 3 m (bande X et bande Ka expérimentale, débit jusqu'à 6 Mbit/s) et double émetteur-récepteur UHF Electra assurant la majorité des liaisons avec Curiosity et Perseverance."
+          ],
+          [
+            "Caméra télescopique HiRISE",
+            "65 kg",
+            "Toujours active",
+            "Télescope réflecteur de 0,5 m d'ouverture (plus grand télescope envoyé en orbite planétaire), résolvant jusqu'à 25–30 cm/pixel depuis 300 km d'altitude (capteurs CCD visible et proche IR)."
+          ],
+          [
+            "Caméra contextuelle CTX & imageur MARCI",
+            "11 kg (9 + 2 kg)",
+            "Toujours actifs",
+            "Caméra grand champ CTX (résolution 6 m/pixel, ayant couvert plus de 99,9 % de Mars) et caméra météo grand angle MARCI produisant quotidiennement une carte météorologique globale en 7 bandes (visible + UV)."
+          ],
+          [
+            "Spectromètre imageur CRISM",
+            "32,9 kg",
+            "Intact / arrêté",
+            "Spectromètre visible/infrarouge (362–3 920 nm, 18 m/pixel) ayant identifié les argiles, sulfates et carbonates hydratés ; mis définitivement hors tension en avril 2023 après épuisement des cryorefroidisseurs."
+          ],
+          [
+            "Radar de sondage souterrain SHARAD",
+            "16,3 kg",
+            "Toujours actif",
+            "Radar orbital fourni par l'Agence spatiale italienne (ASI) muni d'une antenne dipôle de 10 m, sondant les calottes polaires et le sous-sol martien jusqu'à 1 km de profondeur (résolution verticale 15 m)."
+          ],
+          [
+            "Sondeur atmosphérique MCS & gravimétrie",
+            "12,3 kg",
+            "Toujours actif",
+            "Radiomètre infrarouge à 9 canaux (Mars Climate Sounder) mesurant les profils verticaux de température, poussière et vapeur d'eau ; expériences de gravimétrie et navigation optique ONC."
+          ],
+          [
+            "Propulsion & réserves d'hydrazine",
+            "~120 kg (ergols est.)",
+            "Toujours actifs",
+            "20 propulseurs monergol hydrazine (6 gros moteurs de 170 N pour l'insertion orbitale, 6 de 22 N, 8 de 0,9 N) ; réserves suffisantes pour opérer jusqu'au début des années 2030."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur Centaur (Atlas V)",
+            "~2 247 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage cryogénique RL10A-4-2 ayant assuré l'injection transmartienne le 12 août 2005 ; placé sur une orbite solaire croisant celles de la Terre et de Mars (trajectoire calculée pour éviter tout impact avec Mars pendant au moins 50 ans)."
+          ],
+          [
+            "Coiffe (4 m) & 1er étage CCB (Atlas V)",
+            "~23 000 kg (total à vide)",
+            "Écrasés / brûlés",
+            "Coiffe en composite larguée à T + 3 min 24 s et premier étage propulsé par moteur RD- 180 séparé à T + 4 min 26 s ; retombés dans l'océan Atlantique au large de Cape Canaveral."
+          ]
+        ]
+      },
+      {
+        "y": 288.4705810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 309.3369140625,
+        "type": "text",
+        "text": "Aucun élément matériel récupéré : sonde orbitale conçue pour demeurer en orbite martienne stable pendant plusieurs décennies conformément aux règles internationales de protection planétaire (COSPAR)."
+      },
+      {
+        "y": 358.8369140625,
+        "type": "text",
+        "text": "Plus grande bibliothèque de données planétaires : plus de 450 térabits de données transmis vers Terre en 2026 (plus que toutes les autres missions interplanétaires passées et présentes combinées)."
+      },
+      {
+        "y": 404.51544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 431.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "12 août 2005, 11h43 UTC",
+            "Lancement d'Atlas V 401 depuis Cape Canaveral ; injection directe sur trajectoire vers Mars."
+          ],
+          [
+            "10 mars 2006, 21h24 UTC",
+            "Insertion en orbite martienne très allongée (426 × 44 500 km), suivie de 5 mois d'aérofreinage (426 passages atmosphériques) jusqu'à l'orbite de travail basse à 255 × 320 km."
+          ],
+          [
+            "Novembre 2006",
+            "Début de la phase scientifique primaire (2 ans) ; HiRISE photographie dès 2006 les rovers Spirit et Opportunity à la surface, puis l'atterrissage sous parachute de Phoenix (mai 2008)."
+          ],
+          [
+            "Août 2012 & fév. 2021",
+            "Relais télémétrique critique et prise de clichés historiques de la descente sous parachute de Curiosity (2012) puis de Perseverance (2021) par la caméra HiRISE."
+          ],
+          [
+            "3 avril 2023",
+            "Arrêt définitif du spectromètre CRISM après 16 ans de service et l'épuisement de ses trois cryorefroidisseurs (le dernier ayant tenu 11 ans au-delà de sa durée prévue)."
+          ],
+          [
+            "10 mars 2026",
+            "Célébration des 20 ans d'opérations en orbite autour de Mars ; en novembre 2026, MRO poursuit ses campagnes d'imagerie HiRISE/CTX, ses sondages radar SHARAD et son rôle de relais majeur."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "Cartographie à l'échelle métrique et sélection de tous les sites d'atterrissage modernes : grâce aux caméras HiRISE et CTX, MRO a permis d'évaluer les dangers rocheux et de sélectionner les sites d'atterrissage de Phoenix, Curiosity, InSight, Perseverance ainsi que du rover chinois Zhurong (Tianwen-1)."
+      },
+      {
+        "y": 145.8369140625,
+        "type": "text",
+        "text": "Révélation de l'histoire aqueuse complexe de Mars : avant son arrêt en 2023, CRISM a cartographié à haute résolution la diversité des minéraux hydratés (phyllosilicates, sulfates, opale, chlorures), démontrant l'existence d'environnements liquides variés et durables dans le passé martien."
+      },
+      {
+        "y": 195.3369140625,
+        "type": "text",
+        "text": "Structure interne des calottes polaires et glaciers enfouis : le radar SHARAD a sondé les couches de glace et de poussière des pôles martiens sur plus de 2 km d'épaisseur et révélé d'immenses glaciers enfouis sous les débris rocheux aux latitudes moyennes."
+      },
+      {
+        "y": 244.8369140625,
+        "type": "text",
+        "text": "Une planète toujours géologiquement active : en répétant les prises de vue HiRISE sur plus de deux décennies, MRO a observé en direct des avalanches de glace polaire, le déplacement de dunes, des centaines de nouveaux cratères d'impact météoritique et des écoulements saisonniers sombres (RSL)."
+      },
+      {
+        "y": 320.51544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 349.0869140625,
+        "type": "text",
+        "text": "NASA Science — Mars Reconnaissance Orbiter Mission Overview & 20th Anniversary (science.nasa.gov/mission/mro, 2026)"
+      },
+      {
+        "y": 383.5869140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Mars Reconnaissance Orbiter (ID : 2005-029A)"
+      },
+      {
+        "y": 418.0869140625,
+        "type": "text",
+        "text": "University of Arizona (LPL) — Catalogue public et images haute résolution HiRISE (uahirise.org)"
+      },
+      {
+        "y": 436.8369140625,
+        "type": "text",
+        "text": "R. W. Zurek & S. E. Smrekar, An overview of the Mars Reconnaissance Orbiter (MRO) science mission, JGR Planets, vol. 112, 2007"
+      }
+    ]
+  ]
+}

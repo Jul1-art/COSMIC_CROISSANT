@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Luna 10 Space Probe",
+      "description": "Replica of Luna 10 space probe on display at the K. E. Tsiolkovsky Museum of the History of Cosmonautics",
+      "credit": "Stolbovsky",
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Luna_10_Space_Probe.jpg",
+      "src": "archives/luna-10-commons.jpg",
+      "date": "2022-05-05 15:07:45",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-10.mp4",
+    "local": true,
+    "title": "Luna 10 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-10.pdf",
+    "fingerprint": "96454a94ace2ad1ff6d1d7098da8dcea2758eaf33ede2b51bee23fe1b7d0ccd9"
+  }
+}

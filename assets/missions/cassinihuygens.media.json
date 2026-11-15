@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Cassini Captures the Cassini Division",
+      "credit": "NASA/JPL/Space Science Institute",
+      "date": "2004-07-01T17:46:40Z",
+      "source": "https://images.nasa.gov/details/PIA06092",
+      "nasaId": "PIA06092",
+      "description": "Cassini Captures the Cassini Division",
+      "src": "archives/cassinihuygens-nasa-PIA06092.jpg"
+    },
+    {
+      "title": "Titan Viewed by Cassini Radar",
+      "credit": "NASA/JPL-Caltech/ASI",
+      "date": "2005-10-25T22:58:00Z",
+      "source": "https://images.nasa.gov/details/PIA08110",
+      "nasaId": "PIA08110",
+      "description": "Titan Viewed by Cassini Radar",
+      "src": "archives/cassinihuygens-nasa-PIA08110.jpg"
+    },
+    {
+      "title": "Cassini Close Look at Tethys",
+      "credit": "NASA/JPL/Space Science Institute",
+      "date": "2005-09-20T18:23:24Z",
+      "source": "https://images.nasa.gov/details/PIA07733",
+      "nasaId": "PIA07733",
+      "description": "Cassini Close Look at Tethys",
+      "src": "archives/cassinihuygens-nasa-PIA07733.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Cassini's Infrared Saturn (Short Version)",
+      "credit": "Dan Gallagher",
+      "source": "https://images.nasa.gov/details/GSFC_20170912_Cassini_m12709_CIRS_Short",
+      "nasaId": "GSFC_20170912_Cassini_m12709_CIRS_Short",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20170912_Cassini_m12709_CIRS_Short/GSFC_20170912_Cassini_m12709_CIRS_Short~orig.mp4",
+      "description": "The Cassini-Huygens mission arrived at Saturn in 2004, beginning an epic thirteen-year tour of the ringed planet and its many moons. Cassini and its companion probe, Huygens, were an international collaboration between NASA and the European Space Agency (ESA). Cassini carried an impressive array of scientific instruments, including the Composite Infrared Spectrometer (CIRS) built at Goddard Space Flight Center. By studying the Saturn system in heat radiation, CIRS observed hot spots in a giant Saturn storm, discovered a new hydrocarbon in Titan's smoggy atmosphere, found unexpected surface heating on Mimas and Tethys, and even detected evidence of a liquid water ocean under the icy shell of Enceladus. This video explores Cassini CIRS' greatest hits, as told by instrument team members Michael Flasar, Conor Nixon, and Carrie Anderson.",
+      "date": "2017-09-12T00:00:00Z",
+      "duration": 392.333333,
+      "bitrate": 25338840,
+      "bytes": 1242658958,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/cassinihuygens.mp4",
+    "local": true,
+    "title": "Cassini–Huygens · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "cassinihuygens.pdf",
+    "fingerprint": "40440b1a07ed0539ba52fedd7bb11ff17740488834bc58a5fb36152af7d80e17"
+  }
+}

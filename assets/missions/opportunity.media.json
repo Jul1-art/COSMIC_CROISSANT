@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Opportunity's First Selfie",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2018-02-26T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA22222",
+      "nasaId": "PIA22222",
+      "description": "This self-portrait of NASA's Opportunity Mars rover shows the vehicle at a site called \"Perseverance Valley\" on the slopes of Endeavour Crater. It was taken with the rover's Microscopic Imager to celebrate the 5000th Martian Day, or sol, of the rover's mission.  The Microscopic Imager is a fixed-focus camera mounted at the end of the rover's robotic arm. Because it was designed for close inspection of rocks, soils and other targets at a distance of around 2.7 inches (7 cm), the rover is out of focus.  The rover's self-portrait view is made by stitching together multiple images take on Sol 5,000 and 5,006 of the mission. Wrist motions and turret rotations on the arm allowed the Microscopic Imager to acquire the mosaic's component images. The resulting mosaic does not include the rover's arm.  This simulation from planning software used to write commands for the rover shows the motion of the robotic arm, and an inset view of the Microscopic Imager.  https://photojournal.jpl.nasa.gov/catalog/PIA22222",
+      "src": "archives/opportunity-nasa-PIA22222.jpg"
+    },
+    {
+      "title": "Mars Rover Opportunity at Rock Abrasion Target Potts",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2016-01-25T19:10:53Z",
+      "source": "https://images.nasa.gov/details/PIA20285",
+      "nasaId": "PIA20285",
+      "description": "The target beneath the tool turret at the end of the rover's robotic arm in this image from NASA's Mars Exploration Rover Opportunity is \"Private John Potts.\" It lies high on the southern side of \"Marathon Valley,\" which slices through the western rim of Endeavour Crater.  The target's informal name refers to a member of the Lewis and Clark Expedition's Corps of Discovery.  The image was taken by Opportunity's front hazard avoidance camera on Jan. 5, 2016, during the 4,248th Martian day, or sol, of the rover's work on Mars. This camera is mounted low on the rover and has a wide-angle lens.  In this image, the microscopic imager on the turret is pointed downward. Opportunity's examination of this target also used the turret's rock abrasion tool for removing the surface crust and alpha particle X-ray spectrometer for identifying chemical elements in the rock.   http://photojournal.jpl.nasa.gov/catalog/PIA20285",
+      "src": "archives/opportunity-nasa-PIA20285.jpg"
+    },
+    {
+      "title": "The Opportunity Rover at Victoria Crater",
+      "credit": "NASA/JPL/University of Arizona",
+      "date": "2006-10-06T14:50:49Z",
+      "source": "https://images.nasa.gov/details/PIA08812",
+      "nasaId": "PIA08812",
+      "description": "The Opportunity Rover at Victoria Crater",
+      "src": "archives/opportunity-nasa-PIA08812.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/opportunity.mp4",
+    "local": true,
+    "title": "Opportunity (MER-B) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "opportunity.pdf",
+    "fingerprint": "a49ee42c8bd3ae980703a9d32bab11b46de21c0cf74bf30c27c45d314dcb0b0a"
+  }
+}

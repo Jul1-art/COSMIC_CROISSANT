@@ -1,0 +1,311 @@
+{
+  "id": "rover-rosalind-franklin",
+  "name": "Rover Rosalind Franklin (ExoMars)",
+  "body": "mars",
+  "family": "exomars",
+  "year": 2028,
+  "summary": "~310 kg pour le rover Rosalind Franklin + plateforme d'atterrissage européenne • En phase finale d'essais au sol en novembre 2026 • Lancement programmé en octobre 2028 (Falcon Heavy) pour un atterrissage prévu le 30 novembre 2030 à Oxia Planum.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Rosalind Franklin Mission (RFM) / ExoMars Rover (partenariat ESA & NASA)"
+    ],
+    [
+      "Agence & programme",
+      "Agence spatiale européenne (ESA) & NASA (fourniture du lanceur et services associés)"
+    ],
+    [
+      "Lancement prévu",
+      "Fin octobre 2028 — Kennedy Space Center / Cap Canaveral, fusée SpaceX Falcon Heavy"
+    ],
+    [
+      "Atterrissage prévu",
+      "30 novembre 2030 — Oxia Planum, Mars (18,28° N, 335,45° E)"
+    ],
+    [
+      "Équipage",
+      "Aucun (astromobile robotique autonome de recherche astrobiologique)"
+    ],
+    [
+      "Véhicules",
+      "SpaceX Falcon Heavy, module de descente/plateforme d'atterrissage européenne, rover Rosalind Franklin (310 kg)"
+    ],
+    [
+      "Statut",
+      "En préparation active et essais de qualification au sol (novembre 2026)"
+    ]
+  ],
+  "sourceFile": "Mars/Surface/Rover Rosalind Franklin (ExoMars) - Fiche « Plus de détails ».pdf",
+  "pdf": "rover-rosalind-franklin.pdf",
+  "pages": [
+    [
+      {
+        "y": 53.40802764892578,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & CHARGES UTILES Rover Rosalind Franklin (ExoMars) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 159.49322509765625,
+        "type": "text",
+        "text": "Synthèse hardware : ~310 kg pour le rover Rosalind Franklin + plateforme d'atterrissage européenne • En phase finale d'essais au sol en novembre 2026 • Lancement programmé en octobre 2028 (Falcon Heavy) pour un atterrissage prévu le 30 novembre 2030 à Oxia Planum."
+      },
+      {
+        "y": 226.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 252.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Rosalind Franklin Mission (RFM) / ExoMars Rover (partenariat ESA & NASA)"
+          ],
+          [
+            "Agence & programme",
+            "Agence spatiale européenne (ESA) & NASA (fourniture du lanceur et services associés)"
+          ],
+          [
+            "Lancement prévu",
+            "Fin octobre 2028 — Kennedy Space Center / Cap Canaveral, fusée SpaceX Falcon Heavy"
+          ],
+          [
+            "Atterrissage prévu",
+            "30 novembre 2030 — Oxia Planum, Mars (18,28° N, 335,45° E)"
+          ],
+          [
+            "Équipage",
+            "Aucun (astromobile robotique autonome de recherche astrobiologique)"
+          ],
+          [
+            "Véhicules",
+            "SpaceX Falcon Heavy, module de descente/plateforme d'atterrissage européenne, rover Rosalind Franklin (310 kg)"
+          ],
+          [
+            "Statut",
+            "En préparation active et essais de qualification au sol (novembre 2026)"
+          ]
+        ]
+      },
+      {
+        "y": 493.1671447753906,
+        "type": "text",
+        "text": "Inventaire du hardware (Configuration technique)"
+      },
+      {
+        "y": 525.7910766601562,
+        "type": "text",
+        "text": "Badges d'état : en préparation / essais sol en service intact"
+      },
+      {
+        "y": 560.7205810546875,
+        "type": "text",
+        "text": "A. Astromobile Rosalind Franklin (masse totale : 310 kg)"
+      },
+      {
+        "y": 579.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Châssis & système de locomotion (6 roues)",
+            "~150 kg (structure)",
+            "En essais au sol",
+            "Châssis robuste monté sur un train de 6 roues motrices indépendantes dotées d'un mécanisme de « reptation » pour progresser dans les sables meubles d'Oxia Planum."
+          ],
+          [
+            "Foreuse robotique profonde (2 mètres)",
+            "~30 kg (inclus)",
+            "En essais au sol",
+            "Système de carottage unique capable de descendre jusqu'à 2 mètres de profondeur pour extraire des échantillons de sol non altérés par les radiations cosmiques de surface et les oxydants."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Laboratoire analytique embarqué MOMA",
+            "~24 kg (inclus)",
+            "En essais au sol",
+            "Spectromètre de masse (Mars Organic Molecule Analyzer) et chromatographe en phase gazeuse pour analyser thermiquement les échantillons prélevés à la recherche de molécules organiques."
+          ],
+          [
+            "Suite scientifique de surface (PanCam, ISEM, RLS, MicrOmega, WISDOM)",
+            "~25 kg (total)",
+            "En essais au sol",
+            "Caméras panoramiques haute définition, spectromètre infrarouge (ISEM), spectromètre Raman (RLS), imageur infrarouge proche (MicrOmega) et radar géophysique de sous-sol (WISDOM)."
+          ],
+          [
+            "Panneaux solaires & batteries Li-ion",
+            "~50 kg (inclus)",
+            "En essais au sol",
+            "Panneaux photovoltaïques générant environ 1 200 W·h par sol et batteries lithium-ion assurant l'autonomie énergétique du rover durant les opérations scientifiques."
+          ]
+        ]
+      },
+      {
+        "y": 304.9705810546875,
+        "type": "text",
+        "text": "B. Plateforme d'atterrissage européenne & boucliers"
+      },
+      {
+        "y": 324.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Plateforme d'atterrissage (EDLM)",
+            "~400 kg (estim.)",
+            "En fabrication",
+            "Nouvelle plateforme d'atterrissage développée par l'ESA pour assurer une pose stabilisée et déployer les rampes de descente du rover sur Oxia Planum."
+          ],
+          [
+            "Bouclier thermique & système de parachutes",
+            "~600 kg (total)",
+            "En fabrication",
+            "Coque thermique protectrice, parachutes hypersoniques et système de rétro-propulsion pour la décélération finale dans l'atmosphère martienne en 2030."
+          ]
+        ]
+      },
+      {
+        "y": 490.2205810546875,
+        "type": "text",
+        "text": "C. Lanceur & transit interplanétaire (2028–2030)"
+      },
+      {
+        "y": 509.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Lanceur SpaceX Falcon Heavy",
+            "~1 420 t (au décollage)",
+            "Programmé 2028",
+            "Sélectionné par la NASA en avril 2026 pour propulser la mission ExoMars RFM depuis le Kennedy Space Center vers une trajectoire interplanétaire directe."
+          ]
+        ]
+      },
+      {
+        "y": 613.9171142578125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 639.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "19 mars 2022",
+            "Suspension par l'ESA de la coopération initiale avec Roscosmos pour des raisons géopolitiques."
+          ],
+          [
+            "Mars 2023",
+            "Accord formel de partenariat avec la NASA pour reprendre le projet (fourniture du lanceur et d'éléments techniques)."
+          ],
+          [
+            "Avril 2026",
+            "La NASA sélectionne officiellement SpaceX Falcon Heavy pour lancer la mission Rosalind Franklin en octobre 2028."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "Octobre 2026",
+            "Campagnes intensives d'essais du modèle d'ingénierie (rover « Charlie ») dans le désert de Tabernas en Espagne."
+          ],
+          [
+            "Fin octobre 2028",
+            "Lancement prévu du rover Rosalind Franklin depuis Cap Canaveral vers Mars."
+          ],
+          [
+            "30 novembre 2030",
+            "Atterrissage prévu sur le site d'Oxia Planum et début de la mission de surface."
+          ]
+        ]
+      },
+      {
+        "y": 174.41712951660156,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 203.3533477783203,
+        "type": "text",
+        "text": "Le forage à 2 mètres, clé de la recherche de vie : contrairement aux rovers actuels (comme Curiosity ou Perseverance) qui ne grattent que la surface, Rosalind Franklin pourra forer jusqu'à 2 mètres de profondeur pour prélever des échantillons préservés des radiations cosmiques et des agents oxydants."
+      },
+      {
+        "y": 267.8533630371094,
+        "type": "text",
+        "text": "Laboratoire d'analyse organique (MOMA) : les carottes de sol seront directement analysées dans le laboratoire stérile interne du rover afin de chercher des biomolécules et des acides aminés."
+      },
+      {
+        "y": 301.6033630371094,
+        "type": "text",
+        "text": "Choix d'Oxia Planum : ce site présente de vastes affleurements argileux riches en minéraux hydratés datant d'une époque où l'eau liquide abondait à la surface de Mars, maximisant les chances de trouver des traces de vie passée."
+      },
+      {
+        "y": 362.6671447753906,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 390.8290710449219,
+        "type": "text",
+        "text": "ESA Science & Technology — ExoMars Rosalind Franklin Rover Mission Overview (esa.int/exomars)"
+      },
+      {
+        "y": 410.3290710449219,
+        "type": "text",
+        "text": "NASA Science — ROSA Project & Launch Services Implementation for ExoMars (2026)"
+      },
+      {
+        "y": 429.0790710449219,
+        "type": "text",
+        "text": "V. Dehant et al., The ExoMars Rosalind Franklin rover science objectives, Astrobiology, 2023"
+      }
+    ]
+  ]
+}

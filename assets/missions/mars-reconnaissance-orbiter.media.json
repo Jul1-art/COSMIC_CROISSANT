@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Mars Reconnaissance Orbiter MRO Launches",
+      "credit": "NASA/JPL/KSC/Lockheed Martin Space Systems",
+      "date": "2005-08-12T17:26:50Z",
+      "source": "https://images.nasa.gov/details/PIA04141",
+      "nasaId": "PIA04141",
+      "description": "NASA Mars Reconnaissance Orbiter MRO launched at 7:43 a.m. EDT atop a Lockheed Martin Atlas V rocket from Launch Complex 41 at Cape Canaveral Air Force Station in Florida on Aug. 12, 2005.",
+      "src": "archives/mars-reconnaissance-orbiter-nasa-PIA04141.jpg"
+    },
+    {
+      "title": "Mars Reconnaissance Orbiter MRO Multipurpose Mission Successfully   Launched",
+      "credit": "NASA/JPL/KSC/Lockheed Martin Space Systems",
+      "date": "2005-08-12T17:29:50Z",
+      "source": "https://images.nasa.gov/details/PIA04144",
+      "nasaId": "PIA04144",
+      "description": "NASA Mars Reconnaissance Orbiter MRO launched at 7:43 a.m. EDT atop a Lockheed Martin Atlas V rocket from Launch Complex 41 at Cape Canaveral Air Force Station in Florida on Aug. 12, 2005.",
+      "src": "archives/mars-reconnaissance-orbiter-nasa-PIA04144.jpg"
+    },
+    {
+      "title": "Mars Reconnaissance Orbiter in High Bay",
+      "credit": "NASA/JPL/Lockheed Martin",
+      "date": "2005-01-07T18:17:20Z",
+      "source": "https://images.nasa.gov/details/PIA07212",
+      "nasaId": "PIA07212",
+      "description": "Engineers and technicians at Lockheed Martin Space Systems, Denver, building the Mars Reconnaissance Orbiter for NASA.",
+      "src": "archives/mars-reconnaissance-orbiter-nasa-PIA07212.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/mars-reconnaissance-orbiter.mp4",
+    "local": true,
+    "title": "Mars Reconnaissance Orbiter (MRO) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "mars-reconnaissance-orbiter.pdf",
+    "fingerprint": "19aabdca1d30fff485113860bfd88df835c2468f4b5899fff972abefdbd77ce9"
+  }
+}

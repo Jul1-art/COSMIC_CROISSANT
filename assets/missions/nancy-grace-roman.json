@@ -1,0 +1,440 @@
+{
+  "id": "nancy-grace-roman",
+  "name": "Nancy Grace Roman",
+  "body": "observatories",
+  "family": "roman",
+  "year": 2026,
+  "summary": "télescope de 9 174 kg lancé le 30 août 2026, actif, en route vers le point L2 Soleil-Terre (arrivée estimée vers le 8 décembre 2026) · miroir primaire de 2,4 m, caméra grand champ (WFI) et coronographe (CGI), tous deux déjà mis sous tension · 2 propulseurs latéraux de Falcon Heavy posés en vol de retour ; étage central, 2e étage et coiffe : devenir non précisé · aucun élément du télescope perdu",
+  "facts": [
+    [
+      "Nom officiel",
+      "Nancy Grace Roman Space Telescope (Roman)"
+    ],
+    [
+      "Agence & programme",
+      "NASA — télescope spatial infrarouge à grand champ"
+    ],
+    [
+      "Lancement",
+      "30 août 2026, 11h26 UTC — Falcon Heavy (SpaceX), LC-39A, Kennedy Space Center"
+    ],
+    [
+      "Orbite visée",
+      "Orbite en halo autour du point L2 Soleil-Terre, à ~1,5 million de km (1 million de milles)"
+    ],
+    [
+      "Arrivée à L2",
+      "Insertion ~100 jours après le lancement ; estimation du 8 décembre 2026"
+    ],
+    [
+      "Durée de mission",
+      "5 ans prévus ; ergols pour au moins 22 ans (selon une source)"
+    ],
+    [
+      "Coût",
+      "3,2 milliards $ de développement ; 3,934 milliards $ maximum, coronographe et 5 ans d'opérations inclus"
+    ],
+    [
+      "Équipage",
+      "Aucun (observatoire robotique)"
+    ],
+    [
+      "Véhicules",
+      "Falcon Heavy Block 5 · 2e étage · télescope Roman"
+    ],
+    [
+      "Statut",
+      "Actif — en croisière vers L2, mise en service en cours ; premières images attendues début 2027"
+    ]
+  ],
+  "sourceFile": "Fiche-mission-Nancy-Grace-Roman-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "nancy-grace-roman.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Télescope spatial Nancy Grace Roman — Fiche « Plus de détails »"
+      },
+      {
+        "y": 120.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : télescope de 9 174 kg lancé le 30 août 2026, actif, en route vers le point L2 Soleil-Terre (arrivée estimée vers le 8 décembre 2026) · miroir primaire de 2,4 m, caméra grand champ (WFI) et coronographe (CGI), tous deux déjà mis sous tension · 2 propulseurs latéraux de Falcon Heavy posés en vol de retour ; étage central, 2e étage et coiffe : devenir non précisé · aucun élément du télescope perdu"
+      },
+      {
+        "y": 219.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 241.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Nancy Grace Roman Space Telescope (Roman)"
+          ],
+          [
+            "Agence & programme",
+            "NASA — télescope spatial infrarouge à grand champ"
+          ],
+          [
+            "Lancement",
+            "30 août 2026, 11h26 UTC — Falcon Heavy (SpaceX), LC-39A, Kennedy Space Center"
+          ],
+          [
+            "Orbite visée",
+            "Orbite en halo autour du point L2 Soleil-Terre, à ~1,5 million de km (1 million de milles)"
+          ],
+          [
+            "Arrivée à L2",
+            "Insertion ~100 jours après le lancement ; estimation du 8 décembre 2026"
+          ],
+          [
+            "Durée de mission",
+            "5 ans prévus ; ergols pour au moins 22 ans (selon une source)"
+          ],
+          [
+            "Coût",
+            "3,2 milliards $ de développement ; 3,934 milliards $ maximum, coronographe et 5 ans d'opérations inclus"
+          ],
+          [
+            "Équipage",
+            "Aucun (observatoire robotique)"
+          ],
+          [
+            "Véhicules",
+            "Falcon Heavy Block 5 · 2e étage · télescope Roman"
+          ],
+          [
+            "Statut",
+            "Actif — en croisière vers L2, mise en service en cours ; premières images attendues début 2027"
+          ]
+        ]
+      },
+      {
+        "y": 508.51763916015625,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 533.4605712890625,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 575.7969360351562,
+        "type": "text",
+        "text": "A. Espace — télescope en route vers L2 (état au 14 novembre 2026)"
+      },
+      {
+        "y": 594.1543579101562,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Observatoire Roman",
+            "9 174 kg au lancement (dont ~1 116 kg d'hydrazine d'après une source)",
+            "",
+            "Au 14 novembre 2026 (L+76) : ~1,32 million de km du centre de la Terre, ~691 000 km de L2 selon JPL Horizons"
+          ],
+          [
+            "Générateur solaire et pare-soleil",
+            "4,1 kW",
+            "",
+            "Six panneaux ; les quatre extérieurs se déploient pour former le générateur complet"
+          ],
+          [
+            "Antenne à grand gain et couvercle d'ouverture",
+            "—",
+            "",
+            "Déployés le 1er septembre 2026"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques"
+      },
+      {
+        "y": 72.3543472290039,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "Télescope à 3 miroirs (anastigmat)",
+            "Optique",
+            "",
+            "Primaire de 2,4 m donné par le NRO ; focale 19 m, f/7,9, 0,48–2,30 µm"
+          ],
+          [
+            "Wide-Field Instrument (WFI)",
+            "Imagerie grand champ",
+            "",
+            "300,8 mégapixels, 0,28 deg² ; activé le 15 septembre 2026"
+          ],
+          [
+            "Coronagraph Instrument (CGI)",
+            "Coronographie",
+            "",
+            "Supprime la lumière d'étoiles, 575–825 nm ; mis sous tension le 1er septembre, première observation le 30 septembre"
+          ]
+        ]
+      },
+      {
+        "y": 210.596923828125,
+        "type": "text",
+        "text": "C. Lanceur Falcon Heavy"
+      },
+      {
+        "y": 228.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "2e étage",
+            "n.c.",
+            "",
+            "Séparé de Roman 31 min après le décollage ; devenir non précisé"
+          ],
+          [
+            "Propulseur central",
+            "n.c.",
+            "",
+            "Arrêt moteur ~4 min ; récupération ou perte non précisée dans mes sources"
+          ],
+          [
+            "2 moitiés de coiffe",
+            "n.c.",
+            "",
+            "Séparées à ~4 min 15 s ; « retournées sur Terre » selon NASA ; récupération non confirmée"
+          ]
+        ]
+      },
+      {
+        "y": 344.79693603515625,
+        "type": "text",
+        "text": "D. Récupérés sur Terre"
+      },
+      {
+        "y": 362.0043640136719,
+        "type": "text",
+        "text": "• 2 propulseurs latéraux posés au Cap Canaveral (LC-40 et Landing Zone 2 selon Space.com ; LZ-2 et LZ-40 selon NASA) : l'un à son premier vol, l'autre à son troisième (déjà utilisé pour GOES-U et Viasat-3 F3)"
+      },
+      {
+        "y": 417.79693603515625,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 435.0043640136719,
+        "type": "text",
+        "text": "• Propulseurs latéraux (séparation ~2,5 min), propulseur central (~4 min), coiffe (~4 min 15 s) et 2e étage (~31 min)"
+      },
+      {
+        "y": 486.1176452636719,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 508.75433349609375,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "17-18 février 2016",
+            "Approbation du développement et du lancement"
+          ],
+          [
+            "Septembre 2021",
+            "Revue critique de conception ; lancement visé au plus tard en mai 2027"
+          ],
+          [
+            "Septembre – décembre 2024",
+            "Bus achevé, puis instruments et miroir intégrés"
+          ],
+          [
+            "25 novembre 2025",
+            "Construction achevée"
+          ],
+          [
+            "21 juin 2026",
+            "Arrivée au Kennedy Space Center"
+          ],
+          [
+            "30 août 2026, 11h26",
+            "Lancement ; séparation à 11h57 (voir séquence ci-dessous)"
+          ],
+          [
+            "31 août 2026",
+            "Correction de trajectoire de 3,5 min (la première de deux prévues)"
+          ],
+          [
+            "1er septembre 2026",
+            "Panneaux solaires, antenne à grand gain et couvercle déployés ; CGI mis sous tension"
+          ],
+          [
+            "15 septembre 2026",
+            "WFI activé"
+          ],
+          [
+            "30 septembre 2026",
+            "Test du guidage ; première observation du CGI"
+          ],
+          [
+            "14 novembre 2026",
+            "L+76 : ~1,32 million de km de la Terre"
+          ],
+          [
+            "~8 décembre 2026",
+            "Arrivée estimée à L2 (insertion ~100 jours après le lancement)"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 57.824317932128906,
+        "type": "text",
+        "text": "Date (UTC) Événement"
+      },
+      {
+        "y": 78.0243148803711,
+        "type": "text",
+        "text": "Janvier – début 2027 Premières images attendues"
+      },
+      {
+        "y": 104.39697265625,
+        "type": "text",
+        "text": "Séquence de lancement"
+      },
+      {
+        "y": 122.75437927246094,
+        "type": "table",
+        "rows": [
+          [
+            "Temps",
+            "Événement"
+          ],
+          [
+            "T+0, 11h26 UTC",
+            "Décollage de la Falcon Heavy (27 moteurs Merlin 1D), LC-39A"
+          ],
+          [
+            "~2,5 min",
+            "Les deux propulseurs latéraux s'arrêtent, se séparent et reviennent vers le Cap Canaveral"
+          ],
+          [
+            "~4 min",
+            "Arrêt du moteur central (MECO) et séparation ; 1er allumage du 2e étage (SES-1)"
+          ],
+          [
+            "~4 min 15 s",
+            "Séparation de la coiffe"
+          ],
+          [
+            "~5 min de croisière",
+            "Roman reste attaché au 2e étage, puis 2e allumage (SES-2) d'environ 2 min"
+          ],
+          [
+            "11h33 UTC",
+            "Première liaison, via un satellite TDRS"
+          ],
+          [
+            "11h57 UTC (31 min)",
+            "Roman se sépare du 2e étage et vole seul"
+          ],
+          [
+            "~30 min après",
+            "Déploiement du pare-soleil du générateur solaire (NASA)"
+          ]
+        ]
+      },
+      {
+        "y": 326.51763916015625,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 348.0043640136719,
+        "type": "text",
+        "text": "• Observatoire infrarouge à grand champ : caméra de 300,8 mégapixels pour cartographier de grandes régions du ciel."
+      },
+      {
+        "y": 379.0043640136719,
+        "type": "text",
+        "text": "• Coronographe : démonstration de suppression de la lumière stellaire."
+      },
+      {
+        "y": 396.0043640136719,
+        "type": "text",
+        "text": "• Relevés prévus : environ 438 jours pour le relevé du bulbe galactique et 520 jours pour le relevé grand champ à haute latitude (selon une source)."
+      },
+      {
+        "y": 427.0043640136719,
+        "type": "text",
+        "text": "• Miroir : donné par le National Reconnaissance Office."
+      },
+      {
+        "y": 444.0043640136719,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible dans l'espace."
+      },
+      {
+        "y": 495.1176452636719,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 516.6043701171875,
+        "type": "text",
+        "text": "• Wikipedia — Nancy Grace Roman Space Telescope : masses, instruments, chronologie, statut"
+      },
+      {
+        "y": 533.6043701171875,
+        "type": "text",
+        "text": "• NASA Science — « Roman Launch » : séquence de lancement détaillée"
+      },
+      {
+        "y": 550.6043701171875,
+        "type": "text",
+        "text": "• Space.com — « Liftoff! NASA's Roman Space Telescope soars… » : propulseurs, coiffe, séparation"
+      },
+      {
+        "y": 567.6043701171875,
+        "type": "text",
+        "text": "• RomanTelescope.info — « Where is Roman? » : position et date d'arrivée estimée"
+      },
+      {
+        "y": 584.6043701171875,
+        "type": "text",
+        "text": "• Space.com — live updates (jusqu'au 4 septembre 2026) : corrections de trajectoire, déploiements"
+      }
+    ]
+  ]
+}

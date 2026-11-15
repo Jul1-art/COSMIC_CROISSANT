@@ -1,0 +1,477 @@
+{
+  "id": "perseverance",
+  "name": "Perseverance",
+  "body": "mars",
+  "family": "rover-rtg",
+  "year": 2020,
+  "summary": "1 rover actif depuis le 18 février 2021 (sol 2 038, 45,25 km parcourus) · 1 hélicoptère Ingenuity inactif depuis janvier 2024 · 10 tubes d'échantillons déposés au dépôt Three Forks · 4 éléments de descente laissés sur Mars ou détruits à l'entrée · aucun retour d'échantillons prévu",
+  "facts": [
+    [
+      "Nom officiel",
+      "Mars 2020 — rover Perseverance (+ hélicoptère Ingenuity)"
+    ],
+    [
+      "Agence & programme",
+      "NASA / Jet Propulsion Laboratory — Mars Exploration Program"
+    ],
+    [
+      "Lancement",
+      "30 juillet 2020 — Cape Canaveral, Space Launch Complex 41, fusée Atlas V 541"
+    ],
+    [
+      "Atterrissage",
+      "18 février 2021, ~20h55 UTC (heure de réception sur Terre) — cratère Jezero, bord ouest d'Isidis Planitia"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — le rover reste sur Mars ; les échantillons aussi, faute de financement du retour"
+    ],
+    [
+      "Équipage",
+      "Aucun (rover robotique) — piloté depuis le JPL (Californie)"
+    ],
+    [
+      "Véhicules",
+      "Atlas V 541 · étage de croisière · capsule d'entrée (bouclier thermique + coque arrière) · étage de descente (sky crane) · rover · Ingenuity"
+    ],
+    [
+      "Statut",
+      "Active — mission étendue ; sol 2 038 (10 novembre 2026) ; zone « Lac de Charmes », à l'ouest du bord de Jezero ; 45,25 km parcourus"
+    ]
+  ],
+  "sourceFile": "Mars/Surface/Fiche-mission-Perseverance-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "perseverance.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Perseverance — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 rover actif depuis le 18 février 2021 (sol 2 038, 45,25 km parcourus) · 1 hélicoptère Ingenuity inactif depuis janvier 2024 · 10 tubes d'échantillons déposés au dépôt Three Forks · 4 éléments de descente laissés sur Mars ou détruits à l'entrée · aucun retour d'échantillons prévu"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Mars 2020 — rover Perseverance (+ hélicoptère Ingenuity)"
+          ],
+          [
+            "Agence & programme",
+            "NASA / Jet Propulsion Laboratory — Mars Exploration Program"
+          ],
+          [
+            "Lancement",
+            "30 juillet 2020 — Cape Canaveral, Space Launch Complex 41, fusée Atlas V 541"
+          ],
+          [
+            "Atterrissage",
+            "18 février 2021, ~20h55 UTC (heure de réception sur Terre) — cratère Jezero, bord ouest d'Isidis Planitia"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — le rover reste sur Mars ; les échantillons aussi, faute de financement du retour"
+          ],
+          [
+            "Équipage",
+            "Aucun (rover robotique) — piloté depuis le JPL (Californie)"
+          ],
+          [
+            "Véhicules",
+            "Atlas V 541 · étage de croisière · capsule d'entrée (bouclier thermique + coque arrière) · étage de descente (sky crane) · rover · Ingenuity"
+          ],
+          [
+            "Statut",
+            "Active — mission étendue ; sol 2 038 (10 novembre 2026) ; zone « Lac de Charmes », à l'ouest du bord de Jezero ; 45,25 km parcourus"
+          ]
+        ]
+      },
+      {
+        "y": 427.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 452.2606201171875,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 480.5969543457031,
+        "type": "text",
+        "text": "A. Surface de Mars — cratère Jezero"
+      },
+      {
+        "y": 498.9543151855469,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Rover Perseverance",
+            "~1 025 kg",
+            "",
+            "Six roues, bras robotisé et système de mise en cache d'échantillons. Alimenté par un générateur nucléaire (~110 W en début de mission, durée attendue d'au moins 14 ans). A dépassé la distance parcourue par Opportunity (45,16 km) le 11 octobre 2026"
+          ],
+          [
+            "Hélicoptère Ingenuity",
+            "~1,8 kg",
+            "",
+            "Premier vol motorisé sur une autre planète le 19 avril 2021 ; 72 vols ; mission terminée en janvier 2024 après des dégâts sur une pale de rotor"
+          ],
+          [
+            "Dépôt d'échantillons « Three Forks »",
+            "10 tubes",
+            "",
+            "10 tubes déposés au sol en janvier 2023 comme réserve en vue d'un retour d'échantillons, désormais sans mission pour les récupérer"
+          ],
+          [
+            "Étage de descente (sky crane)",
+            "—",
+            "",
+            "Après avoir déposé le rover, a volé à distance de sécurité puis s'est écrasé ; motif de débris en V visible depuis l'orbite"
+          ],
+          [
+            "Bouclier thermique",
+            "—",
+            "",
+            "Éjecté ~20 s après l'ouverture du parachute ; repéré au sol à un emplacement distinct par la caméra HiRISE"
+          ],
+          [
+            "Coque arrière et parachute",
+            "parachute de 21,5 m",
+            "",
+            "Largués ~60 s avant l'atterrissage ; reposent à un emplacement distinct, également photographiés depuis l'orbite"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Instruments scientifiques du rover — état connu au 13 novembre 2026"
+      },
+      {
+        "y": 72.35438537597656,
+        "type": "table",
+        "rows": [
+          [
+            "Instrument",
+            "Fonction",
+            "État",
+            "Détails"
+          ],
+          [
+            "Mastcam-Z",
+            "Caméras zoom",
+            "",
+            "Images couleur et stéréo du paysage et des roches"
+          ],
+          [
+            "SuperCam",
+            "Laser et spectromètres",
+            "",
+            "Analyse de la composition des roches à distance"
+          ],
+          [
+            "PIXL",
+            "Fluorescence X",
+            "",
+            "Cartographie chimique fine des roches"
+          ],
+          [
+            "SHERLOC",
+            "Spectromètre Raman et UV",
+            "",
+            "Recherche de matière organique et de minéraux"
+          ],
+          [
+            "MEDA",
+            "Station météo",
+            "",
+            "Température, vent, pression, humidité, poussière"
+          ],
+          [
+            "MOXIE",
+            "Production d'oxygène",
+            "",
+            "Démonstration de production d'oxygène à partir du CO2 martien ; campagne terminée en août 2023"
+          ],
+          [
+            "RIMFAX",
+            "Radar de sol",
+            "",
+            "Sonde la structure du sous-sol"
+          ]
+        ]
+      },
+      {
+        "y": 280.19696044921875,
+        "type": "text",
+        "text": "C. Étages de lancement et de croisière"
+      },
+      {
+        "y": 298.55438232421875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de croisière",
+            "n.c.",
+            "",
+            "Séparé ~10 min avant l'entrée atmosphérique ; désintégré dans l'atmosphère de Mars"
+          ],
+          [
+            "Étage Centaur et propulseurs d'appoint de l'Atlas V",
+            "n.c.",
+            "",
+            "Séparés après l'injection vers Mars ; devenir exact non confirmé"
+          ]
+        ]
+      },
+      {
+        "y": 405.3969421386719,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 422.6043701171875,
+        "type": "text",
+        "text": "• Rien : aucune pièce de Perseverance n'a été ou ne sera récupérée pour le moment"
+      },
+      {
+        "y": 439.6043701171875,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : des échantillons sont stockés sur Mars (environ 30 tubes remplis sur 38, dont 10 au dépôt Three Forks) en attendant un éventuel retour"
+      },
+      {
+        "y": 470.6043701171875,
+        "type": "text",
+        "text": "• Les données incluent des images, des mesures météo et des cartes chimiques de Jezero"
+      },
+      {
+        "y": 498.3969421386719,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 515.6043701171875,
+        "type": "text",
+        "text": "• Carénage de protection de la charge utile, jeté au cours de l'ascension de l'Atlas V"
+      },
+      {
+        "y": 532.6043701171875,
+        "type": "text",
+        "text": "• Masses d'équilibrage jetées avant l'entrée atmosphérique pour régler le centre de gravité (localisation non confirmée)"
+      }
+    ],
+    [
+      {
+        "y": 54.7176513671875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 77.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "30 juillet 2020",
+            "Lancement d'Atlas V 541 depuis Cape Canaveral"
+          ],
+          [
+            "18 février 2021",
+            "Atterrissage dans le cratère Jezero (voir la séquence ci-dessous)"
+          ],
+          [
+            "19 avril 2021",
+            "Premier vol d'Ingenuity — premier vol motorisé sur une autre planète"
+          ],
+          [
+            "Janvier 2023",
+            "Dépôt de 10 tubes d'échantillons au dépôt « Three Forks »"
+          ],
+          [
+            "Août 2023",
+            "Fin de la campagne de l'instrument MOXIE"
+          ],
+          [
+            "Janvier 2024",
+            "Fin de la mission d'Ingenuity après 72 vols"
+          ],
+          [
+            "Janvier 2026",
+            "Le retour d'échantillons depuis Mars est annulé par le Congrès américain"
+          ],
+          [
+            "Juin 2026",
+            "Le rover dépasse la distance d'un marathon"
+          ],
+          [
+            "2 juillet 2026",
+            "Observation de la Terre passant derrière Phobos"
+          ],
+          [
+            "11 octobre 2026",
+            "Dépasse la distance d'Opportunity : rover ayant parcouru la plus grande distance sur un autre monde"
+          ],
+          [
+            "Fin octobre 2026",
+            "Forage de l'échantillon « Singita »"
+          ]
+        ]
+      },
+      {
+        "y": 343.5969543457031,
+        "type": "text",
+        "text": "Séquence d'atterrissage — 18 février 2021"
+      },
+      {
+        "y": 364.2606201171875,
+        "type": "text",
+        "text": "Heures de réception sur Terre (UTC) ; les événements ont eu lieu sur Mars 11 min 22 s plus tôt (délai du signal)."
+      },
+      {
+        "y": 393.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Heure (UTC)",
+            "Étape",
+            "Détails et matériel laissé"
+          ],
+          [
+            "20h38",
+            "Séparation de l'étage de croisière",
+            "~10 min avant l'entrée ; l'étage de croisière, qui portait Perseverance et Ingenuity, se sépare de la capsule et se désintègre dans l'atmosphère"
+          ],
+          [
+            "20h48",
+            "Entrée atmosphérique (T+0)",
+            "Vitesse ~19 500 km/h ; début des « sept minutes de terreur »"
+          ],
+          [
+            "20h49",
+            "Pic de chauffe (~T+1:15)",
+            "Bouclier thermique à ~1 300 °C ; décélération maximale ~T+1:30, vitesse sous 1 600 km/h"
+          ],
+          [
+            "20h52",
+            "Ouverture du parachute (~T+4:00)",
+            "À ~11 km d'altitude, ~1 512 km/h ; parachute supersonique de 21,5 m qui ralentit la capsule à ~320 km/h"
+          ],
+          [
+            "~20h52",
+            "Séparation du bouclier thermique (~T+4:20)",
+            "~20 s après le parachute ; le rover reste dans la coque arrière. Le bouclier tombe sur Mars ; le radar mesure l'altitude"
+          ],
+          [
+            "—",
+            "Navigation par terrain (TRN)",
+            "Radar et caméra orientée vers le sol identifient la position et évitent les zones dangereuses"
+          ],
+          [
+            "20h54",
+            "Séparation de la coque arrière",
+            "À ~2,1 km d'altitude, ~60 s avant l'atterrissage ; coque arrière et parachute sont largués ; huit rétrofusées de l'étage de descente prennent le relais"
+          ],
+          [
+            "20h55",
+            "Sky crane (~12 s avant le toucher)",
+            "À ~20 m du sol, le rover descend sous l'étage de descente par trois câbles de 7,6 m ; vitesse finale ~2,7 km/h"
+          ],
+          [
+            "20h55",
+            "Atterrissage (~T+7:00)",
+            "Les roues touchent le sol, les câbles sont coupés ; l'étage de descente s'envole et s'écrase à distance de sécurité"
+          ]
+        ]
+      },
+      {
+        "y": 729.9176025390625,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 751.404296875,
+        "type": "text",
+        "text": "• Jezero, un ancien lac : le rover étudie un cratère qui abritait un lac et un delta ; en septembre 2026, la NASA a rapporté que l'eau avait modifié les roches de Jezero lors d'au moins trois épisodes."
+      }
+    ],
+    [
+      {
+        "y": 50.204368591308594,
+        "type": "text",
+        "text": "• Échantillons : environ 30 tubes remplis sur 38 (dont un non scellé) et 3 tubes témoins sur 5 ; dix sont déposés à Three Forks. Une autre source donne 33 tubes scellés début 2026, dont 10 au dépôt."
+      },
+      {
+        "y": 81.2043685913086,
+        "type": "text",
+        "text": "• Retour d'échantillons : le programme a été annulé par le Congrès américain en janvier 2026 ; aucune mission de récupération n'est prévue pour l'instant et le directeur général de l'ESA estime qu'elle « n'ira pas de l'avant » dans ses plans actuels. La Chine prépare, selon la presse, sa propre mission de retour."
+      },
+      {
+        "y": 140.20437622070312,
+        "type": "text",
+        "text": "• Premières : Ingenuity a prouvé qu'on pouvait voler dans l'atmosphère martienne ; MOXIE a produit de l'oxygène à partir de l'atmosphère de Mars."
+      },
+      {
+        "y": 171.20437622070312,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 interdit toute appropriation nationale de Mars ; la protection planétaire encadre la contamination de Mars par des microbes terrestres."
+      },
+      {
+        "y": 222.317626953125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 243.80435180664062,
+        "type": "text",
+        "text": "• marsprogress.com — Perseverance (mis à jour le 10 novembre 2026)"
+      },
+      {
+        "y": 260.8043518066406,
+        "type": "text",
+        "text": "• NASA / JPL — Mars 2020, dossier de presse « Getting to Mars » et images du site d'atterrissage (PIA24333)"
+      },
+      {
+        "y": 291.8043518066406,
+        "type": "text",
+        "text": "• Space.com, NBC — séquence d'entrée, descente et atterrissage"
+      },
+      {
+        "y": 308.8043518066406,
+        "type": "text",
+        "text": "• The Daily Galaxy (janvier 2026) ; SpaceNews — situation du retour d'échantillons"
+      }
+    ]
+  ]
+}

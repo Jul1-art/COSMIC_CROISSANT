@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "ChangE-4 - PCAM",
+      "description": "The Chang’e-4 lander imaged by the Yutu-2 rover on the lunar far side. [1]",
+      "credit": "CSNA/Siyu Zhang/ Kevin M. Gill",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:ChangE-4_-_PCAM.png",
+      "src": "archives/chang-e-4-commons.png",
+      "date": "2021-05-31",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/chang-e-4.mp4",
+    "local": true,
+    "title": "Chang'e 4 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "chang-e-4.pdf",
+    "fingerprint": "d6dfd2f96507f7d8c44375ad2bcf0c96018a1096704a426309de1fad09e6aa4a"
+  }
+}

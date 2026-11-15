@@ -1,0 +1,327 @@
+{
+  "id": "exomars",
+  "name": "ExoMars (TGO & Schiaparelli)",
+  "body": "mars",
+  "family": "orbiter",
+  "year": 2016,
+  "summary": "~4 309 kg au lancement (orbiteur Trace Gas Orbiter de ~3 732 kg + atterrisseur Schiaparelli de 577 kg) • 1 orbiteur toujours très actif en novembre 2026 (plus de 10 ans autour de Mars) • 1 atterrisseur détruit à l'impact sur Meridiani Planum (2016).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Programme ExoMars — Mission 2016 (Trace Gas Orbiter COSPAR 2016-017A / Schiaparelli EDM 2016-017C)"
+    ],
+    [
+      "Agence & programme",
+      "Agence spatiale européenne (ESA) et Roscosmos (partenariat initial 2013–2022) / NASA"
+    ],
+    [
+      "Lancement",
+      "14 mars 2016, 09h31 UTC — Cosmodrome de Baïkonour (Pad 200/39), fusée Proton-M / Briz-M"
+    ],
+    [
+      "Arrivée & atterrissage",
+      "19 octobre 2016 — Insertion orbitale réussie de TGO ; échec de l'atterrissage de Schiaparelli (crash sur Meridiani Planum à 2,07° S, 6,21° O)"
+    ],
+    [
+      "Fin de mission",
+      "En cours pour TGO (toujours opérationnel en novembre 2026, mission prolongée)"
+    ],
+    [
+      "Équipage",
+      "Aucun (sondes automatiques pilotées depuis l'ESOC à Darmstadt en Allemagne)"
+    ],
+    [
+      "Véhicules",
+      "Proton-M / Briz-M, orbiteur TGO (~3 732 kg au total dont ~1 100 kg d'ergols), module Schiaparelli (577 kg)"
+    ],
+    [
+      "Statut",
+      "Mixte — Succès majeur de l'orbiteur TGO (gaz et volcanisme) et échec de l'atterrisseur Schiaparelli"
+    ]
+  ],
+  "sourceFile": "Mars/Orbiteurs/ExoMars (TGO & Schiaparelli) - Fiche « Plus de détails ».pdf",
+  "pdf": "exomars.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX ExoMars (TGO & Schiaparelli) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 158.22393798828125,
+        "type": "text",
+        "text": "Synthèse hardware : ~4 309 kg au lancement (orbiteur Trace Gas Orbiter de ~3 732 kg + atterrisseur Schiaparelli de 577 kg) • 1 orbiteur toujours très actif en novembre 2026 (plus de 10 ans autour de Mars) • 1 atterrisseur détruit à l'impact sur Meridiani Planum (2016)."
+      },
+      {
+        "y": 225.26544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 252.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Programme ExoMars — Mission 2016 (Trace Gas Orbiter COSPAR 2016-017A / Schiaparelli EDM 2016-017C)"
+          ],
+          [
+            "Agence & programme",
+            "Agence spatiale européenne (ESA) et Roscosmos (partenariat initial 2013–2022) / NASA"
+          ],
+          [
+            "Lancement",
+            "14 mars 2016, 09h31 UTC — Cosmodrome de Baïkonour (Pad 200/39), fusée Proton-M / Briz-M"
+          ],
+          [
+            "Arrivée & atterrissage",
+            "19 octobre 2016 — Insertion orbitale réussie de TGO ; échec de l'atterrissage de Schiaparelli (crash sur Meridiani Planum à 2,07° S, 6,21° O)"
+          ],
+          [
+            "Fin de mission",
+            "En cours pour TGO (toujours opérationnel en novembre 2026, mission prolongée)"
+          ],
+          [
+            "Équipage",
+            "Aucun (sondes automatiques pilotées depuis l'ESOC à Darmstadt en Allemagne)"
+          ],
+          [
+            "Véhicules",
+            "Proton-M / Briz-M, orbiteur TGO (~3 732 kg au total dont ~1 100 kg d'ergols), module Schiaparelli (577 kg)"
+          ],
+          [
+            "Statut",
+            "Mixte — Succès majeur de l'orbiteur TGO (gaz et volcanisme) et échec de l'atterrisseur Schiaparelli"
+          ]
+        ]
+      },
+      {
+        "y": 553.7654418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 588.1342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 622.9705810546875,
+        "type": "text",
+        "text": "A. Surface martienne — Meridiani Planum (Débris de Schiaparelli)"
+      },
+      {
+        "y": 642.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Module d'atterrissage Schiaparelli (EDM)",
+            "577 kg (au largage)",
+            "Détruit / écrasé",
+            "Disque de 2,4 m de diamètre. Suite à une saturation prématurée des capteurs inertiels, l'ordinateur a largué le parachute trop tôt et allumé les rétrofusées brièvement avant de s'écraser à ~540 km/h le 19 oct. 2016 (cratère d'impact localisé par MRO)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Bouclier thermique & parachute avant",
+            "~150 kg (inclus)",
+            "Détruits / éparpillés",
+            "Bouclier avant largué en altitude et coque arrière avec parachute déployé, retrouvés intacts mais disloqués à quelques kilomètres du point d'impact principal de Schiaparelli."
+          ]
+        ]
+      },
+      {
+        "y": 154.2205810546875,
+        "type": "text",
+        "text": "B. Orbite martienne — Trace Gas Orbiter (TGO)"
+      },
+      {
+        "y": 174.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Plateforme & structure principale TGO",
+            "~850 kg (à sec)",
+            "Toujours actif",
+            "Châssis composite robuste (3,2 × 2,0 × 2,0 m), stabilisé sur 3 axes. En orbite circulaire de travail à ~400 km d'altitude (inclinaison 74°, période 2 heures)."
+          ],
+          [
+            "Panneaux solaires géants & batteries",
+            "~200 kg (inclus)",
+            "Toujours actifs",
+            "Grande envergure (17,5 m d'une pointe à l'autre) fournissant l'énergie aux instruments et au système de télécommunications relais (UHF Electra)."
+          ],
+          [
+            "Antenne grand gain (2,2 m) & relais UHF",
+            "~50 kg (inclus)",
+            "Toujours actifs",
+            "Antenne parabolique orientable (bande X) et émetteur UHF assurant le lien principal entre la Terre et les rovers de surface (Curiosity, Perseverance)."
+          ],
+          [
+            "Caméra stéréoscopique CaSSIS",
+            "35 kg",
+            "Toujours active",
+            "Caméra couleur haute résolution (4,5 m/pixel) conçue pour imager les sources potentielles de gaz et les modifications géologiques de surface (avalanches, cratères récents)."
+          ],
+          [
+            "Suite spectrométrique atmosphérique (NOMAD & ACS)",
+            "39 kg (total)",
+            "Toujours actifs",
+            "Spectromètres de pointe (NOMAD codé par l'aviation belge/européenne et ACS russe) mesurant la composition chimique de l'atmosphère martienne avec une précision inédite."
+          ],
+          [
+            "Détecteur de neutrons FREND",
+            "29 kg",
+            "Toujours actif",
+            "Instrument russe cartographiant l'hydrogène et l'eau dans le premier mètre du sous-sol martien (notamment la découverte des immenses réservoirs de glace d'eau à Valles Marineris)."
+          ]
+        ]
+      },
+      {
+        "y": 601.2205810546875,
+        "type": "text",
+        "text": "C. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 621.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur Briz- M (Proton-M)",
+            "~5 000 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage réallumable ayant assuré l'injection interplanétaire le 14 mars 2016 depuis Baïkonour ; placé sur une orbite héliocentrique stable."
+          ],
+          [
+            "Étages 1, 2, 3 de Proton-M & coiffe",
+            "~26 000 kg (à vide)",
+            "Écrasés / brûlés",
+            "Étages inférieurs du lanceur lourd Proton-M retombés dans les zones autorisées de l'Altaï ou brûlés dans l'atmosphère supérieure."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 80.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "14 mars 2016, 09h31 UTC",
+            "Décollage de la fusée Proton-M / Briz-M depuis Baïkonour ; injection de l'ensemble TGO / Schiaparelli vers Mars."
+          ],
+          [
+            "19 octobre 2016",
+            "Arrivée à Mars : TGO s'insère avec succès en orbite elliptique ; échec de l'atterrissage de Schiaparelli suite à une saturation des capteurs et crash sur Meridiani Planum."
+          ],
+          [
+            "2017 – 2018",
+            "Longue phase d'aérofreinage (plus de 950 passages atmosphériques) permettant à TGO d'atteindre son orbite circulaire finale de 400 km en avril 2018."
+          ],
+          [
+            "2018 – 2026",
+            "Campagnes scientifiques intensives de TGO : cartographie des gaz traces (recherche de méthane), détection d'eau souterraine par FREND et rôle de relais UHF pour les rovers de surface."
+          ],
+          [
+            "Novembre 2026",
+            "TGO publie des découvertes majeures sur des indices de volcanisme récent et d'émissions de gaz magmatiques au-dessus d'Alba Mons, tout en préparant le relais pour la future mission Rosalind Franklin (2028)."
+          ]
+        ]
+      },
+      {
+        "y": 339.26544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 367.8369140625,
+        "type": "text",
+        "text": "Traque ultra-sensible des gaz traces : TGO a fourni l'inventaire atmosphérique le plus précis de Mars, confirmant l'extrême rareté (ou l'absence d'origine biologique globale) du méthane atmosphérique et découvrant de nouveaux composés comme le chlorure d'hydrogène."
+      },
+      {
+        "y": 417.3369140625,
+        "type": "text",
+        "text": "Indices de volcanisme récent (Novembre 2026) : les observations récentes de TGO ont mis en évidence de nouvelles fissures et des émissions gazeuses énigmatiques suggérant que Mars pourrait conserver une activité magmatique souterraine résiduelle."
+      },
+      {
+        "y": 466.8369140625,
+        "type": "text",
+        "text": "Héritage de Schiaparelli et préparation future : bien que l'atterrisseur se soit écrasé, les leçons techniques tirées de sa descente ont servi à l'architecture de la plateforme d'atterrissage du futur rover européen Rosalind Franklin (prévu au lancement en octobre 2028)."
+      },
+      {
+        "y": 516.3369140625,
+        "type": "text",
+        "text": "Pilier des télécommunications : TGO reste l'un des relais orbitaux les plus sollicités pour transmettre vers la Terre le volume massif de données scientifique collecté par le rover Perseverance de la NASA."
+      },
+      {
+        "y": 561.2654418945312,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 589.8369140625,
+        "type": "text",
+        "text": "ESA Science & Technology — ExoMars Trace Gas Orbiter & Programme Overview (sci.esa.int/exomars, 2026)"
+      },
+      {
+        "y": 624.3369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiches TGO (2016-017A) et Schiaparelli (2016-017C)"
+      },
+      {
+        "y": 658.8369140625,
+        "type": "text",
+        "text": "F. Montmessin et al., The ExoMars Trace Gas Orbiter: First year of science operations, Space Science Reviews, 2021"
+      },
+      {
+        "y": 692.5869140625,
+        "type": "text",
+        "text": "ESA News — European orbiter detects hints of volcanic activity on Mars (novembre 2026)"
+      }
+    ]
+  ]
+}

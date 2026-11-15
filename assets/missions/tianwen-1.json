@@ -1,0 +1,340 @@
+{
+  "id": "tianwen-1",
+  "name": "Tianwen 1 (Orbiteur & Zhurong)",
+  "body": "mars",
+  "family": "zhurong",
+  "year": 2020,
+  "summary": "~3 179 kg au lancement (orbiteur de ~1 300 kg + ensemble d'atterrissage/rover Zhurong de ~1 300 kg + boucliers) • 1 orbiteur toujours actif en novembre 2026 • 1 rover (Zhurong) et 1 atterrisseur intacts mais inactifs sur Utopia Planitia.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Tianwen-1 (天问一号, « Questions au ciel », programme spatial chinois CNSA, COSPAR 2020-049A)"
+    ],
+    [
+      "Agence & programme",
+      "Administration spatiale nationale chinoise (CNSA) / Académie chinoise de technologie spatiale (CAST)"
+    ],
+    [
+      "Lancement",
+      "23 juillet 2020, 04h41 UTC — Centre spatial de Wenchang (Pad 101), fusée Longue Marche 5 (Y4)"
+    ],
+    [
+      "Insertion & atterrissage",
+      "10 février 2021 — Insertion orbitale réussie ; atterrissage de l'atterrisseur et du rover Zhurong le 15 mai 2021 dans Utopia Planitia (25,06° N, 109,92° E)"
+    ],
+    [
+      "Fin de mission",
+      "En cours pour l'orbiteur (toujours actif en nov. 2026) ; rover Zhurong entré en hibernation en mai 2022 et non réveillé"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission robotique combinant orbiteur, atterrisseur et astromobile)"
+    ],
+    [
+      "Véhicules",
+      "Longue Marche 5 (Y4), orbiteur Tianwen-1 (~3 179 kg au total), atterrisseur & rover Zhurong (~240 kg pour le rover)"
+    ],
+    [
+      "Statut",
+      "Réussite historique — première mission interplanétaire complète de la Chine (orbite, atterrissage et roulage réussis du premier coup)"
+    ]
+  ],
+  "sourceFile": "Mars/Orbiteurs/Tianwen-1 (Orbiteur & Zhurong) - Fiche « Plus de détails ».pdf",
+  "pdf": "tianwen-1.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Tianwen-1 (Orbiteur & Zhurong) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 159.49322509765625,
+        "type": "text",
+        "text": "Synthèse hardware : ~3 179 kg au lancement (orbiteur de ~1 300 kg + ensemble d'atterrissage/rover Zhurong de ~1 300 kg + boucliers) • 1 orbiteur toujours actif en novembre 2026 • 1 rover (Zhurong) et 1 atterrisseur intacts mais inactifs sur Utopia Planitia."
+      },
+      {
+        "y": 225.26544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 252.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Tianwen-1 (天问一号, « Questions au ciel », programme spatial chinois CNSA, COSPAR 2020-049A)"
+          ],
+          [
+            "Agence & programme",
+            "Administration spatiale nationale chinoise (CNSA) / Académie chinoise de technologie spatiale (CAST)"
+          ],
+          [
+            "Lancement",
+            "23 juillet 2020, 04h41 UTC — Centre spatial de Wenchang (Pad 101), fusée Longue Marche 5 (Y4)"
+          ],
+          [
+            "Insertion & atterrissage",
+            "10 février 2021 — Insertion orbitale réussie ; atterrissage de l'atterrisseur et du rover Zhurong le 15 mai 2021 dans Utopia Planitia (25,06° N, 109,92° E)"
+          ],
+          [
+            "Fin de mission",
+            "En cours pour l'orbiteur (toujours actif en nov. 2026) ; rover Zhurong entré en hibernation en mai 2022 et non réveillé"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission robotique combinant orbiteur, atterrisseur et astromobile)"
+          ],
+          [
+            "Véhicules",
+            "Longue Marche 5 (Y4), orbiteur Tianwen-1 (~3 179 kg au total), atterrisseur & rover Zhurong (~240 kg pour le rover)"
+          ],
+          [
+            "Statut",
+            "Réussite historique — première mission interplanétaire complète de la Chine (orbite, atterrissage et roulage réussis du premier coup)"
+          ]
+        ]
+      },
+      {
+        "y": 567.2654418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 601.6342163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 635.7205810546875,
+        "type": "text",
+        "text": "A. Surface martienne — Utopia Planitia (Atterrisseur & Rover Zhurong)"
+      },
+      {
+        "y": 655.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Astromobile Zhurong (祝融)",
+            "240 kg",
+            "Intact / inactif",
+            "Rover à 6 roues doté d'un mât optique et de panneaux solaires innovants en verre autonettoyant. A parcouru 1 921 m avant d'entrer en hibernation en mai 2022 face aux hivers et tempêtes de poussière (non réveillé en 2026)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Tianwen-1 (plateforme fixe)",
+            "~350 kg (estim.)",
+            "Intact / inactif",
+            "Plateforme d'alunissage/atterrissage à 4 pieds munie d'une rampe de déploiement, posée à Utopia Planitia (25,06° N, 109,92° E), ayant servi de station météo initiale."
+          ],
+          [
+            "Bouclier thermique & parachute arrière",
+            "~400 kg (total)",
+            "Détruits / éparpillés",
+            "Coque avant (bouclier conique ablatif) et coque arrière avec parachute supersonique largués lors de la descente finale de mai 2021 (localisés par MRO à quelques kilomètres du site d'atterrissage)."
+          ]
+        ]
+      },
+      {
+        "y": 229.9705810546875,
+        "type": "text",
+        "text": "B. Orbite martienne — Orbiteur Tianwen-1"
+      },
+      {
+        "y": 249.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Châssis & structure principale de l'orbiteur",
+            "~1 300 kg (à sec)",
+            "Toujours actif",
+            "Plateforme robuste stabilisée 3 axes, placée sur une orbite polaire de travail optimisée pour l'imagerie haute résolution et le relais des communications."
+          ],
+          [
+            "Panneaux solaires & batteries",
+            "~150 kg (inclus)",
+            "Toujours actifs",
+            "Deux grandes ailes solaires fournissant l'énergie aux instruments scientifiques et au système de transmission de données avec la Terre."
+          ],
+          [
+            "Antenne grand gain & relais UHF",
+            "~45 kg (inclus)",
+            "Toujours actifs",
+            "Parabole grand gain et émetteur UHF ayant servi de passerelle radio principale pour le rover Zhurong pendant sa phase active et maintenant ses observations orbitales."
+          ],
+          [
+            "Caméras HRSC & moyenne résolution (MoRIC)",
+            "~55 kg (total)",
+            "Toujours actives",
+            "Caméras haute résolution (jusqu'à 0,5 m/pixel) et caméra de topographie globale ayant cartographié l'intégralité de la surface martienne en 3D."
+          ],
+          [
+            "Spectromètres & radar souterrain (MOSIR/MRS)",
+            "~48 kg (total)",
+            "Toujours actifs",
+            "Spectromètre minéralogique, magnétomètre, analyseur de plasma et radar orbital sondant les couches géologiques peu profondes de Mars."
+          ]
+        ]
+      },
+      {
+        "y": 588.4705810546875,
+        "type": "text",
+        "text": "C. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 608.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage central & boosters Longue Marche 5 (Y4)",
+            "~45 000 kg (à vide)",
+            "Écrasés / brûlés",
+            "Propulseurs d'appoint à ergols liquides et premier étage du lanceur lourd Longue Marche 5 retombés dans les zones maritimes ou rentrés dans l'atmosphère après le lancement de juillet 2020."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 46.2205810546875,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 67.60335540771484,
+        "type": "text",
+        "text": "Aucun élément matériel récupéré : mission robotique d'exploration in situ sans capsule de retour vers la Terre."
+      },
+      {
+        "y": 99.10335540771484,
+        "type": "text",
+        "text": "Archives scientifiques mondiales : téraoctets de données cartographiques, topographiques et radar partagés par la CNSA."
+      },
+      {
+        "y": 133.01544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 158.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "23 juillet 2020, 04h41 UTC",
+            "Lancement réussi de la fusée Longue Marche 5 depuis Wenchang ; injection de Tianwen-1 sur trajectoire vers Mars."
+          ],
+          [
+            "10 février 2021",
+            "Insertion réussie de l'orbiteur Tianwen-1 en orbite elliptique autour de Mars."
+          ],
+          [
+            "15 mai 2021",
+            "Descente et atterrissage par parachute et rétrofusées de l'atterrisseur et du rover Zhurong dans Utopia Planitia."
+          ],
+          [
+            "22 mai 2021",
+            "Zhurong descend de sa rampe et commence son exploration scientifique sur le sol martien."
+          ],
+          [
+            "Mai 2022",
+            "Face à l'hiver martien et à l'accumulation de poussière réduisant l'énergie solaire, Zhurong entre en mode hibernation programmée."
+          ],
+          [
+            "Novembre 2026",
+            "L'orbiteur Tianwen-1 poursuit ses observations scientifiques et cartographiques de pointe, tandis que le rover Zhurong reste endormi sur Utopia Planitia."
+          ]
+        ]
+      },
+      {
+        "y": 372.26544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 400.6033630371094,
+        "type": "text",
+        "text": "Exploration d'un ancien océan martien : les analyses menées par Zhurong et l'orbiteur à Utopia Planitia ont mis en évidence des sédiments stratifiés, des structures d'impact et des indices géologiques corroborant l'hypothèse d'un ancien océan ou de vastes étendues d'eau liquide dans l'hémisphère nord de Mars."
+      },
+      {
+        "y": 459.8533630371094,
+        "type": "text",
+        "text": "Sondage radar du sous-sol : le radar géoradar du rover a révélé la présence de structures souterraines complexes et de strates sédimentaires témoignant de changements climatiques majeurs au cours des derniers milliards d'années."
+      },
+      {
+        "y": 504.8533630371094,
+        "type": "text",
+        "text": "Prouesse technologique majeure : en réussissant l'orbite, l'atterrissage et l'exploration mobile dès sa toute première tentative martienne, la Chine s'est affirmée comme une grande puissance de l'exploration planétaire."
+      },
+      {
+        "y": 550.6033325195312,
+        "type": "text",
+        "text": "Héritage pour les missions futures : les données de Tianwen-1 servent de socle technique et scientifique aux futures missions chinoises de retour d'échantillons martiens (Tianwen-3)."
+      },
+      {
+        "y": 584.5154418945312,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 612.8533325195312,
+        "type": "text",
+        "text": "CNSA (China National Space Administration) — Tianwen-1 Mission Overview & Scientific Updates"
+      },
+      {
+        "y": 630.1033325195312,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Tianwen-1 (ID : 2020- 049A)"
+      },
+      {
+        "y": 661.6033325195312,
+        "type": "text",
+        "text": "L. Liu et al., The Tianwen-1 Mars Mission: Scientific objectives and payloads, Planetary and Space Science, 2020"
+      },
+      {
+        "y": 693.1033325195312,
+        "type": "text",
+        "text": "S. Wang et al., Zhurong radar observations at Utopia Planitia, Nature Astronomy, 2022"
+      }
+    ]
+  ]
+}

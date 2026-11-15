@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Surveyor 1 Shadow",
+      "credit": "NASA/JPL",
+      "date": "2000-11-04T23:09:57Z",
+      "source": "https://images.nasa.gov/details/PIA02976",
+      "nasaId": "PIA02976",
+      "description": "Image of Surveyor 1 shadow against the lunar surface in the late lunar afternoon, with the horizon at the upper right. Surveyor 1, the first of the Surveyor missions to make a successful soft landing, proved the spacecraft design and landing technique",
+      "src": "archives/surveyor-1-nasa-PIA02976.jpg"
+    },
+    {
+      "title": "Surveyor 1 -- America First Soft Lunar Landing",
+      "credit": "NASA/GSFC/Arizona State University",
+      "date": "2009-09-30T01:08:32Z",
+      "source": "https://images.nasa.gov/details/PIA12910",
+      "nasaId": "PIA12910",
+      "description": "NASA Surveyor 1 spacecraft sitting silently on Oceanus Procellarum, the first US spacecraft to land on another planet on June 2, 1966 in this image taken by NASA Lunar Reconnaissance Orbiter.",
+      "src": "archives/surveyor-1-nasa-PIA12910.jpg"
+    },
+    {
+      "title": "LRC-1967-B701_P-04028",
+      "credit": "NASA",
+      "date": "1967-04-28T00:00:00Z",
+      "source": "https://images.nasa.gov/details/LRC-1967-B701_P-04028",
+      "nasaId": "LRC-1967-B701_P-04028",
+      "description": "Small light colored area within the crater is Surveyor 1 on lunar surface photographed by  Lunar Orbiter III.  Published in the book \"A Century at Langley\" by Joseph Chambers. pg. 93 Moon Lunar Orbiter-Lunar Orbiter III: The hidden or dark side of the Moon was taken by Lunar Orbiter III During its mission to photograph potential lunar-landing sites for Apollo missions. -- Photograph published in Winds of Change, 75th Anniversary NASA publication (page 94), by James Schultz. Photo Number:67-H-328 is 1967-L-04026",
+      "src": "archives/surveyor-1-nasa-LRC-1967-B701_P-04028.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/surveyor-1.mp4",
+    "local": true,
+    "title": "Surveyor 1 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "surveyor-1.pdf",
+    "fingerprint": "c54b67a91a45a3b1cebadcf774b63f5c801e200a98a1c6c2c428abdb592bc830"
+  }
+}

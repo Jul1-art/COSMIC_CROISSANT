@@ -1,0 +1,417 @@
+{
+  "id": "apollo-15",
+  "name": "Apollo 15",
+  "body": "moon",
+  "family": "apollo",
+  "year": 1971,
+  "summary": "~3,0 t de matériel laissé sur le site de Hadley-Apennine (dont le 1er rover lunaire LRV) · 1 objet encore actif en 2026 (rétro-réflecteur laser LRRR-15, le plus grand sur la Lune) · 3 objets écrasés sur la Lune (étage S-IVB, étage d'ascension du LM et sous-satellite PFS-1) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Apollo 15 (AS-510)"
+    ],
+    [
+      "Agence & programme",
+      "NASA — Programme Apollo (quatrième alunissage habité, première mission scientifique longue de type J)"
+    ],
+    [
+      "Lancement",
+      "26 juillet 1971, 13h34 UTC — Kennedy Space Center (Pad 39A), fusée Saturn V"
+    ],
+    [
+      "Alunissage",
+      "30 juillet 1971, 22h16 UTC — Hadley-Apennine, au pied du mont Hadley Delta et de la faille Hadley (26,1322° N, 3,6339° E)"
+    ],
+    [
+      "Retour sur Terre",
+      "7 août 1971, 20h45 UTC — Amerrissage dans le Pacifique Nord (12 j 07 h 11 min de mission)"
+    ],
+    [
+      "Équipage",
+      "David R. Scott (commandant), James B. Irwin (pilote LM), Alfred M. Worden (pilote CSM)"
+    ],
+    [
+      "Véhicules",
+      "Saturn V (SA-510) · Module de commande/service Endeavour (CSM-112) · Module lunaire Falcon (LM-10) · Rover LRV-1"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier déploiement du Lunar Roving Vehicle (LRV) ; 77,3 kg d'échantillons rapportés (dont la « Pierre de la Genèse »)"
+    ]
+  ],
+  "sourceFile": "Lune/Apollo/Fiche mission Apollo 15 - Hardware perdu dans l_espace.pdf",
+  "pdf": "apollo-15.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "PROGRAMME APOLLO · CATALOGUE DU PATRIMOINE SPATIAL Apollo 15 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~3,0 t de matériel laissé sur le site de Hadley-Apennine (dont le 1er rover lunaire LRV) · 1 objet encore actif en 2026 (rétro-réflecteur laser LRRR-15, le plus grand sur la Lune) · 3 objets écrasés sur la"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "Lune (étage S-IVB, étage d'ascension du LM et sous-satellite PFS-1) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 175.76544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Apollo 15 (AS-510)"
+          ],
+          [
+            "Agence & programme",
+            "NASA — Programme Apollo (quatrième alunissage habité, première mission scientifique longue de type J)"
+          ],
+          [
+            "Lancement",
+            "26 juillet 1971, 13h34 UTC — Kennedy Space Center (Pad 39A), fusée Saturn V"
+          ],
+          [
+            "Alunissage",
+            "30 juillet 1971, 22h16 UTC — Hadley-Apennine, au pied du mont Hadley Delta et de la faille Hadley (26,1322° N, 3,6339° E)"
+          ],
+          [
+            "Retour sur Terre",
+            "7 août 1971, 20h45 UTC — Amerrissage dans le Pacifique Nord (12 j 07 h 11 min de mission)"
+          ],
+          [
+            "Équipage",
+            "David R. Scott (commandant), James B. Irwin (pilote LM), Alfred M. Worden (pilote CSM)"
+          ],
+          [
+            "Véhicules",
+            "Saturn V (SA-510) · Module de commande/service Endeavour (CSM-112) · Module lunaire Falcon (LM-10) · Rover LRV-1"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier déploiement du Lunar Roving Vehicle (LRV) ; 77,3 kg d'échantillons rapportés (dont la « Pierre de la Genèse »)"
+          ]
+        ]
+      },
+      {
+        "y": 497.51544189453125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 531.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 565.2205810546875,
+        "type": "text",
+        "text": "A. Surface lunaire — Hadley-Apennine (~3,0 t au total)"
+      },
+      {
+        "y": 584.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de descente du LM Falcon",
+            "~2 443 kg",
+            "■ Intact / inactif",
+            "Version élargie du LM (missions J) avec réservoirs agrandis, moteur de descente (~45 kN), échelle et compartiment scientifique MESA. Porte la plaque commémorative : « Apollo 15 · Falcon · July 1971 » suivie des signatures de Scott, Irwin et Worden."
+          ],
+          [
+            "Lunar Roving Vehicle (LRV-1)",
+            "~210 kg",
+            "■ Intact / inactif",
+            "Premier véhicule électrique habité sur la Lune (4 roues motrices en treillis de fils d'acier, batteries argent-zinc non rechargeables). A parcouru 27,9 km lors des 3 EVA. Garé à ~90 m à l'est du LM afin que sa caméra TV filme le décollage."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 15 — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Laser Ranging Retroreflector (LRRR-15)",
+            "~36 kg",
+            "● Toujours actif",
+            "Le plus grand rétroréflecteur déposé sur la Lune : panneau composé de 300 coins de cube en silice fondue (3 fois plus que sur Apollo 11 et 14). Génère ~75 % des échos laser mesurés depuis la Terre en 2026."
+          ],
+          [
+            "Station centrale ALSEP & RTG SNAP-27",
+            "~50 kg",
+            "■ Intact / inactif",
+            "Station de télémesure alimentée par le générateur nucléaire SNAP-27 (plutonium-238, ~73 W), avec son conteneur de combustible vide resté sur le LM. Désactivée le 30 septembre 1977."
+          ],
+          [
+            "Instruments géophysiques ALSEP (PSE, LSM, HFE, SIDE/CCIG, SWCE)",
+            "~48 kg",
+            "■ Intact / inactif",
+            "Sismomètre passif (PSE), magnétomètre de surface (LSM), expérience de flux thermique interne (HFE avec deux sondes forées dans le sol), spectromètres d'ions/exosphère (SIDE/CCIG) et collecteur de vent solaire (SWCE)."
+          ],
+          [
+            "Mémorial Fallen Astronaut & plaque des 14 astronautes/cosmonautes",
+            "< 1 kg",
+            "■ Intact / inactif",
+            "Sculpture en aluminium de 8,5 cm réalisée par l'artiste belge Paul Van Hoeydonck, couchée dans le régolithe près du LRV à côté d'une plaque nominative rendant hommage aux 14 astronautes américains et cosmonautes soviétiques décédés jusqu'en 1971."
+          ],
+          [
+            "Drapeau américain, marteau & plume de faucon",
+            "~3 kg",
+            "■ Intact / inactif",
+            "Drapeau américain planté au nord du LM (resté debout au décollage) ; marteau géologique en aluminium et plume de faucon (Falco rusticolus) laissés au sol après la démonstration en direct de la loi de chute des corps de Galilée."
+          ],
+          [
+            "Outils géologiques, foreuse ALSD & sacs de déchets",
+            "~160 kg",
+            "■ Intact / inactif",
+            "Foreuse électrique sur batterie (Apollo Lunar Surface Drill), râteau, pinces, gnomon photographique, sacs de déchets (Jettison Bags) et couvertures thermiques en Mylar."
+          ]
+        ]
+      },
+      {
+        "y": 583.2205810546875,
+        "type": "text",
+        "text": "B. Orbite lunaire, impacts contrôlés & rentrée atmosphérique"
+      },
+      {
+        "y": 602.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage S-IVB de la Saturn V (S-IVB-510)",
+            "~14 036 kg (à sec)",
+            "▲ Écrasé (Lune)",
+            "Guidé volontairement vers la Lune après l'extraction du LM. Impact le 29 juillet 1971 à 20h58 UTC par 1,51° S, 11,81° O (à ~146 km au nord-est du site d'Apollo 14), fournissant une source sismique calibrée pour le réseau ALSEP."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 15 — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage d'ascension du LM Falcon",
+            "~2 132 kg",
+            "▲ Écrasé (Lune)",
+            "Largué après l'amarrage avec Endeavour et désorbité volontairement. Impact le 3 août 1971 à 03h03 UTC par 26,36° N, 0,25° E (à ~93 km à l'ouest du site d'alunissage de Hadley-Apennine)."
+          ],
+          [
+            "Sous-satellite Particles & Fields (PFS-1)",
+            "~35,6 kg",
+            "▲ Écrasé (Lune)",
+            "Premier satellite lancé depuis un vaisseau habité en orbite lunaire (4 août 1971). A mesuré les champs magnétiques et le plasma lunaire pendant 18 mois avant de s'écraser sur la Lune vers janvier 1973 en raison des perturbations gravitationnelles (mascons)."
+          ],
+          [
+            "Module de service (SM-112)",
+            "~5 200 kg (à vide)",
+            "▲ Désintégré",
+            "Équipé de la baie scientifique SIM (caméras panoramique et métrique, spectromètres gamma et X). Largué avant la rentrée atmosphérique terrestre le 7 août 1971 ; entièrement consumé dans l'atmosphère."
+          ]
+        ]
+      },
+      {
+        "y": 352.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 372.1760559082031,
+        "type": "text",
+        "text": "Capsule Endeavour (module de commande CM-112, ~5 500 kg) : amerrissage au nord d'Hawaï près du porte-hélicoptères USS Okinawa (malgré le dégonflement d'un des trois parachutes principaux) ; exposée au National Museum of the United States Air Force (Dayton, Ohio)."
+      },
+      {
+        "y": 421.770263671875,
+        "type": "text",
+        "text": "Échantillons lunaires (77,31 kg) : 370 échantillons distincts et une carotte profonde de 2,4 m, dont la célèbre « Pierre de la Genèse » (échantillon 15415, anorthosite primordiale âgée de ~4,1 milliards d'années)."
+      },
+      {
+        "y": 470.520263671875,
+        "type": "text",
+        "text": "Films scientifiques SIM : cassettes photo récupérées lors de la première sortie extravéhiculaire en espace profond (EVA trans-Terre de 39 min effectuée par Al Worden le 5 août 1971)."
+      },
+      {
+        "y": 513.4705810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 534.270263671875,
+        "type": "text",
+        "text": "Panneaux d'adaptation (SLA) de la Saturn V : quatre panneaux largués en orbite terrestre basse lors de l'extraction du module lunaire Falcon."
+      },
+      {
+        "y": 568.020263671875,
+        "type": "text",
+        "text": "Équipements et conteneurs largués : sacs de déchets, emballages alimentaires et surchaussures évacués hors du LM avant le largage final de l'étage d'ascension."
+      },
+      {
+        "y": 610.7654418945312,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 637.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "26 juillet 1971, 13h34 UTC",
+            "Lancement de Saturn V depuis le Kennedy Space Center."
+          ],
+          [
+            "29 juillet 1971, 20h58 UTC",
+            "Insertion en orbite lunaire ; l'étage S-IVB percute la Lune (1,51° S, 11,81° O)."
+          ],
+          [
+            "30 juillet 1971, 22h16 UTC",
+            "Alunissage de Falcon à Hadley-Apennine (26,1322° N, 3,6339° E)."
+          ],
+          [
+            "31 juillet, 13h13 – 19h46 UTC",
+            "EVA 1 (6 h 32 min) : déploiement du rover LRV-1, trajet vers le bord de la faille Hadley et installation de l'ALSEP et du LRRR-15."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 15 — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "1er août, 11h48 – 19h01 UTC",
+            "EVA 2 (7 h 12 min) : exploration du versant du mont Hadley Delta (cratère Spur) et collecte de la « Pierre de la Genèse »."
+          ],
+          [
+            "2 août, 08h52 – 13h42 UTC",
+            "EVA 3 (4 h 49 min) : retour vers la faille Hadley, expérience du marteau et de la plume, dépôt du mémorial Fallen Astronaut."
+          ],
+          [
+            "2 août 1971, 17h11 UTC",
+            "Décollage de Falcon filmé en direct par la caméra du LRV (66 h 55 min sur la Lune) ; impact de l'étage d'ascension le 3 août à 03h03 UTC."
+          ],
+          [
+            "4 & 5 août 1971",
+            "Lancement du sous-satellite PFS-1 (4 août) ; sortie extravéhiculaire en espace profond d'Al Worden (5 août) pour récupérer les films du module SIM."
+          ],
+          [
+            "7 août 1971, 20h45 UTC",
+            "Amerrissage dans le Pacifique Nord (avec 2 parachutes sur 3)."
+          ]
+        ]
+      },
+      {
+        "y": 257.51544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 286.020263671875,
+        "type": "text",
+        "text": "Pilier de la télémétrie laser lunaire (2026) : grâce à ses 300 coins de cube (surface réflectrice 3 fois supérieure à celle d'Apollo 11 et 14), le LRRR-15 est la cible privilégiée des observatoires terrestres (Observatoire de la Côte d'Azur, Apache Point, Wettzell). Il permet de contraindre les modèles de structure interne de la Lune (noyau fluide) et de vérifier le principe d'équivalence d'Einstein."
+      },
+      {
+        "y": 349.770263671875,
+        "type": "text",
+        "text": "Révolution de la géologie lunaire : l'utilisation du rover LRV-1 (27,9 km parcourus, contre moins de 4 km à pied lors d'Apollo 14) a permis d'échantillonner trois unités géologiques distinctes : la plaine basaltique de Mare Imbrium, la faille sinueuse de Hadley Rille et le massif montagneux des Apennins, révélant l'histoire ancienne de la croûte anorthositique lunaire."
+      },
+      {
+        "y": 413.520263671875,
+        "type": "text",
+        "text": "Cartographie orbitale et anomalie gravitationnelle : les instruments du module SIM et le sous- satellite PFS-1 ont cartographié la composition chimique de 12 % de la surface lunaire et mis en évidence l'instabilité rapide des orbites basses lunaires due aux concentrations de masse (mascons)."
+      },
+      {
+        "y": 462.270263671875,
+        "type": "text",
+        "text": "Imagerie LRO du site d'alunissage : les photographies haute résolution de la sonde Lunar Reconnaissance Orbiter permettent de distinguer clairement l'étage de descente de Falcon, le rover LRV-1 garé à l'est, la station ALSEP, le LRRR-15 et les doubles traces de pneus dans le régolithe."
+      },
+      {
+        "y": 520.0154418945312,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 548.5869140625,
+        "type": "text",
+        "text": "NASA — Apollo 15 Mission Report (MSC-05161)"
+      },
+      {
+        "y": 566.5869140625,
+        "type": "text",
+        "text": "NASA — Apollo 15 Preliminary Science Report (SP-289)"
+      },
+      {
+        "y": 585.3369140625,
+        "type": "text",
+        "text": "Archives photographiques LRO du site de Hadley-Apennine : lroc.sese.asu.edu / lro.gsfc.nasa.gov"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 15 — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

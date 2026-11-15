@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Launch of Europe ExoMars 2016 from Kazakhstan",
+      "credit": "ESA",
+      "date": "2016-03-14T16:32:08Z",
+      "source": "https://images.nasa.gov/details/PIA20325",
+      "nasaId": "PIA20325",
+      "description": "The European Space Agency ExoMars 2016 mission, combining the Trace Gas Orbiter and Schiaparelli landing demonstrator, launches on a Proton launch vehicle from the Baikonur Cosmodrome in Kazakhstan.",
+      "src": "archives/exomars-nasa-PIA20325.jpg"
+    },
+    {
+      "title": "A Possible Landing Site in Aram Dorsum for the ExoMars Rover",
+      "credit": "NASA/JPL-Caltech/Univ. of Arizona",
+      "date": "2014-08-27T19:26:19Z",
+      "source": "https://images.nasa.gov/details/PIA18773",
+      "nasaId": "PIA18773",
+      "description": "This image captured by NASA Mars Reconnaissance Orbiter is of an area called Aram Dorsum also known by its old name, Oxia Palus that has been suggested for the 2018/2020 ExoMars Rover because it contains an ancient, exhumed alluvial system.",
+      "src": "archives/exomars-nasa-PIA18773.jpg"
+    },
+    {
+      "title": "A Possible Landing Site for the ExoMars Rover in Aram Dorsum",
+      "credit": "NASA/JPL-Caltech/Univ. of Arizona",
+      "date": "2015-07-29T20:09:01Z",
+      "source": "https://images.nasa.gov/details/PIA19859",
+      "nasaId": "PIA19859",
+      "description": "This image from NASA Mars Reconnaissance Orbiter is part of a proposed landing site in Aram Dorsum for the ExoMars Rover, planned for launch in 2018. Upper layers of light toned sediments have been eroded, leaving a lower surface which appears dark. The retreating sediment scarp slopes would be an important target for the rover if it ends up going to Aram Dorsum.  The retreating scarps will be relatively recent compared to the ancient age of the terrain. That means that organic compounds-which is what ExoMars is designed to drill to 2 meters depth and analyze-will not have been exposed to the full effects of solar and galactic radiation for their entire history. Such radiation can break down organic compounds. Prior to this later erosion, the rocks formed in the ancient, Noachian era as alluvial deposits of fine grained sediment.   http://photojournal.jpl.nasa.gov/catalog/PIA19859",
+      "src": "archives/exomars-nasa-PIA19859.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/exomars.mp4",
+    "local": true,
+    "title": "ExoMars (TGO & Schiaparelli) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "exomars.pdf",
+    "fingerprint": "0ec54fca3fce549f35a3c9fe3efa8730fb3373556e149eb9370eda45b3f1db2a"
+  }
+}

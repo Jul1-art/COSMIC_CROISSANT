@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Chang'e 6 lunar samples at IAC 2024 03 (cropped)",
+      "description": "Lunar samples collected by the Chang'e 6 spacecraft exhibited at the 2024 International Astronautical Congress celebrated in Milan, Italy.",
+      "credit": "BugWarp",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Chang%27e_6_lunar_samples_at_IAC_2024_03_(cropped).jpg",
+      "src": "archives/chang-e-6-commons.jpg",
+      "date": "2024-10-16",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/chang-e-6.mp4",
+    "local": true,
+    "title": "Chang'e 6 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "chang-e-6.pdf",
+    "fingerprint": "a38103c4b9a6d90ea53f193cc8bbf42bbc7cca2479dc35343450437136de7f41"
+  }
+}

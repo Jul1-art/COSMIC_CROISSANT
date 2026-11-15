@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Launch of Galileo on STS-34 Atlantis",
+      "credit": "NASA/JPL/KSC",
+      "date": "1997-09-10T10:10:01Z",
+      "source": "https://images.nasa.gov/details/PIA00726",
+      "nasaId": "PIA00726",
+      "description": "Liftoff of STS-34 Atlantis, carrying NASA Galileo spacecraft and its Inertial Upper Stage IUS booster on October 18, 1989 at 12:35 p.m. EDT. P-35036BC",
+      "src": "archives/galileo-nasa-PIA00726.jpg"
+    },
+    {
+      "title": "STS-34 Galileo processing at KSC's SAEF-2 planetary spacecraft facility",
+      "credit": "NASA / JSC",
+      "date": "1989-07-21T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S89-42091",
+      "nasaId": "S89-42091",
+      "description": "At the Kennedy Space Center's (KSC's) Spacecraft and Assembly Encapsulation Facility 2 (SAEF-2), the planetary spacecraft checkout facility, clean-suited technicians work on the Galileo spacecraft prior to moving it to the Vehicle Processing Facility (VPF) for mating with the inertial upper stage (IUS). Galileo is scheduled for launch aboard Atlantis, Orbiter Vehicle (OV) 104, on Space Shuttle Mission STS-34 in October 1989. It will be sent to the planet Jupiter, a journey which will taken more than six years to complete. In December 1995 as the two and one half ton spacecraft orbits Jupiter with its ten scientific instruments, a probe will be released to parachute into the Jovian atmosphere. NASA's Jet Propulsion Laboratory (JPL) manages the Galileo project. View provided by KSC.",
+      "src": "archives/galileo-nasa-S89-42091.jpg"
+    },
+    {
+      "title": "Labeled line drawing of Galileo spacecraft's atmospheric probe",
+      "credit": "NASA / JSC",
+      "date": "1989-09-11T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S89-44175",
+      "nasaId": "S89-44175",
+      "description": "Labeled line drawing entitled GALILEO PROBE identifies the deceleration module aft cover, descent module, and deceleration module aeroshell configurations and dimensions prior to and during entry into Jupiter's atmosphere.",
+      "src": "archives/galileo-nasa-S89-44175.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/galileo.mp4",
+    "local": true,
+    "title": "Galileo · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "galileo.pdf",
+    "fingerprint": "ca509e021afeb12eafdf4a9a445252e67fa1458e98e54eecd655382a1a966fcc"
+  }
+}

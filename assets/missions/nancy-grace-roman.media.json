@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Roman Space Telescope Prelaunch News Conference",
+      "credit": "NASA/Kim Shiflett",
+      "date": "2026-08-29T00:00:00Z",
+      "source": "https://images.nasa.gov/details/KSC-20260829-PH-KLS02_0104",
+      "nasaId": "KSC-20260829-PH-KLS02_0104",
+      "description": "Lucas Paganini, Roman telescope program executive, NASA Headquarters in Washington, participates in a prelaunch news conference for the agency’s Nancy Grace Roman Space Telescope inside the NASA News Center’s John Holliman Auditorium at Kennedy Space Center in Florida, on Saturday, Aug. 29, 2026. Roman will investigate dark energy and dark matter, conduct a statistical census of planetary systems, and enable a broad range of additional astrophysics research. Liftoff from Launch Complex 39A at Kennedy is targeted for no earlier than Sunday, Aug. 30, 2026.",
+      "src": "archives/nancy-grace-roman-nasa-KSC-20260829-PH-KLS02_0104.jpg"
+    },
+    {
+      "title": "Nancy Grace Roman Space Telescope Launch",
+      "credit": "NASA/Joel Kowsky",
+      "date": "2026-08-30T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ202608300053",
+      "nasaId": "NHQ202608300053",
+      "description": "Mark Melton, a system engineer for NASA’s Nancy Grace Roman Space Telescope, monitors the countdown inside SpaceX’s Hangar X for the launch of a SpaceX Falcon Heavy rocket with NASA’S Nancy Grace Roman Space Telescope from Launch Complex 39A at NASA’s Kennedy Space Center, Sunday, Aug. 30, 2026, in Florida. Roman will investigate dark energy and dark matter, conduct a statistical census of planetary systems, and enable a broad range of additional astrophysics research. Launch occurred at 7:26 a.m. EDT. Photo Credit (NASA/Joel Kowsky)",
+      "src": "archives/nancy-grace-roman-nasa-NHQ202608300053.jpg"
+    },
+    {
+      "title": "Nancy Grace Roman Space Telescope Prelaunch",
+      "credit": "NASA/Joel Kowsky",
+      "date": "2026-08-29T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ202608290006",
+      "nasaId": "NHQ202608290006",
+      "description": "NASA’s Nancy Grace Roman Space Telescope, encapsulated in a protective payload fairing atop a SpaceX Falcon Heavy rocket, is seen at sunrise, Saturday, Aug. 29, 2026, at Launch Complex 39A at NASA’s Kennedy Space Center in Florida. Roman will investigate dark energy and dark matter, conduct a statistical census of planetary systems, and enable a broad range of additional astrophysics research. Liftoff from NASA Kennedy is targeted for Sunday, Aug. 30, 2026. Photo Credit (NASA/Joel Kowsky)",
+      "src": "archives/nancy-grace-roman-nasa-NHQ202608290006.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "The Nancy Grace Roman Space Telescope Mission Trailer ",
+      "credit": "GSFC",
+      "source": "https://images.nasa.gov/details/15081-%20Roman%20Mission%20Trailer%20-%20Long",
+      "nasaId": "15081- Roman Mission Trailer - Long",
+      "src": "https://images-assets.nasa.gov/video/15081-%20Roman%20Mission%20Trailer%20-%20Long/15081-%20Roman%20Mission%20Trailer%20-%20Long~preview.mp4",
+      "description": "Our newest orbiting observatory, the Nancy Grace Roman Space Telescope, is scheduled to lift off on Aug. 30. After launching, it will start its journey to its new home 1 million miles away from Earth.  Named after NASA’s first chief astronomer, the Nancy Grace Roman Space Telescope will have a deep, panoramic view of the cosmos, producing images over 100 times larger than our Hubble Space Telescope, but with the same crisp resolution. With its wide view and sophisticated host of tools, Roman will help us discover new exoplanets and untangle cosmic mysteries such as the nature of dark matter and dark energy.",
+      "date": "2026-08-24T00:00:00Z",
+      "duration": 89.966667,
+      "bitrate": 648285,
+      "bytes": 7290512,
+      "width": 480,
+      "height": 270,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/nancy-grace-roman.mp4",
+    "local": true,
+    "title": "Nancy Grace Roman · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "nancy-grace-roman.pdf",
+    "fingerprint": "ab65409a48e81a9933b37dbe9f918a47c034dcdd6c3e7aab5a12ec671ca44ace"
+  }
+}

@@ -1,0 +1,557 @@
+{
+  "curiosity": {
+    "path": "models/curiosity.glb",
+    "source": "https://science.nasa.gov/resource/curiosity-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/c/Curiosity_static.glb?emrc=6af95ffb30985",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "voyager": {
+    "path": "models/voyager.glb",
+    "source": "https://science.nasa.gov/resource/voyager-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/v/Voyager.glb?emrc=6af95f3e771a6",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "new-horizons": {
+    "path": "models/new-horizons.glb",
+    "source": "https://science.nasa.gov/resource/new-horizons-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/n/New_Horizons.glb?emrc=6af95ffb352b4",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "cassini": {
+    "path": "models/cassini.glb",
+    "source": "https://science.nasa.gov/resource/cassini-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/c/Cassini.glb?emrc=6af95ffb30191",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "perseverance": {
+    "path": "models/perseverance.glb",
+    "source": "https://science.nasa.gov/resource/mars-perseverance-rover-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/gltf_files/25042_Perseverance.glb?emrc=6af964f555dda",
+    "credit": "NASA/JPL-Caltech"
+  },
+  "mro": {
+    "path": "models/mro.glb",
+    "source": "https://science.nasa.gov/resource/mars-reconnaissance-orbiter-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/gltf_files/24884_MRO.glb?emrc=6af95ffdcc18b",
+    "credit": "NASA/JPL-Caltech"
+  },
+  "parker": {
+    "path": "models/parker.glb",
+    "source": "https://science.nasa.gov/resource/parker-solar-probe-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/p/s/PSP.glb?emrc=6af95fff7f888",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "europa-clipper": {
+    "path": "models/europa-clipper.glb",
+    "source": "https://science.nasa.gov/resource/europa-clipper-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/c/clipper_spacecraft.glb?emrc=6af96000cdbdd",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "galileo": {
+    "path": "models/galileo.glb",
+    "source": "https://science.nasa.gov/3d-resources/galileo/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/galileo/Galileo.glb",
+    "credit": "NASA/JPL/Solar System Simulator"
+  },
+  "mer": {
+    "path": "models/mer.glb",
+    "source": "https://science.nasa.gov/resource/mars-exploration-rovers-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/m/MER_static.glb?emrc=6af96001d1259",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "near": {
+    "path": "models/near.glb",
+    "source": "https://science.nasa.gov/3d-resources/near-shoemaker/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/near-shoemaker/NEAR%20Shoemaker.glb",
+    "credit": "NEAR Shoemaker.glb"
+  },
+  "pioneer": {
+    "path": "models/pioneer.glb",
+    "source": "https://science.nasa.gov/3d-resources/pioneer/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/pioneer-10/Pioneer%2010.glb",
+    "credit": "NASA/JPL/Eyes on the Solar System"
+  },
+  "rosetta": {
+    "path": "models/rosetta.glb",
+    "source": "https://github.com/nasa/NASA-3D-Resources/tree/master/3D%20Models/Rosetta",
+    "download": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/master/3D%20Models/Rosetta/Rosetta.glb",
+    "credit": "NASA/JPL/Eyes on the Solar System"
+  },
+  "viking": {
+    "path": "models/viking.glb",
+    "source": "https://science.nasa.gov/3d-resources/viking-lander/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/viking-lander/Viking%20Lander.glb",
+    "credit": "NASA/Michael D. Carbajal"
+  },
+  "eros": {
+    "path": "models/eros.glb",
+    "source": "https://science.nasa.gov/resource/eros-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/e/Eros_1_10.glb?emrc=6af9b36278d2b",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "pluto": {
+    "path": "models/pluto.glb",
+    "source": "https://science.nasa.gov/resource/pluto-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/p/l/Pluto_1_2374.glb?emrc=6af9b3626bad8",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "webb": {
+    "path": "models/webb.glb",
+    "source": "https://science.nasa.gov/3d-resources/james-webb-space-telescope-b/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/james-webb-space-telescope-(b)/James%20Webb%20Space%20Telescope%20(B).glb",
+    "credit": "NASA/Christopher R. Meaney"
+  },
+  "lro": {
+    "path": "models/lro.glb",
+    "source": "https://science.nasa.gov/3d-resources/lunar-reconnaissance-orbiter-a/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/lunar-reconnaissance-orbiter-(a)/Lunar%20Reconnaissance%20Orbiter%20(A).glb",
+    "credit": "NASA/Christopher R. Meaney"
+  },
+  "roman": {
+    "path": "models/roman.glb",
+    "source": "https://science.nasa.gov/3d-resources/nancy-grace-roman-space-telescope-b/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/nancy-grace-roman-space-telescope-(b)/Nancy%20Grace%20Roman%20Space%20Telescope%20(B).glb?emrc=6af9bc40500c2",
+    "credit": "NASA/Christopher R. Meaney"
+  },
+  "messenger": {
+    "path": "models/messenger.glb",
+    "source": "https://science.nasa.gov/3d-resources/mercury-surface-space-environment-geochemistry-and-ranging-messenger/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/mercury-surface%2C-space-environment%2C-geochemistry%2C-and-ranging-(messenger)/MErcury%20Surface%2C%20Space%20ENvironment%2C%20GEochemistry%2C%20and%20Ranging%20(MESSENGER).glb?emrc=6af9bc4087192",
+    "credit": "NASA/JPL/Eyes on the Solar System"
+  },
+  "ace": {
+    "path": "models/ace.glb",
+    "source": "https://science.nasa.gov/3d-resources/advanced-composition-explorer/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/advanced-composition-explorer/Advanced%20Composition%20Explorer.glb",
+    "credit": "NASA/Christopher R. Meaney"
+  },
+  "mars-odyssey": {
+    "path": "models/mars-odyssey.glb",
+    "source": "https://science.nasa.gov/resource/mars-odyssey-orbiter-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/gltf_files/24885_Odyssey.glb?emrc=6af9bc3ec4a4d",
+    "credit": "NASA/JPL-Caltech"
+  },
+  "maven": {
+    "path": "models/maven.glb",
+    "source": "https://science.nasa.gov/3d-resources/mars-atmosphere-and-volatile-evolution-maven-b/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/mars-atmosphere-and-volatile-evolution-(maven)-(b)/Mars%20Atmosphere%20and%20Volatile%20EvolutioN%20(MAVEN)%20(B).glb",
+    "credit": "NASA/Brian E. Kumanchik"
+  },
+  "tgo": {
+    "path": "models/tgo.glb",
+    "source": "https://science.nasa.gov/resource/trace-gas-orbiter-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/t/TGO.glb?emrc=6af9bc9347fcf",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)"
+  },
+  "soho": {
+    "path": "models/soho.glb",
+    "source": "https://eyes.nasa.gov/apps/solar-system/#/sc_soho",
+    "download": "https://eyes.nasa.gov/assets/static/models/sc_soho/soho.gltf",
+    "credit": "NASA/JPL · Eyes on the Solar System",
+    "packaging": "Original glTF meshes and texture bytes embedded into one GLB; no geometry or texture edits.",
+    "resources": [
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_soho/soho.gltf",
+        "bytes": 36597,
+        "sha256": "1fc05391e6f0edaabf5205bfb3b019f9b27b384eb7b48e35c750303fe1d36a18"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_soho/soho.bin",
+        "bytes": 293244,
+        "sha256": "15f462271759400c930b16bae5dcd377b1e058a96882023532e74b7c406e38ce"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_soho/soho_normal.png",
+        "bytes": 548188,
+        "sha256": "18579693bbea88edef95a4a9de9167f225a38922fc9c0007224734e287be5dad"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_soho/soho_albedo.jpg",
+        "bytes": 248256,
+        "sha256": "95d51d5932da014f929778f1c1bb897b00911445833719a73025d61107e1dcd3"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_soho/soho_pbr.jpg",
+        "bytes": 306413,
+        "sha256": "ac30ccd09e32826278f16366be84060f48ecf3fd4ff717dce4298f3ee2255796"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_soho/soho_dish_ao.jpg",
+        "bytes": 51055,
+        "sha256": "744c8bfd75b79d58b830a98ed63125246c6f7e7c15c9eb7928758a1f0a5523da"
+      }
+    ]
+  },
+  "juice": {
+    "path": "models/juice.glb",
+    "source": "https://eyes.nasa.gov/apps/solar-system/#/sc_juice",
+    "download": "https://eyes.nasa.gov/assets/static/models/sc_juice/juice.gltf",
+    "credit": "NASA/JPL · Eyes on the Solar System",
+    "packaging": "Original glTF meshes and texture bytes embedded into one GLB; no geometry or texture edits.",
+    "resources": [
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_juice/juice.gltf",
+        "bytes": 64129,
+        "sha256": "f40986b5f69e8ff70dc47d9b9c7700dfde14d6977846a5aa2cd5c8cd87e62633"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_juice/juice.bin",
+        "bytes": 1920640,
+        "sha256": "75622ef52e2f44d09047896c2afa92925afe14fc68ededf5d0c54daf46de94cf"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_juice/juice_panels_albedo.jpg",
+        "bytes": 234326,
+        "sha256": "d4c92b2a33b3539c1c4508de0155dde52b3be5464e93e2b997e07bbd9ab354e0"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_juice/juice_panels_rough.png",
+        "bytes": 112622,
+        "sha256": "d1b3de159afbc476c3299006f4f6396d86d5e361fa9277153581956a5151b9ed"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_juice/juice_blanketing_normal.png",
+        "bytes": 1900286,
+        "sha256": "b2105a6f3c4524df9b74a77a8a0e90788484dd03ed062ca5e1876d195cce9e22"
+      }
+    ]
+  },
+  "mars-express": {
+    "path": "models/mars-express.glb",
+    "source": "https://eyes.nasa.gov/apps/solar-system/#/sc_mars_express",
+    "download": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/mars_express.gltf",
+    "credit": "NASA/JPL · Eyes on the Solar System",
+    "packaging": "Original glTF meshes and texture bytes embedded into one GLB; no geometry or texture edits.",
+    "resources": [
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/mars_express.gltf",
+        "bytes": 20390,
+        "sha256": "c28b800d5328b72a4c29b9885652cbd93d5784c8be92636d5de6cbfe60030ad2"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/mars_express.bin",
+        "bytes": 757484,
+        "sha256": "ee46ca5fd52a306411511b7c0bc7b1ddaf559c7010fb802e9b30f8cdb2ad0131"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/marsexpress_ao.jpg",
+        "bytes": 94092,
+        "sha256": "8c285680be712885912fd93263621166d743aff60a4eea34632e2cfa71719323"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/marsexpress_dish_ao.jpg",
+        "bytes": 86555,
+        "sha256": "e15d3f71f83ef84c05256c1f75f3719c6d9caf0ba69888deba83f6b1b87eaf04"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/foil_normal.png",
+        "bytes": 257893,
+        "sha256": "f8be84a94a00ea31249a823feb2df51b83bf39f112b7083c751b3f35584700eb"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/marsexpress_tex_01_normal.png",
+        "bytes": 651678,
+        "sha256": "95c3da7b74795bd4df7cf110658c6d7424baf71a21ce8c04ec9a1d6384dbb066"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/marsexpress_tex_01_albedo.jpg",
+        "bytes": 228325,
+        "sha256": "d3b50fdb5e5b268a490d840801bcbb031e622fafa6cab5e852d570c81227a38c"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/marsexpress_tex_01_pbr.jpg",
+        "bytes": 256385,
+        "sha256": "a0534be19afe3263d9b02288e7aa87d0b8463bbb43245500e8378124117191c7"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/marsexpress_tex_03_normal.png",
+        "bytes": 1024898,
+        "sha256": "d40350a48b964f3d0efb618626c1bdba476d1b4788a0a9311c83183f05f26b8b"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/marsexpress_tex_03_albedo.jpg",
+        "bytes": 318445,
+        "sha256": "a2f299891191f2049f4be8e291d26161fb4428ca38ea4df66a5c21935434725f"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mars_express/marsexpress_tex_03_pbr.jpg",
+        "bytes": 270588,
+        "sha256": "636170b7977e2ca6db0b0518fe9c1ef399dc48eff55942ac67d72968ff7c80ea"
+      }
+    ]
+  },
+  "stereo-a": {
+    "path": "models/stereo-a.glb",
+    "source": "https://eyes.nasa.gov/apps/solar-system/#/sc_stereo_ahead",
+    "download": "https://eyes.nasa.gov/assets/static/models/sc_stereo_ahead/stereo_a.gltf",
+    "credit": "NASA/JPL · Eyes on the Solar System",
+    "packaging": "Original glTF meshes and texture bytes embedded into one GLB; no geometry or texture edits.",
+    "resources": [
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_ahead/stereo_a.gltf",
+        "bytes": 19553,
+        "sha256": "380e4d229136fe4f5597c9826d77a9623914ee17474011665620e1befbbe8869"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_ahead/stereo_a.bin",
+        "bytes": 816460,
+        "sha256": "175bbd6670206b658ee3872bb33ff6599b73336de3ac72efc3196d4820c0bc5d"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_ahead/dark_ao.jpg",
+        "bytes": 79321,
+        "sha256": "9798dfdb9641236854131f77fcccced271cf4e4daa0203125d5ca2db46e8f101"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_ahead/dish_ao.jpg",
+        "bytes": 131071,
+        "sha256": "e918b6c6567b29633ffe7bb11d045b1f899ec3bcf66c43c5605729ce32e76649"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_ahead/foil_normal.png",
+        "bytes": 257893,
+        "sha256": "541c5998fcb208c50670dbe3dc29d31b7b903e75447a824d73afe5da1fc00a2a"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_ahead/tex_01_normal.png",
+        "bytes": 706460,
+        "sha256": "3559b882d499eb0536123d14ec01fe740a7337e98f3eb6e47fa5a514c6026138"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_ahead/tex_01_albedo.jpg",
+        "bytes": 326672,
+        "sha256": "542614ed346aab158a94b8632210e74c9725894aff36c3cbb027984ada0223c6"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_ahead/tex_01_pbr.jpg",
+        "bytes": 331204,
+        "sha256": "1f882f933fbe6dcba7832835440fa00cb060fb8fbc5aa51197fe781369204fc6"
+      }
+    ]
+  },
+  "mariner": {
+    "path": "models/mariner.glb",
+    "source": "https://eyes.nasa.gov/apps/solar-system/#/sc_mariner_2",
+    "download": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2.gltf",
+    "credit": "NASA/JPL · Eyes on the Solar System",
+    "packaging": "Original glTF meshes and texture bytes embedded into one GLB; no geometry or texture edits.",
+    "resources": [
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2.gltf",
+        "bytes": 25774,
+        "sha256": "afdd71d092efd8dcb931ee517b9ccfe66cf268e3db22f61ad58d2d81de986c52"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2.bin",
+        "bytes": 128397,
+        "sha256": "c9dd85792e384ccaa475abed9da693fb99aa62f0386b57b1950b23f99536b927"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2_ao_albedo.ktx2",
+        "bytes": 83089,
+        "sha256": "56268f6f51aeab1784b6ec4667376267fc1d65c353cbc3b1f1f7b680e29530f5"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2_ao_bronze_albedo.ktx2",
+        "bytes": 104969,
+        "sha256": "f588098292fa901292a22565ae5408a6b694933b8e9ca4e441b855e7172c9f48"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2_ao_grey_albedo.ktx2",
+        "bytes": 106167,
+        "sha256": "e32644ac7824e14a3c98f93ad7679f4977dffb606401c3cf3913f6c90d5733d9"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2_ao_lightgrey_albedo.ktx2",
+        "bytes": 98366,
+        "sha256": "d2ee1275ea9bf1be5f8bbe95d8d5a1137c509c4749fffa73a17d0e64040a4375"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/foil_normal.ktx2",
+        "bytes": 147652,
+        "sha256": "51eb15e94064c4e97835c041f2b0db23d8ebff0500417f09b2e04d9eee264357"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mesh_albedo.ktx2",
+        "bytes": 62349,
+        "sha256": "4e2190e75825441e2d0271d107178ed9c86684e1c100bcf732edae35ab45aef0"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2_albedo.ktx2",
+        "bytes": 88959,
+        "sha256": "14c76523eab10be0210ca781bb0e4af63eb3d2cd19b7331f874ed75fda884803"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2_tex.ktx2",
+        "bytes": 88959,
+        "sha256": "14c76523eab10be0210ca781bb0e4af63eb3d2cd19b7331f874ed75fda884803"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_mariner_2/mariner2_tex-1.ktx2",
+        "bytes": 73846,
+        "sha256": "74d1d1bfca234503cf1009337997459dd4c9908e251162a4fffa6f1cff888a2a"
+      }
+    ]
+  },
+  "huygens": {
+    "path": "models/huygens.glb",
+    "source": "https://eyes.nasa.gov/apps/solar-system/#/sc_huygens",
+    "download": "https://eyes.nasa.gov/assets/static/models/sc_huygens/Huygens.gltf",
+    "credit": "NASA/JPL · Eyes on the Solar System",
+    "packaging": "Original glTF meshes and texture bytes embedded into one GLB; no geometry or texture edits.",
+    "resources": [
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_huygens/Huygens.gltf",
+        "bytes": 5444,
+        "sha256": "be1059ab900464a6456e07de5bad9f05b58f0b09391b24a93ee8815bad42cc32"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_huygens/huygens_probe.bin",
+        "bytes": 22368,
+        "sha256": "f603ba20171bb7f2cf3ecdcf2674b17d98e8ee4020186078a02c1bec85515d12"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_huygens/foil_normal.png",
+        "bytes": 257893,
+        "sha256": "541c5998fcb208c50670dbe3dc29d31b7b903e75447a824d73afe5da1fc00a2a"
+      }
+    ]
+  },
+  "stereo-b": {
+    "path": "models/stereo-b.glb",
+    "source": "https://eyes.nasa.gov/apps/solar-system/#/sc_stereo_behind",
+    "download": "https://eyes.nasa.gov/assets/static/models/sc_stereo_behind/stereo_b.gltf",
+    "credit": "NASA/JPL · Eyes on the Solar System",
+    "packaging": "Original glTF meshes and texture bytes embedded into one GLB; no geometry or texture edits.",
+    "resources": [
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_behind/stereo_b.gltf",
+        "bytes": 19553,
+        "sha256": "9fc3f37f920494d523bff0b4a7d6bb5a9073ad90c385c126b4c754af424c1641"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_behind/stereo_b.bin",
+        "bytes": 855292,
+        "sha256": "b273b58d68a88f038311a78099e3932458820f166f2e502c2d4724755fdb1441"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_behind/dark_ao.jpg",
+        "bytes": 79321,
+        "sha256": "9798dfdb9641236854131f77fcccced271cf4e4daa0203125d5ca2db46e8f101"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_behind/dish_ao.jpg",
+        "bytes": 131071,
+        "sha256": "e918b6c6567b29633ffe7bb11d045b1f899ec3bcf66c43c5605729ce32e76649"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_behind/foil_normal.png",
+        "bytes": 257893,
+        "sha256": "541c5998fcb208c50670dbe3dc29d31b7b903e75447a824d73afe5da1fc00a2a"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_behind/tex_01_normal.png",
+        "bytes": 706460,
+        "sha256": "3559b882d499eb0536123d14ec01fe740a7337e98f3eb6e47fa5a514c6026138"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_behind/tex_01_albedo.jpg",
+        "bytes": 326672,
+        "sha256": "542614ed346aab158a94b8632210e74c9725894aff36c3cbb027984ada0223c6"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_stereo_behind/tex_01_pbr.jpg",
+        "bytes": 331204,
+        "sha256": "1f882f933fbe6dcba7832835440fa00cb060fb8fbc5aa51197fe781369204fc6"
+      }
+    ]
+  },
+  "galileo-probe": {
+    "path": "models/galileo-probe.glb",
+    "source": "https://eyes.nasa.gov/apps/solar-system/#/sc_galileo_probe",
+    "download": "https://eyes.nasa.gov/assets/static/models/sc_galileo_probe/galileo_probe.gltf",
+    "credit": "NASA/JPL · Eyes on the Solar System",
+    "packaging": "Original glTF meshes and texture bytes embedded into one GLB; no geometry or texture edits.",
+    "resources": [
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_galileo_probe/galileo_probe.gltf",
+        "bytes": 5846,
+        "sha256": "46f2b20d4ff79e95dd8ab83084c925a2c14e24cb54e9b1c4d14a4d92d56ee6d8"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_galileo_probe/galileo_probe.bin",
+        "bytes": 19896,
+        "sha256": "0683d677914bbe0f8f22bae54ad25dcfea62bff3e8ce71be0fd119fcedc2e741"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_galileo_probe/foil_normal.png",
+        "bytes": 309641,
+        "sha256": "2ac7f687a8d7c334158a9dc9934fb7be27bd524967eb1cd9a9451204123cee87"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_galileo_probe/galileo_01_normal.png",
+        "bytes": 970855,
+        "sha256": "2f1ec93d9ad76560b0ff11080db7b0fe41318fe649d239cd4933e821f6c01146"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_galileo_probe/galileo_01_albedo.png",
+        "bytes": 1288517,
+        "sha256": "ddf4aef4d9773593ea71b8aefcbed49aa31260ee5590e44c3aa97362ad9369b9"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_galileo_probe/galileo_01_pbr.jpg",
+        "bytes": 144102,
+        "sha256": "dbf1d044002ecb8388d7ffea1789861295e5219e4ba3ca41e54c0b1753a3a7c1"
+      }
+    ]
+  },
+  "philae": {
+    "path": "models/philae.glb",
+    "source": "https://eyes.nasa.gov/apps/solar-system/#/sc_philae",
+    "download": "https://eyes.nasa.gov/assets/static/models/sc_philae/philae.gltf",
+    "credit": "NASA/JPL · Eyes on the Solar System",
+    "packaging": "Original glTF meshes and texture bytes embedded into one GLB; no geometry or texture edits.",
+    "resources": [
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_philae/philae.gltf",
+        "bytes": 18771,
+        "sha256": "2009777faf41114ebc76e1c1e7e30efc17dc262f5a4da916019ea9c69af846c6"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_philae/philae.bin",
+        "bytes": 219632,
+        "sha256": "704ee31dd7aac919d9e0eced0b71dc0b8ffbbe3c7d6d9792fa3f07eef3adfec6"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_philae/rosetta_parts2_ao.jpg",
+        "bytes": 201717,
+        "sha256": "b00ef2e43399df611fc01596d5b46b3eba23328648c26700deb396642ffba45c"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_philae/rosetta_parts3_ao.jpg",
+        "bytes": 328751,
+        "sha256": "c8e2f159945a64e1cb8738f88f2e04d7fddf5346879d6e9b9698c92358c3d1ce"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_philae/foil_normal.png",
+        "bytes": 257893,
+        "sha256": "541c5998fcb208c50670dbe3dc29d31b7b903e75447a824d73afe5da1fc00a2a"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_philae/rosetta_tex_01_normal.png",
+        "bytes": 389294,
+        "sha256": "36e3a22968781ee1304d53446e4da7bd3176d415ef10ab367e004dafe4128511"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_philae/rosetta_tex_01_albedo.jpg",
+        "bytes": 97243,
+        "sha256": "c7368fe9f9b44aa95b1be44834e513aeb6cf0859b3ad23469e940f1b1ded654a"
+      },
+      {
+        "url": "https://eyes.nasa.gov/assets/static/models/sc_philae/rosetta_tex_01_pbr.jpg",
+        "bytes": 168655,
+        "sha256": "e7fe0cf6cf5952cd594ba948df38329d6fdf8caf728bfffa3ac249495c6e2b91"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Apollo 11 spacecraft pre-launch",
+      "credit": "NASA / JSC",
+      "date": "1969-07-11T00:00:00Z",
+      "source": "https://images.nasa.gov/details/jsc2007e034221",
+      "nasaId": "jsc2007e034221",
+      "description": "Personnel atop the 402-ft. Mobile Service Structure look back at the Apollo 11 spacecraft as the tower is moved away during a Countdown Demonstration Test. Photo filed 11 July 1969. ",
+      "src": "archives/apollo-11-nasa-jsc2007e034221.jpg"
+    },
+    {
+      "title": "Apollo 11 50th Anniversary Celebration",
+      "credit": "NASA/Aubrey Gemignani",
+      "date": "2019-07-19T00:00:00Z",
+      "source": "https://images.nasa.gov/details/NHQ201907190151",
+      "nasaId": "NHQ201907190151",
+      "description": "A small rover is driven over a visitor at the Apollo 11 50th Anniversary celebration on the National Mall, Friday, July 19, 2019 in Washington. Apollo 11 was the first mission to land astronauts on the Moon and launched on July 16, 1969 with astronauts Neil Armstrong, Michael Collins, and Buzz Aldrin. Photo Credit: (NASA/Aubrey Gemignani)",
+      "src": "archives/apollo-11-nasa-NHQ201907190151.jpg"
+    },
+    {
+      "title": "Apollo 11 Lunar Module",
+      "credit": "NASA",
+      "date": "1969-04-04T00:00:00Z",
+      "source": "https://images.nasa.gov/details/624073main_1969-04-04_full",
+      "nasaId": "624073main_1969-04-04_full",
+      "description": "The Lunar Module for Apollo 11 moves from the landing gear fixture and mate to the spacecraft-lunar module adapter.",
+      "src": "archives/apollo-11-nasa-624073main_1969-04-04_full.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Video - Apollo 11 Pre-Launch and Launch",
+      "credit": "KSC",
+      "source": "https://images.nasa.gov/details/KSC-19690716-MH-NAS01-0001-Apollo_11_Launch_President_Johnson_Jack_King_Narration_Press_Site-B_1372",
+      "nasaId": "KSC-19690716-MH-NAS01-0001-Apollo_11_Launch_President_Johnson_Jack_King_Narration_Press_Site-B_1372",
+      "src": "https://images-assets.nasa.gov/video/KSC-19690716-MH-NAS01-0001-Apollo_11_Launch_President_Johnson_Jack_King_Narration_Press_Site-B_1372/KSC-19690716-MH-NAS01-0001-Apollo_11_Launch_President_Johnson_Jack_King_Narration_Press_Site-B_1372~orig.mp4",
+      "description": "Apollo 11 Pre-Launch and Launch.",
+      "date": "1969-07-16T00:00:00Z",
+      "duration": 3634.547583,
+      "bitrate": 14003739,
+      "bytes": 6362157315,
+      "width": 1280,
+      "height": 720,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/apollo-11.mp4",
+    "local": true,
+    "title": "Apollo 11 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "apollo-11.pdf",
+    "fingerprint": "9befd4a83138cd8536fa1b3b300b2358f4d814cd9798f2687b716caad4a6731d"
+  }
+}

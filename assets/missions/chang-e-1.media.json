@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Chang e 1",
+      "description": "Chang'e 1 spacecraft.",
+      "credit": "Nasa",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Chang_e_1.jpg",
+      "src": "archives/chang-e-1-commons.jpg",
+      "date": "Unknown date",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/chang-e-1.mp4",
+    "local": true,
+    "title": "Chang'e 1 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "chang-e-1.pdf",
+    "fingerprint": "648c835266308146c3df31f7352d6653099edff8c37be2f657dbdbfd2fc8404b"
+  }
+}

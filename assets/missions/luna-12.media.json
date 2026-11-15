@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "source": "https://imagine.gsfc.nasa.gov/observatories/history/missions/luna.html",
+      "image": "https://imagine.gsfc.nasa.gov/observatories/history/missions/images/luna/luna_11_12.jpg",
+      "title": "Schéma des sondes Luna 11 et Luna 12",
+      "credit": "Soviet Space Program / NASA Goddard",
+      "src": "archives/luna-12-reviewed-1.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-12.mp4",
+    "local": true,
+    "title": "Luna 12 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-12.pdf",
+    "fingerprint": "2f1dd7e6cf5db097babe03e8c902cba9a0142047314777b0537ccd1dabe97c29"
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "id": "maven",
+  "name": "MAVEN",
+  "body": "mars",
+  "family": "orbiter",
+  "year": 2013,
+  "summary": "~809 kg à sec (~1,0–1,1 t avec ergols résiduels) en orbite martienne • 0 objet encore actif en novembre 2026 (perte de signal le 6 décembre 2025, fin officielle déclarée le 3 juin 2026 après plus de 11 ans autour de Mars) • 1 étage supérieur Centaur en orbite héliocentrique.",
+  "facts": [
+    [
+      "Nom officiel",
+      "MAVEN (Mars Atmosphere and Volatile Evolution, programme Mars Scout 2, COSPAR 2013-063A)"
+    ],
+    [
+      "Agence & programme",
+      "NASA (Goddard Space Flight Center / LASP Université du Colorado Boulder / Lockheed Martin)"
+    ],
+    [
+      "Lancement",
+      "18 novembre 2013, 18h28 UTC — Cape Canaveral Air Force Station (SLC-41), fusée Atlas V 401"
+    ],
+    [
+      "Insertion orbitale",
+      "22 septembre 2014, 02h24 UTC — Orbite elliptique autour de Mars (150 × 6 200 km, abaissée à ~150 × 4 500 km en 2019, inclinaison 75°)"
+    ],
+    [
+      "Fin de mission",
+      "3 juin 2026 (fin officielle déclarée par la NASA après la perte de contact du 6 décembre 2025, soit 12 ans et 6 mois après le lancement)"
+    ],
+    [
+      "Équipage",
+      "Aucun (orbiteur automatique piloté par Lockheed Martin à Littleton et le GSFC à Greenbelt)"
+    ],
+    [
+      "Véhicules",
+      "Atlas V 401 (CCAS), orbiteur MAVEN (2 454 kg au lancement dont 1 645 kg d'hydrazine, 809 kg à sec)"
+    ],
+    [
+      "Statut",
+      "Réussie (mission primaire de 1 an prolongée plus de 10 ans) — épave silencieuse en orbite martienne"
+    ]
+  ],
+  "sourceFile": "Mars/Orbiteurs/MAVEN - Fiche « Plus de détails ».pdf",
+  "pdf": "maven.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX MAVEN — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~809 kg à sec (~1,0–1,1 t avec ergols résiduels) en orbite martienne • 0 objet encore actif en novembre 2026 (perte de signal le 6 décembre 2025, fin officielle déclarée le 3 juin 2026"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "après plus de 11 ans autour de Mars) • 1 étage supérieur Centaur en orbite héliocentrique."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "MAVEN (Mars Atmosphere and Volatile Evolution, programme Mars Scout 2, COSPAR 2013-063A)"
+          ],
+          [
+            "Agence & programme",
+            "NASA (Goddard Space Flight Center / LASP Université du Colorado Boulder / Lockheed Martin)"
+          ],
+          [
+            "Lancement",
+            "18 novembre 2013, 18h28 UTC — Cape Canaveral Air Force Station (SLC-41), fusée Atlas V 401"
+          ],
+          [
+            "Insertion orbitale",
+            "22 septembre 2014, 02h24 UTC — Orbite elliptique autour de Mars (150 × 6 200 km, abaissée à ~150 × 4 500 km en 2019, inclinaison 75°)"
+          ],
+          [
+            "Fin de mission",
+            "3 juin 2026 (fin officielle déclarée par la NASA après la perte de contact du 6 décembre 2025, soit 12 ans et 6 mois après le lancement)"
+          ],
+          [
+            "Équipage",
+            "Aucun (orbiteur automatique piloté par Lockheed Martin à Littleton et le GSFC à Greenbelt)"
+          ],
+          [
+            "Véhicules",
+            "Atlas V 401 (CCAS), orbiteur MAVEN (2 454 kg au lancement dont 1 645 kg d'hydrazine, 809 kg à sec)"
+          ],
+          [
+            "Statut",
+            "Réussie (mission primaire de 1 an prolongée plus de 10 ans) — épave silencieuse en orbite martienne"
+          ]
+        ]
+      },
+      {
+        "y": 550.7654418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 585.8842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 618.5733642578125,
+        "type": "text",
+        "text": "A. Orbite martienne — Épave silencieuse (rentrée atmosphérique prévue d'ici 50 à 100 ans)"
+      },
+      {
+        "y": 639.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Plateforme & structure de l'orbiteur MAVEN",
+            "809 kg (à sec)",
+            "Intact / inactif",
+            "Châssis cubique en composite aluminium/nid d'abeille (2,3 × 2,3 × 2 m, hauteur 3,47 m), dérivé de Mars Reconnaissance Orbiter. En rotation rapide incontrôlée et batteries déchargées depuis décembre 2025."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Panneaux solaires « mouette » & magnétomètres",
+            "~110 kg (inclus)",
+            "Intacts / inactifs",
+            "Deux ailes solaires coudées (envergure totale 11,4 m, 12 m2 de cellules, 1 150–1 700 W) assurant aussi l'aérofreinage en haute atmosphère ; équipées aux extrémités des deux magnétomètres fluxgate (MAG)."
+          ],
+          [
+            "Antenne grand gain & relais UHF Electra",
+            "~35 kg (inclus)",
+            "Intacts / inactifs",
+            "Parabole fixe de 2 m (bande X) montée sur le pont supérieur et module radio Electra (6,5 kg) ayant servi pendant plus d'une décennie de relais de données vital pour les rovers Curiosity et Perseverance."
+          ],
+          [
+            "Plateforme articulée APP (3 instruments)",
+            "~28 kg (inclus)",
+            "Intacte / inactive",
+            "Nacelle orientable à 2 degrés de liberté montée sur une perche de 2 m, portant le spectromètre ultraviolet IUVS, le spectromètre de masse gaz neutres/ions NGIMS et le détecteur suprathermique STATIC."
+          ],
+          [
+            "Suite particules & champs solaires (P&F)",
+            "~37 kg (inclus)",
+            "Intacte / inactive",
+            "Analyseur d'ions du vent solaire SWIA, analyseur d'électrons SWEA, détecteur de particules énergétiques SEP, moniteur solaire EUV et sondes de Langmuir et d'ondes LPW (deux perches de 7,1 m)."
+          ],
+          [
+            "Système de propulsion & hydrazine résiduelle",
+            "~200–300 kg (ergols est.)",
+            "Intact / passif",
+            "Réservoir central et 6 moteurs principaux MR- 107N (170 N chacun) pour l'insertion orbitale, plus propulseurs d'attitude. La dérive orbitale lente entraînera la désintégration de la sonde dans l'atmosphère martienne d'ici 50 à 100 ans."
+          ],
+          [
+            "DVD commémoratif « Going to Mars »",
+            "< 0,1 kg",
+            "Intact / passif",
+            "Disque fixé sur la sonde contenant plus de 100 000 noms du public et 1 100 haïkus sélectionnés lors d'un concours international organisé par le LASP avant le lancement."
+          ]
+        ]
+      },
+      {
+        "y": 533.0733642578125,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 554.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur Centaur (Atlas V)",
+            "~2 247 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage cryogénique RL10A-4-2 ayant effectué la poussée d'injection transmartienne le 18 novembre 2013 ; placé sur une orbite solaire croisant celles de la Terre et de Mars (non stérilisé, sur trajectoire évitant l'impact martien)."
+          ],
+          [
+            "Coiffe (4 m) & 1er étage CCB (Atlas V)",
+            "~23 000 kg (total à vide)",
+            "Écrasés / brûlés",
+            "Coiffe en composite larguée à T + 3 min 25 s et premier étage propulsé par moteur RD- 180 séparé à T + 4 min 23 s ; retombés dans l'océan Atlantique au large de la Floride."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 62.8233642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.020263671875,
+        "type": "text",
+        "text": "Aucun élément matériel récupéré : mission orbitale d'aéronomie sans retour sur Terre."
+      },
+      {
+        "y": 104.520263671875,
+        "type": "text",
+        "text": "Archives scientifiques complètes : plus de 11 années de mesures continues de la haute atmosphère martienne, de la magnétosphère induite et du vent solaire archivées dans le Planetary Data System (PDS) de la NASA."
+      },
+      {
+        "y": 164.51544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 192.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "18 novembre 2013, 18h28 UTC",
+            "Lancement d'Atlas V 401 depuis Cape Canaveral ; injection directe sur trajectoire interplanétaire vers Mars."
+          ],
+          [
+            "22 septembre 2014, 02h24 UTC",
+            "Allumage de freinage de 33 minutes et insertion de MAVEN en orbite autour de Mars (deux jours avant l'arrivée de la sonde indienne Mangalyaan)."
+          ],
+          [
+            "19 octobre 2014",
+            "Observation privilégiée du passage rapproché de la comète C/2013 A1 (Siding Spring) à 139 500 km de Mars et de ses effets sur l'ionosphère."
+          ],
+          [
+            "Nov. 2014 – nov. 2015",
+            "Exécution de la mission primaire de 1 an incluant 5 campagnes « Deep Dip » plongeant jusqu'à 125 km d'altitude pour échantillonner directement la basse thermosphère."
+          ],
+          [
+            "Février – avril 2019",
+            "Campagne d'aérofreinage abaissant l'apoapse de 6 200 à 4 500 km afin d'optimiser la couverture relais UHF pour le rover Perseverance et l'atterrisseur InSight."
+          ],
+          [
+            "6 décembre 2025",
+            "Perte brutale de signal lors d'une occultation derrière Mars ; de brefs fragments télémétriques suggèrent une mise en rotation rapide imprévue ayant vidé les batteries."
+          ],
+          [
+            "3 juin 2026",
+            "Après six mois de tentatives de reprise de contact et l'avis d'une commission d'enquête, la NASA prononce officiellement la fin de la mission MAVEN."
+          ]
+        ]
+      },
+      {
+        "y": 523.0154418945312,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 551.520263671875,
+        "type": "text",
+        "text": "Élément clé du mystère de la disparition de l'eau martienne : MAVEN a démontré que le vent solaire et le rayonnement ultraviolet arrachent en permanence environ 100 grammes de gaz par seconde à la haute atmosphère martienne (et jusqu'à 10 à 20 fois plus lors des tempêtes solaires), expliquant comment Mars est passée d'un monde chaud et humide à un désert glacé après la perte de son champ magnétique global."
+      },
+      {
+        "y": 631.770263671875,
+        "type": "text",
+        "text": "Rôle des tempêtes de poussière globales : les observations de l'instrument IUVS ont révélé que les tempêtes de poussière réchauffent l'atmosphère moyenne et propulsent les molécules d'eau à très haute altitude, accélérant brutalement la fuite d'hydrogène vers l'espace."
+      },
+      {
+        "y": 681.270263671875,
+        "type": "text",
+        "text": "Découverte des aurores à protons diffuses : MAVEN a mis en évidence des aurores ultraviolettes globales déclenchées par la précipitation directe de protons du vent solaire dans l'atmosphère martienne (phénomène impossible sur Terre en raison de notre magnétosphère protectrice)."
+      },
+      {
+        "y": 730.770263671875,
+        "type": "text",
+        "text": "Pilier des télécommunications martiennes : pendant plus de 11 ans, MAVEN a servi de nœud de communication essentiel entre la surface de Mars (Curiosity, Perseverance, InSight) et le Deep Space Network terrestre, produisant plus de 800 publications scientifiques."
+      }
+    ],
+    [
+      {
+        "y": 52.76544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 81.3369140625,
+        "type": "text",
+        "text": "NASA Science — MAVEN Mission Overview & End of Mission Announcement (science.nasa.gov/mission/maven, juin 2026)"
+      },
+      {
+        "y": 115.8369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission MAVEN (ID : 2013-063A)"
+      },
+      {
+        "y": 134.5869140625,
+        "type": "text",
+        "text": "B. M. Jakosky et al., MAVEN observations of the response of Mars to an interplanetary coronal mass ejection, Science, vol. 350, 2015"
+      },
+      {
+        "y": 169.0869140625,
+        "type": "text",
+        "text": "Laboratory for Atmospheric and Space Physics (LASP, CU Boulder) — Archives scientifiques et données IUVS / NGIMS"
+      }
+    ]
+  ]
+}

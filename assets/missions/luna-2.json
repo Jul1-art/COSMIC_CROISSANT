@@ -1,0 +1,324 @@
+{
+  "id": "luna-2",
+  "name": "Luna 2",
+  "body": "moon",
+  "family": "luna-orbiter",
+  "year": 1959,
+  "summary": "~1,9 t d'épaves dispersées à la surface de la Lune dans la région de Palus Putredinis (390,2 kg pour l'impacteur sphérique et ~1 511 kg pour l'étage supérieur Bloc E) · 0 objet actif en 2026 (impact à ~3,3 km/s le 13 septembre 1959) · 1 nuage artificiel de vapeur de sodium dispersé dans l'espace cislunaire.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 2 (objet E-1A n° 2 — « Deuxième fusée cosmique soviétique »)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (OKB-1 sous la direction de Sergueï Korolev) — Programme Luna"
+    ],
+    [
+      "Lancement",
+      "12 septembre 1959, 06h39 UTC — Cosmodrome de Baïkonour (Site 1/5), fusée Luna 8K72 (Vostok-L)"
+    ],
+    [
+      "Impact sur la Lune",
+      "13 septembre 1959, 21h02m24s UTC — Palus Putredinis (Marais de la Putréfaction), à l'est de Mare Imbrium (~29,1° N, 0,0° E)"
+    ],
+    [
+      "Durée de mission",
+      "38 heures et 23 minutes de vol direct Terre-Lune (trajectoire d'impact direct sans mise en orbite)"
+    ],
+    [
+      "Type de mission",
+      "Sonde automatique d'impact lunaire (sans équipage) d'étude du milieu interplanétaire et du champ magnétique lunaire"
+    ],
+    [
+      "Véhicules",
+      "Lanceur 8K72 (Vostok-L) · Étage supérieur Bloc E · Sonde sphérique pressurisée E-1A"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier objet fabriqué par l'homme à entrer en contact physique avec un autre corps céleste"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche mission Luna 2 - Hardware perdu dans l_espace.pdf",
+  "pdf": "luna-2.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION LUNAIRE · CATALOGUE DU PATRIMOINE SPATIAL Luna 2 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 116.38420867919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~1,9 t d'épaves dispersées à la surface de la Lune dans la région de Palus Putredinis (390,2 kg pour l'impacteur sphérique et ~1 511 kg pour l'étage supérieur Bloc E) · 0 objet actif en 2026 (impact"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "à ~3,3 km/s le 13 septembre 1959) · 1 nuage artificiel de vapeur de sodium dispersé dans l'espace cislunaire."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 2 (objet E-1A n° 2 — « Deuxième fusée cosmique soviétique »)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (OKB-1 sous la direction de Sergueï Korolev) — Programme Luna"
+          ],
+          [
+            "Lancement",
+            "12 septembre 1959, 06h39 UTC — Cosmodrome de Baïkonour (Site 1/5), fusée Luna 8K72 (Vostok-L)"
+          ],
+          [
+            "Impact sur la Lune",
+            "13 septembre 1959, 21h02m24s UTC — Palus Putredinis (Marais de la Putréfaction), à l'est de Mare Imbrium (~29,1° N, 0,0° E)"
+          ],
+          [
+            "Durée de mission",
+            "38 heures et 23 minutes de vol direct Terre-Lune (trajectoire d'impact direct sans mise en orbite)"
+          ],
+          [
+            "Type de mission",
+            "Sonde automatique d'impact lunaire (sans équipage) d'étude du milieu interplanétaire et du champ magnétique lunaire"
+          ],
+          [
+            "Véhicules",
+            "Lanceur 8K72 (Vostok-L) · Étage supérieur Bloc E · Sonde sphérique pressurisée E-1A"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier objet fabriqué par l'homme à entrer en contact physique avec un autre corps céleste"
+          ]
+        ]
+      },
+      {
+        "y": 499.1671447753906,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 531.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 565.2205810546875,
+        "type": "text",
+        "text": "A. Surface lunaire — Région de Palus Putredinis (~1,9 t au total)"
+      },
+      {
+        "y": 584.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde sphérique Luna 2 (conteneur E-1A)",
+            "390,2 kg",
+            "▲ Écrasé (Lune)",
+            "Sphère hermétique en alliage aluminium- magnésium de ~1,2 m de diamètre remplie d'azote à 1,3 bar. A percuté le sol lunaire à ~3,3 km/s (11 900 km/h) sous un angle de 60° près des cratères Aristillus, Archimède et Autolycus, creusant un cratère d'impact de 15 à 30 m de diamètre."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 2 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Suite d'instruments scientifiques & émetteurs",
+            "~45 kg (inclus)",
+            "▲ Écrasés (Lune)",
+            "Magnétomètre triaxial fluxgate monté sur perche, compteurs Geiger-Müller, détecteurs à scintillation (rayons cosmiques et ceintures de Van Allen), pièges à ions (vent solaire), détecteurs piézoélectriques de micrométéorites et 3 émetteurs radio (19,993 ; 39,986 et 183,6 MHz)."
+          ],
+          [
+            "Trois sphères de fanions commémoratifs soviétiques",
+            "~3 kg (inclus)",
+            "▲ Écrasés (Lune)",
+            "Deux sphères creuses de 9 cm et 15 cm en acier inoxydable composées de 72 segments pentagonaux gravés « URSS — Septembre 1959 » et des armoiries soviétiques, munies d'une charge explosive interne conçue pour projeter les fragments à faible vitesse relative lors de l'impact."
+          ],
+          [
+            "Étage supérieur Bloc E (fusée Luna 8K72)",
+            "~1 511 kg (à sec)",
+            "▲ Écrasé (Lune)",
+            "Dernier étage propulsé par le moteur RD- 0105 (kérosène/oxygène liquide). Après avoir séparé la sonde sphérique Luna 2, il a poursuivi la même trajectoire balistique et a percuté la surface lunaire environ 30 minutes après la sonde, à quelques dizaines de kilomètres au sud."
+          ]
+        ]
+      },
+      {
+        "y": 434.7205810546875,
+        "type": "text",
+        "text": "B. Espace cislunaire & retombées terrestres"
+      },
+      {
+        "y": 453.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Expérience « comète artificielle » (vapeur de sodium)",
+            "~1 kg",
+            "▲ Dispersé (espace)",
+            "Évaporateur installé sur l'étage supérieur Bloc E qui a libéré un nuage orange brillant de vapeur de sodium le 12 septembre 1959 à 18h39 UTC (à 113 000 km de la Terre), permettant de confirmer optiquement la trajectoire depuis les observatoires au sol."
+          ],
+          [
+            "Étage central Bloc A & 4 propulseurs (8K72)",
+            "~21 500 kg (total à sec)",
+            "▲ Retombés (Terre)",
+            "Les quatre propulseurs latéraux et l'étage central de la fusée Vostok-L sont retombés sur Terre dans les zones d'exclusion d'Asie centrale et de Sibérie lors du lancement suborbital du 12 septembre 1959."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 2 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Luna 2 est une mission d'impact lunaire sans retour. Avant le tir, le Premier ministre soviétique Nikita Khrouchtchev a offert une réplique exacte des sphères de fanions de Luna 2 au président américain Dwight D. Eisenhower lors de sa visite aux États-Unis le 15 septembre 1959 (exposée aujourd'hui au musée présidentiel Eisenhower au Kansas)."
+      },
+      {
+        "y": 158.7205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 180.3369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique & 4 antennes rubans déployables : coiffe larguée durant l'ascension atmosphérique le 12 septembre 1959 ; les 4 antennes de la sonde E-1A sont restées fixées à la sphère jusqu'à leur vaporisation/fragmentation à l'impact lunaire."
+      },
+      {
+        "y": 239.66712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 264.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "12 septembre 1959, 06h39m42s UTC",
+            "Décollage de la fusée Luna 8K72 depuis Baïkonour (après un report de 3 jours dû à un incident technique et l'échec de Luna 1 à toucher la Lune en janvier 1959)."
+          ],
+          [
+            "12 septembre 1959, 18h39 UTC",
+            "Libération d'un nuage de vapeur de sodium par le Bloc E à 113 000 km de la Terre ; le nuage s'étend sur 650 km et est photographié depuis Alma-Ata et Tachkent."
+          ],
+          [
+            "13 septembre 1959, 21h02m24s UTC",
+            "Impact de la sonde Luna 2 dans Palus Putredinis (29,1° N, 0,0° E), confirmé par l'interruption brutale et simultanée de ses trois signaux radio captée à Evpatoria et à l'observatoire britannique de Jodrell Bank."
+          ],
+          [
+            "13 septembre 1959, ~21h32 UTC",
+            "Impact de l'étage supérieur Bloc E à proximité immédiate du site d'impact principal."
+          ]
+        ]
+      },
+      {
+        "y": 487.1671447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 514.0869140625,
+        "type": "text",
+        "text": "Premier contact physique de l'humanité avec un autre monde : moins de deux ans après Spoutnik 1, Luna 2 a démontré la maîtrise de la mécanique céleste interplanétaire et de la précision de guidage nécessaire pour atteindre une cible céleste en mouvement à plus de 380 000 km de distance."
+      },
+      {
+        "y": 562.8369140625,
+        "type": "text",
+        "text": "Absence de champ magnétique lunaire global et de ceintures de radiation : le magnétomètre triaxial de Luna 2 n'a détecté aucun champ magnétique dipolaire autour de la Lune jusqu'à 55 km d'altitude (prouvant que son intensité était au moins 10 000 fois plus faible que celle de la Terre), tandis que ses détecteurs ont confirmé l'absence de ceintures de radiation piégées autour de la Lune et cartographié les limites externes des ceintures terrestres de Van Allen."
+      },
+      {
+        "y": 642.3369140625,
+        "type": "text",
+        "text": "Première détection directe du vent solaire : les pièges à ions conçus par Konstantin Gringauz ont enregistré pour la première fois le flux de plasma ionisé émis continuellement par le Soleil dans l'espace interplanétaire."
+      },
+      {
+        "y": 690.3369140625,
+        "type": "text",
+        "text": "Identification du site d'impact par LRO : bien que le site exact soit resté approximatif pendant des décennies, les images haute résolution de la sonde américaine Lunar Reconnaissance Orbiter (LRO) ont permis de repérer les perturbations de régolithe et l'éjecta sombre caractéristiques de l'impact de Luna 2 dans Palus Putredinis."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 2 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 67.91712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 94.8369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Luna 2 Spacecraft & Impact Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 112.8369140625,
+        "type": "text",
+        "text": "RKK Energia — First Flight to the Moon : Luna 2 (E-1A) Engineering History"
+      },
+      {
+        "y": 131.5869140625,
+        "type": "text",
+        "text": "Stooke, P. J. (2007) — The International Atlas of Lunar Exploration (localisation du site d'impact Palus Putredinis)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 2 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Curiosity's Dusty Selfie",
+      "credit": "NASA/JPL-Caltech/MSSS",
+      "date": "2018-06-20T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA22486",
+      "nasaId": "PIA22486",
+      "description": "A self-portrait of NASA's Curiosity rover taken on Sol 2082 (June 15, 2018). A Martian dust storm has reduced sunlight and visibility at the rover's location in Gale Crater. Self-portraits are created using images taken by Curiosity's Mars Hands Lens Imager (MAHLI).  https://photojournal.jpl.nasa.gov/catalog/PIA22486",
+      "src": "archives/curiosity-nasa-PIA22486.jpg"
+    },
+    {
+      "title": "Curiosity Self-Portrait at Martian Sand Dune",
+      "credit": "NASA/JPL-Caltech/MSSS",
+      "date": "2016-01-29T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA20316",
+      "nasaId": "PIA20316",
+      "description": "This self-portrait of NASA's Curiosity Mars rover shows the vehicle at \"Namib Dune,\" where the rover's activities included scuffing into the dune with a wheel and scooping samples of sand for laboratory analysis.  The scene combines 57 images taken on Jan. 19, 2016, during the 1,228th Martian day, or sol, of Curiosity's work on Mars. The camera used for this is the Mars Hand Lens Imager (MAHLI) at the end of the rover's robotic arm.  Namib Dune is part of the dark-sand \"Bagnold Dune Field\" along the northwestern flank of Mount Sharp. Images taken from orbit have shown that dunes in the Bagnold field move as much as about 3 feet (1 meter) per Earth year.  The location of Namib Dune is show on a map of Curiosity's route at http://mars.nasa.gov/msl/multimedia/images/?ImageID=7640. The relationship of Bagnold Dune Field to the lower portion of Mount Sharp is shown in a map at PIA16064.  The view does not include the rover's arm. Wrist motions and turret rotations on the arm allowed MAHLI to acquire the mosaic's component images. The arm was positioned out of the shot in the images, or portions of images, that were used in this mosaic. This process was used previously in acquiring and a",
+      "src": "archives/curiosity-nasa-PIA20316.jpg"
+    },
+    {
+      "title": "Curiosity Self-Portrait at Okoruso Drill Hole",
+      "credit": "NASA/JPL-Caltech/MSSS",
+      "date": "2016-06-13T20:15:01Z",
+      "source": "https://images.nasa.gov/details/PIA20602",
+      "nasaId": "PIA20602",
+      "description": "This self-portrait of NASA's Curiosity Mars rover shows the vehicle at a drilled sample site called \"Okoruso,\" on the \"Naukluft Plateau\" of lower Mount Sharp. The scene combines multiple images taken with the rover's Mars Hand Lens Imager (MAHLI) on May 11, 2016, during the 1,338th Martian day, or sol, of the rover's work on Mars.  In front of the rover is the hole, surrounded by grayish drill cuttings, created by using Curiosity's drill to collect sample rock powder at Okoruo, plus a patch of powder dumped onto the ground after delivery of a portion to the rover's internal Chemistry and Mineralogy (CheMin) laboratory instrument.  The rover team compared the rock powder from drilling at Okoruso to material from the nearby \"Lubango\" drilling site, which is visible behind the rover, just to the left of the mast. The Lubango site was selected within a pale zone, or \"halo,\" beside a fracture in the area's sandstone bedrock. Okoruso is in less-altered bedrock farther from any fractures. Note that the Okoruso drill cuttings appear darker than the Lubango drill cuttings. The Lubango sample was found to be enriched in silica and sulfates, relative to Okoruso.  To the left of the rover, in ",
+      "src": "archives/curiosity-nasa-PIA20602.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Earth to Mars: How NASA Keeps Curiosity Connected (Mars Report) ",
+      "credit": "JPL",
+      "source": "https://images.nasa.gov/details/JPL-20240912_MSLf-0001-Mars%20Report%20Communicating%20with%20Curiosity",
+      "nasaId": "JPL-20240912_MSLf-0001-Mars Report Communicating with Curiosity",
+      "src": "https://images-assets.nasa.gov/video/JPL-20240912_MSLf-0001-Mars%20Report%20Communicating%20with%20Curiosity/JPL-20240912_MSLf-0001-Mars%20Report%20Communicating%20with%20Curiosity~preview.mp4",
+      "description": "NASA’s Curiosity rover is exploring a scientifically exciting area on Mars, but communicating with the mission team on Earth has recently been a challenge due to both the current season and the surrounding terrain. In this Mars Report, Curiosity engineer Reidar Larsen takes you inside the uplink room where the team talks to the rover. See why Curiosity’s location in Gediz Vallis channel makes it difficult to send direct commands — and how the team ensures they always stay connected to the rover.  Curiosity landed in 2012 to look for evidence that Mars’ Gale Crater had the conditions to support microbial life in the ancient past. Curiosity has confirmed those conditions existed on the crater floor as well as on various parts of Mount Sharp, the 3-mile-tall (5-kilometer-tall) mountain within the crater that the rover has been ascending since 2014.   For more about Curiosity, visit: https://science.nasa.gov/mission/msl-curiosity/.  Credit: NASA/JPL-Caltech/MSSS/University of Arizona/UC Berkeley  ",
+      "date": "2024-09-12T00:00:00Z",
+      "duration": 119.766667,
+      "bitrate": 671594,
+      "bytes": 10054333,
+      "width": 480,
+      "height": 270,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/curiosity.mp4",
+    "local": true,
+    "title": "Curiosity · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "curiosity.pdf",
+    "fingerprint": "994962d91deda03a46d72a6d668bb143a5a9007dc4a15fc30f386155b8bec0ef"
+  }
+}

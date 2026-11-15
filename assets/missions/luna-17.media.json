@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "title": "Soviet Union Lunar Rovers",
+      "credit": "NASA/GSFC/Arizona State University",
+      "date": "2010-03-17T23:03:45Z",
+      "source": "https://images.nasa.gov/details/PIA12967",
+      "nasaId": "PIA12967",
+      "description": "This image taken by NASA Lunar Reconnaissance Orbiter shows Soviet robotic lander Luna 17 still sitting on Mare Imbrium where it delivered the Lunokhod 1 Rover in November 1970.",
+      "src": "archives/luna-17-nasa-PIA12967.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-17.mp4",
+    "local": true,
+    "title": "Luna 17 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-17.pdf",
+    "fingerprint": "fb37d0ad5844f1955dd9ddb52f31b45dd1f301c51754feb2cb70a8f94e5a83c2"
+  }
+}

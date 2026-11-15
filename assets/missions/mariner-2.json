@@ -1,0 +1,332 @@
+{
+  "id": "mariner-2",
+  "name": "Mariner 2",
+  "body": "venus",
+  "family": "orbiter",
+  "year": 1962,
+  "summary": "202,8 kg en orbite héliocentrique (première sonde à avoir survolé avec succès une autre planète) · 0 objet actif en 2026 (dernier contact radio le 3 janvier 1963 à 87,4 millions de km de la Terre) · 2 objets principaux intacts mais silencieux sur orbite solaire (sonde Mariner 2 et étage supérieur Agena B).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Mariner 2 (Mariner R-2)"
+    ],
+    [
+      "Agence & programme",
+      "NASA (Jet Propulsion Laboratory — JPL) — Programme Mariner"
+    ],
+    [
+      "Lancement",
+      "27 août 1962, 06h53m14s UTC — Cap Canaveral (LC-12), fusée Atlas LV-3 Agena-B"
+    ],
+    [
+      "Survol de Vénus",
+      "14 décembre 1962, 19h59m28s UTC — Distance minimale de 34 773 km au- dessus de la surface vénusienne"
+    ],
+    [
+      "Durée de mission",
+      "129 jours d'opérations actives (109 jours de transit Terre-Vénus + 20 jours de suivi post-survol jusqu'au 3 janvier 1963)"
+    ],
+    [
+      "Type de mission",
+      "Sonde automatique de survol planétaire (sans équipage) d'étude thermique, magnétique et interplanétaire de Vénus"
+    ],
+    [
+      "Véhicules",
+      "Atlas LV-3 (étage 1,5) · Étage supérieur Agena-B · Sonde interplanétaire Mariner 2 (bus hexagonal dérivé de Ranger)"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier survol planétaire réussi de l'histoire ; dérive désormais silencieusement en orbite héliocentrique"
+    ]
+  ],
+  "sourceFile": "Vénus/Fiche mission Mariner 2 - Hardware perdu dans l_espace.pdf",
+  "pdf": "mariner-2.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION DE VÉNUS · CATALOGUE DU PATRIMOINE SPATIAL Mariner 2 (NASA) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 116.38420867919922,
+        "type": "text",
+        "text": "Synthèse hardware : 202,8 kg en orbite héliocentrique (première sonde à avoir survolé avec succès une autre planète) · 0 objet actif en 2026 (dernier contact radio le 3 janvier 1963 à 87,4 millions de km de la Terre) · 2"
+      },
+      {
+        "y": 144.13421630859375,
+        "type": "text",
+        "text": "objets principaux intacts mais silencieux sur orbite solaire (sonde Mariner 2 et étage supérieur Agena B)."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Mariner 2 (Mariner R-2)"
+          ],
+          [
+            "Agence & programme",
+            "NASA (Jet Propulsion Laboratory — JPL) — Programme Mariner"
+          ],
+          [
+            "Lancement",
+            "27 août 1962, 06h53m14s UTC — Cap Canaveral (LC-12), fusée Atlas LV-3 Agena-B"
+          ],
+          [
+            "Survol de Vénus",
+            "14 décembre 1962, 19h59m28s UTC — Distance minimale de 34 773 km au- dessus de la surface vénusienne"
+          ],
+          [
+            "Durée de mission",
+            "129 jours d'opérations actives (109 jours de transit Terre-Vénus + 20 jours de suivi post-survol jusqu'au 3 janvier 1963)"
+          ],
+          [
+            "Type de mission",
+            "Sonde automatique de survol planétaire (sans équipage) d'étude thermique, magnétique et interplanétaire de Vénus"
+          ],
+          [
+            "Véhicules",
+            "Atlas LV-3 (étage 1,5) · Étage supérieur Agena-B · Sonde interplanétaire Mariner 2 (bus hexagonal dérivé de Ranger)"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier survol planétaire réussi de l'histoire ; dérive désormais silencieusement en orbite héliocentrique"
+          ]
+        ]
+      },
+      {
+        "y": 499.1671447753906,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 531.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 563.8233642578125,
+        "type": "text",
+        "text": "A. Orbite héliocentrique intérieure — Sonde principale (202,8 kg au total)"
+      },
+      {
+        "y": 584.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde spatiale Mariner 2 (châssis hexagonal)",
+            "202,8 kg",
+            "■ Orbite solaire",
+            "Structure hexagonale de 1,04 m de diamètre et 3,66 m de hauteur (mât déployé) en magnésium et aluminium, stabilisée sur 3 axes par jets d'azote froid. Circule depuis décembre 1962 sur une orbite héliocentrique (périhélie 0,705 UA, aphélie 1,229 UA, période de 346 jours)."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Mariner 2 (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Deux panneaux solaires & batterie argent-zinc",
+            "~38 kg (inclus)",
+            "■ Orbite solaire",
+            "Deux ailes photovoltaïques rectangulaires de 1,83 × 0,76 m et 1,52 × 0,76 m (5,03 m d'envergure totale, prolongeable par une voile solaire en Dacron de 0,31 m² pour équilibrer la pression de radiation) couplées à une batterie rechargeable argent-zinc de 1 000 Wh."
+          ],
+          [
+            "Charge utile scientifique (6 instruments)",
+            "~18,6 kg (inclus)",
+            "■ Orbite solaire",
+            "Radiomètre micro-ondes à deux canaux (13,5 et 19 mm), radiomètre infrarouge (8–9 et 10– 10,8 µm), magnétomètre triaxial fluxgate, détecteur de rayons cosmiques (chambre d'ionisation et tubes Geiger-Müller), détecteur de poussières cosmiques et spectromètre de plasma solaire."
+          ],
+          [
+            "Antenne grand gain parabolique & système propulsion",
+            "~32 kg (inclus)",
+            "■ Orbite solaire",
+            "Antenne parabolique orientable de 1,22 m en bande L (émetteur 3 W à 960,05 MHz) fixée sous le châssis, plus moteur de correction à monergol hydrazine anhydre de 225 N de poussée."
+          ]
+        ]
+      },
+      {
+        "y": 377.8233642578125,
+        "type": "text",
+        "text": "B. Éléments du lanceur en orbite solaire & rentrée atmosphérique"
+      },
+      {
+        "y": 398.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur Agena-B (6901A / 1962 Alpha Rho 2)",
+            "~670 kg (à sec)",
+            "■ Orbite solaire",
+            "Étage propulsé par un moteur Bell 8096 (UDMH / acide nitrique). Après un premier allumage vers une orbite d'attente terrestre puis un second allumage de 91 s le 27 août 1962 pour injecter Mariner 2 vers Vénus, il a exécuté une manœuvre de rétro-fusée d'évitement et circule sur une orbite héliocentrique permanente."
+          ],
+          [
+            "Étage principal Atlas LV-3 (missile 179D)",
+            "~3 200 kg (à sec)",
+            "▲ Retombé (océan)",
+            "Propulseur principal à kérosène et oxygène liquide (moteur LR105). Largué à ~160 km d'altitude après 4 min 50 s de vol le 27 août 1962 ; retombé et désintégré dans l'océan Atlantique."
+          ]
+        ]
+      },
+      {
+        "y": 630.5733642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 652.8369140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Mariner 2 est une mission interplanétaire à aller simple. L'exemplaire de réserve Mariner 1 ayant été détruit peu après son décollage le 22 juillet 1962 suite à une erreur de programmation du guidage, des doublures d'ingénierie au sol sont aujourd'hui exposées au JPL et au National Air and Space Museum (Smithsonian) à Washington."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Mariner 2 (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 62.8233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Demi-moteurs d'appoint Atlas (section booster LR89) & coiffe aérodynamique : largués durant l'ascension atmosphérique au-dessus de l'océan Atlantique respectivement à T+128 s et T+215 s le 27 août 1962."
+      },
+      {
+        "y": 144.41712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 170.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "27 août 1962, 06h53m14s UTC",
+            "Lancement de la fusée Atlas-Agena B depuis Cap Canaveral (5 semaines seulement après l'échec de Mariner 1) ; injection interplanétaire réussie à 07h19 UTC."
+          ],
+          [
+            "4 septembre 1962",
+            "Manœuvre de correction de trajectoire à mi-course (allumage du moteur hydrazine pendant 27,8 s à 2,4 millions de km de la Terre), ramenant la distance de survol prévue de 375 000 km à ~35 000 km."
+          ],
+          [
+            "31 octobre 1962",
+            "Court-circuit sur l'un des deux panneaux solaires : les instruments scientifiques sont coupés pendant 8 jours jusqu'à ce que le rapprochement du Soleil permette au panneau sain d'alimenter seul toute la sonde."
+          ],
+          [
+            "14 décembre 1962, 19h59m28s UTC",
+            "Survol historique de Vénus à 34 773 km d'altitude (vitesse relative de 6,74 km/s) ; balayage complet du disque vénusien pendant 42 minutes par les radiomètres micro-ondes et infrarouge."
+          ],
+          [
+            "27 décembre 1962",
+            "Passage au périhélie de son orbite solaire à 105,4 millions de km du Soleil (0,705 UA)."
+          ],
+          [
+            "3 janvier 1963, 07h00 UTC",
+            "Dernière réception télémétrique enregistrée par la station de Goldstone (Deep Space Network) à un record de distance de 87,4 millions de km de la Terre."
+          ]
+        ]
+      },
+      {
+        "y": 477.4171447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 505.0869140625,
+        "type": "text",
+        "text": "Révélation de l'enfer thermique de Vénus : grâce à son radiomètre micro-ondes scrutant sous l'épaisse couche nuageuse, Mariner 2 a tranché un débat scientifique majeur en démontrant que la surface de Vénus est uniformément brûlante (environ 425 °C mesurés par brillance radio, sans différence marquée entre le côté jour et le côté nuit), tandis que le sommet des nuages est froid (−30 °C à −40 °C), écartant définitivement l'hypothèse d'océans tropicaux à sa surface."
+      },
+      {
+        "y": 583.8369140625,
+        "type": "text",
+        "text": "Premières mesures continues du vent solaire et de l'espace interplanétaire : pendant près de quatre mois de transit, le spectromètre de plasma et le magnétomètre de Mariner 2 ont prouvé l'existence d'un flux supersonique continu de particules chargées (le vent solaire, soufflant entre 300 et 700 km/s) et montré que la poussière cosmique est beaucoup moins abondante dans l'espace interplanétaire qu'au voisinage immédiat de la Terre."
+      },
+      {
+        "y": 663.3369140625,
+        "type": "text",
+        "text": "Absence de champ magnétique vénusien détectable : le survol à 34 773 km n'a révélé aucune magnétosphère ni ceintures de radiation piégées autour de Vénus, indiquant que le champ magnétique intrinsèque de la planète est au moins 10 fois plus faible que celui de la Terre."
+      },
+      {
+        "y": 711.3369140625,
+        "type": "text",
+        "text": "Acte fondateur de l'exploration planétaire américaine : premier succès interplanétaire de la NASA après plusieurs échecs des programmes Pioneer et Ranger, Mariner 2 a validé la stabilisation sur 3 axes, le contrôle thermique en environnement solaire intense (où la sonde a atteint 120 °C, bien au- delà des 75 °C prévus) et les télécommunications spatiales à très longue distance."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Mariner 2 (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 67.91712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 94.8369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Mariner 2 Spacecraft & Venus Flyby Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 112.8369140625,
+        "type": "text",
+        "text": "NASA / JPL — Mariner-Venus 1962 Final Project Report (NASA SP-59)"
+      },
+      {
+        "y": 131.5869140625,
+        "type": "text",
+        "text": "Jet Propulsion Laboratory — Past Missions: Mariner 2 (jpl.nasa.gov/missions/mariner-2)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Mariner 2 (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

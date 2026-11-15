@@ -1,0 +1,356 @@
+{
+  "id": "surveyor-5",
+  "name": "Surveyor 5",
+  "body": "moon",
+  "family": "surveyor",
+  "year": 1967,
+  "summary": "1 atterrisseur de 303 kg resté sur la Lune dans la mer de la Tranquillité, silencieux depuis le 17 décembre 1967 · 1 caméra de télévision, 1 analyseur à diffusion alpha et 1 aimant sur un patin · 1 étage Centaur, devenir non précisé · aucun élément récupéré · première analyse chimique du sol sur place sur un autre monde, malgré une fuite d'hélium en vol",
+  "facts": [
+    [
+      "Nom officiel",
+      "Surveyor 5"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Surveyor"
+    ],
+    [
+      "Lancement",
+      "8 septembre 1967, 07h57 UTC — Cape Canaveral (LC-36B), Atlas-Centaur (AC-13)"
+    ],
+    [
+      "Atterrissage",
+      "11 septembre 1967, 00h46:44 UTC — mer de la Tranquillité, ~1,41° N, 23,18° E, sur la pente (~20°) d'un petit cratère"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — atterrisseur resté sur la Lune"
+    ],
+    [
+      "Durée d'exploitation",
+      "Du 11 septembre au 17 décembre 1967 (~3 mois et 9 jours), trois jours lunaires utilisés"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur · atterrisseur Surveyor 5 · moteur de freinage solide"
+    ],
+    [
+      "Statut",
+      "Réussie — atterrissage improvisé après une fuite d'hélium, ~19 100 images, analyse alpha du sol ; silencieuse depuis le 17 décembre 1967"
+    ]
+  ],
+  "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-5-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "surveyor-5.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Surveyor 5 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 atterrisseur de 303 kg resté sur la Lune dans la mer de la Tranquillité, silencieux depuis le 17 décembre 1967 · 1 caméra de télévision, 1 analyseur à diffusion alpha et 1 aimant sur un patin · 1 étage Centaur, devenir non précisé · aucun élément récupéré · première analyse chimique du sol sur place sur un autre monde, malgré une fuite d'hélium en vol"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Surveyor 5"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Surveyor"
+          ],
+          [
+            "Lancement",
+            "8 septembre 1967, 07h57 UTC — Cape Canaveral (LC-36B), Atlas-Centaur (AC-13)"
+          ],
+          [
+            "Atterrissage",
+            "11 septembre 1967, 00h46:44 UTC — mer de la Tranquillité, ~1,41° N, 23,18° E, sur la pente (~20°) d'un petit cratère"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — atterrisseur resté sur la Lune"
+          ],
+          [
+            "Durée d'exploitation",
+            "Du 11 septembre au 17 décembre 1967 (~3 mois et 9 jours), trois jours lunaires utilisés"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur · atterrisseur Surveyor 5 · moteur de freinage solide"
+          ],
+          [
+            "Statut",
+            "Réussie — atterrissage improvisé après une fuite d'hélium, ~19 100 images, analyse alpha du sol ; silencieuse depuis le 17 décembre 1967"
+          ]
+        ]
+      },
+      {
+        "y": 450.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 475.2606201171875,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 517.596923828125,
+        "type": "text",
+        "text": "A. Surface lunaire — mer de la Tranquillité"
+      },
+      {
+        "y": 535.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Surveyor 5",
+            "303 kg à l'atterrissage ; 1 006 kg au lancement",
+            "",
+            "Posé au bord d'un petit cratère ; un patin a glissé sur la paroi et creusé une tranchée ; dernières opérations le 17 décembre 1967 à 00h04:30 UTC"
+          ],
+          [
+            "Caméra de télévision",
+            "—",
+            "",
+            "Tube vidicon, objectifs 25 et 100 mm, filtres ; 19 118 images (19 049 dans une autre source)"
+          ],
+          [
+            "Analyseur à diffusion alpha",
+            "—",
+            "",
+            "Installé à la place de la pelle de prélèvement ; sol de type basaltique ; 83 h de mesures le 1er jour lunaire et 22 h le 2e : première analyse chimique sur place sur un autre monde"
+          ],
+          [
+            "Aimant sur un patin",
+            "—",
+            "",
+            "Petite barre aimantée pour détecter des matériaux magnétiques dans le sol"
+          ],
+          [
+            "Moteur vernier (test au sol)",
+            "—",
+            "",
+            "Tiré après l'atterrissage pour tester le sol : il a soufflé quelques mottes sans creuser de cratère"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Étages de lancement et éléments largués"
+      },
+      {
+        "y": 72.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "Devenir non précisé dans mes sources"
+          ],
+          [
+            "Étage Atlas",
+            "n.c.",
+            "",
+            "Retombé ; non précisé"
+          ],
+          [
+            "Moteur de freinage solide",
+            "n.c.",
+            "",
+            "Allumé à ~42 km d'altitude (la moitié de la normale) ; non détaillé ensuite"
+          ]
+        ]
+      },
+      {
+        "y": 176.9969482421875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 194.20437622070312,
+        "type": "text",
+        "text": "• Rien : seules des images et des mesures transmises par radio sont revenues"
+      },
+      {
+        "y": 221.9969482421875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 239.20437622070312,
+        "type": "text",
+        "text": "• Étages de l'Atlas et du Centaur, séparés pendant l'ascension et la trajectoire directe"
+      },
+      {
+        "y": 276.317626953125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 298.9543762207031,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "8 septembre 1967, 07h57",
+            "Lancement par Atlas-Centaur ; transit d'environ 65 h"
+          ],
+          [
+            "9 septembre 1967",
+            "Fuite d'hélium dans le circuit des moteurs verniers, juste après la correction de trajectoire"
+          ],
+          [
+            "11 septembre 1967, 00h46:44",
+            "Atterrissage (voir séquence ci-dessous)"
+          ],
+          [
+            "24 septembre 1967",
+            "Mise en veille pour la première nuit lunaire"
+          ],
+          [
+            "15 octobre 1967",
+            "Réveil par commande radio pour le deuxième jour lunaire"
+          ],
+          [
+            "1er novembre 1967",
+            "Mise en veille pour la deuxième nuit lunaire"
+          ],
+          [
+            "17 décembre 1967, 00h04:30",
+            "Fin permanente des opérations, après un 4e jour lunaire (64 images)"
+          ]
+        ]
+      },
+      {
+        "y": 495.5969543457031,
+        "type": "text",
+        "text": "Séquence d'atterrissage"
+      },
+      {
+        "y": 513.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "Après la correction de trajectoire",
+            "Fuite d'hélium dans le circuit des verniers : risque d'échec ; descente reprogrammée"
+          ],
+          [
+            "~42 km",
+            "Allumage des rétrofusées à environ la moitié de l'altitude habituelle"
+          ],
+          [
+            "~1 340 m",
+            "Les verniers prennent le relais pour la descente finale, à ~10 % de l'altitude habituelle"
+          ],
+          [
+            "Fin de descente",
+            "Pression d'hélium « à la limite » de ce qui aurait coupé les moteurs"
+          ],
+          [
+            "00h46:44",
+            "Contact à ~1,41° N, 23,18° E, sur la pente (~20°) d'un petit cratère sans bord net"
+          ],
+          [
+            "Après le contact",
+            "Un patin glisse sur la paroi et creuse une tranchée ; test de tir d'un vernier sur le sol"
+          ]
+        ]
+      },
+      {
+        "y": 688.5176391601562,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 710.0043334960938,
+        "type": "text",
+        "text": "• Première analyse chimique du sol sur place sur un autre monde : sol de type basaltique, proche des basaltes terrestres."
+      },
+      {
+        "y": 741.0043334960938,
+        "type": "text",
+        "text": "• Images : plus de 19 000 vues sur trois jours lunaires (18 006 puis 1 048 puis 64)."
+      },
+      {
+        "y": 758.0043334960938,
+        "type": "text",
+        "text": "• Proximité d'Apollo 11 : le site se situe à ~25 km du futur site d'Apollo 11 (direction et distance variables selon les sources)."
+      }
+    ],
+    [
+      {
+        "y": 50.204368591308594,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 101.317626953125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 122.80435180664062,
+        "type": "text",
+        "text": "• Wikipedia — Surveyor 5 : lancement, masses, hélium, atterrissage, images"
+      },
+      {
+        "y": 139.80435180664062,
+        "type": "text",
+        "text": "• The Living Moon — fiche Surveyor 5 : tests au sol, nuits lunaires, dernier contact"
+      },
+      {
+        "y": 156.80435180664062,
+        "type": "text",
+        "text": "• White Eagle Aerospace — Surveyor V : résultats, mesures alpha, fin des opérations"
+      }
+    ]
+  ]
+}

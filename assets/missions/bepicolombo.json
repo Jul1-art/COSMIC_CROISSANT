@@ -1,0 +1,341 @@
+{
+  "id": "bepicolombo",
+  "name": "BepiColombo",
+  "body": "mercury",
+  "family": "orbiter",
+  "year": 2018,
+  "summary": "~4,1 t lancées vers Mercure · 2 orbiteurs scientifiques actifs en novembre 2026 en approche finale de Mercure (MPO et Mio, capture orbitale le 21 novembre 2026) · 2 modules en orbite héliocentrique (module de transfert MTM largué le 3 septembre 2026 et étage supérieur ESC-D d'Ariane 5) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "BepiColombo — Mission conjointe d'exploration de Mercure"
+    ],
+    [
+      "Agences & programme",
+      "ESA (Agence spatiale européenne) & JAXA (Agence d'exploration aérospatiale japonaise) — Programme Horizon 2000+"
+    ],
+    [
+      "Lancement",
+      "20 octobre 2018, 01h45 UTC — Centre spatial guyanais (Kourou, ELA-3), fusée Ariane 5 ECA (VA245)"
+    ],
+    [
+      "Arrivée sur cible",
+      "3 septembre 2026 (largage du module MTM) · 21 novembre 2026 (mise en orbite autour de Mercure)"
+    ],
+    [
+      "Durée de mission",
+      "8 ans de croisière interplanétaire (9 survols planétaires) + 1 à 2 ans d'opérations scientifiques en orbite mercurienne (avril 2027 – 2029)"
+    ],
+    [
+      "Type de mission",
+      "Mission robotique double orbiteur (sans équipage) d'étude de la surface, de la structure interne et de la magnétosphère de Mercure"
+    ],
+    [
+      "Véhicules",
+      "Ariane 5 ECA (VA245) · Module de transfert MTM · Orbiteur planétaire MPO (ESA) · Orbiteur magnétosphérique Mio (JAXA) · Bouclier solaire MOSIF"
+    ],
+    [
+      "Statut",
+      "✔ Active (novembre 2026) — Composite MPO + Mio en phase finale d'approche à quelques jours de l'insertion en orbite mercurienne"
+    ]
+  ],
+  "sourceFile": "Mercure/Fiche mission BepiColombo - Hardware perdu dans l_espace.pdf",
+  "pdf": "bepicolombo.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION DU SYSTÈME SOLAIRE INTERNE · CATALOGUE DU PATRIMOINE SPATIAL BepiColombo — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~4,1 t lancées vers Mercure · 2 orbiteurs scientifiques actifs en novembre 2026 en approche finale de Mercure (MPO et Mio, capture orbitale le 21 novembre 2026) · 2 modules en orbite"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "héliocentrique (module de transfert MTM largué le 3 septembre 2026 et étage supérieur ESC-D d'Ariane 5) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 190.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "BepiColombo — Mission conjointe d'exploration de Mercure"
+          ],
+          [
+            "Agences & programme",
+            "ESA (Agence spatiale européenne) & JAXA (Agence d'exploration aérospatiale japonaise) — Programme Horizon 2000+"
+          ],
+          [
+            "Lancement",
+            "20 octobre 2018, 01h45 UTC — Centre spatial guyanais (Kourou, ELA-3), fusée Ariane 5 ECA (VA245)"
+          ],
+          [
+            "Arrivée sur cible",
+            "3 septembre 2026 (largage du module MTM) · 21 novembre 2026 (mise en orbite autour de Mercure)"
+          ],
+          [
+            "Durée de mission",
+            "8 ans de croisière interplanétaire (9 survols planétaires) + 1 à 2 ans d'opérations scientifiques en orbite mercurienne (avril 2027 – 2029)"
+          ],
+          [
+            "Type de mission",
+            "Mission robotique double orbiteur (sans équipage) d'étude de la surface, de la structure interne et de la magnétosphère de Mercure"
+          ],
+          [
+            "Véhicules",
+            "Ariane 5 ECA (VA245) · Module de transfert MTM · Orbiteur planétaire MPO (ESA) · Orbiteur magnétosphérique Mio (JAXA) · Bouclier solaire MOSIF"
+          ],
+          [
+            "Statut",
+            "✔ Active (novembre 2026) — Composite MPO + Mio en phase finale d'approche à quelques jours de l'insertion en orbite mercurienne"
+          ]
+        ]
+      },
+      {
+        "y": 526.9171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 558.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 591.5733642578125,
+        "type": "text",
+        "text": "A. Environnement mercurien — Composite scientifique en orbite (novembre 2026)"
+      },
+      {
+        "y": 612.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur planétaire MPO (Mercury Planetary Orbiter — ESA)",
+            "~1 230 kg",
+            "● Toujours actif",
+            "Satellite stabilisé sur 3 axes (2,4 × 2,2 × 1,7 m) muni d'un panneau solaire orientable de 7,5 m et d'un radiateur thermique massif pour résister à 450 °C. Embarque 11 instruments (caméras SIMBIO-SYS, altimètre laser BELA, spectromètres MERTIS, MIXS, SIXS, MGNS, PHEBUS, magnétomètre MPO-MAG, SERENA, MORE, ISA)."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "BepiColombo (ESA / JAXA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur magnétosphérique Mio (MMO — JAXA)",
+            "~255 kg",
+            "● Toujours actif",
+            "Satellite octogonal (1,8 m de diamètre, 1,1 m de haut) stabilisé par rotation (15 tr/min) recouvert de miroirs réflecteurs optiques. Embarque 5 suites d'instruments (magnétomètre MGF, analyseurs de plasma MPPE, ondes radio/plasma PWI, détecteur de poussières MDM et imageur sodium MSASI). Séparation d'avec MPO prévue le 10 décembre 2026."
+          ],
+          [
+            "Bouclier pare-soleil MOSIF (MMO Sunshield & Interface)",
+            "~140 kg",
+            "● Toujours actif",
+            "Coiffe thermique conique développée par l'ESA protégeant l'orbiteur japonais Mio contre le rayonnement solaire extrême durant la croisière et l'insertion orbitale. Sera largué en orbite mercurienne en décembre 2026 juste avant la libération de Mio."
+          ]
+        ]
+      },
+      {
+        "y": 300.5733642578125,
+        "type": "text",
+        "text": "B. Orbite héliocentrique & rentrée atmosphérique"
+      },
+      {
+        "y": 321.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Module de transfert MTM (Mercury Transfer Module — ESA)",
+            "~1 215 kg (à sec)",
+            "■ Orbite solaire",
+            "Module de propulsion hélio-électrique doté de 2 ailes solaires de 15 m (30 m d'envergure) et de 4 propulseurs ioniques QinetiQ T6 alimentés par 581 kg de xénon. Après avoir assuré 8 ans de freinage interplanétaire, il s'est séparé du composite MPO/Mio le 3 septembre 2026 et dérive sur une orbite héliocentrique intérieure."
+          ],
+          [
+            "Étage supérieur cryogénique ESC-D (Ariane 5 VA245)",
+            "~4 540 kg (à sec)",
+            "■ Orbite solaire",
+            "Équipé du moteur HM7B. Après avoir injecté le train spatial BepiColombo de 4,1 tonnes sur sa trajectoire d'échappement le 20 octobre 2018, l'étage supérieur est entré sur une orbite héliocentrique permanente."
+          ],
+          [
+            "Étage principal cryogénique EPC (H173)",
+            "~14 700 kg (à sec)",
+            "▲ Désintégré",
+            "Propulsé par le moteur Vulcain 2. Largué à haute altitude après 8 min 53 s de vol le 20 octobre 2018 ; rentré dans l'atmosphère terrestre et retombé dans l'océan Atlantique."
+          ]
+        ]
+      },
+      {
+        "y": 616.3233642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 638.5869140625,
+        "type": "text",
+        "text": "Aucun retour physique : BepiColombo est une mission d'exploration planétaire lointaine à aller simple. En fin de mission (prévue vers 2028–2029 après épuisement des ergols de contrôle d'attitude), les deux orbiteurs MPO et Mio finiront leur vie en s'écrasant à la surface de Mercure, à l'instar de la sonde américaine MESSENGER en 2015."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "BepiColombo (ESA / JAXA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 62.8233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique Ariane 5 (17 m) & 2 propulseurs à poudre EAP (P241) : largués durant l'ascension atmosphérique au-dessus de l'océan Atlantique le 20 octobre 2018."
+      },
+      {
+        "y": 118.8369140625,
+        "type": "text",
+        "text": "Couvercles de protection des instruments (MPO & Mio) : capots ouverts en septembre 2026 après le largage du module MTM lors des tests de « première lumière » des capteurs (BELA, MERTIS, SIMBIO-SYS)."
+      },
+      {
+        "y": 178.16712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 203.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "20 octobre 2018, 01h45 UTC",
+            "Lancement d'Ariane 5 ECA (vol VA245) depuis le Centre spatial guyanais de Kourou."
+          ],
+          [
+            "2020 – 2021",
+            "Premières assistances gravitationnelles : survol de la Terre (10 avril 2020) puis deux survols de Vénus (15 octobre 2020 et 10 août 2021)."
+          ],
+          [
+            "2021 – 2025",
+            "Six survols rapprochés de Mercure (1er octobre 2021, 23 juin 2022, 19 juin 2023, 4 septembre 2024, 1er décembre 2024 et 8 janvier 2025 à 295 km d'altitude), avec ajustement de trajectoire en 2024 suite à une baisse de puissance électrique du MTM."
+          ],
+          [
+            "3 septembre 2026, 12h00 UTC",
+            "Largage définitif du module de transfert MTM après près de 8 ans de propulsion ionique ; début de la phase d'approche finale de Mercure."
+          ],
+          [
+            "21 novembre 2026",
+            "Capture gravitationnelle et insertion en orbite polaire autour de Mercure du composite MPO + Mio."
+          ],
+          [
+            "9 – 10 décembre 2026",
+            "Largage du bouclier thermique MOSIF et séparation des deux sondes : Mio rejoint son orbite elliptique (590 × 11 640 km) tandis que MPO descend vers son orbite basse (480 × 1 500 km)."
+          ],
+          [
+            "Avril 2027 – 2029",
+            "Début de la mission scientifique nominale simultanée des deux orbiteurs autour de Mercure."
+          ]
+        ]
+      },
+      {
+        "y": 532.9171142578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 560.5869140625,
+        "type": "text",
+        "text": "Première mission double orbiteur autour de Mercure : en observant simultanément la surface de la planète à basse altitude (MPO) et son environnement magnétique et solaire à plus haute altitude (Mio), BepiColombo permet de démêler les interactions en temps réel entre le vent solaire extrême et le champ magnétique dipolaire décentré de Mercure."
+      },
+      {
+        "y": 624.3369140625,
+        "type": "text",
+        "text": "Cartographie complète et composition de la croûte : contrairement à la sonde MESSENGER dont l'orbite très excentrique limitait la résolution sur l'hémisphère sud, l'orbite basse quasi circulaire de MPO cartographiera l'intégralité du globe mercurien en haute résolution, confirmant la présence de glace d'eau dans les cratères polaires perpétuellement à l'ombre."
+      },
+      {
+        "y": 688.0869140625,
+        "type": "text",
+        "text": "Tests de précision de la relativité générale : grâce à l'expérience de radioscience MORE (transpondeur en bande Ka) et à l'accéléromètre ISA, la mission mesurera le champ gravitationnel de Mercure et l'aplatissement du Soleil avec une précision inédite afin de tester les théories de la gravitation d'Einstein."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "BepiColombo (ESA / JAXA) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 55.8369140625,
+        "type": "text",
+        "text": "Maîtrise de l'ingénierie thermique et de la propulsion ionique : survivre à des flux solaires 10 fois supérieurs à ceux reçus par la Terre (températures dépassant 450 °C) tout en freinant contre l'attraction du Soleil grâce à la propulsion ionique au xénon constitue l'un des plus grands défis de mécanique céleste jamais relevés."
+      },
+      {
+        "y": 130.16712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 157.0869140625,
+        "type": "text",
+        "text": "ESA — BepiColombo Arrival at Mercury & Spacecraft Fact Sheet (esa.int/BepiColombo)"
+      },
+      {
+        "y": 175.8369140625,
+        "type": "text",
+        "text": "JAXA / ISAS — Mercury Magnetospheric Orbiter « Mio » Mission Overview (isas.jaxa.jp)"
+      },
+      {
+        "y": 193.8369140625,
+        "type": "text",
+        "text": "CNES — Contributions scientifiques françaises à BepiColombo (PHEBUS, SIMBIO-SYS, SERENA, MPO-MAG) (cnes.fr)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "BepiColombo (ESA / JAXA) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

@@ -31,14 +31,15 @@ const dot=(a,b)=>a.reduce((sum,v,i)=>sum+v*b[i],0);
 /** Instantaneous osculating ellipse from a Horizons state. Includes the current
  * planet position; the curve is a geometric orbit guide, not a future forecast.
  */
-export function osculatingOrbit(state,segments=512){
+export function osculatingOrbit(state,segments=512,gravitationalParameter=SOLAR_GM){
   if(!state?.positionKm||!state?.velocityKmS)return [];
   const r=['x','y','z'].map(axis=>state.positionKm[axis]),v=['x','y','z'].map(axis=>state.velocityKmS[axis]);
   const radius=Math.hypot(...r),h=cross(r,v),hl=Math.hypot(...h);
   if(!(radius>0&&hl>0)||!r.concat(v).every(Number.isFinite))return [];
-  const vxh=cross(v,h),eccentricity=vxh.map((value,i)=>value/SOLAR_GM-r[i]/radius),e=Math.hypot(...eccentricity);
+  if(!(Number.isFinite(gravitationalParameter)&&gravitationalParameter>0))return [];
+  const vxh=cross(v,h),eccentricity=vxh.map((value,i)=>value/gravitationalParameter-r[i]/radius),e=Math.hypot(...eccentricity);
   if(!(e>=0&&e<1))return [];
-  const p=hl*hl/SOLAR_GM,unitP=e>1e-10?eccentricity.map(value=>value/e):r.map(value=>value/radius),
+  const p=hl*hl/gravitationalParameter,unitP=e>1e-10?eccentricity.map(value=>value/e):r.map(value=>value/radius),
     unitH=h.map(value=>value/hl),unitQ=cross(unitH,unitP),count=Math.max(64,Math.min(2048,Math.round(segments)));
   return Array.from({length:count+1},(_,index)=>{
     const f=index/count*Math.PI*2,distance=p/(1+e*Math.cos(f));

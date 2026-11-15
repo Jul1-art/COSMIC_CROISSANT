@@ -1,0 +1,353 @@
+{
+  "id": "curiosity",
+  "name": "Curiosity",
+  "body": "mars",
+  "family": "rover-rtg",
+  "year": 2011,
+  "summary": "~2,4 t d'éléments d'atterrissage et de matériel déposés dans le cratère Gale sur Mars · 1 astromobile toujours actif en 2026 (rover Curiosity) · 1 étage en orbite héliocentrique (Centaur) · 1 étage désintégré dans l'atmosphère martienne (étage de croisière).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Mars Science Laboratory (MSL) — Rover Curiosity"
+    ],
+    [
+      "Agence & programme",
+      "NASA (JPL) — Mars Exploration Program"
+    ],
+    [
+      "Lancement",
+      "26 novembre 2011, 15h02 UTC — Cap Canaveral (SLC-41), fusée Atlas V 541"
+    ],
+    [
+      "Atterrissage sur Mars",
+      "6 août 2012, 05h17 UTC — Cratère Gale, plaine Aeolis Palus / Bradbury Landing (4,5895° S, 137,4417° E)"
+    ],
+    [
+      "Durée de mission",
+      "Mission nominale de 1 année martienne (687 jours) ; toujours opérationnel en 2026 (plus de 14 ans sur Mars)"
+    ],
+    [
+      "Type de mission",
+      "Mission robotique automatique (sans équipage) d'astrobiologie et de géologie planétaire"
+    ],
+    [
+      "Véhicules",
+      "Atlas V 541 (AV-028) · Étage de croisière · Bouclier aérodynamique · Grue volante (Sky Crane) · Rover Curiosity"
+    ],
+    [
+      "Statut",
+      "✔ Active (2026) — Exploration des strates du mont Sharp (Aeolis Mons) ; preuve d'anciens lacs habitables"
+    ]
+  ],
+  "sourceFile": "Mars/Surface/Fiche mission Curiosity - Hardware perdu dans l_espace.pdf",
+  "pdf": "curiosity.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "MARS EXPLORATION PROGRAM · CATALOGUE DU PATRIMOINE SPATIAL Curiosity (MSL) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~2,4 t d'éléments d'atterrissage et de matériel déposés dans le cratère Gale sur Mars · 1 astromobile toujours actif en 2026 (rover Curiosity) · 1 étage en orbite héliocentrique (Centaur) · 1 étage"
+      },
+      {
+        "y": 144.13421630859375,
+        "type": "text",
+        "text": "désintégré dans l'atmosphère martienne (étage de croisière)."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Mars Science Laboratory (MSL) — Rover Curiosity"
+          ],
+          [
+            "Agence & programme",
+            "NASA (JPL) — Mars Exploration Program"
+          ],
+          [
+            "Lancement",
+            "26 novembre 2011, 15h02 UTC — Cap Canaveral (SLC-41), fusée Atlas V 541"
+          ],
+          [
+            "Atterrissage sur Mars",
+            "6 août 2012, 05h17 UTC — Cratère Gale, plaine Aeolis Palus / Bradbury Landing (4,5895° S, 137,4417° E)"
+          ],
+          [
+            "Durée de mission",
+            "Mission nominale de 1 année martienne (687 jours) ; toujours opérationnel en 2026 (plus de 14 ans sur Mars)"
+          ],
+          [
+            "Type de mission",
+            "Mission robotique automatique (sans équipage) d'astrobiologie et de géologie planétaire"
+          ],
+          [
+            "Véhicules",
+            "Atlas V 541 (AV-028) · Étage de croisière · Bouclier aérodynamique · Grue volante (Sky Crane) · Rover Curiosity"
+          ],
+          [
+            "Statut",
+            "✔ Active (2026) — Exploration des strates du mont Sharp (Aeolis Mons) ; preuve d'anciens lacs habitables"
+          ]
+        ]
+      },
+      {
+        "y": 485.6671447753906,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 517.5,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 551.7205810546875,
+        "type": "text",
+        "text": "A. Surface martienne — Cratère Gale (~2,4 t au total)"
+      },
+      {
+        "y": 570.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Rover Curiosity (MSL)",
+            "~899 kg",
+            "● Toujours actif",
+            "Astromobile à 6 roues en aluminium alimenté par un générateur nucléaire MMRTG (plutonium-238, ~110 W au lancement). Embarque 10 instruments scientifiques (ChemCam, SAM, CheMin, Mastcam, MAHLI, APXS, RAD, DAN, REMS, MARDI) et un bras robotique de 2,1 m avec foreuse à percussion."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Curiosity (MSL) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de descente / Grue volante (Sky Crane)",
+            "~820 kg (à sec)",
+            "▲ Écrasé (Mars)",
+            "Plateforme propulsive équipée de 8 moteurs-fusées à hydrazine (MLE). Après avoir déposé le rover au bout de 3 câbles en nylon de 7,5 m, elle a exécuté une manœuvre d'éloignement et s'est écrasée à ~650 m au nord-ouest de Bradbury Landing."
+          ],
+          [
+            "Bouclier thermique avant (Heat Shield)",
+            "~440 kg",
+            "▲ Écrasé (Mars)",
+            "Plus grand bouclier thermique jamais envoyé vers Mars (4,5 m de diamètre, tuiles ablatives PICA). Largué à ~8 km d'altitude sous parachute ; a percuté le sol à ~1,2 km au sud-est du rover (filmé en direct par la caméra MARDI)."
+          ],
+          [
+            "Bouclier arrière (Backshell) & parachute supersonique",
+            "~350 kg",
+            "■ Intact / inactif",
+            "Coque supérieure en composite et parachute supersonique de 16 m de diamètre (80 suspentes en Kevlar). Largués à ~1,8 km d'altitude lors de l'allumage des rétrofusées ; posés à ~615 m à l'ouest-sud- ouest de Bradbury Landing."
+          ],
+          [
+            "Lests d'entrée atmosphérique en tungstène (6 masses)",
+            "~300 kg (total)",
+            "▲ Écrasés (Mars)",
+            "Deux blocs de 75 kg largués juste avant l'entrée atmosphérique pour décaler le centre de gravité (portance guidée) et six blocs de 25 kg largués avant l'ouverture du parachute pour rééquilibrer la capsule."
+          ],
+          [
+            "Puce silicium des signatures & pièce Lincoln (1909)",
+            "< 1 kg",
+            "● Toujours actif",
+            "Fixés sur le châssis de Curiosity : puce gravée contenant 1,24 million de noms du public (« Send Your Name to Mars ») et un cent américain Lincoln VDB de 1909 utilisé comme mire d'étalonnage pour la caméra macroscopique MAHLI."
+          ]
+        ]
+      },
+      {
+        "y": 533.7205810546875,
+        "type": "text",
+        "text": "B. Rentrée atmosphérique martienne & trajectoire héliocentrique"
+      },
+      {
+        "y": 553.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de croisière (Cruise Stage)",
+            "~539 kg (à sec)",
+            "▲ Désintégré",
+            "Structure annulaire équipée de cellules solaires, de radiateurs et de capteurs stellaires ayant assuré la navigation Terre- Mars pendant 8 mois. Largué 10 min avant l'entrée atmosphérique le 6 août 2012 ; entièrement consumé dans la haute atmosphère martienne."
+          ],
+          [
+            "Étage supérieur Centaur (AV-028)",
+            "~2 247 kg (à sec)",
+            "■ Orbite solaire",
+            "Après avoir injecté la sonde MSL sur sa trajectoire interplanétaire le 26 novembre 2011, l'étage Centaur a effectué une manœuvre d'évitement (deflection maneuver) pour éviter de percuter Mars et circule désormais sur une orbite héliocentrique."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Curiosity (MSL) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : contrairement aux missions habitées Apollo, MSL est une mission robotique à aller simple. Toutes les données scientifiques et images haute définition sont transmises vers la Terre via les orbiteurs relais martiens (Mars Reconnaissance Orbiter, 2001 Mars Odyssey, MAVEN et ExoMars TGO)."
+      },
+      {
+        "y": 158.7205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 180.3369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique (5 m) & 4 propulseurs d'appoint SRB : largués durant l'ascension de la fusée Atlas V 541 au-dessus de l'océan Atlantique le 26 novembre 2011."
+      },
+      {
+        "y": 213.3369140625,
+        "type": "text",
+        "text": "Couvercles anti-poussière des instruments : capuchons protecteurs éjectés sur Mars peu après l'atterrissage (notamment ceux des caméras Mastcam et du spectromètre APXS)."
+      },
+      {
+        "y": 257.6671447753906,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 283.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "26 novembre 2011, 15h02 UTC",
+            "Lancement d'Atlas V 541 depuis Cap Canaveral ; injection interplanétaire puis placement de l'étage Centaur en orbite héliocentrique."
+          ],
+          [
+            "6 août 2012, 05h07 – 05h17 UTC",
+            "Séparation de l'étage de croisière, entrée atmosphérique (« 7 minutes de terreur »), largage du bouclier thermique et dépose par Sky Crane à Bradbury Landing (4,5895° S, 137,4417° E)."
+          ],
+          [
+            "22 août 2012 (Sol 16)",
+            "Premiers tours de roues de Curiosity sur Mars et premiers tirs laser de l'instrument franco-américain ChemCam sur la roche « Coronation »."
+          ],
+          [
+            "Mai 2013 (Sol 274)",
+            "Découverte à Yellowknife Bay d'un ancien lit de lac d'eau douce présentant tous les ingrédients chimiques favorables à la vie microbienne."
+          ],
+          [
+            "Septembre 2014 (Sol 753)",
+            "Arrivée au pied du mont Sharp (Aeolis Mons, 5,5 km d'altitude) et début de l'ascension des couches géologiques sédimentaires."
+          ],
+          [
+            "2018 – 2024",
+            "Détection de molécules organiques complexes dans des mudstones âgés de 3,5 milliards d'années et traversée de l'unité riche en sulfates (canal de Gediz Vallis)."
+          ],
+          [
+            "2026 (Sol > 5 000)",
+            "Poursuite de la mission étendue sur les flancs du mont Sharp avec plus de 33 km parcourus et plus de 40 forages rocheux réalisés."
+          ]
+        ]
+      },
+      {
+        "y": 585.4171142578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 612.3369140625,
+        "type": "text",
+        "text": "Preuve de l'habitabilité passée de Mars : dès sa première année sur Mars, le laboratoire embarqué SAM et le diffractomètre CheMin ont démontré que le cratère Gale abritait il y a environ 3,7 milliards d'années un système lacustre pérenne d'eau liquide à pH neutre, contenant du carbone, de l'hydrogène, de l'oxygène, de l'azote, du phosphore et du soufre."
+      },
+      {
+        "y": 676.0869140625,
+        "type": "text",
+        "text": "Validation de l'atterrissage de précision par Sky Crane : l'architecture d'entrée guidée et de grue volante a permis de poser près d'une tonne de matériel dans une ellipse de 20 × 7 km. Cette technologie a été directement reprise et améliorée pour le rover Perseverance (Mars 2020)."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Curiosity (MSL) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 55.8369140625,
+        "type": "text",
+        "text": "Mesure des radiations pour les futures missions habitées : l'instrument RAD (Radiation Assessment Detector) a mesuré pour la première fois la dose exacte de rayonnements cosmiques et solaires reçue durant le transit Terre-Mars ainsi qu'à la surface martienne, fournissant une référence indispensable à la protection des astronautes."
+      },
+      {
+        "y": 119.5869140625,
+        "type": "text",
+        "text": "Cartographie orbitale du matériel par MRO : la caméra HiRISE de la sonde Mars Reconnaissance Orbiter a photographié l'ensemble des débris de l'atterrissage (bouclier thermique, parachute, trace d'impact du Sky Crane) ainsi que le rover Curiosity et ses traces de roues au fil de son ascension."
+      },
+      {
+        "y": 178.91712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 205.8369140625,
+        "type": "text",
+        "text": "NASA / JPL — Mars Science Laboratory Landing Press Kit & archives PDS (pds.nasa.gov)"
+      },
+      {
+        "y": 224.5869140625,
+        "type": "text",
+        "text": "Imagerie haute résolution HiRISE des sites d'impact et du rover : uahirise.org"
+      },
+      {
+        "y": 242.5869140625,
+        "type": "text",
+        "text": "Suivi en temps réel de l'itinéraire et des sols de Curiosity : mars.nasa.gov/msl"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Curiosity (MSL) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

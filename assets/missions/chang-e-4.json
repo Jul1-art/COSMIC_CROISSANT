@@ -1,0 +1,325 @@
+{
+  "id": "chang-e-4",
+  "name": "Chang'e 4",
+  "body": "moon",
+  "family": "lunar-lander",
+  "year": 2018,
+  "summary": "~1,35 t de matériel posé sur la face cachée de la Lune dans le cratère Von Kármán · 2 engins toujours actifs en novembre 2026 (atterrisseur fixe et rover Yutu-2 en activité prolongée) · 1 satellite relais en orbite de halo autour de L2 (Queqiao) · 1 étage désintégré dans l'atmosphère terrestre (3e étage CZ- 3B).",
+  "facts": [
+    [
+      "Nom officiel",
+      "Chang'e 4 (CE-4) — Atterrisseur & astromobile Yutu-2 (« Lapin de jade 2 »)"
+    ],
+    [
+      "Agence & programme",
+      "CNSA (Administration spatiale nationale chinoise) — Programme CLEP (Phase IV : exploration de la face cachée)"
+    ],
+    [
+      "Lancement",
+      "7 décembre 2018, 18h23 UTC — Base de lancement de Xichang (LC-3), fusée Longue Marche 3B (CZ-3B Y30)"
+    ],
+    [
+      "Alunissage",
+      "3 janvier 2019, 02h26 UTC — Cratère Von Kármán (bassin Pôle Sud-Aitken, face cachée de la Lune : 45,456° S, 177,588° E)"
+    ],
+    [
+      "Durée de mission",
+      "Mission nominale : 1 an (atterrisseur) et 3 mois (rover) · Durée réelle : en activité prolongée en 2026 (plus de 7 ans sur la Lune)"
+    ],
+    [
+      "Type de mission",
+      "Mission robotique d'alunissage, d'exploration mobile et de radioastronomie basse fréquence sur la face cachée de la Lune"
+    ],
+    [
+      "Véhicules",
+      "Satellite relais Queqiao (lancé en mai 2018) · Longue Marche 3B · Atterrisseur Chang'e 4 · Rover Yutu-2"
+    ],
+    [
+      "Statut",
+      "✔ Active (novembre 2026) — Premier alunissage de l'histoire sur la face cachée ; atterrisseur et rover poursuivent leurs opérations"
+    ]
+  ],
+  "sourceFile": "Lune/Chang_e/Fiche mission Chang_e 4 - Hardware perdu dans l_espace.pdf",
+  "pdf": "chang-e-4.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "PROGRAMME CHINOIS D'EXPLORATION LUNAIRE · CATALOGUE DU PATRIMOINE SPATIAL Chang'e 4 (CNSA) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~1,35 t de matériel posé sur la face cachée de la Lune dans le cratère Von Kármán · 2 engins toujours actifs en novembre 2026 (atterrisseur fixe et rover Yutu-2 en activité prolongée) · 1 satellite"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "relais en orbite de halo autour de L2 (Queqiao) · 1 étage désintégré dans l'atmosphère terrestre (3e étage CZ- 3B)."
+      },
+      {
+        "y": 190.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Chang'e 4 (CE-4) — Atterrisseur & astromobile Yutu-2 (« Lapin de jade 2 »)"
+          ],
+          [
+            "Agence & programme",
+            "CNSA (Administration spatiale nationale chinoise) — Programme CLEP (Phase IV : exploration de la face cachée)"
+          ],
+          [
+            "Lancement",
+            "7 décembre 2018, 18h23 UTC — Base de lancement de Xichang (LC-3), fusée Longue Marche 3B (CZ-3B Y30)"
+          ],
+          [
+            "Alunissage",
+            "3 janvier 2019, 02h26 UTC — Cratère Von Kármán (bassin Pôle Sud-Aitken, face cachée de la Lune : 45,456° S, 177,588° E)"
+          ],
+          [
+            "Durée de mission",
+            "Mission nominale : 1 an (atterrisseur) et 3 mois (rover) · Durée réelle : en activité prolongée en 2026 (plus de 7 ans sur la Lune)"
+          ],
+          [
+            "Type de mission",
+            "Mission robotique d'alunissage, d'exploration mobile et de radioastronomie basse fréquence sur la face cachée de la Lune"
+          ],
+          [
+            "Véhicules",
+            "Satellite relais Queqiao (lancé en mai 2018) · Longue Marche 3B · Atterrisseur Chang'e 4 · Rover Yutu-2"
+          ],
+          [
+            "Statut",
+            "✔ Active (novembre 2026) — Premier alunissage de l'histoire sur la face cachée ; atterrisseur et rover poursuivent leurs opérations"
+          ]
+        ]
+      },
+      {
+        "y": 526.9171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 558.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 592.9705810546875,
+        "type": "text",
+        "text": "A. Surface de la face cachée — Cratère Von Kármán (~1,35 t au total)"
+      },
+      {
+        "y": 612.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Chang'e 4 (plateforme fixe)",
+            "~1 200 kg (à sec)",
+            "● Toujours actif",
+            "Masse au lancement d'environ 3 780 kg. Plateforme octogonale adaptée de la réserve de Chang'e 3, dotée d'un moteur à poussée variable YF-36, de 2 panneaux solaires et d'une source thermique au plutonium-238 (RHU) pour survivre aux nuits polaires de la face cachée. Communique avec la Terre via le relais orbital Queqiao."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Chang'e 4 (CNSA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 3"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Instruments de l'atterrisseur & mini- biosphère",
+            "~65 kg (inclus)",
+            "● Toujours actif",
+            "Spectromètre radio basse fréquence LFS (observation du cosmos sans interférences radio terrestres), spectromètre neutron/gamma LND (fourni par l'Université de Kiel), caméras panoramiques et cylindre étanche de mini- biosphère (graines de coton, pommes de terre, levures et œufs de ver à soie testés au début de la mission)."
+          ],
+          [
+            "Astromobile Yutu-2 (« Lapin de jade 2 »)",
+            "135,8 kg",
+            "● Toujours actif",
+            "Rover amélioré à 6 roues doté d'un mode de conduite optimisé. Détient le record absolu de longévité pour un astromobile sur la Lune, ayant parcouru plus de 1,6 km à travers les plaines basaltiques et les éjectas du cratère Von Kármán depuis janvier 2019."
+          ],
+          [
+            "Instruments scientifiques de Yutu-2 (4 capteurs)",
+            "~20 kg (inclus)",
+            "● Toujours actif",
+            "Radar pénétrant LPR (bifréquence 60 MHz / 500 MHz sondant les strates profondes), spectromètre imageur VNIS (analyse minéralogique des roches et de la « matière gélatineuse »), analyseur neutre ASAN (fourni par l'IKI RAN russe) et caméras PCAM."
+          ]
+        ]
+      },
+      {
+        "y": 393.4705810546875,
+        "type": "text",
+        "text": "B. Orbite de halo L2 & retombées lanceur Longue Marche 3B"
+      },
+      {
+        "y": 412.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Satellite relais Queqiao (pont radio Terre-Face cachée)",
+            "~425 kg",
+            "● Toujours actif",
+            "Placé en mai 2018 sur une orbite de halo stable autour du point de Lagrange L2 du système Terre-Lune (à ~65 000 km derrière la Lune). Équipé d'une grande antenne parabolique maillée de 4,2 m et d'un interféromètre radio néerlandais (NCLE), il sert de relais indispensable pour transmettre les signaux entre la station au sol et la face cachée."
+          ],
+          [
+            "Troisième étage cryogénique H-18 (CZ- 3B Y30)",
+            "~2 800 kg (à sec)",
+            "▲ Désintégré",
+            "Étage supérieur de la fusée Longue Marche 3B ayant injecté la sonde vers la Lune le 7 décembre 2018. Entré sur une orbite terrestre haute elliptique avant de rentrer et de se consumer dans l'atmosphère terrestre en 2020."
+          ]
+        ]
+      },
+      {
+        "y": 673.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 694.0869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Chang'e 4 est une mission d'atterrissage fixe et mobile sans retour d'échantillons. Le modèle de vol initialement conçu comme réserve opérationnelle a servi de base pour la mission de retour d'échantillons Chang'e 5."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Chang'e 4 (CNSA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 3"
+      }
+    ],
+    [
+      {
+        "y": 46.2205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 66.3369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique (4 m) & propulseurs d'appoint : largués durant l'ascension atmosphérique au-dessus du territoire chinois le 7 décembre 2018."
+      },
+      {
+        "y": 97.0869140625,
+        "type": "text",
+        "text": "Couvercles optiques & protections thermiques : éjectés lors de la phase de mise en service dans le cratère Von Kármán en janvier 2019."
+      },
+      {
+        "y": 133.91712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 158.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "21 mai 2018",
+            "Lancement et placement préalable du satellite relais Queqiao en orbite de halo autour du point L2 Terre-Lune."
+          ],
+          [
+            "7 décembre 2018, 18h23 UTC",
+            "Lancement de la fusée Longue Marche 3B depuis Xichang et injection directe sur trajectoire translunaire."
+          ],
+          [
+            "12 décembre 2018",
+            "Insertion réussie en orbite circulaire lunaire à 100 km d'altitude."
+          ],
+          [
+            "3 janvier 2019, 02h26 UTC",
+            "Alunissage historique en douceur dans le cratère Von Kármán (45,456° S, 177,588° E) sur la face cachée de la Lune."
+          ],
+          [
+            "3 janvier 2019, 14h22 UTC",
+            "Déploiement du rover Yutu-2 sur le régolithe lunaire et transmission des premières images de la surface cachée."
+          ],
+          [
+            "2019 – 2026",
+            "Poursuite des opérations scientifiques en mode étendu (plus de 1,6 km parcourus par Yutu-2, analyse de roches mantelliques et mesures radioastronomiques continues)."
+          ]
+        ]
+      },
+      {
+        "y": 380.6671447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 406.0869140625,
+        "type": "text",
+        "text": "Premier regard direct sur la géologie de la face cachée : posé au cœur du bassin Pôle Sud-Aitken (le plus grand, le plus ancien et le plus profond cratère d'impact de la Lune, mesurant ~2 500 km de diamètre), Chang'e 4 a permis d'analyser pour la première fois des matériaux arrachés au manteau supérieur lunaire lors de l'impact géant primitif."
+      },
+      {
+        "y": 464.5869140625,
+        "type": "text",
+        "text": "Découverte de minéraux mantelliques (olivine et pyroxène basique) : les mesures infrarouges du spectromètre VNIS de Yutu-2 ont confirmé la présence de roches riches en olivine et en pyroxène faible en calcium, corroborant les modèles prédisant l'affleurement de roches mantelliques sous la croûte lunaire."
+      },
+      {
+        "y": 522.3369140625,
+        "type": "text",
+        "text": "Radioastronomie à bas bruit sans interférences terrestres : protégé par la masse de la Lune de toutes les ondes radio parasites émises par la civilisation humaine, le spectromètre LFS de l'atterrisseur et l'expérience NCLE sur Queqiao ont ouvert une nouvelle fenêtre d'observation de l'univers primitif dans les basses fréquences (inférieures à 30 MHz)."
+      },
+      {
+        "y": 580.8369140625,
+        "type": "text",
+        "text": "Maîtrise durable des communications en zone d'ombre : le succès pérenne du satellite relais Queqiao en orbite de halo L2 a validé l'architecture de télécommunications indispensable pour toutes les missions futures (chinoises et internationales) sur la face cachée de la Lune et aux pôles lunaires."
+      },
+      {
+        "y": 631.9171142578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 657.3369140625,
+        "type": "text",
+        "text": "CNSA / CLEP — Chang'e 4 Mission Status & Scientific Data Archive (moon.bao.ac.cn)"
+      },
+      {
+        "y": 673.8369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Chang'e 4 Lander & Yutu-2 Rover Technical Details (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 690.3369140625,
+        "type": "text",
+        "text": "Li, C. et al. (2019) — The Chang'E-4 mission: exploration of the farside of the moon (Philosophical Transactions of the Royal Society A)"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "id": "luna-12",
+  "name": "Luna 12",
+  "body": "moon",
+  "family": "luna-orbiter",
+  "year": 1966,
+  "summary": "~1 140 kg à sec (1 625 kg au lancement) d'orbiteur intégré E-6LF écrasés sur la Lune après dégradation orbitale (site d'impact non localisé avec précision) · 0 objet actif en 2026 (86 jours d'émissions en orbite lunaire d'octobre 1966 à janvier 1967) · 1 objet principal de point d'impact exact inconnu.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 12 (objet E-6LF n° 102 — Orbiteur lunaire photographique et scientifique)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+    ],
+    [
+      "Lancement",
+      "22 octobre 1966, 08h42m26s UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+    ],
+    [
+      "Insertion en orbite lunaire",
+      "25 octobre 1966, 20h45 UTC — Orbite sélénocentrique quasi équatoriale : 100 × 1 740 km, inclinée à ~10°, période de 205 min"
+    ],
+    [
+      "Durée de mission",
+      "84 heures de transit Terre-Lune + 86 jours d'opérations actives en orbite lunaire (602 révolutions jusqu'au 19 janvier 1967)"
+    ],
+    [
+      "Type de mission",
+      "Orbiteur lunaire automatique (sans équipage) de reconnaissance photographique haute résolution et de géophysique"
+    ],
+    [
+      "Véhicules",
+      "Molniya-M (bloc L) · Orbiteur intégré E-6LF (bus propulsif KTDU-5A + compartiment pressurisé non séparable)"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Troisième satellite artificiel de la Lune ; transmission réussie des premiers clichés orbitaux soviétiques haute résolution"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche mission Luna 12 - Hardware perdu dans l_espace.pdf",
+  "pdf": "luna-12.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION LUNAIRE · CATALOGUE DU PATRIMOINE SPATIAL Luna 12 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.41356658935547,
+        "type": "text",
+        "text": "Synthèse hardware : ~1 140 kg à sec (1 625 kg au lancement) d'orbiteur intégré E-6LF écrasés sur la Lune après dégradation orbitale (site d'impact non localisé avec précision) · 0 objet actif en 2026 (86 jours"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "d'émissions en orbite lunaire d'octobre 1966 à janvier 1967) · 1 objet principal de point d'impact exact inconnu."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 12 (objet E-6LF n° 102 — Orbiteur lunaire photographique et scientifique)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+          ],
+          [
+            "Lancement",
+            "22 octobre 1966, 08h42m26s UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+          ],
+          [
+            "Insertion en orbite lunaire",
+            "25 octobre 1966, 20h45 UTC — Orbite sélénocentrique quasi équatoriale : 100 × 1 740 km, inclinée à ~10°, période de 205 min"
+          ],
+          [
+            "Durée de mission",
+            "84 heures de transit Terre-Lune + 86 jours d'opérations actives en orbite lunaire (602 révolutions jusqu'au 19 janvier 1967)"
+          ],
+          [
+            "Type de mission",
+            "Orbiteur lunaire automatique (sans équipage) de reconnaissance photographique haute résolution et de géophysique"
+          ],
+          [
+            "Véhicules",
+            "Molniya-M (bloc L) · Orbiteur intégré E-6LF (bus propulsif KTDU-5A + compartiment pressurisé non séparable)"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Troisième satellite artificiel de la Lune ; transmission réussie des premiers clichés orbitaux soviétiques haute résolution"
+          ]
+        ]
+      },
+      {
+        "y": 513.4171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 578.7205810546875,
+        "type": "text",
+        "text": "A. Environnement lunaire — Orbite puis impact non localisé (~1,14 t à sec)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur intégré Luna 12 (bus E-6LF complet)",
+            "~1 140 kg (à sec)",
+            "? Impact non localisé",
+            "Masse de 1 625 kg au lancement (incluant ~485 kg d'ergols pour le moteur principal KTDU-5A). Doublure corrigée de Luna 11 intégrant un compartiment pressurisé solidaire de l'étage propulsif et stabilisé sur 3 axes par jets d'azote froid. Après l'interruption définitive des liaisons radio le 19 janvier 1967, les irrégularités gravitationnelles lunaires ont entraîné son impact sur la Lune en un point inconnu."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 12 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Système phototélévisé Ienisseï-2 (caméra + développeur)",
+            "~48 kg (inclus)",
+            "▲ Écrasé (Lune)",
+            "Caméra argentique à double objectif (focales 110 mm et 500 mm) dotée d'un laboratoire chimique automatique de développement à bord et d'un lecteur optique haute définition (jusqu'à 1 100 lignes par image, résolution au sol de 15 à 20 m depuis 100 km d'altitude), ayant transmis 42 clichés exploitables de Mare Imbrium et du cratère Aristarque."
+          ],
+          [
+            "Suite d'instruments géophysiques (7 expériences)",
+            "~38 kg (inclus)",
+            "▲ Écrasés (Lune)",
+            "Spectromètre rayons X et gamma (cartographie élémentaire du régolithe), détecteur de rayons cosmiques et protons solaires, pièges à ions (étude du plasma dans le sillage magnétique terrestre), détecteurs piézoélectriques de micrométéorites (essaim des Léonides en novembre 1966) et radioaltimètre."
+          ],
+          [
+            "Expérience technologique R-1 (engrenage sous vide)",
+            "~3 kg (inclus)",
+            "▲ Écrasée (Lune)",
+            "Banc d'essai mécanique comportant un train d'engrenages non lubrifiés exposé directement au vide lunaire pour valider la tenue à l'usure des transmissions mécaniques destinées aux futurs astromobiles Lunokhod."
+          ]
+        ]
+      },
+      {
+        "y": 420.4705810546875,
+        "type": "text",
+        "text": "B. Espace cislunaire & rentrée atmosphérique terrestre"
+      },
+      {
+        "y": 440.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Deux compartiments latéraux largables du bus E-6LF",
+            "~250 kg (total)",
+            "■ Orbite solaire / haute",
+            "Caissons latéraux abritant les capteurs optiques Soleil-Terre-Lune et les bouteilles d'azote froid initiales, largués à ~8 000 km de la Lune juste avant l'allumage de freinage d'insertion en orbite lunaire le 25 octobre 1966."
+          ],
+          [
+            "Étage supérieur Bloc L (fusée Molniya-M)",
+            "~1 160 kg (à sec)",
+            "■ Orbite haute / solaire",
+            "Quatrième étage propulsé par le moteur S1.5400. Après avoir injecté la sonde de 1 625 kg vers la Lune le 22 octobre 1966, il est passé sur une orbite terrestre très excentrique/héliocentrique."
+          ],
+          [
+            "Troisième étage Bloc I (fusée Molniya-M)",
+            "~2 400 kg (à sec)",
+            "▲ Désintégré",
+            "Étage placé en orbite basse terrestre de parking lors du lancement du 22 octobre 1966 ; rentré et consumé dans l'atmosphère terrestre quelques jours après le tir."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 12 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Luna 12 est une mission orbitale lunaire sans retour. Les étages inférieurs de la fusée Molniya-M et la coiffe sont retombés dans les zones d'exclusion terrestres d'Asie centrale peu après le lancement depuis Baïkonour."
+      },
+      {
+        "y": 143.7205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 164.5869140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique & obturateurs optiques : coiffe larguée durant l'ascension atmosphérique le 22 octobre 1966 ; volets de protection des objectifs Ienisseï-2 ouverts en orbite lunaire le 27 octobre 1966 avant le début des prises de vues."
+      },
+      {
+        "y": 223.91712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 249.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "22 octobre 1966, 08h42m26s UTC",
+            "Décollage de la fusée Molniya-M depuis Baïkonour (moins de deux mois après Luna 11) et injection sur trajectoire translunaire."
+          ],
+          [
+            "23 octobre 1966",
+            "Manœuvre de correction de trajectoire à mi-course assurant un passage ras à ~100 km au-dessus de l'équateur lunaire."
+          ],
+          [
+            "25 octobre 1966, 20h45 UTC",
+            "Allumage de freinage du moteur KTDU-5A et insertion réussie sur une orbite lunaire basse quasi équatoriale (100 × 1 740 km, inclinaison ~10°)."
+          ],
+          [
+            "27 octobre 1966",
+            "Pointage nadir réussi vers la surface lunaire (corrigeant le défaut de Luna 11) et prise de 42 clichés haute résolution (dont le cratère Aristarque et la Mer des Pluies), transmis par télévision lente jusqu'au 29 octobre."
+          ],
+          [
+            "Novembre 1966 – 19 janvier 1967",
+            "Poursuite des mesures scientifiques en rotation lente après épuisement des ergols d'attitude : 302 sessions radio accomplies au cours de 602 révolutions jusqu'à l'épuisement des batteries le 19 janvier 1967."
+          ]
+        ]
+      },
+      {
+        "y": 493.9171447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 520.8369140625,
+        "type": "text",
+        "text": "Premières photographies orbitales soviétiques à haute résolution de la Lune : en réussissant là où Luna 11 avait échoué en raison d'une tuyère bloquée, Luna 12 a transmis des images détaillées couvrant des bandes de 25 km² avec une finesse de 15 à 20 m, dévoilant la densité exacte des micro- cratères dans les mers lunaires et contribuant à la sélection des futurs sites d'alunissage automatiques et habités."
+      },
+      {
+        "y": 600.3369140625,
+        "type": "text",
+        "text": "Observation directe de la pluie de météores des Léonides (novembre 1966) : encore active en novembre 1966 lors de l'exceptionnelle tempête météoritique des Léonides, Luna 12 a enregistré une nette augmentation du taux d'impacts de micrométéorites en orbite lunaire, quantifiant le risque météoritique pour les futurs vaisseaux cislunaires."
+      },
+      {
+        "y": 664.0869140625,
+        "type": "text",
+        "text": "Spectroscopie gamma et X des régions équatoriales lunaires : sur une orbite très faiblement inclinée (~10°), les spectromètres de Luna 12 ont mesuré l'émission radioactive naturelle et la fluorescence X solaire des bassins équatoriaux, confirmant la différence de composition chimique entre les basaltes sombres des maria et les roches anorthositiques des continents."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 12 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 54.92499923706055,
+        "type": "text",
+        "text": "Validation du système d'imagerie Ienisseï-2 et des mécanismes R-1 : le fonctionnement nominal du laboratoire photographique embarqué (développement humide en impesanteur) et la longévité record de 86 jours en orbite lunaire ont consolidé l'expertise soviétique pour les missions Zond circumlunaires et les rovers Lunokhod."
+      },
+      {
+        "y": 130.16712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 157.0869140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Luna 12 Spacecraft & Lunar Orbiter Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 175.8369140625,
+        "type": "text",
+        "text": "NPO Lavotchkine / IKI RAN — Third Artificial Satellite of the Moon : Luna 12 (Station E-6LF)"
+      },
+      {
+        "y": 193.8369140625,
+        "type": "text",
+        "text": "Asif A. Siddiqi — Beyond Earth: A Chronicle of Deep Space Exploration, 1958–2016 (NASA SP-2018- 4041)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 12 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

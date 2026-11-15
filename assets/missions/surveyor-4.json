@@ -1,0 +1,319 @@
+{
+  "id": "surveyor-4",
+  "name": "Surveyor 4",
+  "body": "moon",
+  "family": "surveyor",
+  "year": 1967,
+  "summary": "1 atterrisseur de ~283 kg à sec (1 037 kg au lancement) probablement détruit à l'impact dans le Sinus Medii, après la perte du signal ~2,5 min avant le contact · caméra, pelle, jauges et pince magnétique jamais utilisées en surface · 1 étage Centaur, devenir non précisé · aucun élément récupéré · échec : vol vers la Lune sans défaut, silence pendant la descente finale",
+  "facts": [
+    [
+      "Nom officiel",
+      "Surveyor 4"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Surveyor"
+    ],
+    [
+      "Lancement",
+      "14 juillet 1967, 11h53 UTC — Cape Canaveral (LC-36A), Atlas-Centaur (AC-11)"
+    ],
+    [
+      "Destination prévue",
+      "Sinus Medii (Baie centrale), ~0,4° N, 1,33° O"
+    ],
+    [
+      "Perte du signal",
+      "17 juillet 1967, ~02h03 UTC, ~2,5 min avant le contact ; jamais rétabli"
+    ],
+    [
+      "Impact probable",
+      "~0,45° N, 1,39° O, ~02h05 UTC (estimation)"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — sonde probablement détruite"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur · atterrisseur Surveyor 4 · moteur de freinage solide"
+    ],
+    [
+      "Statut",
+      "Échec — signal perdu pendant le tir du rétromoteur ; explosion de celui-ci suspectée, cause non confirmée"
+    ]
+  ],
+  "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-4-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "surveyor-4.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Surveyor 4 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 atterrisseur de ~283 kg à sec (1 037 kg au lancement) probablement détruit à l'impact dans le Sinus Medii, après la perte du signal ~2,5 min avant le contact · caméra, pelle, jauges et pince magnétique jamais utilisées en surface · 1 étage Centaur, devenir non précisé · aucun élément récupéré · échec : vol vers la Lune sans défaut, silence pendant la descente finale"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Surveyor 4"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Surveyor"
+          ],
+          [
+            "Lancement",
+            "14 juillet 1967, 11h53 UTC — Cape Canaveral (LC-36A), Atlas-Centaur (AC-11)"
+          ],
+          [
+            "Destination prévue",
+            "Sinus Medii (Baie centrale), ~0,4° N, 1,33° O"
+          ],
+          [
+            "Perte du signal",
+            "17 juillet 1967, ~02h03 UTC, ~2,5 min avant le contact ; jamais rétabli"
+          ],
+          [
+            "Impact probable",
+            "~0,45° N, 1,39° O, ~02h05 UTC (estimation)"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — sonde probablement détruite"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur · atterrisseur Surveyor 4 · moteur de freinage solide"
+          ],
+          [
+            "Statut",
+            "Échec — signal perdu pendant le tir du rétromoteur ; explosion de celui-ci suspectée, cause non confirmée"
+          ]
+        ]
+      },
+      {
+        "y": 459.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 484.2606201171875,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 526.596923828125,
+        "type": "text",
+        "text": "A. Surface lunaire — impact probable dans le Sinus Medii"
+      },
+      {
+        "y": 544.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Surveyor 4",
+            "283 kg à sec (624 lb) ; 1 037,4 kg au lancement",
+            "",
+            "Contact perdu le 17 juillet 1967 ; probablement écrasé près de 0,45° N, 1,39° O ; aucune image du site ou de l'épave dans mes sources"
+          ],
+          [
+            "Caméra TV, pelle, pince à aimant",
+            "—",
+            "",
+            "Caméra à miroirs, pelle de prélèvement du sol, pince magnétique pour détecter les éléments ferreux ; jamais utilisées"
+          ],
+          [
+            "Jauges de contrainte et capteurs",
+            "—",
+            "",
+            "Sur les jambes d'atterrissage et divers capteurs d'ingénierie"
+          ],
+          [
+            "Moteur de freinage solide",
+            "n.c.",
+            "",
+            "Suspecté d'avoir explosé vers la fin de sa combustion ; non confirmé"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Étages de lancement"
+      },
+      {
+        "y": 72.3543472290039,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "Devenir non précisé dans mes sources"
+          ],
+          [
+            "Étage Atlas",
+            "n.c.",
+            "",
+            "Retombé ; non précisé"
+          ]
+        ]
+      },
+      {
+        "y": 145.596923828125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 162.80435180664062,
+        "type": "text",
+        "text": "• Rien : aucune image ni mesure de surface n'a pu être obtenue"
+      },
+      {
+        "y": 190.596923828125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 207.80435180664062,
+        "type": "text",
+        "text": "• Étages de l'Atlas et du Centaur, séparés pendant l'ascension et la trajectoire directe"
+      },
+      {
+        "y": 244.91766357421875,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 267.55438232421875,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "14 juillet 1967, 11h53",
+            "Lancement par Atlas-Centaur"
+          ],
+          [
+            "14-17 juillet 1967",
+            "Vol vers la Lune sans incident"
+          ],
+          [
+            "17 juillet 1967, ~02h03",
+            "Perte du signal, ~2,5 min avant le contact (02h02:30 selon une autre indication de la même source)"
+          ],
+          [
+            "17 juillet 1967, ~02h05",
+            "Impact estimé près de 0,45° N, 1,39° O"
+          ]
+        ]
+      },
+      {
+        "y": 392.3969421386719,
+        "type": "text",
+        "text": "Séquence de la défaillance"
+      },
+      {
+        "y": 410.7543640136719,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "Vol vers la Lune",
+            "Aucun incident ; trajectoire décrite comme sans défaut"
+          ],
+          [
+            "Descente finale",
+            "Tir du moteur de freinage solide, vers la fin de sa combustion prévue"
+          ],
+          [
+            "~2,5 min avant le contact",
+            "Perte brutale du signal radio ; jamais rétabli"
+          ],
+          [
+            "Cause suspectée",
+            "Explosion du rétromoteur ; non confirmée dans mes sources"
+          ],
+          [
+            "Impact estimé",
+            "Près de 0,45° N, 1,39° O, un peu au nord-ouest de la cible (écart ~0,05° en latitude, ~0,06° en longitude)"
+          ]
+        ]
+      },
+      {
+        "y": 565.11767578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 586.6043701171875,
+        "type": "text",
+        "text": "• Aucun résultat de surface : la charge utile était identique à celle de Surveyor 3, mais n'a jamais servi."
+      },
+      {
+        "y": 617.6043701171875,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient les débris sous la juridiction de l'État qui les a immatriculés (les États-Unis) ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 668.7176513671875,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 690.204345703125,
+        "type": "text",
+        "text": "• Wikipedia (miroir) — Surveyor 4 : lancement, masses, perte du signal, impact estimé"
+      },
+      {
+        "y": 707.204345703125,
+        "type": "text",
+        "text": "• Université d'Arizona (LPL) — Surveyor IV : charge utile identique à Surveyor III (page partiellement incohérente sur les dates)"
+      }
+    ]
+  ]
+}

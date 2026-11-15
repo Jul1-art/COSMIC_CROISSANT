@@ -1,0 +1,340 @@
+{
+  "id": "luna-13",
+  "name": "Luna 13",
+  "body": "moon",
+  "family": "luna-lander",
+  "year": 1966,
+  "summary": "~700 kg de matériel laissé sur la Lune dans Oceanus Procellarum (capsule sphérique ALS de 113 kg posée intacte avec 2 bras mécaniques déployés et ~585 kg d'étage de freinage et d'airbags écrasés à proximité) · 0 objet actif en 2026 (98 heures de fonctionnement à la surface en décembre 1966) · 0 objet de localisation générale inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 13 (objet E-6M n° 205 — Station lunaire automatique ALS modernisée)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+    ],
+    [
+      "Lancement",
+      "21 décembre 1966, 10h17m08s UTC — Cosmodrome de Baïkonour (Site 1/5), fusée Molniya-M (8K78M)"
+    ],
+    [
+      "Atterrissage sur la Lune",
+      "24 décembre 1966, 18h01m00s UTC — Oceanus Procellarum (Océan des Tempêtes), à ~440 km au nord-ouest de Luna 9 (~18,87° N, 297,95° E / 62,05° O)"
+    ],
+    [
+      "Durée de mission",
+      "79 heures et 44 minutes de transit Terre-Lune + 4 jours d'opérations au sol (dernier contact le 28 décembre 1966 à 06h13 UTC)"
+    ],
+    [
+      "Type de mission",
+      "Atterrisseur lunaire automatique (sans équipage) de géotechnique (mécanique des sols), d'imagerie panoramique et de radiométrie"
+    ],
+    [
+      "Véhicules",
+      "Molniya-M (bloc L) · Étage de freinage et de guidage E-6M (moteur KTDU-5A) · Capsule sphérique ALS à bras déployables"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Deuxième atterrissage en douceur réussi sur la Lune et premières mesures mécaniques directes du régolithe"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche mission Luna 13 - Hardware perdu dans l_espace.pdf",
+  "pdf": "luna-13.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION LUNAIRE · CATALOGUE DU PATRIMOINE SPATIAL Luna 13 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 116.38310241699219,
+        "type": "text",
+        "text": "Synthèse hardware : ~700 kg de matériel laissé sur la Lune dans Oceanus Procellarum (capsule sphérique ALS de 113 kg posée intacte avec 2 bras mécaniques déployés et ~585 kg d'étage de freinage et d'airbags"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "écrasés à proximité) · 0 objet actif en 2026 (98 heures de fonctionnement à la surface en décembre 1966) · 0 objet de localisation générale inconnue."
+      },
+      {
+        "y": 190.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 13 (objet E-6M n° 205 — Station lunaire automatique ALS modernisée)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+          ],
+          [
+            "Lancement",
+            "21 décembre 1966, 10h17m08s UTC — Cosmodrome de Baïkonour (Site 1/5), fusée Molniya-M (8K78M)"
+          ],
+          [
+            "Atterrissage sur la Lune",
+            "24 décembre 1966, 18h01m00s UTC — Oceanus Procellarum (Océan des Tempêtes), à ~440 km au nord-ouest de Luna 9 (~18,87° N, 297,95° E / 62,05° O)"
+          ],
+          [
+            "Durée de mission",
+            "79 heures et 44 minutes de transit Terre-Lune + 4 jours d'opérations au sol (dernier contact le 28 décembre 1966 à 06h13 UTC)"
+          ],
+          [
+            "Type de mission",
+            "Atterrisseur lunaire automatique (sans équipage) de géotechnique (mécanique des sols), d'imagerie panoramique et de radiométrie"
+          ],
+          [
+            "Véhicules",
+            "Molniya-M (bloc L) · Étage de freinage et de guidage E-6M (moteur KTDU-5A) · Capsule sphérique ALS à bras déployables"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Deuxième atterrissage en douceur réussi sur la Lune et premières mesures mécaniques directes du régolithe"
+          ]
+        ]
+      },
+      {
+        "y": 541.1671142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 573.0,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 606.4705810546875,
+        "type": "text",
+        "text": "A. Surface lunaire — Oceanus Procellarum (~700 kg au total)"
+      },
+      {
+        "y": 626.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Capsule d'atterrissage ALS (sphère à pétales)",
+            "113,0 kg",
+            "■ Intact / inactif",
+            "Version alourdie (+14 kg par rapport à Luna 9) de la sphère pressurisée de 58 cm de diamètre à 4 pétales redresseurs et 4 antennes rubans de 75 cm, dotée d'une batterie argent-zinc renforcée, d'un système de refroidissement par évaporation d'eau et d'émetteurs radio (183,538 MHz)."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 13 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Deux bras mécaniques déployables & sondes géotechniques",
+            "~12 kg (inclus)",
+            "■ Intact / inactif",
+            "Deux perches articulées à ressorts de 1,5 m de long déployées de part et d'autre de la sphère 4 minutes après le posé : l'une porte un pénétromètre explosif en titane (enfoncé dans le sol par une fusée à poudre de 70 N pendant 0,6 s) et l'autre un densitomètre à rétrodiffusion gamma (source radioactive Cs-137)."
+          ],
+          [
+            "Caméra panoramique TV, radiomètre & accéléromètre",
+            "~6 kg (inclus)",
+            "■ Intact / inactif",
+            "Caméra optico-mécanique à miroir rotatif (transmettant 5 panoramas complets à 360°), dynamographe enregistrant la décélération à l'impact (dure 0,04 s pour déduire la cohésion du sol), radiomètre infrarouge et compteur Geiger de rayonnement cosmique."
+          ],
+          [
+            "Module propulsif de freinage E-6M (bus principal)",
+            "~555 kg (à sec)",
+            "▲ Écrasé (Lune)",
+            "Étage de croisière et de décélération équipé du moteur KTDU-5A (46 kN), du radar altimétrique I-100 et des viseurs stellaires. A éjecté la capsule ALS à ~5 m du sol juste avant de percuter la surface lunaire à proximité immédiate."
+          ],
+          [
+            "Coussins amortisseurs d'atterrissage (2 airbags)",
+            "~30 kg",
+            "▲ Écrasés / posés",
+            "Deux demi-coques gonflables en caoutchouc amortissant le choc de l'impact initial ; larguées par boulons pyrotechniques 4 minutes après l'immobilisation pour libérer les 4 pétales et les 2 bras scientifiques."
+          ]
+        ]
+      },
+      {
+        "y": 484.2205810546875,
+        "type": "text",
+        "text": "B. Espace cislunaire & rentrée atmosphérique terrestre"
+      },
+      {
+        "y": 503.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Deux compartiments latéraux largables du bus E-6M",
+            "~300 kg (total)",
+            "▲ Écrasés (Lune)",
+            "Caissons latéraux abritant les capteurs d'orientation astronomique et les bouteilles d'azote froid, largués à ~75 km d'altitude (48 s avant l'impact) juste avant l'allumage de la rétro-fusée principale le 24 décembre 1966."
+          ],
+          [
+            "Étage supérieur Bloc L (fusée Molniya-M)",
+            "~1 160 kg (à sec)",
+            "■ Orbite haute / solaire",
+            "Quatrième étage propulsé par le moteur S1.5400. Après avoir injecté la sonde de 1 620 kg vers la Lune le 21 décembre 1966, il est passé sur une orbite terrestre très excentrique/héliocentrique."
+          ],
+          [
+            "Troisième étage Bloc I (fusée Molniya-M)",
+            "~2 400 kg (à sec)",
+            "▲ Désintégré",
+            "Étage placé en orbite basse terrestre de parking lors du tir du 21 décembre 1966 ; rentré et consumé dans l'atmosphère terrestre quelques jours après le lancement."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 13 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Luna 13 est une mission robotique d'atterrissage lunaire à aller simple. Les étages inférieurs de la fusée Molniya-M et la coiffe sont retombés dans les zones d'exclusion terrestres d'Asie centrale après le lancement depuis Baïkonour."
+      },
+      {
+        "y": 143.7205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 164.5869140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique & sonde d'impact mécanique : coiffe larguée durant l'ascension atmosphérique le 21 décembre 1966 ; tige de contact de 5 m déclenchant la séparation de la capsule ALS juste avant le toucher au sol le 24 décembre 1966."
+      },
+      {
+        "y": 223.91712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 249.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "21 décembre 1966, 10h17m08s UTC",
+            "Décollage de la fusée Molniya-M depuis Baïkonour et injection directe sur trajectoire translunaire."
+          ],
+          [
+            "22 décembre 1966",
+            "Manœuvre de correction de trajectoire à mi-course assurant le ciblage de la plaine occidentale d'Oceanus Procellarum."
+          ],
+          [
+            "24 décembre 1966, 18h01m00s UTC",
+            "Alunissage en douceur réussi dans Oceanus Procellarum (18,87° N, 62,05° O), suivi 4 minutes plus tard de l'ouverture des 4 pétales et du déploiement des 2 bras mécaniques."
+          ],
+          [
+            "24 décembre 1966, 18h06 UTC",
+            "Allumage de la micro-fusée du pénétromètre enfonçant la sonde en titane de 4,5 cm dans le sol lunaire et activation du densitomètre gamma."
+          ],
+          [
+            "25 – 28 décembre 1966",
+            "Transmission de 5 panoramas complets haute définition sous différents angles solaires (dont une vue de l'ombre du bras mécanique posé sur le régolithe) jusqu'à l'épuisement des batteries le 28 décembre à 06h13 UTC."
+          ]
+        ]
+      },
+      {
+        "y": 493.9171447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 520.8369140625,
+        "type": "text",
+        "text": "Première caractérisation mécanique directe du sol lunaire : grâce au pénétromètre propulsé, au densitomètre gamma et à l'accéléromètre d'impact, Luna 13 a démontré que le régolithe superficiel d'Oceanus Procellarum possède une masse volumique apparente d'environ 0,8 g/cm³ (comparable à celle de la neige tassée ou d'un sable fin peu compacté) et une résistance mécanique suffisante pour supporter sans risque des engins lourds."
+      },
+      {
+        "y": 600.3369140625,
+        "type": "text",
+        "text": "Mesure du bilan thermique et radiatif de la surface : le radiomètre infrarouge a mesuré une température de surface de midi lunaire atteignant +117 °C, tandis que le dosimètre a confirmé que la radioactivité propre du sol lunaire est très faible et que le flux de radiations provient presque exclusivement du rayonnement cosmique."
+      },
+      {
+        "y": 663.1822509765625,
+        "type": "text",
+        "text": "Validation opérationnelle de la filière E-6 : en reproduisant sans incident majeur l'architecture d'atterrissage de Luna 9 avec une charge utile accrue et des appendices articulés, Luna 13 a clos avec succès la génération des premiers atterrisseurs sphériques soviétiques et préparé la génération lourde suivante (Luna 16, 17, 20, 21 et 24)."
+      },
+      {
+        "y": 727.8369140625,
+        "type": "text",
+        "text": "Confirmation de la diversité locale des mers lunaires : posée à plus de 400 km de Luna 9, Luna 13 a révélé un terrain sensiblement plus plat et moins encombré de gros blocs rocheux, confirmant la variabilité géologique locale des plaines basaltiques lunaires."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 13 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 67.91712951660156,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 94.8369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Luna 13 Spacecraft & Lander Technical Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 112.8369140625,
+        "type": "text",
+        "text": "NPO Lavotchkine / IKI RAN — Second Soft Landing on the Moon : Luna 13 (Station E-6M)"
+      },
+      {
+        "y": 131.5869140625,
+        "type": "text",
+        "text": "Cherkasov, I. I. et al. (1968) — Determination of the Density and Mechanical Strength of the Surface Layer of the Moon at the Landing Site of the Automatic Station Luna 13"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 13 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

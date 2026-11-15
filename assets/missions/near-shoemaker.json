@@ -1,0 +1,342 @@
+{
+  "id": "near-shoemaker",
+  "name": "NEAR Shoemaker",
+  "body": "small-bodies",
+  "family": "orbiter",
+  "year": 1996,
+  "summary": "~487 kg de matériel posé intact à la surface de l'astéroïde géocroiseur (433) Éros · 0 objet actif en 2026 (arrêt final des transmissions le 28 février 2001 après 16 jours d'opérations au sol) · 1 étage en orbite héliocentrique (3e étage Star-48B de la fusée Delta II) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "NEAR Shoemaker (Near Earth Asteroid Rendezvous — Shoemaker, renommée en hommage au planétologue Eugene Shoemaker)"
+    ],
+    [
+      "Agence & programme",
+      "NASA (Johns Hopkins Applied Physics Laboratory — APL) — Première mission du programme Discovery"
+    ],
+    [
+      "Lancement",
+      "17 février 1996, 20h43 UTC — Cap Canaveral (SLC-17B), fusée Delta II 7925-8"
+    ],
+    [
+      "Mise en orbite & posé",
+      "14 février 2000 (mise en orbite autour d'Éros) · 12 février 2001, 20h01m52s UTC (atterrissage en douceur sur Éros)"
+    ],
+    [
+      "Durée de mission",
+      "4 ans de croisière (incluant le survol de Mathilde) + 1 an en orbite autour d'Éros + 16 jours à sa surface (jusqu'au 28 février 2001)"
+    ],
+    [
+      "Type de mission",
+      "Sonde automatique de rendez-vous orbital (sans équipage) convertie en fin de mission en atterrisseur sur astéroïde"
+    ],
+    [
+      "Véhicules",
+      "Delta II 7925-8 (étage supérieur PAM-D / Star-48B) · Sonde spatiale NEAR Shoemaker (châssis octogonal en aluminium)"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier orbiteur et premier atterrisseur de l'histoire sur un astéroïde ; repose intact sur (433) Éros"
+    ]
+  ],
+  "sourceFile": "Astéroïdes et comètes/Fiche mission NEAR Shoemaker - Hardware perdu dans l_espace.pdf",
+  "pdf": "near-shoemaker.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION DES PETITS CORPS · CATALOGUE DU PATRIMOINE SPATIAL NEAR Shoemaker (NASA) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.25499725341797,
+        "type": "text",
+        "text": "Synthèse hardware : ~487 kg de matériel posé intact à la surface de l'astéroïde géocroiseur (433) Éros · 0 objet actif en 2026 (arrêt final des transmissions le 28 février 2001 après 16 jours d'opérations au sol) · 1 étage"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "en orbite héliocentrique (3e étage Star-48B de la fusée Delta II) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "NEAR Shoemaker (Near Earth Asteroid Rendezvous — Shoemaker, renommée en hommage au planétologue Eugene Shoemaker)"
+          ],
+          [
+            "Agence & programme",
+            "NASA (Johns Hopkins Applied Physics Laboratory — APL) — Première mission du programme Discovery"
+          ],
+          [
+            "Lancement",
+            "17 février 1996, 20h43 UTC — Cap Canaveral (SLC-17B), fusée Delta II 7925-8"
+          ],
+          [
+            "Mise en orbite & posé",
+            "14 février 2000 (mise en orbite autour d'Éros) · 12 février 2001, 20h01m52s UTC (atterrissage en douceur sur Éros)"
+          ],
+          [
+            "Durée de mission",
+            "4 ans de croisière (incluant le survol de Mathilde) + 1 an en orbite autour d'Éros + 16 jours à sa surface (jusqu'au 28 février 2001)"
+          ],
+          [
+            "Type de mission",
+            "Sonde automatique de rendez-vous orbital (sans équipage) convertie en fin de mission en atterrisseur sur astéroïde"
+          ],
+          [
+            "Véhicules",
+            "Delta II 7925-8 (étage supérieur PAM-D / Star-48B) · Sonde spatiale NEAR Shoemaker (châssis octogonal en aluminium)"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier orbiteur et premier atterrisseur de l'histoire sur un astéroïde ; repose intact sur (433) Éros"
+          ]
+        ]
+      },
+      {
+        "y": 513.4171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 577.3233642578125,
+        "type": "text",
+        "text": "A. Surface de l'astéroïde (433) Éros — Région d'Himeros (~487 kg au total)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde spatiale NEAR Shoemaker (châssis complet)",
+            "~487 kg (à sec)",
+            "■ Intact / inactif",
+            "Masse de 805 kg au lancement (dont ~318 kg d'ergols hydrazine/MON-3). Corps octogonal de 1,7 × 1,7 × 2,75 m stabilisé sur 3 axes, muni d'un moteur principal LEROS-1B (450 N) et de 11 propulseurs d'attitude. S'est posé en douceur à ~1,5–1,8 m/s (6 km/h) sur le bord sud de la selle d'Himeros (35° S, 279° O), reposant en équilibre sur la tranche de deux panneaux solaires et du pont inférieur."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "NEAR Shoemaker (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Quatre panneaux solaires fixes (arséniure de gallium)",
+            "~68 kg (inclus)",
+            "■ Intact / inactif",
+            "Quatre ailes déployables de 1,8 × 1,2 m déployées en croix autour du châssis (envergure totale de 5,5 m), délivrant jusqu'à 1 800 W à 1 UA et 400 W à 2,2 UA, couplées à une batterie nickel-cadmium de 9 Ah."
+          ],
+          [
+            "Suite d'instruments scientifiques (6 instruments)",
+            "~56 kg (inclus)",
+            "■ Intact / inactif",
+            "Imageur multispectral MSI (160 000 clichés transmis), spectromètre proche infrarouge NIS, spectromètre rayons X et gamma XGRS (resté actif au sol pour analyser la composition élémentaire du régolithe), altimètre laser NLR, magnétomètre MAG et expérience de radioscience."
+          ],
+          [
+            "Antenne grand gain fixe (1,5 m) & antennes bande X",
+            "~18 kg (inclus)",
+            "■ Intact / inactif",
+            "Antenne parabolique fixe en fibre de carbone montée sur le pont supérieur, complétée par une antenne moyenne gain et deux antennes omnidirectionnelles qui ont permis de maintenir la liaison télémétrique avec le Deep Space Network depuis la surface d'Éros pendant 16 jours."
+          ]
+        ]
+      },
+      {
+        "y": 377.8233642578125,
+        "type": "text",
+        "text": "B. Orbite héliocentrique & retombées lanceur Delta II"
+      },
+      {
+        "y": 398.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Troisième étage Star-48B (module PAM-D)",
+            "~130 kg (à sec)",
+            "■ Orbite solaire",
+            "Propulseur à propergol solide stabilisé par rotation. Après avoir injecté NEAR sur sa trajectoire interplanétaire le 17 février 1996 (28 min après le décollage), il a été largué par système yo-yo et circule sur une orbite héliocentrique permanente."
+          ],
+          [
+            "Deuxième étage Delta-K (moteur AJ10-118K)",
+            "~950 kg (à sec)",
+            "▲ Désintégré",
+            "Étage à ergols hypergoliques placé sur une orbite basse terrestre de parking lors du tir du 17 février 1996 ; rentré et consumé dans l'atmosphère terrestre quelques mois après le lancement."
+          ],
+          [
+            "Premier étage Delta Thor XLT & 9 propulseurs GEM- 40",
+            "~7 400 kg (total à sec)",
+            "▲ Retombés (océan)",
+            "Éléments du premier étage largués durant l'ascension atmosphérique depuis Cap Canaveral le 17 février 1996 et retombés dans l'océan Atlantique."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "NEAR Shoemaker (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 62.8233642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 85.0869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : NEAR Shoemaker est une mission d'exploration des astéroïdes sans retour physique. Bien que la sonde n'ait jamais été équipée de trains d'atterrissage (étant initialement conçue uniquement comme orbiteur), ses ingénieurs ont programmé cinq manœuvres de freinage en fin de mission afin de la poser intacte sur (433) Éros."
+      },
+      {
+        "y": 157.3233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 180.3369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique Delta II (2,9 m de diamètre) & masses yo-yo de désaturation : coiffe larguée durant l'ascension atmosphérique au-dessus de l'océan Atlantique le 17 février 1996 ; masselottes de ralentissement de rotation du 3e étage Star-48B éjectées dans l'espace avant la séparation de la sonde."
+      },
+      {
+        "y": 254.66712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 280.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "17 février 1996, 20h43 UTC",
+            "Lancement de la fusée Delta II 7925-8 depuis Cap Canaveral et injection sur trajectoire interplanétaire."
+          ],
+          [
+            "27 juin 1997",
+            "Survol rapproché de l'astéroïde carboné de la ceinture principale (253) Mathilde à 1 212 km de distance (vitesse relative de 9,93 km/s), révélant un corps extrêmement peu dense (1,3 g/cm³) criblé de cratères géants."
+          ],
+          [
+            "23 janvier 1998",
+            "Assistance gravitationnelle autour de la Terre (survol à 540 km d'altitude au- dessus de l'Iran) pour incliner le plan orbital vers (433) Éros."
+          ],
+          [
+            "20 décembre 1998 – 23 décembre 1998",
+            "Anomalie moteur lors de la première tentative de rendez-vous (mise en mode sécurité de 27 heures) : la sonde effectue un survol rapide d'Éros à 3 827 km et entame une boucle de rattrapage de 13 mois."
+          ],
+          [
+            "14 février 2000, 15h33 UTC",
+            "Insertion orbitale réussie autour de (433) Éros (première mise en orbite autour d'un astéroïde), suivie d'un an d'observations cartographiques descendant jusqu'à 5 km d'altitude."
+          ],
+          [
+            "12 février 2001, 20h01m52s UTC",
+            "Descente contrôlée de 4 heures et premier atterrissage en douceur de l'histoire sur un astéroïde (vitesse d'impact < 1,8 m/s), transmettant 69 clichés haute résolution jusqu'à 120 m d'altitude."
+          ],
+          [
+            "28 février 2001, 23h59 UTC",
+            "Fin officielle des opérations et coupure de l'émetteur radio après 16 jours d'analyses chimiques depuis la surface d'Éros."
+          ]
+        ]
+      },
+      {
+        "y": 623.6671142578125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 650.5869140625,
+        "type": "text",
+        "text": "Premier portrait complet d'un astéroïde géocroiseur : durant une année complète en orbite autour de (433) Éros (corps allongé en forme de cacahuète de 34,4 × 11,2 × 11,2 km), NEAR Shoemaker a transmis plus de 160 000 images, révélant une surface couverte d'un épais régolithe, de plus de 100 000 cratères et de dizaines de milliers de blocs rocheux éjectés principalement par le cratère Shoemaker."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "NEAR Shoemaker (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 55.8369140625,
+        "type": "text",
+        "text": "Preuve d'une structure interne monolithique fracturée : les mesures gravimétriques et topographiques (altimètre laser NLR) ont établi une densité uniforme de 2,67 g/cm³ (proche de la croûte terrestre) et montré qu'Éros n'est pas un simple tas de gravats lâche (« rubble pile »), mais un fragment cohérent de roche primitive fracturé par les impacts."
+      },
+      {
+        "y": 119.5869140625,
+        "type": "text",
+        "text": "Première analyse chimique directe depuis le sol d'un astéroïde : posé directement sur le régolithe, le spectromètre gamma/rayons X (XGRS) a bénéficié d'une sensibilité décuplée, confirmant qu'Éros présente une composition chondritique ordinaire primitive (riche en fer, magnésium, silicium et aluminium) inchangée depuis la formation du Système solaire il y a 4,5 milliards d'années."
+      },
+      {
+        "y": 183.3369140625,
+        "type": "text",
+        "text": "Pionnier des missions vers les petits corps : en inaugurant le programme Discovery de la NASA et en démontrant la faisabilité d'opérations orbitales et de proximité à très faible gravité (la pesanteur sur Éros vaut environ 1/1 700e de celle de la Terre), NEAR Shoemaker a ouvert la voie aux missions Hayabusa, Rosetta, OSIRIS-REx et Hera."
+      },
+      {
+        "y": 258.4171447753906,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 285.3369140625,
+        "type": "text",
+        "text": "NASA NSSDCA — NEAR Shoemaker Spacecraft & Eros Landing Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 303.3369140625,
+        "type": "text",
+        "text": "Johns Hopkins Applied Physics Laboratory (APL) — NEAR Mission Archive & Image Gallery (near.jhuapl.edu)"
+      },
+      {
+        "y": 337.0869140625,
+        "type": "text",
+        "text": "Veverka, J. et al. (2001) — The landing of the NEAR-Shoemaker spacecraft on asteroid 433 Eros (Nature, Vol. 413)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "NEAR Shoemaker (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

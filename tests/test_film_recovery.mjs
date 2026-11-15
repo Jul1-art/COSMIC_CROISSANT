@@ -80,6 +80,16 @@ test('buffer preparation waits for contiguous reserve and is cancellable',async(
  const cancel=stream.waitForBuffer({signal:abort.signal});abort.abort();await assert.rejects(cancel,{name:'AbortError'});
  stream.destroy();
 });
+test('a native MP4 can start after the browser stops preloading below the estimated reserve',async()=>{
+ const f=await fixture({hlsSupported:false,connection:{downlink:1.65,effectiveType:'4g'}});
+ f.video.readyState=4;f.video.networkState=2;f.video.ranges=[[42,51]];
+ const stream=f.attach();stream.setPlaybackIntent(true);
+ assert.equal(stream.getBufferState().ready,false);
+ let completed=false;const pending=stream.waitForBuffer().then(()=>completed=true);
+ f.video.networkState=1;f.video.dispatchEvent(new Event('suspend'));await pending;
+ assert.equal(completed,true);assert.equal(f.video.plays,0,'preparing still never starts playback itself');
+ stream.destroy();
+});
 
 test('rebuffering requires a larger reserve instead of restarting with one frame',async()=>{
  const f=await fixture();const stream=f.attach();stream.setPlaybackIntent(true);f.video.ranges=[[42,50]];

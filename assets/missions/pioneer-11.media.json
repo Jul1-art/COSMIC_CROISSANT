@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "ARC-2000-80-HC-251",
+      "credit": "NASA / ARC",
+      "date": "2000-04-26T10:12:11Z",
+      "source": "https://images.nasa.gov/details/ARC-2000-80-HC-251",
+      "nasaId": "ARC-2000-80-HC-251",
+      "description": "Pioneer 11 pre-encounter with Saturn as painted by Wilson Hurley",
+      "src": "archives/pioneer-11-nasa-ARC-2000-80-HC-251.jpg"
+    },
+    {
+      "title": "ARC-1974-A74-9030-1",
+      "credit": "NASA / ARC",
+      "date": "1974-12-05T00:00:00Z",
+      "source": "https://images.nasa.gov/details/ARC-1974-A74-9030-1",
+      "nasaId": "ARC-1974-A74-9030-1",
+      "description": "Dr. John A. Simpson and Dr James Van Allen discuss Pioneer 11 Mission to Juiter and Saturn during morning briefing.",
+      "src": "archives/pioneer-11-nasa-ARC-1974-A74-9030-1.jpg"
+    },
+    {
+      "title": "ARC-1974-AC74-9036-28",
+      "credit": "Lee Jones",
+      "date": "1974-12-01T00:00:00Z",
+      "source": "https://images.nasa.gov/details/ARC-1974-AC74-9036-28",
+      "nasaId": "ARC-1974-AC74-9036-28",
+      "description": "Dr. James Pollack (Ames) and Dr Tom Gehrels during press conference for Pioneer 11 Jupiter encounter",
+      "src": "archives/pioneer-11-nasa-ARC-1974-AC74-9036-28.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/pioneer-11.mp4",
+    "local": true,
+    "title": "Pioneer 11 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "pioneer-11.pdf",
+    "fingerprint": "6410c31183b298ffddc56d691a0fb5e8f97b60ab5a20b1b1cd0297f0e447df53"
+  }
+}

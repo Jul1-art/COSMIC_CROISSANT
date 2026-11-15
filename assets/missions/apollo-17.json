@@ -1,0 +1,374 @@
+{
+  "id": "apollo-17",
+  "name": "Apollo 17",
+  "body": "moon",
+  "family": "apollo",
+  "year": 1972,
+  "summary": "~19,3 t d'épaves et d'équipements laissés sur la Lune (dont ~2,9 t posées intactes dans Taurus-Littrow et ~16,4 t d'impacteurs volontaires S-IVB et LM-12) · 0 objet actif en 2026 (station ALSEP arrêtée en septembre 1977) · 1 module désintégré dans l'atmosphère terrestre (module de service America) · 0 objet de localisation inconnue.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Apollo 17 (AS-512) — Mission de type J (sixième et dernier alunissage habité)"
+    ],
+    [
+      "Agence & programme",
+      "NASA — Programme Apollo"
+    ],
+    [
+      "Lancement",
+      "7 décembre 1972, 05h33 UTC (unique tir de nuit du programme Apollo) — Kennedy Space Center (Pad 39A), Saturn V SA-512"
+    ],
+    [
+      "Alunissage",
+      "11 décembre 1972, 19h54m57s UTC — Vallée de Taurus-Littrow, bordure sud- est de Mare Serenitatis (20,1908° N, 30,7717° E)"
+    ],
+    [
+      "Durée de mission",
+      "12 jours 13 h 51 min 59 s au total · 74 h 59 min 40 s sur la Lune (3 sorties extravéhiculaires totalisant 22 h 04 min)"
+    ],
+    [
+      "Équipage",
+      "Eugene A. Cernan (CDR) · Ronald E. Evans (CMP) · Harrison H. « Jack » Schmitt (LMP, premier scientifique-géologue sur la Lune)"
+    ],
+    [
+      "Véhicules",
+      "Saturn V (SA-512) · Module de commande et de service America (CSM-114) · Module lunaire Challenger (LM-12) · Rover LRV-3"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Derniers pas humains sur la Lune au XXe siècle ; record de distance parcourue (35,7 km) et d'échantillons rapportés (110,5 kg)"
+    ]
+  ],
+  "sourceFile": "Lune/Apollo/Fiche mission Apollo 17 - Hardware perdu dans l_espace.pdf",
+  "pdf": "apollo-17.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION LUNAIRE HABITÉE · CATALOGUE DU PATRIMOINE SPATIAL Apollo 17 (NASA) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 115.1776123046875,
+        "type": "text",
+        "text": "Synthèse hardware : ~19,3 t d'épaves et d'équipements laissés sur la Lune (dont ~2,9 t posées intactes dans Taurus-Littrow et ~16,4 t d'impacteurs volontaires S-IVB et LM-12) · 0 objet actif en 2026 (station ALSEP"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "arrêtée en septembre 1977) · 1 module désintégré dans l'atmosphère terrestre (module de service America) · 0 objet de localisation inconnue."
+      },
+      {
+        "y": 189.26544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Apollo 17 (AS-512) — Mission de type J (sixième et dernier alunissage habité)"
+          ],
+          [
+            "Agence & programme",
+            "NASA — Programme Apollo"
+          ],
+          [
+            "Lancement",
+            "7 décembre 1972, 05h33 UTC (unique tir de nuit du programme Apollo) — Kennedy Space Center (Pad 39A), Saturn V SA-512"
+          ],
+          [
+            "Alunissage",
+            "11 décembre 1972, 19h54m57s UTC — Vallée de Taurus-Littrow, bordure sud- est de Mare Serenitatis (20,1908° N, 30,7717° E)"
+          ],
+          [
+            "Durée de mission",
+            "12 jours 13 h 51 min 59 s au total · 74 h 59 min 40 s sur la Lune (3 sorties extravéhiculaires totalisant 22 h 04 min)"
+          ],
+          [
+            "Équipage",
+            "Eugene A. Cernan (CDR) · Ronald E. Evans (CMP) · Harrison H. « Jack » Schmitt (LMP, premier scientifique-géologue sur la Lune)"
+          ],
+          [
+            "Véhicules",
+            "Saturn V (SA-512) · Module de commande et de service America (CSM-114) · Module lunaire Challenger (LM-12) · Rover LRV-3"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Derniers pas humains sur la Lune au XXe siècle ; record de distance parcourue (35,7 km) et d'échantillons rapportés (110,5 kg)"
+          ]
+        ]
+      },
+      {
+        "y": 511.76544189453125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 545.25,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 577.3233642578125,
+        "type": "text",
+        "text": "A. Surface lunaire — Vallée de Taurus-Littrow (~2,9 t posées intactes)"
+      },
+      {
+        "y": 598.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de descente du module lunaire Challenger (LM-12)",
+            "~2 211 kg (à sec)",
+            "■ Intact / inactif",
+            "Train d'atterrissage octogonal (4,2 m de large) avec moteur de descente DPSE, réservoirs d'ergols vides et plaque commémorative signée par l'équipage et le président Nixon. Repéré avec précision sur les images haute résolution de la sonde LRO (20,1908° N, 30,7717° E)."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 17 (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Rover lunaire électrique LRV-3 (Lunar Roving Vehicle)",
+            "~210 kg",
+            "■ Intact / inactif",
+            "Véhicule tout-terrain pliable à 4 roues motrices (3,1 m de long), alimenté par deux batteries argent-zinc de 36 V non rechargeables. Garé à ~145 m à l'est de Challenger après avoir parcouru 35,74 km ; sa caméra TV télécommandée depuis Houston a filmé le décollage final de l'étage de remontée."
+          ],
+          [
+            "Station scientifique ALSEP & générateur RTG SNAP-27",
+            "~160 kg",
+            "■ Intact / inactif",
+            "Déployée à ~185 m à l'ouest-nord-ouest du LM et alimentée par un RTG au plutonium-238 (70 W). Comprend 5 expériences fixes : flux thermique (HFE), gravimètre de surface (LSG), composition atmosphérique (LACE), éjectas/micrométéorites (LEAM) et profil sismique actif (LSPE) avec 8 charges explosives déclenchées après le départ."
+          ],
+          [
+            "Expériences portables (gravimètre TMG, SEP) & équipement EVA",
+            "~320 kg (total)",
+            "■ Intact / inactif",
+            "Gravimètre mobile (TMG), sondeur électrique de surface (SEP, émetteur + antennes croisées), détecteur de rayons cosmiques, sacs à dos de survie PLSS, sur-chaussures lunaires, caméras Hasselblad (boîtiers), outils géologiques et drapeau américain déployé près du LM."
+          ]
+        ]
+      },
+      {
+        "y": 419.0733642578125,
+        "type": "text",
+        "text": "B. Impacteurs lunaires volontaires & orbite"
+      },
+      {
+        "y": 440.4375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Troisième étage S- IVB-512 (Saturn V)",
+            "~13 960 kg (à sec)",
+            "▲ Écrasé (Lune)",
+            "Après l'injection translunaire (TLI), le S-IVB a été volontairement guidé vers la Lune qu'il a percutée le 10 décembre 1972 à 20h32m42s UTC (4,21° S, 12,31° O, au sud-ouest de Mare Insularum) à 2,55 km/s, générant une onde sismique enregistrée par les sismomètres des missions Apollo 12, 14, 15 et 16."
+          ],
+          [
+            "Étage de remontée du module lunaire Challenger (LM-12)",
+            "~2 445 kg (à sec)",
+            "▲ Écrasé (Lune)",
+            "Après l'arrimage avec America en orbite lunaire et le transfert de l'équipage et des échantillons, l'étage de remontée a été largué et précipité volontairement sur le versant sud de la vallée de Taurus-Littrow le 15 décembre 1972 à 06h50m20s UTC (19,96° N, 30,50° E) à 1,67 km/s afin de calibrer le réseau de géophones LSPE."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 17 (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Module de service America (SM-114)",
+            "~6 110 kg (à sec)",
+            "▲ Désintégré",
+            "Largué 15 minutes avant la rentrée atmosphérique terrestre le 19 décembre 1972 ; s'est consumé au-dessus de l'océan Pacifique Sud (après avoir opéré en orbite lunaire une baie d'instruments SIM comprenant sondeur radar ALSE, radiomètre infrarouge et spectromètre UV)."
+          ]
+        ]
+      },
+      {
+        "y": 196.3233642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 217.67605590820312,
+        "type": "text",
+        "text": "Module de commande America (CM-114, ~5 560 kg) : amerrissage le 19 décembre 1972 à 19h24m59s UTC dans l'océan Pacifique près des Samoa américaines (récupéré par l'USS Ticonderoga ; exposé aujourd'hui au Space Center Houston au Texas)."
+      },
+      {
+        "y": 267.270263671875,
+        "type": "text",
+        "text": "Échantillons lunaires et carottes : 110,5 kg de roches et de régolithe (741 échantillons individuels, dont la célèbre troctolite 76535 et le sol volcanique orange du cratère Shorty) rapportés sur Terre, plus des films photographiques et cassettes de données récupérés lors d'une sortie extravéhiculaire en espace profond par Ronald Evans le 17 décembre 1972."
+      },
+      {
+        "y": 339.5733642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 362.520263671875,
+        "type": "text",
+        "text": "Adaptateur SLA (4 panneaux), étages S-IC & S-II, tour de sauvetage LES : les deux premiers étages de Saturn V sont retombés dans l'océan Atlantique au large de la Floride lors du tir nocturne du 7 décembre 1972 ; les 4 panneaux de l'adaptateur SLA ont été éjectés en orbite haute lors de l'extraction du LM."
+      },
+      {
+        "y": 426.270263671875,
+        "type": "text",
+        "text": "Sous-satellite ou objet orbital : contrairement à Apollo 15 et 16, Apollo 17 n'a pas largué de sous- satellite PFS, mais a éjecté l'enregistreur de données du sondeur radar lunaire en orbite."
+      },
+      {
+        "y": 468.26544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 495.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "7 décembre 1972, 05h33 UTC",
+            "Décollage nocturne de la fusée Saturn V SA-512 depuis le Kennedy Space Center ; injection translunaire à 08h45 UTC."
+          ],
+          [
+            "10 décembre 1972, 19h47 UTC",
+            "Insertion en orbite lunaire (LOI) du train spatial America + Challenger ; impact du S-IVB à 20h32 UTC."
+          ],
+          [
+            "11 décembre 1972, 19h54m57s UTC",
+            "Alunissage de Challenger au fond de la vallée montagneuse de Taurus-Littrow (20,1908° N, 30,7717° E)."
+          ],
+          [
+            "11 – 14 décembre 1972",
+            "Trois sorties extravéhiculaires (EVA-1 à EVA-3) de 7 h 12, 7 h 37 et 7 h 15 : déploiement de l'ALSEP, découverte du sol volcanique orange au cratère Shorty et collecte de 110,5 kg de roches."
+          ],
+          [
+            "14 décembre 1972, 22h54m37s UTC",
+            "Décollage de l'étage de remontée de Challenger depuis la Lune (dernier départ d'un équipage humain depuis un autre astre), filmé en direct par la caméra du rover LRV-3."
+          ],
+          [
+            "15 décembre 1972, 06h50m20s UTC",
+            "Impact volontaire de l'étage de remontée du LM-12 sur la Lune à 8,7 km au sud- ouest du site d'atterrissage."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 17 (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "19 décembre 1972, 19h24m59s UTC",
+            "Amerrissage de la capsule America dans le Pacifique ; la station ALSEP continue de transmettre des données géophysiques jusqu'au 30 septembre 1977."
+          ]
+        ]
+      },
+      {
+        "y": 141.26544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 170.520263671875,
+        "type": "text",
+        "text": "Découverte du « sol orange » volcanique (perles de verre pyroclastiques) : au bord du cratère Shorty, le géologue Harrison Schmitt a découvert une couche de billes de verre volcanique orange et noires riches en titane et en zinc (âgées de 3,64 milliards d'années), prouvant l'existence d'éruptions explosives de fontaines de lave sur la Lune primitive."
+      },
+      {
+        "y": 234.270263671875,
+        "type": "text",
+        "text": "Échantillonnage de la croûte lunaire primitive (troctolite 76535) : rapportée de la base du massif Nord, cette roche plutonique intacte âgée de ~4,25 milliards d'années a fourni des indices clés sur la cristallisation de l'océan magmatique lunaire et sur l'existence d'un ancien champ magnétique interne lunaire."
+      },
+      {
+        "y": 298.020263671875,
+        "type": "text",
+        "text": "Profil sismique et flux thermique interne : les 8 charges explosives de l'expérience LSPE, l'impact du LM-12 et les sondes thermiques forées dans le régolithe ont permis de mesurer la vitesse des ondes sismiques dans le bassin de Taurus-Littrow et d'estimer le flux de chaleur interne s'échappant du manteau lunaire (~14 mW/m²)."
+      },
+      {
+        "y": 361.770263671875,
+        "type": "text",
+        "text": "Patrimoine historique et protection des sites Apollo : l'ensemble du matériel laissé à Taurus-Littrow (étage de descente Challenger, rover LRV-3, station ALSEP et empreintes de pas visibles sur les clichés de la sonde LRO) constitue un site archéologique spatial majeur protégé par les recommandations internationales de préservation du patrimoine lunaire."
+      },
+      {
+        "y": 434.51544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 464.3533630371094,
+        "type": "text",
+        "text": "NASA — Apollo 17 Preliminary Science Report (NASA SP-330) & Apollo Lunar Surface Journal (history.nasa.gov/alsj/a17)"
+      },
+      {
+        "y": 498.1033630371094,
+        "type": "text",
+        "text": "NASA LROC — Apollo 17 Landing Site High-Resolution Imaging Archive (lroc.sese.asu.edu)"
+      },
+      {
+        "y": 516.1033325195312,
+        "type": "text",
+        "text": "Lunar and Planetary Institute (LPI) — Apollo 17 Sample Catalog & Mission Overview (lpi.usra.edu)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Apollo 17 (NASA) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

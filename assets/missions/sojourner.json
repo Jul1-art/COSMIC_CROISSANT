@@ -1,0 +1,310 @@
+{
+  "id": "sojourner",
+  "name": "Sojourner (Mars Pathfinder)",
+  "body": "mars",
+  "family": "sojourner",
+  "year": 1996,
+  "summary": "~274,5 kg de matériel laissé à la surface de Mars (station Pathfinder / Carl Sagan de ~264 kg + astromobile Sojourner de 10,5 kg) • 2 objets intacts mais inactifs à Ares Vallis • 1 étage supérieur en orbite héliocentrique.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Mars Pathfinder / Astromobile Sojourner (COSPAR 1996-068A / Lander 1996- 068S)"
+    ],
+    [
+      "Agence & programme",
+      "NASA (Jet Propulsion Laboratory / programme Discovery)"
+    ],
+    [
+      "Lancement",
+      "4 décembre 1996, 06h58 UTC — Cape Canaveral Air Force Station (SLC-17B), fusée Delta II (7925)"
+    ],
+    [
+      "Atterrissage",
+      "4 juillet 1997, 16h56 UTC — Ares Vallis, Mars (Station Memorial Carl Sagan, 19,33° N, 33,55° O)"
+    ],
+    [
+      "Fin de mission",
+      "27 septembre 1997 (dernier contact réussi avec la station; fin officielle proclamée le 10 mars 1998 après 83 sols d'activités)"
+    ],
+    [
+      "Équipage",
+      "Aucun (premier rover autonome télécommandé envoyé sur une autre planète)"
+    ],
+    [
+      "Véhicules",
+      "Delta II 7925, atterrisseur tétraédrique Pathfinder, astromobile Sojourner (10,5 kg)"
+    ],
+    [
+      "Statut",
+      "Réussite historique majeure — a validé le concept des missions à bas coût (« Faster, Better, Cheaper ») et ouvert l'ère des rovers martiens"
+    ]
+  ],
+  "sourceFile": "Mars/Surface/Sojourner (Mars Pathfinder) - Fiche « Plus de détails ».pdf",
+  "pdf": "sojourner.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Sojourner (Mars Pathfinder) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 159.49322509765625,
+        "type": "text",
+        "text": "Synthèse hardware : ~274,5 kg de matériel laissé à la surface de Mars (station Pathfinder / Carl Sagan de ~264 kg + astromobile Sojourner de 10,5 kg) • 2 objets intacts mais inactifs à Ares Vallis • 1 étage supérieur en orbite héliocentrique."
+      },
+      {
+        "y": 225.26544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 252.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Mars Pathfinder / Astromobile Sojourner (COSPAR 1996-068A / Lander 1996- 068S)"
+          ],
+          [
+            "Agence & programme",
+            "NASA (Jet Propulsion Laboratory / programme Discovery)"
+          ],
+          [
+            "Lancement",
+            "4 décembre 1996, 06h58 UTC — Cape Canaveral Air Force Station (SLC-17B), fusée Delta II (7925)"
+          ],
+          [
+            "Atterrissage",
+            "4 juillet 1997, 16h56 UTC — Ares Vallis, Mars (Station Memorial Carl Sagan, 19,33° N, 33,55° O)"
+          ],
+          [
+            "Fin de mission",
+            "27 septembre 1997 (dernier contact réussi avec la station; fin officielle proclamée le 10 mars 1998 après 83 sols d'activités)"
+          ],
+          [
+            "Équipage",
+            "Aucun (premier rover autonome télécommandé envoyé sur une autre planète)"
+          ],
+          [
+            "Véhicules",
+            "Delta II 7925, atterrisseur tétraédrique Pathfinder, astromobile Sojourner (10,5 kg)"
+          ],
+          [
+            "Statut",
+            "Réussite historique majeure — a validé le concept des missions à bas coût (« Faster, Better, Cheaper ») et ouvert l'ère des rovers martiens"
+          ]
+        ]
+      },
+      {
+        "y": 541.0154418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 575.3842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 609.4705810546875,
+        "type": "text",
+        "text": "A. Surface martienne — Ares Vallis (Station Carl Sagan / Sojourner)"
+      },
+      {
+        "y": 629.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Astromobile Sojourner",
+            "10,5 kg",
+            "Intact / inactif",
+            "Petit robot à 6 roues indépendantes (0,65 m de long, 0,48 m de large). Immobilisé sur les plaines d'Ares Vallis à quelques mètres de l'atterrisseur depuis septembre 1997 (batteries non rechargeables épuisées)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Station d'atterrissage (Pathfinder / Carl Sagan)",
+            "~264 kg (total)",
+            "Intacte / inactive",
+            "Plateforme tétraédrique à 3 pétales triangulaires déployables, munie de coussins gonflables (airbags) et d'un mât caméra stéréoscopique de 1,3 m. Située sur le site commémoratif Carl Sagan (19,33° N, 33,55° O)."
+          ],
+          [
+            "Bouclier thermique & parachute arrière",
+            "~110 kg (total)",
+            "Éparpillés au sol",
+            "Bouclier ablatif et coque arrière avec parachute supersonique largués lors de la descente finale du 4 juillet 1997, reposant sur le sol rocheux d'Ares Vallis à proximité."
+          ],
+          [
+            "Spectromètre APXS & caméras",
+            "~3 kg (inclus)",
+            "Intacts / inactifs",
+            "Spectromètre à rayons X à alpha-particules (APXS) monté à l'arrière de Sojourner et caméras avant/arrière (IMP et CCD du rover) ayant analysé les roches Barnacle Bill, Yogi et Scooby-Doo."
+          ]
+        ]
+      },
+      {
+        "y": 304.9705810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 324.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur Star 48B (Delta II)",
+            "~130 kg (à vide)",
+            "Orbite héliocentrique",
+            "Propulseur à propergol solide ayant assuré l'injection interplanétaire le 4 décembre 1996 depuis Cape Canaveral ; placé sur une orbite solaire stable."
+          ],
+          [
+            "2e étage Delta-K & boosters GEM",
+            "~21 000 kg (total)",
+            "Écrasés / brûlés",
+            "9 propulseurs d'appoint à poudre et second étage de la fusée Delta II largués dans l'océan Atlantique ou rentrés dans l'atmosphère peu après le lancement."
+          ]
+        ]
+      },
+      {
+        "y": 490.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 512.3533325195312,
+        "type": "text",
+        "text": "Modèle d'ingénierie (Marie Curie) : jumeau terrestre exact conservé au Smithsonian National Air and Space Museum et au JPL pour des tests de simulation en laboratoire."
+      },
+      {
+        "y": 546.8533325195312,
+        "type": "text",
+        "text": "Archives scientifiques intégrales : plus de 16 500 images de la station IMP et 550 images du rover Sojourner, accompagnées des analyses chimiques des roches d'Ares Vallis."
+      },
+      {
+        "y": 590.5154418945312,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 618.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "4 décembre 1996",
+            "Lancement réussi de la fusée Delta II 7925 depuis Cape Canaveral avec Mars Pathfinder et Sojourner."
+          ],
+          [
+            "4 juillet 1997",
+            "Arrivée à Mars : entrée atmosphérique directe, déploiement du parachute, gonflage des airbags et rebonds multiples avant l'immobilisation dans Ares Vallis."
+          ],
+          [
+            "6 juillet 1997",
+            "Ouverture des pétales de la station et descente réussie de Sojourner sur le sol martien (« premier pas » d'un véhicule mobile sur une autre planète)."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "Juillet – août 1997",
+            "Exploration active d'Ares Vallis : Sojourner analyse des roches volcaniques lissées par les inondations anciennes, prouvant que Mars a connu de vastes écoulements d'eau par le passé."
+          ],
+          [
+            "27 septembre 1997",
+            "Dernier contact radio réussi avec la station Pathfinder (perte de communication définitive due à la dégradation des batteries non rechargeables)."
+          ],
+          [
+            "10 mars 1998",
+            "Fin officielle de la mission après avoir rempli plus de dix fois ses objectifs scientifiques et technologiques initiaux."
+          ]
+        ]
+      },
+      {
+        "y": 212.51544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 242.3533477783203,
+        "type": "text",
+        "text": "Validation du concept d'atterrissage par airbags : Pathfinder a prouvé l'efficacité redoutable d'un système d'alunissage/atterrissage à bas coût protégé par des coussins gonflables, technique réutilisée pour les rovers MER (Spirit et Opportunity)."
+      },
+      {
+        "y": 291.8533630371094,
+        "type": "text",
+        "text": "Preuve géologique d'inondations passées : les analyses d'Ares Vallis ont confirmé que la région avait été sculptée par de gigantesques crues catastrophiques par le passé."
+      },
+      {
+        "y": 326.3533630371094,
+        "type": "text",
+        "text": "Pionnier de la robotique mobile autonome : pesant à peine 10,5 kg, Sojourner a démontré qu'un petit robot pouvait naviguer de manière autonome en évitant les obstacles grâce à ses lasers et caméras, ouvrant la voie aux grands rovers modernes."
+      },
+      {
+        "y": 385.01544189453125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 415.5790710449219,
+        "type": "text",
+        "text": "NASA Science — Mars Pathfinder / Sojourner Mission Overview (science.nasa.gov/mission/pathfinder)"
+      },
+      {
+        "y": 434.3533630371094,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Pathfinder (ID : 1996- 068A)"
+      },
+      {
+        "y": 468.0790710449219,
+        "type": "text",
+        "text": "T. J. Parker et al., Mars Pathfinder Landing Site Characterization, JGR Planets, 1999"
+      },
+      {
+        "y": 487.5790710449219,
+        "type": "text",
+        "text": "M. P. Golombek et al., Overview of the Mars Pathfinder Mission and Assessment of Landing Site, Science, vol. 278, 1997"
+      }
+    ]
+  ]
+}

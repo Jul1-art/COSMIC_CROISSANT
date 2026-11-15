@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Apollo 17 prime crew portrait",
+      "credit": "NASA / JSC",
+      "date": "1971-09-30T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S72-50438",
+      "nasaId": "S72-50438",
+      "description": "S72-50438 (September 1972) --- These three astronauts are the prime crew members of the Apollo 17 lunar landing mission. They are Eugene A. Cernan (seated), commander; Ronald E. Evans (standing on right), command module pilot; and Harrison H. Schmitt, lunar module pilot. They are photographed with a Lunar Roving Vehicle (LRV) trainer. Cernan and Schmitt will use an LRV during their exploration of the Taurus-Littrow landing site. The Apollo 17 Saturn V space vehicle is in the background. This picture was taken at Pad A, Launch Complex 39, Kennedy Space Center (KSC), Florida. The Apollo 17 insignia is in the photo insert at upper left. The insignia, designed by artist Robert T. McCall in collaboration with the crewmen, is dominated by the image of Apollo, the Greek sun god.",
+      "src": "archives/apollo-17-nasa-S72-50438.jpg"
+    },
+    {
+      "title": "PRELAUNCH - APOLLO 17 (ROLLOUT)",
+      "credit": "NASA / JSC",
+      "date": "1972-12-06T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S72-54813",
+      "nasaId": "S72-54813",
+      "description": "S72-54813 (November 1972) --- Searchlights illuminate this nighttime scene at Pad A, Launch Complex 39, Kennedy Space Center, Florida, showing the Apollo 17 (Spacecraft 114/Lunar Module 12/Saturn 512) space vehicle during prelaunch preparations. Apollo 17, the final lunar landing mission in NASA's Apollo program, will be the first nighttime liftoff of the huge Saturn V launch vehicle. Apollo 17 is scheduled for launching on the night of Dec. 6, 1972. Aboard the Apollo 17 spacecraft will be astronaut Eugene A. Cernan, commander; astronaut Ronald E. Evans, command module pilot; and scientist-astronaut Harrison H. Schmitt, lunar module pilot. Note the full moon in the background.",
+      "src": "archives/apollo-17-nasa-S72-54813.jpg"
+    },
+    {
+      "title": "PRELAUNCH - APOLLO 17 (ROLLOUT) - KSC",
+      "credit": "NASA / JSC",
+      "date": "1972-12-06T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S72-54814",
+      "nasaId": "S72-54814",
+      "description": "S72-54814 (November 1972) --- Searchlights illuminate this nighttime scene at Pad A, Launch Complex 39, Kennedy Space Center, Florida, showing the Apollo 17 (Spacecraft 114/Lunar Module 12/Saturn 512) space vehicle during prelaunch preparations. Apollo 17, the final lunar landing mission in NASA's Apollo program, will be the first nighttime liftoff of the huge Saturn V launch vehicle. Apollo 17 is scheduled for launching on the night of Dec. 6, 1972. Aboard the Apollo 17 spacecraft will be astronaut Eugene A. Cernan, commander; astronaut Ronald E. Evans, command module pilot; and scientist-astronaut Harrison H. Schmitt, lunar module pilot.",
+      "src": "archives/apollo-17-nasa-S72-54814.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Lee Lincoln Scarp at the Apollo 17 Landing Site",
+      "credit": "David Ladd, Tom Waters, Ernie Wright",
+      "source": "https://images.nasa.gov/details/GSFC_20190513_m4714_Lee_Lincoln_Scarp_Moon_Flyover",
+      "nasaId": "GSFC_20190513_m4714_Lee_Lincoln_Scarp_Moon_Flyover",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20190513_m4714_Lee_Lincoln_Scarp_Moon_Flyover/GSFC_20190513_m4714_Lee_Lincoln_Scarp_Moon_Flyover~orig.mp4",
+      "description": "The Lee Lincoln scarp is a low ridge or step about 80 meters high and running north-south through the western end of the Taurus-Littrow valley, site of the Apollo 17 Moon landing. This lobate scarp marks the location of a relatively young, low-angle thrust fault. The land west of the fault was forced up and over the eastern side as the lunar crust contracted.  In a May 2019 paper published in Nature Geoscience, Thomas Watters and his coauthors provide evidence that this fault and others like it are still active and producing moonquakes today. Seismometers left on the Moon by Apollo astronauts recorded hundreds of events between 1969 and 1977, including 28 shallow moonquakes. The study narrowed the locations of these quakes and found that many of them occurred near scarps, implying that the forces creating the scarps also caused the quakes, and they continue to shape the lunar surface. The Lee Lincoln scarp was only about 13 kilometers from one of the epicenters identified by the scientists.  The Apollo 17 astronauts drove their lunar rover onto the scarp during their second day on the lunar surface, and this remains the only extraterrestrial scarp visited by humans.",
+      "date": "2019-05-13T00:00:00Z",
+      "duration": 30.03,
+      "bitrate": 11470527,
+      "bytes": 43057492,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/apollo-17.mp4",
+    "local": true,
+    "title": "Apollo 17 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "apollo-17.pdf",
+    "fingerprint": "5b6a1099e084edea1ab63bc1a8ebe5467ef42606dfe1be9ceec5d7f2b7de3d99"
+  }
+}

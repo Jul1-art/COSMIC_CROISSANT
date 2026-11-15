@@ -1,0 +1,400 @@
+{
+  "id": "chang-e-5",
+  "name": "Chang'e 5",
+  "body": "moon",
+  "family": "lunar-lander",
+  "year": 2020,
+  "summary": "pile de ~8,2 t au lancement · 1 atterrisseur resté sur la Lune (Océan des Tempêtes) · 1 étage de remontée écrasé volontairement sur la Lune · 1 orbiteur en mission étendue, statut actuel non confirmé · 1 capsule récupérée sur Terre avec 1 731 g d'échantillons",
+  "facts": [
+    [
+      "Nom officiel",
+      "Chang'e 5 (Chang'e-5)"
+    ],
+    [
+      "Agence & programme",
+      "CNSA (Chine) — programme chinois d'exploration lunaire"
+    ],
+    [
+      "Lancement",
+      "23 novembre 2020, 20h30 UTC — Long March 5 (Y5), site de Wenchang, île de Hainan"
+    ],
+    [
+      "Destination",
+      "Nord d'Oceanus Procellarum, près du mont Rümker (~43,1° N, 51,8° O)"
+    ],
+    [
+      "Retour sur Terre",
+      "16 décembre 2020 — capsule posée à Siziwang Banner, Mongolie-Intérieure, après une rentrée « à ricochet »"
+    ],
+    [
+      "Échantillons",
+      "1 731 g de roche et de régolithe lunaires (forage jusqu'à ~2 m + pelle)"
+    ],
+    [
+      "Équipage",
+      "Aucun (mission robotique)"
+    ],
+    [
+      "Véhicules",
+      "Long March 5 · orbiteur · capsule de retour · atterrisseur · étage de remontée"
+    ],
+    [
+      "Statut",
+      "Réussie — premier retour d'échantillons lunaires depuis 1976 ; orbiteur ensuite réutilisé en mission étendue"
+    ]
+  ],
+  "sourceFile": "Lune/Chang_e/Fiche-mission-Chang-e-5-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "chang-e-5.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Chang'e 5 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : pile de ~8,2 t au lancement · 1 atterrisseur resté sur la Lune (Océan des Tempêtes) · 1 étage de remontée écrasé volontairement sur la Lune · 1 orbiteur en mission étendue, statut actuel non confirmé · 1 capsule récupérée sur Terre avec 1 731 g d'échantillons"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Chang'e 5 (Chang'e-5)"
+          ],
+          [
+            "Agence & programme",
+            "CNSA (Chine) — programme chinois d'exploration lunaire"
+          ],
+          [
+            "Lancement",
+            "23 novembre 2020, 20h30 UTC — Long March 5 (Y5), site de Wenchang, île de Hainan"
+          ],
+          [
+            "Destination",
+            "Nord d'Oceanus Procellarum, près du mont Rümker (~43,1° N, 51,8° O)"
+          ],
+          [
+            "Retour sur Terre",
+            "16 décembre 2020 — capsule posée à Siziwang Banner, Mongolie-Intérieure, après une rentrée « à ricochet »"
+          ],
+          [
+            "Échantillons",
+            "1 731 g de roche et de régolithe lunaires (forage jusqu'à ~2 m + pelle)"
+          ],
+          [
+            "Équipage",
+            "Aucun (mission robotique)"
+          ],
+          [
+            "Véhicules",
+            "Long March 5 · orbiteur · capsule de retour · atterrisseur · étage de remontée"
+          ],
+          [
+            "Statut",
+            "Réussie — premier retour d'échantillons lunaires depuis 1976 ; orbiteur ensuite réutilisé en mission étendue"
+          ]
+        ]
+      },
+      {
+        "y": 436.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 461.2606201171875,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 503.596923828125,
+        "type": "text",
+        "text": "A. Surface lunaire — Oceanus Procellarum"
+      },
+      {
+        "y": 521.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur",
+            "> 1 t à sec",
+            "",
+            "Posé le 1er décembre 2020 vers 15h11 UTC ; a servi de rampe de lancement à l'étage de remontée ; arrêté au plus tard avec la nuit lunaire (pas de chauffage radioisotopique)"
+          ],
+          [
+            "Drapeau chinois",
+            "12 g",
+            "",
+            "Premier drapeau chinois déployé sur la Lune ; matériau composite conçu pour garder sa couleur entre ±150 °C"
+          ],
+          [
+            "Instruments de l'atterrisseur",
+            "—",
+            "",
+            "Caméra d'atterrissage, caméra panoramique, spectromètre minéralogique, radar de pénétration du régolithe"
+          ],
+          [
+            "Foreuse et bras à pelle",
+            "—",
+            "",
+            "Prélèvement terminé le 2 décembre (~19 h) ; ~0,5 kg par forage et ~1,5 kg à la pelle (arrondis de la source)"
+          ]
+        ]
+      },
+      {
+        "y": 691.596923828125,
+        "type": "text",
+        "text": "B. Étage de remontée (ascender)"
+      },
+      {
+        "y": 709.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de remontée",
+            "~500 kg au décollage",
+            "",
+            "Décollé de la Lune le 3 décembre 2020 ; amarré à l'orbiteur le 5 ; séparé le 6 ; écrasé volontairement sur la Lune pour éviter de devenir un débris"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "C. Orbiteur / module de service"
+      },
+      {
+        "y": 72.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur",
+            "~2 t à l'amarrage",
+            "",
+            "Après la livraison de la capsule : point de Lagrange Soleil-Terre L1 (15 mars 2021), survol de la Lune le 9 septembre 2021, puis orbite rétrograde distante (DRO) observée en février 2022 ; statut actuel non confirmé dans mes sources"
+          ]
+        ]
+      },
+      {
+        "y": 158.9969482421875,
+        "type": "text",
+        "text": "D. Récupérés sur Terre"
+      },
+      {
+        "y": 176.20437622070312,
+        "type": "text",
+        "text": "• Capsule de retour (~300 kg) : séparée à ~5 000 km de la Terre, récupérée en Mongolie-Intérieure le 16 décembre 2020"
+      },
+      {
+        "y": 207.20437622070312,
+        "type": "text",
+        "text": "• 1 731 g d'échantillons lunaires, les premiers rapportés depuis Luna 24 (1976)"
+      },
+      {
+        "y": 234.9969482421875,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 252.20437622070312,
+        "type": "text",
+        "text": "• Étages et coiffe de la Long March 5 Y5 : devenir non précisé dans mes sources"
+      },
+      {
+        "y": 289.317626953125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 311.95440673828125,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "23 novembre 2020, 20h30",
+            "Lancement de la Long March 5 depuis Wenchang"
+          ],
+          [
+            "28 novembre 2020, 14h58",
+            "Insertion en orbite lunaire (elliptique) ; orbite circularisée le 29"
+          ],
+          [
+            "29 novembre 2020",
+            "Séparation atterrisseur/ascender et orbiteur/capsule"
+          ],
+          [
+            "1er décembre 2020, ~15h11",
+            "Atterrissage près du mont Rümker (voir séquence ci-dessous)"
+          ],
+          [
+            "2 décembre 2020",
+            "Fin du prélèvement (~19 h de travail)"
+          ],
+          [
+            "3 décembre 2020",
+            "Décollage de l'étage de remontée, en orbite lunaire ~6 min plus tard"
+          ],
+          [
+            "5 décembre 2020, 21h42",
+            "Amarrage automatique à l'orbiteur ; transfert des échantillons à 22h12"
+          ],
+          [
+            "6 décembre 2020, 04h35",
+            "L'ascender se sépare de l'orbiteur (impact les 6-8 déc., sources divergentes)"
+          ],
+          [
+            "13 décembre 2020, 01h51",
+            "Injection trans-terrestre de l'orbiteur"
+          ],
+          [
+            "16 décembre 2020, 17h59",
+            "Rentrée à ricochet ; atterrissage de la capsule en Mongolie-Intérieure"
+          ],
+          [
+            "15 mars 2021",
+            "Orbiteur capturé au point L1 Soleil-Terre (~936 700 km de la Terre)"
+          ],
+          [
+            "9 septembre 2021",
+            "Survol de la Lune ; L1 quitté en janvier 2022"
+          ],
+          [
+            "Février 2022",
+            "Orbiteur observé en orbite rétrograde distante autour de la Lune"
+          ]
+        ]
+      },
+      {
+        "y": 607.39697265625,
+        "type": "text",
+        "text": "Séquence d'atterrissage"
+      },
+      {
+        "y": 625.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "28-29 nov.",
+            "Insertion en orbite lunaire, puis circularisation"
+          ],
+          [
+            "29 nov.",
+            "Séparation de l'atterrisseur (avec l'ascender) de l'orbiteur"
+          ],
+          [
+            "1er déc.",
+            "Descente propulsée : un seul allumage continu du moteur principal, poussée réglée entre 1,5 et 7,5 kN"
+          ],
+          [
+            "Navigation",
+            "Centrale inertielle, télémétrie laser, altimètre et caméra optique de descente"
+          ],
+          [
+            "~4 m",
+            "Coupure du moteur principal ; les jambes amortissent le contact"
+          ],
+          [
+            "~15h11",
+            "Posé dans le nord d'Oceanus Procellarum (la source donne aussi 15h13)"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 54.7176513671875,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 76.2043685913086,
+        "type": "text",
+        "text": "• Premier retour d'échantillons lunaires depuis 1976 : 1 731 g."
+      },
+      {
+        "y": 93.2043685913086,
+        "type": "text",
+        "text": "• Âge des échantillons : environ 2 milliards d'années, soit bien plus jeunes que les roches rapportées par Apollo."
+      },
+      {
+        "y": 124.20437622070312,
+        "type": "text",
+        "text": "• Rendez-vous automatique en orbite lunaire : première réalisation chinoise ; amarrage par trois griffes."
+      },
+      {
+        "y": 155.20437622070312,
+        "type": "text",
+        "text": "• Orbiteur réutilisé : tests au point L1 puis passage par une orbite rétrograde distante, une première."
+      },
+      {
+        "y": 172.20437622070312,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'atterrisseur et l'ascender sous la juridiction de la Chine ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 223.317626953125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 244.80435180664062,
+        "type": "text",
+        "text": "• Wikipedia (miroir cavac.at) — Chang'e 5 : chronologie, composants, orbiteur"
+      },
+      {
+        "y": 261.8043518066406,
+        "type": "text",
+        "text": "• eoPortal — Chang'e 5 : masses, séquence de descente, instruments"
+      },
+      {
+        "y": 278.8043518066406,
+        "type": "text",
+        "text": "• Planetary Society — Chang'e-5 : vue d'ensemble de la mission"
+      },
+      {
+        "y": 295.8043518066406,
+        "type": "text",
+        "text": "• Behind the Black — orbiteur de retour dans l'espace lunaire (septembre 2021)"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "id": "luna-10",
+  "name": "Luna 10",
+  "body": "moon",
+  "family": "luna-orbiter",
+  "year": 1966,
+  "summary": "~245 kg d'orbiteur scientifique ILS (premier satellite artificiel de la Lune) et ~850 kg de module propulsif E-6S écrasés sur la Lune après dégradation orbitale (sites d'impact non localisés avec précision) · 0 objet actif en 2026 (56 jours d'émissions en orbite lunaire en avril–mai 1966) · 2 objets de point d'impact exact inconnu.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 10 (objet E-6S n° 206 — Satellite artificiel de la Lune ILS)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+    ],
+    [
+      "Lancement",
+      "31 mars 1966, 10h46m59s UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+    ],
+    [
+      "Insertion en orbite lunaire",
+      "3 avril 1966, 18h44 UTC — Orbite sélénocentrique : 350 × 1 017 km, inclinée à 71,9°, période de 178 min"
+    ],
+    [
+      "Durée de mission",
+      "81 heures de transit Terre-Lune + 56 jours d'opérations actives en orbite lunaire (460 révolutions jusqu'au 30 mai 1966)"
+    ],
+    [
+      "Type de mission",
+      "Orbiteur lunaire scientifique automatique (sans équipage) d'étude du champ magnétique, des radiations et du relief"
+    ],
+    [
+      "Véhicules",
+      "Molniya-M (bloc L) · Module propulsif de freinage E-6S (moteur KTDU-5A) · Orbiteur pressurisé ILS"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier satellite artificiel placé en orbite autour d'un autre corps céleste que la Terre"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche mission Luna 10 - Hardware perdu dans l_espace.pdf",
+  "pdf": "luna-10.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION LUNAIRE · CATALOGUE DU PATRIMOINE SPATIAL Luna 10 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.41158294677734,
+        "type": "text",
+        "text": "Synthèse hardware : ~245 kg d'orbiteur scientifique ILS (premier satellite artificiel de la Lune) et ~850 kg de module propulsif E-6S écrasés sur la Lune après dégradation orbitale (sites d'impact non localisés avec"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "précision) · 0 objet actif en 2026 (56 jours d'émissions en orbite lunaire en avril–mai 1966) · 2 objets de point d'impact exact inconnu."
+      },
+      {
+        "y": 190.91712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 216.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 10 (objet E-6S n° 206 — Satellite artificiel de la Lune ILS)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+          ],
+          [
+            "Lancement",
+            "31 mars 1966, 10h46m59s UTC — Cosmodrome de Baïkonour (Site 31/6), fusée Molniya-M (8K78M)"
+          ],
+          [
+            "Insertion en orbite lunaire",
+            "3 avril 1966, 18h44 UTC — Orbite sélénocentrique : 350 × 1 017 km, inclinée à 71,9°, période de 178 min"
+          ],
+          [
+            "Durée de mission",
+            "81 heures de transit Terre-Lune + 56 jours d'opérations actives en orbite lunaire (460 révolutions jusqu'au 30 mai 1966)"
+          ],
+          [
+            "Type de mission",
+            "Orbiteur lunaire scientifique automatique (sans équipage) d'étude du champ magnétique, des radiations et du relief"
+          ],
+          [
+            "Véhicules",
+            "Molniya-M (bloc L) · Module propulsif de freinage E-6S (moteur KTDU-5A) · Orbiteur pressurisé ILS"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier satellite artificiel placé en orbite autour d'un autre corps céleste que la Terre"
+          ]
+        ]
+      },
+      {
+        "y": 526.9171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 558.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 592.9705810546875,
+        "type": "text",
+        "text": "A. Environnement lunaire — Orbite puis impact non localisé (~1,1 t au total)"
+      },
+      {
+        "y": 612.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur lunaire ILS (compartiment pressurisé)",
+            "245 kg",
+            "? Impact non localisé",
+            "Cylindre hermétique de 1,5 m de haut et 0,75 m de diamètre à sommet hémisphérique rempli d'azote à 1,1 bar, alimenté par batteries argent-zinc. Séparé de l'étage E-6S 20 s après la mise en orbite le 3 avril 1966 ; après l'arrêt de ses émissions le 30 mai 1966, les perturbations gravitationnelles lunaires ont provoqué sa chute sur la Lune à une date et en un lieu exact inconnus."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 10 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 3"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Suite d'instruments scientifiques (7 expériences)",
+            "~42 kg (inclus)",
+            "▲ Écrasés (Lune)",
+            "Magnétomètre triaxial fluxgate (monté sur perche de 1,5 m), spectromètre gamma (mesure de la radioactivité de surface), détecteurs de rayons X solaires et rayons cosmiques (compteurs Geiger), pièges à ions et électrons (vent solaire), spectromètre infrarouge et détecteurs piézoélectriques de micrométéorites."
+          ],
+          [
+            "Module propulsif de freinage E-6S (bus porteur)",
+            "~850 kg (à sec)",
+            "? Impact non localisé",
+            "Masse de 1 582 kg au lancement (incluant ergols et l'orbiteur ILS). Équipé du moteur principal KTDU-5A (46 kN) et des capteurs stellaires ayant assuré le freinage d'insertion orbitale lunaire (Δv de ~1 200 m/s). Demeuré sur une orbite lunaire proche après le largage d'ILS avant de s'écraser ultérieurement sur la Lune."
+          ],
+          [
+            "Émetteur musical de « L'Internationale » & médaillons",
+            "< 2 kg (inclus)",
+            "▲ Écrasés (Lune)",
+            "Oscillateur électronique à semi- conducteurs diffusant les notes de « L'Internationale » en direct vers le XXIIIe Congrès du PCUS à Moscou le 4 avril 1966, accompagné de fanions métalliques gravés aux armoiries de l'URSS logés dans l'orbiteur."
+          ]
+        ]
+      },
+      {
+        "y": 448.2205810546875,
+        "type": "text",
+        "text": "B. Espace cislunaire & rentrée atmosphérique terrestre"
+      },
+      {
+        "y": 467.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Deux compartiments latéraux largables du bus E-6S",
+            "~250 kg (total)",
+            "■ Orbite solaire / haute",
+            "Caissons latéraux abritant le système d'orientation astronomique (viseurs Soleil-Terre-Lune) et les bouteilles d'azote froid, largués à ~8 000 km de la Lune juste avant l'allumage de freinage d'insertion orbitale du 3 avril 1966."
+          ],
+          [
+            "Étage supérieur Bloc L (fusée Molniya-M)",
+            "~1 160 kg (à sec)",
+            "■ Orbite haute / solaire",
+            "Quatrième étage propulsé par le moteur S1.5400. Après avoir injecté la sonde vers la Lune le 31 mars 1966, il est passé sur une orbite terrestre très excentrique/héliocentrique."
+          ],
+          [
+            "Troisième étage Bloc I (fusée Molniya-M)",
+            "~2 400 kg (à sec)",
+            "▲ Désintégré",
+            "Étage placé en orbite basse terrestre de parking lors du lancement du 31 mars 1966 ; rentré et consumé dans l'atmosphère terrestre quelques jours après le tir."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 10 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 3"
+      }
+    ],
+    [
+      {
+        "y": 46.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 66.3369140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Luna 10 est une mission orbitale lunaire sans retour. Les étages inférieurs de la fusée Molniya-M et la coiffe sont retombés dans les zones d'exclusion terrestres d'Asie centrale peu après le lancement depuis Baïkonour."
+      },
+      {
+        "y": 115.9705810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 135.3369140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique & 4 antennes rubans déployables : coiffe larguée durant l'ascension atmosphérique le 31 mars 1966 ; les 4 antennes de télémétrie (183,6 MHz) et la perche du magnétomètre se sont déployées en orbite lunaire lors de la séparation d'ILS le 3 avril 1966."
+      },
+      {
+        "y": 186.41712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 210.9375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "31 mars 1966, 10h46m59s UTC",
+            "Décollage de la fusée Molniya-M depuis Baïkonour (un mois après le prototype Cosmos 111 resté bloqué en orbite terrestre)."
+          ],
+          [
+            "1er avril 1966",
+            "Manœuvre de correction de trajectoire à mi-course assurant le survol précis de la Lune à ~1 000 km d'altitude."
+          ],
+          [
+            "3 avril 1966, 18h44 UTC",
+            "Allumage de freinage du moteur KTDU-5A et insertion réussie en orbite lunaire (350 × 1 017 km) ; séparation de l'orbiteur ILS 20 secondes plus tard."
+          ],
+          [
+            "4 avril 1966",
+            "Diffusion radio de la mélodie de « L'Internationale » depuis l'orbite lunaire devant les délégués du XXIIIe Congrès du Parti communiste à Moscou."
+          ],
+          [
+            "3 avril – 30 mai 1966",
+            "219 sessions de télémétrie réalisées au cours de 460 révolutions autour de la Lune jusqu'à l'épuisement complet des batteries argent-zinc le 30 mai 1966."
+          ]
+        ]
+      },
+      {
+        "y": 401.6671447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 427.0869140625,
+        "type": "text",
+        "text": "Premier satellite artificiel d'un autre astre : moins de deux mois après le premier atterrissage en douceur réalisé par Luna 9, Luna 10 a démontré la capacité de freiner et de stabiliser un vaisseau en orbite sélénocentrique, devançant de quatre mois la mission américaine Lunar Orbiter 1 (août 1966)."
+      },
+      {
+        "y": 471.3369140625,
+        "type": "text",
+        "text": "Découverte des anomalies gravitationnelles lunaires (mascons) : le suivi précis des perturbations de l'orbite de Luna 10 a révélé que le champ de gravité lunaire n'est pas homogène mais présente d'importantes concentrations de masse (« mascons ») sous les grands bassins circulaires (mers lunaires), déformant progressivement la trajectoire des orbiteurs bas."
+      },
+      {
+        "y": 529.8369140625,
+        "type": "text",
+        "text": "Première analyse spectroscopique gamma globale de la croûte lunaire : le spectromètre gamma de Luna 10 a mesuré le rayonnement radioactif naturel (uranium, thorium, potassium) émis par le sol lunaire, démontrant que les roches des mers lunaires ont une composition basaltique comparable aux basaltes terrestres, tandis que les hauts plateaux sont pauvres en éléments radioactifs."
+      },
+      {
+        "y": 588.3369140625,
+        "type": "text",
+        "text": "Caractérisation de l'environnement magnétique et micrométéoritique : les mesures sur 460 orbites ont confirmé la faiblesse extrême du champ magnétique lunaire (24 à 40 nanoteslas, déformé par le passage de la Lune dans la queue magnétique terrestre) et établi que le flux de micrométéorites autour de la Lune était comparable à celui de l'espace interplanétaire."
+      },
+      {
+        "y": 652.9171142578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 677.5869140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Luna 10 Spacecraft & Lunar Orbiter Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 694.8369140625,
+        "type": "text",
+        "text": "NPO Lavotchkine / IKI RAN — First Artificial Satellite of the Moon : Luna 10 (Station E-6S)"
+      },
+      {
+        "y": 711.3369140625,
+        "type": "text",
+        "text": "Vinogradov, A. P. et al. (1966) — Measurements of Gamma Radiation of the Lunar Surface on the Space Station Luna-10"
+      }
+    ]
+  ]
+}

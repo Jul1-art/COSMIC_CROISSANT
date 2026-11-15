@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Apollo 15 prime crew portrait",
+      "credit": "NASA / JSC",
+      "date": "1971-06-28T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S71-37963",
+      "nasaId": "S71-37963",
+      "description": "S71-37963 (July 1971) --- These three astronauts are the prime crew of the Apollo 15 lunar landing mission. They are, left to right, David R. Scott, commander; Alfred M. Worden, command module pilot; and James B. Irwin, lunar module pilot. The Apollo 15 emblem is in the background.",
+      "src": "archives/apollo-15-nasa-S71-37963.jpg"
+    },
+    {
+      "title": "Apollo 15 crew portrait.",
+      "credit": "NASA / JSC",
+      "date": "1971-03-09T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S71-22401",
+      "nasaId": "S71-22401",
+      "description": "S71-22401 (March 1971) --- These three astronauts have been named by the National Aeronautics and Space Administration (NASA) as the prime crew members of the Apollo 15 lunar landing mission. They are, left to right, David R. Scott, commander; Alfred M. Worden, command module pilot; and James B. Irwin, lunar module pilot. The crew is posed behind the subsatellite that they will deploy from the lunar surface during the Apollo 15 mission. Astronauts Scott and Irwin will descend in the Lunar Module (LM) to explore the moon, while astronaut Worden will remain with the Command and Service Modules (CSM) in lunar orbit.",
+      "src": "archives/apollo-15-nasa-S71-22401.jpg"
+    },
+    {
+      "title": "View of Apollo 15 space vehicle on way from VAB to Pad A, Launch Complex 39",
+      "credit": "NASA / JSC",
+      "date": "1971-05-11T00:00:00Z",
+      "source": "https://images.nasa.gov/details/S71-33781",
+      "nasaId": "S71-33781",
+      "description": "S71-33781 (11 May 1971) --- High angle view showing the Apollo 15 (Spacecraft 112/Lunar Module 10/Saturn 510) space vehicle on the way from the Vehicle Assembly Building (VAB) to Pad A, Launch Complex 39, Kennedy Space Center (KSC). The Saturn V stack and its mobile launch tower are atop a huge crawler-transporter. Apollo 15 is scheduled as the fourth manned lunar landing mission by the National Aeronautics and Space Administration (NASA). The crew men will be astronauts David R. Scott, commander; Alfred M. Worden, command module pilot; and James B. Irwin, lunar module pilot. While astronauts Scott and Irwin descend in the Lunar Module (LM) to explore the moon, astronaut Worden will remain with the Command and Service Modules (CSM) in lunar orbit.",
+      "src": "archives/apollo-15-nasa-S71-33781.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Apollo 15: \"Never Been on a Ride like this Before\"",
+      "credit": "HQ",
+      "source": "https://images.nasa.gov/details/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before",
+      "nasaId": "Apollo 15 Never Been on a Ride like this Before",
+      "src": "https://images-assets.nasa.gov/video/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before/Apollo%2015%20Never%20Been%20on%20a%20Ride%20like%20this%20Before~orig.mp4",
+      "description": "Our first wheels on the Moon. On the Apollo 15 mission, the Lunar Roving Vehicle allowed the astronauts to cover a much greater distance on the Moon than the previous three flights had accomplished. This year marks the 50th anniversary of the Apollo 15 mission. On July 26, 1971, David R. Scott (Commander), James B. Irwin (Lunar Module Pilot) and Alfred M. Worden (Command Module Pilot) launched from Kennedy Space Center’s Launch Complex 39A.   Apollo 15 set several new records for crewed spaceflight: heaviest payload in a lunar orbit of approximately 107,000 pounds, maximum radial distance traveled on the lunar surface away from the spacecraft of about 17.5 miles, most lunar surface moonwalks (three) and longest total of duration for lunar surface moonwalk (18 hours, 37 minutes), longest time in lunar orbit (about 145 hours), longest crewed lunar mission (295 hours), longest Apollo mission, the first satellite placed in lunar orbit by a crewed spacecraft, and first deep space and operational spacewalk.  Music courtesy of Gothic Storm Music   For more information: https://www.nasa.gov/mission_pages/apollo/missions/apollo15.html",
+      "date": "2021-07-26T00:00:00Z",
+      "duration": 299.0,
+      "bitrate": 15314148,
+      "bytes": 572366289,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/apollo-15.mp4",
+    "local": true,
+    "title": "Apollo 15 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "apollo-15.pdf",
+    "fingerprint": "87bb09ddfa37ae2f7e1f5e8d146ebe132d9026f8f1cf44755abfecfd86d6bce7"
+  }
+}

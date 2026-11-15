@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Venera-7 spuskaemiy apparat",
+      "description": "15.12.1970 перша м'яка посадка на поверхню Венери",
+      "credit": "Emerezhko",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Venera-7_spuskaemiy_apparat.jpg",
+      "src": "archives/venera-7-commons.jpg",
+      "date": "2019-02-03 12:45:02",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/venera-7.mp4",
+    "local": true,
+    "title": "Venera 7 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "venera-7.pdf",
+    "fingerprint": "bdcf61a2110e686e525c32678e00103a83a8dd6610139a3f54b142708d7a6a20"
+  }
+}

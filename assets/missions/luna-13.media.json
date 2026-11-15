@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "title": "Luna13 lander vsm",
+      "description": "Luna 13 lander",
+      "credit": "NASA",
+      "license": "Public domain",
+      "licenseURL": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Luna13_lander_vsm.jpg",
+      "src": "archives/luna-13-commons.jpg",
+      "date": "1979-01-01",
+      "context": "Photographie, maquette ou illustration identifiée dans la notice originale."
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/luna-13.mp4",
+    "local": true,
+    "title": "Luna 13 · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "luna-13.pdf",
+    "fingerprint": "ae6621dc7dc9640aeb5c1a8c4a779e33bb7535ec951a2d9f48f2651f3bb718c1"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Odyssey Launch to Mars on April 7, 2001",
+      "credit": "NASA/JPL-Caltech/Arizona State University",
+      "date": "2016-04-05T18:22:02Z",
+      "source": "https://images.nasa.gov/details/PIA20331",
+      "nasaId": "PIA20331",
+      "description": "At 11:02 a.m. EDT on April 7, 2001, crowds watch a Boeing Delta II rocket lift off from Cape Canaveral Air Force Station, Florida, carrying NASA 2001 Mars Odyssey spacecraft into space on its seven-month journey to Mars.",
+      "src": "archives/2001-mars-odyssey-nasa-PIA20331.jpg"
+    },
+    {
+      "title": "The Earth and Moon As Seen by 2001 Mars Odyssey Thermal Emission Imaging System",
+      "credit": "NASA/JPL/Arizona State University",
+      "date": "2001-05-01T14:18:48Z",
+      "source": "https://images.nasa.gov/details/PIA00559",
+      "nasaId": "PIA00559",
+      "description": "NASA Mars Odyssey spacecraft took this portrait of the Earth and its companion Moon. It was taken at a distance of 3,563,735 kilometers more than 2 million miles on April 19, 2001 as the 2001 Mars Odyssey spacecraft left the Earth.",
+      "src": "archives/2001-mars-odyssey-nasa-PIA00559.jpg"
+    },
+    {
+      "title": "2001 Mars Odyssey Images Earth Visible and Infrared",
+      "credit": "NASA/JPL/Arizona State University",
+      "date": "2001-04-26T18:17:21Z",
+      "source": "https://images.nasa.gov/details/PIA00558",
+      "nasaId": "PIA00558",
+      "description": "NASA 2001 Mars Odyssey Thermal Emission Imaging System THEMIS acquired these images of the Earth using its visible and infrared cameras as it left the Earth.",
+      "src": "archives/2001-mars-odyssey-nasa-PIA00558.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/2001-mars-odyssey.mp4",
+    "local": true,
+    "title": "2001 Mars Odyssey · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "2001-mars-odyssey.pdf",
+    "fingerprint": "1a4a388c729b195be0318e8424ed2ab84351c61dddad0ecc4bb254865b0fc0e4"
+  }
+}

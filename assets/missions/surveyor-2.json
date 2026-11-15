@@ -1,0 +1,331 @@
+{
+  "id": "surveyor-2",
+  "name": "Surveyor 2",
+  "body": "moon",
+  "family": "surveyor",
+  "year": 1966,
+  "summary": "1 atterrisseur de ~292 kg écrasé sur la Lune près du cratère Copernic, emplacement exact inconnu · 1 caméra de télévision jamais utilisée en surface · 1 étage Centaur parti en orbite solaire, identifié en 2020 · aucun élément récupéré · échec : un moteur vernier n'a pas démarré, la sonde a tourbillonné jusqu'à l'impact",
+  "facts": [
+    [
+      "Nom officiel",
+      "Surveyor 2"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Surveyor"
+    ],
+    [
+      "Lancement",
+      "20 septembre 1966, 12h32 UTC — Cape Kennedy (LC-36A), Atlas-Centaur (AC-7)"
+    ],
+    [
+      "Destination prévue",
+      "Zone lisse du Sinus Medii (Baie centrale), près du centre de la face visible"
+    ],
+    [
+      "Impact",
+      "23 septembre 1966, 03h18 UTC (calculé), près de Copernic, à ~2,6 km/s"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — sonde détruite à l'impact"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur · sonde Surveyor 2 · moteur de freinage solide"
+    ],
+    [
+      "Statut",
+      "Échec — vernier n° 3 non démarré lors de la correction de trajectoire ; sonde en rotation incontrôlée et écrasée près de Copernic"
+    ]
+  ],
+  "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-2-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "surveyor-2.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Surveyor 2 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 atterrisseur de ~292 kg écrasé sur la Lune près du cratère Copernic, emplacement exact inconnu · 1 caméra de télévision jamais utilisée en surface · 1 étage Centaur parti en orbite solaire, identifié en 2020 · aucun élément récupéré · échec : un moteur vernier n'a pas démarré, la sonde a tourbillonné jusqu'à l'impact"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95436096191406,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Surveyor 2"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Surveyor"
+          ],
+          [
+            "Lancement",
+            "20 septembre 1966, 12h32 UTC — Cape Kennedy (LC-36A), Atlas-Centaur (AC-7)"
+          ],
+          [
+            "Destination prévue",
+            "Zone lisse du Sinus Medii (Baie centrale), près du centre de la face visible"
+          ],
+          [
+            "Impact",
+            "23 septembre 1966, 03h18 UTC (calculé), près de Copernic, à ~2,6 km/s"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — sonde détruite à l'impact"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur · sonde Surveyor 2 · moteur de freinage solide"
+          ],
+          [
+            "Statut",
+            "Échec — vernier n° 3 non démarré lors de la correction de trajectoire ; sonde en rotation incontrôlée et écrasée près de Copernic"
+          ]
+        ]
+      },
+      {
+        "y": 439.1176452636719,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 464.06060791015625,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 506.39697265625,
+        "type": "text",
+        "text": "A. Surface lunaire — impact près de Copernic"
+      },
+      {
+        "y": 524.7543334960938,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Surveyor 2",
+            "~292 kg (644 lb) à l'impact",
+            "",
+            "Écrasé le 23 septembre 1966 à ~2,6 km/s ; site exact inconnu dans mes sources (« près de Copernic » ou « juste au sud-est » selon les sources) ; aucune image de l'épave dans mes sources"
+          ],
+          [
+            "Caméra de télévision et instruments",
+            "—",
+            "",
+            "Caméra, capteurs de réflectivité radar, de portance du sol et de température ; un « rebond » devait photographier sous le site d'atterrissage ; détruits à l'impact"
+          ],
+          [
+            "Moteur de freinage solide",
+            "n.c. (~10 000 lbf de poussée)",
+            "",
+            "Perte du signal pendant son tir ; devenu débris à l'impact ; sa structure a-t-elle souffert du tir ? non établi"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Étages de lancement"
+      },
+      {
+        "y": 72.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "A dépassé la Lune pour une orbite solaire proche de celle de la Terre ; non suivi ; NASA a annoncé une identification probable le 23 septembre 2020, confirmée en décembre 2020"
+          ],
+          [
+            "Étage Atlas",
+            "n.c.",
+            "",
+            "Retombé ; non précisé dans mes sources"
+          ]
+        ]
+      },
+      {
+        "y": 167.9969482421875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 185.20437622070312,
+        "type": "text",
+        "text": "• Rien : aucune image de la surface ni donnée d'atterrissage n'a pu être obtenue"
+      },
+      {
+        "y": 202.20437622070312,
+        "type": "text",
+        "text": "• Seules des données d'ingénierie sur la panne ont été collectées"
+      },
+      {
+        "y": 229.9969482421875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 247.20437622070312,
+        "type": "text",
+        "text": "• Étages de l'Atlas et du Centaur, séparés pendant l'ascension et la trajectoire directe"
+      },
+      {
+        "y": 284.317626953125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 306.954345703125,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "20 septembre 1966, 12h32",
+            "Lancement, trajectoire directe vers la Lune"
+          ],
+          [
+            "21 septembre 1966, ~05h00",
+            "Correction de trajectoire : le vernier n° 3 ne s'allume pas (10h00 PDT le 20)"
+          ],
+          [
+            "Après la correction",
+            "Rotation incontrôlée ; 38 nouvelles tentatives d'allumage sans succès"
+          ],
+          [
+            "22 septembre 1966, 09h35",
+            "Perte du verrouillage radio pendant le tir du rétromoteur"
+          ],
+          [
+            "23 septembre 1966, 03h18",
+            "Impact calculé près de Copernic (la source du JPL le note 8h18 PDT)"
+          ]
+        ]
+      },
+      {
+        "y": 440.79693603515625,
+        "type": "text",
+        "text": "Séquence de la défaillance"
+      },
+      {
+        "y": 459.15435791015625,
+        "type": "table",
+        "rows": [
+          [
+            "Étape",
+            "Événement"
+          ],
+          [
+            "Correction de trajectoire",
+            "Seuls 2 des 3 moteurs verniers s'allument ; la poussée déséquilibrée met la sonde en rotation"
+          ],
+          [
+            "Rotation",
+            "~92 tr/min avant la dernière tentative, puis ~136 tr/min (poussée partielle), ~146 tr/min (purge d'hélium), ~116 tr/min pendant le tir du rétromoteur"
+          ],
+          [
+            "Tentatives de sauvetage",
+            "Les jets d'azote ne peuvent pas corriger la rotation ; aucune des 38 tentatives suivantes n'allume les 3 verniers"
+          ],
+          [
+            "Fin de signal",
+            "Perte du verrouillage radio pendant le tir du rétromoteur, le 22 septembre"
+          ],
+          [
+            "Impact",
+            "Écrasement près de Copernic à ~2,6 km/s"
+          ]
+        ]
+      },
+      {
+        "y": 635.9176635742188,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 657.4043579101562,
+        "type": "text",
+        "text": "• Échec du programme : pas de données de surface, mais l'enquête a identifié la panne d'un moteur vernier comme cause de la rotation."
+      },
+      {
+        "y": 688.4043579101562,
+        "type": "text",
+        "text": "• Suite : Surveyor 3 s'est posée en douceur en 1967, selon le JPL."
+      },
+      {
+        "y": 705.4043579101562,
+        "type": "text",
+        "text": "• Centaur retrouvé : l'étage de Surveyor 2 a été identifié en 2020 dans une orbite proche de la Terre."
+      },
+      {
+        "y": 722.404296875,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient les débris sous la juridiction de l'État qui les a immatriculés (les États-Unis) ; aucune appropriation nationale n'est possible sur la Lune."
+      }
+    ],
+    [
+      {
+        "y": 54.7176513671875,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 76.2043685913086,
+        "type": "text",
+        "text": "• JPL/NASA — « Surveyor II Impacts Moon » (30 septembre 1966) : panne, rotation, perte du signal, impact"
+      },
+      {
+        "y": 107.2043685913086,
+        "type": "text",
+        "text": "• JPL/NASA — « Slice of history: happy 55th anniversary, Surveyor II » : résumé"
+      },
+      {
+        "y": 124.20437622070312,
+        "type": "text",
+        "text": "• Wikipedia (miroir cavac.at) — Surveyor 2 : lancement, instruments, Centaur"
+      }
+    ]
+  ]
+}

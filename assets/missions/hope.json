@@ -1,0 +1,324 @@
+{
+  "id": "hope",
+  "name": "Hope (Al-Amal)",
+  "body": "mars",
+  "family": "orbiter",
+  "year": 2020,
+  "summary": "~550 kg de masse sèche (~1 350 kg au lancement avec ergols) en orbite martienne haute (20 000 × 43 000 km) • 1 sonde toujours très active en novembre 2026 (mission prolongée jusqu'en 2028) • 1 étage supérieur H-IIA en orbite héliocentrique.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Emirates Mars Mission (EMM) — Sonde Hope / Al-Amal (مسبار األمل, COSPAR 2020- 047A)"
+    ],
+    [
+      "Agence & programme",
+      "UAE Space Agency & Mohammed bin Rashid Space Centre (MBRSC, Dubaï), en partenariat avec LASP (Boulder), ASU et APL"
+    ],
+    [
+      "Lancement",
+      "19 juillet 2020, 21h58 UTC — Tanegashima Space Center (Japon), fusée H-IIA (vol F42)"
+    ],
+    [
+      "Insertion orbitale",
+      "9 février 2021, 15h41 UTC — Orbite martienne haute elliptique unique : 20 000 km × 43 000 km, inclinaison 25°, période 55 heures"
+    ],
+    [
+      "Fin de mission",
+      "En cours (mission active en novembre 2026, prolongée par l'UAE Space Agency jusqu'en 2028)"
+    ],
+    [
+      "Équipage",
+      "Aucun (orbiteur automatique piloté conjointement par le MBRSC à Dubaï et le LASP au Colorado)"
+    ],
+    [
+      "Véhicules",
+      "Mitsubishi Heavy Industries H-IIA (F42), orbiteur Hope (~1 350 kg au lancement dont ~800 kg d'hydrazine, ~550 kg à sec)"
+    ],
+    [
+      "Statut",
+      "Toujours active — première mission interplanétaire du monde arabe et premier satellite météo global de Mars"
+    ]
+  ],
+  "sourceFile": "Mars/Orbiteurs/Hope (Al-Amal) - Fiche « Plus de détails ».pdf",
+  "pdf": "hope.pdf",
+  "pages": [
+    [
+      {
+        "y": 52.32818603515625,
+        "type": "text",
+        "text": "CARTE 3D — INVENTAIRE DU PATRIMOINE & DÉBRIS SPATIAUX Hope (Al-Amal) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 129.0373992919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~550 kg de masse sèche (~1 350 kg au lancement avec ergols) en orbite martienne haute (20 000 × 43 000 km) • 1 sonde toujours très active en novembre 2026 (mission"
+      },
+      {
+        "y": 158.2873992919922,
+        "type": "text",
+        "text": "prolongée jusqu'en 2028) • 1 étage supérieur H-IIA en orbite héliocentrique."
+      },
+      {
+        "y": 196.01544189453125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 223.3125,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Emirates Mars Mission (EMM) — Sonde Hope / Al-Amal (مسبار األمل, COSPAR 2020- 047A)"
+          ],
+          [
+            "Agence & programme",
+            "UAE Space Agency & Mohammed bin Rashid Space Centre (MBRSC, Dubaï), en partenariat avec LASP (Boulder), ASU et APL"
+          ],
+          [
+            "Lancement",
+            "19 juillet 2020, 21h58 UTC — Tanegashima Space Center (Japon), fusée H-IIA (vol F42)"
+          ],
+          [
+            "Insertion orbitale",
+            "9 février 2021, 15h41 UTC — Orbite martienne haute elliptique unique : 20 000 km × 43 000 km, inclinaison 25°, période 55 heures"
+          ],
+          [
+            "Fin de mission",
+            "En cours (mission active en novembre 2026, prolongée par l'UAE Space Agency jusqu'en 2028)"
+          ],
+          [
+            "Équipage",
+            "Aucun (orbiteur automatique piloté conjointement par le MBRSC à Dubaï et le LASP au Colorado)"
+          ],
+          [
+            "Véhicules",
+            "Mitsubishi Heavy Industries H-IIA (F42), orbiteur Hope (~1 350 kg au lancement dont ~800 kg d'hydrazine, ~550 kg à sec)"
+          ],
+          [
+            "Statut",
+            "Toujours active — première mission interplanétaire du monde arabe et premier satellite météo global de Mars"
+          ]
+        ]
+      },
+      {
+        "y": 550.7654418945312,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 585.8842163085938,
+        "type": "text",
+        "text": "Badges d'état : toujours actif intact mais inactif détruit / écrasé localisation inconnue"
+      },
+      {
+        "y": 619.9705810546875,
+        "type": "text",
+        "text": "A. Orbite martienne haute — Sonde Hope / Al-Amal (~1 350 kg au lancement)"
+      },
+      {
+        "y": 639.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Châssis composite & structure principale",
+            "~550 kg (masse sèche)",
+            "Toujours actif",
+            "Structure cubique compacte en nid d'abeille d'aluminium (2,37 m de largeur sur 2,90 m de hauteur). Stabilisée sur 3 axes par roues de réaction, capteurs solaires et viseurs d'étoiles."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Panneaux solaires (2 ailes déployables)",
+            "~120 kg (inclus)",
+            "Toujours actifs",
+            "Deux grands panneaux solaires à cellules photovoltaïques fournissant environ 900 watts d'énergie électrique en orbite martienne et rechargeant les batteries lithium-ion embarquées."
+          ],
+          [
+            "Antenne grand gain (1,85 m) & télécoms",
+            "~30 kg (inclus)",
+            "Toujours actives",
+            "Grande parabole fixe de 1,85 m de diamètre (bande X) et antennes faible gain, communiquant via le Deep Space Network (DSN) de la NASA et le centre de contrôle au MBRSC."
+          ],
+          [
+            "Caméra multi-bandes EXI",
+            "12,1 kg",
+            "Toujours active",
+            "Caméra haute résolution (Emirates eXploration Imager) dotée d'une roue à 6 filtres discrets (UV et RGB), mesurant les aérosols, l'ozone, la poussière et les nuages de glace d'eau."
+          ],
+          [
+            "Spectromètre infrarouge thermique EMIRS",
+            "13,7 kg",
+            "Toujours actif",
+            "Instrument (Emirates Mars Infrared Spectrometer) mesurant la répartition de la poussière, de la vapeur d'eau et la température de la basse/moyenne atmosphère martienne."
+          ],
+          [
+            "Spectromètre ultraviolet lointain EMUS",
+            "7,8 kg",
+            "Toujours actif",
+            "Instrument (Emirates Mars Ultraviolet Spectrometer) mesurant le rayonnement UV (100–170 nm) pour analyser l'échappement de l'hydrogène et de l'oxygène de la haute atmosphère."
+          ],
+          [
+            "Système de propulsion & ergols résiduels",
+            "~800 kg au départ (~250 kg restants)",
+            "Toujours actifs",
+            "6 moteurs principaux de 120 N et 12 propulseurs RCS de 5 N pour le maintien d'attitude et les petites corrections orbitales, garantissant des réserves suffisantes pour l'extension de mission."
+          ]
+        ]
+      },
+      {
+        "y": 517.9705810546875,
+        "type": "text",
+        "text": "B. Trajectoire d'échappement & jets en vol"
+      },
+      {
+        "y": 537.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage supérieur H-IIA (Mitsubishi Heavy Industries)",
+            "~2 500 kg (à vide)",
+            "Orbite héliocentrique",
+            "Étage cryogénique ayant assuré l'injection interplanétaire de la sonde Hope le 19 juillet 2020 depuis le centre spatial de Tanegashima ; placé sur une orbite héliocentrique stable."
+          ],
+          [
+            "Propulseurs d'appoint, étages 1 & coiffe (H- IIA F42)",
+            "~25 000 kg (à vide)",
+            "Écrasés / brûlés",
+            "Propulseurs d'appoint à poudre SRB-A, premier étage principal et coiffe aérodynamique retombés dans l'océan Pacifique peu après le lancement."
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 46.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 66.3369140625,
+        "type": "text",
+        "text": "Aucun élément matériel récupéré : mission orbitale interplanétaire sans module de retour vers la Terre."
+      },
+      {
+        "y": 97.8369140625,
+        "type": "text",
+        "text": "Archives scientifiques mondiales : des téraoctets de données météorologiques et atmosphériques globales en accès libre pour la communauté scientifique internationale, hébergés et partagés par l'UAE Space Agency."
+      },
+      {
+        "y": 146.51544189453125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 172.6875,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "19 juillet 2020, 21h58 UTC",
+            "Lancement réussi de la fusée H-IIA depuis le centre de Tanegashima au Japon ; début du transit interplanétaire vers Mars."
+          ],
+          [
+            "9 février 2021, 15h41 UTC",
+            "Allumage de freinage de 27 minutes : succès de l'insertion en orbite martienne (première tentative réussie, faisant des EAU la 5e entité à atteindre Mars)."
+          ],
+          [
+            "2021 – 2023",
+            "Phase scientifique primaire de 2 ans ; cartographie globale de la météo martienne et réalisation de survols historiques de la lune martienne Deimos (mars 2023)."
+          ],
+          [
+            "Février 2026",
+            "L'UAE Space Agency annonce l'extension officielle des opérations scientifiques de la mission Hope jusqu'en 2028."
+          ],
+          [
+            "Novembre 2026",
+            "La sonde Hope poursuit son travail en orbite haute, fournissant des données météorologiques inédites et préparant les synergies avec la future mission astéroïde des EAU."
+          ]
+        ]
+      },
+      {
+        "y": 395.51544189453125,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 422.5869140625,
+        "type": "text",
+        "text": "Première vue globale de la météo martienne en continu : grâce à son orbite elliptique haute unique (20 000 × 43 000 km), Hope observe pour la première fois l'intégralité du disque martien et l'évolution de la météo à toutes les heures de la journée et à travers toutes les saisons."
+      },
+      {
+        "y": 468.3369140625,
+        "type": "text",
+        "text": "Découverte des aurores discrètes et dynamiques : les instruments EXI et EMUS ont mis en évidence des structures d'aurores protoniques et discoïdales complexes dans la nuit martienne, liées aux interactions entre le vent solaire et la haute atmosphère."
+      },
+      {
+        "y": 513.3369140625,
+        "type": "text",
+        "text": "Survol rapproché de Deimos : en mars 2023, Hope a modifié sa trajectoire pour frôler Deimos à moins de 100 km, capturant les clichés infrarouges et visibles les plus détaillés de l'histoire de la face cachée de cette lune martienne."
+      },
+      {
+        "y": 559.0869140625,
+        "type": "text",
+        "text": "Inspiration technologique nationale et régionale : menée entièrement par des ingénieurs émiratis du MBRSC avec un âge moyen de 27 ans, la mission Hope marque un tournant historique pour l'industrie spatiale arabe et prépare la future mission vers la ceinture d'astéroïdes (MBR Explorer)."
+      },
+      {
+        "y": 607.7654418945312,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 634.8369140625,
+        "type": "text",
+        "text": "UAE Space Agency & Mohammed bin Rashid Space Centre (MBRSC) — Emirates Mars Mission Official Portal (emm.ae)"
+      },
+      {
+        "y": 666.3369140625,
+        "type": "text",
+        "text": "NASA Space Science Data Coordinated Archive (NSSDCA) — Fiche mission Hope / Emirates Mars Mission (ID : 2020-047A)"
+      },
+      {
+        "y": 697.8369140625,
+        "type": "text",
+        "text": "H. Al Matrooshi et al., The Emirates Mars Mission: The Hope Probe, Space Science Reviews, 2021"
+      },
+      {
+        "y": 715.0869140625,
+        "type": "text",
+        "text": "W. S. Al Amiri et al., Science Objectives of the Emirates Mars Mission, Space Science Reviews, vol. 217, 2021"
+      }
+    ]
+  ]
+}

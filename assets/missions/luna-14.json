@@ -1,0 +1,322 @@
+{
+  "id": "luna-14",
+  "name": "Luna 14",
+  "body": "moon",
+  "family": "luna-orbiter",
+  "year": 1968,
+  "summary": "~1 150 kg à sec (1 615 kg au lancement) d'orbiteur intégré E-6LS écrasés sur la Lune après dégradation orbitale (site d'impact non localisé avec précision) · 0 objet actif en 2026 (75 jours d'émissions en orbite lunaire d'avril à juin 1968) · 1 objet principal de point d'impact exact inconnu.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 14 (objet E-6LS n° 113 — Orbiteur technologique de relais et de gravimétrie lunaire)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna / soutien au programme habité L3"
+    ],
+    [
+      "Lancement",
+      "7 avril 1968, 10h09m32s UTC — Cosmodrome de Baïkonour (Site 1/5), fusée Molniya-M (8K78M)"
+    ],
+    [
+      "Insertion en orbite lunaire",
+      "10 avril 1968, 19h25 UTC — Orbite sélénocentrique : 160 × 870 km, inclinée à 42,0°, période de 160 min"
+    ],
+    [
+      "Durée de mission",
+      "81 heures de transit Terre-Lune + 75 jours d'opérations actives en orbite lunaire (496 révolutions jusqu'au 24 juin 1968)"
+    ],
+    [
+      "Type de mission",
+      "Orbiteur lunaire automatique (sans équipage) de qualification radio, gravimétrie de précision et essais mécaniques"
+    ],
+    [
+      "Véhicules",
+      "Molniya-M (bloc L) · Orbiteur intégré E-6LS (bus propulsif KTDU-5A + compartiment pressurisé dérivé de E-6LF)"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Quatrième satellite artificiel de la Lune ; dernier représentant de la génération E-6 et validation des liaisons radio du programme N1-L3"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche mission Luna 14 - Hardware perdu dans l_espace.pdf",
+  "pdf": "luna-14.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION LUNAIRE · CATALOGUE DU PATRIMOINE SPATIAL Luna 14 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 114.41158294677734,
+        "type": "text",
+        "text": "Synthèse hardware : ~1 150 kg à sec (1 615 kg au lancement) d'orbiteur intégré E-6LS écrasés sur la Lune après dégradation orbitale (site d'impact non localisé avec précision) · 0 objet actif en 2026 (75 jours"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "d'émissions en orbite lunaire d'avril à juin 1968) · 1 objet principal de point d'impact exact inconnu."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 14 (objet E-6LS n° 113 — Orbiteur technologique de relais et de gravimétrie lunaire)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna / soutien au programme habité L3"
+          ],
+          [
+            "Lancement",
+            "7 avril 1968, 10h09m32s UTC — Cosmodrome de Baïkonour (Site 1/5), fusée Molniya-M (8K78M)"
+          ],
+          [
+            "Insertion en orbite lunaire",
+            "10 avril 1968, 19h25 UTC — Orbite sélénocentrique : 160 × 870 km, inclinée à 42,0°, période de 160 min"
+          ],
+          [
+            "Durée de mission",
+            "81 heures de transit Terre-Lune + 75 jours d'opérations actives en orbite lunaire (496 révolutions jusqu'au 24 juin 1968)"
+          ],
+          [
+            "Type de mission",
+            "Orbiteur lunaire automatique (sans équipage) de qualification radio, gravimétrie de précision et essais mécaniques"
+          ],
+          [
+            "Véhicules",
+            "Molniya-M (bloc L) · Orbiteur intégré E-6LS (bus propulsif KTDU-5A + compartiment pressurisé dérivé de E-6LF)"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Quatrième satellite artificiel de la Lune ; dernier représentant de la génération E-6 et validation des liaisons radio du programme N1-L3"
+          ]
+        ]
+      },
+      {
+        "y": 526.9171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 558.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 14 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "A. Environnement lunaire — Orbite puis impact non localisé (~1,15 t à sec)"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur intégré Luna 14 (bus E-6LS complet)",
+            "~1 150 kg (à sec)",
+            "? Impact non localisé",
+            "Masse de 1 615 kg au lancement (incluant ~465 kg d'ergols pour le moteur principal KTDU-5A). Reprend l'architecture sans caméra de Luna 11/12 avec un compartiment pressurisé non séparable et une alimentation par batteries argent-zinc. Après épuisement de ses batteries le 24 juin 1968, les perturbations gravitationnelles lunaires ont provoqué sa chute sur la Lune à une date et en un point exact inconnus."
+          ],
+          [
+            "Équipement de télécommunication Maly-L3",
+            "~35 kg (inclus)",
+            "▲ Écrasé (Lune)",
+            "Système radio expérimentant les fréquences et protocoles de télémétrie, de poursuite Doppler et de phonie destinés au complexe lunaire habité soviétique Soyouz 7K-LOK / LK (programme N1-L3), testant notamment les pertes de signal lors des occultations derrière la face cachée."
+          ],
+          [
+            "Détecteurs de rayons cosmiques et de vent solaire",
+            "~22 kg (inclus)",
+            "▲ Écrasés (Lune)",
+            "Compteurs à scintillation et pièges à ions mesurant le flux de protons et d'électrons solaires et galactiques dans l'environnement cislunaire afin d'évaluer les doses radiatives encourues par de futurs équipages humains."
+          ],
+          [
+            "Banc d'essai tribologique R-1 (engrenages sous vide)",
+            "~4 kg (inclus)",
+            "▲ Écrasé (Lune)",
+            "Version perfectionnée de l'expérience mécanique embarquée sur Luna 11 et 12, testant différents alliages et lubrifiants solides pour les roulements et motoréducteurs des futurs rovers Lunokhod en conditions réelles de vide poussé et de cycles thermiques lunaires."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 14 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 4"
+      }
+    ],
+    [
+      {
+        "y": 64.2205810546875,
+        "type": "text",
+        "text": "B. Espace cislunaire & rentrée atmosphérique terrestre"
+      },
+      {
+        "y": 83.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Deux compartiments latéraux largables du bus E-6LS",
+            "~250 kg (total)",
+            "■ Orbite solaire / haute",
+            "Caissons latéraux abritant les viseurs optiques Soleil-Terre-Lune et les bouteilles d'azote froid initiales, largués à ~8 000 km de la Lune juste avant l'allumage de freinage d'insertion en orbite lunaire le 10 avril 1968."
+          ],
+          [
+            "Étage supérieur Bloc L (fusée Molniya-M)",
+            "~1 160 kg (à sec)",
+            "■ Orbite haute / solaire",
+            "Quatrième étage propulsé par le moteur S1.5400. Après avoir injecté la sonde de 1 615 kg vers la Lune le 7 avril 1968, il est passé sur une orbite terrestre très excentrique/héliocentrique."
+          ],
+          [
+            "Troisième étage Bloc I (fusée Molniya-M)",
+            "~2 400 kg (à sec)",
+            "▲ Désintégré",
+            "Étage placé en orbite basse terrestre de parking lors du tir du 7 avril 1968 ; rentré et consumé dans l'atmosphère terrestre quelques jours après le lancement."
+          ]
+        ]
+      },
+      {
+        "y": 352.2205810546875,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 373.0869140625,
+        "type": "text",
+        "text": "Aucun matériel récupéré : Luna 14 est une mission orbitale lunaire sans retour. Les étages inférieurs de la fusée Molniya-M et la coiffe sont retombés dans les zones d'exclusion terrestres d'Asie centrale après le décollage de Baïkonour."
+      },
+      {
+        "y": 431.7205810546875,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 452.5869140625,
+        "type": "text",
+        "text": "Coiffe aérodynamique & antennes déployables : coiffe larguée durant l'ascension atmosphérique terrestre le 7 avril 1968 ; antennes télémétriques déployées après la séparation d'avec le Bloc L."
+      },
+      {
+        "y": 496.9171447753906,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 522.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "7 avril 1968, 10h09m32s UTC",
+            "Décollage de la fusée Molniya-M depuis Baïkonour (deux mois après l'échec au lancement de son prédécesseur E-6LS n° 112 en février 1968) et injection sur trajectoire translunaire."
+          ],
+          [
+            "8 avril 1968",
+            "Manœuvre de correction de trajectoire à mi-course ajustant avec précision le périsélène cible à 160 km d'altitude."
+          ],
+          [
+            "10 avril 1968, 19h25 UTC",
+            "Allumage de freinage du moteur KTDU-5A et insertion réussie sur une orbite lunaire inclinée à 42,0° (160 × 870 km, période de 2 h 40 min)."
+          ],
+          [
+            "Avril – mai 1968",
+            "Campagne intensive de suivi Doppler et d'essais radio Maly-L3 à chaque passage au-dessus des mers lunaires et lors des entrées/sorties d'occultation derrière la Lune."
+          ],
+          [
+            "24 juin 1968",
+            "Épuisement des batteries argent-zinc et fin des transmissions après 75 jours et 496 révolutions autour de la Lune."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 14 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 4"
+      }
+    ],
+    [
+      {
+        "y": 67.91712951660156,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 94.8369140625,
+        "type": "text",
+        "text": "Modélisation haute précision du champ gravitationnel lunaire (mascons) : en étant suivie par radiométrie Doppler sur une orbite d'inclinaison intermédiaire (42°), Luna 14 a permis aux mécaniciens célestes soviétiques de cartographier finement les irrégularités du potentiel gravitationnel lunaire et les perturbations exercées par la Terre et le Soleil, données critiques pour garantir la sécurité des trajectoires d'alunissage habité et automatique."
+      },
+      {
+        "y": 174.3369140625,
+        "type": "text",
+        "text": "Qualification des télécommunications pour le programme lunaire habité : les essais menés avec le sous-ensemble Maly-L3 ont validé le maintien et la réacquisition rapide des liaisons radio avec un vaisseau en orbite lunaire basse lors des passages derrière la face cachée (zone de silence radio), préparant directement les vols circumlunaires Zond et le complexe N1-L3."
+      },
+      {
+        "y": 237.18223571777344,
+        "type": "text",
+        "text": "Perfectionnement des mécanismes pour les astromobiles Lunokhod : les données télémétriques issues du banc tribologique R-1 sur 75 jours d'exposition spatiale ont permis d'arrêter définitivement le choix des matériaux de roulement utilisés deux ans plus tard sur Lunokhod 1 (novembre 1970)."
+      },
+      {
+        "y": 285.9322509765625,
+        "type": "text",
+        "text": "Clôture de la famille des sondes E-6 : Luna 14 marque l'aboutissement de la première génération de sondes lunaires du bureau Lavotchkine lancées par fusée Molniya-M, ouvrant la voie dès 1969 aux engins lourds de la filière Ye-8 lancés par fusée Proton-K (Luna 15, 16, 17 et suivants)."
+      },
+      {
+        "y": 346.1671447753906,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 373.0869140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Luna 14 Spacecraft & Lunar Orbiter Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 391.0869140625,
+        "type": "text",
+        "text": "NPO Lavotchkine / IKI RAN — Fourth Artificial Satellite of the Moon : Luna 14 (Station E-6LS)"
+      },
+      {
+        "y": 409.0869140625,
+        "type": "text",
+        "text": "Asif A. Siddiqi — Challenge to Apollo: The Soviet Union and the Space Race, 1945–1974 (NASA SP- 2000-4408)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 14 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 4 of 4"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "title": "Europa Clipper Launch Ascent Timeline",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2024-09-10T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA26437",
+      "nasaId": "PIA26437",
+      "description": "NASA's Europa Clipper spacecraft will be launched on a SpaceX Falcon Heavy rocket from the agency's Kennedy Space Center in Florida. This graphic shows the expected timeline of milestones immediately following liftoff if the mission launches at the beginning of its launch period on Oct. 10, 2024. The actual times of milestones will differ slightly depending on the launch day. Regardless of launch date within the launch period, the spacecraft's separation from the rocket is expected to occur a little over an hour after liftoff.  Europa Clipper is bound for the Jupiter system, where it will study the gas giant's icy moon Europa. The mission's three main science objectives are to determine the thickness of the moon's icy shell and its interactions with the ocean below, to investigate its composition, and to characterize its geology. The mission's detailed exploration of Europa will help scientists better understand the astrobiological potential for habitable worlds beyond our planet.  https://photojournal.jpl.nasa.gov/catalog/PIA26437",
+      "src": "archives/europa-clipper-nasa-PIA26437.jpg"
+    },
+    {
+      "title": "Europa Clipper Solar Arrays Stowed for Launch",
+      "credit": "NASA/Frank Michaux",
+      "date": "2024-08-27T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA26067",
+      "nasaId": "PIA26067",
+      "description": "NASA's Europa Clipper is seen here on Aug. 21, 2024, in a clean room at the agency's Kennedy Space Center in Florida after engineers and technicians tested and stowed the spacecraft's giant solar arrays. Each array measures about 46.5 feet (14.2 meters) long and about 13.5 feet (4.1 meters) high.  Europa Clipper's three main science objectives are to determine the thickness of the moon's icy shell and its interactions with the ocean below, to investigate its composition, and to characterize its geology. The mission's detailed exploration of Europa will help scientists better understand the astrobiological potential for habitable worlds beyond our planet.  https://photojournal.jpl.nasa.gov/catalog/PIA26067",
+      "src": "archives/europa-clipper-nasa-PIA26067.jpg"
+    },
+    {
+      "title": "Europa Clipper Launch Team at JPL's Mission Control",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2024-10-14T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA26422",
+      "nasaId": "PIA26422",
+      "description": "Mission members celebrate during the successful launch of NASA's Europa Clipper spacecraft on Oct. 14, 2024, in the Mission Support Area at NASA's Jet Propulsion Laboratory in Southern California. The spacecraft is bound on a 5½-year, 1.8 billion-mile (2.9 billion-kilometer) journey to Jupiter's icy moon Europa, which scientists believe harbors a vast internal ocean that may have conditions suitable for supporting life.  Europa Clipper's three main science objectives are to determine the thickness of the moon's icy shell and its interactions with the ocean below, to investigate its composition, and to characterize its geology. The mission's detailed exploration of Europa will help scientists better understand the astrobiological potential for habitable worlds beyond our planet.  https://photojournal.jpl.nasa.gov/catalog/PIA26422",
+      "src": "archives/europa-clipper-nasa-PIA26422.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "NASA’s Europa Clipper Mission Animations",
+      "credit": "JPL",
+      "source": "https://images.nasa.gov/details/JPL-20220310-CLIPPRf-0001-Europa%20Clipper%20Mission%20Animations",
+      "nasaId": "JPL-20220310-CLIPPRf-0001-Europa Clipper Mission Animations",
+      "src": "https://images-assets.nasa.gov/video/JPL-20220310-CLIPPRf-0001-Europa%20Clipper%20Mission%20Animations/JPL-20220310-CLIPPRf-0001-Europa%20Clipper%20Mission%20Animations~preview.mp4",
+      "description": "Animations for media and public use.  These animation sequences show NASA’s Europa Clipper spacecraft mission leaving Earth, deploying in space, and journeying to the Jupiter system. It will then perform multiple flybys of the icy moon Europa.  The Europa Clipper will conduct a detailed survey of Jupiter's moon Europa to determine whether the icy moon could harbor conditions suitable for life. The spacecraft, in orbit around Jupiter, will make dozens of close passes over Europa, shifting its flight path for each flyby to soar over a different location so that it eventually scans nearly the entire moon.  The Europa Clipper is expected to launch in October 2024 from Kennedy Space Center in Cape Canaveral, Florida.  For more information on the mission go to: https://europa.nasa.gov/  Credit: NASA/JPL-Caltech ",
+      "date": "2024-04-09T00:00:00Z",
+      "duration": 614.033333,
+      "bitrate": 665115,
+      "bytes": 51050381,
+      "width": 480,
+      "height": 270,
+      "codec": "h264"
+    }
+  ],
+  "documentary": {
+    "src": "films/europa-clipper.mp4",
+    "local": true,
+    "title": "Europa Clipper · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "europa-clipper.pdf",
+    "fingerprint": "7490b6d5faeed1c83b7ff004664d36f4105c1b88aa0b45bf0cd9d183a112f7dc"
+  }
+}

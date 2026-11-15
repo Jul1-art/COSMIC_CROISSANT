@@ -1,0 +1,399 @@
+{
+  "id": "surveyor-1",
+  "name": "Surveyor 1",
+  "body": "moon",
+  "family": "surveyor",
+  "year": 1966,
+  "summary": "1 atterrisseur de 294,3 kg resté dans l'Océan des Tempêtes, silencieux depuis janvier 1967 · 1 caméra de télévision et plus de 100 capteurs d'ingénierie · 1 moteur de freinage solide largué en descente · 1 étage Centaur, devenir non précisé · aucun élément récupéré · première sonde américaine posée en douceur sur la Lune",
+  "facts": [
+    [
+      "Nom officiel",
+      "Surveyor 1"
+    ],
+    [
+      "Agence & programme",
+      "NASA — programme Surveyor"
+    ],
+    [
+      "Lancement",
+      "30 mai 1966, 14h41 UTC — Cape Canaveral (LC-36A), Atlas-Centaur (AC-10)"
+    ],
+    [
+      "Atterrissage",
+      "2 juin 1966, 06h17 UTC — sud-ouest d'Oceanus Procellarum, ~2,46° S, 43,32° O (~14 km de la cible prévue)"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — atterrisseur resté sur la Lune"
+    ],
+    [
+      "Durée d'exploitation",
+      "Mission principale jusqu'au 14 juillet 1966 ; données d'ingénierie jusqu'au 7 janvier 1967"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique)"
+    ],
+    [
+      "Véhicules",
+      "Atlas-Centaur · atterrisseur Surveyor 1 · moteur de freinage solide"
+    ],
+    [
+      "Statut",
+      "Réussie — première sonde américaine posée en douceur sur la Lune ; silencieuse depuis janvier 1967"
+    ]
+  ],
+  "sourceFile": "Lune/Surveyor/Fiche-mission-Surveyor-1-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "surveyor-1.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Surveyor 1 — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : 1 atterrisseur de 294,3 kg resté dans l'Océan des Tempêtes, silencieux depuis janvier 1967 · 1 caméra de télévision et plus de 100 capteurs d'ingénierie · 1 moteur de freinage solide largué en descente · 1 étage Centaur, devenir non précisé · aucun élément récupéré · première sonde américaine posée en douceur sur la Lune"
+      },
+      {
+        "y": 181.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Surveyor 1"
+          ],
+          [
+            "Agence & programme",
+            "NASA — programme Surveyor"
+          ],
+          [
+            "Lancement",
+            "30 mai 1966, 14h41 UTC — Cape Canaveral (LC-36A), Atlas-Centaur (AC-10)"
+          ],
+          [
+            "Atterrissage",
+            "2 juin 1966, 06h17 UTC — sud-ouest d'Oceanus Procellarum, ~2,46° S, 43,32° O (~14 km de la cible prévue)"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — atterrisseur resté sur la Lune"
+          ],
+          [
+            "Durée d'exploitation",
+            "Mission principale jusqu'au 14 juillet 1966 ; données d'ingénierie jusqu'au 7 janvier 1967"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique)"
+          ],
+          [
+            "Véhicules",
+            "Atlas-Centaur · atterrisseur Surveyor 1 · moteur de freinage solide"
+          ],
+          [
+            "Statut",
+            "Réussie — première sonde américaine posée en douceur sur la Lune ; silencieuse depuis janvier 1967"
+          ]
+        ]
+      },
+      {
+        "y": 450.3176574707031,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 475.2606201171875,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation / statut inconnu"
+      },
+      {
+        "y": 517.596923828125,
+        "type": "text",
+        "text": "A. Surface lunaire — Oceanus Procellarum"
+      },
+      {
+        "y": 535.9544067382812,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Atterrisseur Surveyor 1",
+            "294,3 kg (masse à l'atterrissage)",
+            "",
+            "Trois pieds à amortisseurs ; alimenté par panneau solaire donc inactif pendant la nuit lunaire ; dernière interrogation le 7 janvier 1967 ; photographié par la sonde LRO en 2009"
+          ],
+          [
+            "Caméra de télévision",
+            "—",
+            "",
+            "Tube vidicon, zoom (25 et 100 mm), filtres, miroir mobile ; 11 237 à 11 240 images selon les sources"
+          ],
+          [
+            "Jauges de contrainte et capteurs",
+            "—",
+            "",
+            "Jauges sur chaque amortisseur (~800 kgf) et plus de 100 capteurs d'ingénierie ; réflectivité radar, portance du sol, températures"
+          ]
+        ]
+      },
+      {
+        "y": 674.1969604492188,
+        "type": "text",
+        "text": "B. Éléments largués pendant la descente"
+      },
+      {
+        "y": 692.5543212890625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Moteur de freinage solide",
+            "n.c. (9 000 lbf de poussée, ~40 kN)",
+            "",
+            "Allumé à ~75 km d'altitude, brûle 38 s ; carter éjecté à ~9,4 km ; retombé sur la Lune (non localisé dans mes sources)"
+          ],
+          [
+            "Altimètre radar",
+            "n.c.",
+            "",
+            "Non compté dans la masse à l'atterrissage ; sort précis non décrit"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "C. Étage de lancement"
+      },
+      {
+        "y": 72.35435485839844,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage Centaur",
+            "n.c.",
+            "",
+            "Séparé après l'injection directe vers la Lune ; devenir non précisé dans mes sources"
+          ],
+          [
+            "Étage Atlas",
+            "n.c.",
+            "",
+            "Retombé ; non précisé"
+          ]
+        ]
+      },
+      {
+        "y": 156.79693603515625,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 174.00436401367188,
+        "type": "text",
+        "text": "• Rien : seules des images transmises par radio sont revenues"
+      },
+      {
+        "y": 191.00436401367188,
+        "type": "text",
+        "text": "• Plus de 10 000 images dont 14 en 200 lignes et 10 324 en 600 lignes avant le coucher du Soleil du 14 juin"
+      },
+      {
+        "y": 232.79693603515625,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 250.00436401367188,
+        "type": "text",
+        "text": "• Étages de l'Atlas et du Centaur, séparés pendant l'ascension et la trajectoire directe"
+      },
+      {
+        "y": 267.0043640136719,
+        "type": "text",
+        "text": "• Moteur de freinage solide, éjecté pendant la descente (voir B)"
+      },
+      {
+        "y": 304.11767578125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 326.75439453125,
+        "type": "table",
+        "rows": [
+          [
+            "Date (UTC)",
+            "Événement"
+          ],
+          [
+            "30 mai 1966, 14h41",
+            "Lancement, trajectoire directe vers la Lune (sans orbite d'attente)"
+          ],
+          [
+            "2 juin 1966, 05h46",
+            "Début de la descente terminale (~31 min avant le contact)"
+          ],
+          [
+            "2 juin 1966, 06h17:35",
+            "Contact avec le sol (voir séquence ci-dessous) ; durée de vol ~63,6 h"
+          ],
+          [
+            "2 juin 1966, 06h53",
+            "Première image, en 200 lignes, après les vérifications d'ingénierie"
+          ],
+          [
+            "14 juin 1966",
+            "Coucher du Soleil : fin du premier jour lunaire (>10 000 images)"
+          ],
+          [
+            "14 juin – 7 juillet 1966",
+            "Nuit lunaire, sonde sans énergie solaire"
+          ],
+          [
+            "14 juillet 1966",
+            "Fin de la mission principale ; dernière transmission vidéo"
+          ],
+          [
+            "6-7 janvier 1967",
+            "Réactivation d'environ 12 h ; dernières données d'ingénierie"
+          ]
+        ]
+      },
+      {
+        "y": 521.1969604492188,
+        "type": "text",
+        "text": "Séquence d'atterrissage"
+      },
+      {
+        "y": 539.5543823242188,
+        "type": "table",
+        "rows": [
+          [
+            "Altitude / vitesse",
+            "Événement"
+          ],
+          [
+            "~3 200 km, 31 min avant",
+            "Début de la descente terminale ; roulis et lacet alignent la rétrofusée à ~5° de la verticale"
+          ],
+          [
+            "~95 km",
+            "Le radar altimètre détecte la Lune et lance la séquence automatique"
+          ],
+          [
+            "~75 km, ~9 400 km/h",
+            "Allumage du moteur de freinage principal (9 000 lbf), 2 min 46 s avant le contact ; brûle 38 s"
+          ],
+          [
+            "~10,7 km, ~430 km/h",
+            "Fin de la combustion du moteur principal"
+          ],
+          [
+            "~9,4 km",
+            "Éjection du carter du moteur ; trois petits moteurs (verniers) poursuivent le freinage"
+          ],
+          [
+            "~305 m, ~115 km/h",
+            "Les verniers, pilotés par radar altimètre et capteur Doppler, ralentissent"
+          ],
+          [
+            "~3 m, ~4,5 km/h",
+            "Coupure des moteurs (3,4 m dans une autre source) ; chute libre"
+          ],
+          [
+            "Contact, ~12 km/h",
+            "Premier pied au sol à 06h17:35,651 ; le troisième dans les 19 ms ; léger rebond de 10 à 13 cm"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 54.7176513671875,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 76.2043685913086,
+        "type": "text",
+        "text": "• Première sonde américaine posée en douceur sur la Lune, réussie dès le premier essai du programme."
+      },
+      {
+        "y": 107.2043685913086,
+        "type": "text",
+        "text": "• Images : plus de 11 000 vues de la surface."
+      },
+      {
+        "y": 124.20437622070312,
+        "type": "text",
+        "text": "• Sol lunaire : portance, réflectivité radar et températures mesurées ; aucune expérience scientifique dédiée."
+      },
+      {
+        "y": 155.20437622070312,
+        "type": "text",
+        "text": "• Précurseur d'Apollo : le programme Surveyor a préparé les atterrissages habités."
+      },
+      {
+        "y": 172.20437622070312,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 maintient l'engin sous la juridiction de l'État qui l'a immatriculé (les États-Unis) ; aucune appropriation nationale n'est possible sur la Lune."
+      },
+      {
+        "y": 223.317626953125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 244.80435180664062,
+        "type": "text",
+        "text": "• JPL/NASA — « Surveyor I Lands on the Moon » : séquence de descente détaillée"
+      },
+      {
+        "y": 261.8043518066406,
+        "type": "text",
+        "text": "• NASA Science — Surveyor 1 : fiche, masse, coordonnées, lancement"
+      },
+      {
+        "y": 278.8043518066406,
+        "type": "text",
+        "text": "• Wikipedia (miroir cavac.at) — Surveyor 1 : instruments, images, nuit lunaire"
+      },
+      {
+        "y": 295.8043518066406,
+        "type": "text",
+        "text": "• Lunar and Planetary Laboratory (Arizona) — Surveyor I : atterrissage, images"
+      }
+    ]
+  ]
+}

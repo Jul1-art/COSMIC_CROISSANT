@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "source": "https://www.esa.int/ESA_Multimedia/Images/2024/09/BepiColombo_s_closest_view_of_Mercury",
+      "image": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2024/09/bepicolombo_s_closest_view_of_mercury/26299645-4-eng-GB/BepiColombo_s_closest_view_of_Mercury.jpg",
+      "title": "Mercure photographiée par BepiColombo le 4 septembre 2024",
+      "credit": "ESA / BepiColombo / MTM",
+      "license": "CC BY-SA 3.0 IGO",
+      "context": "Image de la caméra M-CAM 2 lors du quatrième survol de Mercure.",
+      "src": "archives/bepicolombo-reviewed-1.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/bepicolombo.mp4",
+    "local": true,
+    "title": "BepiColombo · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "bepicolombo.pdf",
+    "fingerprint": "744d260bce9109947b958299856ba8995fc2f7054e238e82603eb8293026b40b"
+  }
+}

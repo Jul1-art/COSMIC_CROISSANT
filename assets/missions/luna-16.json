@@ -1,0 +1,319 @@
+{
+  "id": "luna-16",
+  "name": "Luna 16",
+  "body": "moon",
+  "family": "luna-return",
+  "year": 1970,
+  "summary": "~1 580 kg de matériel laissé sur la Lune dans Mare Fecunditatis (étage de descente KTDU-417 et foreuse automatique posés intacts) · 0 objet actif en 2026 (mission de 10 jours en septembre 1970) · 1 capsule de rentrée récupérée sur Terre avec 101 g de sol lunaire.",
+  "facts": [
+    [
+      "Nom officiel",
+      "Luna 16 (objet Ye-8-5 n° 404 — Première sonde automatique de retour d'échantillons de l'histoire)"
+    ],
+    [
+      "Agence & programme",
+      "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+    ],
+    [
+      "Lancement",
+      "12 septembre 1970, 13h25m36s UTC — Cosmodrome de Baïkonour (Site 81/23), fusée Proton-K / Bloc D (8K82K)"
+    ],
+    [
+      "Alunissage",
+      "20 septembre 1970, 05h18 UTC — Mare Fecunditatis (Mer de la Fécondité), à 100 km au sud du cratère Webb (0,68° S, 56,3° E)"
+    ],
+    [
+      "Durée de mission",
+      "12 jours au total (8 jours de vol Terre-Lune/surface + 4 jours de retour direct vers la Terre le 24 septembre 1970)"
+    ],
+    [
+      "Type de mission",
+      "Sonde automatique robotique de retour d'échantillons lunaires sans intervention humaine"
+    ],
+    [
+      "Véhicules",
+      "Proton-K / Bloc D · Étage de descente KTDU-417 (avec foreuse automatique) · Étage de remontée KRD-61 · Capsule sphérique de retour"
+    ],
+    [
+      "Statut",
+      "✔ Réussie — Premier succès mondial de retour automatique d'échantillons extraterrestres (101 g)"
+    ]
+  ],
+  "sourceFile": "Lune/Luna/Fiche mission Luna 16 - Hardware perdu dans l_espace.pdf",
+  "pdf": "luna-16.pdf",
+  "pages": [
+    [
+      {
+        "y": 51.50250244140625,
+        "type": "text",
+        "text": "EXPLORATION LUNAIRE ROBOTIQUE · CATALOGUE DU PATRIMOINE SPATIAL Luna 16 (URSS) — Fiche « Plus de détails »"
+      },
+      {
+        "y": 116.38420867919922,
+        "type": "text",
+        "text": "Synthèse hardware : ~1 580 kg de matériel laissé sur la Lune dans Mare Fecunditatis (étage de descente KTDU-417 et foreuse automatique posés intacts) · 0 objet actif en 2026 (mission de 10 jours en septembre"
+      },
+      {
+        "y": 142.0050048828125,
+        "type": "text",
+        "text": "1970) · 1 capsule de rentrée récupérée sur Terre avec 101 g de sol lunaire."
+      },
+      {
+        "y": 177.41712951660156,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 203.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Luna 16 (objet Ye-8-5 n° 404 — Première sonde automatique de retour d'échantillons de l'histoire)"
+          ],
+          [
+            "Agence & programme",
+            "URSS (Bureau d'études Lavotchkine sous la direction de Gueorgui Babakine) — Programme Luna"
+          ],
+          [
+            "Lancement",
+            "12 septembre 1970, 13h25m36s UTC — Cosmodrome de Baïkonour (Site 81/23), fusée Proton-K / Bloc D (8K82K)"
+          ],
+          [
+            "Alunissage",
+            "20 septembre 1970, 05h18 UTC — Mare Fecunditatis (Mer de la Fécondité), à 100 km au sud du cratère Webb (0,68° S, 56,3° E)"
+          ],
+          [
+            "Durée de mission",
+            "12 jours au total (8 jours de vol Terre-Lune/surface + 4 jours de retour direct vers la Terre le 24 septembre 1970)"
+          ],
+          [
+            "Type de mission",
+            "Sonde automatique robotique de retour d'échantillons lunaires sans intervention humaine"
+          ],
+          [
+            "Véhicules",
+            "Proton-K / Bloc D · Étage de descente KTDU-417 (avec foreuse automatique) · Étage de remontée KRD-61 · Capsule sphérique de retour"
+          ],
+          [
+            "Statut",
+            "✔ Réussie — Premier succès mondial de retour automatique d'échantillons extraterrestres (101 g)"
+          ]
+        ]
+      },
+      {
+        "y": 526.9171142578125,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 558.75,
+        "type": "text",
+        "text": "Badges d'état : ● Toujours actif · ■ Intact mais inactif · ▲ Détruit / écrasé · ? Localisation inconnue"
+      },
+      {
+        "y": 591.5733642578125,
+        "type": "text",
+        "text": "A. Surface lunaire — Mare Fecunditatis (~1,58 t laissées sur place)"
+      },
+      {
+        "y": 612.1875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage de descente Ye- 8-5 (plateforme KTDU- 417)",
+            "~1 580 kg (à sec)",
+            "■ Intact / inactif",
+            "Masse initiale de 5 727 kg au lancement. Structure octogonale à 4 pieds stabilisateurs abritant le moteur principal KTDU-417, les réservoirs d'ergols vides, le système de télécommunications et l'embase de support de la foreuse automatique. Repose depuis le 20 septembre 1970 à la surface de Mare Fecunditatis (0,68° S, 56,3° E)."
+          ]
+        ]
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 16 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 1 of 3"
+      }
+    ],
+    [
+      {
+        "y": 56.0625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Foreuse automatique rotative & bras foreur",
+            "~45 kg",
+            "■ Intact / inactif",
+            "Mors de forage articulé muni d'une tarière électrique rotative ayant foré verticalement le régolithe lunaire sur 35 centimètres de profondeur, préscellé la carotte cylindrique et l'avoir basculée directement dans le conteneur étanche de la capsule de retour."
+          ],
+          [
+            "Instruments de contrôle, radiomètre & optique",
+            "~25 kg (inclus)",
+            "■ Intact / inactif",
+            "Téléphotomètre panoramique (ayant transmis les images de la zone de prélèvement), radiomètre de surface mesurant la température locale et centrale de commande autonome."
+          ]
+        ]
+      },
+      {
+        "y": 245.8233642578125,
+        "type": "text",
+        "text": "B. Espace cislunaire & retombées lanceur Proton-K"
+      },
+      {
+        "y": 266.8125,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse",
+            "État",
+            "Détails"
+          ],
+          [
+            "Quatrième étage Bloc D (fusée Proton-K)",
+            "~2 450 kg (à sec)",
+            "■ Orbite solaire / haute",
+            "Étage cryogénique ayant assuré l'injection translunaire de la sonde Luna 16 le 12 septembre 1970 ; placé ensuite sur une orbite héliocentrique stable."
+          ],
+          [
+            "Troisième étage UR- 500K (fusée Proton- K)",
+            "~4 180 kg (à sec)",
+            "▲ Désintégré",
+            "Étage à ergols hypergoliques largué lors du lancement du 12 septembre 1970 ; rentré et consumé dans l'atmosphère terrestre quelques heures après le tir."
+          ]
+        ]
+      },
+      {
+        "y": 428.8233642578125,
+        "type": "text",
+        "text": "C. Récupérés sur Terre (Échantillons et capsule)"
+      },
+      {
+        "y": 451.770263671875,
+        "type": "text",
+        "text": "Capsule de retour atmosphérique (~35 kg) : sphère thermique de 50 cm larguée par l'étage de remontée à l'approche de la Terre le 24 septembre 1970 ; entrée atmosphérique balistique à 11 km/s, ouverture réussie du parachute et atterrissage en douceur dans les steppes kazakhes (à 80 km au sud-est de Jezkazgan)."
+      },
+      {
+        "y": 515.520263671875,
+        "type": "text",
+        "text": "Échantillon lunaire (101 grammes) : carotte de régolithe basaltique prélevée à 35 cm de profondeur dans Mare Fecunditatis, scellée hermétiquement sous vide dans l'espace et partagée par l'Académie des sciences d'URSS avec la NASA et le CNRS français."
+      },
+      {
+        "y": 572.8233642578125,
+        "type": "text",
+        "text": "D. Jets en vol"
+      },
+      {
+        "y": 595.020263671875,
+        "type": "text",
+        "text": "Coiffe aérodynamique (4,35 m) & bouclier thermique de croisière : coiffe éjectée durant l'ascension le 12 septembre 1970 ; capot de protection du système de forage largué juste avant le début du carottage dans Mare Fecunditatis le 20 septembre 1970."
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 16 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 2 of 3"
+      }
+    ],
+    [
+      {
+        "y": 67.91712951660156,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 93.5625,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "12 septembre 1970, 13h25m36s UTC",
+            "Lancement de la fusée Proton-K depuis Baïkonour et injection sur trajectoire translunaire."
+          ],
+          [
+            "17 septembre 1970, 11h38 UTC",
+            "Insertion réussie en orbite lunaire circulaire (110 km d'altitude, inclinaison 70°)."
+          ],
+          [
+            "20 septembre 1970, 05h18 UTC",
+            "Allumage du moteur KTDU-417 et alunissage entièrement automatique en douceur dans Mare Fecunditatis (0,68° S, 56,3° E)."
+          ],
+          [
+            "20 septembre 1970, ~06h00 UTC",
+            "Déploiement du bras foreur, forage vertical à 35 cm de profondeur, transfert automatique de l'échantillon dans la capsule de la fusée de remontée."
+          ],
+          [
+            "21 septembre 1970, 05h43 UTC",
+            "Mise à feu de l'étage de remontée KRD-61 : décollage direct de la Lune sans pilote vers la Terre (trajectoire balistique libre de 84 heures)."
+          ],
+          [
+            "24 septembre 1970, 05h26 UTC",
+            "Entrée de la capsule dans l'atmosphère terrestre et atterrissage en parachute au Kazakhstan, ramenant sur Terre 101 g de sol lunaire."
+          ]
+        ]
+      },
+      {
+        "y": 346.1671447753906,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 373.020263671875,
+        "type": "text",
+        "text": "Premier retour d'échantillons extraterrestres sans équipage humain : triomphe technologique majeur pour l'URSS, Luna 16 a prouvé qu'une mission robotique complexe pouvait accomplir un cycle complet d'alunissage, de forage automatisé et de rentrée balistique interplanétaire pour un coût et un risque infiniment moindres qu'un vol habité."
+      },
+      {
+        "y": 436.770263671875,
+        "type": "text",
+        "text": "Caractérisation géologique de Mare Fecunditatis : l'analyse des 101 grammes de sol basaltique (riches en pyroxènes, plagioclases et ilménite) a confirmé que les mers lunaires de l'est sont formées de basaltes pauvres en titane, âgés d'environ 3,4 milliards d'années, offrant un point de comparaison indispensable avec les échantillons d'Apollo 11 et 12."
+      },
+      {
+        "y": 500.520263671875,
+        "type": "text",
+        "text": "Ouverture de la diplomatie scientifique des échantillons : en acceptant d'échanger une fraction de la carotte de Luna 16 contre des échantillons d'Apollo 11 et 12 lors d'une conférence à Moscou en 1971, l'URSS a amorcé une coopération scientifique directe avec la communauté internationale américaine et européenne."
+      },
+      {
+        "y": 575.6671142578125,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 602.5869140625,
+        "type": "text",
+        "text": "NASA NSSDCA — Luna 16 Spacecraft & Sample Return Archive (nssdc.gsfc.nasa.gov)"
+      },
+      {
+        "y": 620.5869140625,
+        "type": "text",
+        "text": "NPO Lavotchkine / IKI RAN — First Automated Lunar Sample Return : Luna 16 (Ye-8-5)"
+      },
+      {
+        "y": 638.5869140625,
+        "type": "text",
+        "text": "Vinogradov, A. P. (1971) — Preliminary Data on Lunar Ground Brought to Earth by Automatic Station Luna-16 (Geokhimiya)"
+      },
+      {
+        "y": 796.2525024414062,
+        "type": "text",
+        "text": "Luna 16 (URSS) — Fiche « Plus de détails » · Inventaire du hardware Page 3 of 3"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "images": [
+    {
+      "title": "Vibration Testing of JUICE Mission's RIME Radar Transmitter",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2020-09-21T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA24024",
+      "nasaId": "PIA24024",
+      "description": "NASA's Jet Propulsion Laboratory built and shipped the receiver, transmitter, and electronics necessary to complete the radar instrument for Jupiter Icy Moons Explorer (JUICE), the ESA (European Space Agency) mission to explore Jupiter and its three large icy moons.  In this photo, shot at JPL on April 27, 2020, the transmitter undergoes random vibration testing to ensure the instrument can survive the shaking that comes with launch.  Part of an instrument called Radar for Icy Moon Exploration, or RIME, the transmitter sends out radio waves, which can penetrate surfaces of icy moons and help scientists \"see\" underneath. A collaboration between JPL and the Italian Space Agency (ASI), RIME is one of 10 instruments that will fly aboard ESA's Jupiter Icy Moons Explorer (JUICE) mission, set to launch in 2022.  https://photojournal.jpl.nasa.gov/catalog/PIA24024",
+      "src": "archives/juice-nasa-PIA24024.jpg"
+    },
+    {
+      "title": "RIME Instrument en Route to JUICE",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2020-09-21T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA24026",
+      "nasaId": "PIA24026",
+      "description": "NASA's Jet Propulsion Laboratory built and shipped the receiver, transmitter and electronics necessary to complete the radar instrument for the Jupiter Icy Moons Explorer (JUICE) mission. Set to launch in 2022, JUICE is the ESA (European Space Agency) mission to explore Jupiter and its three large icy moons.  From front: JPL engineers and technicians Jeremy Steinert, Jordan Tanabe, Glenn Jeffery, and Robert Johnson follow COVID-19 Safe-at-Work guidelines as they transport the transmitter and electronics on Aug. 19, 2020, for shipping to the Italian Space Agency (ASI).  ASI is collaborating with JPL to build the instrument, called Radar for Icy Moon Exploration (RIME). It is one of 10 instruments that will fly aboard JUICE.  https://photojournal.jpl.nasa.gov/catalog/PIA24026",
+      "src": "archives/juice-nasa-PIA24026.jpg"
+    },
+    {
+      "title": "JUICE Mission's RIME Transmitter Exits Thermal Chamber",
+      "credit": "NASA/JPL-Caltech",
+      "date": "2020-09-21T00:00:00Z",
+      "source": "https://images.nasa.gov/details/PIA24025",
+      "nasaId": "PIA24025",
+      "description": "NASA's Jet Propulsion Laboratory built and shipped the receiver, transmitter and electronics necessary to complete the radar instrument for ESA's (European Space Agency's) Jupiter Icy Moons Explorer (JUICE) mission. Set to launch in 2022, JUICE will explore Jupiter and its three large icy moons.  The transmitter works by sending out radio waves, which can penetrate surfaces of icy moons so that scientists \"see\" underneath. The instrument, called Radar for Icy Moon Exploration, or RIME, is a collaboration by JPL and the Italian Space Agency (ASI) and is one of ten instruments that will fly aboard.  This photo, shot at JPL on July 23, 2020, shows the transmitter as it exits a thermal vacuum chamber. The test is one of several designed to ensure the hardware can survive the conditions of space travel. The thermal chamber simulates deep space by creating a vacuum and by varying the temperatures to match those the instrument will experience over the life of the mission.  https://photojournal.jpl.nasa.gov/catalog/PIA24025",
+      "src": "archives/juice-nasa-PIA24025.jpg"
+    }
+  ],
+  "videos": [],
+  "documentary": {
+    "src": "films/juice.mp4",
+    "local": true,
+    "title": "JUICE (ESA) · Film documentaire en photographies (24 s, muet)",
+    "credit": "RELIC / archives photographiques créditées dans ce dossier",
+    "duration": 24,
+    "source": "juice.pdf",
+    "fingerprint": "e6d61c54a967a9631b95e6985bd9d5c21d17b246a1991fe7e358de422b09a39b"
+  }
+}

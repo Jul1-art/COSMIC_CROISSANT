@@ -1,0 +1,481 @@
+{
+  "id": "galileo",
+  "name": "Galileo",
+  "body": "outer",
+  "family": "orbiter",
+  "year": 1989,
+  "summary": "~2 560 kg au lancement (orbiteur + sonde atmosphérique) · 1 orbiteur (1 880 kg à sec) détruit dans l'atmosphère de Jupiter le 21 septembre 2003 · 1 sonde atmosphérique (339 kg) vaporisée en 1995 · aucun objet encore actif · 1 étage IUS d'emplacement inconnu",
+  "facts": [
+    [
+      "Nom officiel",
+      "Galileo (orbiteur + sonde atmosphérique) — en hommage à Galilée, découvreur des lunes de Jupiter"
+    ],
+    [
+      "Agence & programme",
+      "NASA / Jet Propulsion Laboratory — mission d'orbiteur autour de Jupiter"
+    ],
+    [
+      "Lancement",
+      "18 octobre 1989 — navette Atlantis (STS-34) avec étage supérieur à deux étages IUS (Inertial Upper Stage)"
+    ],
+    [
+      "Trajectoire",
+      "Vénus février 1990 · Terre décembre 1990 · astéroïde Gaspra 1991 · Terre décembre 1992 · astéroïde Ida 1993"
+    ],
+    [
+      "Arrivée à Jupiter",
+      "7 décembre 1995 — entrée de la sonde et insertion de l'orbiteur ; 8 ans autour de Jupiter"
+    ],
+    [
+      "Fin de mission",
+      "21 septembre 2003, 18h57 UTC — plongeon contrôlé dans Jupiter, après 14 ans de mission"
+    ],
+    [
+      "Retour sur Terre",
+      "Aucun — l'orbiteur a été volontairement détruit ; la navette Atlantis, elle, est revenue"
+    ],
+    [
+      "Équipage",
+      "Aucun (sonde robotique) — pilotée depuis le JPL (Californie)"
+    ],
+    [
+      "Véhicules",
+      "Navette Atlantis · IUS à deux étages · orbiteur Galileo · sonde atmosphérique"
+    ],
+    [
+      "Statut",
+      "Réussie malgré l'antenne bloquée — mission terminée ; ~35 rencontres avec les lunes de Jupiter, 14 ans, ~4,6 milliards de km"
+    ]
+  ],
+  "sourceFile": "Planètes gazeuses, naines et espace lointain/Fiche-mission-Galileo-hardware-perdu-dans-l-espace.pdf",
+  "pdf": "galileo.pdf",
+  "pages": [
+    [
+      {
+        "y": 55.9188232421875,
+        "type": "text",
+        "text": "Galileo — Fiche « Plus de détails »"
+      },
+      {
+        "y": 96.6125717163086,
+        "type": "text",
+        "text": "Synthèse hardware : ~2 560 kg au lancement (orbiteur + sonde atmosphérique) · 1 orbiteur (1 880 kg à sec) détruit dans l'atmosphère de Jupiter le 21 septembre 2003 · 1 sonde atmosphérique (339 kg) vaporisée en 1995 · aucun objet encore actif · 1 étage IUS d'emplacement inconnu"
+      },
+      {
+        "y": 167.317626953125,
+        "type": "text",
+        "text": "Identité de la mission"
+      },
+      {
+        "y": 189.95437622070312,
+        "type": "table",
+        "rows": [
+          [
+            "Champ",
+            "Contenu"
+          ],
+          [
+            "Nom officiel",
+            "Galileo (orbiteur + sonde atmosphérique) — en hommage à Galilée, découvreur des lunes de Jupiter"
+          ],
+          [
+            "Agence & programme",
+            "NASA / Jet Propulsion Laboratory — mission d'orbiteur autour de Jupiter"
+          ],
+          [
+            "Lancement",
+            "18 octobre 1989 — navette Atlantis (STS-34) avec étage supérieur à deux étages IUS (Inertial Upper Stage)"
+          ],
+          [
+            "Trajectoire",
+            "Vénus février 1990 · Terre décembre 1990 · astéroïde Gaspra 1991 · Terre décembre 1992 · astéroïde Ida 1993"
+          ],
+          [
+            "Arrivée à Jupiter",
+            "7 décembre 1995 — entrée de la sonde et insertion de l'orbiteur ; 8 ans autour de Jupiter"
+          ],
+          [
+            "Fin de mission",
+            "21 septembre 2003, 18h57 UTC — plongeon contrôlé dans Jupiter, après 14 ans de mission"
+          ],
+          [
+            "Retour sur Terre",
+            "Aucun — l'orbiteur a été volontairement détruit ; la navette Atlantis, elle, est revenue"
+          ],
+          [
+            "Équipage",
+            "Aucun (sonde robotique) — pilotée depuis le JPL (Californie)"
+          ],
+          [
+            "Véhicules",
+            "Navette Atlantis · IUS à deux étages · orbiteur Galileo · sonde atmosphérique"
+          ],
+          [
+            "Statut",
+            "Réussie malgré l'antenne bloquée — mission terminée ; ~35 rencontres avec les lunes de Jupiter, 14 ans, ~4,6 milliards de km"
+          ]
+        ]
+      },
+      {
+        "y": 478.91766357421875,
+        "type": "text",
+        "text": "Inventaire du hardware perdu"
+      },
+      {
+        "y": 503.8606262207031,
+        "type": "text",
+        "text": "Badges d'état : ● toujours actif · ● intact mais inactif · ● détruit / retombé · ● localisation inconnue"
+      },
+      {
+        "y": 532.1969604492188,
+        "type": "text",
+        "text": "A. Atmosphère de Jupiter — sonde atmosphérique (339 kg)"
+      },
+      {
+        "y": 550.5543823242188,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Sonde atmosphérique",
+            "339 kg",
+            "",
+            "Larguée en juillet 1995 ; entrée dans l'atmosphère de Jupiter le 7 décembre 1995 à ~48 km/s (~170 000 km/h) ; a transmis pendant ~58 minutes avant que la chaleur et la pression ne la réduisent au silence ; vaporisée vers le 8 décembre"
+          ],
+          [
+            "Bouclier thermique / module de décélération",
+            "—",
+            "",
+            "Bouclier ablatif en carbone-phénolique ; module de décélération largué ~8 s après l'ouverture du parachute principal"
+          ],
+          [
+            "7 instruments de la sonde",
+            "—",
+            "",
+            "Structure atmosphérique, spectromètre de masse neutre, détecteur d'hélium, néphélomètre, radiomètre de flux, détecteur d'éclairs et de particules, radio"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 53.9969482421875,
+        "type": "text",
+        "text": "B. Atmosphère de Jupiter — orbiteur Galileo (1 880 kg à sec) détruit"
+      },
+      {
+        "y": 72.3543701171875,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Orbiteur Galileo (bus)",
+            "1 880 kg à sec · 2 220 kg au lancement",
+            "",
+            "Presque à court de carburant ; plongé dans Jupiter le 21 septembre 2003 à ~48,3 km/s, pour éviter un impact futur sur Europa et sa possible contamination. Détruit dans l'atmosphère, écrasé et fondu"
+          ],
+          [
+            "Antenne à grand gain",
+            "4,8 m de diamètre",
+            "",
+            "Ne s'est pas entièrement déployée : environ 3 de ses 18 baleines sont restées coincées par friction. La mission a dû s'appuyer sur des antennes à faible gain, avec nouveau logiciel et stations au sol améliorées"
+          ],
+          [
+            "2 générateurs RTG",
+            "×2",
+            "",
+            "~570 W au lancement, 493 W à l'arrivée à Jupiter, 410 W en fin de vie"
+          ],
+          [
+            "Instruments de la partie stabilisée",
+            "—",
+            "",
+            "Imageur à état solide, spectromètre proche infrarouge (NIMS), spectromètre ultraviolet, photopolarimètre-radiomètre"
+          ],
+          [
+            "Instruments de la partie rotative",
+            "—",
+            "",
+            "Détecteur de poussières, détecteur de particules énergétiques, compteur d'ions lourds, magnétomètre, plasma, ondes de plasma"
+          ],
+          [
+            "Radiations absorbées",
+            "—",
+            "",
+            "Plus de quatre fois la dose pour laquelle l'engin était conçu"
+          ]
+        ]
+      },
+      {
+        "y": 360.79693603515625,
+        "type": "text",
+        "text": "C. Étages de lancement"
+      },
+      {
+        "y": 379.15435791015625,
+        "type": "table",
+        "rows": [
+          [
+            "Objet",
+            "Masse / taille",
+            "État",
+            "Détails"
+          ],
+          [
+            "Étage IUS à deux étages",
+            "n.c.",
+            "",
+            "Après l'injection vers Vénus, séparé de la sonde ; devenir exact non confirmé dans mes sources"
+          ],
+          [
+            "Réservoir externe et propulseurs de la navette",
+            "n.c.",
+            "",
+            "Réservoir externe retombé dans l'océan ; propulseurs d'appoint récupérés (pratique de l'époque)"
+          ]
+        ]
+      },
+      {
+        "y": 474.79693603515625,
+        "type": "text",
+        "text": "D. Récupérés sur Terre (pour comparaison)"
+      },
+      {
+        "y": 492.0043640136719,
+        "type": "text",
+        "text": "• La navette Atlantis a atterri à la fin de la mission STS-34 ; aucune pièce de Galileo n'est récupérée"
+      },
+      {
+        "y": 523.0043334960938,
+        "type": "text",
+        "text": "• Le retour de la mission est scientifique : 35 rencontres avec les lunes de Jupiter, des données sur Io, Europa, Ganymède, Callisto, et la première mesure directe de l'atmosphère de Jupiter"
+      },
+      {
+        "y": 554.0043334960938,
+        "type": "text",
+        "text": "• Galileo a aussi observé les impacts de la comète Shoemaker-Levy 9 sur Jupiter en 1994"
+      },
+      {
+        "y": 581.7969360351562,
+        "type": "text",
+        "text": "E. Jets en vol"
+      },
+      {
+        "y": 599.0043334960938,
+        "type": "text",
+        "text": "• Étage IUS séparé après l'injection interplanétaire (voir C)"
+      },
+      {
+        "y": 616.0043334960938,
+        "type": "text",
+        "text": "• Module de décélération de la sonde, largué pendant la descente dans Jupiter (voir A)"
+      },
+      {
+        "y": 653.11767578125,
+        "type": "text",
+        "text": "Chronologie"
+      },
+      {
+        "y": 675.7543334960938,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "18 octobre 1989",
+            "Lancement depuis la navette Atlantis (STS-34)"
+          ],
+          [
+            "1990–1992",
+            "Assistances gravitationnelles de Vénus (février 1990) puis de la Terre (décembre 1990 et décembre 1992)"
+          ],
+          [
+            "1991 · 1993",
+            "Survols des astéroïdes Gaspra (1991) puis Ida et sa petite lune Dactyl (1993)"
+          ],
+          [
+            "1994",
+            "Observation des impacts de la comète Shoemaker-Levy 9 sur Jupiter"
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "y": 51.354339599609375,
+        "type": "table",
+        "rows": [
+          [
+            "Date",
+            "Événement"
+          ],
+          [
+            "12–13 juillet 1995",
+            "Largage de la sonde atmosphérique"
+          ],
+          [
+            "7 décembre 1995",
+            "Entrée de la sonde dans Jupiter (voir la séquence ci-dessous) ; arrivée de l'orbiteur"
+          ],
+          [
+            "Décembre 1997",
+            "Fin de la mission principale (11 orbites, 23 mois) ; début de la mission étendue Galileo Europa"
+          ],
+          [
+            "2002",
+            "Survol d'Amalthée, seule rencontre avec cette lune"
+          ],
+          [
+            "21 septembre 2003, 18h57 UTC",
+            "Plongeon dans Jupiter — fin de la mission"
+          ]
+        ]
+      },
+      {
+        "y": 207.596923828125,
+        "type": "text",
+        "text": "Séquence d'entrée de la sonde — 7 décembre 1995"
+      },
+      {
+        "y": 228.26060485839844,
+        "type": "text",
+        "text": "Heures données par la NASA en EST et converties en UTC (+5 h) ; elles sont celles des événements, pas de leur réception sur Terre."
+      },
+      {
+        "y": 257.9543762207031,
+        "type": "table",
+        "rows": [
+          [
+            "Heure (UTC)",
+            "Étape",
+            "Détails et matériel laissé"
+          ],
+          [
+            "22h04",
+            "Entrée dans l'atmosphère",
+            "Vitesse ~48 km/s ; début du relais de données vers l'orbiteur"
+          ],
+          [
+            "22h05:52",
+            "Parachute pilote",
+            "Premier parachute déployé"
+          ],
+          [
+            "22h05:54",
+            "Parachute principal",
+            "Deux secondes plus tard"
+          ],
+          [
+            "22h06:02",
+            "Module de décélération largué",
+            "Le bouclier thermique et son support sont jetés et tombent dans Jupiter"
+          ],
+          [
+            "22h06:06",
+            "Début des mesures et de la transmission",
+            "Mesures directes dès 22h06:06 ; radio vers l'orbiteur dès 22h06:15"
+          ],
+          [
+            "~22h08",
+            "Sommet des nuages visibles",
+            "La sonde atteint les nuages visibles"
+          ],
+          [
+            "22h12",
+            "Pression égale à celle du niveau de la mer sur Terre",
+            "Environ 1 bar"
+          ],
+          [
+            "22h34",
+            "Température égale à celle d'une pièce sur Terre",
+            "—"
+          ],
+          [
+            "23h04",
+            "Fin de la mission de base",
+            "Durée prévue d'environ une heure après l'entrée"
+          ],
+          [
+            "23h19",
+            "L'orbiteur cesse de recevoir",
+            "Si la sonde transmettait encore ; au total ~58 minutes de données"
+          ],
+          [
+            "~08h00, 8 déc.",
+            "Vaporisation complète estimée",
+            "La sonde est entièrement détruite par la chaleur"
+          ]
+        ]
+      },
+      {
+        "y": 589.5176391601562,
+        "type": "text",
+        "text": "Science & héritage"
+      },
+      {
+        "y": 611.0043334960938,
+        "type": "text",
+        "text": "• Première sonde dans un géant gazeux : Galileo a envoyé la seule sonde ayant jamais échantillonné directement l'atmosphère de Jupiter, révélant une atmosphère étonnamment sèche à cet endroit."
+      },
+      {
+        "y": 656.0043334960938,
+        "type": "text",
+        "text": "• Océans cachés : les mesures sur Europa, Ganymède et Callisto ont suggéré des océans sous la glace, ce qui a fait d'Europa une cible majeure de la recherche de vie."
+      },
+      {
+        "y": 687.0043334960938,
+        "type": "text",
+        "text": "• Pourquoi détruire Galileo ? Le carburant s'épuisait ; un impact futur sur Europa aurait pu la contaminer avec des microbes terrestres. Le plongeon dans Jupiter évitait ce risque."
+      },
+      {
+        "y": 718.0043334960938,
+        "type": "text",
+        "text": "• Succès malgré la panne : l'antenne principale n'ayant pas fonctionné, les équipes ont compressé les données et amélioré les réseaux au sol pour sauver la mission."
+      },
+      {
+        "y": 749.0043334960938,
+        "type": "text",
+        "text": "• Statut juridique : le traité de l'espace de 1967 impose d'éviter la contamination des corps célestes ; aucune appropriation nationale n'est possible dans l'espace."
+      }
+    ],
+    [
+      {
+        "y": 54.7176513671875,
+        "type": "text",
+        "text": "Sources & pour aller plus loin"
+      },
+      {
+        "y": 76.2043685913086,
+        "type": "text",
+        "text": "• NASA NSSDC — Galileo Probe Entry Timeline : nssdc.gsfc.nasa.gov/planetary/galileo_probe_time.html"
+      },
+      {
+        "y": 93.2043685913086,
+        "type": "text",
+        "text": "• NASA Science — « What was the Galileo probe and what did it do at Jupiter? »"
+      },
+      {
+        "y": 110.2043685913086,
+        "type": "text",
+        "text": "• Spaceflight Now — « Galileo spacecraft crashes into Jupiter » et « Galileo mission overview » (septembre 2003)"
+      },
+      {
+        "y": 141.20437622070312,
+        "type": "text",
+        "text": "• Wikipedia — Galileo (spacecraft) : masses, instruments, RTG"
+      }
+    ]
+  ]
+}
