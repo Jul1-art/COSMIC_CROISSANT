@@ -1184,6 +1184,12 @@ createComet67P({THREE,scene,auToWorld,onSelect:id=>selectBody(id),getLanguage,ca
 const atlasMissionOptions={THREE,scene,camera,controls,renderer,createLine:createFlightLine,onMaterialsChanged:()=>missionDepth.install(scene),loadSurface:options=>import('../missions/apollo-surface.js').then(module=>module.loadApolloSurface(options)),
  onCameraTranslation(shift){if(flight)for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].add(shift);},
  onCameraRotation(rotation,origin){if(flight){for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].sub(origin).applyQuaternion(rotation).add(origin);for(const key of ['fromUp','toUp'])flight[key]?.applyQuaternion(rotation);}},
+ onCameraTransform({from,to,rotation}){
+  if(!flight)return;
+  for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].sub(from).applyQuaternion(rotation).add(to);
+  flight.fromUp?.applyQuaternion(rotation);flight.toUp?.applyQuaternion(rotation);
+  if(flight.approach){flight.approach.direction.applyQuaternion(rotation);flight.approach.rotation.premultiply(rotation).multiply(rotation.clone().invert()).normalize();}
+ },
  onRebase(shift){
   missionOrigin.add(shift);if(atlasMission?.archive){for(const group of planetGroups.values())group.position.sub(shift);for(const node of [sun,solarGlow,solarCorona,sunlight])node.position.sub(shift);}else planetGroups.get('earth').position.sub(shift);camera.position.sub(shift);controls.target.sub(shift);
   if(flight)for(const key of ['fromPosition','fromTarget','toPosition','toTarget'])flight[key].sub(shift);
@@ -1204,7 +1210,7 @@ const atlasMissionOptions={THREE,scene,camera,controls,renderer,createLine:creat
   applyFocusVisibility();setDetailsCollapsed(true);refreshOrbits();updateExplorationProjection();inspectionControls?.publish(true);if(!naturalSystems)ensureMoonTexture();
   controls.enableZoom=true;controls.enablePan=true;controls.enableDamping=true;controls.zoomToCursor=false;
   controls.minDistance=.0000002;controls.maxDistance=SOLAR_VIEW_LIMIT;controls.rotateSpeed=.48;
-  controls.screenSpacePanning=true;controls.zoomToCursor=true;controls.dampingFactor=.08;controls.zoomSpeed=1;controls.maxTargetRadius=Infinity;
+  controls.screenSpacePanning=true;controls.zoomToCursor=Boolean(atlasMission.archive);controls.dampingFactor=.08;controls.zoomSpeed=1;controls.maxTargetRadius=Infinity;
   controls.enabled=true;hideGestureHint();window.dispatchEvent(new CustomEvent('planet-dashboard-panel',{detail:{open:false}}));
  },
  onStop(restore){

@@ -176,6 +176,7 @@ class OrbitControls extends EventDispatcher {
 			// so camera.up is the orbit axis
 			const quat = new Quaternion().setFromUnitVectors( object.up, new Vector3( 0, 1, 0 ) );
 			const quatInverse = quat.clone().invert();
+			const yAxis = new Vector3( 0, 1, 0 );
 
 			const lastPosition = new Vector3();
 			const lastQuaternion = new Quaternion();
@@ -186,6 +187,11 @@ class OrbitControls extends EventDispatcher {
 			return function update( deltaTime = null ) {
 
 				const position = scope.object.position;
+
+				// RELIC: planet and mission views can change the camera's local up.
+				// Refresh this basis so dragging follows the displayed horizon.
+				quat.setFromUnitVectors( scope.object.up, yAxis );
+				quatInverse.copy( quat ).invert();
 
 				offset.copy( position ).sub( scope.target );
 

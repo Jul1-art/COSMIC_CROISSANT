@@ -127,3 +127,15 @@ test('a pinch released before the next frame retains its final zoom',()=>{
   f.element.emit('pointerup',touch(31,650,320));f.element.emit('pointerup',touch(30,350,320));
   f.tick(180);assert.ok(f.controls.getDistance()<initial*.8);f.cleanup();
 });
+
+test('changing to the lunar horizon keeps rotation and panning aligned with the visible view',()=>{
+ const camera=new THREE.PerspectiveCamera(45,1.5,.000001,1000),element=new Surface();camera.position.set(0,2,4);
+ const controls=new OrbitControls(camera,element);controls.enableDamping=false;controls.screenSpacePanning=true;controls.zoomToCursor=false;
+ const normal=new THREE.Vector3(.7782,-.00655,-.628).normalize(),q=new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),normal);
+ camera.position.set(0,2,4).applyQuaternion(q);camera.up.copy(normal);camera.lookAt(controls.target);camera.updateMatrixWorld(true);controls.update();
+ element.emit('pointerdown');element.emit('pointermove',{clientX:560,clientY:355});element.emit('pointerup');
+ const local=camera.position.clone().applyQuaternion(q.clone().invert());assert.ok(local.x<0,'Dragging right turns around the displayed local vertical');assert.ok(local.y>2,'Dragging down raises the camera around the local horizon');
+ camera.updateMatrixWorld(true);const point=controls.target.clone();element.emit('pointerdown',{button:2});element.emit('pointermove',{button:2,clientX:560,clientY:320});element.emit('pointerup',{button:2});camera.updateMatrixWorld(true);
+ assert.ok(point.project(camera).x>0,'Right-drag grabs the scene and moves it right on screen');const position=camera.position.clone(),target=controls.target.clone();
+ for(let i=0;i<1000;i++)controls.update();assert.ok(camera.position.distanceTo(position)<1e-10);assert.ok(controls.target.distanceTo(target)<1e-10);controls.dispose();
+});

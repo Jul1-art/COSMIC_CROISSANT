@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),{chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const base=process.env.TEST_BASE_URL||'http://localhost:4174';
+try{
+ const page=await browser.newPage({viewport:{width:1280,height:900},serviceWorkers:'block'}),errors=[];page.setDefaultTimeout(60000);page.on('pageerror',e=>errors.push(e.message));
+ await page.route('https://api.cesium.com/**',r=>r.fulfill({status:403,body:'{}'}));
+ await page.route('**/src/atlas/app.js?*',async r=>{const source=await readFile(new URL('../../src/atlas/app.js',import.meta.url),'utf8');await r.fulfill({contentType:'application/javascript',body:source+`\nwindow.__siteTest={camera,controls,mission:atlasMission,THREE,scene};window.__sitePose=()=>{const root=scene.getObjectByName('Apollo 11 · relief LRO mesuré');if(!root)return null;root.updateWorldMatrix(true,false);return {camera:root.worldToLocal(camera.position.clone()).toArray(),target:root.worldToLocal(controls.target.clone()).toArray(),up:camera.up.clone().applyQuaternion(root.getWorldQuaternion(new THREE.Quaternion()).invert()).toArray(),world:camera.position.toArray(),time:atlasMission.time,mode:atlasMission.mode,flight:Boolean(flight),range:camera.position.distanceTo(controls.target)/(1.9/6371/1000),zoomToCursor:controls.zoomToCursor};};`});});
+ await page.addInitScript(()=>sessionStorage.setItem('relic:return-to-atlas',JSON.stringify({path:'/',at:Date.now()})));
+ await page.goto(new URL('/?mission=apollo-11&missionView=explore',base).href,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.querySelector('.atlas-mission-controls')?.getAttribute('aria-busy')==='false');
+ await page.locator('[data-mission-action=site]').click();await page.waitForFunction(()=>{const p=window.__sitePose?.();return p&&p.mode==='site'&&!p.flight&&p.range<100;});
+ const distance=(a,b)=>Math.hypot(...a.map((x,i)=>x-b[i]));let before=await page.evaluate(()=>window.__sitePose());assert.equal(before.zoomToCursor,false);
+ await page.waitForTimeout(1000);let after=await page.evaluate(()=>window.__sitePose());assert.ok(distance(before.camera,after.camera)<.001,'The idle site camera must not drift');
+ await page.locator('#mission-speed').selectOption('86400');await page.locator('[data-mission-action=play]').click();await page.waitForTimeout(1600);await page.locator('[data-mission-action=play]').click();after=await page.evaluate(()=>window.__sitePose());assert.ok(after.time>before.time);assert.ok(distance(before.camera,after.camera)<.005,'Playback must retain the observer location on the moving Moon');assert.ok(distance(before.target,after.target)<.005);assert.ok(distance(before.up,after.up)<1e-6);assert.ok(Math.hypot(...after.world)<.002,'Floating origin must remain close to the landing site');
+ // Time can also advance while a recenter flight is in progress.
+ await page.locator('#mission-speed').selectOption('3600');
+ await page.locator('[data-mission-action=reset]').click();await page.locator('[data-mission-action=play]').click();await page.waitForFunction(()=>!window.__sitePose().flight);await page.locator('[data-mission-action=play]').click();after=await page.evaluate(()=>window.__sitePose());assert.ok(distance(before.target,after.target)<.01);assert.ok(distance(before.camera,after.camera)<.01);
+ await page.evaluate(()=>{window.__fixedPoint=window.__siteTest.controls.target.clone();});await page.mouse.move(430,270);await page.mouse.down({button:'right'});await page.mouse.move(490,270,{steps:6});await page.mouse.up({button:'right'});await page.waitForTimeout(500);
+ assert.ok(await page.evaluate(()=>{const {camera}=window.__siteTest;camera.updateMatrixWorld(true);return window.__fixedPoint.clone().project(camera).x;})>0,'Right-drag should move the grabbed scene right');
+ before=await page.evaluate(()=>window.__sitePose());await page.mouse.move(500,260);await page.mouse.wheel(0,-180);await page.waitForTimeout(400);after=await page.evaluate(()=>window.__sitePose());assert.ok(after.range<before.range,'Wheel up zooms in');assert.ok(distance(before.target,after.target)<.005,'Wheel must not displace the focus toward the horizon');
+ await page.mouse.down();await page.mouse.move(540,290,{steps:5});await page.mouse.up();await page.waitForTimeout(900);before=await page.evaluate(()=>window.__sitePose());await page.waitForTimeout(1400);after=await page.evaluate(()=>window.__sitePose());assert.ok(distance(before.camera,after.camera)<.02,'Releasing a drag must not launch an endless camera movement');assert.ok(after.camera.every(Number.isFinite));
+ if(process.env.SCREENSHOT_PATH)await page.screenshot({path:process.env.SCREENSHOT_PATH});assert.deepEqual(errors,[]);console.log('PASS: Apollo landing-site playback, moving flight/rebase, idle stability, local-horizon drag, natural pan and stable wheel zoom');
+}finally{await browser.close();}

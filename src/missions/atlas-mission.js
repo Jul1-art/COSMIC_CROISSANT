@@ -3,7 +3,7 @@ import {loadFlightData,validateFlightData,flightState,sampleState,findInterval,i
 
 /** Mission geometry belongs to the existing atlas renderer. No renderer,
  * artificial transfer curve or replacement Earth/Moon is created here. */
-export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoonMesh,getEarthMesh,getRadius,frame,onStart,onStop,onTime,onStatus=()=>{},onRebase=()=>{},onCameraTranslation=()=>{},createLine,loadSurface,onSurfaceActive=()=>{},onMaterialsChanged=()=>{},loadModel,loadData=loadFlightData}){
+export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoonMesh,getEarthMesh,getRadius,frame,onStart,onStop,onTime,onStatus=()=>{},onRebase=null,onCameraTranslation=()=>{},onCameraTransform=()=>{},createLine,loadSurface,onSurfaceActive=()=>{},onMaterialsChanged=()=>{},loadModel,loadData=loadFlightData}){
  const group=new THREE.Group();group.name='Apollo 11 · native atlas';group.visible=false;scene.add(group);
  const fill=new THREE.HemisphereLight(0xffffff,0x555555,.85);group.add(fill);
  const V=(array=[0,0,0])=>new THREE.Vector3(...array);
@@ -16,9 +16,9 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
  const columbia=point('Columbia · point',0xffffff),eagle=point('Eagle · point',0xc7c7c7);
  const qScene=new THREE.Quaternion().setFromAxisAngle(V([1,0,0]),-Math.PI/2-ECLIPTIC_OBLIQUITY),qMesh=new THREE.Quaternion().setFromAxisAngle(V([1,0,0]),Math.PI/2);
  let active=false,starting=false,disposed=false,generation=0,data=null,pending=null,model=null,modelRequest=null,modelFailed=false,surface=null,surfaceRequest=null,surfaceActive=false,surfaceTimer=null,navigationRevision=0,surfaceRevision=0,surfaceFrameAt=0;
- let orbitalFrame=null;
+ let orbitalFrame=null,siteFrame=null,savedDamping=controls.enableDamping;
  let time=START,playing=false,speed=3600,mode='journey',lastReport=-Infinity,lastOrbit=-Infinity,routeRows=[],eagleRows=[];
- const earth=V(),moon=V(),site=V(),normal=V(),moonQuaternion=new THREE.Quaternion(),savedUp=camera.up.clone();
+ const earth=V(),moon=V(),site=V(),normal=V(),moonQuaternion=new THREE.Quaternion(),savedUp=camera.up.clone(),inertialUp=V([0,1,0]);
  const lat=APOLLO_11.site.latitude*Math.PI/180,lon=APOLLO_11.site.longitude*Math.PI/180,siteLocal=V([Math.cos(lat)*Math.cos(lon),Math.sin(lat),-Math.cos(lat)*Math.sin(lon)]);
  const abort=new AbortController();
  const meterScale=()=>scale()/1000;
@@ -96,6 +96,23 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
    if(orbitalFrame){const shift=center.clone().sub(orbitalFrame);if(shift.lengthSq()>0){camera.position.add(shift);controls.target.add(shift);onCameraTranslation(shift);}}
    orbitalFrame=center;
   }else orbitalFrame=null;
+  if(mode==='site'){
+   const origin=site.clone().add(earth),orientation=moonQuaternion.clone();
+   if(siteFrame){
+    const rotation=orientation.clone().multiply(siteFrame.orientation.clone().invert()).normalize();
+    const changed=origin.distanceToSquared(siteFrame.origin)>1e-24||1-Math.abs(orientation.dot(siteFrame.orientation))>1e-14;
+    if(changed){
+     for(const point of [camera.position,controls.target])point.sub(siteFrame.origin).applyQuaternion(rotation).add(origin);
+     camera.up.applyQuaternion(rotation).normalize();
+     onCameraTransform({from:siteFrame.origin.clone(),to:origin.clone(),rotation});
+    }
+   }
+   siteFrame={origin:origin.clone(),orientation};
+   // Keep metre-scale terrain near the origin while historical time advances.
+   if(surface&&onRebase&&origin.length()>.001){
+    siteFrame.origin.sub(origin);onRebase(origin);synchronizeBodies(state);surface.refreshShadows?.();
+   }
+  }else siteFrame=null;
   columbia.position.copy(project(state.columbia.position,state.seconds));columbia.visible=true;
   eagle.visible=Boolean(state.eagle);if(state.eagle)eagle.position.copy(project(state.eagle.position,state.seconds));
   route.visible=trail.visible=moonTrack.visible=mode==='journey';revealPath(trail,Math.min(routeRows.length,findInterval(routeRows,state.seconds)+1));
@@ -115,15 +132,15 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
  function reset({establish=false}={}){
   if(!active)return;render(true);
   if(mode==='site'){
-   const up=V([0,1,0]),tangent=up.addScaledVector(normal,-up.dot(normal)).normalize();
-   if(surface&&!establish){const origin=site.clone().add(earth);if(origin.length()>.001){onRebase(origin);surface.refreshShadows?.();render(true);}const target=site.clone().add(earth).addScaledVector(normal,3.4*meterScale());frame(target,target.clone().addScaledVector(normal,12*meterScale()).addScaledVector(tangent,22*meterScale()),normal,{approach:true});}
+   const tangent=localSouth.clone().applyQuaternion(moonQuaternion).negate();
+   if(surface&&!establish){const target=site.clone().add(earth).addScaledVector(normal,3.4*meterScale());frame(target,target.clone().addScaledVector(normal,12*meterScale()).addScaledVector(tangent,22*meterScale()),normal,{approach:true});}
    else{const target=site.clone().add(earth);frame(target,target.clone().addScaledVector(normal,getRadius('moon')*2.2).addScaledVector(tangent,getRadius('moon')*.7),normal);}
   }else if(mode==='orbit'){
-   const target=moon.clone().add(earth),distance=getRadius('moon')*5.5/Math.min(1,camera.aspect);frame(target,target.clone().add(normal.clone().add(V([0,.45,0])).normalize().multiplyScalar(distance)),savedUp);
+   const target=moon.clone().add(earth),distance=getRadius('moon')*5.5/Math.min(1,camera.aspect);frame(target,target.clone().add(normal.clone().add(V([0,.45,0])).normalize().multiplyScalar(distance)),inertialUp);
   }else{
    const box=new THREE.Box3().setFromPoints(routeRows.map(row=>project(row.slice(1,4),row[0]))),center=box.getCenter(V()).add(earth),extent=box.getSize(V()).length()*.5+getRadius('earth')*2;
    const distance=extent/Math.tan(camera.fov*Math.PI/360)/Math.min(1,camera.aspect)*1.15;
-   frame(center,center.clone().add(V([.12,.55,1]).normalize().multiplyScalar(distance)),savedUp);
+   frame(center,center.clone().add(V([.12,.55,1]).normalize().multiplyScalar(distance)),inertialUp);
   }
  }
  function report(){const state=flightState(data,time),name=state.seconds<data.anchors.find(a=>a.id==='csm-separation').t?'● Saturn V · Apollo 11':'● Columbia';onTime(time,playing,{method:mode==='site'&&surface?'LRO terrain and imagery · reconstructed trajectory':'Physical reconstruction · NASA milestones and JPL ephemerides',mode,vehicle:name+(state.eagle?' · ● Eagle':'')});}
@@ -149,27 +166,27 @@ export function createAtlasMission({THREE,scene,camera,controls,getEarth,getMoon
    try{
     if(!data){pending??=loadData({signal:abort.signal});data=await pending;if(!validateFlightData(data))throw new Error('The trajectory data is invalid.');}
     if(token!==generation||disposed)return;
-    starting=false;active=true;orbitalFrame=null;time=START;mode='journey';playing=!matchMedia('(prefers-reduced-motion: reduce)').matches;group.visible=true;
-    savedUp.copy(camera.up);onStart();buildRoute();reset();onStatus('ready');report();
+    starting=false;active=true;orbitalFrame=siteFrame=null;time=START;mode='journey';playing=!matchMedia('(prefers-reduced-motion: reduce)').matches;group.visible=true;
+    savedUp.copy(camera.up);savedDamping=controls.enableDamping;onStart();buildRoute();reset();onStatus('ready');report();
    }catch(error){if(token!==generation||disposed)return;starting=false;pending=null;data=null;onStatus('error',error.message||'The reconstruction could not start.');}
   },
   setTime(value){if(!active)return;time=missionState(value).time;if(time>=END)playing=false;render(true);report();},
   setPlaying(value){if(!active)return;playing=Boolean(value)&&time<END;report();},
   setSpeed(value){if(Number.isFinite(value)&&value>0&&value<=86400)speed=value;},
-  setMode(value){if(!active)return;mode=['site','orbit'].includes(value)?value:'journey';clearTimeout(surfaceTimer);if(mode==='site'){playing=false;time=eventTime('landing');surfaceRevision=navigationRevision;surfaceFrameAt=performance.now()+850;ensureModel();ensureSurface();}
+  setMode(value){if(!active)return;mode=['site','orbit'].includes(value)?value:'journey';controls.enableDamping=mode!=='site';clearTimeout(surfaceTimer);if(mode==='site'){playing=false;time=eventTime('landing');surfaceRevision=navigationRevision;surfaceFrameAt=performance.now()+850;ensureModel();ensureSurface();}
    if(mode==='orbit'){const start=data.anchors.find(a=>a.id==='loi-cut').t,end=data.anchors.find(a=>a.id==='tei-ign').t;if((time-START)/1000<start||(time-START)/1000>=end){playing=false;time=START+start*1000;}}reset({establish:mode==='site'});if(mode==='site')scheduleSurfaceFrame();report();},
   reset,
   resize(){},
   releaseCamera(){navigationRevision++;clearTimeout(surfaceTimer);},
   enforceCamera(){if(!active)return;
    for(const [center,radius,body] of [[earth,getRadius('earth'),'earth'],[moon.clone().add(earth),getRadius('moon'),'moon']]){
-    if(body==='moon'&&surfaceActive&&surface.protectCamera(camera))continue;
+    if(body==='moon'&&surfaceActive){const before=camera.position.clone();if(surface.protectCamera(camera)){const shift=camera.position.clone().sub(before);if(shift.lengthSq()>0){controls.target.add(shift);onCameraTranslation(shift);}continue;}}
     const offset=camera.position.clone().sub(center),minimum=radius+meterScale();if(offset.length()<minimum){if(offset.lengthSq()<1e-12)offset.copy(normal);camera.position.copy(center).add(offset.setLength(minimum));camera.lookAt(controls.target);}
    }
   },
   advance(dt){if(active&&playing&&Number.isFinite(dt)&&dt>0){time=Math.min(END,time+Math.min(dt,.25)*speed*1000);if(time>=END)playing=false;}},
   update(dt,now){if(!active)return;controller.advance(dt);render();if(now-lastReport>100){lastReport=now;report();}},
-  stop(restore=true){if(!active&&!starting)return;generation++;active=starting=playing=false;group.visible=false;clearTimeout(surfaceTimer);surface?.setActive(false);if(surfaceActive){surfaceActive=false;onSurfaceActive(false);}camera.up.copy(savedUp);onStop(restore);},
+  stop(restore=true){if(!active&&!starting)return;generation++;active=starting=playing=false;group.visible=false;clearTimeout(surfaceTimer);surface?.setActive(false);if(surfaceActive){surfaceActive=false;onSurfaceActive(false);}camera.up.copy(savedUp);controls.enableDamping=savedDamping;onStop(restore);},
   dispose(){if(disposed)return;disposed=true;controller.stop(false);abort.abort();if(model)disposeModel(model);surface?.dispose();scene.remove(group);for(const item of [...geometries,...materials,pointTexture])item.dispose();}
  };return controller;
 }

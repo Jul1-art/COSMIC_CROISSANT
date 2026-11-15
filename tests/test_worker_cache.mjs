@@ -200,3 +200,9 @@ test('redirected HTML is materialized so manual-mode offline navigation can use 
  const result=await w.dispatch('fetch',{request:w.request('',{navigate:true})});
  assert.equal(result.redirected,false);assert.equal(result.headers.get('Content-Encoding'),null);assert.match(await result.text(),/RELIC/);
 });
+
+test('patched camera controls revalidate with the interface instead of reusing the immutable library cache',async()=>{
+ const w=await worker();await w.dispatch('fetch',{request:w.request('vendor/OrbitControls.js')});await w.dispatch('fetch',{request:w.request('vendor/OrbitControls.js')});
+ assert.equal(w.requests.length,1);assert.equal(w.networkPolicies[0],'no-cache');
+ const saved=[...w.stores].filter(([,entries])=>entries.has(new URL('vendor/OrbitControls.js',origin).href));assert.equal(saved.length,1);assert.match(saved[0][0],/-shell$/);
+});

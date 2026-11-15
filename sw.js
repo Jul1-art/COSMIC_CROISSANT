@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261115-pins-30';
-const INTERFACE_RELEASE = 'missions-20261115-pins-30';
+const VERSION = 'missions-20261115-v99-apollo-site-camera';
+const INTERFACE_RELEASE = 'missions-20261115-v99';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -176,6 +176,8 @@ function cacheKey(request) {
   return url.href;
 }
 function immutable(url) {
+  // Local horizon navigation is patched with application releases.
+  if(url.pathname===new URL('vendor/OrbitControls.js',SCOPE).pathname)return false;
   if(url.pathname.startsWith(new URL('vendor/gods-eye-view/',SCOPE).pathname))return false;
   return url.pathname.startsWith(new URL('vendor/', SCOPE).pathname)
     || url.pathname.startsWith(new URL('intro/assets/vendor/', SCOPE).pathname)
