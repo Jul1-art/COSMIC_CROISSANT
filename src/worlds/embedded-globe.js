@@ -1,403 +1,415 @@
-import {createSputnikOrbit} from '../missions/sputnik-orbit.js';
-import {createCesiumMissionMarker} from '../missions/cesium-mission-marker.js';
-import {installAdaptiveWorldQuality} from './world-performance.js';
-import {createEarthSatellites} from '../satellites/cesium-layer.js';
+import { createSputnikOrbit } from '../missions/sputnik-orbit.js';
+import { createCesiumMissionMarker } from '../missions/cesium-mission-marker.js';
+import { installAdaptiveWorldQuality } from './world-performance.js';
+import { createEarthSatellites } from '../satellites/cesium-layer.js';
 import * as Cesium from '../../vendor/cesium/index.js';
-import {getCesiumToken,validateCesiumToken} from '../core/api-config.js';
-import {SURFACE_SOURCES} from '../atlas/surface-imagery.js';
-import {bodyOrientationBasis,sunDirectionScene} from '../atlas/solar-illumination.js';
-import {approximatePosition} from '../atlas/orbital-data.js';
-import {loadGlobalHeightGrid,createGlobalTerrainProvider} from './global-terrain.js';
-import {createCelestialScene,celestialRayDistance,getBodyIdFromPick} from './celestial-scene.js';
-import {installGlobeCameraControls,globeZoomOutLimit} from './globe-camera-controls.js';
-import {scenePalette} from '../ui/scene-theme.js';
-import {createIonEarthTiles} from './ion-earth.js';
-import {createCesiumInspectionEffects} from './inspection-effects.js';
-import {createInspectionCameraMotion,OBLIQUE_PITCH,STRAIGHT_DOWN_PITCH,OBLIQUE_THRESHOLD} from './inspection-camera-motion.js';
+import { getCesiumToken, validateCesiumToken } from '../core/api-config.js';
+import { SURFACE_SOURCES } from '../atlas/surface-imagery.js';
+import { bodyOrientationBasis, sunDirectionScene } from '../atlas/solar-illumination.js';
+import { approximatePosition } from '../atlas/orbital-data.js';
+import { loadGlobalHeightGrid, createGlobalTerrainProvider } from './global-terrain.js';
+import { createCelestialScene, celestialRayDistance, getBodyIdFromPick } from './celestial-scene.js';
+import { installGlobeCameraControls, globeZoomOutLimit } from './globe-camera-controls.js';
+import { scenePalette } from '../ui/scene-theme.js';
+import { createIonEarthTiles } from './ion-earth.js';
+import { createCesiumInspectionEffects } from './inspection-effects.js';
+import { createInspectionCameraMotion, OBLIQUE_PITCH, STRAIGHT_DOWN_PITCH, OBLIQUE_THRESHOLD } from './inspection-camera-motion.js';
 
-Cesium.Ion.defaultAccessToken='';
-const CHANNEL='relic-detailed-globe-v15';
-const body=new URLSearchParams(location.search).get('body');
-if(!['earth','moon','mars'].includes(body))throw new Error('Unsupported globe');
+Cesium.Ion.defaultAccessToken = '';
+const CHANNEL = 'relic-detailed-globe-v15';
+const body = new URLSearchParams(location.search).get('body');
+if (!['earth', 'moon', 'mars'].includes(body)) throw new Error('Unsupported globe');
 // The packaged MOLA radial-shape raster uses planetocentric latitude and a
 // 3396km spherical datum; keeping that datum avoids inventing areoid heights.
-const ellipsoid=body==='earth'?Cesium.Ellipsoid.WGS84:body==='moon'?Cesium.Ellipsoid.MOON:new Cesium.Ellipsoid(3396000,3396000,3396000);
-Cesium.Ellipsoid.default=ellipsoid;
-const radius=ellipsoid.maximumRadius,DEG=Math.PI/180;
-const credits=document.querySelector('#credits');
+const ellipsoid = body === 'earth' ? Cesium.Ellipsoid.WGS84 : body === 'moon' ? Cesium.Ellipsoid.MOON : new Cesium.Ellipsoid(3396000, 3396000, 3396000);
+Cesium.Ellipsoid.default = ellipsoid;
+const radius = ellipsoid.maximumRadius, DEG = Math.PI / 180;
+const credits = document.querySelector('#credits');
 let sourceCredit;
-let viewer,tileset,buildings,celestial,effects,disposed=false,ready=false,paused=false,focus={id:body},sourceMode='imagery',sourceLabel='',ionStatus='loading';
-let lastState=0,lastFrame=null,globalGrid=null,geography={lat:18,lon:0},lastHeading=0;
+let viewer, tileset, buildings, celestial, effects, disposed = false, ready = false, paused = false, focus = { id: body }, sourceMode = 'imagery', sourceLabel = '', ionStatus = 'loading';
+let lastState = 0, lastFrame = null, globalGrid = null, geography = { lat: 18, lon: 0 }, lastHeading = 0;
 let adaptiveQuality;
-let cameraMotion,lastCameraAction=null,arrivalPlayed=false;
-let defaultFov=Math.PI/3,disposeCameraControls;
-const maximumFrameRange=()=>globeZoomOutLimit(radius,viewer?.camera.frustum.fovy||Math.PI/3)+radius*2;
-let missionMarker=null;
-let earth3D=null,earthTerrainReady=false,earthBuildingsRequested=false,satellites=null,sputnikOrbit=null;
-const adaptiveImagery=[];
-const post=(type,payload={})=>{if(parent!==window)parent.postMessage({channel:CHANNEL,type,...payload},location.origin);};
-const finite=value=>typeof value==='number'&&Number.isFinite(value);
-const clamp=Cesium.Math.clamp;
-const compact=matchMedia('(pointer:coarse)').matches||innerWidth<760;
-function requestRender(){if(viewer&&!viewer.isDestroyed())viewer.scene.requestRender();}
-function updateCredits(){
-  const source=sourceMode==='nasa-global-dem'?globalGrid?.sourceUrl:sourceMode==='ion-photorealistic'?'https://cesium.com/learn/cesiumjs-learn/cesiumjs-photorealistic-3d-tiles/':body==='earth'?'https://cesium.com/learn/cesiumjs-learn/cesiumjs-terrain/':body==='moon'?'https://cesium.com/platform/cesium-ion/content/cesium-moon/':'https://cesium.com/platform/cesium-ion/content/cesium-mars/';
-  if(sourceCredit)viewer.creditDisplay.removeStaticCredit(sourceCredit);
-  const link=document.createElement('a');link.href=source;link.target='_blank';link.rel='noopener noreferrer';link.textContent=sourceLabel;sourceCredit=new Cesium.Credit(link.outerHTML,false);viewer.creditDisplay.addStaticCredit(sourceCredit);
-  requestAnimationFrame(()=>{if(disposed)return;document.documentElement.style.setProperty('--credit-height',`${Math.ceil(credits.getBoundingClientRect().height)}px`);if(viewer&&!viewer.isDestroyed())viewer.resize();requestRender();});
+let cameraMotion, lastCameraAction = null, arrivalPlayed = false;
+let defaultFov = Math.PI / 3, disposeCameraControls;
+const maximumFrameRange = () => globeZoomOutLimit(radius, viewer?.camera.frustum.fovy || Math.PI / 3) + radius * 2;
+let missionMarker = null;
+let earth3D = null, earthTerrainReady = false, earthBuildingsRequested = false, satellites = null, sputnikOrbit = null;
+const adaptiveImagery = [];
+const post = (type, payload = {}) => { if (parent !== window) parent.postMessage({ channel: CHANNEL, type, ...payload }, location.origin); };
+const finite = value => typeof value === 'number' && Number.isFinite(value);
+const clamp = Cesium.Math.clamp;
+const compact = matchMedia('(pointer:coarse)').matches || innerWidth < 760;
+function requestRender() { if (viewer && !viewer.isDestroyed()) viewer.scene.requestRender(); }
+function updateCredits() {
+  const source = sourceMode === 'nasa-global-dem' ? globalGrid?.sourceUrl : sourceMode === 'ion-photorealistic' ? 'https://cesium.com/learn/cesiumjs-learn/cesiumjs-photorealistic-3d-tiles/' : body === 'earth' ? 'https://cesium.com/learn/cesiumjs-learn/cesiumjs-terrain/' : body === 'moon' ? 'https://cesium.com/platform/cesium-ion/content/cesium-moon/' : 'https://cesium.com/platform/cesium-ion/content/cesium-mars/';
+  if (sourceCredit) viewer.creditDisplay.removeStaticCredit(sourceCredit);
+  const link = document.createElement('a'); link.href = source; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = sourceLabel; sourceCredit = new Cesium.Credit(link.outerHTML, false); viewer.creditDisplay.addStaticCredit(sourceCredit);
+  requestAnimationFrame(() => { if (disposed) return; document.documentElement.style.setProperty('--credit-height', `${Math.ceil(credits.getBoundingClientRect().height)}px`); if (viewer && !viewer.isDestroyed()) viewer.resize(); requestRender(); });
 }
-const creditObserver=new ResizeObserver(()=>{if(disposed)return;document.documentElement.style.setProperty('--credit-height',`${Math.ceil(credits.getBoundingClientRect().height)}px`);if(viewer&&!viewer.isDestroyed())viewer.resize();requestRender();state(true);});creditObserver.observe(credits);
+const creditObserver = new ResizeObserver(() => { if (disposed) return; document.documentElement.style.setProperty('--credit-height', `${Math.ceil(credits.getBoundingClientRect().height)}px`); if (viewer && !viewer.isDestroyed()) viewer.resize(); requestRender(); state(true); }); creditObserver.observe(credits);
 
 // Depth picks can also hit another world. Navigation pivots must stay on the
 // inspected globe; 1.5% includes measured terrain and buildings on all three.
-function selectedGroundPoint(point){
-  return point&&[point.x,point.y,point.z].every(Number.isFinite)&&Cesium.Cartesian3.magnitude(point)<=radius*1.015?point:null;
+function selectedGroundPoint(point) {
+  return point && [point.x, point.y, point.z].every(Number.isFinite) && Cesium.Cartesian3.magnitude(point) <= radius * 1.015 ? point : null;
 }
-function pickTarget(position){
-  if(!viewer)return null;
-  const point=position||new Cesium.Cartesian2(viewer.canvas.clientWidth/2,viewer.canvas.clientHeight/2),scene=viewer.scene;
+function pickTarget(position) {
+  if (!viewer) return null;
+  const point = position || new Cesium.Cartesian2(viewer.canvas.clientWidth / 2, viewer.canvas.clientHeight / 2), scene = viewer.scene;
   let hit;
-  if(scene.pickPositionSupported&&(!scene.globe.show||buildings))try{
-    if(!getBodyIdFromPick(scene.pick(point)))hit=selectedGroundPoint(scene.pickPosition(point));
-  }catch{}
-  if(!hit&&scene.globe.show)try{hit=selectedGroundPoint(scene.globe.pick(viewer.camera.getPickRay(point),scene));}catch{}
-  if(!hit)hit=selectedGroundPoint(viewer.camera.pickEllipsoid(point,ellipsoid));
+  if (scene.pickPositionSupported && (!scene.globe.show || buildings)) try {
+    if (!getBodyIdFromPick(scene.pick(point))) hit = selectedGroundPoint(scene.pickPosition(point));
+  } catch { }
+  if (!hit && scene.globe.show) try { hit = selectedGroundPoint(scene.globe.pick(viewer.camera.getPickRay(point), scene)); } catch { }
+  if (!hit) hit = selectedGroundPoint(viewer.camera.pickEllipsoid(point, ellipsoid));
   return hit;
 }
-function cameraFrame(){
-  const target=pickTarget();if(!target)return lastFrame;
-  const matrix=Cesium.Transforms.eastNorthUpToFixedFrame(target,ellipsoid);
-  const inverse=Cesium.Matrix4.inverseTransformation(matrix,new Cesium.Matrix4());
-  const local=Cesium.Matrix4.multiplyByPoint(inverse,viewer.camera.positionWC,new Cesium.Cartesian3()),range=Cesium.Cartesian3.magnitude(local);
-  if(!(range>0)||!Number.isFinite(range))return lastFrame;
-  const pitch=-Math.asin(clamp(local.z/range,-1,1));
-  const heading=pitch< -89.5*DEG?lastHeading:Math.atan2(-local.x,-local.y);
-  lastFrame={target,range,pitch,heading};return lastFrame;
+function cameraFrame() {
+  const target = pickTarget(); if (!target) return lastFrame;
+  const matrix = Cesium.Transforms.eastNorthUpToFixedFrame(target, ellipsoid);
+  const inverse = Cesium.Matrix4.inverseTransformation(matrix, new Cesium.Matrix4());
+  const local = Cesium.Matrix4.multiplyByPoint(inverse, viewer.camera.positionWC, new Cesium.Cartesian3()), range = Cesium.Cartesian3.magnitude(local);
+  if (!(range > 0) || !Number.isFinite(range)) return lastFrame;
+  const pitch = -Math.asin(clamp(local.z / range, -1, 1));
+  const heading = pitch < -89.5 * DEG ? lastHeading : Math.atan2(-local.x, -local.y);
+  lastFrame = { target, range, pitch, heading }; return lastFrame;
 }
-function applyFrame(frame,{motion=false}={}){
-  if(!frame||disposed)return;
-  if(!motion)cameraMotion?.cancel();
-  if(finite(frame.fov))viewer.camera.frustum.fov=frame.fov;
-  const range=clamp(frame.range,10,maximumFrameRange()),pitch=clamp(frame.pitch,-Math.PI/2+.0002,-5*DEG);
+function applyFrame(frame, { motion = false } = {}) {
+  if (!frame || disposed) return;
+  if (!motion) cameraMotion?.cancel();
+  if (finite(frame.fov)) viewer.camera.frustum.fov = frame.fov;
+  const range = clamp(frame.range, 10, maximumFrameRange()), pitch = clamp(frame.pitch, -Math.PI / 2 + .0002, -5 * DEG);
   viewer.camera.cancelFlight();
-  viewer.camera.lookAt(frame.target,new Cesium.HeadingPitchRange(frame.heading,pitch,range));
-  const destination=Cesium.Cartesian3.clone(viewer.camera.positionWC),direction=Cesium.Cartesian3.clone(viewer.camera.directionWC),up=Cesium.Cartesian3.clone(viewer.camera.upWC);
-  viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);viewer.camera.setView({destination,orientation:{direction,up}});
-  lastHeading=frame.heading;lastFrame={...frame,range,pitch};requestRender();if(!motion)state(true);
+  viewer.camera.lookAt(frame.target, new Cesium.HeadingPitchRange(frame.heading, pitch, range));
+  const destination = Cesium.Cartesian3.clone(viewer.camera.positionWC), direction = Cesium.Cartesian3.clone(viewer.camera.directionWC), up = Cesium.Cartesian3.clone(viewer.camera.upWC);
+  viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY); viewer.camera.setView({ destination, orientation: { direction, up } });
+  lastHeading = frame.heading; lastFrame = { ...frame, range, pitch }; requestRender(); if (!motion) state(true);
 }
-function groundHeight(lat,lon){
-  const point=new Cesium.Cartographic(lon*DEG,lat*DEG);
+function groundHeight(lat, lon) {
+  const point = new Cesium.Cartographic(lon * DEG, lat * DEG);
   return surfaceHeight(point);
 }
-function surfaceHeight(point){
-  if(viewer.scene.globe.show)return viewer.scene.globe.getHeight(point)||0;
-  try{const height=viewer.scene.sampleHeight?.(point);return finite(height)&&Math.abs(height)<radius*.015?height:0;}catch{return 0;}
+function surfaceHeight(point) {
+  if (viewer.scene.globe.show) return viewer.scene.globe.getHeight(point) || 0;
+  try { const height = viewer.scene.sampleHeight?.(point); return finite(height) && Math.abs(height) < radius * .015 ? height : 0; } catch { return 0; }
 }
-function goTo(lat,lon,range,heading=0,tilt=0,animate=false){
-  geography={lat:clamp(lat,-89.99,89.99),lon:((lon+540)%360)-180};
-  const target=Cesium.Cartesian3.fromDegrees(geography.lon,geography.lat,groundHeight(geography.lat,geography.lon),ellipsoid);
-  const destination={target,range:clamp(range,20,maximumFrameRange()),heading:heading*DEG,pitch:(clamp(tilt,0,85)-90)*DEG};
-  if(animate){cameraMotion?.cancel();viewer.camera.cancelFlight();viewer.camera.flyToBoundingSphere(new Cesium.BoundingSphere(target,0),{offset:new Cesium.HeadingPitchRange(destination.heading,destination.pitch,destination.range),duration:document.documentElement.dataset.motion==='reduced'||globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches?0:1.8,complete:()=>state(true),cancel:()=>state(true)});requestRender();}
+function goTo(lat, lon, range, heading = 0, tilt = 0, animate = false) {
+  geography = { lat: clamp(lat, -89.99, 89.99), lon: ((lon + 540) % 360) - 180 };
+  const target = Cesium.Cartesian3.fromDegrees(geography.lon, geography.lat, groundHeight(geography.lat, geography.lon), ellipsoid);
+  const destination = { target, range: clamp(range, 20, maximumFrameRange()), heading: heading * DEG, pitch: (clamp(tilt, 0, 85) - 90) * DEG };
+  if (animate) { cameraMotion?.cancel(); viewer.camera.cancelFlight(); viewer.camera.flyToBoundingSphere(new Cesium.BoundingSphere(target, 0), { offset: new Cesium.HeadingPitchRange(destination.heading, destination.pitch, destination.range), duration: document.documentElement.dataset.motion === 'reduced' || globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 0 : 1.8, complete: () => state(true), cancel: () => state(true) }); requestRender(); }
   else applyFrame(destination);
 }
-function animateView(frame,destination,duration){
-  if(!frame||disposed)return;
+function animateView(frame, destination, duration) {
+  if (!frame || disposed) return;
   viewer.camera.cancelFlight();
-  cameraMotion.animate({...frame,fov:viewer.camera.frustum.fov},destination,duration);
+  cameraMotion.animate({ ...frame, fov: viewer.camera.frustum.fov }, destination, duration);
   state(true);
 }
-function wholeGlobeRange(){
-  const aspect=viewer.camera.frustum.aspectRatio||1;
-  const otherFov=2*Math.atan(Math.tan(defaultFov/2)*Math.min(aspect,1/aspect));
-  const halfFov=Math.max(.08,Math.min(defaultFov,otherFov)/2);
-  const frameRadius=body==='earth'?(radius+1200000)*1.12:radius*1.12;
-  return frameRadius/Math.sin(halfFov)-radius;
+function wholeGlobeRange() {
+  const aspect = viewer.camera.frustum.aspectRatio || 1;
+  const otherFov = 2 * Math.atan(Math.tan(defaultFov / 2) * Math.min(aspect, 1 / aspect));
+  const halfFov = Math.max(.08, Math.min(defaultFov, otherFov) / 2);
+  const frameRadius = body === 'earth' ? (radius + 1200000) * 1.12 : radius * 1.12;
+  return frameRadius / Math.sin(halfFov) - radius;
 }
-function resetView(animate=false){
-  const range=wholeGlobeRange();
-  if(animate){
-    const frame=cameraFrame();
-    if(frame){
-      animateView(frame,{heading:0,pitch:STRAIGHT_DOWN_PITCH,range,fov:defaultFov,action:'reset'},900);
+function resetView(animate = false) {
+  const range = wholeGlobeRange();
+  if (animate) {
+    const frame = cameraFrame();
+    if (frame) {
+      animateView(frame, { heading: 0, pitch: STRAIGHT_DOWN_PITCH, range, fov: defaultFov, action: 'reset' }, 900);
       return;
     }
   }
-  viewer.camera.frustum.fov=defaultFov;
-  goTo(geography.lat,geography.lon,range);
+  viewer.camera.frustum.fov = defaultFov;
+  goTo(geography.lat, geography.lon, range);
 }
-function reveal(){
-  if(body!=='earth'||arrivalPlayed||cameraMotion.destination)return;
-  arrivalPlayed=true;
-  const frame=cameraFrame();
-  if(!frame)return;
+function reveal() {
+  if (body !== 'earth' || arrivalPlayed || cameraMotion.destination) return;
+  arrivalPlayed = true;
+  const frame = cameraFrame();
+  if (!frame) return;
   // Keep the incoming globe fully readable, then approach its current center.
   // God's Eye View src/camera.js uses this same cubic ease for the startup fly-in.
-  const range=Math.min(frame.range,Math.max(wholeGlobeRange(),frame.range*.64));
-  animateView(frame,{range,pitch:Math.max(frame.pitch,-79*DEG),action:'arrival'},1300);
+  const range = Math.min(frame.range, Math.max(wholeGlobeRange(), frame.range * .64));
+  animateView(frame, { range, pitch: Math.max(frame.pitch, -79 * DEG), action: 'arrival' }, 1300);
 }
-function toggleViewTilt(){
-  const frame=cameraFrame();if(!frame)return;
-  const pending=cameraMotion.destination;
-  const pitch=(pending?.pitch??frame.pitch)>OBLIQUE_THRESHOLD?STRAIGHT_DOWN_PITCH:OBLIQUE_PITCH;
-  animateView(frame,{heading:pending?.heading??frame.heading,pitch,action:'tilt'});
+function toggleViewTilt() {
+  const frame = cameraFrame(); if (!frame) return;
+  const pending = cameraMotion.destination;
+  const pitch = (pending?.pitch ?? frame.pitch) > OBLIQUE_THRESHOLD ? STRAIGHT_DOWN_PITCH : OBLIQUE_PITCH;
+  animateView(frame, { heading: pending?.heading ?? frame.heading, pitch, action: 'tilt' });
 }
-function northUp(){
-  const frame=cameraFrame();if(!frame)return;
-  animateView(frame,{heading:0,pitch:cameraMotion.destination?.pitch??frame.pitch,action:'north'});
+function northUp() {
+  const frame = cameraFrame(); if (!frame) return;
+  animateView(frame, { heading: 0, pitch: cameraMotion.destination?.pitch ?? frame.pitch, action: 'north' });
 }
-function zoom(factor){
-  if(!finite(factor)||factor<=0)return;
+function zoom(factor) {
+  if (!finite(factor) || factor <= 0) return;
   cameraMotion?.cancel();
-  const hit=pickTarget(),distance=hit?Cesium.Cartesian3.distance(hit,viewer.camera.positionWC):Infinity;
-  if(distance>radius*25){viewer.camera.frustum.fov=clamp(viewer.camera.frustum.fov*factor,.25*DEG,Math.PI/2);requestRender();state(true);return;}
-  const frame=cameraFrame();if(frame)applyFrame({...frame,range:frame.range*clamp(factor,.1,10)});
+  const hit = pickTarget(), distance = hit ? Cesium.Cartesian3.distance(hit, viewer.camera.positionWC) : Infinity;
+  if (distance > radius * 25) { viewer.camera.frustum.fov = clamp(viewer.camera.frustum.fov * factor, .25 * DEG, Math.PI / 2); requestRender(); state(true); return; }
+  const frame = cameraFrame(); if (frame) applyFrame({ ...frame, range: frame.range * clamp(factor, .1, 10) });
 }
-function lookAround(yaw=0,pitch=0){
-  if(!finite(yaw)||!finite(pitch)||disposed)return;
-  cameraMotion?.cancel();viewer.camera.cancelFlight();viewer.camera.lookRight(yaw*DEG);viewer.camera.lookUp(pitch*DEG);requestRender();state(true);
+function lookAround(yaw = 0, pitch = 0) {
+  if (!finite(yaw) || !finite(pitch) || disposed) return;
+  cameraMotion?.cancel(); viewer.camera.cancelFlight(); viewer.camera.lookRight(yaw * DEG); viewer.camera.lookUp(pitch * DEG); requestRender(); state(true);
 }
-function orient(tiltDelta=0,headingDelta=0,absoluteTilt){
-  const frame=cameraFrame();if(!frame)return;
-  applyFrame({...frame,heading:frame.heading+headingDelta*DEG,pitch:((finite(absoluteTilt)?absoluteTilt:90+frame.pitch/DEG+tiltDelta)-90)*DEG});
+function orient(tiltDelta = 0, headingDelta = 0, absoluteTilt) {
+  const frame = cameraFrame(); if (!frame) return;
+  applyFrame({ ...frame, heading: frame.heading + headingDelta * DEG, pitch: ((finite(absoluteTilt) ? absoluteTilt : 90 + frame.pitch / DEG + tiltDelta) - 90) * DEG });
 }
-function move(direction){
-  const frame=cameraFrame();if(!frame||!['up','down','left','right'].includes(direction))return;
-  const point=ellipsoid.cartesianToCartographic(frame.target),heading=frame.heading;
-  const distance=clamp(frame.range*.12,10,radius*.08);
-  const east=direction==='up'?Math.sin(heading):direction==='down'?-Math.sin(heading):direction==='right'?Math.cos(heading):-Math.cos(heading);
-  const north=direction==='up'?Math.cos(heading):direction==='down'?-Math.cos(heading):direction==='right'?-Math.sin(heading):Math.sin(heading);
-  const lat=clamp(point.latitude+north*distance/radius,-Math.PI/2+.0001,Math.PI/2-.0001)/DEG;
-  const lon=(point.longitude+east*distance/(radius*Math.max(.03,Math.cos(point.latitude))))/DEG;
-  geography={lat,lon};
-  const target=Cesium.Cartesian3.fromDegrees(lon,lat,groundHeight(lat,lon),ellipsoid);
-  applyFrame({...frame,target});
+function move(direction) {
+  const frame = cameraFrame(); if (!frame || !['up', 'down', 'left', 'right'].includes(direction)) return;
+  const point = ellipsoid.cartesianToCartographic(frame.target), heading = frame.heading;
+  const distance = clamp(frame.range * .12, 10, radius * .08);
+  const east = direction === 'up' ? Math.sin(heading) : direction === 'down' ? -Math.sin(heading) : direction === 'right' ? Math.cos(heading) : -Math.cos(heading);
+  const north = direction === 'up' ? Math.cos(heading) : direction === 'down' ? -Math.cos(heading) : direction === 'right' ? -Math.sin(heading) : Math.sin(heading);
+  const lat = clamp(point.latitude + north * distance / radius, -Math.PI / 2 + .0001, Math.PI / 2 - .0001) / DEG;
+  const lon = (point.longitude + east * distance / (radius * Math.max(.03, Math.cos(point.latitude)))) / DEG;
+  geography = { lat, lon };
+  const target = Cesium.Cartesian3.fromDegrees(lon, lat, groundHeight(lat, lon), ellipsoid);
+  applyFrame({ ...frame, target });
 }
-function state(force=false){
-  const target=cameraMotion?.destination,action=target?.action??null;
-  if(disposed||!viewer||!ready||(!force&&action===lastCameraAction&&performance.now()-lastState<(action?64:250)))return;
-  lastState=performance.now();lastCameraAction=action;
-  const frame=(action?lastFrame:cameraFrame())||lastFrame;if(!frame)return;
-  const point=ellipsoid.cartesianToCartographic(frame.target),cameraPoint=ellipsoid.cartesianToCartographic(viewer.camera.positionWC);
-  const latitude=point.latitude/DEG,longitude=point.longitude/DEG;
-  const groundUnderCamera=surfaceHeight(cameraPoint);
-  const altitudeRatio=Math.max(0,cameraPoint.height-groundUnderCamera)/radius;
-  for(const entry of adaptiveImagery){const show=altitudeRatio<entry.maximumAltitudeRatio;if(entry.layer.show!==show){entry.layer.show=show;requestRender();}}
-  if(![latitude,longitude,cameraPoint.height,frame.range].every(Number.isFinite))return;
-  geography={lat:latitude,lon:longitude};
-  const centerPixel=new Cesium.Cartesian2(viewer.canvas.clientWidth/2,viewer.canvas.clientHeight/2),ray=viewer.camera.getPickRay(centerPixel);
-  let viewRange=Infinity,scaleReference='sky';
+function state(force = false) {
+  const target = cameraMotion?.destination, action = target?.action ?? null;
+  if (disposed || !viewer || !ready || (!force && action === lastCameraAction && performance.now() - lastState < (action ? 64 : 250))) return;
+  lastState = performance.now(); lastCameraAction = action;
+  const frame = (action ? lastFrame : cameraFrame()) || lastFrame; if (!frame) return;
+  const point = ellipsoid.cartesianToCartographic(frame.target), cameraPoint = ellipsoid.cartesianToCartographic(viewer.camera.positionWC);
+  const latitude = point.latitude / DEG, longitude = point.longitude / DEG;
+  const groundUnderCamera = surfaceHeight(cameraPoint);
+  const altitudeRatio = Math.max(0, cameraPoint.height - groundUnderCamera) / radius;
+  for (const entry of adaptiveImagery) { const show = altitudeRatio < entry.maximumAltitudeRatio; if (entry.layer.show !== show) { entry.layer.show = show; requestRender(); } }
+  if (![latitude, longitude, cameraPoint.height, frame.range].every(Number.isFinite)) return;
+  geography = { lat: latitude, lon: longitude };
+  const centerPixel = new Cesium.Cartesian2(viewer.canvas.clientWidth / 2, viewer.canvas.clientHeight / 2), ray = viewer.camera.getPickRay(centerPixel);
+  let viewRange = Infinity, scaleReference = 'sky';
   let ground;
-  try{ground=selectedGroundPoint(viewer.scene.globe.show?viewer.scene.globe.pick(ray,viewer.scene):viewer.scene.pickPosition(centerPixel));}catch{}
-  if(ground){viewRange=Cesium.Cartesian3.distance(ground,viewer.camera.positionWC);scaleReference=body;}
-  for(const row of focus.context||[]){const range=celestialRayDistance(ray.origin,ray.direction,row);if(range&&range<viewRange){viewRange=range;scaleReference=row.id;}}
-  const metersPerPixel=Number.isFinite(viewRange)?2*viewRange*Math.tan((viewer.camera.frustum.fovy||Math.PI/3)/2)/Math.max(1,viewer.canvas.clientHeight):null;
-  post('state',{state:{id:body,latitude,longitude,altitudeKm:Math.max(0,cameraPoint.height-groundUnderCamera)/1000,rangeMeters:frame.range,
-    tiltDeg:clamp(90+frame.pitch/DEG,0,85),headingDeg:((frame.heading/DEG)%360+360)%360,
-    cameraAction:action,cameraMotion:Boolean(target),
-    orientationTargetTiltDeg:target?clamp(90+target.pitch/DEG,0,85):null,
-    orientationTargetHeadingDeg:target?((target.heading/DEG)%360+360)%360:null,
-    metersPerPixel,scaleReference,
-    sourceMode,sourceLabel,ionStatus,creditHeight:Math.ceil(credits.getBoundingClientRect().height),globalResolutionMeters:globalGrid?.nativeEquatorialSpacingMeters||null,
-    contextBodies:(focus.context||[]).map(row=>row.id),cameraPosition:{x:viewer.camera.positionWC.x,y:viewer.camera.positionWC.y,z:viewer.camera.positionWC.z},cameraDirection:{x:viewer.camera.directionWC.x,y:viewer.camera.directionWC.y,z:viewer.camera.directionWC.z}}});
+  try { ground = selectedGroundPoint(viewer.scene.globe.show ? viewer.scene.globe.pick(ray, viewer.scene) : viewer.scene.pickPosition(centerPixel)); } catch { }
+  if (ground) { viewRange = Cesium.Cartesian3.distance(ground, viewer.camera.positionWC); scaleReference = body; }
+  for (const row of focus.context || []) { const range = celestialRayDistance(ray.origin, ray.direction, row); if (range && range < viewRange) { viewRange = range; scaleReference = row.id; } }
+  const metersPerPixel = Number.isFinite(viewRange) ? 2 * viewRange * Math.tan((viewer.camera.frustum.fovy || Math.PI / 3) / 2) / Math.max(1, viewer.canvas.clientHeight) : null;
+  post('state', {
+    state: {
+      id: body, latitude, longitude, altitudeKm: Math.max(0, cameraPoint.height - groundUnderCamera) / 1000, rangeMeters: frame.range,
+      tiltDeg: clamp(90 + frame.pitch / DEG, 0, 85), headingDeg: ((frame.heading / DEG) % 360 + 360) % 360,
+      cameraAction: action, cameraMotion: Boolean(target),
+      orientationTargetTiltDeg: target ? clamp(90 + target.pitch / DEG, 0, 85) : null,
+      orientationTargetHeadingDeg: target ? ((target.heading / DEG) % 360 + 360) % 360 : null,
+      metersPerPixel, scaleReference,
+      sourceMode, sourceLabel, ionStatus, creditHeight: Math.ceil(credits.getBoundingClientRect().height), globalResolutionMeters: globalGrid?.nativeEquatorialSpacingMeters || null,
+      contextBodies: (focus.context || []).map(row => row.id), cameraPosition: { x: viewer.camera.positionWC.x, y: viewer.camera.positionWC.y, z: viewer.camera.positionWC.z }, cameraDirection: { x: viewer.camera.directionWC.x, y: viewer.camera.directionWC.y, z: viewer.camera.directionWC.z }
+    }
+  });
 }
-function setLighting(value){
-  const date=Number.isFinite(Date.parse(value.date))?new Date(value.date):new Date();viewer.clock.currentTime=Cesium.JulianDate.fromDate(date);viewer.clock.shouldAnimate=false;
-  let local=value.sunDirection;
-  if(!local||![local.x,local.y,local.z].every(Number.isFinite)){
-    const position=approximatePosition(body==='moon'?'earth':body,date)?.positionKm;
-    const sun=sunDirectionScene(position),basis=bodyOrientationBasis(body,date);
-    if(sun&&basis){
-      const dot=axis=>sun.x*axis.x+sun.y*axis.y+sun.z*axis.z;
-      local={x:dot(basis.x),y:-dot(basis.z),z:dot(basis.y)};
+function setLighting(value) {
+  const date = Number.isFinite(Date.parse(value.date)) ? new Date(value.date) : new Date(); viewer.clock.currentTime = Cesium.JulianDate.fromDate(date); viewer.clock.shouldAnimate = false;
+  let local = value.sunDirection;
+  if (!local || ![local.x, local.y, local.z].every(Number.isFinite)) {
+    const position = approximatePosition(body === 'moon' ? 'earth' : body, date)?.positionKm;
+    const sun = sunDirectionScene(position), basis = bodyOrientationBasis(body, date);
+    if (sun && basis) {
+      const dot = axis => sun.x * axis.x + sun.y * axis.y + sun.z * axis.z;
+      local = { x: dot(basis.x), y: -dot(basis.z), z: dot(basis.y) };
     }
   }
-  if(local){const direction=new Cesium.Cartesian3(-local.x,-local.y,-local.z);Cesium.Cartesian3.normalize(direction,direction);viewer.scene.light=new Cesium.DirectionalLight({direction,intensity:1.45});}
-  viewer.scene.globe.enableLighting=effects?.settings.lighting??true;viewer.scene.globe.dynamicAtmosphereLighting=false;
+  if (local) { const direction = new Cesium.Cartesian3(-local.x, -local.y, -local.z); Cesium.Cartesian3.normalize(direction, direction); viewer.scene.light = new Cesium.DirectionalLight({ direction, intensity: 1.45 }); }
+  viewer.scene.globe.enableLighting = effects?.settings.lighting ?? true; viewer.scene.globe.dynamicAtmosphereLighting = false;
   requestRender();
 }
-function setFocus(value){
-  if(value?.id!==body)return;focus={...value};setLighting(value);
-  const launchpad=value.inspection==='apollo-launchpad';satellites?.setMissionHidden(launchpad);satellites?.pause(paused||launchpad);missionMarker?.setVisible(!launchpad);
-  celestial?.setBodies(value.context||[]);
-  if(finite(value.lat)&&finite(value.lon))goTo(value.lat,value.lon,finite(value.range)?value.range:radius*.08,finite(value.heading)?value.heading:0,finite(value.tilt)?value.tilt:0,ready);
+function setFocus(value) {
+  if (value?.id !== body) return; focus = { ...value }; setLighting(value);
+  const launchpad = value.inspection === 'apollo-launchpad'; satellites?.setMissionHidden(launchpad); satellites?.pause(paused || launchpad); missionMarker?.setVisible(!launchpad);
+  celestial?.setBodies(value.context || []);
+  if (finite(value.lat) && finite(value.lon)) goTo(value.lat, value.lon, finite(value.range) ? value.range : radius * .08, finite(value.heading) ? value.heading : 0, finite(value.tilt) ? value.tilt : 0, ready);
   else resetView();
   state(true);
 }
-function imageryProvider(source){
-  const tilingScheme=source.scheme==='mercator'?new Cesium.WebMercatorTilingScheme({ellipsoid}):new Cesium.GeographicTilingScheme({ellipsoid,numberOfLevelZeroTilesX:2,numberOfLevelZeroTilesY:1});
-  return new Cesium.UrlTemplateImageryProvider({url:source.url('{z}','{x}','{y}'),maximumLevel:source.maxLevel,tilingScheme,
-    rectangle:source.bounds?Cesium.Rectangle.fromDegrees(...source.bounds):undefined,credit:source.credit,enablePickFeatures:false});
+function imageryProvider(source) {
+  const tilingScheme = source.scheme === 'mercator' ? new Cesium.WebMercatorTilingScheme({ ellipsoid }) : new Cesium.GeographicTilingScheme({ ellipsoid, numberOfLevelZeroTilesX: 2, numberOfLevelZeroTilesY: 1 });
+  return new Cesium.UrlTemplateImageryProvider({
+    url: source.url('{z}', '{x}', '{y}'), maximumLevel: source.maxLevel, tilingScheme,
+    rectangle: source.bounds ? Cesium.Rectangle.fromDegrees(...source.bounds) : undefined, credit: source.credit, enablePickFeatures: false
+  });
 }
-async function addImagery(){
-  const file=body==='earth'?'earth-blue-marble-4k.webp':body==='moon'?'moon-wac-8k.webp':'mars-viking-global.webp';
-  viewer.imageryLayers.addImageryProvider(await Cesium.SingleTileImageryProvider.fromUrl(new URL(`../../assets/${file}`,import.meta.url).href,{credit:body==='earth'?'NASA · Blue Marble':body==='moon'?'NASA/GSFC/ASU · LROC WAC':'NASA/JPL/USGS · Viking'}));
+async function addImagery() {
+  const file = body === 'earth' ? 'earth-blue-marble-4k.webp' : body === 'moon' ? 'moon-wac-8k.webp' : 'mars-viking-global.webp';
+  viewer.imageryLayers.addImageryProvider(await Cesium.SingleTileImageryProvider.fromUrl(new URL(`../../assets/${file}`, import.meta.url).href, { credit: body === 'earth' ? 'NASA · Blue Marble' : body === 'moon' ? 'NASA/GSFC/ASU · LROC WAC' : 'NASA/JPL/USGS · Viking' }));
   requestRender();
-  const add=(source,maximumAltitudeRatio)=>{if(disposed)return;const layer=viewer.imageryLayers.addImageryProvider(imageryProvider(source));layer.imageryProvider.errorEvent.addEventListener(error=>{error.retry=false;});if(Number.isFinite(maximumAltitudeRatio)){layer.show=false;adaptiveImagery.push({layer,maximumAltitudeRatio});}};
+  const add = (source, maximumAltitudeRatio) => { if (disposed) return; const layer = viewer.imageryLayers.addImageryProvider(imageryProvider(source)); layer.imageryProvider.errorEvent.addEventListener(error => { error.retry = false; }); if (Number.isFinite(maximumAltitudeRatio)) { layer.show = false; adaptiveImagery.push({ layer, maximumAltitudeRatio }); } };
   // The local global mosaic appears first; Cesium streams each newly visible
   // area at its native level as the visitor pans around the complete globe.
-  if(body==='earth'){add(SURFACE_SOURCES.earth);add(SURFACE_SOURCES.earthDetail,.18);}
-  else if(body==='mars'){add(SURFACE_SOURCES.mars);add(SURFACE_SOURCES.marsDetail,.12);add(SURFACE_SOURCES.jezero,.025);}
-  else{add(SURFACE_SOURCES.moon);add(SURFACE_SOURCES.apollo11,.025);}
+  if (body === 'earth') { add(SURFACE_SOURCES.earth); add(SURFACE_SOURCES.earthDetail, .18); }
+  else if (body === 'mars') { add(SURFACE_SOURCES.mars); add(SURFACE_SOURCES.marsDetail, .12); add(SURFACE_SOURCES.jezero, .025); }
+  else { add(SURFACE_SOURCES.moon); add(SURFACE_SOURCES.apollo11, .025); }
 }
-async function addTerrain(){
-  const token=getCesiumToken();ionStatus=!token?'missing-token':validateCesiumToken(token)?'invalid-token':'loading';
-  if(body==='earth'&&ionStatus==='loading'){
-    const refreshEarth=()=>{
-      if(disposed)return;
-      if(earth3D.active){tileset=earth3D.tileset;sourceMode='ion-photorealistic';sourceLabel='Google Photorealistic 3D Tiles · Cesium ion';ionStatus=earth3D.status==='ready'?'ready':'loading';}
-      else{
-        sourceMode=earthTerrainReady?'ion-terrain':'imagery';
-        sourceLabel=earthTerrainReady?'Cesium ion · World Terrain':'NASA / Esri imagery';
-        ionStatus=earth3D.status==='loading'?'loading':'asset-unavailable';
-        if(earth3D.status==='loading')sourceLabel+=' · loading photorealistic 3D';
-        else if(earth3D.status==='error'&&earthTerrainReady)void addEarthBuildings(token);
+async function addTerrain() {
+  const token = getCesiumToken(); ionStatus = !token ? 'missing-token' : validateCesiumToken(token) ? 'invalid-token' : 'loading';
+  if (body === 'earth' && ionStatus === 'loading') {
+    const refreshEarth = () => {
+      if (disposed) return;
+      if (earth3D.active) { tileset = earth3D.tileset; sourceMode = 'ion-photorealistic'; sourceLabel = 'Google Photorealistic 3D Tiles · Cesium ion'; ionStatus = earth3D.status === 'ready' ? 'ready' : 'loading'; }
+      else {
+        sourceMode = earthTerrainReady ? 'ion-terrain' : 'imagery';
+        sourceLabel = earthTerrainReady ? 'Cesium ion · World Terrain' : 'NASA / Esri imagery';
+        ionStatus = earth3D.status === 'loading' ? 'loading' : 'asset-unavailable';
+        if (earth3D.status === 'loading') sourceLabel += ' · loading photorealistic 3D';
+        else if (earth3D.status === 'error' && earthTerrainReady) void addEarthBuildings(token);
       }
-      updateCredits();state(true);requestRender();
+      updateCredits(); state(true); requestRender();
     };
-    earth3D=createIonEarthTiles({Cesium,viewer,compact,onState:refreshEarth});
+    earth3D = createIonEarthTiles({ Cesium, viewer, compact, onState: refreshEarth });
     // Start the complete 3D Earth immediately. Measured world terrain remains
     // visible underneath while its first photogrammetric tiles are prepared.
-    const photo=earth3D.enable(token);
-    const terrain=(async()=>{try{
-      const resource=await Cesium.IonResource.fromAssetId(1,{accessToken:token});
-      const provider=await Cesium.CesiumTerrainProvider.fromUrl(resource,{requestVertexNormals:true,requestWaterMask:true});
-      if(disposed){provider.destroy?.();return;}viewer.terrainProvider=provider;earthTerrainReady=true;refreshEarth();
-    }catch{refreshEarth();}})();
-    await Promise.allSettled([photo,terrain]);return;
+    const photo = earth3D.enable(token);
+    const terrain = (async () => {
+      try {
+        const resource = await Cesium.IonResource.fromAssetId(1, { accessToken: token });
+        const provider = await Cesium.CesiumTerrainProvider.fromUrl(resource, { requestVertexNormals: true, requestWaterMask: true });
+        if (disposed) { provider.destroy?.(); return; } viewer.terrainProvider = provider; earthTerrainReady = true; refreshEarth();
+      } catch { refreshEarth(); }
+    })();
+    await Promise.allSettled([photo, terrain]); return;
   }
-  if(ionStatus==='loading')try{
-    const id=body==='moon'?2684829:3644333;
-    const resource=await Cesium.IonResource.fromAssetId(id,{accessToken:token});
-    const value=await Cesium.Cesium3DTileset.fromUrl(resource,{showCreditsOnScreen:true,enableCollision:true,maximumScreenSpaceError:compact?10:6,
-      cacheBytes:(compact?96:256)*1024*1024,maximumCacheOverflowBytes:32*1024*1024});
-    if(disposed){value.destroy();return;}tileset=viewer.scene.primitives.add(value);viewer.scene.globe.show=false;
-    sourceMode='ion-3d-tiles';sourceLabel=body==='moon'?'Cesium Moon · NASA/USGS LRO + Kaguya':'Cesium Mars · NASA/ESA/USGS MOLA + HRSC';ionStatus='ready';updateCredits();state(true);requestRender();return;
-  }catch{
+  if (ionStatus === 'loading') try {
+    const id = body === 'moon' ? 2684829 : 3644333;
+    const resource = await Cesium.IonResource.fromAssetId(id, { accessToken: token });
+    const value = await Cesium.Cesium3DTileset.fromUrl(resource, {
+      showCreditsOnScreen: true, enableCollision: true, maximumScreenSpaceError: compact ? 10 : 6,
+      cacheBytes: (compact ? 96 : 256) * 1024 * 1024, maximumCacheOverflowBytes: 32 * 1024 * 1024
+    });
+    if (disposed) { value.destroy(); return; } tileset = viewer.scene.primitives.add(value); viewer.scene.globe.show = false;
+    sourceMode = 'ion-3d-tiles'; sourceLabel = body === 'moon' ? 'Cesium Moon · NASA/USGS LRO + Kaguya' : 'Cesium Mars · NASA/ESA/USGS MOLA + HRSC'; ionStatus = 'ready'; updateCredits(); state(true); requestRender(); return;
+  } catch {
     // Provider errors can contain access-token-bearing URLs. Never forward or
     // log those error objects to the parent, UI, telemetry or public history.
-    ionStatus='asset-unavailable';
+    ionStatus = 'asset-unavailable';
   }
-  if(disposed)return;
-  if(body!=='earth')try{
-    const grid=await loadGlobalHeightGrid(body);if(disposed)return;globalGrid=grid;
-    viewer.terrainProvider=createGlobalTerrainProvider(Cesium,ellipsoid,grid);
-    sourceMode='nasa-global-dem';sourceLabel=`${grid.credit} · ≈ ${(grid.nativeEquatorialSpacingMeters/1000).toFixed(1)} km terrain`;
-    updateCredits();requestRender();
-  }catch{sourceMode='ellipsoid';sourceLabel=body==='moon'?'NASA LROC imagery · elevation unavailable':'NASA Viking/CTX imagery · elevation unavailable';updateCredits();}
-  else{sourceMode='ellipsoid';sourceLabel='NASA / Esri imagery · ion terrain unavailable';updateCredits();}
+  if (disposed) return;
+  if (body !== 'earth') try {
+    const grid = await loadGlobalHeightGrid(body); if (disposed) return; globalGrid = grid;
+    viewer.terrainProvider = createGlobalTerrainProvider(Cesium, ellipsoid, grid);
+    sourceMode = 'nasa-global-dem'; sourceLabel = `${grid.credit} · ≈ ${(grid.nativeEquatorialSpacingMeters / 1000).toFixed(1)} km terrain`;
+    updateCredits(); requestRender();
+  } catch { sourceMode = 'ellipsoid'; sourceLabel = body === 'moon' ? 'NASA LROC imagery · elevation unavailable' : 'NASA Viking/CTX imagery · elevation unavailable'; updateCredits(); }
+  else { sourceMode = 'ellipsoid'; sourceLabel = 'NASA / Esri imagery · ion terrain unavailable'; updateCredits(); }
   state(true);
 }
-async function addEarthBuildings(token){
-  if(earthBuildingsRequested||disposed)return;earthBuildingsRequested=true;
-  try{
-    const resource=await Cesium.IonResource.fromAssetId(96188,{accessToken:token});
-    const value=await Cesium.Cesium3DTileset.fromUrl(resource,{showCreditsOnScreen:true,maximumScreenSpaceError:compact?20:12,cacheBytes:64*1024*1024,maximumCacheOverflowBytes:32*1024*1024});
-    if(disposed||earth3D?.active){value.destroy();return;}
-    buildings=viewer.scene.primitives.add(value);sourceLabel='Cesium ion · World Terrain + OSM Buildings · photorealistic tiles unavailable';updateCredits();state(true);requestRender();
-  }catch{/* Keep measured world terrain if the optional OSM asset is unavailable. */}
+async function addEarthBuildings(token) {
+  if (earthBuildingsRequested || disposed) return; earthBuildingsRequested = true;
+  try {
+    const resource = await Cesium.IonResource.fromAssetId(96188, { accessToken: token });
+    const value = await Cesium.Cesium3DTileset.fromUrl(resource, { showCreditsOnScreen: true, maximumScreenSpaceError: compact ? 20 : 12, cacheBytes: 64 * 1024 * 1024, maximumCacheOverflowBytes: 32 * 1024 * 1024 });
+    if (disposed || earth3D?.active) { value.destroy(); return; }
+    buildings = viewer.scene.primitives.add(value); sourceLabel = 'Cesium ion · World Terrain + OSM Buildings · photorealistic tiles unavailable'; updateCredits(); state(true); requestRender();
+  } catch {/* Keep measured world terrain if the optional OSM asset is unavailable. */ }
 }
-function suspend(value){paused=Boolean(value);satellites?.pause(paused||sputnikOrbit?.active||focus.inspection==='apollo-launchpad');sputnikOrbit?.pause(paused);if(disposed||!viewer||viewer.isDestroyed())return;if(paused||document.hidden)cameraMotion?.cancel();viewer.useDefaultRenderLoop=(!paused||!ready)&&!document.hidden;effects?.pause(paused||document.hidden);if(!paused||!ready){viewer.resize();requestRender();}}
-function applyViewTheme(value){
-  const theme=value==='day'?'day':'night',palette=scenePalette(theme);
-  document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=palette.light?'light':'dark';
-  viewer.scene.backgroundColor=Cesium.Color.fromCssColorString(palette.background);celestial?.setTheme(theme);effects?.setTheme(theme);requestRender();
+function suspend(value) { paused = Boolean(value); satellites?.pause(paused || sputnikOrbit?.active || focus.inspection === 'apollo-launchpad'); sputnikOrbit?.pause(paused); if (disposed || !viewer || viewer.isDestroyed()) return; if (paused || document.hidden) cameraMotion?.cancel(); viewer.useDefaultRenderLoop = (!paused || !ready) && !document.hidden; effects?.pause(paused || document.hidden); if (!paused || !ready) { viewer.resize(); requestRender(); } }
+function applyViewTheme(value) {
+  const theme = value === 'day' ? 'day' : 'night', palette = scenePalette(theme);
+  document.documentElement.dataset.theme = theme; document.documentElement.style.colorScheme = palette.light ? 'light' : 'dark';
+  viewer.scene.backgroundColor = Cesium.Color.fromCssColorString(palette.background); celestial?.setTheme(theme); effects?.setTheme(theme); requestRender();
 }
-function receive(event){
-  if(event.origin!==location.origin||event.source!==parent||event.data?.channel!==CHANNEL||disposed||!viewer)return;
-  const {action,value}=event.data;
-  if(!['theme','visualSettings','context','pause'].includes(action))satellites?.stopFollowing();
-  if(action==='theme'){
-    const {motion}=event.data;
-    if(motion==='reduced'||motion==='full')document.documentElement.dataset.motion=motion;
-    if(['fr','en'].includes(event.data.language)){document.documentElement.lang=event.data.language;window.dispatchEvent(new Event('relic-satellite-language'));}
+function receive(event) {
+  if (event.origin !== location.origin || event.source !== parent || event.data?.channel !== CHANNEL || disposed || !viewer) return;
+  const { action, value } = event.data;
+  if (!['theme', 'visualSettings', 'context', 'pause'].includes(action)) satellites?.stopFollowing();
+  if (action === 'theme') {
+    const { motion } = event.data;
+    if (motion === 'reduced' || motion === 'full') document.documentElement.dataset.motion = motion;
+    if (['fr', 'en'].includes(event.data.language)) { document.documentElement.lang = event.data.language; window.dispatchEvent(new Event('relic-satellite-language')); }
     applyViewTheme(value);
   }
-  else if(action==='visualSettings'){effects?.setSettings(value);satellites?.setDetection(value?.detection!==false);satellites?.setDetectionSettings(value);document.documentElement.dataset.visualPreset=effects?.settings.style||'normal';celestial?.setLabelsVisible?.(effects?.settings.labels!==false);state(true);}
-  else if(action==='sputnik'&&body==='earth'){cameraMotion?.cancel();sputnikOrbit?.command(event.data.command,value);}
-  else if(action==='focus')setFocus(event.data.focus);
-  else if(action==='context'){focus.context=event.data.context||[];celestial?.setBodies(focus.context);state(true);}
-  else if(action==='lookAt'&&typeof value==='string'){cameraMotion?.cancel();celestial?.lookAt(value);state(true);}
-  else if(action==='look'&&value)lookAround(value.yaw,value.pitch);
-  else if(action==='pause')suspend(value);
-  else if(action==='dispose')dispose();
-  else if(action==='zoom')zoom(value);
-  else if(action==='tilt'&&finite(value))orient(value);
-  else if(action==='setTilt'&&finite(value))orient(0,0,value);
-  else if(action==='turn'&&finite(value))orient(0,value);
-  else if(action==='move')move(value);
-  else if(action==='topDown')orient(0,0,0);
-  else if(action==='resetView')resetView(true);
-  else if(action==='toggleViewTilt')toggleViewTilt();
-  else if(action==='northUp')northUp();
-  else if(action==='reveal')reveal();
+  else if (action === 'visualSettings') { effects?.setSettings(value); satellites?.setDetection(value?.detection !== false); satellites?.setDetectionSettings(value); document.documentElement.dataset.visualPreset = effects?.settings.style || 'normal'; celestial?.setLabelsVisible?.(effects?.settings.labels !== false); state(true); }
+  else if (action === 'sputnik' && body === 'earth') { cameraMotion?.cancel(); sputnikOrbit?.command(event.data.command, value); }
+  else if (action === 'focus') setFocus(event.data.focus);
+  else if (action === 'context') { focus.context = event.data.context || []; celestial?.setBodies(focus.context); state(true); }
+  else if (action === 'lookAt' && typeof value === 'string') { cameraMotion?.cancel(); celestial?.lookAt(value); state(true); }
+  else if (action === 'look' && value) lookAround(value.yaw, value.pitch);
+  else if (action === 'pause') suspend(value);
+  else if (action === 'dispose') dispose();
+  else if (action === 'zoom') zoom(value);
+  else if (action === 'tilt' && finite(value)) orient(value);
+  else if (action === 'setTilt' && finite(value)) orient(0, 0, value);
+  else if (action === 'turn' && finite(value)) orient(0, value);
+  else if (action === 'move') move(value);
+  else if (action === 'topDown') orient(0, 0, 0);
+  else if (action === 'resetView') resetView(true);
+  else if (action === 'toggleViewTilt') toggleViewTilt();
+  else if (action === 'northUp') northUp();
+  else if (action === 'reveal') reveal();
 }
-function dispose(){if(disposed)return;disposed=true;sputnikOrbit?.dispose();missionMarker?.dispose();adaptiveQuality?.dispose();cameraMotion?.cancel();disposeCameraControls?.();satellites?.dispose();creditObserver.disconnect();window.removeEventListener('message',receive);earth3D?.destroy();effects?.destroy();celestial?.dispose();if(viewer&&!viewer.isDestroyed())viewer.destroy();}
-async function start(){
-  try{
-    viewer=new Cesium.Viewer('globe',{ellipsoid,globe:new Cesium.Globe(ellipsoid),mapProjection:new Cesium.GeographicProjection(ellipsoid),
-      baseLayer:false,timeline:false,animation:false,baseLayerPicker:false,geocoder:false,homeButton:false,sceneModePicker:false,
-      navigationHelpButton:false,fullscreenButton:false,vrButton:false,selectionIndicator:false,infoBox:false,creditContainer:document.querySelector('#cesium-credit'),showRenderLoopErrors:false,msaaSamples:1});
-    const scene=viewer.scene,controller=scene.screenSpaceCameraController;
-    cameraMotion=createInspectionCameraMotion({Cesium,viewer,applyFrame:frame=>applyFrame(frame,{motion:true})});
-    defaultFov=viewer.camera.frustum.fov;
-    viewer.clock.shouldAnimate=false;scene.requestRenderMode=true;scene.maximumRenderTimeChange=Infinity;
-    scene.backgroundColor=Cesium.Color.BLACK;scene.highDynamicRange=false;scene.verticalExaggeration=1;
-    effects=createCesiumInspectionEffects({Cesium,viewer});
-    document.documentElement.dataset.visualPreset=effects.settings.style;
-    celestial=createCelestialScene({Cesium,viewer,onSelect:id=>post('select',{id})});
+function dispose() { if (disposed) return; disposed = true; sputnikOrbit?.dispose(); missionMarker?.dispose(); adaptiveQuality?.dispose(); cameraMotion?.cancel(); disposeCameraControls?.(); satellites?.dispose(); creditObserver.disconnect(); window.removeEventListener('message', receive); earth3D?.destroy(); effects?.destroy(); celestial?.dispose(); if (viewer && !viewer.isDestroyed()) viewer.destroy(); }
+async function start() {
+  try {
+    viewer = new Cesium.Viewer('globe', {
+      ellipsoid, globe: new Cesium.Globe(ellipsoid), mapProjection: new Cesium.GeographicProjection(ellipsoid),
+      baseLayer: false, timeline: false, animation: false, baseLayerPicker: false, geocoder: false, homeButton: false, sceneModePicker: false,
+      navigationHelpButton: false, fullscreenButton: false, vrButton: false, selectionIndicator: false, infoBox: false, creditContainer: document.querySelector('#cesium-credit'), showRenderLoopErrors: false, msaaSamples: 1
+    });
+    const scene = viewer.scene, controller = scene.screenSpaceCameraController;
+    cameraMotion = createInspectionCameraMotion({ Cesium, viewer, applyFrame: frame => applyFrame(frame, { motion: true }) });
+    defaultFov = viewer.camera.frustum.fov;
+    viewer.clock.shouldAnimate = false; scene.requestRenderMode = true; scene.maximumRenderTimeChange = Infinity;
+    scene.backgroundColor = Cesium.Color.BLACK; scene.highDynamicRange = false; scene.verticalExaggeration = 1;
+    effects = createCesiumInspectionEffects({ Cesium, viewer });
+    document.documentElement.dataset.visualPreset = effects.settings.style;
+    celestial = createCelestialScene({ Cesium, viewer, onSelect: id => post('select', { id }) });
     applyViewTheme(document.documentElement.dataset.theme);
-    if(body==='earth')satellites=createEarthSatellites({Cesium,viewer,issOnly:true,getLanguage:()=>document.documentElement.lang,onLanguageChange:callback=>{window.addEventListener('relic-satellite-language',callback);return()=>window.removeEventListener('relic-satellite-language',callback);},onInteraction:()=>{cameraMotion.cancel();post('interaction');}});
-    if(body==='earth')sputnikOrbit=createSputnikOrbit({Cesium,viewer,onState:state=>post('sputnik-state',{state}),onActive:active=>{cameraMotion?.cancel();satellites?.pause(paused||active);satellites?.setMissionHidden(active);missionMarker?.setVisible(!active);}});
-    scene.globe.baseColor=Cesium.Color.fromCssColorString(body==='earth'?'#183444':body==='moon'?'#777573':'#82533e');
-    scene.globe.maximumScreenSpaceError=compact?2.5:1.5;scene.globe.tileCacheSize=compact?72:160;scene.globe.depthTestAgainstTerrain=true;
-    if(scene.skyAtmosphere)scene.skyAtmosphere.show=false;if(scene.sun)scene.sun.show=false;if(scene.moon)scene.moon.show=false;
-    scene.globe.showGroundAtmosphere=false;scene.fog.enabled=false;
-    disposeCameraControls=installGlobeCameraControls(viewer,{radius});
-    adaptiveQuality=installAdaptiveWorldQuality(viewer,{compact,onFPS:fps=>post('fps',{fps})});
-    const resizeQuality=()=>adaptiveQuality.resize({compact});window.addEventListener('resize',resizeQuality,{passive:true});const disposeQuality=adaptiveQuality.dispose;adaptiveQuality.dispose=()=>{window.removeEventListener('resize',resizeQuality);disposeQuality();};
-    viewer.camera.percentageChanged=.002;
-    const interaction=()=>{cameraMotion.cancel();viewer.camera.cancelFlight();post('interaction');};
-    const touchPoints=new Map();let touchLook=null,touchDirty=false;
-    const touchMetrics=()=>{const points=[...touchPoints.values()].slice(0,2);return points.length===2?{x:(points[0].x+points[1].x)/2,y:(points[0].y+points[1].y)/2,spread:Math.hypot(points[0].x-points[1].x,points[0].y-points[1].y)}:null;};
-    scene.canvas.addEventListener('pointerdown',event=>{
-      if(event.pointerType!=='touch')return;
+    if (body === 'earth') satellites = createEarthSatellites({ Cesium, viewer, issOnly: true, getLanguage: () => document.documentElement.lang, onLanguageChange: callback => { window.addEventListener('relic-satellite-language', callback); return () => window.removeEventListener('relic-satellite-language', callback); }, onInteraction: () => { cameraMotion.cancel(); post('interaction'); } });
+    if (body === 'earth') sputnikOrbit = createSputnikOrbit({ Cesium, viewer, onState: state => post('sputnik-state', { state }), onActive: active => { cameraMotion?.cancel(); satellites?.pause(paused || active); satellites?.setMissionHidden(active); missionMarker?.setVisible(!active); } });
+    scene.globe.baseColor = Cesium.Color.fromCssColorString(body === 'earth' ? '#183444' : body === 'moon' ? '#777573' : '#82533e');
+    scene.globe.maximumScreenSpaceError = compact ? 2.5 : 1.5; scene.globe.tileCacheSize = compact ? 72 : 160; scene.globe.depthTestAgainstTerrain = true;
+    if (scene.skyAtmosphere) scene.skyAtmosphere.show = false; if (scene.sun) scene.sun.show = false; if (scene.moon) scene.moon.show = false;
+    scene.globe.showGroundAtmosphere = false; scene.fog.enabled = false;
+    disposeCameraControls = installGlobeCameraControls(viewer, { radius });
+    adaptiveQuality = installAdaptiveWorldQuality(viewer, { compact, onFPS: fps => post('fps', { fps }) });
+    const resizeQuality = () => adaptiveQuality.resize({ compact }); window.addEventListener('resize', resizeQuality, { passive: true }); const disposeQuality = adaptiveQuality.dispose; adaptiveQuality.dispose = () => { window.removeEventListener('resize', resizeQuality); disposeQuality(); };
+    viewer.camera.percentageChanged = .002;
+    const interaction = () => { cameraMotion.cancel(); viewer.camera.cancelFlight(); post('interaction'); };
+    const touchPoints = new Map(); let touchLook = null, touchDirty = false;
+    const touchMetrics = () => { const points = [...touchPoints.values()].slice(0, 2); return points.length === 2 ? { x: (points[0].x + points[1].x) / 2, y: (points[0].y + points[1].y) / 2, spread: Math.hypot(points[0].x - points[1].x, points[0].y - points[1].y) } : null; };
+    scene.canvas.addEventListener('pointerdown', event => {
+      if (event.pointerType !== 'touch') return;
       flushTouch();
-      touchPoints.set(event.pointerId,{x:event.clientX,y:event.clientY});
-      try{scene.canvas.setPointerCapture(event.pointerId);}catch{}
-      if(touchPoints.size===2){touchLook={...touchMetrics(),enabled:controller.enableInputs};controller.enableInputs=false;interaction();}
-    },{capture:true,passive:true});
-    scene.canvas.addEventListener('pointermove',event=>{
-      if(!touchPoints.has(event.pointerId))return;touchPoints.set(event.pointerId,{x:event.clientX,y:event.clientY});
-      if(touchLook){touchDirty=true;event.preventDefault();scene.requestRender();}
-    },{capture:true,passive:false});
-    function flushTouch(){
-      if(!touchDirty)return;touchDirty=false;
-      const next=touchMetrics();if(!touchLook||!next)return;
-      lookAround(-(next.x-touchLook.x)/Math.max(1,viewer.canvas.clientWidth)*180,(next.y-touchLook.y)/Math.max(1,viewer.canvas.clientHeight)*180);
-      if(next.spread>8&&touchLook.spread>8)zoom(touchLook.spread/next.spread);
-      touchLook={...next,enabled:touchLook.enabled};
+      touchPoints.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      try { scene.canvas.setPointerCapture(event.pointerId); } catch { }
+      if (touchPoints.size === 2) { touchLook = { ...touchMetrics(), enabled: controller.enableInputs }; controller.enableInputs = false; interaction(); }
+    }, { capture: true, passive: true });
+    scene.canvas.addEventListener('pointermove', event => {
+      if (!touchPoints.has(event.pointerId)) return; touchPoints.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      if (touchLook) { touchDirty = true; event.preventDefault(); scene.requestRender(); }
+    }, { capture: true, passive: false });
+    function flushTouch() {
+      if (!touchDirty) return; touchDirty = false;
+      const next = touchMetrics(); if (!touchLook || !next) return;
+      lookAround(-(next.x - touchLook.x) / Math.max(1, viewer.canvas.clientWidth) * 180, (next.y - touchLook.y) / Math.max(1, viewer.canvas.clientHeight) * 180);
+      if (next.spread > 8 && touchLook.spread > 8) zoom(touchLook.spread / next.spread);
+      touchLook = { ...next, enabled: touchLook.enabled };
     }
     // Cesium also receives the native touch stream: keep its pinch controller
     // disabled until both samples have been applied together before rendering.
     scene.preUpdate.addEventListener(flushTouch);
-    const endTouch=event=>{
-      if(!touchPoints.has(event.pointerId))return;
-      flushTouch();touchPoints.delete(event.pointerId);
-      try{scene.canvas.releasePointerCapture(event.pointerId);}catch{}
-      if(touchLook&&touchPoints.size<2){controller.enableInputs=touchLook.enabled;touchLook=null;}
+    const endTouch = event => {
+      if (!touchPoints.has(event.pointerId)) return;
+      flushTouch(); touchPoints.delete(event.pointerId);
+      try { scene.canvas.releasePointerCapture(event.pointerId); } catch { }
+      if (touchLook && touchPoints.size < 2) { controller.enableInputs = touchLook.enabled; touchLook = null; }
     };
-    for(const type of ['pointerup','pointercancel','lostpointercapture'])scene.canvas.addEventListener(type,endTouch,{capture:true});
-    scene.canvas.addEventListener('pointerdown',interaction,{passive:true});
-    scene.canvas.addEventListener('wheel',interaction,{passive:true});
-    scene.canvas.tabIndex=0;
-    scene.canvas.addEventListener('keydown',event=>{
-      if(event.key==='Escape'&&focus.inspection==='apollo-launchpad'){event.preventDefault();post('launchpad-close');return;}
-      const moves={w:'up',s:'down',a:'left',d:'right'};
-      if(moves[event.key])move(moves[event.key]);
-      else if(event.key==='+'||event.key==='=')zoom(.8);else if(event.key==='-')zoom(1.25);else if(['n','Home'].includes(event.key))orient(0,0,0);else if(event.key.toLowerCase()==='q')orient(0,-5);else if(event.key.toLowerCase()==='e')orient(0,5);else if(event.key.toLowerCase()==='r')resetView(true);else return;
-      event.preventDefault();post('interaction');
+    for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) scene.canvas.addEventListener(type, endTouch, { capture: true });
+    scene.canvas.addEventListener('pointerdown', interaction, { passive: true });
+    scene.canvas.addEventListener('wheel', interaction, { passive: true });
+    scene.canvas.tabIndex = 0;
+    scene.canvas.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && focus.inspection === 'apollo-launchpad') { event.preventDefault(); post('launchpad-close'); return; }
+      const moves = { w: 'up', s: 'down', a: 'left', d: 'right' };
+      if (moves[event.key]) move(moves[event.key]);
+      else if (event.key === '+' || event.key === '=') zoom(.8); else if (event.key === '-') zoom(1.25); else if (['n', 'Home'].includes(event.key)) orient(0, 0, 0); else if (event.key.toLowerCase() === 'q') orient(0, -5); else if (event.key.toLowerCase() === 'e') orient(0, 5); else if (event.key.toLowerCase() === 'r') resetView(true); else return;
+      event.preventDefault(); post('interaction');
     });
-    missionMarker=createCesiumMissionMarker({
+    missionMarker = createCesiumMissionMarker({
       Cesium,
       viewer,
       body,
@@ -405,7 +417,7 @@ async function start(){
       getSurfaceHeight: groundHeight,
       onLocate: (site) => {
         interaction();
-        goTo(site.lat, site.lon, Math.max(12000, radius * .035), 0, 0);
+        goTo(site.lat, site.lon, Math.max(12000, radius * .035), 0, 0, true);
       },
       onOpen: (id, anchor) => {
         interaction();
@@ -413,22 +425,22 @@ async function start(){
       },
       onAnchor: anchor => post('mission-anchor', { id: body === 'earth' ? 'sputnik-1' : 'apollo-11', anchor })
     });
-    const handler=new Cesium.ScreenSpaceEventHandler(scene.canvas);
-    handler.setInputAction(event=>{if(satellites?.handleClick(event.position)){interaction();return;}if(celestial?.handleClick(event.position,{pixels:compact?22:13}))interaction();},Cesium.ScreenSpaceEventType.LEFT_CLICK);
-    handler.setInputAction(event=>{const hit=pickTarget(event.position);if(!hit)return;const cart=ellipsoid.cartesianToCartographic(hit),frame=cameraFrame();goTo(cart.latitude/DEG,cart.longitude/DEG,Math.max(50,(frame?.range||radius*.1)*.3),frame?.heading/DEG||0,frame?90+frame.pitch/DEG:0);interaction();},Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
-    scene.renderError.addEventListener(()=>{post('error');dispose();});
-    scene.postRender.addEventListener(()=>state());
-    viewer.camera.changed.addEventListener(()=>{if(!cameraMotion.destination)state(true);});
-    window.addEventListener('message',receive);
-    document.addEventListener('visibilitychange',()=>suspend(paused));
-    window.addEventListener('pagehide',dispose,{once:true});
-    window.addEventListener('resize',()=>{if(!disposed){viewer.resize();requestRender();}});
-    setFocus(focus);post('boot');
-    await addImagery();if(disposed)return;
+    const handler = new Cesium.ScreenSpaceEventHandler(scene.canvas);
+    handler.setInputAction(event => { if (satellites?.handleClick(event.position)) { interaction(); return; } if (celestial?.handleClick(event.position, { pixels: compact ? 22 : 13 })) interaction(); }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+    handler.setInputAction(event => { const hit = pickTarget(event.position); if (!hit) return; const cart = ellipsoid.cartesianToCartographic(hit), frame = cameraFrame(); goTo(cart.latitude / DEG, cart.longitude / DEG, Math.max(50, (frame?.range || radius * .1) * .3), frame?.heading / DEG || 0, frame ? 90 + frame.pitch / DEG : 0); interaction(); }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+    scene.renderError.addEventListener(() => { post('error'); dispose(); });
+    scene.postRender.addEventListener(() => state());
+    viewer.camera.changed.addEventListener(() => { if (!cameraMotion.destination) state(true); });
+    window.addEventListener('message', receive);
+    document.addEventListener('visibilitychange', () => suspend(paused));
+    window.addEventListener('pagehide', dispose, { once: true });
+    window.addEventListener('resize', () => { if (!disposed) { viewer.resize(); requestRender(); } });
+    setFocus(focus); post('boot');
+    await addImagery(); if (disposed) return;
     // A working native frame is enough to enter inspection. Finer imagery and
     // terrain continue streaming without freezing controls behind a load screen.
-    let remove=scene.postRender.addEventListener(()=>{if(disposed)return;remove();ready=true;sourceLabel=body==='earth'?'NASA / Esri imagery':body==='moon'?'NASA LROC imagery':'NASA Viking / CTX imagery';updateCredits();post('ready');state(true);suspend(paused);});
-    requestRender();addTerrain();
-  }catch{post('error');document.querySelector('#failure').hidden=false;document.querySelector('#failure').textContent='The detailed planetary renderer is unavailable.';dispose();}
+    let remove = scene.postRender.addEventListener(() => { if (disposed) return; remove(); ready = true; sourceLabel = body === 'earth' ? 'NASA / Esri imagery' : body === 'moon' ? 'NASA LROC imagery' : 'NASA Viking / CTX imagery'; updateCredits(); post('ready'); state(true); suspend(paused); });
+    requestRender(); addTerrain();
+  } catch { post('error'); document.querySelector('#failure').hidden = false; document.querySelector('#failure').textContent = 'The detailed planetary renderer is unavailable.'; dispose(); }
 }
 start();

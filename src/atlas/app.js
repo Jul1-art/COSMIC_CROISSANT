@@ -5,6 +5,7 @@ import {createAtlasMission} from '../missions/atlas-mission.js';
 import {createMissionMarkers} from '../missions/mission-markers.js';
 import {createDistantProbeMenu} from '../missions/distant-probes.js';
 import {openMission} from '../missions/mission-ui.js';
+import {getMissionPlanet,getMissionSite} from '../missions/mission-sites.js';
 import {createRenderedFrameMeter} from '../worlds/world-performance.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -1156,8 +1157,20 @@ window.addEventListener('planet-dashboard-location',event=>{
   if(!atlasBodies.has(id)||id==='overview'||!Number.isFinite(lat)||!Number.isFinite(lon))return;
   event.preventDefault();focusCoordinates(id,lat,lon,Number.isFinite(range)?range/1000:undefined);
 });
-const requestedBody = new URLSearchParams(window.location.search).get('body');
+const requestedMission = new URLSearchParams(window.location.search).get('mission');
+let requestedBody = new URLSearchParams(window.location.search).get('body');
+if (!requestedBody && requestedMission) {
+  const planet = getMissionPlanet(requestedMission);
+  if (planet === 'moon' || planet === 'mars') requestedBody = planet;
+}
 const requestedInspection=readInspectionLink(location.href);
+if (requestedMission && (!Number.isFinite(requestedInspection.lat) || !Number.isFinite(requestedInspection.lon))) {
+  const missionSite = getMissionSite(requestedMission);
+  if (missionSite) {
+    requestedInspection.lat = missionSite.lat;
+    requestedInspection.lon = missionSite.lon;
+  }
+}
 inspectionControls=connectInspectionControls({getState:getInspectionState,execute:executeInspectionCommand,getLanguage,
   initialSettings:requestedInspection.style?{style:requestedInspection.style}:{},
   applySettings(settings){
@@ -1251,6 +1264,21 @@ window.addEventListener('relic-archive-start',async event=>{
  const detail=event.detail;if(!detail?.record)return;
  try{
   if(atlasMission.active||atlasMission.starting)atlasMission.stop(false);
+  const planet = getMissionPlanet(detail.record.id) || (['moon','mars'].includes(detail.record.body) ? detail.record.body : null);
+  if (planet === 'moon' || planet === 'mars') {
+    const site = getMissionSite(detail.record.id);
+    selectBody(planet);
+    if (site && Number.isFinite(site.lat) && Number.isFinite(site.lon)) {
+      focusCoordinates(planet, site.lat, site.lon, 12);
+    }
+    detail.onState?.({
+      progress: 0,
+      playing: false,
+      mode: 'site',
+      status: `${detail.record.name} · Carte 3D détaillée de ${planet === 'moon' ? 'la Lune' : 'Mars'} · ${site?.siteName || 'Surface'}`
+    });
+    return;
+  }
   const {createArchiveAtlas}=await import('../missions/archive-atlas.js');
   const controller=createArchiveAtlas({...atlasMissionOptions,record:detail.record,events:detail.events,onState:detail.onState,
    getOrientation:id=>(naturalSystems?.getMesh(id)||(id==='moon'?moon:planetMeshes.get(id)))?.getWorldQuaternion(new THREE.Quaternion())||null,

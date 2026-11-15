@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {MISSION_SITES,getMissionSitesForBody,missionSiteLabelOffset} from '../src/missions/mission-sites.js';
+import {MISSION_SITES,getMissionSitesForBody,missionSiteLabelOffset,MOON_MISSIONS,MARS_MISSIONS,getMissionPlanet,getMissionSite} from '../src/missions/mission-sites.js';
 import {placeMissionLabels} from '../src/missions/marker-labels.js';
 const catalog=JSON.parse(await readFile(new URL('../assets/missions/catalog.json',import.meta.url)));
 const ids=new Set(catalog.map(row=>row.id));
@@ -45,4 +45,23 @@ test('crowded surface labels remain inside a mobile viewport and independently s
     assert(a.x>=8&&a.x+a.width<=382&&a.y>=78&&a.y+a.height<=722);
     for(const b of labels.slice(i+1))assert(!(a.x<b.x+b.width&&a.x+a.width>b.x&&a.y<b.y+b.height&&a.y+a.height>b.y),'Mission labels overlap');
   }
+});
+test('Moon and Mars missions resolve to their target planet and precise 3D landing site',()=>{
+  assert.equal(MOON_MISSIONS.size, 36);
+  assert.equal(MARS_MISSIONS.size, 17);
+  assert.equal(getMissionPlanet('chang-e-6'), 'moon');
+  assert.equal(getMissionPlanet('apollo-11'), 'moon');
+  assert.equal(getMissionPlanet('perseverance'), 'mars');
+  assert.equal(getMissionPlanet('curiosity'), 'mars');
+  assert.equal(getMissionPlanet('voyager-1'), null);
+
+  const ce6 = getMissionSite('chang-e-6');
+  assert(ce6, "Chang'e 6 must have a landing site");
+  assert.equal(ce6.lat, -41.60);
+  assert.equal(ce6.lon, -154.00);
+
+  const per = getMissionSite('perseverance');
+  assert(per, 'Perseverance must have a landing site');
+  assert.equal(per.lat, 18.4447);
+  assert.equal(per.lon, 77.4508);
 });

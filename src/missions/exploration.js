@@ -5,6 +5,7 @@ import {loadJSON,asset,escapeHTML as e,DESTINATIONS,missionURL} from './catalog.
 import {mountDossier} from './dossier-experience.js';
 import {archiveModelSources} from './archive-model-resources.js';
 import {archiveTarget} from './archive-targets.js';
+import {getMissionPlanet,getMissionSite} from './mission-sites.js';
 
 const tabs=[['identite','La mission'],['inventaire','Matériel & instruments'],['chronologie','Chronologie'],['science','Science & héritage'],['sources','Sources & archives']];
 let mission,media;
@@ -12,7 +13,22 @@ async function showFilm(){
  const {openVideo}=await import('./mission-ui.js');
  await openVideo(mission.id);
 }
-function show3D(){location.assign(appURL(`index.html?mission=${encodeURIComponent(mission.id)}&missionView=explore`).href);}
+function show3D(){
+ const planet=getMissionPlanet(mission.id)||(['moon','mars'].includes(mission.body)?mission.body:null);
+ const site=getMissionSite(mission.id);
+ if(planet==='moon'||planet==='mars'){
+  const params=new URLSearchParams();
+  params.set('body',planet);
+  params.set('mission',mission.id);
+  if(site&&Number.isFinite(site.lat)&&Number.isFinite(site.lon)){
+   params.set('lat',String(site.lat));
+   params.set('lon',String(site.lon));
+  }
+  location.assign(appURL(`index.html?${params.toString()}`).href);
+  return;
+ }
+ location.assign(appURL(`index.html?mission=${encodeURIComponent(mission.id)}&missionView=explore`).href);
+}
 
 try{
  const id=new URLSearchParams(location.search).get('mission');

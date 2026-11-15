@@ -76,6 +76,34 @@ export function getMissionSitesForBody(body) {
   return MISSION_SITES[body === 'titan' ? 'naif-606' : body] || [];
 }
 
+export const MOON_MISSIONS = new Set([
+  'apollo-14','apollo-15','apollo-16','apollo-17','apollo-11','apollo-12','apollo-13',
+  'chang-e-3','chang-e-4','chang-e-1','chang-e-2','chang-e-5','chang-e-6','chandrayaan-3',
+  'lro','luna-10','luna-11','luna-12','luna-13','luna-14','luna-15','luna-16','luna-17',
+  'luna-2','luna-1','luna-3','luna-9','lunokhod-1','lunokhod-2',
+  'surveyor-1','surveyor-2','surveyor-3','surveyor-4','surveyor-5','surveyor-6','surveyor-7'
+]);
+
+export const MARS_MISSIONS = new Set([
+  '2001-mars-odyssey','exomars','hope','mars-express','mars-reconnaissance-orbiter',
+  'maven','tianwen-1','curiosity','mars-pathfinder','perseverance','viking-1',
+  'viking-2','opportunity','rover-rosalind-franklin','rover-zhurong','sojourner','spirit'
+]);
+
+export function getMissionPlanet(missionId) {
+  if (MOON_MISSIONS.has(missionId)) return 'moon';
+  if (MARS_MISSIONS.has(missionId)) return 'mars';
+  return null;
+}
+
+export function getMissionSite(missionId) {
+  for (const list of Object.values(MISSION_SITES)) {
+    const site = list.find(s => s.id === missionId);
+    if (site) return site;
+  }
+  return null;
+}
+
 // Co-located lander/rover dossiers remain individually selectable. Labels fan
 // upwards while the map-pin tip stays at the actual surface coordinate.
 export function missionSiteLabelOffset(site, sites) {
