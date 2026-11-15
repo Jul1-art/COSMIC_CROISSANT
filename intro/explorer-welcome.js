@@ -3,21 +3,20 @@ import {createOpeningTyping} from './prologue-typing.js';
 import {getExplorerName,saveExplorerName,normalizeExplorerName} from '../src/core/explorer-profile.js';
 
 const copy={
- en:{greeting:'Hi, explorer of space.\nWant to learn about NASA and ESA missions ?\nWell, you have come to the right place.\nFirst, let me ask you some questions.\nDo you prefer English or French ?',name:'What’s your first name ?',label:'Your first name',placeholder:'First name',submit:'Confirm first name',ready:'Okay, {name}.\nWe’re ready to discover. Are you ready ?',go:'Yeah, let’s go!',film:'Would you like to watch a film\nabout the beginning of space exploration ?',yes:'Yes, show me the film',no:'No, take me to the Solar System',back:'Back',click:'Click to continue',soundOn:'Mute typing sound',soundOff:'Enable typing sound'},
- fr:{greeting:'Salut, explorateur de l’espace.\nTu veux découvrir les missions de la NASA et de l’ESA ?\nTu es au bon endroit.\nD’abord, quelques questions.\nTu préfères l’anglais ou le français ?',name:'Quel est ton prénom ?',label:'Ton prénom',placeholder:'Prénom',submit:'Valider le prénom',ready:'D’accord, {name}.\nTout est prêt pour découvrir. Et toi ?',go:'Oui, c’est parti !',film:'Veux-tu regarder un film\nsur les débuts de la conquête spatiale ?',yes:'Oui, voir le film',no:'Non, explorer le système solaire',back:'Retour',click:'Clique pour continuer',soundOn:'Couper le son de frappe',soundOff:'Activer le son de frappe'}
+ en:{greeting:'Hi, explorer of space.\nWant to learn about NASA and ESA missions ?\nWell, you have come to the right place.\nFirst, let me ask you some questions.\nDo you prefer English or French ?',name:'What’s your first name ?',label:'Your first name',placeholder:'First name',submit:'Confirm first name',ready:'Okay, {name}.\nWe’re ready to discover. Are you ready ?',go:'Yeah, let’s go!',film:'Would you like to watch a film\nabout the beginning of space exploration ?',yes:'Yes, show me the film',no:'No, take me to the Solar System',back:'Back',click:'Click to continue'},
+ fr:{greeting:'Salut, explorateur de l’espace.\nTu veux découvrir les missions de la NASA et de l’ESA ?\nTu es au bon endroit.\nD’abord, quelques questions.\nTu préfères l’anglais ou le français ?',name:'Quel est ton prénom ?',label:'Ton prénom',placeholder:'Prénom',submit:'Valider le prénom',ready:'D’accord, {name}.\nTout est prêt pour découvrir. Et toi ?',go:'Oui, c’est parti !',film:'Veux-tu regarder un film\nsur les débuts de la conquête spatiale ?',yes:'Oui, voir le film',no:'Non, explorer le système solaire',back:'Retour',click:'Clique pour continuer'}
 };
 /** Intro-only gate. Returning from a mission keeps the existing return policy. */
 export function createExplorerWelcome({host,getLanguage,setLanguage,reducedMotion,onComplete}){
  const document=host.ownerDocument;
  const root=document.createElement('section');root.className='explorer-welcome prologue';root.setAttribute('aria-label','Welcome to RELIC');root.dataset.cueKind='typing';
- root.innerHTML='<main class="welcome-main"><h1 class="welcome-title" tabindex="-1"></h1><p class="welcome-click-hint"></p><div class="welcome-interaction"></div></main><footer class="welcome-footer"><button type="button" class="welcome-back"></button><button type="button" class="welcome-sound"></button></footer>';
+ root.innerHTML='<main class="welcome-main"><h1 class="welcome-title" tabindex="-1"></h1><p class="welcome-click-hint"></p><div class="welcome-interaction"></div></main><footer class="welcome-footer"><button type="button" class="welcome-back"></button></footer>';
  const background=[...document.body.children].filter(node=>!['SCRIPT','LINK','STYLE'].includes(node.tagName)).map(node=>[node,node.inert]);
  for(const [node]of background)node.inert=true;
  function restore(){for(const [node,inert]of background)node.inert=inert;}
  host.before(root);host.hidden=true;
  const title=root.querySelector('h1'),interaction=root.querySelector('.welcome-interaction'),back=root.querySelector('.welcome-back');
  const sound=createTypingSound();root.addEventListener('pointerdown',sound.unlock,{passive:true});root.addEventListener('keydown',sound.unlock);
- const soundToggle=root.querySelector('.welcome-sound');function soundLabel(){const c=copy[language()];soundToggle.textContent=sound.muted?'♪̸':'♪';soundToggle.setAttribute('aria-label',sound.muted?c.soundOff:c.soundOn);soundToggle.setAttribute('aria-pressed',String(!sound.muted));}soundToggle.onclick=()=>{sound.toggle();soundLabel();};
  const typing=createOpeningTyping({element:title,getLanguage,reducedMotion});
  let step=0,name=getExplorerName(),frame=0,disposed=false,typed=false,duration=0;
  let compact=innerWidth<=650;
@@ -28,7 +27,7 @@ export function createExplorerWelcome({host,getLanguage,setLanguage,reducedMotio
  function finish(watch){if(disposed)return;disposed=true;cancelAnimationFrame(frame);typing.dispose();sound.dispose();window.removeEventListener('resize',resize);root.remove();restore();host.hidden=false;onComplete({watch,name,language:language()});}
  function render(focus=true){
   cancelAnimationFrame(frame);const c=copy[language()];root.lang=language();root.setAttribute('aria-label',language()==='fr'?'Bienvenue sur RELIC':'Welcome to RELIC');root.dataset.step=String(step);
-  soundLabel();const hint=root.querySelector('.welcome-click-hint');hint.textContent=c.click;hint.hidden=step>=4;back.hidden=step===0;back.textContent=c.back;interaction.replaceChildren();
+  const hint=root.querySelector('.welcome-click-hint');hint.textContent=c.click;hint.hidden=step>=4;back.hidden=step===0;back.textContent=c.back;interaction.replaceChildren();
   const raw=[...c.greeting.split('\n'),c.name,c.ready.replace('{name}',name),c.film][step];
   const limit=innerWidth<=650?32:65;const text=raw.split('\n').flatMap(line=>{const lines=[''];for(const word of line.split(' ').flatMap(word=>Array.from({length:Math.max(1,Math.ceil([...word].length/limit))},(_,i)=>[...word].slice(i*limit,(i+1)*limit).join('')))){const i=lines.length-1;if(lines[i]&&(lines[i]+' '+word).length>limit)lines.push(word);else lines[i]+=(lines[i]?' ':'')+word;}return lines;}).join('\n');
   duration=reducedMotion()?0:Math.min(8,Math.max(1.4,text.length*.025));typing.setCue({start:0,typingStart:0,typingDuration:duration||.2},text);
