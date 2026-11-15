@@ -2,8 +2,8 @@ import {createOpeningTyping} from './prologue-typing.js';
 import {getExplorerName,saveExplorerName,normalizeExplorerName} from '../src/core/explorer-profile.js';
 
 const copy={
- en:{greeting:'Hi, explorer of space.\nWant to learn about NASA and ESA missions?\nWell, you have come to the right place.\nFirst, let me ask you some questions.\nDo you prefer English or French?',name:'What’s your first name?',hint:'Spacey will use your name when you explore together.\nSaved only in this browser.',label:'Your first name',placeholder:'First name',continue:'Continue',ready:'Okay, {name}.\nWe’re ready to discover. Are you ready?',go:'Yeah, let’s go!',film:'Would you like to watch a film\nabout the beginning of space exploration?',yes:'Yes, show me the film',no:'No, take me to the Solar System',back:'Back'},
- fr:{greeting:'Salut, explorateur de l’espace.\nTu veux découvrir les missions de la NASA et de l’ESA ?\nTu es au bon endroit.\nD’abord, quelques questions.\nTu préfères l’anglais ou le français ?',name:'Quel est ton prénom ?',hint:'Spacey utilisera ton prénom pendant votre exploration.\nIl est enregistré uniquement dans ce navigateur.',label:'Ton prénom',placeholder:'Prénom',continue:'Continuer',ready:'D’accord, {name}.\nTout est prêt pour découvrir. Et toi ?',go:'Oui, c’est parti !',film:'Veux-tu regarder un film\nsur les débuts de la conquête spatiale ?',yes:'Oui, voir le film',no:'Non, explorer le système solaire',back:'Retour'}
+ en:{greeting:'Hi, explorer of space.\nWant to learn about NASA and ESA missions ?\nWell, you have come to the right place.\nFirst, let me ask you some questions.\nDo you prefer English or French ?',name:'What’s your first name ?',label:'Your first name',placeholder:'First name',submit:'Confirm first name',ready:'Okay, {name}.\nWe’re ready to discover. Are you ready ?',go:'Yeah, let’s go!',film:'Would you like to watch a film\nabout the beginning of space exploration ?',yes:'Yes, show me the film',no:'No, take me to the Solar System',back:'Back'},
+ fr:{greeting:'Salut, explorateur de l’espace.\nTu veux découvrir les missions de la NASA et de l’ESA ?\nTu es au bon endroit.\nD’abord, quelques questions.\nTu préfères l’anglais ou le français ?',name:'Quel est ton prénom ?',label:'Ton prénom',placeholder:'Prénom',submit:'Valider le prénom',ready:'D’accord, {name}.\nTout est prêt pour découvrir. Et toi ?',go:'Oui, c’est parti !',film:'Veux-tu regarder un film\nsur les débuts de la conquête spatiale ?',yes:'Oui, voir le film',no:'Non, explorer le système solaire',back:'Retour'}
 };
 /** Intro-only gate. Returning from a mission keeps the existing return policy. */
 export function createExplorerWelcome({host,getLanguage,setLanguage,reducedMotion,onComplete}){
@@ -16,7 +16,7 @@ export function createExplorerWelcome({host,getLanguage,setLanguage,reducedMotio
  host.before(root);host.hidden=true;
  const title=root.querySelector('h1'),interaction=root.querySelector('.welcome-interaction'),back=root.querySelector('.welcome-back');
  const typing=createOpeningTyping({element:title,getLanguage,reducedMotion});
- let step=0,name=getExplorerName(),frame=0,disposed=false;
+ let step=0,name=getExplorerName(),frame=0,disposed=false,typed=false,duration=0;
  let compact=innerWidth<=650;
  function resize(){if(compact===(innerWidth<=650))return;compact=innerWidth<=650;if(step===5)name=normalizeExplorerName(root.querySelector('input')?.value);render(false);}
  window.addEventListener('resize',resize);
@@ -28,15 +28,19 @@ export function createExplorerWelcome({host,getLanguage,setLanguage,reducedMotio
   back.hidden=step===0;back.textContent=c.back;interaction.replaceChildren();
   const raw=[...c.greeting.split('\n'),c.name,c.ready.replace('{name}',name),c.film][step];
   const limit=innerWidth<=650?32:65;const text=raw.split('\n').flatMap(line=>{const lines=[''];for(const word of line.split(' ').flatMap(word=>Array.from({length:Math.max(1,Math.ceil([...word].length/limit))},(_,i)=>[...word].slice(i*limit,(i+1)*limit).join('')))){const i=lines.length-1;if(lines[i]&&(lines[i]+' '+word).length>limit)lines.push(word);else lines[i]+=(lines[i]?' ':'')+word;}return lines;}).join('\n');
-  const duration=reducedMotion()?0:Math.min(8,Math.max(1.4,text.length*.025));typing.setCue({start:0,typingStart:0,typingDuration:duration||.2},text);
-  const start=performance.now();function tick(now){typing.render({position:reducedMotion()?1:(now-start)/1000,gated:false});if(!disposed&&(now-start)/1000<duration+1)frame=requestAnimationFrame(tick);}frame=requestAnimationFrame(tick);
-  if(step<4)interaction.append(button(c.continue,()=>{step++;render();},true));
+  duration=reducedMotion()?0:Math.min(8,Math.max(1.4,text.length*.025));typing.setCue({start:0,typingStart:0,typingDuration:duration||.2},text);
+  typed=false;root.classList.remove('welcome-typing-done');
+  const start=performance.now();function tick(now){const elapsed=(now-start)/1000;typing.render({position:reducedMotion()?1:elapsed,gated:false});if(elapsed>=duration)completeTyping();else if(!disposed)frame=requestAnimationFrame(tick);}frame=requestAnimationFrame(tick);
   if(step===4){interaction.append(button('English',()=>{setLanguage('en');step=5;render();},true),button('Français',()=>{setLanguage('fr');step=5;render();}));}
-  if(step===5){const form=document.createElement('form');form.className='welcome-name-form';const label=document.createElement('label');label.htmlFor='explorer-first-name';label.textContent=c.label;const input=document.createElement('input');input.id='explorer-first-name';input.name='given-name';input.autocomplete='given-name';input.maxLength=60;input.required=true;input.placeholder=c.placeholder;input.value=name;const note=document.createElement('p');note.className='welcome-note';note.id='welcome-name-note';note.textContent=c.hint;input.setAttribute('aria-describedby',note.id);const submit=button(c.continue,()=>{},true);submit.type='submit';form.append(label,input,note,submit);form.onsubmit=e=>{e.preventDefault();const value=normalizeExplorerName(input.value);if(!value){input.value='';input.reportValidity();return;}name=saveExplorerName(value);step=6;render();};interaction.append(form);}
+  if(step===5){const form=document.createElement('form');form.className='welcome-name-form';const input=document.createElement('input');input.id='explorer-first-name';input.name='given-name';input.autocomplete='given-name';input.maxLength=60;input.required=true;input.placeholder=c.placeholder;input.value=name;input.setAttribute('aria-label',c.label);const submit=button('',()=>{},true);submit.classList.add('welcome-name-submit');submit.setAttribute('aria-label',c.submit);submit.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg>';submit.type='submit';form.append(input,submit);form.onsubmit=e=>{e.preventDefault();const value=normalizeExplorerName(input.value);if(!value){input.value='';input.reportValidity();return;}name=saveExplorerName(value);step=6;render();};interaction.append(form);}
   if(step===6)interaction.append(button(c.go,()=>{step=7;render();},true));
   if(step===7)interaction.append(button(c.yes,()=>finish(true),true),button(c.no,()=>finish(false)));
   if(focus)title.focus({preventScroll:true});
  }
+ function completeTyping(){cancelAnimationFrame(frame);typing.render({position:Math.max(1,duration+.15),gated:false});typed=true;root.classList.add('welcome-typing-done');}
+ function advance(){if(step>=4||disposed)return;if(!typed){completeTyping();return;}step++;render();}
+ root.addEventListener('click',event=>{if(!event.target.closest('button,input,form,a'))advance();});
+ root.addEventListener('keydown',event=>{if(step<4&&['Enter',' '].includes(event.key)&&!event.target.closest('button,input,form,a')){event.preventDefault();advance();}});
  back.onclick=()=>{if(step===5)name=normalizeExplorerName(root.querySelector('input')?.value);step=Math.max(0,step-1);render();};
  render(false);title.focus({preventScroll:true});
  return {dispose(){if(disposed)return;disposed=true;cancelAnimationFrame(frame);typing.dispose();window.removeEventListener('resize',resize);root.remove();restore();host.hidden=false;}};
