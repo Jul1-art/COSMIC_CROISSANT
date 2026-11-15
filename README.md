@@ -1,11 +1,11 @@
-# 🪐 RELIC — Interactive Planetary Atlas & Space Mission Explorer
+# 🥐 COSMIC CROISSANT (RELIC) — Interactive Planetary Atlas & Space Mission Explorer
 
 [![NASA Space Apps Challenge 2026](https://img.shields.io/badge/NASA%20Space%20Apps-2026-blue.svg?style=for-the-badge&logo=nasa)](https://www.spaceappschallenge.org/2026/)
 [![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/Jul1-art/badge.svg)](https://hub.xerj.org/contributors/Jul1-art)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Jul1-art/RELIC?style=for-the-badge)](https://github.com/Jul1-art/RELIC)
+[![GitHub stars](https://img.shields.io/github/stars/Jul1-art/COSMIC_CROISSANT?style=for-the-badge)](https://github.com/Jul1-art/COSMIC_CROISSANT)
 
-> **RELIC** is a 3D interactive planetary atlas and space exploration archive built for the **[NASA International Space Apps Challenge 2026](https://www.spaceappschallenge.org/2026/)**. It combines high-resolution planetary terrain cartography (CesiumJS), real-time orbital and interplanetary trajectory reconstructions (Three.js), and historical mission telemetry into an immersive pedagogical experience accessible from any browser.
+> **COSMIC CROISSANT** (project *RELIC*) is a 3D interactive planetary atlas and space exploration archive built for the **[NASA International Space Apps Challenge 2026](https://www.spaceappschallenge.org/2026/)**. It combines high-resolution planetary terrain cartography (CesiumJS), real-time orbital and interplanetary trajectory reconstructions (Three.js), and historical mission telemetry into an immersive pedagogical experience accessible from any browser.
 
 ---
 
@@ -85,8 +85,8 @@ No complex build pipeline or package manager required. The application runs nati
 
 ```bash
 # Clone the repository
-git clone https://github.com/Jul1-art/RELIC.git
-cd RELIC
+git clone https://github.com/Jul1-art/COSMIC_CROISSANT.git
+cd COSMIC_CROISSANT
 
 # Serve with any static HTTP server (e.g., Python, Node, or VS Code Live Server)
 python -m http.server 8000
