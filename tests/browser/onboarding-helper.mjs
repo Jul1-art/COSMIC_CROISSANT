@@ -2,6 +2,7 @@
 export async function skipWelcome(page){
  const welcome=page.locator('.explorer-welcome');
  if(!await welcome.count())return;
+ for(let i=0;i<4;i++)await welcome.getByRole('button',{name:/^(Continue|Continuer)$/}).click();
  await welcome.getByRole('button',{name:'English',exact:true}).click();
  await welcome.getByRole('textbox').fill('Explorer');
  await welcome.getByRole('button',{name:'Continue',exact:true}).click();
