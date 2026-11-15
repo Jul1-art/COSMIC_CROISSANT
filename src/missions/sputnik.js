@@ -1,3 +1,4 @@
+import {discoverMission} from '../core/mission-discoveries.js';
 import {localizeMissionElement} from './mission-locale.js';
 import {makeMissionControlsCollapsible} from './mission-controls.js';
 import {appURL} from '../core/paths.js';
@@ -31,4 +32,4 @@ function install(){
  window.addEventListener('resize',position);
  document.addEventListener('keydown',event=>{if(event.key!=='Escape'||event.defaultPrevented||document.querySelector('.mission-shared-film')||event.target.closest?.('input,select,textarea'))return;if(!card.hidden){card.hidden=true;event.preventDefault();}else if(active){command('stop');event.preventDefault();}});
 }
-export function openSputnik(){if(!card)install();card.hidden=false;position();}
+export function openSputnik(){discoverMission('sputnik-1');if(!card)install();card.hidden=false;position();}

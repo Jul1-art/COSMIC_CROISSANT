@@ -133,3 +133,9 @@ test('Escape from the launchpad iframe requests a return only for that inspectio
  f.globe.setFocus({id:'earth',inspection:'apollo-launchpad'});f.receive(frame,'launchpad-close',{});assert.equal(f.fpsEvents.at(-1).type,'relic-launchpad-command');assert.equal(f.fpsEvents.at(-1).detail.action,'close');
  f.globe.setFocus({id:'moon'});const count=f.fpsEvents.length;f.receive(frame,'launchpad-close',{});assert.equal(f.fpsEvents.length,count);f.globe.dispose();
 });
+
+test('reduced-motion arrival completes immediately and cannot leave the input shield locked',async()=>{
+ const f=await fixture();f.document.documentElement.dataset.motion='reduced';f.globe.setFocus({id:'earth'},{animateArrival:true});
+ f.receive(f.frames[0],'ready');f.globe.reveal();assert.equal(f.globe.active,true);assert.equal(f.globe.loading,false);assert.equal(f.globe.transitioning,false);
+ assert.ok(!f.messages.some(row=>row.message.action==='reveal'),'Reduced motion does not launch a camera journey');f.globe.dispose();
+});

@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {discoverMission,discoveredMissions,DISCOVERIES_KEY,MISSION_GOAL} from '../src/core/mission-discoveries.js';
+import {normalizeVisualSettings} from '../src/ui/visual-effects.js';
+const fixture=()=>{const data=new Map();return {getItem:key=>data.get(key),setItem:(key,value)=>data.set(key,value)};};
+test('mission journal counts each stable ID once across repeated cards, dossiers and films',()=>{const storage=fixture();assert.equal(MISSION_GOAL,90);assert.equal(discoverMission('apollo-11',{storage}),true);assert.equal(discoverMission('apollo-11',{storage}),false);assert.equal(discoverMission('sputnik-1',{storage}),true);assert.equal(discoveredMissions(storage).size,2);assert.deepEqual(JSON.parse(storage.getItem(DISCOVERIES_KEY)),['apollo-11','sputnik-1']);});
+test('journal merges another page’s discoveries and rejects damaged records',()=>{const storage=fixture();storage.setItem(DISCOVERIES_KEY,JSON.stringify(['apollo-11','apollo-11',null,'bad id']));discoverMission('sputnik-1',{storage});assert.equal(discoveredMissions(storage).size,2);assert.equal(discoverMission(undefined,{storage}),false);storage.setItem(DISCOVERIES_KEY,'invalid JSON');assert.equal(discoverMission('voyager-1',{storage}),true);assert.deepEqual([...discoveredMissions(storage)],['voyager-1']);});
+test('discovery storage failures do not block opening a mission',()=>{const storage={getItem(){throw Error();},setItem(){throw Error();}};assert.doesNotThrow(()=>discoverMission('apollo-11',{storage}));});
+test('every renderer defaults to Scope enabled with 200 percent feather, retaining explicit changes',()=>{const initial=normalizeVisualSettings();assert.equal(initial.scope,true);assert.equal(initial.scopeFeather,200);assert.equal(normalizeVisualSettings({scope:false},initial).scope,false);});

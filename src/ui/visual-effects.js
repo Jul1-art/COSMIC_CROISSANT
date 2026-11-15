@@ -27,10 +27,10 @@ export const VISUAL_SETTINGS=Object.freeze({
   labels:{type:'boolean',default:true,label:'Labels',fr:'Noms'},
   bloom:{type:'boolean',default:false,label:'Bloom',fr:'Halo lumineux'},
   sharpen:{type:'boolean',default:true,label:'Sharpen',fr:'Netteté'},
-  scope:{type:'boolean',default:false,label:'Scope',fr:'Vue circulaire'},
+  scope:{type:'boolean',default:true,label:'Scope',fr:'Vue circulaire'},
   bloomIntensity:{type:'range',default:36,min:0,max:200,step:1,label:'Bloom intensity',fr:'Intensité du halo'},
   sharpenIntensity:{type:'range',default:49,min:0,max:100,step:1,label:'Sharpen intensity',fr:'Intensité de la netteté'},
-  scopeFeather:{type:'range',default:100,min:0,max:200,step:1,label:'Scope feather',fr:'Douceur du contour'},
+  scopeFeather:{type:'range',default:200,min:0,max:200,step:1,label:'Scope feather',fr:'Douceur du contour'},
   exposure:{type:'range',default:1,min:.5,max:2,step:.05,label:'Exposure',fr:'Exposition'},
   contrast:{type:'range',default:1,min:.5,max:2,step:.05,label:'Contrast',fr:'Contraste'},
 });

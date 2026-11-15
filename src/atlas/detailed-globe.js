@@ -41,9 +41,9 @@ export function createDetailedGlobe({host,onState=()=>{},onInteraction=()=>{},on
         emit();
         if(arrival){arrival=false;send('reveal');}
       },()=>{});
-    }else if(arrival&&!reduced){
+    }else if(arrival){
       arrival=false;
-      send('reveal');
+      if(!reduced)send('reveal');
     }
     frame.classList.add('is-ready');
     emit();

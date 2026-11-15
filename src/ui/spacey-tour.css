@@ -108,3 +108,6 @@ html[data-theme=day] .spacey-tour {
 }
 html[data-motion=reduced] .spacey-tour button { transition: none; }
 @media (prefers-reduced-motion: reduce) { html:not([data-motion=full]) .spacey-tour button { transition: none; } }
+
+/* Keep the guide above mission cards, below the full-screen film. */
+.spacey-tour{z-index:10000}.spacey-guiding .relic-exploration-mascot,.relic-exploration-mascot.spacey-guiding{z-index:10001}

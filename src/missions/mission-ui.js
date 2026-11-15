@@ -1,3 +1,4 @@
+import {discoverMission} from '../core/mission-discoveries.js';
 import {getMissionFilm} from './mission-films.js';
 import {localizeMissionElement,missionLanguage,missionText} from './mission-locale.js';
 import {makeMissionControlsCollapsible} from './mission-controls.js';
@@ -52,7 +53,7 @@ function startMission(){
 function endMission(){panelDisclosure?.dispose();badgeLocale?.dispose();annotationsLocale?.dispose();explorer=null;panel?.remove();panel=null;freeBadge?.remove();freeBadge=null;annotations?.remove();annotations=null;document.body.classList.remove('mission-exploring');closePopup();}
 export async function openVideo(id='apollo-11'){
  if(filmHost)return;
- const definition=getMissionFilm(id);if(!definition)return;const media=definition.media;
+ const definition=getMissionFilm(id);if(!definition)return;discoverMission(id);const media=definition.media;
  const returnFocus=document.activeElement,overflow=document.body.style.overflow;explorer?.setPlaying(false);pauseAtlas(true);
  const host=document.createElement('section');host.className='intro mission-shared-film';host.style.cssText='position:fixed;inset:0;width:100%;height:100dvh;z-index:11000;background:#000;color:#fff;isolation:isolate;';filmHost=host;document.body.style.overflow='hidden';document.body.append(host);let instance=null,closed=false;
  function closeFilm(){if(closed)return;closed=true;if(filmHost===host){film=null;filmHost=null;}if(document.fullscreenElement===host)document.exitFullscreen?.().catch(()=>{});document.body.style.overflow=overflow;pauseAtlas(false);setTimeout(()=>{instance?.dispose();host.remove();},650);positionPopup();if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});}
@@ -111,7 +112,7 @@ export function installMissionUI(){
 }
 export function openMission(id,view='summary',nextAnchor){
  if(id==='sputnik-1'){installMissionUI();closePopup();openSputnik(nextAnchor);return;}
- if(!MISSIONS.has(id))return;installMissionUI();
+ if(!MISSIONS.has(id))return;discoverMission(id);installMissionUI();
  if(view==='article'){location.assign(appURL('pages/mission.html?mission=apollo-11').href);return;}
  if(view==='video'){openVideo();return;}if(view==='explore'){startMission();return;}showPopup(nextAnchor);
 }

@@ -1,3 +1,4 @@
+import {discoverMission} from '../core/mission-discoveries.js';
 import {getLanguage,setLanguage,onLanguageChange} from '../atlas/atlas-live.js?v=3';
 import {DOSSIER_TABS} from './mission-dossier-content.js';
 import {reducedMissionMotion} from './mission-motion.js';
@@ -5,6 +6,7 @@ import {localizeMissionElement,missionText} from './mission-locale.js';
 /** Shared policies for every mission: locale, top-of-page navigation, no brief
  * links/footer, accessible chapters/images, and an isolated film player. */
 export function mountDossier({renderTab}){
+ discoverMission(document.body.dataset.mission);
  const nav=document.querySelector('#dossier-tabs'),content=document.querySelector('#dossier-content'),reduced=()=>reducedMissionMotion();
  let current='',transition=null,frame=0,contentLocale=null,observer;
  history.scrollRestoration='manual';

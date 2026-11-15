@@ -22,3 +22,8 @@ player, document layout or control disclosure.
 - Keep original media credits and distinguish original footage from calculated
   reconstructions. Test both languages, minimized controls, narrow screens,
   scroll reset, film bounds and the absence of content behind the film.
+
+- Call `discoverMission(id)` from `../core/mission-discoveries.js` when the
+  visitor opens the mission. Reuse the same stable ID across card, film and
+  dossier so it counts once. The shared journal persists locally and updates
+  the HUD. The discovery goal is 90, including missions to be implemented.

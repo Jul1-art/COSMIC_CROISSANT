@@ -1,3 +1,4 @@
+import {discoveredMissions,MISSION_GOAL,DISCOVERIES_KEY} from '../core/mission-discoveries.js';
 import {getLanguage as defaultLanguage,setLanguage,onLanguageChange as defaultLanguageChange} from '../atlas/atlas-live.js?v=3';
 import {PLANET_SITES} from '../atlas/nasa-worlds.js';
 import {VISUAL_SETTINGS,VISUAL_PRESETS,STYLE_PARAMETERS} from './visual-effects.js';
@@ -50,6 +51,9 @@ export function createInspectionShell({dashboard=document.querySelector('.planet
  const worldName=node('div','inspection-world-name');worldName.hidden=true;
  const arrival=node('div','inspection-world-arrival');arrival.hidden=true;arrival.setAttribute('role','status');const arrivalName=node('span','inspection-arrival-name');arrival.append(arrivalName);
  const fps=node('output','inspection-fps');fps.textContent='— FPS';fps.title='Actual 3D frames rendered per second. Idle views render fewer frames.';
+ const hud=node('div','inspection-exploration-hud');const discoveries=node('output','inspection-mission-counter');discoveries.setAttribute('aria-live','polite');hud.append(fps,discoveries);
+ function syncDiscoveries(){const count=discoveredMissions().size,fr=getLanguage()==='fr';discoveries.textContent=`${count} / ${MISSION_GOAL} ${fr?'missions découvertes':'missions discovered'}`;discoveries.title=fr?'Chaque mission compte une seule fois. Défi : trouver les 90 missions.':'Each mission counts once. Challenge: find all 90 missions.';}
+ syncDiscoveries();
  let arrivalBody=null,waitingArrival=false,arrivalLocked=false;
  const inertBeforeArrival=new Map();
  const arrivalObserver=new MutationObserver(records=>{if(!arrivalLocked)return;for(const record of records)if(inertBeforeArrival.has(record.target)&&!record.target.inert)inertBeforeArrival.set(record.target,false);makeBackgroundInert();});
@@ -89,11 +93,10 @@ export function createInspectionShell({dashboard=document.querySelector('.planet
  for(const key of ['exposure','contrast'])controls.set(key,makeSetting(key,VISUAL_SETTINGS[key],imageGroup.body));
  const dataTabs=node('div','inspection-data-tabs');dataTabs.setAttribute('role','tablist');
  const tabButtons=new Map();let dataTab='overview';
- for(const key of ['overview','moons','missions']){const button=node('button','inspection-data-tab');button.type='button';button.id=`inspection-tab-${key}`;button.setAttribute('role','tab');button.setAttribute('aria-controls','inspection-data-content');button.addEventListener('click',()=>selectDataTab(key));dataTabs.append(button);tabButtons.set(key,button);}
+ for(const key of ['overview','moons']){const button=node('button','inspection-data-tab');button.type='button';button.id=`inspection-tab-${key}`;button.setAttribute('role','tab');button.setAttribute('aria-controls','inspection-data-content');button.addEventListener('click',()=>selectDataTab(key));dataTabs.append(button);tabButtons.set(key,button);}
  const dataContent=node('div','inspection-data-content');dataContent.id='inspection-data-content';dataContent.setAttribute('role','tabpanel');
- const missionContent=node('div','inspection-mission-content');
  const moonFallback=node('div','inspection-data-empty');
- data.body.append(dataTabs,dataContent,moonFallback,missionContent);
+ data.body.append(dataTabs,dataContent,moonFallback);
  const dock=node('nav','inspection-command-dock');
  const location=makeTray('location'),presets=makeTray('presets');
  const home=node('button','inspection-home');home.type='button';home.innerHTML=`<img src="${new URL('../../assets/relic-logo-v1.png',import.meta.url).href}" alt="" width="40" height="35"><span>RELIC</span>`;home.addEventListener('click',()=>emit('home'));
@@ -124,7 +127,7 @@ export function createInspectionShell({dashboard=document.querySelector('.planet
  }
  locale.append(localeToggle,localeOptions);
  const feedback=node('div','inspection-feedback');feedback.setAttribute('role','status');feedback.setAttribute('aria-live','polite');feedback.hidden=true;
- root.append(top,worldName,modules,dock,locale,feedback,arrival,fps);document.body.append(root);
+ root.append(top,worldName,modules,dock,locale,feedback,arrival,hud);document.body.append(root);
  let dashboardBody=dashboard.dataset.dashboardBody,publishedBody;
  let state={body:dashboardBody,settings:{...DEFAULTS,style:'normal'},capabilities:{}};
  let active=false,disposed=false,focusFrame=0,feedbackTimer=0;
@@ -146,6 +149,7 @@ export function createInspectionShell({dashboard=document.querySelector('.planet
  }
  const listen=(target,type,handler,options)=>{target.addEventListener(type,handler,options);removers.push(()=>target.removeEventListener(type,handler,options));};
  listen(events,'relic-render-fps',event=>{const {source,body,fps:value}=event.detail||{};const native=document.body.dataset.detailedGlobe==='active';if((source==='inspection'&&native&&body===state.body)||(source==='solar'&&!native)||source==='page'){if(Number.isFinite(value)&&value>=0)fps.textContent=`${Math.round(value)} FPS`;}});
+ listen(events,'relic-mission-discovered',syncDiscoveries);listen(events,'storage',event=>{if(event.key===DISCOVERIES_KEY||event.key===null)syncDiscoveries();});
  listen(document,'visibilitychange',()=>{fps.textContent='— FPS';});
  listen(events,'relic-inspection-state',event=>update(event.detail||{}));
  listen(events,'relic-inspection-camera',event=>{
@@ -313,6 +317,7 @@ export function createInspectionShell({dashboard=document.querySelector('.planet
   if(returnFocus&&active)(opener?.isConnected&&opener.getClientRects().length?opener:panel.toggle).focus({preventScroll:true});
  }
  function render(){
+  syncDiscoveries();
   if(disposed)return;const words=copy();top.setAttribute('aria-label',words.actions);dock.setAttribute('aria-label',words.location+' · '+words.presets);home.setAttribute('aria-label',words.home);
   for(const [key,action] of actions){action.setAttribute('aria-label',words[key]);action.title=words[key];}
   syncCamera();
@@ -390,7 +395,7 @@ export function createInspectionShell({dashboard=document.querySelector('.planet
  }
  function makeBackgroundInert(){
   for(const item of [...document.body.children,...root.children]){
-   if(item===root||item===arrival||item===fps||!('inert' in item))continue;
+   if(item===root||item===arrival||item===hud||!('inert' in item))continue;
    if(!inertBeforeArrival.has(item))inertBeforeArrival.set(item,item.inert);
    if(!item.inert)item.inert=true;
   }
@@ -421,12 +426,10 @@ export function createInspectionShell({dashboard=document.querySelector('.planet
    const text=button.textContent.toLocaleLowerCase();button.dataset.inspectionPurpose=/moon|lune|satellite|orbite|back to|retour/.test(text)?'moons':/surface|apollo|jezero|tycho|survey|cratère/.test(text)?'missions':'general';
   }
   const moons=Boolean(inspector.querySelector('.solar-moon-catalogue'));moonFallback.hidden=dataTab!=='moons'||moons;
-  missionContent.hidden=dataTab!=='missions';
  }
  function renderDestinations(){
   const body=state.body||dashboardBody,sites=PLANET_SITES[body]||[],destinations=body==='earth'?CITIES.map(([name,lat,lon])=>({name,lat,lon,range:35000})):sites.map(site=>({...site,range:site.terrainRange||(site.local?3000:250000)}));
-  locationPills.replaceChildren();missionContent.replaceChildren();
-  const heading=node('h3','inspection-group-title');heading.textContent=copy().missions;missionContent.append(heading);
+  locationPills.replaceChildren();
   for(const destination of destinations){
    const make=className=>{
     const button=node('button',className);button.type='button';
@@ -439,10 +442,7 @@ export function createInspectionShell({dashboard=document.querySelector('.planet
     return button;
    };
    locationPills.append(make('location-pill inspection-location-pill'));
-   if(body!=='earth')missionContent.append(make('inspection-mission-destination'));
   }
-  if(!sites.length&&!['earth','67p','philae','rosetta'].includes(body)){const p=node('p','inspection-data-empty');p.textContent=copy().noSites;missionContent.append(p);}
-  if(body==='earth'){for(const name of ['Moon','Mars','67P · Rosetta']){const id=name==='Moon'?'moon':name==='Mars'?'mars':'67p';const button=node('button','inspection-mission-destination');button.type='button';button.textContent=getLanguage()==='fr'&&name==='Moon'?'Lune':name;button.addEventListener('click',()=>{const event=new CustomEvent('planet-dashboard-world',{detail:{body:id},cancelable:true});events.dispatchEvent(event);});missionContent.append(button);}}
   if(!destinations.length){const p=node('p','inspection-location-note');p.textContent=copy().coordinates;locationPills.append(p);}
  }
  function showFeedback(detail){

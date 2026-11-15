@@ -1,3 +1,5 @@
+import {getExplorerName} from '../core/explorer-profile.js';
+import {createSpaceySpeech} from './spacey-speech.js';
 import {getLanguage,setLanguage} from '../atlas/atlas-live.js?v=3';
 import {createNarrationClock} from './narration-clock.js';
 
@@ -6,12 +8,21 @@ const STEP_COPY=[
   ['welcome','Welcome aboard',"Let me show you the main controls, then you can explore at your own pace."],
   ['worlds','Choose a world','Open Worlds to choose a planet, moon, or comet. You can also select a world directly in the solar system.'],
   ['earth','A closer look',"Let's visit Earth. I'll lock the view onto the planet so we can explore its surface and its nearby worlds."],
+  ['satellites','Satellites around Earth','The Satellites menu lets you display satellites. Only the ISS loads automatically. Choose Load other satellites to load the catalogue, then use its filters to choose what you see.'],
   ['camera','Your view controls','These four buttons share your view, switch between vertical and tilted views, turn north upward, and recenter the whole planet.'],
-  ['data','Explore the details',"World Data brings together the planet's key facts, its moons and orbits, and exploration sites and missions."],
+  ['data','Explore the details',"World Data brings together the planet's key facts and its moons and orbits."],
   ['display','Make the view yours','Display controls the scene and image. Adjust stars, lighting, labels, and visual effects here. Available controls depend on the current world.'],
   ['destinations','Places and visual styles','Location finds a place or coordinates on this world. Visual Presets changes the image style. You can return to Normal at any time.'],
+  ['apollo','Find a mission','Let’s visit the Moon and discover Apollo 11. Select its map pin at Tranquility Base to open the mission card.'],
+  ['mission','Explore Apollo 11','Explore mission opens the 3D reconstruction inside the app. Use the timeline to travel through the mission. Watch film opens the video, and Mission details opens the full written dossier.'],
+  ['challenge','Your mission challenge','The counter beside FPS tracks the unique missions you have discovered on this device. Each mission counts only once, however many times you return. Your challenge: find all 90 missions! More missions will be added over time.'],
   ['finish','Ready to explore',"Select the RELIC logo to return to the solar system. You're ready to explore. Select me whenever you'd like to replay this tour."],
 ];
+const FRENCH={
+ welcome:'Je vais te présenter les commandes, puis tu pourras explorer à ton rythme.',worlds:'Ouvre Mondes pour choisir une planète, une lune ou une comète. Tu peux aussi sélectionner un monde directement dans le système solaire.',earth:'Visitons la Terre. Je vais centrer la vue sur la planète pour explorer sa surface et ses environs.',satellites:'Le menu Satellites permet d’afficher les satellites. Seule l’ISS se charge automatiquement. Choisis Charger les autres satellites, puis utilise les filtres pour choisir ce que tu vois.',camera:'Ces quatre boutons permettent de partager la vue, de l’incliner, de remettre le nord en haut et de recentrer la planète.',data:'Données du monde rassemble les propriétés de la planète, ses lunes et leurs orbites.',display:'Affichage permet de régler les étoiles, l’éclairage, les noms et les effets visuels. Les réglages disponibles dépendent du monde.',destinations:'Localisation permet de trouver un lieu ou des coordonnées. Préréglages visuels change le rendu. Tu peux revenir à Normal à tout moment.',apollo:'Visitons la Lune pour découvrir Apollo 11. Sélectionne son repère à la base de la Tranquillité pour ouvrir la carte de mission.',mission:'Explorer la mission ouvre la reconstitution 3D dans l’app. Utilise la chronologie pour voyager dans le temps. Voir la vidéo lance le film, et Les détails de la mission ouvre le dossier écrit complet.',challenge:'Le compteur à côté des FPS mémorise les missions découvertes sur cet appareil. Chaque mission ne compte qu’une fois, même si tu y retournes. Ton défi : trouver les 90 missions ! Les autres seront ajoutées progressivement.',finish:'Sélectionne le logo RELIC pour revenir au système solaire. Tu es prêt à explorer ! Clique sur moi pour revoir la visite.'
+};
+const fr=()=>getLanguage()==='fr';
+const greeting=()=>{const name=getExplorerName()||(fr()?'explorateur':'explorer');return fr()?`Salut ${name} ! Je suis Spacey, explorons l’univers ensemble !`:`Hi ${name} ! I'm Spacey, let's explore the universe together !`;};
 const $=selector=>document.querySelector(selector);
 const visible=element=>Boolean(element&&!element.hidden&&element.getClientRects().length);
 const emit=(name,detail)=>window.dispatchEvent(new CustomEvent(name,{detail,cancelable:true}));
@@ -81,19 +92,20 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
   const shade=dimmer.querySelector('path'),text=layer.querySelector('#spacey-tour-text');
   const progress=layer.querySelector('.spacey-tour-progress'),chips=layer.querySelector('.spacey-tour-chips');
   const next=layer.querySelector('[data-tour-action=next]');
+  const speech=createSpaceySpeech();let demoMission=false;
   const audio=new Audio();audio.preload='auto';
   const timelineURL=new URL('../../assets/spacey/audio/destinations-timeline.json',import.meta.url);
   const timelineReady=fetch(timelineURL).then(response=>response.ok?response.json():null).catch(()=>null);
   const preloads=new Map();
   let narrationClock,demoActive=false,demoTimeline;
-  let active=false,invited=false,suspended=false,disposed=false,step=0,version=0,layoutFrame=0,shadeFrame=0;
+  let greeted=false,active=false,invited=false,suspended=false,disposed=false,step=0,version=0,layoutFrame=0,shadeFrame=0;
   let targets=[],previousLanguage,previousWorld,opener,waiting=false,movement;
-  const readSaved=()=>{try{return localStorage.getItem(STORAGE_KEY);}catch{return null;}};
   const save=value=>{try{localStorage.setItem(STORAGE_KEY,value);}catch{}};
   const restoreLanguage=()=>{if(previousLanguage){setLanguage(previousLanguage);previousLanguage=undefined;}};
 
   const currentRun=current=>!disposed&&active&&!suspended&&version===current;
   function stopAudio(){
+    speech.stop();
     narrationClock?.dispose();narrationClock=undefined;
     audio.pause();audio.removeAttribute('src');audio.load();
     if(demoActive){
@@ -109,6 +121,9 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
   function playVoice(allowWaiting=false,{cues,onCue,onUnavailable=()=>{}}={}){
     if(!active||suspended||(waiting&&!allowWaiting))return;
     const id=STEP_COPY[step][0];
+    if(fr()||['welcome','data','satellites','apollo','mission','challenge'].includes(id)){
+      if(cues?.length)onCue?.(cues[0]);speech.speak(text.textContent,getLanguage());return;
+    }
     audio.src=new URL(`../../assets/spacey/audio/${id}.mp3`,import.meta.url).href;
     audio.currentTime=0;
     const current=version;
@@ -143,7 +158,8 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
     const safeBottom=parseFloat(getComputedStyle(layer).getPropertyValue('--spacey-safe-bottom'))||0;
     const short=innerHeight<=540;
     const bottomReserve=(short?20:innerWidth>=900?24:116)+credits+safeBottom;
-    const y=Math.max(100,innerHeight-mascotHeight-bottomReserve);
+    let y=Math.max(100,innerHeight-mascotHeight-bottomReserve);
+    const missionControls=$('.atlas-mission-controls');if(layer.dataset.step==='mission'&&innerWidth<=700&&visible(missionControls))y=Math.max(100,Math.min(y,missionControls.getBoundingClientRect().top-mascotHeight-16));
     const left=clamp(innerWidth>=900?112:innerWidth>700||short?88:14,14,innerWidth-width-14);
     const gap=12;
     bubble.style.maxHeight=`${Math.max(60,y-gap-14)}px`;
@@ -172,7 +188,7 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
   }
   function closePanels(){
     if($('#rail-worlds')?.getAttribute('aria-expanded')==='true')$('#rail-worlds').click();
-    for(const selector of ['#inspection-display .inspection-module-toggle','#inspection-data .inspection-module-toggle','#inspection-location .inspection-tray-toggle','#inspection-presets .inspection-tray-toggle']){
+    for(const selector of ['#inspection-satellites .inspection-module-toggle','#inspection-display .inspection-module-toggle','#inspection-data .inspection-module-toggle','#inspection-location .inspection-tray-toggle','#inspection-presets .inspection-tray-toggle']){
       const toggle=$(selector);if(toggle?.getAttribute('aria-expanded')==='true')toggle.click();
     }
   }
@@ -203,7 +219,28 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
       if(version!==current||disposed||suspended)return;
       if(worlds?.getAttribute('aria-expanded')!=='true')worlds?.click();
       targets=[worlds,$('#relic-action-panel')];
-      addChip('#rail-worlds','Worlds');
+      addChip('#rail-worlds',fr()?'Mondes':'Worlds');
+    }else if(['apollo','mission','challenge'].includes(id)){
+      if(id==='apollo'){
+        selectWorld('moon');emit('relic-mission-locate',{id:'apollo-11'});
+        await waitFor(()=>!$('#relic-inspection-shell')?.hidden&&$('#relic-inspection-shell')?.dataset.world==='moon',current,35000);
+        await waitFor(()=>document.body.dataset.detailedGlobe!=='loading'&&!visible($('.inspection-world-arrival:not(.is-leaving)')),current,35000);
+        if(!currentRun(current))return;
+        const {openMission}=await import('../missions/mission-ui.js');if(!currentRun(current))return;openMission('apollo-11');demoMission=true;
+        targets=[$('#mission-popup'),$('.detailed-globe-frame')];
+        addChip('#mission-popup [data-mission-action="menu"]',fr()?'Explorer la mission':'Explore mission');
+      }else if(id==='mission'){
+        if($('#mission-popup [data-mission-action="menu"]')?.getAttribute('aria-expanded')!=='true')$('#mission-popup [data-mission-action="menu"]')?.click();
+        await waitFor(()=>$('.atlas-mission-controls')?.getAttribute('aria-busy')==='false',current,20000);
+        if(!currentRun(current))return;
+        targets=[$('#mission-popup'),$('#mission-actions'),$('.atlas-mission-controls')];
+        addChip('#mission-actions button',fr()?'Voir la vidéo':'Watch film');addChip('#mission-actions a',fr()?'Détails de la mission':'Mission details');
+      }else{
+        if(demoMission){$('.atlas-mission-controls [data-mission-action="exit"]')?.click();demoMission=false;}
+        selectWorld('overview');targets=[$('.inspection-exploration-hud')];
+      }
+    }else if(id==='finish'){
+      targets=[$('.inspection-home')];addChip('.inspection-home','RELIC');
     }else if(id!=='welcome'){
       if(id==='earth'){
         let began=false;
@@ -218,26 +255,27 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
       if(id==='earth'){
         await waitFor(()=>['active','unavailable'].includes(document.body.dataset.detailedGlobe),current,35000);
         targets=[];
+      }else if(id==='satellites'){
+        targets=[openPanel('#inspection-satellites .inspection-module-toggle'),$('#inspection-satellites-body')];
+        addChip('#inspection-satellites .inspection-module-toggle','Satellites');addChip('.satellite-load-all',fr()?'Charger les autres satellites':'Load other satellites');
       }else if(id==='camera'){
         targets=[$('.inspection-top-actions')];
-        for(const [name,label]of [['share','Share view'],['tilt','Tilt view'],['north','North up'],['reset','Whole planet']])addChip(`[data-inspection-action=${name}]`,label);
+        for(const [name,label]of [['share','Share view'],['tilt','Tilt view'],['north','North up'],['reset','Whole planet']])addChip(`[data-inspection-action=${name}]`,fr()?({share:'Partager la vue',tilt:'Incliner la vue',north:'Nord en haut',reset:'Planète entière'}[name]):label);
       }else if(id==='data'){
         targets=[openPanel('#inspection-data .inspection-module-toggle'),$('#inspection-data-body')];
-        addChip('#inspection-data .inspection-module-toggle','World Data');
+        addChip('#inspection-data .inspection-module-toggle',fr()?'Données du monde':'World Data');
       }else if(id==='display'){
         targets=[openPanel('#inspection-display .inspection-module-toggle'),$('#inspection-display-body')];
-        addChip('#inspection-display .inspection-module-toggle','Display');
+        addChip('#inspection-display .inspection-module-toggle',fr()?'Affichage':'Display');
       }else if(id==='destinations'){
         const timeline=await timelineReady;
         if(!currentRun(current))return;
         const styles=new Set(['normal','crt','nvg','flir','anime','noir']);
-        demoTimeline=timeline?.cues?.length&&timeline.cues.every(cue=>Number.isFinite(cue.time)&&typeof cue.text==='string'&&['location','presets','style'].includes(cue.kind)&&(cue.kind!=='style'||styles.has(cue.style)))?timeline:null;
+        demoTimeline=!fr()&&timeline?.cues?.length&&timeline.cues.every(cue=>Number.isFinite(cue.time)&&typeof cue.text==='string'&&['location','presets','style'].includes(cue.kind)&&(cue.kind!=='style'||styles.has(cue.style)))?timeline:null;
         openPanel('#inspection-location .inspection-tray-toggle');
         targets=[$('.inspection-command-dock')];
-        addChip('#inspection-location .inspection-tray-toggle','Location',()=>{openPanel('#inspection-location .inspection-tray-toggle');scheduleLayout();});
-        addChip('#inspection-presets .inspection-tray-toggle','Visual Presets',()=>{openPanel('#inspection-presets .inspection-tray-toggle');scheduleLayout();});
-      }else if(id==='finish'){
-        targets=[$('.inspection-home')];addChip('.inspection-home','RELIC');
+        addChip('#inspection-location .inspection-tray-toggle',fr()?'Localisation':'Location',()=>{openPanel('#inspection-location .inspection-tray-toggle');scheduleLayout();});
+        addChip('#inspection-presets .inspection-tray-toggle',fr()?'Préréglages visuels':'Visual Presets',()=>{openPanel('#inspection-presets .inspection-tray-toggle');scheduleLayout();});
       }
     }
     targets=targets.filter(Boolean);
@@ -247,9 +285,9 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
     step=clamp(index,0,STEP_COPY.length-1);const current=++version;
     stopAudio();chips.replaceChildren();
     const [id,,line]=STEP_COPY[step];
-    layer.dataset.step=id;text.textContent=line;
+    layer.dataset.step=id;text.textContent=fr()?(FRENCH[id]||line):line;if(id==='welcome')text.textContent=greeting()+' '+text.textContent;
     progress.textContent=`${step+1} / ${STEP_COPY.length}`;
-    next.textContent=step===STEP_COPY.length-1?'Explore':'Continue';
+    next.textContent=step===STEP_COPY.length-1?(fr()?'Explorer':'Explore'):(fr()?'Continuer':'Continue');
     waiting=true;next.disabled=true;bubble.setAttribute('aria-busy','true');
     // Start the welcome line inside the user's gesture, including on mobile.
     if(id==='welcome')playVoice(true);
@@ -269,6 +307,7 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
     ++version;active=false;invited=false;waiting=false;movement=undefined;stopAudio();
     layer.hidden=true;cancelAnimationFrame(layoutFrame);layoutFrame=0;stopShadeTracking();
     document.body.classList.remove('spacey-guiding');onActiveChange(false);
+    if(demoMission){$('.atlas-mission-controls [data-mission-action="exit"]')?.click();$('#mission-popup [data-mission-action="close-popup"]')?.click();demoMission=false;}
     closePanels();restoreLanguage();
     if(completed){save('done');selectWorld('overview');}
     else if(restore&&previousWorld)selectWorld(previousWorld);
@@ -280,10 +319,10 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
   function start(){
     if(disposed||suspended)return;
     opener=document.activeElement;previousLanguage=getLanguage();previousWorld=document.body.dataset.dashboardBody||'overview';
-    active=true;invited=false;layer.hidden=false;setLanguage('en');
+    active=true;invited=false;layer.hidden=false;bubble.lang=getLanguage();
     startShadeTracking();
     document.body.classList.add('spacey-guiding');onActiveChange(true);
-    layer.querySelector('.spacey-tour-skip').textContent='Skip';
+    layer.querySelector('.spacey-tour-skip').textContent=fr()?'Passer':'Skip';
     go(0);
   }
   async function placeInvite(){
@@ -295,13 +334,13 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
     next.focus({preventScroll:true});
   }
   function showInvite(){
-    if(disposed||suspended||active||invited||readSaved())return;
-    invited=true;layer.hidden=false;layer.dataset.step='invite';targets=[];
+    if(disposed||suspended||active||invited||greeted)return;
+    greeted=true;invited=true;layer.hidden=false;layer.dataset.step='invite';targets=[];
     startShadeTracking();
     document.body.classList.add('spacey-guiding');onActiveChange(true,false);
-    text.textContent='Take a quick tour of RELIC, then explore at your own pace.';
-    progress.textContent='';chips.replaceChildren();next.disabled=true;next.textContent='Start tour';bubble.setAttribute('aria-busy','true');
-    layer.querySelector('.spacey-tour-skip').textContent='Skip';
+    bubble.lang=getLanguage();text.textContent=greeting();speech.speak(text.textContent,getLanguage());
+    progress.textContent='';chips.replaceChildren();next.disabled=true;next.textContent=fr()?'Commencer la visite':'Start tour';bubble.setAttribute('aria-busy','true');
+    layer.querySelector('.spacey-tour-skip').textContent=fr()?'Passer':'Skip';
     setPose('front','idle');
     placeInvite();
   }

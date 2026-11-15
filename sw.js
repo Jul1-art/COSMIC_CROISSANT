@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261115-v93-welcome-click';
-const INTERFACE_RELEASE = 'missions-20261115-v93';
+const VERSION = 'missions-20261115-v94-discovery-tour';
+const INTERFACE_RELEASE = 'missions-20261115-v94';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -30,6 +30,7 @@ const CORE = [
 // Requested only when the visitor explicitly saves the film for offline use.
 // This also covers a first visit whose early imports preceded worker control.
 const OFFLINE_CORE = [
+  'intro/typing-sound.js','src/core/mission-discoveries.js','src/ui/spacey-speech.js',
   'intro/explorer-welcome.js','intro/explorer-welcome.css','src/core/explorer-profile.js',
   'assets/terrain/catalog.json','assets/terrain/moon-apollo11.bin','assets/terrain/moon-apollo11.webp','assets/earth-blue-marble-4k.webp',
   'src/missions/sputnik-dossier.css','assets/missions/sputnik-1/satellite.jpg','assets/missions/sputnik-1/baikonur.jpg','assets/missions/sputnik-1/early-rockets.jpg','assets/missions/sputnik-1/photos.json','assets/missions/sputnik-1/preparations.jpg','assets/missions/sputnik-1/launch.jpg','assets/missions/sputnik-1/model.jpg','assets/missions/sputnik-1/r7-test.jpg','assets/missions/sputnik-1/explorer.jpg','assets/missions/sputnik-1/film.json','pages/sputnik.html','src/missions/sputnik.js','src/missions/sputnik-orbit.js','src/missions/sputnik-orbit-math.js','src/missions/sputnik-dossier.js','assets/missions/sputnik-1/fiche-mission.pdf','pages/mission.html','src/missions/mission-dossier.js','src/missions/dossier-experience.js','src/missions/mission-controls.js','src/missions/mission-locale.js','src/missions/mission-fr-strings.js','src/missions/mission-fr-data.js','src/missions/mission-dossier-fr.js','src/missions/sputnik-dossier-fr.js','src/missions/mission-films.js','src/core/language.js','src/missions/mission-dossier-content.js','src/missions/mission-dossier.css','src/missions/mission-film.js',
