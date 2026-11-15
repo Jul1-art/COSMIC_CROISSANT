@@ -223,6 +223,10 @@ export async function openSources(trigger) {
   paragraph(content,french()?"Commandes et effets visuels adaptés de God’s Eye View, sous licence MIT.":"View controls and visual effects adapted from God’s Eye View under the MIT license.");
   sourceLink(content,'God’s Eye View · GitHub','https://github.com/bilawalsidhu/gods-eye-view');
   sourceLink(content,french()?'Licence et provenance':'License and provenance',new URL('../../vendor/gods-eye-view/PROVENANCE.json',import.meta.url).href);
+  heading(content,french()?'Son de frappe':'Typing sound');
+  paragraph(content,'“Typing” — Dustin_Davis · CC0 1.0');
+  sourceLink(content,french()?'Enregistrement original':'Original recording','https://commons.wikimedia.org/wiki/File:399603_dustin-davis_typing.wav');
+  sourceLink(content,french()?'Licence, extraits et provenance':'License, excerpts and provenance',new URL('../../intro/assets/typing/provenance.json',import.meta.url).href);
   heading(content, french() ? 'Le film' : 'The film');
   const minutes = Math.floor(PROLOGUE_MEDIA.duration / 60);
   const seconds = Math.round(PROLOGUE_MEDIA.duration % 60);

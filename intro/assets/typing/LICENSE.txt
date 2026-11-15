@@ -1,0 +1,10 @@
+Typing — Dustin_Davis
+
+Real keyboard recording, released under CC0 1.0 Universal (public-domain dedication).
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Source: https://commons.wikimedia.org/wiki/File:399603_dustin-davis_typing.wav
+Original publication: https://freesound.org/people/Dustin_Davis/sounds/399603/
+
+RELIC uses eight short excerpts mixed to mono with aligned peak levels and
+short boundary fades. See provenance.json for timecodes and source checksum.

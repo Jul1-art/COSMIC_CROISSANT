@@ -1,8 +1,8 @@
 /* RELIC application cache. Movie storage remains an explicit, separate action. */
 importScripts('./intro/film-cache.js');
 
-const VERSION = 'missions-20261115-v95-soft-typing';
-const INTERFACE_RELEASE = 'missions-20261115-v95';
+const VERSION = 'missions-20261115-v96-recorded-typing';
+const INTERFACE_RELEASE = 'missions-20261115-v96';
 const CLIENT_VERSION_TIMEOUT = 650;
 const SCOPE = new URL('./', self.registration.scope);
 const FILM_SCOPE = new URL('intro/', SCOPE).href;
@@ -17,7 +17,7 @@ const MAX_ASSET_BYTES = 16 * 1024 * 1024;
 const FETCH_CONCURRENCY = 3;
 const EXCLUDED_PATH = /\/(?:api|auth|_auth|oauth|login|logout|signin|signout|\.netlify)(?:\/|$)/i;
 const PRIVATE_QUERY = /^(?:access[_-]?token|api[_-]?key|token|key|authorization|auth|signature|secret|password)$/i;
-const STATIC = /\.(?:html|css|js|mjs|json|obj|glb|gz|webmanifest|mp3|jpe?g|png|svg|webp|avif|woff2?|wasm)$/i;
+const STATIC = /\.(?:html|css|js|mjs|json|obj|glb|gz|webmanifest|mp3|wav|jpe?g|png|svg|webp|avif|woff2?|wasm)$/i;
 
 // First install warms only navigation documents and install identity. The
 // already-open page continues loading its own resources normally, without a
@@ -30,7 +30,7 @@ const CORE = [
 // Requested only when the visitor explicitly saves the film for offline use.
 // This also covers a first visit whose early imports preceded worker control.
 const OFFLINE_CORE = [
-  'intro/typing-sound.js','src/core/mission-discoveries.js','src/ui/spacey-speech.js',
+  'intro/typing-sound.js','intro/assets/typing/keyboard-keys.wav','intro/assets/typing/provenance.json','src/core/mission-discoveries.js','src/ui/spacey-speech.js',
   'intro/explorer-welcome.js','intro/explorer-welcome.css','src/core/explorer-profile.js',
   'assets/terrain/catalog.json','assets/terrain/moon-apollo11.bin','assets/terrain/moon-apollo11.webp','assets/earth-blue-marble-4k.webp',
   'src/missions/sputnik-dossier.css','assets/missions/sputnik-1/satellite.jpg','assets/missions/sputnik-1/baikonur.jpg','assets/missions/sputnik-1/early-rockets.jpg','assets/missions/sputnik-1/photos.json','assets/missions/sputnik-1/preparations.jpg','assets/missions/sputnik-1/launch.jpg','assets/missions/sputnik-1/model.jpg','assets/missions/sputnik-1/r7-test.jpg','assets/missions/sputnik-1/explorer.jpg','assets/missions/sputnik-1/film.json','pages/sputnik.html','src/missions/sputnik.js','src/missions/sputnik-orbit.js','src/missions/sputnik-orbit-math.js','src/missions/sputnik-dossier.js','assets/missions/sputnik-1/fiche-mission.pdf','pages/mission.html','src/missions/mission-dossier.js','src/missions/dossier-experience.js','src/missions/mission-controls.js','src/missions/mission-locale.js','src/missions/mission-fr-strings.js','src/missions/mission-fr-data.js','src/missions/mission-dossier-fr.js','src/missions/sputnik-dossier-fr.js','src/missions/mission-films.js','src/core/language.js','src/missions/mission-dossier-content.js','src/missions/mission-dossier.css','src/missions/mission-film.js',
