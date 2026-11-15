@@ -2,6 +2,12 @@ import {normalizeVisualSettings} from '../ui/visual-effects.js';
 
 const BODIES=new Set(['earth','moon','mars']);
 const CHANNEL='relic-detailed-globe-v15';
+const KNOWN_MISSION_SITES={
+  moon: new Set(['apollo-11','apollo-12','apollo-14','apollo-15','apollo-16','apollo-17','surveyor-1','surveyor-3','surveyor-5','surveyor-6','surveyor-7','luna-9','luna-13','luna-16','luna-17','lunokhod-1','lunokhod-2','chang-e-3','chang-e-4','chang-e-5','chang-e-6','chandrayaan-3']),
+  earth: new Set(['sputnik-1','spoutnik-1','spoutnik-2']),
+  mars: new Set(['perseverance','curiosity','mars-pathfinder','sojourner','viking-1','viking-2','spirit','opportunity','rover-zhurong','exomars','rover-rosalind-franklin','mars-express']),
+  venus: new Set(['venera-7','venera-8','venera-9','venera-10','venera-11','venera-12','venera-13','venera-14'])
+};
 /** One lazy, same-origin Cesium frame. Removing it releases its WebGL context,
  * terrain queues and credentials in memory when returning to the solar view.
  * No access token ever crosses the parent/frame message channel or URL.
@@ -73,7 +79,7 @@ export function createDetailedGlobe({host,onState=()=>{},onInteraction=()=>{},on
     if(data.type==='ready'){clearTimeout(timer);ready=true;state={...state,...data.state};return;}
     if(data.type==='state'){state={...state,...data.state};emit();return;}
     if(data.type==='interaction'){arrival=false;onInteraction();return;}
-    if(['mission','mission-anchor'].includes(data.type)&&((data.id==='apollo-11'&&current?.id==='moon')||(data.id==='sputnik-1'&&current?.id==='earth'))){const bounds=frame.getBoundingClientRect?.();const anchor=Number.isFinite(data.anchor?.x)&&Number.isFinite(data.anchor?.y)?{x:data.anchor.x+(bounds?.left||0),y:data.anchor.y+(bounds?.top||0)}:undefined;window.dispatchEvent(new CustomEvent(data.type==='mission'?'relic-mission-open':'relic-mission-anchor',{detail:{id:data.id,anchor}}));return;}
+    if(['mission','mission-anchor'].includes(data.type)&&(KNOWN_MISSION_SITES[current?.id]?.has(data.id))){const bounds=frame.getBoundingClientRect?.();const anchor=Number.isFinite(data.anchor?.x)&&Number.isFinite(data.anchor?.y)?{x:data.anchor.x+(bounds?.left||0),y:data.anchor.y+(bounds?.top||0)}:undefined;window.dispatchEvent(new CustomEvent(data.type==='mission'?'relic-mission-open':'relic-mission-anchor',{detail:{id:data.id,anchor}}));return;}
     if(data.type==='select'&&typeof data.id==='string'){onSelect(data.id);return;}
     if(data.type==='error'){teardown();emit({error:'unavailable'});}
   }

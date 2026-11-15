@@ -543,6 +543,7 @@ async function start() {
       Cesium,
       viewer,
       body,
+      allMissions: true,
       getSurfaceHeight:(lat, lon) => {
         try {
           const cart = Cesium.Cartographic.fromDegrees(lon, lat);
