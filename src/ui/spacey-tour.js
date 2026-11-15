@@ -285,7 +285,7 @@ export function createSpaceyTour({mascot,setPose,moveTo,onActiveChange=()=>{}}){
     step=clamp(index,0,STEP_COPY.length-1);const current=++version;
     stopAudio();chips.replaceChildren();
     const [id,,line]=STEP_COPY[step];
-    layer.dataset.step=id;text.textContent=fr()?(FRENCH[id]||line):line;if(id==='welcome')text.textContent=greeting()+' '+text.textContent;
+    layer.dataset.step=id;text.textContent=fr()?(FRENCH[id]||line):line;
     progress.textContent=`${step+1} / ${STEP_COPY.length}`;
     next.textContent=step===STEP_COPY.length-1?(fr()?'Explorer':'Explore'):(fr()?'Continuer':'Continue');
     waiting=true;next.disabled=true;bubble.setAttribute('aria-busy','true');
