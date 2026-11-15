@@ -1253,9 +1253,18 @@ window.addEventListener('relic-archive-start',async event=>{
  }catch(error){detail.onState?.({status:'La reconstruction ne peut pas démarrer. Rechargez la mission.'});console.error(error);}
 });
 window.addEventListener('pagehide',event=>{if(!event.persisted)atlasMission.dispose();});
-const missionMarkers=createMissionMarkers({THREE,camera,getMoon:()=>naturalSystems?.getMesh('moon')||moon,getSelected:()=>selected,isDetailed:()=>detailedGlobe.active,onLocate:site=>{
-  selectBody('moon');focusDetailedView('moon',{lat:site.latitude,lon:site.longitude,range:1200,tilt:35});
-}});
+const missionMarkers=createMissionMarkers({
+  THREE,
+  camera,
+  getMoon:()=>naturalSystems?.getMesh('moon')||moon,
+  getBodyMesh:id=>id==='moon'?(naturalSystems?.getMesh('moon')||moon):planetMeshes.get(id),
+  getSelected:()=>selected,
+  isDetailed:()=>detailedGlobe.active,
+  onLocate:site=>{
+    const targetBody=selected==='overview'?'moon':selected;
+    selectBody(targetBody);focusDetailedView(targetBody,{lat:site.latitude||site.lat,lon:site.longitude||site.lon,range:1200,tilt:35});
+  }
+});
 camera.userData.missionViewport=()=>renderer.domElement.getBoundingClientRect();
 let previousTime = performance.now();
 createNaturalSystems({THREE,scene,planetGroups,planets,getLanguage,getSelected:()=>selected,onSelect:id=>selectBody(id),labelHost,camera,getRelativePosition:(row,date)=>{

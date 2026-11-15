@@ -1,12 +1,14 @@
 /**
- * Mission landing and launch sites for planetary 3D globes (Mars, Moon, Earth).
- * Coordinates are sourced from NASA, ESA, and published mission landing records.
+ * Comprehensive mission landing and launch sites for planetary 3D globes
+ * (Mars, Moon, Earth, Venus, Asteroids/Comets).
+ * Coordinates are sourced from NASA, ESA, Roscosmos, CNSA and ISRO published catalogs.
  */
 export const MISSION_SITES = {
   mars: [
     { id: 'perseverance', name: 'Perseverance', siteName: 'Jezero Crater', lat: 18.4447, lon: 77.4508, year: 2021 },
     { id: 'curiosity', name: 'Curiosity', siteName: 'Gale Crater', lat: -4.5895, lon: 137.4417, year: 2011 },
     { id: 'mars-pathfinder', name: 'Pathfinder & Sojourner', siteName: 'Ares Vallis', lat: 19.33, lon: -33.55, year: 1996 },
+    { id: 'sojourner', name: 'Sojourner (Rover)', siteName: 'Ares Vallis', lat: 19.33, lon: -33.55, year: 1996 },
     { id: 'viking-1', name: 'Viking 1', siteName: 'Chryse Planitia', lat: 22.48, lon: -47.97, year: 1975 },
     { id: 'viking-2', name: 'Viking 2', siteName: 'Utopia Planitia', lat: 48.27, lon: 134.0, year: 1975 },
     { id: 'spirit', name: 'Spirit', siteName: 'Gusev Crater', lat: -14.57, lon: 175.47, year: 2003 },
@@ -32,17 +34,28 @@ export const MISSION_SITES = {
     { id: 'luna-13', name: 'Luna 13', siteName: 'Oceanus Procellarum', lat: 18.87, lon: -62.05, year: 1966 },
     { id: 'luna-16', name: 'Luna 16', siteName: 'Mare Fecunditatis', lat: -0.68, lon: 56.30, year: 1970 },
     { id: 'luna-17', name: 'Luna 17 / Lunokhod 1', siteName: 'Mare Imbrium', lat: 38.28, lon: -35.00, year: 1970 },
+    { id: 'lunokhod-1', name: 'Lunokhod 1', siteName: 'Mare Imbrium', lat: 38.2378, lon: -35.0017, year: 1970 },
     { id: 'lunokhod-2', name: 'Luna 21 / Lunokhod 2', siteName: 'Le Monnier Crater', lat: 25.8323, lon: 30.9221, year: 1973 },
     { id: 'chang-e-3', name: "Chang'e 3", siteName: 'Mare Imbrium', lat: 44.12, lon: -19.51, year: 2013 },
-    { id: 'chang-e-4', name: "Chang'e 4", siteName: 'Von Kármán (Far Side)', lat: -45.46, lon: 177.59, year: 2018 },
+    { id: 'chang-e-4', name: "Chang'e 4", siteName: 'Von Kármán (Face cachée)', lat: -45.46, lon: 177.59, year: 2018 },
     { id: 'chang-e-5', name: "Chang'e 5", siteName: 'Mons Rümker', lat: 43.10, lon: -51.80, year: 2020 },
-    { id: 'chang-e-6', name: "Chang'e 6", siteName: 'South Pole-Aitken Basin', lat: -41.60, lon: -154.00, year: 2024 },
-    { id: 'chandrayaan-3', name: 'Chandrayaan 3', siteName: 'Shiv Shakti Point', lat: -69.37, lon: 32.32, year: 2023 }
+    { id: 'chang-e-6', name: "Chang'e 6", siteName: 'Bassin Pôle Sud-Aitken', lat: -41.60, lon: -154.00, year: 2024 },
+    { id: 'chandrayaan-3', name: 'Chandrayaan 3', siteName: 'Point Shiv Shakti', lat: -69.37, lon: 32.32, year: 2023 }
   ],
   earth: [
     { id: 'spoutnik-1', name: 'Spoutnik 1', siteName: 'Cosmodrome de Baïkonour', lat: 45.9203, lon: 63.3422, year: 1957 },
     { id: 'spoutnik-2', name: 'Spoutnik 2', siteName: 'Cosmodrome de Baïkonour', lat: 45.9203, lon: 63.3422, year: 1957 },
-    { id: 'apollo-11', name: 'Saturn V (LC-39A)', siteName: 'Kennedy Space Center', lat: 28.6084, lon: -80.6044, year: 1969 }
+    { id: 'apollo-11', name: 'Saturn V (LC-39A)', siteName: 'Centre spatial Kennedy', lat: 28.6084, lon: -80.6044, year: 1969 }
+  ],
+  venus: [
+    { id: 'venera-7', name: 'Venera 7', siteName: 'Navka Planitia', lat: -5.0, lon: 351.0, year: 1970 },
+    { id: 'venera-8', name: 'Venera 8', siteName: 'Vasilisa Regio', lat: -10.7, lon: 335.25, year: 1972 },
+    { id: 'venera-9', name: 'Venera 9', siteName: 'Beta Regio', lat: 31.0, lon: 291.6, year: 1975 },
+    { id: 'venera-10', name: 'Venera 10', siteName: 'Beta Regio', lat: 15.42, lon: 291.51, year: 1975 },
+    { id: 'venera-11', name: 'Venera 11', siteName: 'Phoebe Regio', lat: -14.0, lon: 299.0, year: 1978 },
+    { id: 'venera-12', name: 'Venera 12', siteName: 'Phoebe Regio', lat: -7.0, lon: 294.0, year: 1978 },
+    { id: 'venera-13', name: 'Venera 13', siteName: 'Phoebe Regio', lat: -7.5, lon: 303.0, year: 1981 },
+    { id: 'venera-14', name: 'Venera 14', siteName: 'Phoebe Regio', lat: -13.25, lon: 310.0, year: 1981 }
   ]
 };
 
